@@ -1,0 +1,39 @@
+# Demo configuration file for fits-file image sampleint.fits
+#
+# $Id: VOISEdemo2.dat,v 1.2 2015/02/10 12:01:02 patrick Exp $
+#
+# Copyright (c) 2010-15 Patrick Guio <patrick.guio@gmail.com>
+# All Rights Reserved.
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 3 of the License, or (at your
+# option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# Initial phase parameters
+iNumSeeds = 12
+RNGiseed = 10
+# Dividing phase parameters
+dividePctile = 80
+d2Seeds = 2
+# Merging phase parameters
+mergePctile = 50
+dmu = 0.2
+thresHoldLength = 0.3
+# Regularisation phase parameters
+regMaxIter = 2
+# I/O parameters
+iFile = ../share/input/sampleint.fits
+oDir = ../share/output/sampleint/
+# Image parameters
+imageOrigo = [0, 0]
+pixelSize  = [1, 1]
+pixelUnit  = {'pixels', 'pixels'}

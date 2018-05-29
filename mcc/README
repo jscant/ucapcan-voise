@@ -1,0 +1,69 @@
+
+
+==========================
+VOronoi Image SEgmentation
+==========================
+
+
+MATLAB Compiler
+
+1. Prerequisites for Deployment
+
+  Read any of the readme*.txt files:
+
+    -readme-gVOISE.txt,
+    -readme-VOISE.txt,
+    -readme-verifyImage.txt
+
+  They should contain the necessary instructions for deployment of standalone
+  MATLAB compiled application for your specific platform.
+
+
+2. How to run gVOISE (graphic VOISE), VOISE and verifyImage
+
+  Each compiled application APP has a corresponding shell script run_APP.sh
+  for temporarily setting environment variables and executing.
+
+  To run the shell script, type
+
+    ./run_APP.sh <mcr_directory> <argument_list>
+
+
+  at Linux or Mac command prompt. <mcr_directory> is the directory
+  where the MATLAB runtime is installed or the directory where
+  MATLAB is installed on the machine. <argument_list> is all the
+  arguments you want to pass to your application.
+
+  To run gVOISE, VOISE and verifyImage, run the shell script
+
+    ./run_gVOISE.sh <mcr_directory> <VOISE_config_file>
+    ./run_VOISE.sh <mcr_directory> <VOISE_config_file>
+    ./run_verifyImage.sh <mcr_directory> <image_file>
+
+  where <VOISE_config_file> is a VOISE configuration file such as
+  ../share/VOISEdemo[1|2|3].dat, and <image_file> is an image to be
+  tested.
+
+  If you have version 8.4 of the MATLAB runtime installed in
+  /mathworks/home/application/v84, run the shell script as:
+
+    ./run_gVOISE.sh /mathworks/home/application/v84 ../share/VOISEdemo1.dat
+    ./run_gVOISE.sh /mathworks/home/application/v84 ../share/VOISEdemo2.dat
+    ./run_gVOISE.sh /mathworks/home/application/v84 ../share/VOISEdemo3.dat
+
+  If you have MATLAB installed in /mathworks/devel/application/matlab,
+  run the shell script as:
+
+    ./run_gVOISE.sh /mathworks/devel/application/matlab ../share/VOISEdemo3.dat
+
+3. Configuration and Output files
+
+  To create you own VOISE configuration file, use any of the demo
+  configuration files as template.
+
+  For details and further references, see:
+  Guio, P. and Achilleos N. A., 2009, The VOISE Algorithm: a Versatile
+  Tool for Automatic Segmentation of Astronomical Images, MNRAS, 398,
+  1254-1262, doi 10.1111/j.1365-2966.2009.15218.x, ADS url
+  http://adsabs.harvard.edu/abs/2009MNRAS.398.1254G
+

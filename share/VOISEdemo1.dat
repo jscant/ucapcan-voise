@@ -1,0 +1,44 @@
+# Demo configuration file for mat-file image north_proj.mat
+#
+# $Id: VOISEdemo1.dat,v 1.2 2015/02/10 12:01:02 patrick Exp $
+#
+# Copyright (c) 2010-2015 Patrick Guio <patrick.guio@gmail.com>
+# All Rights Reserved.
+#
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 3 of the License, or (at your
+# option) any later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General
+# Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# Initial phase parameters
+iNumSeeds = 12
+RNGiseed = 10
+# Dividing phase parameters
+dividePctile = 85
+d2Seeds = 7
+# Merging phase parameters
+mergePctile = 50
+dmu = 0.2
+thresHoldLength = 0.3
+# Regularisation phase parameters
+regMaxIter = 2
+# I/O parameters
+iFile = ../share/input/north_proj.mat
+oDir = ../share/output/north_proj/
+# Image parameters
+# north_proj.mat is a mat file containing a polar projection of
+# Jupiter observed by HST:
+#    Z           256x256         524288  double  image intensity
+#    x             1x256           2048  double  x-axis (# cols in image Z)
+#    y           256x1             2048  double  y-axis (# rows in image Z)
+# The axes are in unit of Jupiter radius
+pixelUnit  = {'R_J', 'R_J'}
+
