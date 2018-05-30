@@ -1,7 +1,7 @@
 function start_VOISE
 % function start_VOISE
 %
-% VOISE (version 1.3.0) startup 
+% VOISE (version 1.3.1) startup 
 %
 
 % matlab/start_VOISE.m.  Generated from start_VOISE.m.in by configure.
@@ -28,7 +28,7 @@ function start_VOISE
 global voise
 
 voise.root    = '/home/patrick/research/codes/VOISE';
-voise.version = '1.3.0';
+voise.version = '1.3.1';
 
 fprintf('Setting up VOISE -- version %s\n', voise.version);
 

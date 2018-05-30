@@ -2,10 +2,10 @@ function [VD,VDf] = cmpVDalgo(nr,nc,ns,initSeeds,varargin)
 % function [VD,VDf] = cmpVDalgo(nr,nc,ns,initSeeds,varargin)
 %
 % example: 
-% [VD,VDf] = cmpVDalg(100,100,12,@randomSeeds);
+% [VD,VDf] = cmpVDalgo(100,100,12,@randomSeeds);
 
 %
-% $Id: cmpVDalgo.m,v 1.5 2012/04/16 16:54:27 patrick Exp $
+% $Id: cmpVDalgo.m,v 1.6 2018/05/30 16:32:17 patrick Exp $
 %
 % Copyright (c) 2008-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -69,17 +69,18 @@ function [VD,VDf] = testSeq(W, ns, initSeeds, varargin)
 
 if exist('initSeeds') & isa(initSeeds, 'function_handle'),
   [initSeeds, msg] = fcnchk(initSeeds);
-  S = initSeeds(nr, nc, ns, varargin{:});
+	VDlim = setVDlim(nr,nc);
+  S = initSeeds(nr, nc, ns, VDlim, varargin{:});
 else
   error('initSeeds not defined or not a Function Handle');
 end
 
 t=tic;
-VD = computeVD(nr, nc, S);
+VD = computeVD(nr, nc, S, VDlim);
 toc(t)
 
 t=tic;
-VDf = computeVDFast(nr, nc, S);
+VDf = computeVDFast(nr, nc, S, VDlim);
 toc(t)
 
 subplot(221), imagesc(VD.Vk.lambda)
@@ -87,8 +88,10 @@ subplot(222), imagesc(VDf.Vk.lambda)
 subplot(223), imagesc(VD.Vk.v)
 subplot(224), imagesc(VDf.Vk.v)
 
-find(VD.Vk.lambda~=VDf.Vk.lambda)
-find(VD.Vk.v~=VDf.Vk.v)
+if ~isempty(find(VD.Vk.lambda~=VDf.Vk.lambda)) || ...
+   ~isempty(find(VD.Vk.v~=VDf.Vk.v)),
+	 fprintf('The Voronoi diagrams VD and VDf are different!\n')
+end
 return
 
 

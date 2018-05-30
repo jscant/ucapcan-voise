@@ -1,8 +1,8 @@
 %
-% webVOISEdemo1: script for demo1 with config webVOISEdemo1.dat
+% webVOISEdemo3: script for demo1 with config webVOISEdemo3.dat
 %
 
-% $Id: webVOISEdemo1.m,v 1.4 2012/04/16 16:54:28 patrick Exp $
+% $Id: webVOISEdemo3.m,v 1.1 2018/05/30 16:44:59 patrick Exp $
 %
 % Copyright (c) 2008-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.

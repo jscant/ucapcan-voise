@@ -2,7 +2,7 @@ function VDexample
 % function VDexample
 
 %
-% $Id: VDexample.m,v 1.4 2012/04/16 16:54:27 patrick Exp $
+% $Id: VDexample.m,v 1.5 2018/05/30 16:18:27 patrick Exp $
 %
 % Copyright (c) 2009-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -22,21 +22,23 @@ function VDexample
 
 % init seed of Mersenne-Twister RNG
 if exist('RandStream','file') == 2,
-  RandStream.setDefaultStream(RandStream('mt19937ar','seed',30)));
+  RandStream.setGlobalStream(RandStream('mt19937ar','seed',30));
 else
   rand('twister',30);
 end
 
-x = round(100*rand(8,1))+1;
-y = round(100*rand(8,1))+1;
+ns = 8;
+nr = 100;
+nc = 100;
 
-xm = min(x); xM = max(x);
-ym = min(y); yM = max(y);
+x = round(nc*rand(ns,1))+1;
+y = round(nr*rand(ns,1))+1;
 
+VDlim = setVDlim(nr,nc);
 
 [vx,vy] = voronoi(x, y);
 
-VD = computeVD(100,100, [x, y]);
+VD = computeVD(nr, nc, [x, y], VDlim);
 
 hold on
 plot(x,y,'xk','MarkerSize',5)

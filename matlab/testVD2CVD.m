@@ -6,7 +6,7 @@ function [VD,CVD] = testVD2CVD(nr,nc,ns,initSeeds,varargin)
 % VD = testVD2CVD(100,100,50,@randomSeeds)
 
 %
-% $Id: testVD2CVD.m,v 1.5 2012/04/16 16:54:28 patrick Exp $
+% $Id: testVD2CVD.m,v 1.6 2018/05/30 16:42:10 patrick Exp $
 %
 % Copyright (c) 2008-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -67,18 +67,21 @@ function [VD, CVD] = VD2CVD(W, ns, initSeeds, varargin)
 
 if exist('initSeeds') & isa(initSeeds, 'function_handle'),
   [initSeeds, msg] = fcnchk(initSeeds);
-  S = initSeeds(nr, nc, ns, varargin{:});
+  VDlim = setVDlim(nr,nc);
+  S = initSeeds(nr, nc, ns, VDlim, varargin{:});
 else
   error('initSeeds not defined or not a Function Handle');
 end
 
-VD = computeVD(nr, nc, S);
+VD = computeVD(nr, nc, S, VDlim);
 
 plotVDOp(VD, W, @(x) median(x))
 pause
 
+params = getDefaultVOISEParams;
 params.W = W;
 params.regMaxIter = 50;
+params.Wlim = [min(params.W(:)) max(params.W(:))];
 
 vdc = figure;
 CVD = getCentroidVD(VD,params);

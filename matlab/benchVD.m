@@ -1,13 +1,14 @@
-function benchVD()
-% function benchVD()
+function benchVD(timingFilename)
+% function benchVD(timingFilename)
 % 
-% Create a VOISE timing file 'VOISEtiming.mat'
+% Create a VOISE timing file timingFilename 
+% Don't forget to copy or link this file to 'VOISEtiming.mat' 
 %
 % Note that it can takes VERY long time since a very large number of 
-% Voronoi diagrams are built with large number numbers of seeds.
+% Voronoi diagrams are built with large number of seeds.
 
 %
-% $Id: benchVD.m,v 1.12 2015/02/11 17:50:02 patrick Exp $
+% $Id: benchVD.m,v 1.13 2018/05/30 16:20:22 patrick Exp $
 %
 % Copyright (c) 2009-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -25,6 +26,8 @@ function benchVD()
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+global voise
+
 numSeeds = 40;
 begSeed = 5;
 endSeed = 3000;
@@ -34,9 +37,6 @@ endSeed = 3000;
 nr = 256;
 nc = 256;
 
-nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds));
-nsa = round(linspace(begSeed, endSeed, numSeeds));
-
 initSeeds = @randomSeeds;
 
 % init seed of Mersenne-Twister RNG
@@ -44,10 +44,17 @@ rand('twister',10);
 
 if exist('initSeeds') & isa(initSeeds, 'function_handle'),
   [initSeeds, msg] = fcnchk(initSeeds);
-  [S,VDlim] = initSeeds(nr, nc, endSeed);
+  VDlim = setVDlim(nr,nc);
+  S = initSeeds(nr, nc, endSeed, VDlim);
 else
   error('initSeeds not defined or not a Function Handle');
 end
+
+fprintf(1,'endSeed = %d card(S) = %d\n',endSeed, size(S,1));
+endSeed = size(S,1);
+
+nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds));
+nsa = round(linspace(begSeed, endSeed, numSeeds));
 
 % full algorithm
 tVDf = zeros(size(nsf));
@@ -109,7 +116,7 @@ for i=1:length(nsr)-1,
 	ns = length(sk);
   tStart = tic;
   for k = 1:ns,
-    VDr = removeSeedFromVD(VDr, s(k,:));
+    VDr = removeSeedFromVD(VDr, sk(k));
 	end
   tVDr(i) = toc(tStart);
 
@@ -144,6 +151,12 @@ ylabel('time [s]')
 title('Full VOISE')
 
 
-save([voise.root '/share/VOISEtiming.mat'],'nsf','tVDf','ptVDf', ...
+fprintf(1,'Saving timings in timing file:\n %s\n', ...
+        [voise.root '/share/' timingFilename]);
+
+save([voise.root '/share/' timingFilename],'nsf','tVDf','ptVDf', ...
      'nsa','nda','tVDa','ptVDa','nsr','ndr','tVDr','ptVDr');
+
+fprintf(1,'You should copy / link it to the VOISE timing file:\n %s\n', ...
+        [voise.root '/share/VOISEtiming.mat']);
 
