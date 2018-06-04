@@ -1,3 +1,9 @@
+2018-06-04  Patrick Guio <p.guio@ucl.ac.uk>
+
+	* matlab/plotDefaultVOISE.m (1.7), matlab/plotVDOp.m (1.5):
+	  Improved imagesc call with boundary points displayed as
+	  background.  Added seeds plot.
+
 2018-05-30  Patrick Guio <p.guio@ucl.ac.uk>
 
 	* configure.ac (1.35):

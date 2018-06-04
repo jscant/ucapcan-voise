@@ -2,7 +2,7 @@ function plotVDOp(VD, W, op, varargin)
 % function plotVDOp(VD, W, op, varargin)
 
 %
-% $Id: plotVDOp.m,v 1.4 2012/04/16 16:54:27 patrick Exp $
+% $Id: plotVDOp.m,v 1.5 2018/06/04 14:49:34 patrick Exp $
 %
 % Copyright (c) 2008-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -31,14 +31,18 @@ set(gca,'clim',clim);
 colorbar
 
 subplot(212),
-imagesc(VDW),
+% trick to display NaN in imagesc as background 
+imagesc(VDW,'AlphaData',~isnan(VDW)),
 axis xy,
 set(gca,'clim',clim);
 colorbar
 
 hold on
 [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
+% plot Voronoi edges
 plot(vx,vy,'-k','LineWidth',0.5)
+% plot seeds
+plot(VD.Sx(VD.Sk), VD.Sy(VD.Sk),'ko','MarkerSize',2)
 hold off
 
 [op,msg] = fcnchk(op);
