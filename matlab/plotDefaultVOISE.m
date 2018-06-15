@@ -2,7 +2,7 @@ function params = plotDefaultVOISE(VD, params, info)
 % function params = plotDefaultVOISE(VD, params, info)
 
 %
-% $Id: plotDefaultVOISE.m,v 1.6 2015/02/11 16:24:32 patrick Exp $
+% $Id: plotDefaultVOISE.m,v 1.8 2018/06/14 11:48:47 patrick Exp $
 %
 % Copyright (c) 2009-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -24,7 +24,11 @@ VDW = getVDOp(VD, params.W, @(x) median(x));
 
 clf
 subplot(111),
-imagesc(VDW),
+% trick to display NaN in imagesc as background
+% https://www.mathworks.com/matlabcentral/answers/81938-set-nan-as-another-color-than-default-using-imagesc
+imagesc(VDW,'AlphaData',~isnan(VDW)),
+%[ii jj] = find(isnan(A));
+%scatter(jj,ii,'ok','MarkerEdgeColor',[1 1 1],'MarkerFaceColor',[0 0 0],'LineWidth',2,'SizeData',100)
 axis xy,
 axis equal
 axis off
@@ -35,7 +39,10 @@ set(gca,'xlim',[W.xm W.xM], 'ylim', [W.ym W.yM]);
 
 hold on
 [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
+% plot Voronoi edges
 plot(vx,vy,'-k','LineWidth',0.5)
+% plot seeds
+plot(VD.Sx(VD.Sk), VD.Sy(VD.Sk),'ko','MarkerSize',2)
 hold off
 
 title(sprintf('card(S) = %d  (iteration %d)', length(VD.Sk), info.iter))

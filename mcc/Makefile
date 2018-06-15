@@ -127,7 +127,7 @@ AUTOHEADER = ${SHELL} /home/patrick/research/codes/VOISE/missing autoheader
 AUTOMAKE = ${SHELL} /home/patrick/research/codes/VOISE/missing automake-1.15
 AWK = gawk
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"VOISE\" -DPACKAGE_TARNAME=\"voise\" -DPACKAGE_VERSION=\"1.3.1\" -DPACKAGE_STRING=\"VOISE\ 1.3.1\" -DPACKAGE_BUGREPORT=\"p.guio@ucl.ac.uk\" -DPACKAGE_URL=\"\" -DPACKAGE=\"voise\" -DVERSION=\"1.3.1\"
+DEFS = -DPACKAGE_NAME=\"VOISE\" -DPACKAGE_TARNAME=\"voise\" -DPACKAGE_VERSION=\"1.3.2\" -DPACKAGE_STRING=\"VOISE\ 1.3.2\" -DPACKAGE_BUGREPORT=\"p.guio@ucl.ac.uk\" -DPACKAGE_URL=\"\" -DPACKAGE=\"voise\" -DVERSION=\"1.3.2\"
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
@@ -147,15 +147,15 @@ MKDIR_P = /bin/mkdir -p
 PACKAGE = voise
 PACKAGE_BUGREPORT = p.guio@ucl.ac.uk
 PACKAGE_NAME = VOISE
-PACKAGE_STRING = VOISE 1.3.1
+PACKAGE_STRING = VOISE 1.3.2
 PACKAGE_TARNAME = voise
 PACKAGE_URL = 
-PACKAGE_VERSION = 1.3.1
+PACKAGE_VERSION = 1.3.2
 PATH_SEPARATOR = :
 SET_MAKE = 
 SHELL = /bin/sh
 STRIP = 
-VERSION = 1.3.1
+VERSION = 1.3.2
 abs_builddir = /home/patrick/research/codes/VOISE/mcc
 abs_srcdir = /home/patrick/research/codes/VOISE/mcc
 abs_top_builddir = /home/patrick/research/codes/VOISE

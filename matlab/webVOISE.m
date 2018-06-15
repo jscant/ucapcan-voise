@@ -37,7 +37,7 @@ function webVOISE(VOISEconf)
 global voise
 
 voise.root    = '..';
-voise.version = '1.3.1';
+voise.version = '1.3.2';
 
 % disable warning about using handle graphics with -nojvm
 warning('off','MATLAB:HandleGraphics:noJVM');

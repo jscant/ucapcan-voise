@@ -1,12 +1,12 @@
 function start_VOISE
 % function start_VOISE
 %
-% VOISE (version 1.3.1) startup 
+% VOISE (version 1.3.2) startup 
 %
 
 % matlab/start_VOISE.m.  Generated from start_VOISE.m.in by configure.
 %
-% $Id: start_VOISE.m.in,v 1.6 2012/04/16 16:54:28 patrick Exp $
+% $Id: start_VOISE.m.in,v 1.7 2018/06/14 12:00:36 patrick Exp $
 %
 % Copyright (c) 2009-2012 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
@@ -28,11 +28,12 @@ function start_VOISE
 global voise
 
 voise.root    = '/home/patrick/research/codes/VOISE';
-voise.version = '1.3.1';
+voise.version = '1.3.2';
 
 fprintf('Setting up VOISE -- version %s\n', voise.version);
 
 addpath([voise.root '/matlab']);
-addpath([voise.root '/matlab/limbFit']);
 addpath([voise.root '/matlab/imageUtils']);
+addpath([voise.root '/matlab/limbFit']);
+addpath([voise.root '/matlab/visUtils']);
 

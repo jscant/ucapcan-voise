@@ -5,7 +5,7 @@ function [x,y,aa,majAxis,bb,minAxis] = getEllipseAxes(a,b,c)
 % ax^2+by^2+cxy = 1
 
 %
-% $Id: licens.m,v 1.16 2015/01/23 10:30:18 patrick Exp $
+% $Id: getEllipseAxes.m,v 1.1 2018/06/14 12:03:06 patrick Exp $
 %
 % Copyright (c) 2015 Patrick Guio <patrick.guio@gmail.com>
 % All Rights Reserved.
