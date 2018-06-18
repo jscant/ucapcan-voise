@@ -21,14 +21,14 @@ function params = plotVOISE(VD, params, ic)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 clf
-subplot(111),
+subplot(111)
 
 x = params.x;
 y = params.y;
 
-if isempty(VD), % original image
+if isempty(VD) % original image
 	W = params.W;
-else, % median operator on VD
+else % median operator on VD
   W = getVDOp(VD, params.W, @(x) median(x));
 end
 
@@ -41,7 +41,7 @@ set(gca,'clim',params.Wlim);
 set(gca,'xlim', params.xlim, 'ylim', params.ylim);
 colormap(params.colormap);
 
-if ~isempty(VD),
+if ~isempty(VD)
   % scaling factors from VD to image axes
   W = VD.W;
   sx = (max(params.x)-min(params.x))/(W.xM-W.xm);
@@ -51,16 +51,16 @@ if ~isempty(VD),
   h = line([S.xm,S.xm,S.xM,S.xM,S.xm],[S.ym,S.yM,S.yM,S.ym,S.ym]);
   set(h,'Color',[.5,.5,.5],'LineWidth',0.05);
 
-  if ic~=4,
-  hold on
-  [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
-  plot((vx-W.xm)*sx+min(params.x),(vy-W.ym)*sy+min(params.y),...
-       '-k','LineWidth',0.5)
-  hold off
+  if ic~=4
+      hold on
+      [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
+      plot((vx-W.xm)*sx+min(params.x),(vy-W.ym)*sy+min(params.y),...
+           '-k','LineWidth',0.5)
+      hold off
   end
 end
 
-if isempty(VD), % original image
+if isempty(VD) % original image
   title('Original image')
   printFigure(gcf,[params.oDir 'orig.eps']);
 else
@@ -68,7 +68,7 @@ else
   printFigure(gcf,[params.oDir 'phase' num2str(ic) '.eps']);
 end
 
-if params.movDiag,
+if params.movDiag
   movieHandler(params,'addframe');
 end
 

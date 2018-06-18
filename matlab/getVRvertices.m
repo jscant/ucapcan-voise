@@ -40,6 +40,7 @@ asn = mod(atan2(yn-ys,xn-xs),2*pi);
 is = [I(end); I];
 % get vertices as equidistant point between seed and two adjacent neighbours
 % oriented anti-clockwise
+
 rsu = [ns(is(1:end-1)), s*ones(size(asn(:))),  ns(is(2:end))];
 V = getEquidistantPoint(VD, rsu);
 

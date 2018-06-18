@@ -38,6 +38,8 @@ fprintf(1,'*** Starting dividing phase\n')
 
 iDiv = 1;
 stopDiv = false;
+vd_arr_new = {VD};
+vd_arr_old = {VD};
 while ~stopDiv,
 
   % compute homogeneity fuunction and dynamic threshold
@@ -57,7 +59,7 @@ while ~stopDiv,
     S = [[S(:,1); s(:,1)], [S(:,2); s(:,2)]];
   end
 	
-	if 0, % diagnostic plot (seed to add)
+	if 1, % diagnostic plot (seed to add)
     subplot(212),
     imagesc(WHC);
     axis xy, colorbar
@@ -75,51 +77,75 @@ while ~stopDiv,
   if ~isempty(S),
 	  nSa = size(S,1);
     fprintf(1,'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
-		switch params.divideAlgo,
-		  case 0, % incremental
-        for k = 1:nSa,
-				  if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
-            VD = addSeedToVD(VD, S(k,:));
-		        % diagnostic plot
-		        if 0, drawVD(VD); end
-					end
-				end
-			case 1, % full
-			  for k = 1:nSa,
-				  if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
-					  VD.Sx = [VD.Sx; S(k,1)];
+    params.divideAlgo = 0;
+		switch params.divideAlgo % ALWAYS USE INCREMENTAL SKIZ ALGO - REMOVE THIS LATER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+            case 0 % incremental
+                for k = 1:nSa
+                    if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
+                       if 0
+                            drawVD(VD);
+                       end
+                    tStart = tic;
+                    useOld = 0;
+                    if useOld
+                        VD = addSeedToVD2(VD, S(k,:));
+                        vd_arr_old{VD.k-10, 1} = VD;
+                    else
+                        VD = addSeedToVD(VD, S(k,:));
+                        vd_arr_new{VD.k-10, 1} = VD;
+                    end
+                    
+                    if VD.k == 80
+                        if useOld
+                            save vd_arr_old.mat vd_arr_old 
+                        else
+                            save vd_arr_new.mat vd_arr_new 
+                        end
+                    end
+                    
+                    clear addSeedToVd;
+                    fprintf(1,'(Used %6.1f s)\n', toc(tStart));
+                    end
+                end
+			case 1 % full
+                for k = 1:nSa,
+                    if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
+                        VD.Sx = [VD.Sx; S(k,1)];
 						VD.Sy = [VD.Sy; S(k,2)];
 					end
 				end
 				VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
-			case 2, % timing based
-			  ns = length(VD.Sk);
-			  tf = polyval(timing.ptVDf, ns+nSa);
+
+			case 2 % timing based
+                ns = length(VD.Sk);
+                tf = polyval(timing.ptVDf, ns+nSa);
 				ti = sum(polyval(timing.ptVDa, ns+[0:nSa-1]));
 				fprintf(1,'Est. time full(%4d:%4d)/inc(%4d:%4d) %6.1f/%6.1f s ', ...
 				        1, ns+nSa, ns+1, ns+nSa, tf, ti);
 				tStart = tic;
-				if tf < ti, % full faster than incremental
-			    for k = 1:size(S,1),
-				    if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
-					    VD.Sx = [VD.Sx; S(k,1)];
-						  VD.Sy = [VD.Sy; S(k,2)];
-					  end
-				  end
-				  VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
-        else, % incremental faster than full
-          for k = 1:size(S,1),
-					  if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
-              VD = addSeedToVD(VD, S(k,:));
-						end
-					end
-				end
+				if tf < ti % full faster than incremental
+                    for k = 1:size(S,1)
+                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
+                            VD.Sx = [VD.Sx; S(k,1)];
+                              VD.Sy = [VD.Sy; S(k,2)];
+                        end
+                    end
+                    VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
+                else % incremental faster than full
+                    for k = 1:size(S,1)
+                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
+                            VD = addSeedToVD(VD, S(k,:));
+                        end
+                    end
+                end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
-    end
-	  params = plotCurrentVD(VD, params, iDiv);
-	  iDiv = iDiv+1;
+        end
+        params = plotCurrentVD(VD, params, iDiv);
+        disp("plotCurrentVD Sucess");
+        iDiv = iDiv+1;
     %fprintf(1,'Voronoi Diagram computed\n');
   else
+    disp("StopDiv = True");
     stopDiv = true;
   end
 	if 0, % diagnostic plot

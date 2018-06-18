@@ -27,8 +27,10 @@ if ~exist('op','var') | isempty(op), op = 'mean'; end
 
 Sop = zeros(size(VD.Sk));
 is = 1;
-for s = VD.Sk', % for all seeds
+for s = VD.Sk' % for all seeds
   % find pixels inside the Voronoi region VR(s)
+  
+  %disp(find(VD.Vk.lambda == s));
   ii = find(VD.Vk.lambda == s & VD.Vk.v == 0);
 	% apply operator for pixels in  the Voronoi region VR(s)
 	Sop(is) = op(W(ii), varargin{:});

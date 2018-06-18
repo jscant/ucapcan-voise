@@ -27,7 +27,7 @@ function start_VOISE
 
 global voise
 
-voise.root    = '/home/patrick/research/codes/VOISE';
+voise.root    = '/home/jack/dev/project/voise-1.3';
 voise.version = '1.3.2';
 
 fprintf('Setting up VOISE -- version %s\n', voise.version);

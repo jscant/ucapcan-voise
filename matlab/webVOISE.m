@@ -54,7 +54,6 @@ if ~exist(params.oDir,'dir')
 end
 
 [params,IVD,DVD,MVD,CVD] = VOISE(params);
-
 % some diagnostics generated in 
 close all
 clf

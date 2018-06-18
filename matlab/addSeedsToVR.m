@@ -66,40 +66,40 @@ end
 S = [Sx(:), Sy(:)];
 
 if 0
-%subplot(212)
-clf
+    %subplot(212)
+    clf
 
-plot(xs,ys,'ok', 'MarkerSize',8)
-text(xs,ys, num2str(sk), 'verticalalignment', 'bottom');
-W = VD.W;
-set(gca,'xlim',[W.xm W.xM], 'ylim', [W.ym W.yM]);
-hold on
-for i=1:length(ns),
-  plot(xn(i),yn(i),'xk', 'MarkerSize',8)
-	text(xn(i),yn(i), ['n' num2str(ns(i))], 'verticalalignment', 'bottom');
-end
-for i=1:size(S,1)
-  plot(S(i,1),S(i,2),'xk', 'MarkerSize',8)
-	text(S(i,1),S(i,2), ['i' num2str(i)], 'verticalalignment', 'bottom');
-end
-for i=1:size(V,1)
-  plot(V(i,1),V(i,2),'xk', 'MarkerSize',8)
-	text(V(i,1),V(i,2), ['v' num2str(i)], 'verticalalignment', 'bottom');
-end
-[vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
-plot(vx,vy,'-k','LineWidth',1)
-hold off
-%pause
+    plot(xs,ys,'ok', 'MarkerSize',8)
+    text(xs,ys, num2str(sk), 'verticalalignment', 'bottom');
+    W = VD.W;
+    set(gca,'xlim',[W.xm W.xM], 'ylim', [W.ym W.yM]);
+    hold on
+    for i=1:length(ns),
+      plot(xn(i),yn(i),'xk', 'MarkerSize',8)
+        text(xn(i),yn(i), ['n' num2str(ns(i))], 'verticalalignment', 'bottom');
+    end
+    for i=1:size(S,1)
+      plot(S(i,1),S(i,2),'xk', 'MarkerSize',8)
+        text(S(i,1),S(i,2), ['i' num2str(i)], 'verticalalignment', 'bottom');
+    end
+    for i=1:size(V,1)
+      plot(V(i,1),V(i,2),'xk', 'MarkerSize',8)
+        text(V(i,1),V(i,2), ['v' num2str(i)], 'verticalalignment', 'bottom');
+    end
+    [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
+    plot(vx,vy,'-k','LineWidth',1)
+    hold off
+    %pause
 
-for i=1:size(S,1),
-  if ~isempty(find(S(i,1)==VD.Sx & S(i,2)==VD.Sy)),
-	  sk = find(S(i,1)==VD.Sx & S(i,2)==VD.Sy);
-		s = sprintf('Error: seed i%d=(%d,%d) already in S(%d)=(%d,%d)', ...
-			    i, S(i,1),S(i,2), sk, VD.Sx(sk), VD.Sy(sk));
-	  fprintf(1,'%s\n', s);
-		V,I
-		pause
-	end
-end
+    for i=1:size(S,1),
+      if ~isempty(find(S(i,1)==VD.Sx & S(i,2)==VD.Sy)),
+          sk = find(S(i,1)==VD.Sx & S(i,2)==VD.Sy);
+            s = sprintf('Error: seed i%d=(%d,%d) already in S(%d)=(%d,%d)', ...
+                    i, S(i,1),S(i,2), sk, VD.Sx(sk), VD.Sy(sk));
+          fprintf(1,'%s\n', s);
+            V,I
+            pause
+        end
+    end
 
 end

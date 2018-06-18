@@ -42,7 +42,17 @@ plot(vx,vy,'-k','LineWidth',0.5)
 hold off
 title(sprintf('k = %d card(S) = %d', VD.k, length(VD.Sk)))
 
-subplot(212), 
+subplot(212)
+if ~isempty(find(VD.Vk.lambda < 1))
+    disp("Problem!")
+    VD.k
+    size(find(VD.Vk.lambda < 1))
+    min(VD.Vk.lambda(:))
+    max(VD.Vk.lambda(:))
+end
+if ~isempty(find(VD.Vk.lambda < 1))
+    save VD.Vk.lambda
+end
 mu  = (VD.x-VD.Sx(VD.Vk.lambda)).^2+(VD.y-VD.Sy(VD.Vk.lambda)).^2;
 imagesc(mu); 
 axis xy
