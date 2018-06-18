@@ -86,25 +86,25 @@ while ~stopDiv,
                             drawVD(VD);
                        end
                     tStart = tic;
-                    useOld = 0;
+                    useOld = 1;
                     if useOld
                         VD = addSeedToVD2(VD, S(k,:));
-                        vd_arr_old{VD.k-10, 1} = VD;
+                        %vd_arr_old{VD.k-10, 1} = VD;
                     else
                         VD = addSeedToVD(VD, S(k,:));
-                        vd_arr_new{VD.k-10, 1} = VD;
+                        %vd_arr_new{VD.k-10, 1} = VD;
                     end
                     
-                    if VD.k == 80
-                        if useOld
-                            save vd_arr_old.mat vd_arr_old 
-                        else
-                            save vd_arr_new.mat vd_arr_new 
-                        end
-                    end
+                    %if VD.k == 80
+                    %    if useOld
+                    %        save vd_arr_old.mat vd_arr_old 
+                    %    else
+                    %        save vd_arr_new.mat vd_arr_new 
+                    %    end
+                    %end
                     
-                    clear addSeedToVd;
-                    fprintf(1,'(Used %6.1f s)\n', toc(tStart));
+                    %clear addSeedToVd;
+                    %fprintf(1,'(Used %6.1f s)\n', toc(tStart));
                     end
                 end
 			case 1 % full
@@ -167,6 +167,7 @@ fprintf(1,'*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)
 
+if 0
 VDW = getVDOp(VD, params.W, @(x) median(x));
 
 clf
@@ -197,4 +198,4 @@ end
 if params.movDiag,
   movieHandler(params,'addframe');
 end
-
+end

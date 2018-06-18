@@ -118,8 +118,10 @@ save([params.oDir params.oMatFile], '-append', 'IVD');
 % plot 
 params = plotVOISE(IVD, params, 0);
 
-% Dividing phase 
+% Dividing phase
+tic
 [DVD, params] = divideVD(IVD, params);
+fprintf("Dividing took %d seconds\n", toc);
 % save 
 save([params.oDir params.oMatFile], '-append', 'DVD'); 
 % plot
