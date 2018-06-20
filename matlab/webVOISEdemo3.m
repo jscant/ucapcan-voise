@@ -23,7 +23,9 @@
 colormap(jet) 
 
 %profile on
-
+mex('addSeedToVD.cpp', 'cpp/aux.cpp', 'cpp/skizException.cpp',...
+    'cpp/addSeed.cpp', 'cpp/pointInRegion.cpp', 'cpp/NSStar.cpp',...
+    'cpp/vd.cpp', 'cpp/getRegion.cpp', '-R2018a',  '-v', 'COMPTIMFLAGS="-O3"');
 webVOISE('../share/VOISEdemo3.dat');
 
 %profile off

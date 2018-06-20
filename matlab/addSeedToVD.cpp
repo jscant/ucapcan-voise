@@ -208,7 +208,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     // Create and populate vd
     vd VD = vd(nr, nc);
 
-    /*
+/*
     VD.setK(k);
     VD.setLam(lam);
     VD.setV(v);
@@ -217,9 +217,10 @@ void mexFunction(int nlhs, mxArray *plhs[],
     VD.setSx(Sx);
     VD.setSy(Sy);
     VD.setNk(Nk);
+    VD.setSk(Sk);
     VD.setW(W);
     VD.setS(S_str);
-    */
+*/
 
     VD.k = k;
     VD.Vk.lam = lam;
@@ -232,6 +233,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
     VD.Nk = Nk;
     VD.W = W;
     VD.S = S_str;
+
+
 
     // Create result vd, which is result of addSeed acting on input vd
     vd result(VD.nr, VD.nc);

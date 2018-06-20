@@ -19,7 +19,9 @@
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-
+mex('addSeedToVD.cpp', 'cpp/aux.cpp', 'cpp/skizException.cpp',...
+    'cpp/addSeed.cpp', 'cpp/pointInRegion.cpp', 'cpp/NSStar.cpp',...
+    'cpp/vd.cpp', 'cpp/getRegion.cpp', '-R2018a',  '-v', 'COMPTIMFLAGS="-O3"');
 webVOISE('../share/VOISEdemo2.dat');
 
 quit
