@@ -88,8 +88,6 @@ vd addSeed(vd VD, double s1, double s2){
         VD.Nk[i.first] = i.second;
     }
 
-
-
     Mat bounds = getRegion(VD, VD.k);
 
     int count = 0;
