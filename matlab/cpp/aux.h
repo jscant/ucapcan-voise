@@ -1,26 +1,35 @@
 //
 // Created by root on 12/06/18.
 //
-
-#include <math.h>
+#ifndef ARRAY_H
+#define ARRAY_H
 #include <array>
-#include <vector>
-#include <algorithm>
-#include <map>
-#include <iostream>
-#include <fstream>
-#include <string>
-#include "skizException.h"
-#include "eigen/Eigen/Dense"
+#endif //ARRAY_H
 
-#ifndef SKIZ_AUX_H
-#define SKIZ_AUX_H
+#ifndef VECTOR_H
+#define VECTOR_H
+#include <vector>
+#endif //VECTOR_H
+
+#ifndef MAP_H
+#define MAP_H
+#include <map>
+#endif //MAP_H
+
 
 double sqDist(double p1, double p2, double q1, double q2);
 std::array<double, 2> circumcentre(double ax, double ay, double bx, double by, double cx, double cy);
 bool inVector(const std::vector<double> &vec, double item);
 void updateDict(std::map<double, std::vector<double>> &d, double key, double value);
-void saveArray(const Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> &arr, std::string filename);
-void printVector(std::vector<double> v);
 
-#endif //SKIZ_AUX_H
+
+// Some useful general purpose printing fns
+std::string toString(const char *&t);
+
+std::string toString(const std::string &t);
+
+template<class T>
+std::string toString(const T &t);
+
+template<class T>
+void print(T value);

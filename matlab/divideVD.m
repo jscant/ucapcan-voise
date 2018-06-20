@@ -86,7 +86,7 @@ while ~stopDiv,
                             drawVD(VD);
                        end
                     tStart = tic;
-                    useOld = 1;
+                    useOld = 0;
                     if useOld
                         VD = addSeedToVD2(VD, S(k,:));
                         %vd_arr_old{VD.k-10, 1} = VD;
