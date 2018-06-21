@@ -7,5 +7,5 @@
 #include "vd.h"
 #endif
 
-vd addSeed(vd VD, double s1, double s2);
+bool addSeed(vd &VD, double s1, double s2);
 

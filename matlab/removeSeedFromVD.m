@@ -248,4 +248,3 @@ for s = VD.Nk{k}',
 	VD.Nk{s} = Np{is}(:);
 	is = is+1;
 end
-

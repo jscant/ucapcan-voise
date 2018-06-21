@@ -42,7 +42,9 @@
 #include "aux.h"
 #endif
 
-vd addSeed(vd VD, double s1, double s2){
+#include <omp.h>
+
+bool addSeed(vd &VD, double s1, double s2){
     VD.k += 1;
     VD.Sx[VD.k] = s1;
     VD.Sy[VD.k] = s2;
@@ -132,5 +134,5 @@ vd addSeed(vd VD, double s1, double s2){
         }
     }
 
-    return VD;
+    return true;
 }

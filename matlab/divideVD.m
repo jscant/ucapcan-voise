@@ -141,7 +141,6 @@ while ~stopDiv,
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end
         params = plotCurrentVD(VD, params, iDiv);
-        disp("plotCurrentVD Sucess");
         iDiv = iDiv+1;
     %fprintf(1,'Voronoi Diagram computed\n');
   else

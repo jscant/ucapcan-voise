@@ -51,6 +51,11 @@ iMerge = 1;
 stopMerge = false;
 while ~stopMerge,
 
+    disp("~~~~~~~~~~~~~")
+    disp(size(VD.Sx))
+    disp(size(VD.Sy))
+    disp(size(VD.Sk))
+    disp(size(VD.Nk))
   % compute homogeneity fuunction and dynamic threshold
   [WD,SD,WHC,SHC,HCThreshold] = computeHCThreshold(VD, params, mergePctile);
 
