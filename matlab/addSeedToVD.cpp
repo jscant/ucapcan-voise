@@ -1,27 +1,9 @@
-#ifndef MEX_H
-#define MEX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/mex.h"
-#endif
+#include <mex.h>
 
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/matrix.h"
-#endif
+#include <matrix.h>
 
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "cpp/eigen/Eigen/Dense"
-#endif
-
-#ifndef STRING_H
-#define STRING_H
-#include <string>
-#endif
-
-#ifndef CSTRING_H
-#define CSTRING_H
-#include <cstring>
-#endif
+//#include "cpp/eigen/Eigen/Dense"
+#include <eigen3/Eigen/Dense>
 
 #ifndef VD_H
 #define VD_H
@@ -53,10 +35,7 @@
 #include "cpp/pushVD.h"
 #endif
 
-#ifndef MAP_H
-#define MAP_H
 #include <map>
-#endif
 
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])

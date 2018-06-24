@@ -183,7 +183,7 @@ while ~stopMerge,
 		switch params.mergeAlgo,
 		  case 0, % incremental
         for k = Sk(:)',
-            useOld = 1;
+            useOld = 0;
             if useOld
               VD  = removeSeedFromVD2(VD, k);
                         % diagnostic plot
