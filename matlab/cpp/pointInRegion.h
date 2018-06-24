@@ -8,9 +8,11 @@
 #include <vector>
 #endif //VECTOR_H
 
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, RealVec A);
+bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A);

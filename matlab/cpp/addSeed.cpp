@@ -1,5 +1,5 @@
 #ifndef INF
-#define INF std::numeric_limits<double>::infinity()
+#define INF std::numeric_limits<real>::infinity()
 #endif
 
 #ifndef MEX_H
@@ -42,21 +42,22 @@
 #include "aux.h"
 #endif
 
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
-
 #include <omp.h>
 
-bool addSeed(vd &VD, double s1, double s2){
+bool addSeed(vd &VD, real s1, real s2){
     VD.k += 1;
     VD.Sx[VD.k] = s1;
     VD.Sy[VD.k] = s2;
     VD.Sk[VD.k] = VD.k;
 
     VD.Nk[VD.k] = Ns_star(VD);
-    std::map<double, RealVec> newDict;
+    std::map<real, RealVec> newDict;
 
     for (int s : VD.Nk.at(VD.k)) {
         RealVec v1 = VD.Nk.at(s);
@@ -88,7 +89,7 @@ bool addSeed(vd &VD, double s1, double s2){
                 if (u == r) {
                     continue;
                 }
-                std::array<double, 2> cc;
+                std::array<real, 2> cc;
                 try {
                     cc = circumcentre(VD.Sx.at(s), VD.Sy.at(s), VD.Sx.at(r),
                                       VD.Sy.at(r), VD.Sx.at(u), VD.Sy.at(u));
@@ -122,13 +123,13 @@ bool addSeed(vd &VD, double s1, double s2){
         } else {
             finish = true;
         }
-        double lb = std::max(0.0, bounds(i, 0) - 1);
-        double ub = std::min(VD.nc, bounds(i, 1));
-        for (double j = lb; j < ub; ++j) {
-            const double l1 = VD.Sx.at(VD.Vk.lam(i, j));
-            const double l2 = VD.Sy.at(VD.Vk.lam(i, j));
-            double newMu = sqDist(s1, s2, j+1, i+1);
-            double oldMu = sqDist(l1, l2, j+1, i+1);
+        real lb = std::max(0.0, bounds(i, 0) - 1);
+        real ub = std::min(VD.nc, bounds(i, 1));
+        for (real j = lb; j < ub; ++j) {
+            const real l1 = VD.Sx.at(VD.Vk.lam(i, j));
+            const real l2 = VD.Sy.at(VD.Vk.lam(i, j));
+            real newMu = sqDist(s1, s2, j+1, i+1);
+            real oldMu = sqDist(l1, l2, j+1, i+1);
 
             if (newMu < oldMu) {
                 VD.Vk.lam(i, j) = VD.k;

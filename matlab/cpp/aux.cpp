@@ -15,20 +15,15 @@
 #include "skizException.h"
 #endif
 
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
-#endif
-
 //Use square distance where possible to avoid floating point precision problems
-double sqDist(double p1, double p2, double q1, double q2){
+real sqDist(real p1, real p2, real q1, real q2){
     return (pow((p1 - q1), 2) + pow((p2 - q2), 2));
 }
 
 //Circumcentre of a triangle from cartesian coordinates
-std::array<double, 2> circumcentre(double ax, double ay, double bx, double by, double cx, double cy){
-    std::array<double, 2> result;
-    double D = 2*((ax*(by-cy) + bx*(cy-ay) + cx*(ay-by)));
+std::array<real, 2> circumcentre(real ax, real ay, real bx, real by, real cx, real cy){
+    std::array<real, 2> result;
+    real D = 2*((ax*(by-cy) + bx*(cy-ay) + cx*(ay-by)));
     if(D == 0){
         // Message not used, this is expected behaviour as cc does not exist, so cannot be 'within' any region
         std::string msg = "Collinear points:\n(" + std::to_string(ax) + ", " + std::to_string(ay) + ")\n" +
@@ -36,16 +31,16 @@ std::array<double, 2> circumcentre(double ax, double ay, double bx, double by, d
                 std::to_string(cx) + ", " + std::to_string(cy) + ")\n";
         throw SKIZLinearSeedsException(msg.c_str());
     }
-    double Ux = ((pow(ax, 2) + pow(ay, 2))*(by-cy) + (pow(bx, 2) + pow(by, 2))*(cy-ay) +
+    real Ux = ((pow(ax, 2) + pow(ay, 2))*(by-cy) + (pow(bx, 2) + pow(by, 2))*(cy-ay) +
           (pow(cx, 2) + pow(cy, 2))*(ay-by))/D;
-    double Uy = ((pow(ax, 2) + pow(ay, 2))*(cx-bx) + (pow(bx, 2) + pow(by, 2))*(ax-cx) +
+    real Uy = ((pow(ax, 2) + pow(ay, 2))*(cx-bx) + (pow(bx, 2) + pow(by, 2))*(ax-cx) +
           (pow(cx, 2) + pow(cy, 2))*(bx-ax))/D;
     result.at(0) = Ux;
     result.at(1) = Uy;
     return result;
 }
 
-bool inVector(const RealVec &vec, double item){
+bool inVector(const RealVec &vec, real item){
     if(vec.size() < 1){
         return false;
     }
@@ -56,7 +51,7 @@ bool inVector(const RealVec &vec, double item){
     }
 }
 
-void updateDict(std::map<double, RealVec> &d, double key, double value) {
+void updateDict(std::map<real, RealVec> &d, real key, real value) {
     RealVec lst = d[key];
     if(!inVector(lst, value)){
         lst.push_back(value);
@@ -84,7 +79,7 @@ namespace aux {
         mexPrintf("\n");
     }
 
-    void print(double value) {
+    void print(real value) {
         mexPrintf(toString(value).c_str());
         mexPrintf("\n");
     }

@@ -21,22 +21,22 @@
 
 #ifndef MAT
 #define MAT
-typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 vd grabVD(const mxArray *prhs[]){
-    double nc, nr, k;
+    real nc, nr, k;
     Mat lam, v, px, py;
-    std::map<double, double> Sx, Sy, Sk;
-    std::map<double, RealVec> Nk;
+    std::map<real, real> Sx, Sy, Sk;
+    std::map<real, RealVec> Nk;
     W_struct W;
     S_struct S_str;
 
     // Get all input information from vd
-    double nFields = mxGetNumberOfFields(prhs[0]);
-    double nElements = mxGetNumberOfElements(prhs[0]);
-    double rows;
-    double col;
+    real nFields = mxGetNumberOfFields(prhs[0]);
+    real nElements = mxGetNumberOfElements(prhs[0]);
+    real rows;
+    real col;
 
     mxArray *nrIncomingArray, *ncIncomingArray, *wIncomingArray,
             *sIncomingArray, *xIncomingArray, *yIncomingArray,
@@ -47,7 +47,7 @@ vd grabVD(const mxArray *prhs[]){
             *sxmIncomingArray, *sxMIncomingArray, *symIncomingArray,
             *syMIncomingArray;
 
-    double *nrIncoming, *ncIncoming, *xIncoming, *yIncoming, *kIncoming,
+    real *nrIncoming, *ncIncoming, *xIncoming, *yIncoming, *kIncoming,
             *skIncoming, *sxIncoming, *syIncoming, *wxmIncoming, *wxMIncoming,
             *wymIncoming, *wyMIncoming, *sxmIncoming, *sxMIncoming, *symIncoming,
             *syMIncoming;
@@ -80,7 +80,7 @@ vd grabVD(const mxArray *prhs[]){
     syMIncomingArray = mxGetField(sIncomingArray, 0, "yM");
 
     // Pointers declarations
-    double *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
+    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
             *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
             *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
 
@@ -156,12 +156,12 @@ vd grabVD(const mxArray *prhs[]){
     // Populate neighbour relationships from ML data
     mwIndex nkLen = mxGetNumberOfElements(nkIncomingArray);
     mxArray *cellPtrs[nkLen];
-    double *cellContentsPtrs;
+    real *cellContentsPtrs;
 
     for (mwIndex i = 0; i < nkLen; ++i) {
         cellPtrs[i] = mxGetCell(nkIncomingArray, i);
         mwIndex cellLen = mxGetNumberOfElements(cellPtrs[i]);
-        double *vals = mxGetDoubles(cellPtrs[i]);
+        real *vals = mxGetDoubles(cellPtrs[i]);
         RealVec cellVec;
         for (mwIndex j = 0; j < cellLen; ++j) {
             cellVec.push_back(vals[j]);

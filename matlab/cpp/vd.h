@@ -9,28 +9,25 @@
 #include <algorithm>
 #include <eigen3/Eigen/Dense>
 
-#ifndef MAT
-#define MAT
-typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
-
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 struct W_struct {
-    double xm;
-    double ym;
-    double xM;
-    double yM;
+    real xm;
+    real ym;
+    real xM;
+    real yM;
 };
 
 struct S_struct {
-    double xm;
-    double ym;
-    double xM;
-    double yM;
+    real xm;
+    real ym;
+    real xM;
+    real yM;
 };
 
 struct V_struct {
@@ -43,28 +40,28 @@ public:
     V_struct Vk;
     W_struct W;
     S_struct S;
-    double nc, nr, k;
+    real nc, nr, k;
     Mat seeds, px, py;
-    std::map<double, double> Sx, Sy, Sk;
-    std::map<double, RealVec> Nk;
+    std::map<real, real> Sx, Sy, Sk;
+    std::map<real, RealVec> Nk;
     void setVk(V_struct val) { Vk = val; };
     void setW(W_struct val) { W = val; };
     void setS(S_struct val) { S = val; };
     void setLam(Mat newLam) { Vk.lam = newLam; };
     void setV(Mat newV) { Vk.v = newV; };
-    void setLamByIdx(mwIndex i, mwIndex j, double val) { Vk.lam(i, j) = val; };
-    void setVByIdx(mwIndex i, mwIndex j, double val) { Vk.v(i, j) = val; };
+    void setLamByIdx(mwIndex i, mwIndex j, real val) { Vk.lam(i, j) = val; };
+    void setVByIdx(mwIndex i, mwIndex j, real val) { Vk.v(i, j) = val; };
     void setSeeds(Mat s) { seeds = s; };
     void setPx(Mat x) { px = x; };
     void setPy(Mat y) { py = y; };
-    void setK(double val) { k = val; };
-    void setSx(std::map<double, double> val) { Sx = val; };
-    void setSy(std::map<double, double> val) { Sy = val; };
-    void setSk(std::map<double, double> val) { Sk = val; };
-    void setSxByIdx(mwIndex idx, double val) { Sx[idx] = val; };
-    void setSyByIdx(mwIndex idx, double val) { Sy[idx] = val; };
-    void setSkByIdx(mwIndex idx, double val) { Sk[idx] = val; };
-    void setNk(std::map<double, RealVec> val) { Nk = val; };
+    void setK(real val) { k = val; };
+    void setSx(std::map<real, real> val) { Sx = val; };
+    void setSy(std::map<real, real> val) { Sy = val; };
+    void setSk(std::map<real, real> val) { Sk = val; };
+    void setSxByIdx(mwIndex idx, real val) { Sx[idx] = val; };
+    void setSyByIdx(mwIndex idx, real val) { Sy[idx] = val; };
+    void setSkByIdx(mwIndex idx, real val) { Sk[idx] = val; };
+    void setNk(std::map<real, RealVec> val) { Nk = val; };
     void setNkByValue(mwIndex idx, RealVec val) { Nk[idx] = val; };
 
     V_struct getVk() const { return Vk; };
@@ -72,19 +69,19 @@ public:
     S_struct getS() const { return S; };
     Mat getLam() const { return Vk.lam; };
     Mat getV() const { return Vk.v; };
-    double getLamByIdx(mwIndex i, mwIndex j) const { return Vk.lam(i, j); };
-    double getVByIdx(mwIndex i, mwIndex j) const { return Vk.v(i, j); };
+    real getLamByIdx(mwIndex i, mwIndex j) const { return Vk.lam(i, j); };
+    real getVByIdx(mwIndex i, mwIndex j) const { return Vk.v(i, j); };
     Mat getSeeds() const { return seeds; };
     Mat getPx() const { return px; };
     Mat getPy() const { return py; };
-    double getK() const { return k; };
-    double getNr() const { return nr; };
-    double getNc() const { return nc; };
-    std::map<double, double> getSx() const { return Sx; };
-    std::map<double, double> getSy() const { return Sy; };
-    std::map<double, double> getSk() const { return Sk; };
-    std::map<double, RealVec> getNk() const { return Nk; };
+    real getK() const { return k; };
+    real getNr() const { return nr; };
+    real getNc() const { return nc; };
+    std::map<real, real> getSx() const { return Sx; };
+    std::map<real, real> getSy() const { return Sy; };
+    std::map<real, real> getSk() const { return Sk; };
+    std::map<real, RealVec> getNk() const { return Nk; };
 
-    vd(double rows, double cols);
+    vd(real rows, real cols);
     ~vd();
 };

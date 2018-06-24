@@ -13,28 +13,28 @@
 #endif
 
 #ifndef INF
-#define INF std::numeric_limits<double>::infinity()
+#define INF std::numeric_limits<real>::infinity()
 #endif
 
-bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, RealVec A) {
+bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
     if (A.size() < 1) {
         A = VD.Nk.at(s);
     }
-    const double pt1 = pt[0];
-    const double pt2 = pt[1];
-    const double s1 = VD.Sx.at(s);
-    const double s2 = VD.Sy.at(s);
+    const real pt1 = pt[0];
+    const real pt2 = pt[1];
+    const real s1 = VD.Sx.at(s);
+    const real s2 = VD.Sy.at(s);
 
-    auto f = [](double p1, double p2, double q1, double q2, double i) -> double {
+    auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
         return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
     };
 
     RealVec lb, ub;
 
-    for (double r : A) {
+    for (real r : A) {
         if (r != s) {
-            const double r1 = VD.Sx.at(r);
-            const double r2 = VD.Sy.at(r);
+            const real r1 = VD.Sx.at(r);
+            const real r2 = VD.Sy.at(r);
             if (r1 == s1) {
                 if (s2 > r2) {
                     if (pt2 < ((r2 + s2) / 2)) {
@@ -56,7 +56,7 @@ bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, RealVec A) 
         }
     }
 
-    double highestLB, lowestUB;
+    real highestLB, lowestUB;
     try {
         if (lb.size() > 0) {
             highestLB = *std::max_element(lb.begin(), lb.end());

@@ -8,24 +8,21 @@
 #include "getRegion.h"
 #endif
 
-#ifndef MAT
-#define MAT
-typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
-
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 // Return a n x 2 array of lower and upper bounds for R(s) for each row
-Mat getRegion(const vd &VD, double s) {
-    double k = VD.k;
-    const double s1 = VD.Sx.at(s);
-    const double s2 = VD.Sy.at(s);
+Mat getRegion(const vd &VD, real s) {
+    real k = VD.k;
+    const real s1 = VD.Sx.at(s);
+    const real s2 = VD.Sy.at(s);
 
     // Lambda expression to find maximum/minimum value of i in region
-    auto f = [](double p1, double p2, double q1, double q2, double i) -> double {
+    auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
         return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) -
                                        pow(q2, 2))) / (p1 - q1);
     };
@@ -40,15 +37,15 @@ Mat getRegion(const vd &VD, double s) {
     boundsDown *= -1;
 
     // Upward sweep including s2 row
-    for (double i = s2; i < VD.nc + 1; ++i) {
+    for (real i = s2; i < VD.nc + 1; ++i) {
         RealVec lb, ub;
 
-        const double boundsIdx = i - s2 + 1;
+        const real boundsIdx = i - s2 + 1;
         bool killLine = false;
-        for (double j = 0; j < A.size(); ++j) {
-            const double r = A[j];
-            const double r1 = VD.Sx.at(r);
-            const double r2 = VD.Sy.at(r);
+        for (real j = 0; j < A.size(); ++j) {
+            const real r = A[j];
+            const real r1 = VD.Sx.at(r);
+            const real r2 = VD.Sy.at(r);
 
             if (s1 > r1) {
                 lb.push_back(f(s1, s2, r1, r2, -i));
@@ -65,7 +62,7 @@ Mat getRegion(const vd &VD, double s) {
                 }
             }
         }
-        double highestLB, lowestUB;
+        real highestLB, lowestUB;
         if (!killLine) {
             highestLB = 0;
             lowestUB = 0;
@@ -98,12 +95,12 @@ Mat getRegion(const vd &VD, double s) {
     }
 
     // Downward sweep excluding s2 row
-    for (double i = s2 - 1; i > 0; --i) {
+    for (real i = s2 - 1; i > 0; --i) {
         RealVec lb, ub;
         bool killLine = false;
         for (auto r : A) {
-            const double r1 = VD.Sx.at(r);
-            const double r2 = VD.Sy.at(r);
+            const real r1 = VD.Sx.at(r);
+            const real r2 = VD.Sy.at(r);
             if (s1 > r1) {
                 lb.push_back(f(s1, s2, r1, r2, -i));
             } else if (r1 > s1) {
@@ -122,7 +119,7 @@ Mat getRegion(const vd &VD, double s) {
                 }
             }
         }
-        double highestLB, lowestUB;
+        real highestLB, lowestUB;
         if (!killLine) {
             highestLB = 0;
             lowestUB = 0;

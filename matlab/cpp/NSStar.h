@@ -12,9 +12,11 @@
 #include "vd.h"
 #endif
 
-#ifndef REALVEC
-#define REALVEC
-typedef std::vector<double> RealVec;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 RealVec Ns_star(const vd &VD);

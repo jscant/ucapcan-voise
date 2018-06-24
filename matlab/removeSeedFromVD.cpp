@@ -31,8 +31,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
 {
 
     const mxArray *SArrPtr = prhs[1];
-    double* SPtr = mxGetDoubles(SArrPtr);
-    double S = SPtr[0];
+    real* SPtr = mxGetDoubles(SArrPtr);
+    real S = SPtr[0];
 
 
     if (nlhs != 1 || nrhs != 2) {

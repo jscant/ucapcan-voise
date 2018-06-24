@@ -7,7 +7,7 @@
 #include "vd.h"
 #endif
 
-vd::vd(double rows, double cols) {
+vd::vd(real rows, real cols) {
     nr = rows;
     nc = cols;
 }

@@ -1,7 +1,3 @@
-//
-// Created by root on 20/06/18.
-//
-
 #ifndef NSSTAR_H
 #define NSSTAR_H
 #include "NSStar.h"
@@ -28,11 +24,11 @@
 #endif
 
 RealVec Ns_star(const vd &VD) {
-    const double s1 = VD.Sx.at(VD.k);
-    const double s2 = VD.Sy.at(VD.k);
+    const real s1 = VD.Sx.at(VD.k);
+    const real s2 = VD.Sy.at(VD.k);
 
-    double lam = VD.Vk.lam(s2 - 1, s1 - 1);
-    const double lamOG = lam;
+    real lam = VD.Vk.lam(s2 - 1, s1 - 1);
+    const real lamOG = lam;
     RealVec Ns = {lam};
     bool onlyNeighbour = false;
 
@@ -40,20 +36,20 @@ RealVec Ns_star(const vd &VD) {
         onlyNeighbour = true;
     }
 
-    double n = 0;
+    real n = 0;
     while (true) {
-        double NsLen = Ns.size();
+        real NsLen = Ns.size();
 
-        for (double nIdx = n; nIdx < VD.Nk.at(lam).size(); ++nIdx) {
-            const double r = VD.Nk.at(lam)[nIdx];
+        for (real nIdx = n; nIdx < VD.Nk.at(lam).size(); ++nIdx) {
+            const real r = VD.Nk.at(lam)[nIdx];
             if (inVector(Ns, r)) {
                 continue;
             }
 
-            const double r1 = VD.Sx.at(r);
-            const double r2 = VD.Sy.at(r);
+            const real r1 = VD.Sx.at(r);
+            const real r2 = VD.Sy.at(r);
 
-            std::array<double, 2> cc;
+            std::array<real, 2> cc;
             try {
                 cc = circumcentre(r1, r2, s1, s2, VD.Sx.at(lam), VD.Sy.at(lam));
             } catch (SKIZLinearSeedsException &e) {

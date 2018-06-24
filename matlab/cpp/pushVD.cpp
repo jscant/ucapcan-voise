@@ -26,7 +26,7 @@
 
 #ifndef MAT
 #define MAT
-typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 void pushVD(vd outputVD, mxArray *plhs[]){
@@ -75,7 +75,7 @@ void pushVD(vd outputVD, mxArray *plhs[]){
     sOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
 
     // Pointers declarations
-    double *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
+    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
             *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
             *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
 
@@ -132,7 +132,7 @@ void pushVD(vd outputVD, mxArray *plhs[]){
         cellPtrs[i] = mxGetCell(nkOutgoingArray, i);
         mwIndex cellLen = outputVD.Nk.at(i + 1).size();
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);
-        double *tmpPtr = mxGetDoubles(tmpArr);
+        real *tmpPtr = mxGetDoubles(tmpArr);
         for (mwIndex j = 0; j < cellLen; ++j) {
             tmpPtr[j] = outputVD.Nk.at(i + 1).at(j);
         }

@@ -46,8 +46,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
     }
 
     // Get new seed information
-    double *Sdoub = mxGetDoubles(prhs[1]);
-    double s1 = Sdoub[0], s2 = Sdoub[1];
+    real *Sdoub = mxGetDoubles(prhs[1]);
+    real s1 = Sdoub[0], s2 = Sdoub[1];
 
     // Grab VD data from ML struct
     vd outputVD = grabVD(prhs);

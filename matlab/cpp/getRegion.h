@@ -5,9 +5,11 @@
 #include "vd.h"
 #endif
 
-#ifndef MAT
-#define MAT
-typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
+#ifndef TYPEDEFS
+#define TYPEDEFS
+typedef double real;
+typedef std::vector<real> RealVec;
+typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-Mat getRegion(const vd &VD, double s);
+Mat getRegion(const vd &VD, real s);
