@@ -1,3 +1,7 @@
+/*
+ * Useful auxilliary functions - used in many higher level functions.
+ */
+
 #include <array>
 #include <vector>
 #include <map>
@@ -10,24 +14,10 @@ typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-real sqDist(real p1, real p2, real q1, real q2);
-std::array<real, 2> circumcentre(real ax, real ay, real bx, real by, real cx, real cy);
-bool inVector(const RealVec &vec, real item);
-void updateDict(std::map<real, RealVec> &d, real key, real value);
+real sqDist(const real &p1, const real &p2, const real &q1, const real &q2);
+std::array<real, 2> circumcentre(const real &ax, const real &ay, const real &bx, const real &by, const real &cx,
+                                 const real &cy);
+template <class T1, class T2>
+bool inVector(const std::vector<T1> &vec, const T2 &item);
 
-
-// Some useful general purpose printing fns
-std::string toString(const char *&t);
-
-std::string toString(const std::string &t);
-
-template<class T>
-std::string toString(const T &t);
-
-namespace aux {
-    template<class T>
-    void print(T value);
-
-
-    void print(real value);
-}
+void updateDict(std::map<real, RealVec> &d, const real &key, const real &value);

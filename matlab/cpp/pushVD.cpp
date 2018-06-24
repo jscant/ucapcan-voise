@@ -29,7 +29,7 @@
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-void pushVD(vd outputVD, mxArray *plhs[]){
+void pushVD(vd outputVD, mxArray *plhs[]) {
     // Output arrays
     mxArray *nrOutgoingArray, *ncOutgoingArray, *wOutgoingArray,
             *sOutgoingArray, *xOutgoingArray, *yOutgoingArray,
@@ -76,8 +76,8 @@ void pushVD(vd outputVD, mxArray *plhs[]){
 
     // Pointers declarations
     real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
-            *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
-            *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
+         *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
+         *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
 
     // Get pointers to relevant mxArrays
     lamPtr = mxGetDoubles(lamOutgoingArray);
@@ -115,13 +115,13 @@ void pushVD(vd outputVD, mxArray *plhs[]){
         syPtr[i] = outputVD.Sy.at(i + 1);
         try {
             skPtr[i] = outputVD.Sk.at(i + 1);
-        } catch (std::out_of_range &e){
+        } catch (std::out_of_range &e) {
             continue; // This is expected behaviour.
         }
     }
 
     mwIndex pos = 0;
-    for(auto const &s: outputVD.Sk){
+    for(auto const &s: outputVD.Sk) {
         skPtr[pos] = s.second;
         pos += 1;
     }

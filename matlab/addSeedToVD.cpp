@@ -41,7 +41,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
 
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(
-                " Invalid number of input and output arguments");
+            " Invalid number of input and output arguments");
         return;
     }
 
@@ -55,7 +55,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     // Add seed to VD
     try {
         addSeed(outputVD, s1, s2);
-    } catch (SKIZException &e){
+    } catch (SKIZException &e) {
         mexErrMsgTxt(e.what());
     }
 

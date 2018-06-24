@@ -12,6 +12,6 @@ vd::vd(real rows, real cols) {
     nc = cols;
 }
 
-vd::~vd(){
+vd::~vd() {
     return;
 }

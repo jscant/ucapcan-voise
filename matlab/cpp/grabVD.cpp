@@ -24,7 +24,7 @@
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-vd grabVD(const mxArray *prhs[]){
+vd grabVD(const mxArray *prhs[]) {
     real nc, nr, k;
     Mat lam, v, px, py;
     std::map<real, real> Sx, Sy, Sk;
@@ -48,9 +48,9 @@ vd grabVD(const mxArray *prhs[]){
             *syMIncomingArray;
 
     real *nrIncoming, *ncIncoming, *xIncoming, *yIncoming, *kIncoming,
-            *skIncoming, *sxIncoming, *syIncoming, *wxmIncoming, *wxMIncoming,
-            *wymIncoming, *wyMIncoming, *sxmIncoming, *sxMIncoming, *symIncoming,
-            *syMIncoming;
+         *skIncoming, *sxIncoming, *syIncoming, *wxmIncoming, *wxMIncoming,
+         *wymIncoming, *wyMIncoming, *sxmIncoming, *sxMIncoming, *symIncoming,
+         *syMIncoming;
 
     // Populate mxArrays with data from VD ML struct
     nrIncomingArray = mxGetField(prhs[0], 0, "nr");
@@ -81,8 +81,8 @@ vd grabVD(const mxArray *prhs[]){
 
     // Pointers declarations
     real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
-            *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
-            *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
+         *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
+         *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
 
     // Pointers to mxArrays containing ML data
     nrPtr = mxGetDoubles(nrIncomingArray);
@@ -146,8 +146,8 @@ vd grabVD(const mxArray *prhs[]){
         Sy[i + 1] = syPtr[i];
     }
 
-    for (mwIndex i = 0; i < skLen; ++i){
-        if(skPtr[i] == 0){
+    for (mwIndex i = 0; i < skLen; ++i) {
+        if(skPtr[i] == 0) {
             mexPrintf("###########################################\n");
         }
         Sk[skPtr[i]] = skPtr[i];
@@ -172,19 +172,19 @@ vd grabVD(const mxArray *prhs[]){
     // Create and populate vd
     vd VD = vd(nr, nc);
 
-/*
-    VD.setK(k);
-    VD.setLam(lam);
-    VD.setV(v);
-    VD.setPx(px);
-    VD.setPy(py);
-    VD.setSx(Sx);
-    VD.setSy(Sy);
-    VD.setNk(Nk);
-    VD.setSk(Sk);
-    VD.setW(W);
-    VD.setS(S_str);
-*/
+    /*
+        VD.setK(k);
+        VD.setLam(lam);
+        VD.setV(v);
+        VD.setPx(px);
+        VD.setPy(py);
+        VD.setSx(Sx);
+        VD.setSy(Sy);
+        VD.setNk(Nk);
+        VD.setSk(Sk);
+        VD.setW(W);
+        VD.setS(S_str);
+    */
 
     VD.k = k;
     VD.Vk.lam = lam;

@@ -5,7 +5,9 @@
 
 #ifndef GETREGION_H
 #define GETREGION_H
+
 #include "getRegion.h"
+
 #endif
 
 #ifndef TYPEDEFS
@@ -23,8 +25,7 @@ Mat getRegion(const vd &VD, real s) {
 
     // Lambda expression to find maximum/minimum value of i in region
     auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
-        return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) -
-                                       pow(q2, 2))) / (p1 - q1);
+        return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
     };
 
     RealVec A = VD.Nk.at(s);
@@ -155,7 +156,7 @@ Mat getRegion(const vd &VD, real s) {
     Mat result(boundsUp.rows() + boundsDown.rows(), 2);
 
     result << boundsDown.colwise().reverse(),
-            boundsUp;
+           boundsUp;
 
     return result;
 }

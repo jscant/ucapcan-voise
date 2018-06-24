@@ -9,7 +9,7 @@
 #include <string>
 #endif
 
-class SKIZException : public std::exception{
+class SKIZException : public std::exception {
 private:
     std::string  msg;
 public:
