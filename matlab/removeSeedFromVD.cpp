@@ -1,12 +1,5 @@
-#ifndef MEX_H
-#define MEX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/matrix.h"
-#endif
+#include <mex.h>
+#include <matrix.h>
 
 #ifndef VD_H
 #define VD_H

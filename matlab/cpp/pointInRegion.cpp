@@ -16,7 +16,7 @@
 #define INF std::numeric_limits<double>::infinity()
 #endif
 
-bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, std::vector<double> A) {
+bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, RealVec A) {
     if (A.size() < 1) {
         A = VD.Nk.at(s);
     }
@@ -29,7 +29,7 @@ bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, std::vector
         return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
     };
 
-    std::vector<double> lb, ub;
+    RealVec lb, ub;
 
     for (double r : A) {
         if (r != s) {

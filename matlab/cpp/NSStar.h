@@ -12,5 +12,10 @@
 #include "vd.h"
 #endif
 
-std::vector<double> Ns_star(const vd &VD);
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
+#endif
+
+RealVec Ns_star(const vd &VD);
 

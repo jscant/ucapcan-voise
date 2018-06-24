@@ -1,9 +1,7 @@
 #include <mex.h>
-
 #include <matrix.h>
-
-//#include "cpp/eigen/Eigen/Dense"
 #include <eigen3/Eigen/Dense>
+#include <map>
 
 #ifndef VD_H
 #define VD_H
@@ -35,7 +33,7 @@
 #include "cpp/pushVD.h"
 #endif
 
-#include <map>
+
 
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])

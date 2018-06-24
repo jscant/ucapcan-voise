@@ -8,4 +8,9 @@
 #include <vector>
 #endif //VECTOR_H
 
-bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, std::vector<double> A);
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
+#endif
+
+bool pointInRegion(const vd &VD, std::array<double, 2> pt, double s, RealVec A);

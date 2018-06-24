@@ -1,3 +1,10 @@
+#include <mex.h>
+#include <math.h>
+#include <algorithm>
+#include <array>
+#include <vector>
+#include <map>
+
 #ifndef AUX_H
 #define AUX_H
 #include "aux.h"
@@ -8,34 +15,9 @@
 #include "skizException.h"
 #endif
 
-#ifndef MATH_H
-#define MATH_H
-#include <math.h>
-#endif //MATH_H
-
-#ifndef ALGORITHM_H
-#define ALGORITHM_H
-#include <algorithm>
-#endif
-
-#ifndef ARRAY_H
-#define ARRAY_H
-#include <array>
-#endif //ARRAY_H
-
-#ifndef VECTOR_H
-#define VECTOR_H
-#include <vector>
-#endif //VECTOR_H
-
-#ifndef MAP_H
-#define MAP_H
-#include <map>
-#endif //MAP_H
-
-#ifndef MEX_H
-#define MEX_H
-#include "mex.h"
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
 #endif
 
 //Use square distance where possible to avoid floating point precision problems
@@ -63,7 +45,7 @@ std::array<double, 2> circumcentre(double ax, double ay, double bx, double by, d
     return result;
 }
 
-bool inVector(const std::vector<double> &vec, double item){
+bool inVector(const RealVec &vec, double item){
     if(vec.size() < 1){
         return false;
     }
@@ -74,8 +56,8 @@ bool inVector(const std::vector<double> &vec, double item){
     }
 }
 
-void updateDict(std::map<double, std::vector<double>> &d, double key, double value) {
-    std::vector<double> lst = d[key];
+void updateDict(std::map<double, RealVec> &d, double key, double value) {
+    RealVec lst = d[key];
     if(!inVector(lst, value)){
         lst.push_back(value);
         d[key] = lst;

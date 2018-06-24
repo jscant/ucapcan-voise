@@ -27,13 +27,13 @@
 #include "skizException.h"
 #endif
 
-std::vector<double> Ns_star(const vd &VD) {
+RealVec Ns_star(const vd &VD) {
     const double s1 = VD.Sx.at(VD.k);
     const double s2 = VD.Sy.at(VD.k);
 
     double lam = VD.Vk.lam(s2 - 1, s1 - 1);
     const double lamOG = lam;
-    std::vector<double> Ns = {lam};
+    RealVec Ns = {lam};
     bool onlyNeighbour = false;
 
     if (VD.Nk.at(lam).size() == 1) {

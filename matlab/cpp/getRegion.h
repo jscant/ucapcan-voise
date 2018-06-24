@@ -1,8 +1,4 @@
-
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "eigen/Eigen/Dense"
-#endif
+#include <eigen3/Eigen/Dense>
 
 #ifndef VD_H
 #define VD_H

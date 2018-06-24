@@ -1,33 +1,17 @@
-//
-// Created by root on 21/06/18.
-//
-
-#include "pushVD.h"
-
-//
-// Created by root on 21/06/18.
-//
-
-#include "grabVD.h"
-
-#ifndef MEX_H
-#define MEX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/matrix.h"
-#endif
-
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "eigen/Eigen/Dense"
-#endif
-
-#ifndef STRING_H
-#define STRING_H
+#include <mex.h>
+#include <matrix.h>
+#include <eigen3/Eigen/Dense>
 #include <string>
+#include <map>
+
+#ifndef PUSHVD_H
+#define PUSHVD_H
+#include "pushVD.h"
+#endif
+
+#ifndef GRABVD_H
+#define GRABVD_H
+#include "grabVD.h"
 #endif
 
 #ifndef AUX_H
@@ -38,11 +22,6 @@
 #ifndef SKIZEXCEPTION_H
 #define SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
-
-#ifndef MAP_H
-#define MAP_H
-#include <map>
 #endif
 
 #ifndef MAT

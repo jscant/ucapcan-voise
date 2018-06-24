@@ -42,6 +42,11 @@
 #include "aux.h"
 #endif
 
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
+#endif
+
 #include <omp.h>
 
 bool addSeed(vd &VD, double s1, double s2){
@@ -51,12 +56,12 @@ bool addSeed(vd &VD, double s1, double s2){
     VD.Sk[VD.k] = VD.k;
 
     VD.Nk[VD.k] = Ns_star(VD);
-    std::map<double, std::vector<double>> newDict;
+    std::map<double, RealVec> newDict;
 
     for (int s : VD.Nk.at(VD.k)) {
-        std::vector<double> v1 = VD.Nk.at(s);
-        std::vector<double> v2 = VD.Nk.at(VD.k);
-        std::vector<double> init;
+        RealVec v1 = VD.Nk.at(s);
+        RealVec v2 = VD.Nk.at(VD.k);
+        RealVec init;
 
         for (auto i : v1) {
             if (!inVector(v2, i)) {
@@ -76,7 +81,7 @@ bool addSeed(vd &VD, double s1, double s2){
             if (inVector(newDict.at(r), s)) {
                 continue;
             }
-            std::vector<double> uList = VD.Nk.at(s);
+            RealVec uList = VD.Nk.at(s);
 
             uList.push_back(VD.k);
             for (auto u : uList) {

@@ -1,27 +1,12 @@
-//
-// Created by root on 21/06/18.
-//
-
-#include "grabVD.h"
-
-#ifndef MEX_H
-#define MEX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "/usr/local/MATLAB/R2018a/extern/include/matrix.h"
-#endif
-
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "eigen/Eigen/Dense"
-#endif
-
-#ifndef STRING_H
-#define STRING_H
+#include <mex.h>
+#include <math.h>
+#include <eigen3/Eigen/Dense>
 #include <string>
+#include <map>
+
+#ifndef GRABVD_H
+#define GRABVD_H
+#include "grabVD.h"
 #endif
 
 #ifndef AUX_H
@@ -34,11 +19,6 @@
 #include "skizException.h"
 #endif
 
-#ifndef MAP_H
-#define MAP_H
-#include <map>
-#endif
-
 #ifndef MAT
 #define MAT
 typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
@@ -48,7 +28,7 @@ vd grabVD(const mxArray *prhs[]){
     double nc, nr, k;
     Mat lam, v, px, py;
     std::map<double, double> Sx, Sy, Sk;
-    std::map<double, std::vector<double>> Nk;
+    std::map<double, RealVec> Nk;
     W_struct W;
     S_struct S_str;
 
@@ -182,7 +162,7 @@ vd grabVD(const mxArray *prhs[]){
         cellPtrs[i] = mxGetCell(nkIncomingArray, i);
         mwIndex cellLen = mxGetNumberOfElements(cellPtrs[i]);
         double *vals = mxGetDoubles(cellPtrs[i]);
-        std::vector<double> cellVec;
+        RealVec cellVec;
         for (mwIndex j = 0; j < cellLen; ++j) {
             cellVec.push_back(vals[j]);
         }

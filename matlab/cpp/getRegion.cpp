@@ -1,15 +1,11 @@
-//
-// Created by root on 20/06/18.
-//
+#include <eigen3/Eigen/Dense>
+#include <mex.h>
+#include <matrix.h>
+#include <math.h>
 
 #ifndef GETREGION_H
 #define GETREGION_H
 #include "getRegion.h"
-#endif
-
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "eigen/Eigen/Dense"
 #endif
 
 #ifndef MAT
@@ -17,19 +13,9 @@
 typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-#ifndef MEX_H
-#define MEX_H
-#include "mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "matrix.h"
-#endif
-
-#ifndef MATH_H
-#define MATH_H
-#include "math.h"
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
 #endif
 
 // Return a n x 2 array of lower and upper bounds for R(s) for each row
@@ -44,7 +30,7 @@ Mat getRegion(const vd &VD, double s) {
                                        pow(q2, 2))) / (p1 - q1);
     };
 
-    std::vector<double> A = VD.Nk.at(s);
+    RealVec A = VD.Nk.at(s);
     Mat boundsUp, boundsDown;
     boundsUp.resize(VD.nc - s2 + 1, 2);
     boundsDown.resize(s2 - 1, 2);
@@ -55,7 +41,7 @@ Mat getRegion(const vd &VD, double s) {
 
     // Upward sweep including s2 row
     for (double i = s2; i < VD.nc + 1; ++i) {
-        std::vector<double> lb, ub;
+        RealVec lb, ub;
 
         const double boundsIdx = i - s2 + 1;
         bool killLine = false;
@@ -113,7 +99,7 @@ Mat getRegion(const vd &VD, double s) {
 
     // Downward sweep excluding s2 row
     for (double i = s2 - 1; i > 0; --i) {
-        std::vector<double> lb, ub;
+        RealVec lb, ub;
         bool killLine = false;
         for (auto r : A) {
             const double r1 = VD.Sx.at(r);

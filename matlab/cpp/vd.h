@@ -2,40 +2,21 @@
 // Created by root on 12/06/18.
 //
 // CHANGE FILENAME TO VD.H
-
-#ifndef MEX_H
-#define MEX_H
-#include "mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "matrix.h"
-#endif
-
-#ifndef VECTOR_H
-#define VECTOR_H
+#include <mex.h>
+#include <matrix.h>
 #include <vector>
-#endif
-
-#ifndef MAP_H
-#define MAP_H
 #include <map>
-#endif
-
-#ifndef ALGORITHM_H
-#define ALGORITHM_H
 #include <algorithm>
-#endif
-
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "eigen/Eigen/Dense"
-#endif
+#include <eigen3/Eigen/Dense>
 
 #ifndef MAT
 #define MAT
 typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat;
+#endif
+
+#ifndef REALVEC
+#define REALVEC
+typedef std::vector<double> RealVec;
 #endif
 
 struct W_struct {
@@ -65,7 +46,7 @@ public:
     double nc, nr, k;
     Mat seeds, px, py;
     std::map<double, double> Sx, Sy, Sk;
-    std::map<double, std::vector<double>> Nk;
+    std::map<double, RealVec> Nk;
     void setVk(V_struct val) { Vk = val; };
     void setW(W_struct val) { W = val; };
     void setS(S_struct val) { S = val; };
@@ -83,8 +64,8 @@ public:
     void setSxByIdx(mwIndex idx, double val) { Sx[idx] = val; };
     void setSyByIdx(mwIndex idx, double val) { Sy[idx] = val; };
     void setSkByIdx(mwIndex idx, double val) { Sk[idx] = val; };
-    void setNk(std::map<double, std::vector<double>> val) { Nk = val; };
-    void setNkByValue(mwIndex idx, std::vector<double> val) { Nk[idx] = val; };
+    void setNk(std::map<double, RealVec> val) { Nk = val; };
+    void setNkByValue(mwIndex idx, RealVec val) { Nk[idx] = val; };
 
     V_struct getVk() const { return Vk; };
     W_struct getW() const { return W; };
@@ -102,7 +83,7 @@ public:
     std::map<double, double> getSx() const { return Sx; };
     std::map<double, double> getSy() const { return Sy; };
     std::map<double, double> getSk() const { return Sk; };
-    std::map<double, std::vector<double>> getNk() const { return Nk; };
+    std::map<double, RealVec> getNk() const { return Nk; };
 
     vd(double rows, double cols);
     ~vd();
