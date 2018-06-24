@@ -21,7 +21,8 @@
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 compileMEX;
-
+tic
 webVOISE('../share/VOISEdemo2.dat');
-
+disp("TOTAL TIME:\n")
+toc
 %quit

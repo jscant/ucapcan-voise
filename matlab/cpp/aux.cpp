@@ -95,8 +95,15 @@ std::string toString(const T &t) {
     return std::to_string(t);
 }
 
-template<class T>
-void print(T value) {
-    mexPrintf(toString(value).c_str());
-    mexPrintf("\n");
+namespace aux {
+    template<class T>
+    void print(T value) {
+        mexPrintf(toString(value).c_str());
+        mexPrintf("\n");
+    }
+
+    void print(double value) {
+        mexPrintf(toString(value).c_str());
+        mexPrintf("\n");
+    }
 }

@@ -8,34 +8,14 @@
 #include "/usr/local/MATLAB/R2018a/extern/include/matrix.h"
 #endif
 
-#ifndef EIGEN_DENSE_H
-#define EIGEN_DENSE_H
-#include "cpp/eigen/Eigen/Dense"
-#endif
-
-#ifndef STRING_H
-#define STRING_H
-#include <string>
-#endif
-
-#ifndef CSTRING_H
-#define CSTRING_H
-#include <cstring>
-#endif
-
 #ifndef VD_H
 #define VD_H
 #include "cpp/vd.h"
 #endif
 
-#ifndef AUX_H
-#define AUX_H
-#include "cpp/aux.h"
-#endif
-
-#ifndef ADDSEED_H
-#define ADDSEED_H
-#include "cpp/addSeed.h"
+#ifndef REMOVESEED_H
+#define REMOVESEED_H
+#include "cpp/removeSeed.h"
 #endif
 
 #ifndef SKIZEXCEPTION_H
@@ -43,8 +23,43 @@
 #include "cpp/skizException.h"
 #endif
 
-#ifndef MAP_H
-#define MAP_H
-#include <map>
+#ifndef GRABVD_H
+#define GRABVD_H
+#include "cpp/grabVD.h"
 #endif
+
+#ifndef PUSHVD_H
+#define PUSHVD_H
+#include "cpp/pushVD.h"
+#endif
+
+void mexFunction(int nlhs, mxArray *plhs[],
+                 int nrhs, const mxArray *prhs[])
+{
+
+    const mxArray *SArrPtr = prhs[1];
+    double* SPtr = mxGetDoubles(SArrPtr);
+    double S = SPtr[0];
+
+
+    if (nlhs != 1 || nrhs != 2) {
+        mexErrMsgTxt(
+                " Invalid number of input and output arguments");
+        return;
+    }
+
+    // Grab VD data from ML struct
+    vd outputVD = grabVD(prhs);
+
+    // Add seed to VD
+    try {
+        removeSeed(outputVD, S);
+    } catch (SKIZException &e){
+        mexErrMsgTxt(e.what());
+    }
+
+    // Push modified VD to ML VD struct (handles memory allocation etc)
+    pushVD(outputVD, plhs);
+
+}
 

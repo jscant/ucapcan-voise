@@ -134,7 +134,17 @@ void pushVD(vd outputVD, mxArray *plhs[]){
     for (mwIndex i = 0; i < sxLen; ++i) {
         sxPtr[i] = outputVD.Sx.at(i + 1);
         syPtr[i] = outputVD.Sy.at(i + 1);
-        skPtr[i] = outputVD.Sk.at(i + 1);
+        try {
+            skPtr[i] = outputVD.Sk.at(i + 1);
+        } catch (std::out_of_range &e){
+            continue; // This is expected behaviour.
+        }
+    }
+
+    mwIndex pos = 0;
+    for(auto const &s: outputVD.Sk){
+        skPtr[pos] = s.second;
+        pos += 1;
     }
 
     mwIndex nkLen = mxGetNumberOfElements(nkOutgoingArray);

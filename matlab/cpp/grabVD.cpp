@@ -58,8 +58,6 @@ vd grabVD(const mxArray *prhs[]){
     double rows;
     double col;
 
-
-
     mxArray *nrIncomingArray, *ncIncomingArray, *wIncomingArray,
             *sIncomingArray, *xIncomingArray, *yIncomingArray,
             *nkIncomingArray, *kIncomingArray, *skIncomingArray,
@@ -96,7 +94,6 @@ vd grabVD(const mxArray *prhs[]){
     wymIncomingArray = mxGetField(wIncomingArray, 0, "ym");
     wyMIncomingArray = mxGetField(wIncomingArray, 0, "yM");
 
-
     sxmIncomingArray = mxGetField(sIncomingArray, 0, "xm");
     sxMIncomingArray = mxGetField(sIncomingArray, 0, "xM");
     symIncomingArray = mxGetField(sIncomingArray, 0, "ym");
@@ -123,7 +120,6 @@ vd grabVD(const mxArray *prhs[]){
     wxMPtr = mxGetDoubles(wxMIncomingArray);
     wymPtr = mxGetDoubles(wymIncomingArray);
     wyMPtr = mxGetDoubles(wyMIncomingArray);
-
 
     sxmPtr = mxGetDoubles(sxmIncomingArray);
     sxMPtr = mxGetDoubles(sxMIncomingArray);
@@ -163,12 +159,18 @@ vd grabVD(const mxArray *prhs[]){
     }
 
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
-
+    mwIndex skLen = std::max(mxGetM(skIncomingArray), mxGetN(skIncomingArray));
     // Populate seed data unordered maps
     for (mwIndex i = 0; i < sxLen; ++i) {
         Sx[i + 1] = sxPtr[i];
         Sy[i + 1] = syPtr[i];
-        Sk[i + 1] = skPtr[i];
+    }
+
+    for (mwIndex i = 0; i < skLen; ++i){
+        if(skPtr[i] == 0){
+            mexPrintf("###########################################\n");
+        }
+        Sk[skPtr[i]] = skPtr[i];
     }
 
     // Populate neighbour relationships from ML data

@@ -50,12 +50,7 @@ fprintf(1,'*** Starting merging phase\n')
 iMerge = 1;
 stopMerge = false;
 while ~stopMerge,
-
-    disp("~~~~~~~~~~~~~")
-    disp(size(VD.Sx))
-    disp(size(VD.Sy))
-    disp(size(VD.Sk))
-    disp(size(VD.Nk))
+    
   % compute homogeneity fuunction and dynamic threshold
   [WD,SD,WHC,SHC,HCThreshold] = computeHCThreshold(VD, params, mergePctile);
 
@@ -90,7 +85,7 @@ while ~stopMerge,
       fprintf(1,'s=%4d HC=%5.2f (%d) mu=%8.3g HC Threshold=%5.2f\n', ...
 		          [sk, SHC(isk),(SHC(isk) < HCThreshold),VD.Smu(isk),HCThreshold]);
 	  end
-	  % Flag for homogeneous neighbour VR
+	  % Flag for homogeneous neighbour VRc15
 	  ihc = (SHC(IST(VD.Nk{sk}))' < HCThreshold);
 	  if 0,
       fprintf(1,'n=%4d HC=%5.2f (%d) mu=%8.3g\n', ...
@@ -184,11 +179,20 @@ while ~stopMerge,
 	  nSr = length(Sk);
     fprintf(1,'Iter %2d Removing %d seeds from Voronoi Diagram\n', iMerge, nSr);
     %pause
+    params.mergeAlgo = 0;
 		switch params.mergeAlgo,
 		  case 0, % incremental
         for k = Sk(:)',
-          VD  = removeSeedFromVD(VD, k);
-					% diagnostic plot
+            useOld = 1;
+            if useOld
+              VD  = removeSeedFromVD2(VD, k);
+                        % diagnostic plot
+              save("vdold", "VD");
+            else
+                VD  = removeSeedFromVD(VD, k);
+                        % diagnostic plot
+              save("vdnew", "VD");
+            end
           if 0, drawVD(VD); end
         end
 			case 1, % full

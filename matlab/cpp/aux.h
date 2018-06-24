@@ -31,5 +31,10 @@ std::string toString(const std::string &t);
 template<class T>
 std::string toString(const T &t);
 
-template<class T>
-void print(T value);
+namespace aux {
+    template<class T>
+    void print(T value);
+
+
+    void print(double value);
+}
