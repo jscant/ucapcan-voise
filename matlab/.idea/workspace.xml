@@ -63,8 +63,8 @@
       <file leaf-file-name="removeSeed.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
+            <state relative-caret-position="754">
+              <caret line="155" column="15" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -72,35 +72,35 @@
       <file leaf-file-name="pushVD.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cpp/pushVD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="138" column="13" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="13" />
+            <state relative-caret-position="550">
+              <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removeSeedFromVD.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/removeSeedFromVD.cpp">
+      <file leaf-file-name="grabVD.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/grabVD.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+            <state relative-caret-position="72">
+              <caret line="5" selection-end-line="6" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
+      <file leaf-file-name="NSStar.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="9" selection-end-column="3" />
+            <state relative-caret-position="360">
+              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removeSeed.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cpp/removeSeed.h">
+      <file leaf-file-name="grabVD.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/grabVD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="414">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -108,8 +108,17 @@
       <file leaf-file-name="vd.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/vd.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+            <state relative-caret-position="396">
+              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="removeSeedFromVD.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/removeSeedFromVD.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -125,13 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>double lb</find>
-      <find>pointinre</find>
-      <find>.at</find>
-      <find>skiz</find>
-      <find>argm</find>
-      <find>!!!</find>
-      <find>lam</find>
       <find>setsk</find>
       <find>erase</find>
       <find>push</find>
@@ -143,7 +145,6 @@
       <find>Flag</find>
       <find>&lt;double,</find>
       <find>Nk.at(Sk</find>
-      <find>mexPrintf</find>
       <find>result.insert</find>
       <find>mexPrint</find>
       <find>string</find>
@@ -155,6 +156,14 @@
       <find>FINISH</find>
       <find>Nk</find>
       <find>mxSet</find>
+      <find>flag 1</find>
+      <find>17</find>
+      <find>create</find>
+      <find>mxCreate</find>
+      <find>mwIndex</find>
+      <find>rows</find>
+      <find>mexPrintf</find>
+      <find>mexP</find>
     </findStrings>
     <replaceStrings>
       <replace>VD.Nk</replace>
@@ -173,7 +182,6 @@
         <option value="$PROJECT_DIR$/cpp/grabVD.h" />
         <option value="$PROJECT_DIR$/cpp/pushVD.h" />
         <option value="$PROJECT_DIR$/addSeedToVD.cpp" />
-        <option value="$PROJECT_DIR$/cpp/grabVD.cpp" />
         <option value="$PROJECT_DIR$/cpp/getRegion.h" />
         <option value="$PROJECT_DIR$/cpp/NSStar.h" />
         <option value="$PROJECT_DIR$/cpp/NSStar.cpp" />
@@ -185,9 +193,10 @@
         <option value="$PROJECT_DIR$/cpp/addSeed.cpp" />
         <option value="$PROJECT_DIR$/cpp/aux.h" />
         <option value="$PROJECT_DIR$/cpp/aux.cpp" />
-        <option value="$PROJECT_DIR$/cpp/pushVD.cpp" />
         <option value="$PROJECT_DIR$/cpp/removeSeed.cpp" />
         <option value="$PROJECT_DIR$/removeSeedFromVD.cpp" />
+        <option value="$PROJECT_DIR$/cpp/grabVD.cpp" />
+        <option value="$PROJECT_DIR$/cpp/pushVD.cpp" />
       </list>
     </option>
   </component>
@@ -202,10 +211,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="992" />
-    <option name="y" value="-4" />
-    <option name="width" value="928" />
-    <option name="height" value="1084" />
+    <option name="x" value="896" />
+    <option name="y" value="130" />
+    <option name="width" value="926" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -281,12 +290,14 @@
       <workItem from="1529509681739" duration="41523000" />
       <workItem from="1529746117713" duration="18239000" />
       <workItem from="1529834012222" duration="23846000" />
-      <workItem from="1530006544179" duration="6516000" />
+      <workItem from="1530006544179" duration="8573000" />
+      <workItem from="1530022368754" duration="198000" />
+      <workItem from="1530030059103" duration="8890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180093000" />
+    <option name="totallyTimeSpent" value="191238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -296,12 +307,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="CMake" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -521,13 +532,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/grabVD.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" lean-forward="true" selection-end-line="6" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/MATLAB/R2018a/extern/include/mex.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
@@ -539,9 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="e#14#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -549,16 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="29" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/grabVD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#595#672#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,16 +567,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/getRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="e#174#310#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,13 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/vd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -651,13 +629,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="106" column="28" lean-forward="true" selection-start-line="106" selection-start-column="28" selection-end-line="106" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/pointInRegion.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -668,17 +639,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="754">
+          <caret line="155" column="15" selection-start-line="155" selection-start-column="6" selection-end-line="155" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/vd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/grabVD.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/grabVD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/removeSeedFromVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="430">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cpp/pushVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="13" />
+        <state relative-caret-position="550">
+          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
         </state>
       </provider>
     </entry>

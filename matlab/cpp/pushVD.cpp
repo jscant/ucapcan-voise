@@ -31,7 +31,8 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 
 void pushVD(vd outputVD, mxArray *plhs[]) {
     // Output arrays
-    mxArray *nrOutgoingArray, *ncOutgoingArray, *wOutgoingArray,
+    //mexPrintf("PUSH FLAG A\n");
+    /*mxArray *nrOutgoingArray, *ncOutgoingArray, *wOutgoingArray,
             *sOutgoingArray, *xOutgoingArray, *yOutgoingArray,
             *nkOutgoingArray, *kOutgoingArray, *skOutgoingArray,
             *sxOutgoingArray, *syOutgoingArray, *vkOutgoingArray,
@@ -39,69 +40,69 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
             *wxMOutgoingArray, *wymOutgoingArray, *wyMOutgoingArray,
             *sxmOutgoingArray, *sxMOutgoingArray, *symOutgoingArray,
             *syMOutgoingArray;
-
+    */
     // Field names for ML struct
     const char *vdFnames[] = {"nr", "nc", "W", "S", "x", "y", "Nk", "k", "Sk", "Sx", "Sy", "Vk"};
     const char *vkFnames[] = {"lambda", "v"};
     const char *wFnames[] = {"xm", "xM", "ym", "yM"};
 
     const mwSize nkDims[2] = {outputVD.Nk.size(), 1};
-    mwIndex nCols = outputVD.nc;
-    mwIndex nRows = outputVD.nr;
+    int nCols = outputVD.nc;
+    int nRows = outputVD.nr;
 
     // Create space in memory for result struct (VD)
-    nrOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    ncOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    xOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
-    yOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
-    nkOutgoingArray = mxCreateCellArray(1, nkDims);
-    kOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    skOutgoingArray = mxCreateDoubleMatrix(outputVD.Sk.size(), 1, mxREAL);
-    sxOutgoingArray = mxCreateDoubleMatrix(outputVD.Sx.size(), 1, mxREAL);
-    syOutgoingArray = mxCreateDoubleMatrix(outputVD.Sy.size(), 1, mxREAL);
-    vOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
-    lamOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
-    wxmOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    wxMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    wymOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    wyMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    sxmOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    sxMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    symOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    syMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *nrOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *ncOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *xOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
+    mxArray *yOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
+    mxArray *nkOutgoingArray = mxCreateCellArray(1, nkDims);
+    mxArray *kOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *skOutgoingArray = mxCreateDoubleMatrix(outputVD.Sk.size(), 1, mxREAL);
+    mxArray *sxOutgoingArray = mxCreateDoubleMatrix(outputVD.Sx.size(), 1, mxREAL);
+    mxArray *syOutgoingArray = mxCreateDoubleMatrix(outputVD.Sy.size(), 1, mxREAL);
+    mxArray *vOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
+    mxArray *lamOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
+    mxArray *wxmOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *wxMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *wymOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *wyMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *sxmOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *sxMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *symOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
+    mxArray *syMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
 
-    vkOutgoingArray = mxCreateStructMatrix(1, 1, 2, vkFnames);
-    wOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
-    sOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
+    mxArray *vkOutgoingArray = mxCreateStructMatrix(1, 1, 2, vkFnames);
+    mxArray *wOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
+    mxArray *sOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
 
     // Pointers declarations
-    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
-         *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
-         *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
+//    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
+ //        *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
+  //       *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
 
     // Get pointers to relevant mxArrays
-    lamPtr = mxGetDoubles(lamOutgoingArray);
-    vPtr = mxGetDoubles(vOutgoingArray);
-    xPtr = mxGetDoubles(xOutgoingArray);
-    yPtr = mxGetDoubles(yOutgoingArray);
-    wxmPtr = mxGetDoubles(wxmOutgoingArray);
-    wxMPtr = mxGetDoubles(wxMOutgoingArray);
-    wymPtr = mxGetDoubles(wymOutgoingArray);
-    wyMPtr = mxGetDoubles(wyMOutgoingArray);
-    sxmPtr = mxGetDoubles(sxmOutgoingArray);
-    sxMPtr = mxGetDoubles(sxMOutgoingArray);
-    symPtr = mxGetDoubles(symOutgoingArray);
-    syMPtr = mxGetDoubles(syMOutgoingArray);
-    ncPtr = mxGetDoubles(ncOutgoingArray);
-    nrPtr = mxGetDoubles(nrOutgoingArray);
-    skPtr = mxGetDoubles(skOutgoingArray);
-    sxPtr = mxGetDoubles(sxOutgoingArray);
-    syPtr = mxGetDoubles(syOutgoingArray);
-    kPtr = mxGetDoubles(kOutgoingArray);
+    real *lamPtr = mxGetDoubles(lamOutgoingArray);
+    real *vPtr = mxGetDoubles(vOutgoingArray);
+    real *xPtr = mxGetDoubles(xOutgoingArray);
+    real *yPtr = mxGetDoubles(yOutgoingArray);
+    real *wxmPtr = mxGetDoubles(wxmOutgoingArray);
+    real *wxMPtr = mxGetDoubles(wxMOutgoingArray);
+    real *wymPtr = mxGetDoubles(wymOutgoingArray);
+    real *wyMPtr = mxGetDoubles(wyMOutgoingArray);
+    real *sxmPtr = mxGetDoubles(sxmOutgoingArray);
+    real *sxMPtr = mxGetDoubles(sxMOutgoingArray);
+    real *symPtr = mxGetDoubles(symOutgoingArray);
+    real *syMPtr = mxGetDoubles(syMOutgoingArray);
+    real *ncPtr = mxGetDoubles(ncOutgoingArray);
+    real *nrPtr = mxGetDoubles(nrOutgoingArray);
+    real *skPtr = mxGetDoubles(skOutgoingArray);
+    real *sxPtr = mxGetDoubles(sxOutgoingArray);
+    real *syPtr = mxGetDoubles(syOutgoingArray);
+    real *kPtr = mxGetDoubles(kOutgoingArray);
 
     // Populate ML struct matrices with results
-    for (mwIndex i = 0; i < nRows; ++i) {
-        for (mwIndex j = 0; j < nCols; ++j) {
+    for (int i = 0; i < nRows; ++i) {
+        for (int j = 0; j < nCols; ++j) {
             lamPtr[j * nCols + i] = outputVD.Vk.lam(i, j);
             vPtr[j * nCols + i] = outputVD.Vk.v(i, j);
             xPtr[j * nCols + i] = outputVD.px(i, j) + 1;
@@ -109,34 +110,40 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
         }
     }
 
-    mwIndex sxLen = outputVD.Sx.size();
-    for (mwIndex i = 0; i < sxLen; ++i) {
+    int sxLen = outputVD.Sx.size();
+    int count = 0;
+    std::map<real, real>::iterator it = outputVD.Sk.begin();
+    for (int i = 0; i < sxLen; ++i) {
         sxPtr[i] = outputVD.Sx.at(i + 1);
         syPtr[i] = outputVD.Sy.at(i + 1);
-        try {
-            skPtr[i] = outputVD.Sk.at(i + 1);
-        } catch (std::out_of_range &e) {
-            continue; // This is expected behaviour.
+        if (count < outputVD.Sk.size()) {
+            skPtr[i] = it->first;
+            ++it;
+            ++count;
         }
     }
 
-    mwIndex pos = 0;
+    int pos = 0;
     for(auto const &s: outputVD.Sk) {
+        //mexPrintf("Sk Flag 1\n");
         skPtr[pos] = s.second;
         pos += 1;
+       // mexPrintf("Sk Flag 2\n");
     }
 
-    mwIndex nkLen = mxGetNumberOfElements(nkOutgoingArray);
+    int nkLen = mxGetNumberOfElements(nkOutgoingArray);
     mxArray *cellPtrs[nkLen];
-    for (mwIndex i = 0; i < nkLen; ++i) {
+    for (int i = 0; i < nkLen; ++i) {
+        //mexPrintf("Nk Flag 1\n");
         cellPtrs[i] = mxGetCell(nkOutgoingArray, i);
-        mwIndex cellLen = outputVD.Nk.at(i + 1).size();
+        int cellLen = outputVD.Nk.at(i + 1).size();
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);
         real *tmpPtr = mxGetDoubles(tmpArr);
-        for (mwIndex j = 0; j < cellLen; ++j) {
+        for (int j = 0; j < cellLen; ++j) {
             tmpPtr[j] = outputVD.Nk.at(i + 1).at(j);
         }
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
+        //mexPrintf("Nk Flag 2\n");
     }
 
     // These are somewhat redundant for addSeed but here for consistency
@@ -184,4 +191,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
 
     mxSetField(vkOutgoingArray, 0, "v", vOutgoingArray);
     mxSetField(vkOutgoingArray, 0, "lambda", lamOutgoingArray);
+
+   // mexPrintf("PUSH FLAG B\n");
 }

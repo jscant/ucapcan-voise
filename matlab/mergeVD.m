@@ -187,8 +187,15 @@ while ~stopMerge,
 		switch params.mergeAlgo,
 		  case 0, % incremental
         for k = Sk(:)',
+	pause(0.1)
             VDOld = removeSeedFromVD2(VD, k);
+%            disp("ML FLAG 1");
             VDTMP = removeSeedFromVD(VD, k);
+            if k == 89
+ %               disp("ML FLAG X");
+  %              pause(3)
+Sk(:)
+            end
                 if(isfield(VD, 'divSHC'))
                     VDTMP.divSHC = VD.divSHC;
                 end
@@ -202,15 +209,18 @@ while ~stopMerge,
                     VDTMP.Ssdmu = VD.Ssdmu;
                 end
             VDNew = VDTMP;
-            results = compareVD(VDOld, VDNew, 1);
-            if results.same == 0
-                fprintf("iMerge: %i, k: %i\n", iMerge, k);
-                save("VDOld", "VDOld");
-                save("VDNew", "VDNew");
-                k(3)
-            end
+       %     results = compareVD(VDOld, VDNew, 1);
+       %    if results.same == 0
+       %         fprintf("iMerge: %i, k: %i\n", iMerge, k);
+       %         save("VDOld", "VDOld");
+       %         save("VDNew", "VDNew");
+       %         %k(3)
+       %     end
             VD = VDNew;
-            clear removeSeedFromVD;
+            if k == 89
+                save("VD89", "VD");
+            end
+   %         clear removeSeedFromVD;
             if 0
                 if useOld
                     VD = removeSeedFromVD2(VD, k);
@@ -229,14 +239,6 @@ while ~stopMerge,
                         VDTMP.Ssdmu = VD.Ssdmu;
                     end
                     VD = VDTMP;
-                end
-                if iMerge == 1
-                     if useOld
-                      save("vdold", "VD");
-                    else
-                      save("vdnew", "VD");
-                     end
-                     %k(3);
                 end
             end
             sv = sv + 1;
@@ -282,7 +284,7 @@ VD.mergeHCThreshold = mergeHCThreshold;
 function params = plotCurrentVD(VD, params, iMerge)
 
 VDW = getVDOp(VD, params.W, @(x) median(x));
-
+if 0
 clf
 subplot(111),
 imagesc(VDW),
@@ -311,4 +313,5 @@ end
 
 if params.movDiag,
   movieHandler(params, 'addframe');
+end
 end

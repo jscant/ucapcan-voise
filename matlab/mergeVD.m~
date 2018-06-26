@@ -188,10 +188,13 @@ while ~stopMerge,
 		  case 0, % incremental
         for k = Sk(:)',
             VDOld = removeSeedFromVD2(VD, k);
-            if useOld
-                VD = removeSeedFromVD2(VD, k);
-            else
-                VDTMP = removeSeedFromVD(VD, k);
+            disp("ML FLAG 1");
+            VDTMP = removeSeedFromVD(VD, k);
+            if k == 89
+                disp("ML FLAG X");
+                pause(3)
+            end
+            disp("ML FLAG 2");
                 if(isfield(VD, 'divSHC'))
                     VDTMP.divSHC = VD.divSHC;
                 end
@@ -204,19 +207,41 @@ while ~stopMerge,
                 if(isfield(VD, 'Ssdmu'))
                     VDTMP.Ssdmu = VD.Ssdmu;
                 end
-                VD = VDTMP;
+            VDNew = VDTMP;
+            results = compareVD(VDOld, VDNew, 1);
+            if results.same == 0
+                fprintf("iMerge: %i, k: %i\n", iMerge, k);
+                save("VDOld", "VDOld");
+                save("VDNew", "VDNew");
+                k(3)
             end
-            if iMerge == 1
-                 if useOld
-                  save("vdold", "VD");
+            VD = VDNew;
+            if k == 370
+                save("VD
+            clear removeSeedFromVD;
+            if 0
+                if useOld
+                    VD = removeSeedFromVD2(VD, k);
                 else
-                  save("vdnew", "VD");
-                 end
-                 %k(3);
+                    VDTMP = removeSeedFromVD(VD, k);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
+                end
             end
             sv = sv + 1;
 					% diagnostic plot
-          if 0, drawVD(VD); disp("@@@"); pause(3); end
+          if 0 || iMerge==16, drawVD(VD); disp("@@@"); pause(3); end
         end
 			case 1, % full
 			  Skeep = setdiff(VD.Sk, Sk);
@@ -257,7 +282,7 @@ VD.mergeHCThreshold = mergeHCThreshold;
 function params = plotCurrentVD(VD, params, iMerge)
 
 VDW = getVDOp(VD, params.W, @(x) median(x));
-
+if 0
 clf
 subplot(111),
 imagesc(VDW),
@@ -286,4 +311,5 @@ end
 
 if params.movDiag,
   movieHandler(params, 'addframe');
+end
 end

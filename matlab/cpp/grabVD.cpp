@@ -25,19 +25,20 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
 vd grabVD(const mxArray *prhs[]) {
-    real nc, nr, k;
+    //mexPrintf("GRAB FLAG A\n");
+    real nc=0, nr=0, k=0;
     Mat lam, v, px, py;
     std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
     W_struct W;
-    S_struct S_str;
+    memset(&W, 0, sizeof(W));
+    S_struct S_str = {0, 0, 0, 0};
+    memset(&S_str, 0, sizeof(S_str));
 
     // Get all input information from vd
     real nFields = mxGetNumberOfFields(prhs[0]);
     real nElements = mxGetNumberOfElements(prhs[0]);
-    real rows;
-    real col;
-
+/*
     mxArray *nrIncomingArray, *ncIncomingArray, *wIncomingArray,
             *sIncomingArray, *xIncomingArray, *yIncomingArray,
             *nkIncomingArray, *kIncomingArray, *skIncomingArray,
@@ -51,60 +52,60 @@ vd grabVD(const mxArray *prhs[]) {
          *skIncoming, *sxIncoming, *syIncoming, *wxmIncoming, *wxMIncoming,
          *wymIncoming, *wyMIncoming, *sxmIncoming, *sxMIncoming, *symIncoming,
          *syMIncoming;
-
+*/
     // Populate mxArrays with data from VD ML struct
-    nrIncomingArray = mxGetField(prhs[0], 0, "nr");
-    ncIncomingArray = mxGetField(prhs[0], 0, "nc");
-    wIncomingArray = mxGetField(prhs[0], 0, "W");
-    sIncomingArray = mxGetField(prhs[0], 0, "S");
-    xIncomingArray = mxGetField(prhs[0], 0, "x");
-    yIncomingArray = mxGetField(prhs[0], 0, "y");
-    nkIncomingArray = mxGetField(prhs[0], 0, "Nk");
-    kIncomingArray = mxGetField(prhs[0], 0, "k");
-    skIncomingArray = mxGetField(prhs[0], 0, "Sk");
-    sxIncomingArray = mxGetField(prhs[0], 0, "Sx");
-    syIncomingArray = mxGetField(prhs[0], 0, "Sy");
-    vkIncomingArray = mxGetField(prhs[0], 0, "Vk");
+    mxArray *nrIncomingArray = mxGetField(prhs[0], 0, "nr");
+    mxArray *ncIncomingArray = mxGetField(prhs[0], 0, "nc");
+    mxArray *wIncomingArray = mxGetField(prhs[0], 0, "W");
+    mxArray *sIncomingArray = mxGetField(prhs[0], 0, "S");
+    mxArray *xIncomingArray = mxGetField(prhs[0], 0, "x");
+    mxArray *yIncomingArray = mxGetField(prhs[0], 0, "y");
+    mxArray *nkIncomingArray = mxGetField(prhs[0], 0, "Nk");
+    mxArray *kIncomingArray = mxGetField(prhs[0], 0, "k");
+    mxArray *skIncomingArray = mxGetField(prhs[0], 0, "Sk");
+    mxArray *sxIncomingArray = mxGetField(prhs[0], 0, "Sx");
+    mxArray *syIncomingArray = mxGetField(prhs[0], 0, "Sy");
+    mxArray *vkIncomingArray = mxGetField(prhs[0], 0, "Vk");
 
-    lamIncomingArray = mxGetField(vkIncomingArray, 0, "lambda");
-    vIncomingArray = mxGetField(vkIncomingArray, 0, "v");
+    mxArray *lamIncomingArray = mxGetField(vkIncomingArray, 0, "lambda");
+    mxArray *vIncomingArray = mxGetField(vkIncomingArray, 0, "v");
 
-    wxmIncomingArray = mxGetField(wIncomingArray, 0, "xm");
-    wxMIncomingArray = mxGetField(wIncomingArray, 0, "xM");
-    wymIncomingArray = mxGetField(wIncomingArray, 0, "ym");
-    wyMIncomingArray = mxGetField(wIncomingArray, 0, "yM");
+    mxArray *wxmIncomingArray = mxGetField(wIncomingArray, 0, "xm");
+    mxArray *wxMIncomingArray = mxGetField(wIncomingArray, 0, "xM");
+    mxArray *wymIncomingArray = mxGetField(wIncomingArray, 0, "ym");
+    mxArray *wyMIncomingArray = mxGetField(wIncomingArray, 0, "yM");
 
-    sxmIncomingArray = mxGetField(sIncomingArray, 0, "xm");
-    sxMIncomingArray = mxGetField(sIncomingArray, 0, "xM");
-    symIncomingArray = mxGetField(sIncomingArray, 0, "ym");
-    syMIncomingArray = mxGetField(sIncomingArray, 0, "yM");
-
+    mxArray *sxmIncomingArray = mxGetField(sIncomingArray, 0, "xm");
+    mxArray *sxMIncomingArray = mxGetField(sIncomingArray, 0, "xM");
+    mxArray *symIncomingArray = mxGetField(sIncomingArray, 0, "ym");
+    mxArray *syMIncomingArray = mxGetField(sIncomingArray, 0, "yM");
+/*
     // Pointers declarations
     real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
          *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
          *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
-
+*/
     // Pointers to mxArrays containing ML data
-    nrPtr = mxGetDoubles(nrIncomingArray);
-    ncPtr = mxGetDoubles(ncIncomingArray);
-    kPtr = mxGetDoubles(kIncomingArray);
-    lamPtr = mxGetDoubles(lamIncomingArray);
-    vPtr = mxGetDoubles(vIncomingArray);
-    xPtr = mxGetDoubles(xIncomingArray);
-    yPtr = mxGetDoubles(yIncomingArray);
-    sxPtr = mxGetDoubles(sxIncomingArray);
-    syPtr = mxGetDoubles(syIncomingArray);
-    skPtr = mxGetDoubles(skIncomingArray);
+    real *nrPtr = mxGetDoubles(nrIncomingArray);
+    real *ncPtr = mxGetDoubles(ncIncomingArray);
+    real *kPtr = mxGetDoubles(kIncomingArray);
+    real *lamPtr = mxGetDoubles(lamIncomingArray);
+    real *vPtr = mxGetDoubles(vIncomingArray);
+    real *xPtr = mxGetDoubles(xIncomingArray);
+    real *yPtr = mxGetDoubles(yIncomingArray);
+    real *sxPtr = mxGetDoubles(sxIncomingArray);
+    real *syPtr = mxGetDoubles(syIncomingArray);
+    real *skPtr = mxGetDoubles(skIncomingArray);
 
-    wxmPtr = mxGetDoubles(wxmIncomingArray);
-    wxMPtr = mxGetDoubles(wxMIncomingArray);
-    wymPtr = mxGetDoubles(wymIncomingArray);
-    wyMPtr = mxGetDoubles(wyMIncomingArray);
+    real *wxmPtr = mxGetDoubles(wxmIncomingArray);
+    real *wxMPtr = mxGetDoubles(wxMIncomingArray);
+    real *wymPtr = mxGetDoubles(wymIncomingArray);
+    real *wyMPtr = mxGetDoubles(wyMIncomingArray);
 
-    sxmPtr = mxGetDoubles(sxmIncomingArray);
-    sxMPtr = mxGetDoubles(sxMIncomingArray);
-    symPtr = mxGetDoubles(symIncomingArray);
-    syMPtr = mxGetDoubles(syMIncomingArray);
+    real *sxmPtr = mxGetDoubles(sxmIncomingArray);
+    real *sxMPtr = mxGetDoubles(sxMIncomingArray);
+    real *symPtr = mxGetDoubles(symIncomingArray);
+    real *syMPtr = mxGetDoubles(syMIncomingArray);
 
     // Populate variables with data in mxArrays and their pointers
     nr = nrPtr[0];
@@ -147,9 +148,6 @@ vd grabVD(const mxArray *prhs[]) {
     }
 
     for (mwIndex i = 0; i < skLen; ++i) {
-        if(skPtr[i] == 0) {
-            mexPrintf("###########################################\n");
-        }
         Sk[skPtr[i]] = skPtr[i];
     }
 
@@ -197,6 +195,5 @@ vd grabVD(const mxArray *prhs[]) {
     VD.Nk = Nk;
     VD.W = W;
     VD.S = S_str;
-
     return VD;
 }

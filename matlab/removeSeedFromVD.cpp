@@ -29,31 +29,24 @@
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {
-    //mexPrintf("FLAG A\n");
-    const mxArray *SArrPtr = prhs[1];
-    real* SPtr = mxGetDoubles(SArrPtr);
-    real S = SPtr[0];
-    //mexPrintf("FLAG B\n");
-
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(
             " Invalid number of input and output arguments");
         return;
     }
+    real S = mxGetScalar(prhs[1]);
+    mexPrintf(std::to_string(S).c_str());
+    mexPrintf("\n");
 
     // Grab VD data from ML struct
-    mexPrintf("FLAG C\n");
     vd outputVD = grabVD(prhs);
-    mexPrintf("FLAG 0\n");
     // Add seed to VD
     try {
         removeSeed(outputVD, S);
     } catch (SKIZException &e) {
         mexErrMsgTxt(e.what());
     }
-    mexPrintf("FLAG 16\n");
     // Push modified VD to ML VD struct (handles memory allocation etc)
     pushVD(outputVD, plhs);
-    mexPrintf("FLAG 17\n");
 }
 

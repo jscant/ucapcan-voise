@@ -152,7 +152,7 @@ bool removeSeed(vd &VD, real Sk) {
     }
     //mexPrintf("FLAG 14\n");
     VD.Sk.erase((real)Sk);
-    VD.Nk.at(Sk) = {};
+    //VD.Nk.at(Sk) = {};
     //mexPrintf("FLAG 15\n");
     return false;
 }
