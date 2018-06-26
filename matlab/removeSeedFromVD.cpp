@@ -35,8 +35,6 @@ void mexFunction(int nlhs, mxArray *plhs[],
         return;
     }
     real S = mxGetScalar(prhs[1]);
-    mexPrintf(std::to_string(S).c_str());
-    mexPrintf("\n");
 
     // Grab VD data from ML struct
     vd outputVD = grabVD(prhs);

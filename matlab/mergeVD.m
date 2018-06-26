@@ -187,41 +187,25 @@ while ~stopMerge,
 		switch params.mergeAlgo,
 		  case 0, % incremental
         for k = Sk(:)',
-	pause(0.1)
-            VDOld = removeSeedFromVD2(VD, k);
-%            disp("ML FLAG 1");
-            VDTMP = removeSeedFromVD(VD, k);
-            if k == 89
- %               disp("ML FLAG X");
-  %              pause(3)
-Sk(:)
-            end
-                if(isfield(VD, 'divSHC'))
-                    VDTMP.divSHC = VD.divSHC;
-                end
-                if(isfield(VD, 'divHCThreshold'))
-                    VDTMP.divHCThreshold = VD.divHCThreshold;
-                end
-                if(isfield(VD, 'Smu'))
-                    VDTMP.Smu = VD.Smu;
-                end
-                if(isfield(VD, 'Ssdmu'))
-                    VDTMP.Ssdmu = VD.Ssdmu;
-                end
-            VDNew = VDTMP;
-       %     results = compareVD(VDOld, VDNew, 1);
-       %    if results.same == 0
-       %         fprintf("iMerge: %i, k: %i\n", iMerge, k);
-       %         save("VDOld", "VDOld");
-       %         save("VDNew", "VDNew");
-       %         %k(3)
-       %     end
-            VD = VDNew;
-            if k == 89
-                save("VD89", "VD");
-            end
-   %         clear removeSeedFromVD;
-            if 0
+            if 1
+                VDOld = removeSeedFromVD2(VD, k);
+                VDTMP = removeSeedFromVD(VD, k);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                VDNew = VDTMP;
+                compareVD(VDNew, VDOld, 1);
+                VD = VDNew;
+            else
                 if useOld
                     VD = removeSeedFromVD2(VD, k);
                 else

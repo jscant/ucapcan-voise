@@ -74,12 +74,9 @@ bool removeSeed(vd &VD, real Sk) {
                 continue; // We have not yet reached a row with pixels in R(s)
             }
         }
-        //mexPrintf("FLAG 1\n");
         finish = true;
         real lb = std::max(0.0, bounds(j, 0) - 1);
         real ub = std::min(VD.nc, bounds(j, 1) + 1);
-        lb = 0.0;
-        ub = 64;
         for (real i = lb; i < ub; ++i) {
             std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
             if(!pointInRegion(VD, pt, Sk, Ns)){
@@ -129,7 +126,6 @@ bool removeSeed(vd &VD, real Sk) {
                 if(u == r) {
                     continue;
                 }
-               // mexPrintf("FLAG 11\n");
                 std::array<real, 2> cc = { -1, -1 };
                 try {
                     cc = circumcentre(VD.Sx.at(s), VD.Sy.at(s), VD.Sx.at(r),
@@ -137,7 +133,6 @@ bool removeSeed(vd &VD, real Sk) {
                 } catch (SKIZLinearSeedsException &e) {
                     continue;
                 }
-              //  mexPrintf("FLAG 12\n");
                 if(pointInRegion(VD, cc, s, A)) {
                     updateDict(newDict, s, r);
                     updateDict(newDict, r, s);
@@ -146,13 +141,10 @@ bool removeSeed(vd &VD, real Sk) {
             }
         }
     }
-    //mexPrintf("FLAG 13\n");
     for(auto i : newDict) {
         VD.Nk.at(i.first) = i.second;
     }
-    //mexPrintf("FLAG 14\n");
     VD.Sk.erase((real)Sk);
-    //VD.Nk.at(Sk) = {};
-    //mexPrintf("FLAG 15\n");
+    VD.Nk.at(Sk) = {};
     return false;
 }

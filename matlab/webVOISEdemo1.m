@@ -23,4 +23,4 @@ clc; clear all;
 compileMEX;
 webVOISE('../share/VOISEdemo1.dat');
 
-quit
+%quit

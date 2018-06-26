@@ -131,7 +131,9 @@ params = plotVOISE(DVD, params, 1);
 if ~params.movDiag, vd1 = figure; end
 
 % Merging phase
+tic
 [MVD, params] = mergeVD(DVD, params);
+fprintf("Merging took %d seconds\n", toc);
 % save 
 save([params.oDir params.oMatFile], '-append', 'MVD');
 % plot
