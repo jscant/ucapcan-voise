@@ -1,0 +1,4 @@
+/opt/cmake-3.11.2/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jack/dev/project/voise-1.3/matlab
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jack/dev/project/voise-1.3/matlab/cmake-build-debug

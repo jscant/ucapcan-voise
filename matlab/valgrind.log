@@ -1,0 +1,493 @@
+==31604== Memcheck, a memory error detector
+==31604== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==31604== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==31604== Command: /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB -nosplash -nojvm
+==31604== Parent PID: 31476
+==31604== 
+--31604-- 
+--31604-- Valgrind options:
+--31604--    --error-limit=no
+--31604--    --leak-check=yes
+--31604--    --tool=memcheck
+--31604--    -v
+--31604--    --log-file=valgrind.log
+--31604-- Contents of /proc/version:
+--31604--   Linux version 4.13.0-45-generic (buildd@lgw01-amd64-011) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9)) #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018
+--31604-- 
+--31604-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--31604-- Page sizes: currently 4096, max supported 4096
+--31604-- Valgrind library directory: /usr/lib/valgrind
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--31604--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+--31604--   Considering /usr/lib/valgrind/memcheck-amd64-linux ..
+--31604--   .. CRC mismatch (computed eea41ea9 wanted 2009db78)
+--31604--    object doesn't have a symbol table
+--31604--    object doesn't have a dynamic symbol table
+--31604-- Scheduler: using generic scheduler lock implementation.
+--31604-- Reading suppressions file: /usr/lib/valgrind/default.supp
+==31604== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-31604-by-jack-on-???
+==31604== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-31604-by-jack-on-???
+==31604== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-31604-by-jack-on-???
+==31604== 
+==31604== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==31604== don't want to do, unless you know exactly what you're doing,
+==31604== or are doing some strange experiment):
+==31604==   /usr/lib/valgrind/../../bin/vgdb --pid=31604 ...command...
+==31604== 
+==31604== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==31604==   /path/to/gdb /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+==31604== and then give GDB the following command
+==31604==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=31604
+==31604== --pid is optional if only one valgrind process is running
+==31604== 
+--31604-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x3809e181 (???)
+--31604-- Reading syms from /usr/lib/valgrind/vgpreload_core-amd64-linux.so
+--31604--   Considering /usr/lib/valgrind/vgpreload_core-amd64-linux.so ..
+--31604--   .. CRC mismatch (computed 2567ccf6 wanted 49420590)
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+--31604--   Considering /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so ..
+--31604--   .. CRC mismatch (computed 0e27c9a8 wanted ac585421)
+--31604--    object doesn't have a symbol table
+==31604== WARNING: new redirection conflicts with existing -- ignoring it
+--31604--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x3809e181 ???
+--31604--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c31020 strlen
+--31604-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x4c30bc0 (index)
+--31604-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c320d0 (strcmp)
+--31604-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35270 (mempcpy)
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwi18n.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgraphics_state.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_system.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcpp11compat.so
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libstdc++.so.6.0.22
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libgcc_s.so.1
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--31604--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- REDIR: 0x401de80 (ld-linux-x86-64.so.2:stpcpy) redirected to 0x4c342c0 (stpcpy)
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwresource_core.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libdl-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/libdl-2.23.so ..
+--31604--   .. CRC mismatch (computed 39227170 wanted ab6e2c22)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libdl-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_filesystem.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libexpat.so.1.5.0
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicuuc.so.59.1
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicui18n.so.59.1
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
+--31604--   .. CRC mismatch (computed e8c3647b wanted c3efddac)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.23.so
+--31604--   Considering /usr/lib/debug/.build-id/ce/17e023542265fc11d9bc8f534bb4f070493d30.debug ..
+--31604--   .. build-id is valid
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmst.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmx.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_usm.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_extdata_array.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartupplugin.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_chrono.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_log.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_serialization.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libtbb.so.2
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwdisplay_device.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsettingscore.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwnativedisplay.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libcrypt-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/libcrypt-2.23.so ..
+--31604--   .. CRC mismatch (computed 5219d836 wanted 507c1b6b)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libcrypt-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libpam.so.0.83.1
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_date_time.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_regex.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libunwind.so.8.0.1
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicuio.so.59.1
+--31604-- Reading syms from /lib/x86_64-linux-gnu/librt-2.23.so
+--31604--   Considering /lib/x86_64-linux-gnu/librt-2.23.so ..
+--31604--   .. CRC mismatch (computed 734d0439 wanted 09d6393c)
+--31604--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/librt-2.23.so ..
+--31604--   .. CRC is valid
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlivecode.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcppmicroservices.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwregexp.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmpath.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_utilities.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstoragevfs.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcwf_interface.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwkeybrd.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_iostreams.so.1.56.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libCppMicroServices.so.3.1.1
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicudata.so.59.1
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libtbbmalloc.so.2
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libz.so.1.2.8
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwxmlcore.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libxerces-c-3.1.so
+--31604-- Reading syms from /lib/x86_64-linux-gnu/libaudit.so.1.0.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopccore.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopcmodel.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopczippackage.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopcmwservices.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmatlabstoragesystem.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstorageshlibstoragesys.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_interfaces.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstoragefilefolderobserver.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflnetwork.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstorageprovider.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstorageevents.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcrypto.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcryptoutils.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcryptocryptopp.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libminizip.so
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstoragesharedlib.so
+--31604--    object doesn't have a symbol table
+--31604-- REDIR: 0x70b5a00 (libc.so.6:strcasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b1280 (libc.so.6:strcspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b7cf0 (libc.so.6:strncasecmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b36f0 (libc.so.6:strpbrk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b3a80 (libc.so.6:strspn) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b514b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b51b0 (libc.so.6:memset) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b3400 (libc.so.6:rindex) redirected to 0x4c308a0 (rindex)
+--31604-- REDIR: 0x70aa130 (libc.so.6:malloc) redirected to 0x4c2db20 (malloc)
+--31604-- REDIR: 0x70b1720 (libc.so.6:strlen) redirected to 0x4c30f60 (strlen)
+--31604-- REDIR: 0x71739b0 (libc.so.6:__memmove_avx_unaligned) redirected to 0x4c32230 (memcpy@GLIBC_2.2.5)
+--31604-- REDIR: 0x6b1e2a0 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2e080 (operator new(unsigned long))
+--31604-- REDIR: 0x70b4bf0 (libc.so.6:__GI_memcmp) redirected to 0x4c33b90 (__GI_memcmp)
+--31604-- REDIR: 0x70afcd0 (libc.so.6:strcmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70c5570 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c31f90 (strcmp)
+--31604-- REDIR: 0x70aad10 (libc.so.6:calloc) redirected to 0x4c2faa0 (calloc)
+--31604-- REDIR: 0x70b4bb0 (libc.so.6:bcmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x7194430 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c33cd0 (__memcmp_sse4_1)
+--31604-- REDIR: 0x6b1c3f0 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2f1e0 (operator delete(void*))
+--31604-- REDIR: 0x70aaaa0 (libc.so.6:memalign) redirected to 0x4c2ff20 (memalign)
+--31604-- REDIR: 0x70aa4f0 (libc.so.6:free) redirected to 0x4c2ed80 (free)
+--31604-- REDIR: 0x70afa80 (libc.so.6:index) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70afab0 (libc.so.6:__GI_strchr) redirected to 0x4c30a00 (__GI_strchr)
+--31604-- REDIR: 0x6b1e360 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2e7a0 (operator new[](unsigned long))
+--31604-- REDIR: 0x70b18c0 (libc.so.6:strnlen) redirected to 0x4c30ee0 (strnlen)
+--31604-- REDIR: 0x70ba470 (libc.so.6:__GI_memcpy) redirected to 0x4c32b00 (__GI_memcpy)
+--31604-- REDIR: 0x6b1c420 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c2f6e0 (operator delete[](void*))
+--31604-- REDIR: 0x70b4060 (libc.so.6:__GI_strstr) redirected to 0x4c354d0 (__strstr_sse2)
+--31604-- REDIR: 0x70b4860 (libc.so.6:memchr) redirected to 0x4c32170 (memchr)
+--31604-- REDIR: 0x7198970 (libc.so.6:__memset_avx2) redirected to 0x4c344c0 (memset)
+--31604-- REDIR: 0x70b53b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34fa0 (__GI_mempcpy)
+--31604-- REDIR: 0x70afd10 (libc.so.6:__GI_strcmp) redirected to 0x4c31fe0 (__GI_strcmp)
+--31604-- REDIR: 0x70b1b70 (libc.so.6:__GI_strncmp) redirected to 0x4c31710 (__GI_strncmp)
+--31604-- REDIR: 0x70bc760 (libc.so.6:strchrnul) redirected to 0x4c34da0 (strchrnul)
+--31604-- REDIR: 0x70b5890 (libc.so.6:__GI_stpcpy) redirected to 0x4c33f80 (__GI_stpcpy)
+--31604-- REDIR: 0x70b4630 (libc.so.6:strstr) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70d0070 (libc.so.6:__strstr_sse2_unaligned) redirected to 0x4c35460 (strstr)
+--31604-- REDIR: 0x705fd00 (libc.so.6:unsetenv) redirected to 0x4c35a00 (unsetenv)
+--31604-- REDIR: 0x705fca0 (libc.so.6:setenv) redirected to 0x4c35aa0 (setenv)
+--31604-- REDIR: 0x70aa6c0 (libc.so.6:realloc) redirected to 0x4c2fce0 (realloc)
+--31604-- REDIR: 0x70b4ff0 (libc.so.6:__GI_memmove) redirected to 0x4c347e0 (__GI_memmove)
+--31604-- REDIR: 0x70bc550 (libc.so.6:rawmemchr) redirected to 0x4c34dd0 (rawmemchr)
+--31604-- REDIR: 0x70b33c0 (libc.so.6:strncpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70cc000 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c31570 (__strncpy_sse2_unaligned)
+--31604-- REDIR: 0x70d1d40 (libc.so.6:wcslen) redirected to 0x4c357c0 (wcslen)
+==31663== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-31663-by-jack-on-???
+==31663== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-31663-by-jack-on-???
+==31663== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-31663-by-jack-on-???
+==31663== 
+==31663== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==31663== don't want to do, unless you know exactly what you're doing,
+==31663== or are doing some strange experiment):
+==31663==   /usr/lib/valgrind/../../bin/vgdb --pid=31663 ...command...
+==31663== 
+==31663== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==31663==   /path/to/gdb /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+==31663== and then give GDB the following command
+==31663==   target remote | /usr/lib/valgrind/../../bin/vgdb --pid=31663
+==31663== --pid is optional if only one valgrind process is running
+==31663== 
+==31663== Warning: invalid file descriptor 1024 in syscall close()
+==31663==    at 0x711D8F0: __close_nocancel (syscall-template.S:84)
+==31663==    by 0x5B422FD: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so)
+==31663==    by 0x5B3D376: foundation::core::process::process::process(foundation::core::process::command const&, foundation::core::process::context const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so)
+==31663==    by 0x5E2D8F1: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==31663==    by 0x5E26E71: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==31663==    by 0x5E276E3: utGetOSCompat[abi:cxx11]() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==31663==    by 0x623E2D0: services::machine_config::machine_config() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==31663==    by 0x623F024: services::machine_config::instance() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==31663==    by 0x40AFF6: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==31663==    by 0x40B225: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==31663==    by 0x40B9D8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==31663==    by 0x406CB8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+--31604-- Reading syms from /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+--31604--   Considering /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0 ..
+--31604--   .. CRC mismatch (computed afbbdc31 wanted a2ee230b)
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+--31604--   Considering /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0 ..
+--31604--   .. CRC mismatch (computed 256f5df8 wanted 5d40ac88)
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+--31604--    object doesn't have a symbol table
+--31604-- REDIR: 0x70b1b20 (libc.so.6:strncmp) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70ba3f0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b1160 (libc.so.6:strcpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x70b5850 (libc.so.6:stpcpy) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x713c210 (libc.so.6:__memcpy_chk) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/sys/opengl/lib/glnxa64/libGL.so.1.6.0
+--31604-- Reading syms from /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+--31604--   Considering /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0 ..
+--31604--   .. CRC mismatch (computed b483887a wanted 38c83e44)
+--31604--    object doesn't have a symbol table
+--31604-- REDIR: 0x70af880 (libc.so.6:strcat) redirected to 0x4a286f0 (_vgnU_ifunc_wrapper)
+--31604-- REDIR: 0x7173ea0 (libc.so.6:__memcpy_avx_unaligned) redirected to 0x4c324a0 (memcpy@@GLIBC_2.14)
+--31604-- REDIR: 0x713c480 (libc.so.6:__strcpy_chk) redirected to 0x4c34e10 (__strcpy_chk)
+--31604-- REDIR: 0x716ba90 (libc.so.6:__strncmp_sse42) redirected to 0x4c317f0 (__strncmp_sse42)
+--31604-- REDIR: 0x7171ff0 (libc.so.6:__strncasecmp_avx) redirected to 0x4c31940 (strncasecmp)
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNet.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoFoundation.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoCrypto.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoUtil.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoXML.so.48
+--31604--    object doesn't have a symbol table
+--31604-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoJSON.so.48
+--31604--    object doesn't have a symbol table
+--31604-- REDIR: 0x70b5a70 (libc.so.6:__GI___strcasecmp_l) redirected to 0x4c31c00 (__GI___strcasecmp_l)
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F64879: BN_bin2bn (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F68AEB: BN_rand (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F686C9: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604== 
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F64AD7: BN_cmp (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F686B3: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==31604== 
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F64AD9: BN_cmp (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F686B3: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==31604== 
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F6423D: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604== 
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F6424C: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604== 
+==31604== Conditional jump or move depends on uninitialised value(s)
+==31604==    at 0x16F6425B: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604== 
+==31604== Use of uninitialised value of size 8
+==31604==    at 0x16F6426C: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604== 
+
+vex: the `impossible' happened:
+   isZeroU
+vex storage: T total 3134225344 bytes allocated
+vex storage: P total 640 bytes allocated
+
+valgrind: the 'impossible' happened:
+   LibVEX called failure_exit().
+
+host stacktrace:
+==31604==    at 0x38083F48: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x38084064: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380842A1: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380842CA: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x3809F682: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x38145428: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x3815256D: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x38156692: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x381572C6: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x38159188: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x3815A1D6: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x3814320C: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380A1C0B: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380D296B: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380D45CF: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+==31604==    by 0x380E3946: ??? (in /usr/lib/valgrind/memcheck-amd64-linux)
+
+sched status:
+  running_tid=1
+
+Thread 1: status = VgTs_Runnable (lwpid 31604)
+==31604==    at 0x16F90880: ecp_nistz256_avx2_select_w7 (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F7B9A6: EC_POINT_new (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==31604==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==31604==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==31604==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==31604==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==31604==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==31604==    by 0x54A92D3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==31604==    by 0x406D20: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==31604==    by 0x704682F: (below main) (libc-start.c:291)
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+
