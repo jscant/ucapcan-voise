@@ -46,14 +46,18 @@ ksd = params.ksd;
 thresHoldLength = params.thresHoldLength;
 
 fprintf(1,'*** Starting merging phase\n')
-useOld = 1;
+useOld = 0;
 iMerge = 1;
 stopMerge = false;
+VDarr = [VD];
+sv = 0;
 tic
 while ~stopMerge,
 
   % compute homogeneity fuunction and dynamic threshold
   [WD,SD,WHC,SHC,HCThreshold] = computeHCThreshold(VD, params, mergePctile);
+  
+  
 
   if 1,
 	  [Wmu, VD.Smu] = getVDOp(VD, params.W, @(x) median(x));
@@ -62,7 +66,6 @@ while ~stopMerge,
   end
 	% sqrt(2)*std(VR_i)
 	[Wsdmu, VD.Ssdmu] = getVDOp(VD, params.W, @(x) ksd*std(x));
-
   if 0, % diagnostic plot
     [vx,vy] = voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
   end
@@ -180,16 +183,65 @@ while ~stopMerge,
 	  nSr = length(Sk);
     fprintf(1,'Iter %2d Removing %d seeds from Voronoi Diagram\n', iMerge, nSr);
     %pause
+    params.mergeAlgo = 0;
 		switch params.mergeAlgo,
 		  case 0, % incremental
         for k = Sk(:)',
-            if useOld
-                VD = removeSeedFromVD2(VD, k);
-            else
-                VD = removeSeedFromVD(VD, k);
+            VDOld = removeSeedFromVD2(VD, k);
+            VDTMP = removeSeedFromVD(VD, k);
+                if(isfield(VD, 'divSHC'))
+                    VDTMP.divSHC = VD.divSHC;
+                end
+                if(isfield(VD, 'divHCThreshold'))
+                    VDTMP.divHCThreshold = VD.divHCThreshold;
+                end
+                if(isfield(VD, 'Smu'))
+                    VDTMP.Smu = VD.Smu;
+                end
+                if(isfield(VD, 'Ssdmu'))
+                    VDTMP.Ssdmu = VD.Ssdmu;
+                end
+            VDNew = VDTMP;
+            results = compareVD(VDOld, VDNew, 1);
+            if results.same == 0
+                fprintf("iMerge: %i, k: %i\n", iMerge, k);
+                save("VDOld", "VDOld");
+                save("VDNew", "VDNew");
+                k(3)
             end
+            VD = VDNew;
+            clear removeSeedFromVD;
+            if 0
+                if useOld
+                    VD = removeSeedFromVD2(VD, k);
+                else
+                    VDTMP = removeSeedFromVD(VD, k);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
+                end
+                if iMerge == 1
+                     if useOld
+                      save("vdold", "VD");
+                    else
+                      save("vdnew", "VD");
+                     end
+                     %k(3);
+                end
+            end
+            sv = sv + 1;
 					% diagnostic plot
-          if 0, drawVD(VD); end
+          if 0, drawVD(VD); disp("@@@"); pause(3); end
         end
 			case 1, % full
 			  Skeep = setdiff(VD.Sk, Sk);
@@ -211,17 +263,14 @@ while ~stopMerge,
           end
 				end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
-		end
+        end
+%        disp("ML FLAG 5");
     params = plotCurrentVD(VD, params, iMerge);
 	  iMerge = iMerge+1;
 		%fprintf(1,'Voronoi Diagram computed\n');
+        %VDarr = [VDarr; VD];
   else
     stopMerge = true;
-    if useOld
-      save("vdold", "VD");
-    else
-      save("vdnew", "VD");
-    end
   end
 end
 toc
