@@ -114,8 +114,8 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
 
     Eigen::Map<Mat>(lamPtr, outputVD.Vk.lam.rows(), outputVD.Vk.lam.cols()) = outputVD.Vk.lam;
     Eigen::Map<Mat>(vPtr, outputVD.Vk.v.rows(), outputVD.Vk.v.cols()) = outputVD.Vk.v;
-    Eigen::Map<Mat>(xPtr, outputVD.px.rows(), outputVD.px.cols()) = outputVD.px;
-    Eigen::Map<Mat>(yPtr, outputVD.py.rows(), outputVD.py.cols()) = outputVD.py;
+    Eigen::Map<Mat>(xPtr, outputVD.px.rows(), outputVD.px.cols()) = outputVD.px + 1;
+    Eigen::Map<Mat>(yPtr, outputVD.py.rows(), outputVD.py.cols()) = outputVD.py + 1;
 
     int sxLen = outputVD.Sx.size();
     int count = 0;
@@ -139,7 +139,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     int nkLen = mxGetNumberOfElements(nkOutgoingArray);
     mxArray *cellPtrs[nkLen];
     for (int i = 0; i < nkLen; ++i) {
-        //mexPrintf("Nk Flag 1\n");
         cellPtrs[i] = mxGetCell(nkOutgoingArray, i);
         int cellLen = outputVD.Nk.at(i + 1).size();
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);

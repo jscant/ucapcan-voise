@@ -54,17 +54,18 @@ VDarr = [VD];
 sv = 0;
 tic
 while ~stopMerge,
-
+tic
   % compute homogeneity fuunction and dynamic threshold
   [WD,SD,WHC,SHC,HCThreshold] = computeHCThreshold(VD, params, mergePctile);
   
   
-
+tic
   if 1,
 	  [Wmu, VD.Smu] = getVDOp(VD, params.W, @(x) median(x));
   else
 	  [Wmu, VD.Smu] = getVDOp(VD, params.W, @(x) mean(x));
   end
+  x = toc;
 	% sqrt(2)*std(VR_i)
 	[Wsdmu, VD.Ssdmu] = getVDOp(VD, params.W, @(x) ksd*std(x));
   if 0, % diagnostic plot
@@ -180,6 +181,7 @@ while ~stopMerge,
 	% save homogeneity function and dynamic threshold
 	mergeSHC{iMerge} = SHC;
 	mergeHCThreshold(iMerge) = HCThreshold;
+    toc
   if ~isempty(Sk),
 	  nSr = length(Sk);
     fprintf(1,'Iter %2d Removing %d seeds from Voronoi Diagram\n', iMerge, nSr);
@@ -187,6 +189,7 @@ while ~stopMerge,
     params.mergeAlgo = 0;
 		switch params.mergeAlgo,
 		  case 0, % incremental
+              tic
               if useBatch
                   VDTMP = removeSeedFromVDBatch(VD, Sk);
                     if(isfield(VD, 'divSHC'))
@@ -203,50 +206,49 @@ while ~stopMerge,
                     end
                     VD = VDTMP;
               else
-        for k = Sk(:)',
-            if 0
-                VDOld = removeSeedFromVD2(VD, k);
-                VDTMP = removeSeedFromVD(VD, k);
-                    if(isfield(VD, 'divSHC'))
-                        VDTMP.divSHC = VD.divSHC;
+                for k = Sk(:)',
+                    if 0
+                        VDOld = removeSeedFromVD2(VD, k);
+                        VDTMP = removeSeedFromVD(VD, k);
+                            if(isfield(VD, 'divSHC'))
+                                VDTMP.divSHC = VD.divSHC;
+                            end
+                            if(isfield(VD, 'divHCThreshold'))
+                                VDTMP.divHCThreshold = VD.divHCThreshold;
+                            end
+                            if(isfield(VD, 'Smu'))
+                                VDTMP.Smu = VD.Smu;
+                            end
+                            if(isfield(VD, 'Ssdmu'))
+                                VDTMP.Ssdmu = VD.Ssdmu;
+                            end
+                        VDNew = VDTMP;
+                        compareVD(VDNew, VDOld, 1);
+                        VD = VDNew;
+                    else
+                        if useOld
+                            VD = removeSeedFromVD2(VD, k);
+                        else
+                            VDTMP = removeSeedFromVD(VD, k);
+                            if(isfield(VD, 'divSHC'))
+                                VDTMP.divSHC = VD.divSHC;
+                            end
+                            if(isfield(VD, 'divHCThreshold'))
+                                VDTMP.divHCThreshold = VD.divHCThreshold;
+                            end
+                            if(isfield(VD, 'Smu'))
+                                VDTMP.Smu = VD.Smu;
+                            end
+                            if(isfield(VD, 'Ssdmu'))
+                                VDTMP.Ssdmu = VD.Ssdmu;
+                            end
+                            VD = VDTMP;
+                        end
                     end
-                    if(isfield(VD, 'divHCThreshold'))
-                        VDTMP.divHCThreshold = VD.divHCThreshold;
-                    end
-                    if(isfield(VD, 'Smu'))
-                        VDTMP.Smu = VD.Smu;
-                    end
-                    if(isfield(VD, 'Ssdmu'))
-                        VDTMP.Ssdmu = VD.Ssdmu;
-                    end
-                VDNew = VDTMP;
-                compareVD(VDNew, VDOld, 1);
-                VD = VDNew;
-            else
-                if useOld
-                    VD = removeSeedFromVD2(VD, k);
-                else
-                    VDTMP = removeSeedFromVD(VD, k);
-                    if(isfield(VD, 'divSHC'))
-                        VDTMP.divSHC = VD.divSHC;
-                    end
-                    if(isfield(VD, 'divHCThreshold'))
-                        VDTMP.divHCThreshold = VD.divHCThreshold;
-                    end
-                    if(isfield(VD, 'Smu'))
-                        VDTMP.Smu = VD.Smu;
-                    end
-                    if(isfield(VD, 'Ssdmu'))
-                        VDTMP.Ssdmu = VD.Ssdmu;
-                    end
-                    VD = VDTMP;
-                end
-            end
-            sv = sv + 1;
-					% diagnostic plot
-          if 0, drawVD(VD); disp("@@@"); pause(3); end
+                    if 0, drawVD(VD); disp("@@@"); pause(3); end
         end
               end
+              toc
 			case 1, % full
 			  Skeep = setdiff(VD.Sk, Sk);
 				VD = computeVDFast(VD.nr, VD.nc, [VD.Sx(Skeep), VD.Sy(Skeep)],VD.S);

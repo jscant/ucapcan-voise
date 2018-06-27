@@ -32,7 +32,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {
 
-    bool timing = false;
+    bool timing = true;
 
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(
@@ -45,8 +45,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
     auto start = std::chrono::high_resolution_clock::now();
     vd outputVD = grabVD(prhs);
     auto elapsed = std::chrono::high_resolution_clock::now() - start;
-    long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-    std::string str = "grabVD:\t\t" + std::to_string(microseconds) + "\n";
+    long long milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
+    std::string str = "grabVD:\t\t" + std::to_string(milliseconds) + "\n";
     if(timing) {
         mexPrintf(str.c_str());
     }
@@ -58,9 +58,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
         mexErrMsgTxt(e.what());
     }
     elapsed = std::chrono::high_resolution_clock::now() - start;
-    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
+    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
 
-    str = "removeSeed:\t" + std::to_string(microseconds) + "\n";
+    str = "removeSeed:\t" + std::to_string(milliseconds) + "\n";
     if(timing) {
         mexPrintf(str.c_str());
     }
@@ -69,8 +69,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
     start = std::chrono::high_resolution_clock::now();
     pushVD(outputVD, plhs);
     elapsed = std::chrono::high_resolution_clock::now() - start;
-    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
-    str = "pushVD:\t\t" + std::to_string(microseconds) + "\n";
+    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
+    str = "pushVD:\t\t" + std::to_string(milliseconds) + "\n";
     if(timing) {
         mexPrintf(str.c_str());
     }
