@@ -273,7 +273,9 @@ ylabel('time [s]')
 title('C++ (Single job)')
 
 subplot(224),
-plot(nsf, [tVDf_cpps; polyval(ptVDf_cpps,nsf)], '-o');
+plot(nsa, [tVDa_cppb./nda; polyval(ptVDa_cppb,nsa)], '-o', ...
+		 nsr, [tVDr_cppb./ndr; polyval(ptVDr_cppb,nsr)], '-o');
+legend('Add','Add fit','Remove','Remove fit','location','northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('C++ (Batch job)')
@@ -283,7 +285,9 @@ fprintf(1,'Saving timings in timing file:\n %s\n', ...
         [voise.root '/share/' timingFilename]);
 
 save([voise.root '/share/' timingFilename],'nsf','tVDf','ptVDf', ...
-     'nsa','nda','tVDa','ptVDa','nsr','ndr','tVDr','ptVDr');
+     'nsa','nda','tVDa_ml','ptVDa_ml','nsr','ndr','tVDr_ml','ptVDr_ml',...
+     'tVDa_cpps','ptVDa_cpps', 'tVDr_cpps','ptVDr_cpps',...
+     'tVDa_cppb','ptVDa_cppb', 'tVDr_cppb','ptVDr_cppb');
 
 fprintf(1,'You should copy / link it to the VOISE timing file:\n %s\n', ...
         [voise.root '/share/VOISEtiming.mat']);

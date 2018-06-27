@@ -241,11 +241,14 @@ nsr(end) = [];
 tVDr(end) = [];
 
 [ptVDf] = polyfit([0 nsf], [0 tVDf], 2);
-[ptVDa] = polyfit([0 nsa], [0 tVDa./nda], 1);
-[ptVDr] = polyfit([nsr 0], [tVDr./ndr 0], 1);
+[ptVDa] = polyfit([0 nsa], [0 tVDa_ml./nda], 1);
+[ptVDr] = polyfit([nsr 0], [tVDr_ml./ndr 0], 1);
 
-[ptVDa] = polyfit([0 nsa], [0 tVDa./nda], 1);
-[ptVDr] = polyfit([nsr 0], [tVDr./ndr 0], 1);
+[ptVDa_cpps] = polyfit([0 nsa], [0 tVDa_cpps./nda], 1);
+[ptVDr_cpps] = polyfit([nsr 0], [tVDr_cpps./ndr 0], 1);
+
+[ptVDa_cppb] = polyfit([0 nsa], [0 tVDa_cppb./nda], 1);
+[ptVDr_cppb] = polyfit([nsr 0], [tVDr_cppb./ndr 0], 1);
 
 subplot(221),
 plot(nsa, [tVDa./nda; polyval(ptVDa,nsa)], '-o', ...
@@ -262,15 +265,17 @@ ylabel('time [s]')
 title('Full VOISE')
 
 subplot(223),
-plot(nsa, [tVDa./nda; polyval(ptVDa,nsa)], '-o', ...
-		 nsr, [tVDr./ndr; polyval(ptVDr,nsr)], '-o');
+plot(nsa, [tVDa_cpps./nda; polyval(ptVDa_cpps,nsa)], '-o', ...
+		 nsr, [tVDr_cpps./ndr; polyval(ptVDr_cpps,nsr)], '-o');
 legend('Add','Add fit','Remove','Remove fit','location','northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('C++ (Single job)')
 
 subplot(224),
-plot(nsf, [tVDf; polyval(ptVDf,nsf)], '-o');
+plot(nsa, [tVDa_cppb./nda; polyval(ptVDa_cppb,nsa)], '-o', ...
+		 nsr, [tVDr_cppb./ndr; polyval(ptVDr_cppb,nsr)], '-o');
+legend('Add','Add fit','Remove','Remove fit','location','northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('C++ (Batch job)')
@@ -280,7 +285,8 @@ fprintf(1,'Saving timings in timing file:\n %s\n', ...
         [voise.root '/share/' timingFilename]);
 
 save([voise.root '/share/' timingFilename],'nsf','tVDf','ptVDf', ...
-     'nsa','nda','tVDa','ptVDa','nsr','ndr','tVDr','ptVDr');
+     'nsa','nda','tVDa_ml','ptVDa_ml','nsr','ndr','tVDr_ml','ptVDr_ml',...
+     'tVDa_cpp','ptVDa_ml');
 
 fprintf(1,'You should copy / link it to the VOISE timing file:\n %s\n', ...
         [voise.root '/share/VOISEtiming.mat']);

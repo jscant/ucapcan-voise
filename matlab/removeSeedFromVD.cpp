@@ -32,6 +32,8 @@ void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {
 
+    bool timing = false;
+
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(
             " Invalid number of input and output arguments");
@@ -45,7 +47,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
     auto elapsed = std::chrono::high_resolution_clock::now() - start;
     long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     std::string str = "grabVD:\t\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
     // Add seed to VD
     start = std::chrono::high_resolution_clock::now();
     try {
@@ -57,7 +61,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
     microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 
     str = "removeSeed:\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
     // Push modified VD to ML VD struct (handles memory allocation etc)
 
     start = std::chrono::high_resolution_clock::now();
@@ -65,7 +71,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
     elapsed = std::chrono::high_resolution_clock::now() - start;
     microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "pushVD:\t\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
 
 }
 
