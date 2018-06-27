@@ -28,12 +28,12 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 
 vd grabVD(const mxArray *prhs[]) {
 
-    bool timing = true;
+    bool timing = false;
 
-    auto
+    auto start = std::chrono::high_resolution_clock::now();
 
     real nc=0, nr=0, k=0;
-    Mat lam, v, px, py;
+
     std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
     W_struct W;
@@ -46,6 +46,7 @@ vd grabVD(const mxArray *prhs[]) {
     real nElements = mxGetNumberOfElements(prhs[0]);
 
     auto elapsed = std::chrono::high_resolution_clock::now() - start;
+    long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     std::string str = "Part 1:\t\t" + std::to_string(microseconds) + " ns\n";
     if(timing) {
         mexPrintf(str.c_str());
@@ -120,13 +121,6 @@ vd grabVD(const mxArray *prhs[]) {
     real *symPtr = mxGetDoubles(symIncomingArray);
     real *syMPtr = mxGetDoubles(syMIncomingArray);
 
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    str = "Part 2:\t\t" + std::to_string(microseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
-
     // Populate variables with data in mxArrays and their pointers
     nr = nrPtr[0];
     nc = ncPtr[0];
@@ -143,26 +137,32 @@ vd grabVD(const mxArray *prhs[]) {
     mwIndex nRows = mxGetM(lamIncomingArray);
     mwIndex nCols = mxGetN(lamIncomingArray);
 
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    str = "Part 3:\t\t" + std::to_string(microseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
     start = std::chrono::high_resolution_clock::now();
 
     // Eigen arrays to put matrix data in
+
+    /*
+
+    Mat lam, v, px, py;
     lam.resize(nRows, nCols);
     v.resize(nRows, nCols);
     px.resize(nRows, nCols);
     py.resize(nRows, nCols);
+    */
 
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    str = "Part 4:\t\t" + std::to_string(microseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
+//    /*
+
+    // Create and populate vd
+    vd VD = vd(nr, nc);
+
     start = std::chrono::high_resolution_clock::now();
 
+    VD.Vk.lam = Eigen::Map<Mat>(lamPtr, nRows, nCols);
+    VD.Vk.v = Eigen::Map<Mat>(vPtr, nRows, nCols);
+    VD.px = Eigen::Map<Mat>(xPtr, nRows, nCols);
+    VD.py = Eigen::Map<Mat>(yPtr, nRows, nCols);
+//    */
+ /*
     // Populate Eigen arrays with ML data
     for (mwIndex i = 0; i < nRows; ++i) {
         for (mwIndex j = 0; j < nCols; ++j) {
@@ -172,10 +172,11 @@ vd grabVD(const mxArray *prhs[]) {
             py(i, j) = yPtr[j * nCols + i] - 1;
         }
     }
-
+ */
     elapsed = std::chrono::high_resolution_clock::now() - start;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "Part 5:\t\t" + std::to_string(microseconds) + " ns\n";
-    if(timing) {
+    if(timing || false) {
         mexPrintf(str.c_str());
     }
     start = std::chrono::high_resolution_clock::now();
@@ -193,6 +194,7 @@ vd grabVD(const mxArray *prhs[]) {
     }
 
     elapsed = std::chrono::high_resolution_clock::now() - start;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "Part 6:\t\t" + std::to_string(microseconds) + " ns\n";
     if(timing) {
         mexPrintf(str.c_str());
@@ -216,16 +218,17 @@ vd grabVD(const mxArray *prhs[]) {
     }
 
     elapsed = std::chrono::high_resolution_clock::now() - start;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "Part 7:\t\t" + std::to_string(microseconds) + " ns\n";
     if(timing) {
         mexPrintf(str.c_str());
     }
     start = std::chrono::high_resolution_clock::now();
 
-    // Create and populate vd
-    vd VD = vd(nr, nc);
+
 
     elapsed = std::chrono::high_resolution_clock::now() - start;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "Part 8:\t\t" + std::to_string(microseconds) + " ns\n";
     if(timing) {
         mexPrintf(str.c_str());
@@ -247,10 +250,10 @@ vd grabVD(const mxArray *prhs[]) {
     */
 
     VD.k = k;
-    VD.Vk.lam = lam;
-    VD.Vk.v = v;
-    VD.px = px;
-    VD.py = py;
+    //VD.Vk.lam = lam;
+    //VD.Vk.v = v;
+    //VD.px = px;
+    //VD.py = py;
     VD.Sx = Sx;
     VD.Sy = Sy;
     VD.Sk = Sk;
@@ -259,10 +262,11 @@ vd grabVD(const mxArray *prhs[]) {
     VD.S = S_str;
 
     elapsed = std::chrono::high_resolution_clock::now() - start;
+    microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "Part 9:\t\t" + std::to_string(microseconds) + " ns\n";
     if(timing) {
         mexPrintf(str.c_str());
     }
-    
+
     return VD;
 }

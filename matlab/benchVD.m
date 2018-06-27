@@ -53,11 +53,11 @@ end
 fprintf(1,'endSeed = %d card(S) = %d\n',endSeed, size(S,1));
 endSeed = size(S,1);
 
-nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds))
-nsa = round(linspace(begSeed, endSeed, numSeeds))
+nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds));
+nsa = round(linspace(begSeed, endSeed, numSeeds));
 
 % incremental batch add
-nda = [nsa(1), diff(nsa)]
+nda = [nsa(1), diff(nsa)];
 tVDa_cppb = zeros(size(nsa));
 % initial seeds
 s = S([1:nsa(1)],:);

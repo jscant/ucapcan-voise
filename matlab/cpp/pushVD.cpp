@@ -100,6 +100,7 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     real *syPtr = mxGetDoubles(syOutgoingArray);
     real *kPtr = mxGetDoubles(kOutgoingArray);
 
+    /*
     // Populate ML struct matrices with results
     for (int i = 0; i < nRows; ++i) {
         for (int j = 0; j < nCols; ++j) {
@@ -109,6 +110,12 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
             yPtr[j * nCols + i] = outputVD.py(i, j) + 1;
         }
     }
+    */
+
+    Eigen::Map<Mat>(lamPtr, outputVD.Vk.lam.rows(), outputVD.Vk.lam.cols()) = outputVD.Vk.lam;
+    Eigen::Map<Mat>(vPtr, outputVD.Vk.v.rows(), outputVD.Vk.v.cols()) = outputVD.Vk.v;
+    Eigen::Map<Mat>(xPtr, outputVD.px.rows(), outputVD.px.cols()) = outputVD.px;
+    Eigen::Map<Mat>(yPtr, outputVD.py.rows(), outputVD.py.cols()) = outputVD.py;
 
     int sxLen = outputVD.Sx.size();
     int count = 0;
@@ -125,10 +132,8 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
 
     int pos = 0;
     for(auto const &s: outputVD.Sk) {
-        //mexPrintf("Sk Flag 1\n");
         skPtr[pos] = s.second;
         pos += 1;
-       // mexPrintf("Sk Flag 2\n");
     }
 
     int nkLen = mxGetNumberOfElements(nkOutgoingArray);
