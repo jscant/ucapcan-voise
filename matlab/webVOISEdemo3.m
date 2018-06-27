@@ -23,7 +23,7 @@
 colormap(jet) 
 
 %profile on
-compileMEX;
+%compileMEX;
 webVOISE('../share/VOISEdemo3.dat');
 
 %profile off

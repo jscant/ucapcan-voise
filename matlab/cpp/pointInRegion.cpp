@@ -45,7 +45,8 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
                         return false;
                     }
                 } else {
-                    throw SKIZIdenticalSeedsError("Identical seeds");
+                    std::string msg = "Identical seeds: " + std::to_string((int)s1) + ", " + std::to_string((int)s2) + "\n";
+                    throw SKIZIdenticalSeedsError(msg.c_str());
                 }
                 continue;
             } else if ((s1 - r1) < 0) {

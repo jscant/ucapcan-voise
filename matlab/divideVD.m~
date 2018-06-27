@@ -38,8 +38,8 @@ fprintf(1,'*** Starting dividing phase\n')
 
 iDiv = 1;
 stopDiv = false;
-useOld = 0;
-useBatch = 1;
+useOld = ;
+useBatch = 0;
 while ~stopDiv,
 
   % compute homogeneity fuunction and dynamic threshold
@@ -141,7 +141,7 @@ while ~stopDiv,
                 end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end
-        %params = plotCurrentVD(VD, params, iDiv);
+        params = plotCurrentVD(VD, params, iDiv);
         iDiv = iDiv+1;
     %fprintf(1,'Voronoi Diagram computed\n');
   else

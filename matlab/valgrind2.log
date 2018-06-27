@@ -1,0 +1,1305 @@
+==30869== Memcheck, a memory error detector
+==30869== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==30869== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==30869== Command: /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB -nosplash -r valgrindRemoveSeed -nojvm
+==30869== Parent PID: 30381
+==30869== 
+--30869-- 
+--30869-- Valgrind options:
+--30869--    --error-limit=no
+--30869--    --tool=memcheck
+--30869--    -v
+--30869--    --log-file=valgrind2.log
+--30869-- Contents of /proc/version:
+--30869--   Linux version 4.13.0-45-generic (buildd@lgw01-amd64-011) (gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.9)) #50~16.04.1-Ubuntu SMP Wed May 30 11:18:27 UTC 2018
+--30869-- 
+--30869-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-avx-avx2-bmi
+--30869-- Page sizes: currently 4096, max supported 4096
+--30869-- Valgrind library directory: /usr/local/lib/valgrind
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/ld-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/ld-2.23.so ..
+--30869--   .. CRC mismatch (computed aa979a42 wanted 9019bbb7)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /usr/local/lib/valgrind/memcheck-amd64-linux
+--30869--    object doesn't have a dynamic symbol table
+--30869-- Scheduler: using generic scheduler lock implementation.
+--30869-- Reading suppressions file: /usr/local/lib/valgrind/default.supp
+==30869== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-30869-by-jack-on-???
+==30869== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-30869-by-jack-on-???
+==30869== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-30869-by-jack-on-???
+==30869== 
+==30869== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==30869== don't want to do, unless you know exactly what you're doing,
+==30869== or are doing some strange experiment):
+==30869==   /usr/local/lib/valgrind/../../bin/vgdb --pid=30869 ...command...
+==30869== 
+==30869== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==30869==   /path/to/gdb /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+==30869== and then give GDB the following command
+==30869==   target remote | /usr/local/lib/valgrind/../../bin/vgdb --pid=30869
+==30869== --pid is optional if only one valgrind process is running
+==30869== 
+--30869-- REDIR: 0x401cfd0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580a10d1 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--30869-- REDIR: 0x401b920 (ld-linux-x86-64.so.2:index) redirected to 0x580a10eb (vgPlain_amd64_linux_REDIR_FOR_index)
+--30869-- Reading syms from /usr/local/lib/valgrind/vgpreload_core-amd64-linux.so
+--30869-- Reading syms from /usr/local/lib/valgrind/vgpreload_memcheck-amd64-linux.so
+==30869== WARNING: new redirection conflicts with existing -- ignoring it
+--30869--     old: 0x0401cfd0 (strlen              ) R-> (0000.0) 0x580a10d1 vgPlain_amd64_linux_REDIR_FOR_strlen
+--30869--     new: 0x0401cfd0 (strlen              ) R-> (2007.0) 0x04c30cc0 strlen
+--30869-- REDIR: 0x401bb40 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4c31dc0 (strcmp)
+--30869-- REDIR: 0x401dd30 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4c35190 (mempcpy)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwi18n.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgraphics_state.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_system.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcpp11compat.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libstdc++.so.6.0.22
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libgcc_s.so.1
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libc-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libc-2.23.so ..
+--30869--   .. CRC mismatch (computed 7a8ee3e4 wanted a5190ac4)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- REDIR: 0x401de80 (ld-linux-x86-64.so.2:stpcpy) redirected to 0x4c34120 (stpcpy)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwresource_core.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libdl-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libdl-2.23.so ..
+--30869--   .. CRC mismatch (computed 39227170 wanted ab6e2c22)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libdl-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_filesystem.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libexpat.so.1.5.0
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicuuc.so.59.1
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicui18n.so.59.1
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libm-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libm-2.23.so ..
+--30869--   .. CRC mismatch (computed e8c3647b wanted c3efddac)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libpthread-2.23.so
+--30869--   Considering /usr/lib/debug/.build-id/ce/17e023542265fc11d9bc8f534bb4f070493d30.debug ..
+--30869--   .. build-id is valid
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmst.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmx.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_usm.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_extdata_array.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartupplugin.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_chrono.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_log.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_serialization.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libtbb.so.2
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwdisplay_device.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsettingscore.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwnativedisplay.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libcrypt-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libcrypt-2.23.so ..
+--30869--   .. CRC mismatch (computed 5219d836 wanted 507c1b6b)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libcrypt-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libpam.so.0.83.1
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_date_time.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_regex.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libunwind.so.8.0.1
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicuio.so.59.1
+--30869-- Reading syms from /lib/x86_64-linux-gnu/librt-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/librt-2.23.so ..
+--30869--   .. CRC mismatch (computed 734d0439 wanted 09d6393c)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/librt-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlivecode.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcppmicroservices.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwregexp.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmpath.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_utilities.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstoragevfs.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcwf_interface.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwkeybrd.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_iostreams.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libCppMicroServices.so.3.1.1
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libicudata.so.59.1
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libtbbmalloc.so.2
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libz.so.1.2.8
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwxmlcore.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libxerces-c-3.1.so
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libaudit.so.1.0.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopccore.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopcmodel.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopczippackage.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwopcmwservices.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmatlabstoragesystem.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstorageshlibstoragesys.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_interfaces.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstoragefilefolderobserver.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflnetwork.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstorageprovider.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflstorageevents.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcrypto.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcryptoutils.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflcryptocryptopp.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libminizip.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstoragesharedlib.so
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x70b5a00 (libc.so.6:strcasecmp) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b1280 (libc.so.6:strcspn) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b7cf0 (libc.so.6:strncasecmp) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b36f0 (libc.so.6:strpbrk) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b3a80 (libc.so.6:strspn) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b514b (libc.so.6:memcpy@GLIBC_2.2.5) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b51b0 (libc.so.6:memset) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b3400 (libc.so.6:rindex) redirected to 0x4c30650 (rindex)
+--30869-- REDIR: 0x70aa130 (libc.so.6:malloc) redirected to 0x4c2db7f (malloc)
+--30869-- REDIR: 0x70b1720 (libc.so.6:strlen) redirected to 0x4c30c00 (strlen)
+--30869-- REDIR: 0x71739b0 (libc.so.6:__memmove_avx_unaligned) redirected to 0x4c31f20 (memcpy@GLIBC_2.2.5)
+--30869-- REDIR: 0x6b1e2a0 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x4c2e1de (operator new(unsigned long))
+--30869-- REDIR: 0x70b4bf0 (libc.so.6:__GI_memcmp) redirected to 0x4c339a0 (__GI_memcmp)
+--30869-- REDIR: 0x70afcd0 (libc.so.6:strcmp) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70c5570 (libc.so.6:__strcmp_sse2_unaligned) redirected to 0x4c31c80 (strcmp)
+--30869-- REDIR: 0x70aad10 (libc.so.6:calloc) redirected to 0x4c2fa1a (calloc)
+--30869-- REDIR: 0x70b4bb0 (libc.so.6:bcmp) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x7194430 (libc.so.6:__memcmp_sse4_1) redirected to 0x4c33b00 (__memcmp_sse4_1)
+--30869-- REDIR: 0x6b1c3f0 (libstdc++.so.6:operator delete(void*)) redirected to 0x4c2f1fc (operator delete(void*))
+--30869-- REDIR: 0x70aaaa0 (libc.so.6:memalign) redirected to 0x4c2ff30 (memalign)
+--30869-- REDIR: 0x70aa4f0 (libc.so.6:free) redirected to 0x4c2ed2c (free)
+--30869-- REDIR: 0x70afa80 (libc.so.6:index) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70afab0 (libc.so.6:__GI_strchr) redirected to 0x4c307b0 (__GI_strchr)
+--30869-- REDIR: 0x6b1e360 (libstdc++.so.6:operator new[](unsigned long)) redirected to 0x4c2e8cb (operator new[](unsigned long))
+--30869-- REDIR: 0x70b18c0 (libc.so.6:strnlen) redirected to 0x4c30ba0 (strnlen)
+--30869-- REDIR: 0x70ba470 (libc.so.6:__GI_memcpy) redirected to 0x4c32860 (__GI_memcpy)
+--30869-- REDIR: 0x6b1c420 (libstdc++.so.6:operator delete[](void*)) redirected to 0x4c2f6cc (operator delete[](void*))
+--30869-- REDIR: 0x70b4060 (libc.so.6:__GI_strstr) redirected to 0x4c353f0 (__strstr_sse2)
+--30869-- REDIR: 0x70b4860 (libc.so.6:memchr) redirected to 0x4c31e60 (memchr)
+--30869-- REDIR: 0x7198970 (libc.so.6:__memset_avx2) redirected to 0x4c34320 (memset)
+--30869-- REDIR: 0x70b53b0 (libc.so.6:__GI_mempcpy) redirected to 0x4c34ec0 (__GI_mempcpy)
+--30869-- REDIR: 0x70afd10 (libc.so.6:__GI_strcmp) redirected to 0x4c31cd0 (__GI_strcmp)
+--30869-- REDIR: 0x70b1b70 (libc.so.6:__GI_strncmp) redirected to 0x4c313b0 (__GI_strncmp)
+--30869-- REDIR: 0x70bc760 (libc.so.6:strchrnul) redirected to 0x4c34cc0 (strchrnul)
+--30869-- REDIR: 0x70b5890 (libc.so.6:__GI_stpcpy) redirected to 0x4c33de0 (__GI_stpcpy)
+--30869-- REDIR: 0x70b4630 (libc.so.6:strstr) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70d0070 (libc.so.6:__strstr_sse2_unaligned) redirected to 0x4c35380 (strstr)
+--30869-- REDIR: 0x705fd00 (libc.so.6:unsetenv) redirected to 0x4c35980 (unsetenv)
+--30869-- REDIR: 0x705fca0 (libc.so.6:setenv) redirected to 0x4c35a20 (setenv)
+--30869-- REDIR: 0x70aa6c0 (libc.so.6:realloc) redirected to 0x4c2fc13 (realloc)
+--30869-- REDIR: 0x70b4ff0 (libc.so.6:__GI_memmove) redirected to 0x4c346c0 (__GI_memmove)
+--30869-- REDIR: 0x70bc550 (libc.so.6:rawmemchr) redirected to 0x4c34cf0 (rawmemchr)
+--30869-- REDIR: 0x70b33c0 (libc.so.6:strncpy) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70cc000 (libc.so.6:__strncpy_sse2_unaligned) redirected to 0x4c31210 (__strncpy_sse2_unaligned)
+--30869-- REDIR: 0x70d1d40 (libc.so.6:wcslen) redirected to 0x4c35740 (wcslen)
+==30944== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-30944-by-jack-on-???
+==30944== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-30944-by-jack-on-???
+==30944== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-30944-by-jack-on-???
+==30944== 
+==30944== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==30944== don't want to do, unless you know exactly what you're doing,
+==30944== or are doing some strange experiment):
+==30944==   /usr/local/lib/valgrind/../../bin/vgdb --pid=30944 ...command...
+==30944== 
+==30944== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==30944==   /path/to/gdb /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB
+==30944== and then give GDB the following command
+==30944==   target remote | /usr/local/lib/valgrind/../../bin/vgdb --pid=30944
+==30944== --pid is optional if only one valgrind process is running
+==30944== 
+==30944== Warning: invalid file descriptor 1024 in syscall close()
+==30944==    at 0x711D8F0: __close_nocancel (syscall-template.S:84)
+==30944==    by 0x5B422FD: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so)
+==30944==    by 0x5B3D376: foundation::core::process::process::process(foundation::core::process::command const&, foundation::core::process::context const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so)
+==30944==    by 0x5E2D8F1: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==30944==    by 0x5E26E71: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==30944==    by 0x5E276E3: utGetOSCompat[abi:cxx11]() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libut.so)
+==30944==    by 0x623E2D0: services::machine_config::machine_config() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==30944==    by 0x623F024: services::machine_config::instance() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==30944==    by 0x40AFF6: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==30944==    by 0x40B225: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==30944==    by 0x40B9D8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==30944==    by 0x406CB8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0
+--30869--   Considering /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0 ..
+--30869--   .. CRC mismatch (computed afbbdc31 wanted a2ee230b)
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0
+--30869--   Considering /usr/lib/x86_64-linux-gnu/libXau.so.6.0.0 ..
+--30869--   .. CRC mismatch (computed 256f5df8 wanted 5d40ac88)
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libXdmcp.so.6.0.0
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x70b1b20 (libc.so.6:strncmp) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70ba3f0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b1160 (libc.so.6:strcpy) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70b5850 (libc.so.6:stpcpy) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x713c210 (libc.so.6:__memcpy_chk) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/opengl/lib/glnxa64/libGL.so.1.6.0
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0
+--30869--   Considering /usr/lib/x86_64-linux-gnu/libXext.so.6.4.0 ..
+--30869--   .. CRC mismatch (computed b483887a wanted 38c83e44)
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x70af880 (libc.so.6:strcat) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x7173ea0 (libc.so.6:__memcpy_avx_unaligned) redirected to 0x4c321c0 (memcpy@@GLIBC_2.14)
+--30869-- REDIR: 0x713c480 (libc.so.6:__strcpy_chk) redirected to 0x4c34d30 (__strcpy_chk)
+--30869-- REDIR: 0x716ba90 (libc.so.6:__strncmp_sse42) redirected to 0x4c31490 (__strncmp_sse42)
+--30869-- REDIR: 0x7171ff0 (libc.so.6:__strncasecmp_avx) redirected to 0x4c315e0 (strncasecmp)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNet.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoFoundation.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoCrypto.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoUtil.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoXML.so.48
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoJSON.so.48
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x70b5a70 (libc.so.6:__GI___strcasecmp_l) redirected to 0x4c318c0 (__GI___strcasecmp_l)
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F64879: BN_bin2bn (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F68AEB: BN_rand (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F686C9: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F64AD7: BN_cmp (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F686B3: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F64AD9: BN_cmp (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F686B3: bn_rand_range (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8536A: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F6423D: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F6424C: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F6425B: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0x16F6426C: BN_num_bits_word (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F64385: BN_num_bits (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F8ED1B: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F8E1FF: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F8E28D: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869== 
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x16F8E30F: ecp_nistz256_points_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F7CB2F: EC_POINT_mul (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16F85399: EC_KEY_generate_key (in /usr/local/MATLAB/R2018a/bin/glnxa64/libcrypto.so.1.0.0)
+==30869==    by 0x16C50377: ssl3_ctx_ctrl (in /usr/local/MATLAB/R2018a/bin/glnxa64/libssl.so.1.0.0)
+==30869==    by 0x1618A5E6: Poco::Net::Context::initECDH(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618AB61: Poco::Net::Context::init(Poco::Net::Context::Params const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x1618B215: Poco::Net::Context::Context(Poco::Net::Context::Usage, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, Poco::Net::Context::VerificationMode, int, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libPocoNetSSL.so.48)
+==30869==    by 0x15C4638D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/connector/openssl_initializer/libmwconnectoropensslinitializer.so)
+==30869==    by 0xA99AEE2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99B979: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0xA99E04A: startup_plugins::initializer::initialize(startup_plugins::RuntimeOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstartup_plugin_initializer.so)
+==30869==    by 0x54AAE80: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869== 
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/eventmgrsvc/mweventmgrsrc_global.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcos.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlanguage_execution_interfaces.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwerrorrecovery.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_interpreter.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwexecution_events.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_parser.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_matlabdata_matlab.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbridge.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_impl.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwddux.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcwf_implementation.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_events.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstring_matrix.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcontextdata.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwnamesuggestion.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathrng.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_ir.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwir_xfmr.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmtok.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_matlabdata_standalone.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwudd.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtabcompletion.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgenerate_diag_message.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwir.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlxeinterfaces.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlxeindexing.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlxeutilities.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlxetypes.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwprofiler.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathcore.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathelem.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathlinalg.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathspec.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwml_front_end_astapi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwml_front_end_driver.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlxeirgen.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmfl_rng.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_locale.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwspmatrix.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_program_options.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcholmod.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathutil.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwblas.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlapack.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwumfpack_api.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwamd.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcsparse.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwma57.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmetis.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwspqr.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwumfpack.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwml_front_end_name_resolution.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwml_front_end_parallel.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwml_front_end_parser.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwdSFMT.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwcolamd.so
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbinder.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwompwrapper.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libgfortran.so.3.0.0
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libquadmath.so.0.0.0
+--30869-- REDIR: 0x70b1ae0 (libc.so.6:strncat) redirected to 0x4a28772 (_vgnU_ifunc_wrapper)
+--30869-- REDIR: 0x70cb9d0 (libc.so.6:__strcpy_sse2_unaligned) redirected to 0x4c30ce0 (strcpy)
+--30869-- REDIR: 0x705f850 (libc.so.6:putenv) redirected to 0x4c358e0 (putenv)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x25FCA91F: __intel_sse2_strrchr (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F6B351: _INTERNAL_45_______src_thirdparty_tbb_omp_dynamic_link_cpp_3636015b::__kmp::init_dl_data() (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F6B2A6: __sti__$E (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25FDB7B5: ??? (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25ED97BA: ??? (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25EC86A7: ??? (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x4010679: call_init.part.0 (dl-init.c:58)
+==30869==    by 0x40107CA: call_init (dl-init.c:30)
+==30869==    by 0x40107CA: _dl_init (dl-init.c:120)
+==30869==    by 0x40158E1: dl_open_worker (dl-open.c:575)
+==30869==    by 0x4010563: _dl_catch_error (dl-error.c:187)
+==30869==    by 0x4014DA8: _dl_open (dl-open.c:660)
+==30869==    by 0x75F2F08: dlopen_doit (dlopen.c:66)
+==30869== 
+--30869-- REDIR: 0x7170980 (libc.so.6:__strcasecmp_avx) redirected to 0x4c31500 (strcasecmp)
+--30869-- REDIR: 0x7170730 (libc.so.6:__strpbrk_sse42) redirected to 0x4c354d0 (strpbrk)
+==30869== Thread 2:
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x5440950: mvm::detail::DefaultMVM::DefaultMVM(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mvm::Factory::ID const&, mvm::MVMOptions const&, mwboost::shared_ptr<std::basic_streambuf<char16_t, std::char_traits<char16_t> > > const&, mwboost::shared_ptr<std::basic_streambuf<char16_t, std::char_traits<char16_t> > > const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41D98: mvm_server::inproc::LocalMVM::LocalMVM(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mvm::Factory::ID const&, mvm::MVMOptions const&, bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A43219: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0x544DC16: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D07C: tbb::spin_rw_mutex_v3::internal_acquire_reader() (spin_rw_mutex.cpp:70)
+==30869==    by 0x544DC34: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D08E: __TBB_machine_fetchadd8 (linux_intel64.h:77)
+==30869==    by 0xB31D08E: tbb::spin_rw_mutex_v3::internal_acquire_reader() (spin_rw_mutex.cpp:72)
+==30869==    by 0x544DC34: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0x544DC3D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D108: tbb::spin_rw_mutex_v3::internal_upgrade() (spin_rw_mutex.cpp:88)
+==30869==    by 0x544E061: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D14B: __TBB_machine_cmpswp8 (linux_intel64.h:77)
+==30869==    by 0xB31D14B: compare_and_swap (atomic.h:202)
+==30869==    by 0xB31D14B: compare_and_swap (atomic.h:291)
+==30869==    by 0xB31D14B: compare_and_swap (atomic.h:296)
+==30869==    by 0xB31D14B: CAS (spin_rw_mutex.cpp:37)
+==30869==    by 0xB31D14B: tbb::spin_rw_mutex_v3::internal_upgrade() (spin_rw_mutex.cpp:95)
+==30869==    by 0x544E061: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D19C: tbb::spin_rw_mutex_v3::internal_upgrade() (spin_rw_mutex.cpp:98)
+==30869==    by 0x544E061: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0xB31D212: __TBB_machine_fetchadd8 (linux_intel64.h:77)
+==30869==    by 0xB31D212: tbb::spin_rw_mutex_v3::internal_upgrade() (spin_rw_mutex.cpp:101)
+==30869==    by 0x544E061: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0x544DF9B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869== 
+==30869== Use of uninitialised value of size 8
+==30869==    at 0x544E091: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54400D0: mvm::detail::DefaultMVM::protectedInit(mlutil::contextmgr::McrID const&, mlutil::contextmgr::MvmID const&, mwboost::shared_ptr<mvm::detail::DefaultMVM> const&, mwboost::shared_ptr<cmddistributor::CmdDistributor> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A41FA9: mvm_server::inproc::LocalMVM::privateBind(mwboost::shared_ptr<mvm_server::inproc::LocalMVM> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mcrInstance const*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A4328A: mvm_server::inproc::LocalMVM::create(mwboost::shared_ptr<mvm::detail::DefaultSession> const&, mwboost::shared_ptr<mvm_server::inproc::LocalFactory> const&, mvm::SessionOptions const&, mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A55A15: mvm_server::inproc::LocalFactory::createMVM(mvm::MVMOptions const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5D8A0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869== 
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/matlab_graphics_ui/mwuixloader.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwuix.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgui.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libXt.so.6.0.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgraphics_util.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libSM.so.6.0.1
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/lib/x86_64-linux-gnu/libICE.so.6.3.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libtex_base.so
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+--30869--    object doesn't have a symbol table
+==30869== Thread 3:
+==30869== Conditional jump or move depends on uninitialised value(s)
+==30869==    at 0x1D26BAC1: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwddux.so)
+==30869==    by 0x1D26DA06: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwddux.so)
+==30869==    by 0x1D26DCEF: ddux::launch(bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwddux.so)
+==30869==    by 0x183051C1: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D8643: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D13F0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+==30869== 
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwxmlxrcsc.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwudd_mi.so
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x6b1e300 (libstdc++.so.6:operator new(unsigned long, std::nothrow_t const&)) redirected to 0x4c2e44c (operator new(unsigned long, std::nothrow_t const&))
+--30869-- REDIR: 0x6b1c410 (libstdc++.so.6:operator delete(void*, std::nothrow_t const&)) redirected to 0x4c2f3ca (operator delete(void*, std::nothrow_t const&))
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwudd_jmi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwjmi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwnativejava_services.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwaddons_javapath.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsprootutils.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcos_impl.so
+--30869--    object doesn't have a symbol table
+--30869-- memcheck GC: 1000 nodes, 178 survivors (17.8%)
+--30869-- memcheck GC: 1014 new table size (driftup)
+--30869-- memcheck GC: 1014 nodes, 669 survivors (66.0%)
+--30869-- memcheck GC: 1434 new table size (stepup)
+--30869-- REDIR: 0x70c5520 (libc.so.6:__GI_strncpy) redirected to 0x4c30fb0 (__GI_strncpy)
+==30869== Syscall param sched_setaffinity(mask) points to unaddressable byte(s)
+==30869==    at 0x71274D9: syscall (syscall.S:38)
+==30869==    by 0x25F77052: __kmp_affinity_determine_capable (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F5710C: __kmp_env_initialize(char const*) (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F43672: _INTERNAL_25_______src_kmp_runtime_cpp_fa8d4e2e::__kmp_do_serial_initialize() (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F38554: __kmp_get_global_thread_id_reg (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25F15029: ompc_set_num_threads (in /usr/local/MATLAB/R2018a/sys/os/glnxa64/libiomp5.so)
+==30869==    by 0x25750444: ompwrapper::set(bool, unsigned long) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwompwrapper.so)
+==30869==    by 0x6392933: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==30869==    by 0x6394B9E: services::threading::computationalThreadsInit(bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwservices.so)
+==30869==    by 0x1830521A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D8643: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D13F0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==30869== 
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwinstlic_4a.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwjail_launcher.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwteumhlmofflineuse.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwwebproxy.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflhttpclient.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflurlmanager.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwflhttpproxy.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libnss_compat-2.23.so ..
+--30869--   .. CRC mismatch (computed 45e1d383 wanted 584dcc9d)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libnss_compat-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libnsl-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libnsl-2.23.so ..
+--30869--   .. CRC mismatch (computed 824f4d52 wanted 959e8ba1)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libnsl-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- REDIR: 0x70b11a0 (libc.so.6:__GI_strcpy) redirected to 0x4c30db0 (__GI_strcpy)
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libnss_nis-2.23.so ..
+--30869--   .. CRC mismatch (computed 97375782 wanted 3001fa61)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libnss_nis-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libnss_files-2.23.so
+--30869--   Considering /lib/x86_64-linux-gnu/libnss_files-2.23.so ..
+--30869--   .. CRC mismatch (computed bbddf769 wanted cc29886c)
+--30869--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libnss_files-2.23.so ..
+--30869--   .. CRC is valid
+--30869-- REDIR: 0x71705f0 (libc.so.6:__strcspn_sse42) redirected to 0x4c35530 (strcspn)
+--30869-- REDIR: 0x70ce7f0 (libc.so.6:__strcat_sse2_unaligned) redirected to 0x4c308b0 (strcat)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/jmi/mwjmiloader.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwjvm_interface.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/vfs/core/storage/storagesystemactivator/libmwstoragesystemactivator.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/vfs/provider/storage/fileprovideractivator/libmwstoragefileprovideractivator.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstoragefileprovider.so
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x70ad600 (libc.so.6:posix_memalign) redirected to 0x4c2fe9a (posix_memalign)
+--30869-- REDIR: 0x6b1e370 (libstdc++.so.6:operator new[](unsigned long, std::nothrow_t const&)) redirected to 0x4c2eb39 (operator new[](unsigned long, std::nothrow_t const&))
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwkeybrd_impl.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libncurses.so.5.9
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /lib/x86_64-linux-gnu/libtinfo.so.5.9
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x7173e90 (libc.so.6:__memcpy_chk_avx_unaligned) redirected to 0x4c35280 (__memcpy_chk)
+==30869== Thread 2:
+==30869== Syscall param writev(vector[...]) points to uninitialised byte(s)
+==30869==    at 0x7122FFD: ??? (syscall-template.S:84)
+==30869==    by 0x14770F28: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==30869==    by 0x1477131C: ??? (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==30869==    by 0x147713A4: xcb_writev (in /usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0)
+==30869==    by 0x1446A4AD: _XSend (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==30869==    by 0x1446A7F4: _XFlush (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==30869==    by 0x1444BE49: XFlush (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==30869==    by 0x26C8465D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwuix.so)
+==30869==    by 0x17D2AAD7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D35ED6: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D2C40A: iqm::Iqm::deliver(foundation::msg_svc::exchange::Routing const&, mwboost::shared_ptr<cmddistributor::IIP>, foundation::msg_svc::exchange::IDType const&, mlutil::contextmgr::McrID const&, mwboost::optional<mlutil::contextmgr::MvmID> const&, mwboost::shared_ptr<foundation::msg_svc::eventmgr::EventMgr>, mlutil::cmddistributor::WhenToDequeue::WhenToDequeue, bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x9E10D81: cmddistributor::IIPEnqueueMessage::deliver(foundation::msg_svc::exchange::Routing const&) const (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==  Address 0x13912084 is 36 bytes inside a block of size 16,384 alloc'd
+==30869==    at 0x4C2FAA0: calloc (vg_replace_malloc.c:711)
+==30869==    by 0x1445A692: XOpenDisplay (in /usr/lib/x86_64-linux-gnu/libX11.so.6.3.0)
+==30869==    by 0x26C8453D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwuix.so)
+==30869==    by 0x26C8C892: uixRegisterIOServices() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwuix.so)
+==30869==    by 0x18359939: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x183405EC: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x183057A5: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D8643: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D13F0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+==30869== 
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/startup_plugins/pathdef/mwPathdefPlugin.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/supportsoftwarematlabmanagement/mw_spregistration.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/startup_plugins/startup_folder/mwStartupFolderPlugin.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/matlabdata/startupplugin/libmwmda_startupplugin.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfoundation_extdata_matrix_data.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/prefdirwarning/libmw_prefdirwarning.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/performance/mwperformance_startup.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwperformance.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/matlab_toolbox_strfun_string/string_startup_plugin.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/eventmgrsvc/mweventmgrsrc_permvm.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstrfun.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstring.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbuiltinsutil.so
+--30869--    object doesn't have a symbol table
+--30869-- memcheck GC: 1434 nodes, 871 survivors (60.7%)
+--30869-- memcheck GC: 2027 new table size (stepup)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlintrospect.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsysintrospect.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmldisplay.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmsgcatmcos.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwlocalemcos.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwconfig.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsprootbuiltins.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwapplyfuns.so
+--30869--    object doesn't have a symbol table
+--30869-- memcheck GC: 2027 nodes, 1484 survivors (73.2%)
+--30869-- memcheck GC: 2866 new table size (stepup)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlregexp.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfunctionargs.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfileio.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtextstream.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwdatetime.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwduration.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtextio.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwdiagnostic.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmatlab_toolbox_events.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtimefun.so
+--30869--    object doesn't have a symbol table
+--30869-- REDIR: 0x7170860 (libc.so.6:__strspn_sse42) redirected to 0x4c355f0 (strspn)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhgbuiltins.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libuij.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhgdatatypes.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhg.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhgutils.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhgweb_interface.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbtutils.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbt.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbtdatatypes.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbtcontroller.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbt_uieventdata.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwstructuredoutput.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwconnectorconnectorapi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwconnectormessageserviceapi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwconnectorbinaryapi.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwgbt_java.so
+--30869--    object doesn't have a symbol table
+--30869-- memcheck GC: 2866 nodes, 2386 survivors (83.3%)
+--30869-- memcheck GC: 4053 new table size (stepup)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwwkspintrospect.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwerrorrecovery_util.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmat.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libhdf5.so.8.0.1
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsaveload.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtypevalidation.so
+--30869--    object doesn't have a symbol table
+--30869-- memcheck GC: 4053 nodes, 3561 survivors (87.9%)
+--30869-- memcheck GC: 5731 new table size (stepup)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwasyncioimpl.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtamutil.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmatlabproxy.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwasynciocore.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/toolbox/shared/hotpluglib/bin/glnxa64/libmwhotplugmlconverter.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/toolbox/shared/hotpluglib/bin/glnxa64/libmwhotplugdevice.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwformat.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwhandle_graphics.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmathcgeo.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_timer.so.1.56.0
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmfl_interp.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libCGAL.so.11.0.2
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libgmp.so.3.4.1
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmpfr.so.1.2.2
+--30869-- memcheck GC: 5731 nodes, 5078 survivors (88.6%)
+--30869-- memcheck GC: 8104 new table size (stepup)
+--30869-- Reading syms from /usr/local/MATLAB/R2018a/bin/glnxa64/libmwtypeconversion.so
+--30869--    object doesn't have a symbol table
+--30869-- Reading syms from /home/jack/dev/project/voise-1.3/matlab/removeSeedFromVD.mexa64
+==30869== Thread 3:
+==30869== Invalid write of size 8
+==30869==    at 0x54613FA6: pushVD(vd, mxArray_tag**) (pushVD.cpp:118)
+==30869==    by 0x54610921: mexFunction (removeSeedFromVD.cpp:50)
+==30869==    by 0x1A62207F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A622F2A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A60D30B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x188A32AC: Mfh_file::dispatch_fh_impl(void (Mfh_file::*)(int, mxArray_tag**, int, mxArray_tag**), int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x188A3BAD: Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x1B712DA0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B713981: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B7FBE78: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B79D3E0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA35A7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==  Address 0x44472e50 is 0 bytes after a block of size 2,080 alloc'd
+==30869==    at 0x4C2DBED: malloc (vg_replace_malloc.c:299)
+==30869==    by 0x5B10673: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwfl.so)
+==30869==    by 0x94A0BDD: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmx.so)
+==30869==    by 0x94A2FAE: matrix::detail::create_numeric(unsigned long, unsigned long, mxClassID, mxComplexity, int, mxArray_tag const**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmx.so)
+==30869==    by 0x94A303D: matrix::detail::noninlined::mx_array_api::mxCreateNumericMatrixWithReuse(unsigned long, unsigned long, mxClassID, mxComplexity, int, mxArray_tag const**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmx.so)
+==30869==    by 0x54613901: pushVD(vd, mxArray_tag**) (pushVD.cpp:60)
+==30869==    by 0x54610921: mexFunction (removeSeedFromVD.cpp:50)
+==30869==    by 0x1A62207F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A622F2A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A60D30B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x188A32AC: Mfh_file::dispatch_fh_impl(void (Mfh_file::*)(int, mxArray_tag**, int, mxArray_tag**), int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x188A3BAD: Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869== 
+--30869-- VALGRIND INTERNAL ERROR: Valgrind received a signal 11 (SIGSEGV) - exiting
+--30869-- si_code=128;  Faulting address: 0x0;  sp: 0x100dc9cdf0
+
+valgrind: the 'impossible' happened:
+   Killed by fatal signal
+
+host stacktrace:
+==30869==    at 0x580929C5: get_bszB_as_is (m_mallocfree.c:303)
+==30869==    by 0x580929C5: get_bszB (m_mallocfree.c:315)
+==30869==    by 0x580929C5: get_next_b (m_mallocfree.c:434)
+==30869==    by 0x580929C5: swizzle (m_mallocfree.c:1200)
+==30869==    by 0x580929C5: unlinkBlock (m_mallocfree.c:1698)
+==30869==    by 0x580949CC: vgPlain_arena_malloc (m_mallocfree.c:1875)
+==30869==    by 0x58051444: vgMemCheck_new_block (mc_malloc_wrappers.c:372)
+==30869==    by 0x58051669: vgMemCheck___builtin_new (mc_malloc_wrappers.c:417)
+==30869==    by 0x580DD92C: do_client_request (scheduler.c:1866)
+==30869==    by 0x580DD92C: vgPlain_scheduler (scheduler.c:1433)
+==30869==    by 0x580EC3D6: thread_wrapper (syswrap-linux.c:103)
+==30869==    by 0x580EC3D6: run_a_thread_NORETURN (syswrap-linux.c:156)
+==30869==    by 0x580EC66A: vgModuleLocal_start_thread_NORETURN (syswrap-linux.c:320)
+==30869==    by 0x5811647D: ??? (in /usr/local/lib/valgrind/memcheck-amd64-linux)
+==30869==    by 0xDEADBEEFDEADBEEE: ???
+==30869==    by 0xDEADBEEFDEADBEEE: ???
+==30869==    by 0xDEADBEEFDEADBEEE: ???
+
+sched status:
+  running_tid=3
+
+Thread 1: status = VgTs_WaitSys (lwpid 30869)
+==30869==    at 0x89A7360: pthread_cond_wait@@GLIBC_2.3.2 (pthread_cond_wait.S:185)
+==30869==    by 0x182F0BAA: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F232E: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F2703: mcr_run_main(mwboost::function0<int> const&, bool, bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x17A5AD5A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54AA508: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54A9413: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x406D20: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/MATLAB)
+==30869==    by 0x704682F: (below main) (libc-start.c:291)
+
+Thread 2: status = VgTs_WaitSys (lwpid 30951)
+==30869==    at 0x71274D9: syscall (syscall.S:38)
+==30869==    by 0x6B4692F: std::__atomic_futex_unsigned_base::_M_futex_wait_until(unsigned int*, unsigned int, bool, std::chrono::duration<long, std::ratio<1l, 1l> >, std::chrono::duration<long, std::ratio<1l, 1000000000l> >) (futex.cc:55)
+==30869==    by 0x182D7B79: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x17A5DAB3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x17A5DFA4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x54A90A4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17A63A06: mwboost::detail::function::function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function1<int, std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > const&>, mwboost::_bi::list1<mwboost::_bi::value<std::vector<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> >, std::allocator<std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > > > > > >, int>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwMVMLocal.so)
+==30869==    by 0x182F1DB2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182F3566: mwboost::detail::thread_data<mwboost::function<void ()> const>::run() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 3: status = VgTs_Runnable (lwpid 30952)
+==30869==    at 0x4C2E24C: operator new(unsigned long) (vg_replace_malloc.c:334)
+==30869==    by 0x54612AE5: __gnu_cxx::new_allocator<double>::allocate(unsigned long, void const*) (new_allocator.h:104)
+==30869==    by 0x546122E2: std::allocator_traits<std::allocator<double> >::allocate(std::allocator<double>&, unsigned long) (alloc_traits.h:436)
+==30869==    by 0x54611B1D: std::_Vector_base<double, std::allocator<double> >::_M_allocate(unsigned long) (stl_vector.h:170)
+==30869==    by 0x54620C3B: void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double>(double&&) (vector.tcc:412)
+==30869==    by 0x5462094A: void std::vector<double, std::allocator<double> >::emplace_back<double>(double&&) (vector.tcc:101)
+==30869==    by 0x54620733: std::vector<double, std::allocator<double> >::push_back(double&&) (stl_vector.h:933)
+==30869==    by 0x546201C8: pointInRegion(vd const&, std::array<double, 2ul>, double, std::vector<double, std::allocator<double> >) (pointInRegion.cpp:52)
+==30869==    by 0x5461D25A: removeSeed(vd&, double) (removeSeed.cpp:85)
+==30869==    by 0x546108EF: mexFunction (removeSeedFromVD.cpp:45)
+==30869==    by 0x1A62207F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A622F2A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x1A60D30B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmex.so)
+==30869==    by 0x188A32AC: Mfh_file::dispatch_fh_impl(void (Mfh_file::*)(int, mxArray_tag**, int, mxArray_tag**), int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x188A3BAD: Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x1B712DA0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B713981: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B7FBE78: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B79D3E0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0E5CDC: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0E60C8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0CF22B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0D3CF2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B5E3F6C: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B6FFFA0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x188A32AC: Mfh_file::dispatch_fh_impl(void (Mfh_file::*)(int, mxArray_tag**, int, mxArray_tag**), int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x188A3BAD: Mfh_file::dispatch_fh(int, mxArray_tag**, int, mxArray_tag**) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_dispatcher.so)
+==30869==    by 0x1B712DA0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B713981: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B7FBFC8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B79D430: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA35A7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA5CBB: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA201C: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AF9BBA0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AF9BDD8: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA1845: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AFA192E: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0D0502: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B0D3CF2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B5E3F6C: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B59160B: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B598447: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B599E21: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B627806: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1B627C11: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x18E29B10: inEvalCmdWithLocalReturnInDesiredWSAndPublishEvents(std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > const&, int*, bool, bool, inWorkSpace_tag*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_interpreter.so)
+==30869==    by 0x17D5B469: iqm::InternalEvalPlugin::inEvalCmdWithLocalReturn(std::__cxx11::basic_string<char16_t, std::char_traits<char16_t>, std::allocator<char16_t> > const&, inWorkSpace_tag*) const (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D5C824: iqm::InternalEvalPlugin::execute(inWorkSpace_tag*, mwboost::shared_ptr<cmddistributor::IIPCompletedEvent>&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x18309CF4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x17D4EAB0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D2F5C7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D2F9D7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x9E3484B: cmddistributor::IIPRunNowMessage::deliver(foundation::msg_svc::exchange::Routing const&) const (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x8E1F4A0: foundation::msg_svc::exchange::MessageQueue::deliver(mwboost::shared_ptr<foundation::msg_svc::exchange::Envelope const> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x8E20B4F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x8E0927F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x8E0D66F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x8E08E54: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x9D944D4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x9D95291: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x9E587A2: mwboost::detail::function::void_function_obj_invoker0<mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::_bi::bind_t<mwboost::_bi::unspecified, mwboost::function<void ()>, mwboost::_bi::list0>, mwboost::_bi::list1<mwboost::reference_wrapper<mwboost::promise<void> > > >, void>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x5431611: mwboost::detail::shared_state_base::wait_internal(mwboost::unique_lock<mwboost::mutex>&, bool) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x1830AF0D: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x54C31A1: mwboost::shared_ptr<mwboost::unique_future<decltype ({parm#1}())> > cmddistributor::PackagedTaskIIP::invokeFunc<mwboost::function<void ()> >(mwboost::function<void ()> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54C34E7: std::_Function_handler<mwboost::any (), std::function<mwboost::any ()> cmddistributor::PackagedTaskIIP::createFunc<mwboost::function<void ()> >(mwboost::function<void ()>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17D70E6B: mwboost::detail::function::function_obj_invoker0<std::function<mwboost::any ()>, mwboost::any>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D7097E: iqm::PackagedTaskPlugin::execute(inWorkSpace_tag*, mwboost::shared_ptr<cmddistributor::IIPCompletedEvent>&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x183099C4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x17D4EAB0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D32768: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x1A390629: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbridge.so)
+==30869==    by 0x1A399B22: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbridge.so)
+==30869==    by 0x1A39A208: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbridge.so)
+==30869==    by 0x1A39A81B: mnParser() (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwbridge.so)
+==30869==    by 0x182D6BB7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x9E57E9E: std::__future_base::_State_baseV2::_M_do_set(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x89A8A98: __pthread_once_slow (pthread_once.c:116)
+==30869==    by 0x9E58125: void std::call_once<void (std::__future_base::_State_baseV2::*)(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*), std::__future_base::_State_baseV2*, std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*>(std::once_flag&, void (std::__future_base::_State_baseV2::*&&)(std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*, bool*), std::__future_base::_State_baseV2*&&, std::function<std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter> ()>*&&, bool*&&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmlutil.so)
+==30869==    by 0x182D69D2: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x54C31A1: mwboost::shared_ptr<mwboost::unique_future<decltype ({parm#1}())> > cmddistributor::PackagedTaskIIP::invokeFunc<mwboost::function<void ()> >(mwboost::function<void ()> const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x54C34E7: std::_Function_handler<mwboost::any (), std::function<mwboost::any ()> cmddistributor::PackagedTaskIIP::createFunc<mwboost::function<void ()> >(mwboost::function<void ()>)::{lambda()#1}>::_M_invoke(std::_Any_data const&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmvm.so)
+==30869==    by 0x17D70E6B: mwboost::detail::function::function_obj_invoker0<std::function<mwboost::any ()>, mwboost::any>::invoke(mwboost::detail::function::function_buffer&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D7097E: iqm::PackagedTaskPlugin::execute(inWorkSpace_tag*, mwboost::shared_ptr<cmddistributor::IIPCompletedEvent>&) (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D4EAB0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x17D31AC7: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwiqm.so)
+==30869==    by 0x182D7FE4: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D86A3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x182D13F0: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwmcr.so)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 4: status = VgTs_WaitSys (lwpid 30954)
+==30869==    at 0x89A7709: pthread_cond_timedwait@@GLIBC_2.3.2 (pthread_cond_timedwait.S:225)
+==30869==    by 0x2BE38C8A: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/matlab_startup_plugins/lmgrimpl/libmwlmgrimpl.so)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 5: status = VgTs_WaitSys (lwpid 30955)
+==30869==    at 0x89A7360: pthread_cond_wait@@GLIBC_2.3.2 (pthread_cond_wait.S:185)
+==30869==    by 0x6B42CFB: __gthread_cond_wait (gthr-default.h:864)
+==30869==    by 0x6B42CFB: std::condition_variable::wait(std::unique_lock<std::mutex>&) (condition_variable.cc:53)
+==30869==    by 0x1A88E64F: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwsearch_path_impl.so)
+==30869==    by 0x6B4865E: execute_native_thread_routine (thread.cc:83)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 6: status = VgTs_WaitSys (lwpid 30982)
+==30869==    at 0x89A7360: pthread_cond_wait@@GLIBC_2.3.2 (pthread_cond_wait.S:185)
+==30869==    by 0x6B42CFB: __gthread_cond_wait (gthr-default.h:864)
+==30869==    by 0x6B42CFB: std::condition_variable::wait(std::unique_lock<std::mutex>&) (condition_variable.cc:53)
+==30869==    by 0x1AF39A72: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AF39F27: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x6B4865E: execute_native_thread_routine (thread.cc:83)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 7: status = VgTs_WaitSys (lwpid 30983)
+==30869==    at 0x89A7360: pthread_cond_wait@@GLIBC_2.3.2 (pthread_cond_wait.S:185)
+==30869==    by 0x6B42CFB: __gthread_cond_wait (gthr-default.h:864)
+==30869==    by 0x6B42CFB: std::condition_variable::wait(std::unique_lock<std::mutex>&) (condition_variable.cc:53)
+==30869==    by 0x1AF39A72: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x1AF39F27: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwm_lxe.so)
+==30869==    by 0x6B4865E: execute_native_thread_routine (thread.cc:83)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 8: status = VgTs_WaitSys (lwpid 30984)
+==30869==    at 0x89A7360: pthread_cond_wait@@GLIBC_2.3.2 (pthread_cond_wait.S:185)
+==30869==    by 0x8DDE64C: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x8DDD308: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwms.so)
+==30869==    by 0x7A1DDC3: ??? (in /usr/local/MATLAB/R2018a/bin/glnxa64/libmwboost_thread.so.1.56.0)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+Thread 9: status = VgTs_WaitSys (lwpid 30985)
+==30869==    at 0x71274D9: syscall (syscall.S:38)
+==30869==    by 0xB31E7F9: futex_wait (linux_common.h:60)
+==30869==    by 0xB31E7F9: P (semaphore.h:206)
+==30869==    by 0xB31E7F9: commit_wait (thread_monitor.h:259)
+==30869==    by 0xB31E7F9: tbb::internal::rml::private_worker::run() (private_server.cpp:278)
+==30869==    by 0xB31E5A5: tbb::internal::rml::private_worker::thread_routine(void*) (private_server.cpp:224)
+==30869==    by 0x89A16B9: start_thread (pthread_create.c:333)
+==30869==    by 0x712D41C: clone (clone.S:109)
+
+
+Note: see also the FAQ in the source distribution.
+It contains workarounds to several common problems.
+In particular, if Valgrind aborted or crashed after
+identifying problems in your program, there's a good chance
+that fixing those problems will prevent Valgrind aborting or
+crashing, especially if it happened in m_mallocfree.c.
+
+If that doesn't help, please report this bug to: www.valgrind.org
+
+In the bug report, send all the above text, the valgrind
+version, and what OS and version you are using.  Thanks.
+

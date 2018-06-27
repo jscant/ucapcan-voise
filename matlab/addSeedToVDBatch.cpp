@@ -1,14 +1,21 @@
 #include <mex.h>
 #include <matrix.h>
+#include <eigen3/Eigen/Dense>
+#include <map>
 
 #ifndef VD_H
 #define VD_H
 #include "cpp/vd.h"
 #endif
 
-#ifndef REMOVESEED_H
-#define REMOVESEED_H
-#include "cpp/removeSeed.h"
+#ifndef AUX_H
+#define AUX_H
+#include "cpp/aux.h"
+#endif
+
+#ifndef ADDSEED_H
+#define ADDSEED_H
+#include "cpp/addSeed.h"
 #endif
 
 #ifndef SKIZEXCEPTION_H
@@ -28,16 +35,22 @@
 
 #include <chrono>
 
+
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {
 
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(
-            " Invalid number of input and output arguments");
+                " Invalid number of input and output arguments");
         return;
     }
-    real S = mxGetScalar(prhs[1]);
+
+    bool timing = false;
+
+    // Get new seed information
+    real *Sdoub = mxGetDoubles(prhs[1]);
+    int nRows = mxGetM(prhs[1]);
 
     // Grab VD data from ML struct
     auto start = std::chrono::high_resolution_clock::now();
@@ -45,27 +58,37 @@ void mexFunction(int nlhs, mxArray *plhs[],
     auto elapsed = std::chrono::high_resolution_clock::now() - start;
     long long microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     std::string str = "grabVD:\t\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
+
     // Add seed to VD
     start = std::chrono::high_resolution_clock::now();
-    try {
-        removeSeed(outputVD, S);
-    } catch (SKIZException &e) {
-        mexErrMsgTxt(e.what());
+    for(int i=0; i<nRows; ++i) {
+        real s1 = Sdoub[i];
+        real s2 = Sdoub[i+nRows];
+        try {
+            addSeed(outputVD, s1, s2);
+        } catch (SKIZException &e) {
+            mexErrMsgTxt(e.what());
+        }
     }
     elapsed = std::chrono::high_resolution_clock::now() - start;
     microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
 
     str = "removeSeed:\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
-    // Push modified VD to ML VD struct (handles memory allocation etc)
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
 
+    // Push modified VD to ML VD struct (handles memory allocation etc)
     start = std::chrono::high_resolution_clock::now();
     pushVD(outputVD, plhs);
     elapsed = std::chrono::high_resolution_clock::now() - start;
     microseconds = std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
     str = "pushVD:\t\t" + std::to_string(microseconds) + "\n";
-    mexPrintf(str.c_str());
+    if(timing) {
+        mexPrintf(str.c_str());
+    }
 
 }
-

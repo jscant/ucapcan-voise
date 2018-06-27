@@ -25,7 +25,7 @@ VD = initVD(nr, nc, S, VDlim);
 
 ns = size(S, 1);
 for k = 3:ns,
-  VD = addSeedToVD(VD, S(k,:));
+  VD = addSeedToVD2(VD, S(k,:));
 	if 0
   drawVD(VD);
 	end

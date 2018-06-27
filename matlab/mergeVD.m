@@ -47,6 +47,7 @@ thresHoldLength = params.thresHoldLength;
 
 fprintf(1,'*** Starting merging phase\n')
 useOld = 0;
+useBatch = 1;
 iMerge = 1;
 stopMerge = false;
 VDarr = [VD];
@@ -186,8 +187,24 @@ while ~stopMerge,
     params.mergeAlgo = 0;
 		switch params.mergeAlgo,
 		  case 0, % incremental
+              if useBatch
+                  VDTMP = removeSeedFromVDBatch(VD, Sk);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
+              else
         for k = Sk(:)',
-            if 1
+            if 0
                 VDOld = removeSeedFromVD2(VD, k);
                 VDTMP = removeSeedFromVD(VD, k);
                     if(isfield(VD, 'divSHC'))
@@ -229,6 +246,7 @@ while ~stopMerge,
 					% diagnostic plot
           if 0, drawVD(VD); disp("@@@"); pause(3); end
         end
+              end
 			case 1, % full
 			  Skeep = setdiff(VD.Sk, Sk);
 				VD = computeVDFast(VD.nr, VD.nc, [VD.Sx(Skeep), VD.Sy(Skeep)],VD.S);
@@ -244,14 +262,14 @@ while ~stopMerge,
 				  Skeep = setdiff(VD.Sk,Sk);
 					VD = computeVDFast(VD.nr, VD.nc, [VD.Sx(Skeep), VD.Sy(Skeep)],VD.S);
 				else, % incremental faster than full
-          for k = Sk(:)',
-            VD  = removeSeedFromVD(VD, k);
-          end
+                  for k = Sk(:)',
+                    VD  = removeSeedFromVD(VD, k);
+                  end
 				end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end
 %        disp("ML FLAG 5");
-    params = plotCurrentVD(VD, params, iMerge);
+   % params = plotCurrentVD(VD, params, iMerge);
 	  iMerge = iMerge+1;
 		%fprintf(1,'Voronoi Diagram computed\n');
         %VDarr = [VDarr; VD];
