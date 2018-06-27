@@ -53,11 +53,11 @@ end
 fprintf(1,'endSeed = %d card(S) = %d\n',endSeed, size(S,1));
 endSeed = size(S,1);
 
-nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds));
-nsa = round(linspace(begSeed, endSeed, numSeeds));
+nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds))
+nsa = round(linspace(begSeed, endSeed, numSeeds))
 
 % incremental batch add
-nda = [nsa(1), diff(nsa)];
+nda = [nsa(1), diff(nsa)]
 tVDa_cppb = zeros(size(nsa));
 % initial seeds
 s = S([1:nsa(1)],:);
@@ -106,6 +106,7 @@ for i=1:length(nsr)-1,
 	end
 
 end
+
 
 % incremental add (C++ single)
 nda = [nsa(1), diff(nsa)];
@@ -171,7 +172,7 @@ tStart = tic;
 VDa = computeVD(nr, nc, s, VDlim);
 tVDa_ml(1) = toc(tStart);
 fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
-        size(s,1), 1, nsa(1), tVDa(1));
+        size(s,1), 1, nsa(1), tVDa_ml(1));
 
 for i=2:length(nsa)
 
@@ -238,7 +239,9 @@ end
 
 
 nsr(end) = [];
-tVDr(end) = [];
+tVDr_ml(end) = [];
+tVDr_cppb(end) = [];
+tVDr_cpps(end) = [];
 
 [ptVDf] = polyfit([0 nsf], [0 tVDf], 2);
 [ptVDa] = polyfit([0 nsa], [0 tVDa_ml./nda], 1);
@@ -251,8 +254,8 @@ tVDr(end) = [];
 [ptVDr_cppb] = polyfit([nsr 0], [tVDr_cppb./ndr 0], 1);
 
 subplot(221),
-plot(nsa, [tVDa./nda; polyval(ptVDa,nsa)], '-o', ...
-		 nsr, [tVDr./ndr; polyval(ptVDr,nsr)], '-o');
+plot(nsa, [tVDa_ml./nda; polyval(ptVDa,nsa)], '-o', ...
+		 nsr, [tVDr_ml./ndr; polyval(ptVDr,nsr)], '-o');
 legend('Add','Add fit','Remove','Remove fit','location','northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
