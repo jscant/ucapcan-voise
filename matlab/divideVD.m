@@ -77,8 +77,8 @@ while ~stopDiv,
   if ~isempty(S),
 	  nSa = size(S,1);
     fprintf(1,'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
-    params.divideAlgo = 0;
-		switch params.divideAlgo % ALWAYS USE INCREMENTAL SKIZ ALGO - REMOVE THIS LATER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    params.divideAlgo = 2;
+		switch params.divideAlgo
             case 0 % incremental
                 if useBatch
                     Sk = [];
@@ -92,7 +92,20 @@ while ~stopDiv,
                             end
                         end
                     end
-                    VD = addSeedToVDBatch(VD, Sk);
+                    VDTMP = addSeedToVDBatch(VD, Sk);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
                 else
                 for k = 1:nSa
                     if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
@@ -121,10 +134,13 @@ while ~stopDiv,
                 ns = length(VD.Sk);
                 tf = polyval(timing.ptVDf, ns+nSa);
 				ti = sum(polyval(timing.ptVDa, ns+[0:nSa-1]));
-				fprintf(1,'Est. time full(%4d:%4d)/inc(%4d:%4d) %6.1f/%6.1f s ', ...
-				        1, ns+nSa, ns+1, ns+nSa, tf, ti);
+                tcppb = sum(polyval(timing.ptVDa_cppb, ns+[0:nSa-1]));
+				fprintf(1,'Est. time full(%4d:%4d)/inc_ML(%4d:%4d)/inc_C++(%4d:%4d) %6.1f/%6.1f/%6.1f s ', ...
+				        1, ns+nSa, ns+1, ns+nSa, ns+1, ns+nSa, tf, ti, tcppb);
 				tStart = tic;
-				if tf < ti % full faster than incremental
+                if tf < ti && tf < tcppb
+				%if tf < ti % full faster than incremental
+                    fprintf("FULL\n%d\n%d\n", tf, tcppb);
                     for k = 1:size(S,1)
                         if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
                             VD.Sx = [VD.Sx; S(k,1)];
@@ -132,12 +148,40 @@ while ~stopDiv,
                         end
                     end
                     VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
-                else % incremental faster than full
+                elseif ti < tf && ti < tcppb == ti % incremental faster than full
+                    fprintf("INCREMENTAL (ML)\n");
                     for k = 1:size(S,1)
                         if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
                             VD = addSeedToVD(VD, S(k,:));
                         end
                     end
+                else
+                    fprintf("INCREMENTAL (C++)\n");
+                    Sk = [];
+                    for k=1:nSa
+                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
+                            [m,n] = size(Sk);
+                            if m == 0
+                                Sk = [Sk; S(k,:)];
+                            elseif isempty(find(S(k, 1)==Sk(:, 1) & S(k,2)==Sk(:,2)))
+                                Sk = [Sk; S(k,:)];
+                            end
+                        end
+                    end
+                    VDTMP = addSeedToVDBatch(VD, Sk);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
                 end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end

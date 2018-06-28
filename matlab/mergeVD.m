@@ -186,7 +186,7 @@ tic
 	  nSr = length(Sk);
     fprintf(1,'Iter %2d Removing %d seeds from Voronoi Diagram\n', iMerge, nSr);
     %pause
-    params.mergeAlgo = 0;
+    params.mergeAlgo = 2;
 		switch params.mergeAlgo,
 		  case 0, % incremental
               tic
@@ -257,17 +257,36 @@ tic
 			  Skeep = setdiff(VD.Sk, Sk);
 			  tf = polyval(timing.ptVDf, ns-nSr);
 				ti = sum(polyval(timing.ptVDr,ns-[0:nSr-1]));
-				fprintf(1,'Est. time full(%4d:%4d)/inc(%4d:%4d) %6.1f/%6.1f s ', ...
-				        1, ns-nSr, ns-1, ns-nSr, tf, ti);
+                tcppb = sum(polyval(timing.ptVDr_cppb,ns-[0:nSr-1]));
+                fprintf(1,'Est. time full(%4d:%4d)/inc_ML(%4d:%4d)/inc_C++(%4d:%4d) %6.1f/%6.1f/%6.1f s ', ...
+				        1, ns-nSr, ns-1, ns-nSr, ns-1, ns-nSr, tf, ti, tcppb);
 				tStart = tic;
-				if tf < ti, % full faster than incremental
+				if tf < ti && tf < tcppb, % full faster than incremental
+                    fprintf("FULL\n%d\n%d\n", tf, tcppb);
 				  Skeep = setdiff(VD.Sk,Sk);
 					VD = computeVDFast(VD.nr, VD.nc, [VD.Sx(Skeep), VD.Sy(Skeep)],VD.S);
-				else, % incremental faster than full
+                elseif ti < tf && ti < tcppb, % incremental faster than full
+                    fprintf("INCREMENTAL (ML)\n");
                   for k = Sk(:)',
                     VD  = removeSeedFromVD(VD, k);
                   end
-				end
+                else
+                    fprintf("INCREMENTAL (C++)\n");
+                    VDTMP = removeSeedFromVDBatch(VD, Sk);
+                    if(isfield(VD, 'divSHC'))
+                        VDTMP.divSHC = VD.divSHC;
+                    end
+                    if(isfield(VD, 'divHCThreshold'))
+                        VDTMP.divHCThreshold = VD.divHCThreshold;
+                    end
+                    if(isfield(VD, 'Smu'))
+                        VDTMP.Smu = VD.Smu;
+                    end
+                    if(isfield(VD, 'Ssdmu'))
+                        VDTMP.Ssdmu = VD.Ssdmu;
+                    end
+                    VD = VDTMP;
+                end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end
 %        disp("ML FLAG 5");

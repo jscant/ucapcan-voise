@@ -24,5 +24,5 @@ clc; clear all;
 
 webVOISE('../share/VOISEdemo1.dat');
 
-profsave(profile('info'),'profile_results')
+%profsave(profile('info'),'profile_results')
 %quit

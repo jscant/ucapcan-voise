@@ -25,8 +25,13 @@ function benchVD(timingFilename)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-compileMEX
+%compileMEX
 global voise
+
+filename = strcat(voise.root, '/share/', timingFilename);
+target = strcat(voise.root, '/share/', timingFilename, '.mat');
+symlink = strcat(voise.root, '/share/VOISEtiming.mat');
+
 
 numSeeds = 40;
 begSeed = 5;
@@ -65,22 +70,10 @@ tStart = tic;
 VDa = computeVD(nr, nc, s, VDlim);
 lam = VDa.Vk.lambda;
 v = VDa.Vk.v;
-Nk = VDa.Nk
-for i=1:5
-    [m, n] = size(Nk{i, 1});
-    strng = int2str(Nk{i, 1}(1));
-    for j=2:m
-        strng = strng + ", " + Nk{i, 1}(j);
-    end
-    display(strng);
-end
-return
 
 save("benchVDInitVD.txt", "VDa", "-ascii");
 save("benchVDLambda.txt", "lam", "-ascii");
 save("benchVDV.txt", "v", "-ascii");
-save("benchVDNk.txt", "Nk", "-ascii");
-
 
 tVDa_cppb(1) = toc(tStart);
 fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
@@ -125,7 +118,6 @@ for i=1:length(nsr)-1,
 	end
 
 end
-return;
 
 % incremental add (C++ single)
 nda = [nsa(1), diff(nsa)];
@@ -304,13 +296,16 @@ title('C++ (Batch job)')
 
 
 fprintf(1,'Saving timings in timing file:\n %s\n', ...
-        [voise.root '/share/' timingFilename]);
+        filename);
 
-save([voise.root '/share/' timingFilename],'nsf','tVDf','ptVDf', ...
-     'nsa','nda','tVDa_ml','ptVDa_ml','nsr','ndr','tVDr_ml','ptVDr_ml',...
+save(filename,'nsf','tVDf','ptVDf', ...
+     'nsa','nda','tVDa_ml','ptVDa','nsr','ndr','tVDr_ml','ptVDr',...
      'tVDa_cpps','ptVDa_cpps', 'tVDr_cpps','ptVDr_cpps',...
      'tVDa_cppb','ptVDa_cppb', 'tVDr_cppb','ptVDr_cppb');
 
 fprintf(1,'You should copy / link it to the VOISE timing file:\n %s\n', ...
-        [voise.root '/share/VOISEtiming.mat']);
-
+       filename);
+   
+cmd = ['ln -s' target, symlink];
+fprintf(1, 'Creating symbolic link for you..:\n%s\n', join(cmd));
+unix(join(cmd));
