@@ -1,5 +1,7 @@
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 
 #ifndef VD_H
 #define VD_H
@@ -32,7 +34,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {
 
-    bool timing = true;
+    bool timing = false;
 
     if (nlhs != 1 || nrhs != 2) {
         mexErrMsgTxt(

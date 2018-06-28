@@ -1,12 +1,15 @@
 /*
  * Useful auxilliary functions - used in many higher level functions.
  */
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
-#include <math.h>
+#include <matrix.h>
+#endif
 #include <algorithm>
 #include <array>
 #include <vector>
 #include <map>
+#include <fstream>
 
 #ifndef AUX_H
 #define AUX_H
@@ -68,4 +71,44 @@ void updateDict(std::map<real, RealVec> &d, const real &key, const real &value) 
         lst.push_back(value);
         d[key] = lst;
     }
+}
+
+std::vector<RealVec> readSeeds(std::string filename) {
+    std::ifstream afile;
+    afile.open(filename.c_str());
+    RealVec Sx;
+    RealVec Sy;
+    unsigned int x = 0;
+    real number;
+    while(afile >> number){
+        if(x % 2 == 0){
+            Sx.push_back(number);
+        } else {
+            Sy.push_back(number);
+        }
+        x += 1;
+    }
+    std::vector<RealVec> result;
+    result.push_back(Sx);
+    result.push_back(Sy);
+    return result;
+}
+
+Mat readMatrix(std::string filename, int nr, int nc) {
+    std::ifstream afile;
+    afile.open(filename.c_str());
+    Mat result(nr, nc);
+    unsigned int row = 0;
+    unsigned int col = 0;
+    real number;
+    while(afile >> number){
+        result(row, col) = number;
+        if(col == 255){
+            row += 1;
+            col = 0;
+        } else {
+            ++col;
+        }
+    }
+    return result;
 }

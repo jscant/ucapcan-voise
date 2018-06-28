@@ -120,6 +120,7 @@ params = plotVOISE(IVD, params, 0);
 
 % Dividing phase
 tic
+profile on;
 [DVD, params] = divideVD(IVD, params);
 fprintf("Dividing took %d seconds\n", toc);
 % save 
@@ -134,6 +135,8 @@ if ~params.movDiag, vd1 = figure; end
 tic
 [MVD, params] = mergeVD(DVD, params);
 fprintf("Merging took %d seconds\n", toc);
+profile off
+profsave(profile('info'),'profile_results')
 % save 
 save([params.oDir params.oMatFile], '-append', 'MVD');
 % plot

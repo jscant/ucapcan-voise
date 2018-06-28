@@ -27,3 +27,9 @@ SKIZIdenticalSeedsError::~SKIZIdenticalSeedsError() throw() {};
 const char* SKIZIdenticalSeedsError::what() {
     return msg.c_str();
 }
+
+SKIZIOError::SKIZIOError(const std::string s) : SKIZException(s) {}
+SKIZIOError::~SKIZIOError() throw() {};
+const char* SKIZIOError::what() {
+    return msg.c_str();
+}

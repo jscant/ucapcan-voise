@@ -13,14 +13,9 @@
 #define INF std::numeric_limits<real>::infinity()
 #endif
 
-#ifndef MEX_H
-#define MEX_H
-#include "mex.h"
-#endif
-
-#ifndef MATRIX_H
-#define MATRIX_H
-#include "matrix.h"
+#ifdef MATLAB_MEX_FILE
+#include <mex.h>
+#include <matrix.h>
 #endif
 
 #ifndef ADDSEED_H

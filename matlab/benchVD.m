@@ -25,7 +25,7 @@ function benchVD(timingFilename)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-
+compileMEX
 global voise
 
 numSeeds = 40;
@@ -65,10 +65,21 @@ tStart = tic;
 VDa = computeVD(nr, nc, s, VDlim);
 lam = VDa.Vk.lambda;
 v = VDa.Vk.v;
-VDa.x
+Nk = VDa.Nk
+for i=1:5
+    [m, n] = size(Nk{i, 1});
+    strng = int2str(Nk{i, 1}(1));
+    for j=2:m
+        strng = strng + ", " + Nk{i, 1}(j);
+    end
+    display(strng);
+end
+return
+
 save("benchVDInitVD.txt", "VDa", "-ascii");
 save("benchVDLambda.txt", "lam", "-ascii");
 save("benchVDV.txt", "v", "-ascii");
+save("benchVDNk.txt", "Nk", "-ascii");
 
 
 tVDa_cppb(1) = toc(tStart);

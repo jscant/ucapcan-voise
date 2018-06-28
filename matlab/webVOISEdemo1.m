@@ -21,6 +21,8 @@
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 clc; clear all;
 %compileMEX;
+
 webVOISE('../share/VOISEdemo1.dat');
 
+profsave(profile('info'),'profile_results')
 %quit

@@ -84,7 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/addSeedToVD.cpp">
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp">
 			<Option target="matlab"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/CMakeLists.txt">

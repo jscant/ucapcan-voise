@@ -21,3 +21,7 @@ template <class T1, class T2>
 bool inVector(const std::vector<T1> &vec, const T2 &item);
 
 void updateDict(std::map<real, RealVec> &d, const real &key, const real &value);
+
+std::vector<RealVec> readSeeds(std::string filename);
+
+Mat readMatrix(std::string filename, int nr, int nc);

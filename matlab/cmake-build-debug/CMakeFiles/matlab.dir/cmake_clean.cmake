@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/matlab.dir/addSeedToVD.cpp.o"
+  "CMakeFiles/matlab.dir/cpp/main.cpp.o"
   "matlab.pdb"
   "matlab"
 )

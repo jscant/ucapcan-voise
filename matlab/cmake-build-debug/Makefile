@@ -123,32 +123,32 @@ matlab/fast:
 	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/build
 .PHONY : matlab/fast
 
-addSeedToVD.o: addSeedToVD.cpp.o
+cpp/main.o: cpp/main.cpp.o
 
-.PHONY : addSeedToVD.o
+.PHONY : cpp/main.o
 
 # target to build an object file
-addSeedToVD.cpp.o:
-	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/addSeedToVD.cpp.o
-.PHONY : addSeedToVD.cpp.o
+cpp/main.cpp.o:
+	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/cpp/main.cpp.o
+.PHONY : cpp/main.cpp.o
 
-addSeedToVD.i: addSeedToVD.cpp.i
+cpp/main.i: cpp/main.cpp.i
 
-.PHONY : addSeedToVD.i
+.PHONY : cpp/main.i
 
 # target to preprocess a source file
-addSeedToVD.cpp.i:
-	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/addSeedToVD.cpp.i
-.PHONY : addSeedToVD.cpp.i
+cpp/main.cpp.i:
+	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/cpp/main.cpp.i
+.PHONY : cpp/main.cpp.i
 
-addSeedToVD.s: addSeedToVD.cpp.s
+cpp/main.s: cpp/main.cpp.s
 
-.PHONY : addSeedToVD.s
+.PHONY : cpp/main.s
 
 # target to generate assembly for a file
-addSeedToVD.cpp.s:
-	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/addSeedToVD.cpp.s
-.PHONY : addSeedToVD.cpp.s
+cpp/main.cpp.s:
+	$(MAKE) -f CMakeFiles/matlab.dir/build.make CMakeFiles/matlab.dir/cpp/main.cpp.s
+.PHONY : cpp/main.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... matlab"
 	@echo "... edit_cache"
-	@echo "... addSeedToVD.o"
-	@echo "... addSeedToVD.i"
-	@echo "... addSeedToVD.s"
+	@echo "... cpp/main.o"
+	@echo "... cpp/main.i"
+	@echo "... cpp/main.s"
 .PHONY : help
 
 

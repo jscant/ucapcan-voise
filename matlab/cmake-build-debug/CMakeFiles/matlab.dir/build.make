@@ -57,27 +57,27 @@ include CMakeFiles/matlab.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/matlab.dir/flags.make
 
-CMakeFiles/matlab.dir/addSeedToVD.cpp.o: CMakeFiles/matlab.dir/flags.make
-CMakeFiles/matlab.dir/addSeedToVD.cpp.o: ../addSeedToVD.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matlab.dir/addSeedToVD.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matlab.dir/addSeedToVD.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/addSeedToVD.cpp
+CMakeFiles/matlab.dir/cpp/main.cpp.o: CMakeFiles/matlab.dir/flags.make
+CMakeFiles/matlab.dir/cpp/main.cpp.o: ../cpp/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matlab.dir/cpp/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/matlab.dir/cpp/main.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp
 
-CMakeFiles/matlab.dir/addSeedToVD.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matlab.dir/addSeedToVD.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/addSeedToVD.cpp > CMakeFiles/matlab.dir/addSeedToVD.cpp.i
+CMakeFiles/matlab.dir/cpp/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/matlab.dir/cpp/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp > CMakeFiles/matlab.dir/cpp/main.cpp.i
 
-CMakeFiles/matlab.dir/addSeedToVD.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matlab.dir/addSeedToVD.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/addSeedToVD.cpp -o CMakeFiles/matlab.dir/addSeedToVD.cpp.s
+CMakeFiles/matlab.dir/cpp/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/matlab.dir/cpp/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp -o CMakeFiles/matlab.dir/cpp/main.cpp.s
 
 # Object files for target matlab
 matlab_OBJECTS = \
-"CMakeFiles/matlab.dir/addSeedToVD.cpp.o"
+"CMakeFiles/matlab.dir/cpp/main.cpp.o"
 
 # External object files for target matlab
 matlab_EXTERNAL_OBJECTS =
 
-matlab: CMakeFiles/matlab.dir/addSeedToVD.cpp.o
+matlab: CMakeFiles/matlab.dir/cpp/main.cpp.o
 matlab: CMakeFiles/matlab.dir/build.make
 matlab: /usr/local/MATLAB/R2018a/extern/include/mex.cpp
 matlab: CMakeFiles/matlab.dir/link.txt

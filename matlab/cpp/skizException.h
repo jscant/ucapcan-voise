@@ -45,5 +45,14 @@ public:
     const char* what();
 };
 
+class SKIZIOError : public SKIZException {
+private:
+    std::string msg;
+public:
+    SKIZIOError(const std::string s);
+    virtual ~SKIZIOError() throw();
+    const char* what();
+};
+
 
 //#endif //SKIZ_SKIZEXCEPTION_H

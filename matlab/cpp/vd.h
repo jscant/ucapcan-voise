@@ -2,8 +2,10 @@
 // Created by root on 12/06/18.
 //
 // CHANGE FILENAME TO VD.H
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 #include <vector>
 #include <map>
 #include <algorithm>
@@ -59,10 +61,10 @@ public:
     void setV(Mat newV) {
         Vk.v = newV;
     };
-    void setLamByIdx(mwIndex i, mwIndex j, real val) {
+    void setLamByIdx(unsigned int i, unsigned int j, real val) {
         Vk.lam(i, j) = val;
     };
-    void setVByIdx(mwIndex i, mwIndex j, real val) {
+    void setVByIdx(unsigned int i, unsigned int j, real val) {
         Vk.v(i, j) = val;
     };
     void setSeeds(Mat s) {
@@ -86,19 +88,19 @@ public:
     void setSk(std::map<real, real> val) {
         Sk = val;
     };
-    void setSxByIdx(mwIndex idx, real val) {
+    void setSxByIdx(unsigned int idx, real val) {
         Sx[idx] = val;
     };
-    void setSyByIdx(mwIndex idx, real val) {
+    void setSyByIdx(unsigned int idx, real val) {
         Sy[idx] = val;
     };
-    void setSkByIdx(mwIndex idx, real val) {
+    void setSkByIdx(unsigned int idx, real val) {
         Sk[idx] = val;
     };
     void setNk(std::map<real, RealVec> val) {
         Nk = val;
     };
-    void setNkByValue(mwIndex idx, RealVec val) {
+    void setNkByValue(unsigned int idx, RealVec val) {
         Nk[idx] = val;
     };
 
@@ -117,10 +119,10 @@ public:
     Mat getV() const {
         return Vk.v;
     };
-    real getLamByIdx(mwIndex i, mwIndex j) const {
+    real getLamByIdx(unsigned int i, unsigned int j) const {
         return Vk.lam(i, j);
     };
-    real getVByIdx(mwIndex i, mwIndex j) const {
+    real getVByIdx(unsigned int i, unsigned int j) const {
         return Vk.v(i, j);
     };
     Mat getSeeds() const {

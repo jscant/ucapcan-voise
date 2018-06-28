@@ -9,8 +9,10 @@
  */
 
 #include <set>
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 
 #ifndef ADDSEED_H
 #define ADDSEED_H
@@ -59,11 +61,9 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 bool removeSeed(vd &VD, real Sk) {
 
     VD.k += 1;
-    //mexPrintf("FLAG 1\n");
+
     // Get list of row-wise bounds on R(Sk)
     Mat bounds = getRegion(VD, Sk);
-    //bounds.col(0) = 0;
-    //bounds.col(1) = VD.nc;
     RealVec Ns = VD.Nk.at(Sk); // Neighbours of seed to be removed
     bool finish = false;
     for (int j = 0; j < bounds.rows(); ++j) {
@@ -78,15 +78,15 @@ bool removeSeed(vd &VD, real Sk) {
         real lb = std::max(0.0, bounds(j, 0) - 1);
         real ub = std::min(VD.nc, bounds(j, 1) + 1);
         for (real i = lb; i < ub; ++i) {
-            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
-            if(!pointInRegion(VD, pt, Sk, Ns)){
-                continue;
-            }
+//            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
+            //if(!pointInRegion(VD, pt, Sk, Ns)){
+            //    continue;
+            //}
             VD.Vk.lam(j, i) = Ns.at(0);
             VD.Vk.v(j, i) = 0;
             real lam = Ns.at(0);
-            for (auto idx=1; idx<Ns.size(); ++idx) {
-                mwIndex r = Ns.at(idx);
+            for (unsigned int idx=1; idx<Ns.size(); ++idx) {
+                unsigned int r = Ns.at(idx);
                 real newDist = sqDist(i+1, j+1, VD.Sx[r], VD.Sy[r]);
                 real oldDist = sqDist(i+1, j+1, VD.Sx[lam], VD.Sy[lam]);
                 if((int)newDist < (int)oldDist){
@@ -103,7 +103,7 @@ bool removeSeed(vd &VD, real Sk) {
     }
     //mexPrintf("FLAG 8\n");
     std::map<real, RealVec> newDict;
-    for (mwIndex r : VD.Nk.at(Sk)) {
+    for (unsigned int r : VD.Nk.at(Sk)) {
         RealVec Ns = VD.Nk.at(r);
         Ns.erase(std::remove(Ns.begin(), Ns.end(), Sk), Ns.end());
         newDict[r] = Ns;

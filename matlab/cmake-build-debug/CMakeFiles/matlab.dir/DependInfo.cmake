@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jack/dev/project/voise-1.3/matlab/addSeedToVD.cpp" "/home/jack/dev/project/voise-1.3/matlab/cmake-build-debug/CMakeFiles/matlab.dir/addSeedToVD.cpp.o"
+  "/home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp" "/home/jack/dev/project/voise-1.3/matlab/cmake-build-debug/CMakeFiles/matlab.dir/cpp/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

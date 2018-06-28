@@ -1,6 +1,8 @@
 #include <eigen3/Eigen/Dense>
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 #include <math.h>
 
 #ifndef GETREGION_H
@@ -19,7 +21,6 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 
 // Return a n x 2 array of lower and upper bounds for R(s) for each row
 Mat getRegion(const vd &VD, real s) {
-    real k = VD.k;
     const real s1 = VD.Sx.at(s);
     const real s2 = VD.Sy.at(s);
 

@@ -1,5 +1,7 @@
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 #include <eigen3/Eigen/Dense>
 #include <string>
 #include <map>

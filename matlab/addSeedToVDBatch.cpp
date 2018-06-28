@@ -1,5 +1,7 @@
+#ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
+#endif
 #include <eigen3/Eigen/Dense>
 #include <map>
 
@@ -46,7 +48,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
         return;
     }
 
-    bool timing = true;
+    bool timing = false;
 
     // Get new seed information
     real *Sdoub = mxGetDoubles(prhs[1]);

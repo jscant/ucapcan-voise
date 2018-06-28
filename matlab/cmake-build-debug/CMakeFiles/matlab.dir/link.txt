@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/matlab.dir/addSeedToVD.cpp.o  -o matlab -lcpp/addSeed.cpp -lcpp/getRegion.cpp -lcpp/NSStar.cpp, -lcpp/aux.cpp, -lcpp/skizException.cpp, -lcpp/vd.cpp /usr/local/MATLAB/R2018a/extern/include/mex.cpp 
+/usr/bin/c++  -g   CMakeFiles/matlab.dir/cpp/main.cpp.o  -o matlab -lcpp/addSeed.cpp -lcpp/getRegion.cpp -lcpp/NSStar.cpp, -lcpp/aux.cpp, -lcpp/skizException.cpp, -lcpp/vd.cpp /usr/local/MATLAB/R2018a/extern/include/mex.cpp 
