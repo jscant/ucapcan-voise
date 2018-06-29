@@ -2,20 +2,14 @@
  * @file
  * @copydetails getRegion.cpp
  */
+#ifndef GETREGION_H
+#define GETREGION_H
 
 #include <eigen3/Eigen/Dense>
 
-#ifndef VD_H
-#define VD_H
 #include "vd.h"
-#endif
-
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
-
+#include "typedefs.cpp"
 
 Mat getRegion(const vd &VD, const real &s);
+
+#endif

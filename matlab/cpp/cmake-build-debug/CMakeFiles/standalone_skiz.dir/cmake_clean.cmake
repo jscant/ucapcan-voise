@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/standalone_skiz.dir/main.cpp.o"
+  "CMakeFiles/standalone_skiz.dir/typedefs.cpp.o"
   "CMakeFiles/standalone_skiz.dir/addSeed.cpp.o"
   "CMakeFiles/standalone_skiz.dir/aux.cpp.o"
   "CMakeFiles/standalone_skiz.dir/getRegion.cpp.o"

@@ -12,19 +12,8 @@
 #include <map>
 #include <fstream>
 
-#ifndef AUX_H
-#define AUX_H
-
 #include "aux.h"
-
-#endif
-
-#ifndef SKIZ_SKIZEXCEPTION_H
-#define SKIZ_SKIZEXCEPTION_H
-
 #include "skizException.h"
-
-#endif
 
 /**
  * @defgroup sqDist sqDist
@@ -142,7 +131,7 @@ std::vector<RealVec> readSeeds(std::string filename) {
     afile.open(filename.c_str());
     RealVec Sx;
     RealVec Sy;
-    unsigned int x = 0;
+    uint32 x = 0;
     real number;
     while(afile >> number){
         if(x % 2 == 0){
@@ -171,8 +160,8 @@ Mat readMatrix(std::string filename, int nr, int nc) {
     std::ifstream afile;
     afile.open(filename.c_str());
     Mat result(nr, nc);
-    unsigned int row = 0;
-    unsigned int col = 0;
+    uint32 row = 0;
+    uint32 col = 0;
     real number;
     while(afile >> number){
         result(row, col) = number;

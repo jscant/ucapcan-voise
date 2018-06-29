@@ -21,8 +21,10 @@
 #include "getRegion.h"
 #include "aux.h"
 #include "skizException.h"
+#include "typedefs.cpp"
 
 typedef std::chrono::high_resolution_clock now;
+
 using namespace std::chrono;
 
 int main() {
@@ -45,7 +47,7 @@ int main() {
     if (Sx.size() != Sy.size()) {
         throw (SKIZIOException("Lengths of Sx and Sy vectors not identical!"));
     }
-    unsigned int ns = Sx.size();
+    uint32 ns = Sx.size();
 
     std::map<real, real> StartSx;
     std::map<real, real> StartSy;
@@ -74,7 +76,7 @@ int main() {
 
     // addSeed timing
     auto start = now::now();
-    for (unsigned int i = 0; i < ns - 5; ++i) {
+    for (uint32 i = 0; i < ns - 5; ++i) {
         addSeed(VD, Sx.at(i + 5), Sy.at(i + 5));
     }
     auto elapsed = now::now() - start;

@@ -7,33 +7,12 @@
 #include <string>
 #include <map>
 
-#ifndef GRABVD_H
-#define GRABVD_H
 #include "grabVD.h"
-#endif
-
-#ifndef AUX_H
-#define AUX_H
 #include "aux.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
-
-#ifndef MAT
-#define MAT
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
-
-#include <chrono>
+#include "typedefs.cpp"
 
 vd grabVD(const mxArray *prhs[]) {
-
-    bool timing = false;
-
-    auto start = std::chrono::high_resolution_clock::now();
 
     real nc=0, nr=0, k=0;
 
@@ -47,14 +26,6 @@ vd grabVD(const mxArray *prhs[]) {
     // Get all input information from vd
     real nFields = mxGetNumberOfFields(prhs[0]);
     real nElements = mxGetNumberOfElements(prhs[0]);
-
-    auto elapsed = std::chrono::high_resolution_clock::now() - start;
-    long long milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    std::string str = "Part 1:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
 
     // Create mxArrays with data from VD ML struct
     mxArray *nrIncomingArray = mxGetField(prhs[0], 0, "nr");
@@ -157,16 +128,10 @@ vd grabVD(const mxArray *prhs[]) {
         }
     }
  */
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    str = "Part 5:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing || false) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
 
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
     mwIndex skLen = std::max(mxGetM(skIncomingArray), mxGetN(skIncomingArray));
+
     // Populate seed data unordered maps
     for (mwIndex i = 0; i < sxLen; ++i) {
         Sx[i + 1] = sxPtr[i];
@@ -176,14 +141,6 @@ vd grabVD(const mxArray *prhs[]) {
     for (mwIndex i = 0; i < skLen; ++i) {
         Sk[skPtr[i]] = skPtr[i];
     }
-
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    str = "Part 6:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
 
     // Populate neighbour relationships from ML data
     mwIndex nkLen = mxGetNumberOfElements(nkIncomingArray);
@@ -201,56 +158,14 @@ vd grabVD(const mxArray *prhs[]) {
         Nk[i + 1] = cellVec;
     }
 
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    str = "Part 7:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
-
-
-
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    str = "Part 8:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
-    start = std::chrono::high_resolution_clock::now();
-
-    /*
-        VD.setK(k);
-        VD.setLam(lam);
-        VD.setV(v);
-        VD.setPx(px);
-        VD.setPy(py);
-        VD.setSx(Sx);
-        VD.setSy(Sy);
-        VD.setNk(Nk);
-        VD.setSk(Sk);
-        VD.setW(W);
-        VD.setS(S_str);
-    */
-
     VD.k = k;
-    //VD.Vk.lam = lam;
-    //VD.Vk.v = v;
-    //VD.px = px;
-    //VD.py = py;
+
     VD.Sx = Sx;
     VD.Sy = Sy;
     VD.Sk = Sk;
     VD.Nk = Nk;
     VD.W = W;
     VD.S = S_str;
-
-    elapsed = std::chrono::high_resolution_clock::now() - start;
-    milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(elapsed).count();
-    str = "Part 9:\t\t" + std::to_string(milliseconds) + " ns\n";
-    if(timing) {
-        mexPrintf(str.c_str());
-    }
 
     return VD;
 }

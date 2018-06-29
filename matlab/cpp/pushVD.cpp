@@ -10,30 +10,11 @@
 #include <string>
 #include <map>
 
-#ifndef PUSHVD_H
-#define PUSHVD_H
 #include "pushVD.h"
-#endif
-
-#ifndef GRABVD_H
-#define GRABVD_H
 #include "grabVD.h"
-#endif
-
-#ifndef AUX_H
-#define AUX_H
 #include "aux.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
-
-#ifndef MAT
-#define MAT
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
+#include "typedefs.cpp"
 
 /**
  * @defgroup pushVD pushVD

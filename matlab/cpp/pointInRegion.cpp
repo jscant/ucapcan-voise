@@ -3,15 +3,8 @@
  * @copydoc pointInRegion.h
  */
 
-#ifndef POINTINREGION_H
-#define POINTINREGION_H
 #include "pointInRegion.h"
-#endif
-
-#ifndef SKIZ_SKIZEXCEPTION_H
-#define SKIZ_SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
 
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()

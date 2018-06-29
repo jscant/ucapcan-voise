@@ -2,30 +2,12 @@
  * @file
  * @brief Finds neighbouring Voronoi regions for new seeds
 */
-#ifndef NSSTAR_H
-#define NSSTAR_H
-#include "NSStar.h"
-#endif
-
-#ifndef MAP_H
-#define MAP_H
 #include <map>
-#endif //MAP_H
 
-#ifndef AUX_H
-#define AUX_H
+#include "NSStar.h"
 #include "aux.h"
-#endif
-
-#ifndef POINTINREGION_H
-#define POINTINREGION_H
 #include "pointInRegion.h"
-#endif
-
-#ifndef SKIZ_SKIZEXCEPTION_H
-#define SKIZ_SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
 
 /**
  * @defgroup nsStar nsStar

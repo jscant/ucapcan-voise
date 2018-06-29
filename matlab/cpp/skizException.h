@@ -2,15 +2,12 @@
 * @file
 * @brief Exception class for SKIZ Operator Tool
 */
-#ifndef EXCEPTION_H
-#define EXCEPTION_H
-#include <exception>
-#endif
 
-#ifndef STRING_H
-#define STRING_H
+#ifndef SKIZEXCEPTION_H
+#define SKIZEXCEPTION_H
+
+#include <exception>
 #include <string>
-#endif
 
 /**
  * @brief Parent class for all SKIZ exceptions
@@ -107,5 +104,4 @@ public:
     const char* what();
 };
 
-
-//#endif //SKIZ_SKIZEXCEPTION_H
+#endif

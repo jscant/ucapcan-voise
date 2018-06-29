@@ -2,6 +2,8 @@
  * @file
  * @copydetails aux.cpp
  */
+#ifndef AUX_H
+#define AUX_H
 
 #include <array>
 #include <vector>
@@ -13,6 +15,7 @@
 typedef double real;
 typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
+typedef unsigned int uint32;
 #endif
 
 real sqDist(const real &p1, const real &p2, const real &q1, const real &q2);
@@ -26,3 +29,4 @@ void updateDict(std::map<real, RealVec> &d, const real &key, const real &value);
 std::vector<RealVec> readSeeds(std::string filename);
 
 Mat readMatrix(std::string filename, int nr, int nc);
+#endif

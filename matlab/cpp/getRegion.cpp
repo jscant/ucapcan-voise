@@ -10,19 +10,7 @@
 #endif
 #include <math.h>
 
-#ifndef GETREGION_H
-#define GETREGION_H
-
 #include "getRegion.h"
-
-#endif
-
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
 
 /**
  * @defgroup getRegion getRegion

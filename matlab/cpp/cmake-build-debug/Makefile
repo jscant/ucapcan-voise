@@ -365,6 +365,33 @@ skizException.cpp.s:
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/skizException.cpp.s
 .PHONY : skizException.cpp.s
 
+typedefs.o: typedefs.cpp.o
+
+.PHONY : typedefs.o
+
+# target to build an object file
+typedefs.cpp.o:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/typedefs.cpp.o
+.PHONY : typedefs.cpp.o
+
+typedefs.i: typedefs.cpp.i
+
+.PHONY : typedefs.i
+
+# target to preprocess a source file
+typedefs.cpp.i:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/typedefs.cpp.i
+.PHONY : typedefs.cpp.i
+
+typedefs.s: typedefs.cpp.s
+
+.PHONY : typedefs.s
+
+# target to generate assembly for a file
+typedefs.cpp.s:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/typedefs.cpp.s
+.PHONY : typedefs.cpp.s
+
 vd.o: vd.cpp.o
 
 .PHONY : vd.o
@@ -427,6 +454,9 @@ help:
 	@echo "... skizException.o"
 	@echo "... skizException.i"
 	@echo "... skizException.s"
+	@echo "... typedefs.o"
+	@echo "... typedefs.i"
+	@echo "... typedefs.s"
 	@echo "... vd.o"
 	@echo "... vd.i"
 	@echo "... vd.s"

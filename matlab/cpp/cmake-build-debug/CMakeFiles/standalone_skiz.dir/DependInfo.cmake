@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir/skizException.cpp.o"
+  "/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir/typedefs.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir/vd.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

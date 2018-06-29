@@ -3,51 +3,23 @@
  * @brief Adds seed to voronoi diagram.
 */
 
-#ifndef INF
-#define INF std::numeric_limits<real>::infinity()
-#endif
-
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
 #endif
 
-#ifndef ADDSEED_H
-#define ADDSEED_H
 #include "addSeed.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
-
-#ifndef NSSTAR_H
-#define NSSTAR_H
 #include "NSStar.h"
-#endif
-
-#ifndef POINTINREGION_H
-#define POINTINREGION_H
 #include "pointInRegion.h"
-#endif
-
-#ifndef GETREGION_H
-#define GETREGION_H
 #include "getRegion.h"
-#endif
-
-#ifndef AUX_H
-#define AUX_H
 #include "aux.h"
+#include "typedefs.cpp"
+
+#ifndef INF
+#define INF std::numeric_limits<real>::infinity()
 #endif
 
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
 
 /**
  * @defgroup addSeed addSeed

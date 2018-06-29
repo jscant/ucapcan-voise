@@ -4,19 +4,14 @@
  * @brief Checks whether a point is within region C(s, A) according to the definition 2.5 in the SKIZ paper [ DOI: 10.1109/34.625128 ]
  *
  */
+
+#ifndef POINTINREGION_H
+#define POINTINREGION_H
+
 #include <vector>
 
-#ifndef VD_H
-#define VD_H
 #include "vd.h"
-#endif
-
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
+#include "typedefs.cpp"
 
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A);
 
@@ -45,3 +40,5 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A);
  * @var typedef Eigen::Array<double, Eigen::Dynamic, Eigen::Dynamic> Mat
  * @brief Matrix for storage of v and lambda values with size determined at runtime
  */
+
+#endif

@@ -2,11 +2,8 @@
  * @file
  * @copydetails skizException.h
  */
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
-#include "skizException.h"
-#endif
 
+ #include "skizException.h"
 
 SKIZException::SKIZException(const std::string s) : msg(s) {}
 SKIZException::~SKIZException() throw() {};

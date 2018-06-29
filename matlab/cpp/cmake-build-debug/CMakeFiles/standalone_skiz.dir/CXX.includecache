@@ -7,10 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp
-NSStar.h
-/home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.h
 map
 -
+NSStar.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.h
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 pointInRegion.h
@@ -41,6 +41,8 @@ getRegion.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.h
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.h
 vd.h
@@ -93,6 +95,8 @@ eigen3/Eigen/Dense
 -
 vd.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/main.cpp
 iostream
@@ -111,6 +115,8 @@ aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 skizException.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp
 pointInRegion.h
@@ -123,6 +129,8 @@ vector
 -
 vd.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
 set
@@ -143,6 +151,8 @@ getRegion.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.h
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 removeSeed.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.h
 
@@ -158,6 +168,12 @@ skizException.h
 exception
 -
 string
+-
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+vector
+-
+eigen3/Eigen/Dense
 -
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp
@@ -177,4 +193,6 @@ algorithm
 -
 eigen3/Eigen/Dense
 -
+typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 

@@ -9,48 +9,18 @@
 #include <matrix.h>
 #endif
 
-#ifndef ADDSEED_H
-#define ADDSEED_H
 #include "addSeed.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
 #include "skizException.h"
-#endif
-
-#ifndef NSSTAR_H
-#define NSSTAR_H
 #include "NSStar.h"
-#endif
-
-#ifndef POINTINREGION_H
-#define POINTINREGION_H
 #include "pointInRegion.h"
-#endif
-
-#ifndef GETREGION_H
-#define GETREGION_H
 #include "getRegion.h"
-#endif
-
-#ifndef AUX_H
-#define AUX_H
 #include "aux.h"
-#endif
+#include "typedefs.cpp"
+#include "removeSeed.h"
 
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()
 #endif
-
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-#endif
-
-#include "removeSeed.h"
 
 /**
  * @brief Removes seed from voronoi diagram
@@ -86,8 +56,8 @@ bool removeSeed(vd &VD, real Sk) {
             VD.Vk.lam(j, i) = Ns.at(0);
             VD.Vk.v(j, i) = 0;
             real lam = Ns.at(0);
-            for (unsigned int idx=1; idx<Ns.size(); ++idx) {
-                unsigned int r = Ns.at(idx);
+            for (uint32 idx=1; idx<Ns.size(); ++idx) {
+                uint32 r = Ns.at(idx);
                 real newDist = sqDist(i+1, j+1, VD.Sx[r], VD.Sy[r]);
                 real oldDist = sqDist(i+1, j+1, VD.Sx[lam], VD.Sy[lam]);
                 if((int)newDist < (int)oldDist){
@@ -104,7 +74,7 @@ bool removeSeed(vd &VD, real Sk) {
     }
     //mexPrintf("FLAG 8\n");
     std::map<real, RealVec> newDict;
-    for (unsigned int r : VD.Nk.at(Sk)) {
+    for (uint32 r : VD.Nk.at(Sk)) {
         RealVec Ns = VD.Nk.at(r);
         Ns.erase(std::remove(Ns.begin(), Ns.end(), Sk), Ns.end());
         newDict[r] = Ns;
