@@ -1,9 +1,11 @@
 /**
  * @copydetails pushVD.cpp
  */
-#ifndef VD_H
-#define VD_H
+#ifndef PUSHVD_H
+#define PUSHVD_H
+
 #include "vd.h"
-#endif
 
 void pushVD(vd outputVD, mxArray *plhs[]);
+
+#endif

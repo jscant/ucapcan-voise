@@ -9,41 +9,17 @@
 #include <mex.h>
 #include <matrix.h>
 #endif
+
 #include <eigen3/Eigen/Dense>
 #include <map>
-
-#ifndef VD_H
-#define VD_H
-#include "cpp/vd.h"
-#endif
-
-#ifndef AUX_H
-#define AUX_H
-#include "cpp/aux.h"
-#endif
-
-#ifndef ADDSEED_H
-#define ADDSEED_H
-#include "cpp/addSeed.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
-#include "cpp/skizException.h"
-#endif
-
-#ifndef GRABVD_H
-#define GRABVD_H
-#include "cpp/grabVD.h"
-#endif
-
-#ifndef PUSHVD_H
-#define PUSHVD_H
-#include "cpp/pushVD.h"
-#endif
-
 #include <chrono>
 
+#include "cpp/vd.h"
+#include "cpp/aux.h"
+#include "cpp/addSeed.h"
+#include "cpp/skizException.h"
+#include "cpp/grabVD.h"
+#include "cpp/pushVD.h"
 
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])

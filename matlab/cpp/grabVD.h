@@ -2,9 +2,12 @@
  * @file
  * @copydetails
  */
-#ifndef VD_H
-#define VD_H
+
+#ifndef GRABVD_H
+#define GRABVD_H
+
 #include "vd.h"
-#endif
 
 vd grabVD(const mxArray *prhs[]);
+
+#endif

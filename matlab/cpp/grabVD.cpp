@@ -92,8 +92,6 @@ vd grabVD(const mxArray *prhs[]) {
     mwIndex nRows = mxGetM(lamIncomingArray);
     mwIndex nCols = mxGetN(lamIncomingArray);
 
-    start = std::chrono::high_resolution_clock::now();
-
     // Eigen arrays to put matrix data in
 
     /*
@@ -109,8 +107,6 @@ vd grabVD(const mxArray *prhs[]) {
 
     // Create and populate vd
     vd VD = vd(nr, nc);
-
-    start = std::chrono::high_resolution_clock::now();
 
     VD.Vk.lam = Eigen::Map<Mat>(lamPtr, nRows, nCols);
     VD.Vk.v = Eigen::Map<Mat>(vPtr, nRows, nCols);
@@ -159,7 +155,6 @@ vd grabVD(const mxArray *prhs[]) {
     }
 
     VD.k = k;
-
     VD.Sx = Sx;
     VD.Sy = Sy;
     VD.Sk = Sk;

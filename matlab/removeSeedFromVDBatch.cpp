@@ -3,32 +3,13 @@
 #include <matrix.h>
 #endif
 
-#ifndef VD_H
-#define VD_H
-#include "cpp/vd.h"
-#endif
-
-#ifndef REMOVESEED_H
-#define REMOVESEED_H
-#include "cpp/removeSeed.h"
-#endif
-
-#ifndef SKIZEXCEPTION_H
-#define SKIZEXCEPTION_H
-#include "cpp/skizException.h"
-#endif
-
-#ifndef GRABVD_H
-#define GRABVD_H
-#include "cpp/grabVD.h"
-#endif
-
-#ifndef PUSHVD_H
-#define PUSHVD_H
-#include "cpp/pushVD.h"
-#endif
-
 #include <chrono>
+
+#include "cpp/vd.h"
+#include "cpp/removeSeed.h"
+#include "cpp/skizException.h"
+#include "cpp/grabVD.h"
+#include "cpp/pushVD.h"
 
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
