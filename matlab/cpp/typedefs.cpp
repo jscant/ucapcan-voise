@@ -7,7 +7,7 @@
 #include <vector>
 #include <eigen3/Eigen/Dense>
 typedef double real;
+typedef unsigned int uint32;
 typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-typedef unsigned int uint32;
 #endif

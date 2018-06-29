@@ -1,7 +1,7 @@
 /**
-* @file
-* @brief Exception class for SKIZ Operator Tool
-*/
+ * @file
+ * @copydetails skizException.cpp
+ */
 
 #ifndef SKIZEXCEPTION_H
 #define SKIZEXCEPTION_H

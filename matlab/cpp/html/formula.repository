@@ -1,6 +1,11 @@
-\form#0:$mathcal{R}^2$
-\form#1:$R^2$
-\form#2:$\mathcal{R}^2$
-\form#3:$^2$
-\form#4:$^{th}$
-\form#5:$i^{th}$
+\form#0:$R^2$
+\form#1:$i^{th}$
+\form#2:$ \lambda $
+\form#3:$\nu$
+\form#4:$\lambda$
+\form#5:$\lambda_{ij}$
+\form#6:$\nu{ij}$
+\form#7:$\nu_{ij}$
+\form#8:$ i^{th} $
+\form#9:$ j^{th} $
+\form#10:$ \lambda, \nu $

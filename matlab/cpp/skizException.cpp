@@ -1,9 +1,9 @@
 /**
- * @file
- * @copydetails skizException.h
- */
+* @file
+* @brief Exception class for SKIZ Operator Tool
+*/
 
- #include "skizException.h"
+#include "skizException.h"
 
 SKIZException::SKIZException(const std::string s) : msg(s) {}
 SKIZException::~SKIZException() throw() {};

@@ -2,7 +2,7 @@
 \label{pointInRegion_8cpp}\index{point\+In\+Region.\+cpp@{point\+In\+Region.\+cpp}}
 
 
-Checks whether a point is within region C(s, A) according to the definition 2.\+5 in the S\+K\+IZ paper \mbox{[} D\+OI\+: 10.\+1109/34.\+625128 \mbox{]}.  
+Checks whether a point is within region C(s, A) according to \mbox{[}1\mbox{]} Definition 2.\+5.  
 
 
 {\ttfamily \#include \char`\"{}point\+In\+Region.\+h\char`\"{}}\newline
@@ -10,51 +10,17 @@ Checks whether a point is within region C(s, A) according to the definition 2.\+
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{pointInRegion_8cpp_a179dcf7e366d81e4229117de7ba5bc71}\label{pointInRegion_8cpp_a179dcf7e366d81e4229117de7ba5bc71}} 
-\#define {\bfseries P\+O\+I\+N\+T\+I\+N\+R\+E\+G\+I\+O\+N\+\_\+H}
-\item 
-\mbox{\Hypertarget{pointInRegion_8cpp_a598e1edca6bb53498b755e10b8533847}\label{pointInRegion_8cpp_a598e1edca6bb53498b755e10b8533847}} 
-\#define {\bfseries S\+K\+I\+Z\+\_\+\+S\+K\+I\+Z\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+H}
-\item 
 \mbox{\Hypertarget{pointInRegion_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{pointInRegion_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}} 
 \#define {\bfseries I\+NF}~std\+::numeric\+\_\+limits$<$real$>$\+::infinity()
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{pointInRegion_8cpp_aa0cec93776a85c9bbf81ee69390d4bbd}{point\+In\+Region}} (const \mbox{\hyperlink{classvd}{vd}} \&VD, std\+::array$<$ real, 2 $>$ pt, real s, Real\+Vec A)
-\begin{DoxyCompactList}\small\item\em Checks whether a point is within region C(s, A) according to the definition 2.\+5 in the S\+K\+IZ paper \mbox{[} D\+OI\+: 10.\+1109/34.\+625128 \mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\Hypertarget{pointInRegion_8cpp_acbc5d3411a9380422cb9ac4f2723f5a7}\label{pointInRegion_8cpp_acbc5d3411a9380422cb9ac4f2723f5a7}} 
+bool {\bfseries point\+In\+Region} (const \mbox{\hyperlink{classvd}{vd}} \&VD, std\+::array$<$ real, 2 $>$ pt, real s, Real\+Vec A)
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Checks whether a point is within region C(s, A) according to the definition 2.\+5 in the S\+K\+IZ paper \mbox{[} D\+OI\+: 10.\+1109/34.\+625128 \mbox{]}. 
+Checks whether a point is within region C(s, A) according to \mbox{[}1\mbox{]} Definition 2.\+5. 
 
-
-
-\subsection{Function Documentation}
-\mbox{\Hypertarget{pointInRegion_8cpp_aa0cec93776a85c9bbf81ee69390d4bbd}\label{pointInRegion_8cpp_aa0cec93776a85c9bbf81ee69390d4bbd}} 
-\index{point\+In\+Region.\+cpp@{point\+In\+Region.\+cpp}!point\+In\+Region@{point\+In\+Region}}
-\index{point\+In\+Region@{point\+In\+Region}!point\+In\+Region.\+cpp@{point\+In\+Region.\+cpp}}
-\subsubsection{\texorpdfstring{point\+In\+Region()}{pointInRegion()}}
-{\footnotesize\ttfamily point\+In\+Region (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvd}{vd}} \&}]{VD,  }\item[{std\+::array$<$ real, 2 $>$}]{pt,  }\item[{real}]{s,  }\item[{Real\+Vec}]{A }\end{DoxyParamCaption})}
-
-
-
-Checks whether a point is within region C(s, A) according to the definition 2.\+5 in the S\+K\+IZ paper \mbox{[} D\+OI\+: 10.\+1109/34.\+625128 \mbox{]}. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em vd} & Voronoi Diagram \\
-\hline
-{\em pt} & x and y coordinates of point to check \\
-\hline
-{\em s} & Index of seed which defines the region being checked \\
-\hline
-{\em A} & Vector of seeds which together form half-\/planes that make up C(s, A) \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-true\+: Point is in C(s, A) 
-
-false\+: Point is not in C(s, A) 
-\end{DoxyReturn}

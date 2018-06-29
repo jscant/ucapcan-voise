@@ -10,12 +10,12 @@
 \mbox{\Hypertarget{aux_8h_a11d147c64891830c9e79b3315b1b2e21}\label{aux_8h_a11d147c64891830c9e79b3315b1b2e21}} 
 typedef double {\bfseries real}
 \item 
-\mbox{\Hypertarget{aux_8h_ac0a1a538b45426e056715d1f59f854ab}\label{aux_8h_ac0a1a538b45426e056715d1f59f854ab}} 
-typedef std\+::vector$<$ real $>$ \mbox{\hyperlink{aux_8h_ac0a1a538b45426e056715d1f59f854ab}{Real\+Vec}}
-\begin{DoxyCompactList}\small\item\em Vector of doubles for use in tracking neighbour relationships and seed locations. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{aux_8h_aa1fe91b8cd36c618282eb0d548690c4c}\label{aux_8h_aa1fe91b8cd36c618282eb0d548690c4c}} 
-typedef Eigen\+::\+Array$<$ real, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ \mbox{\hyperlink{aux_8h_aa1fe91b8cd36c618282eb0d548690c4c}{Mat}}
-\begin{DoxyCompactList}\small\item\em Matrix for storage of v and lambda values with size determined at runtime. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{aux_8h_af3ab03a472fbf8c0e1e2319bbd70e6aa}\label{aux_8h_af3ab03a472fbf8c0e1e2319bbd70e6aa}} 
+typedef std\+::vector$<$ real $>$ {\bfseries Real\+Vec}
+\item 
+\mbox{\Hypertarget{aux_8h_a80b1aa9fc79f1b0cd38e8d0537f4b527}\label{aux_8h_a80b1aa9fc79f1b0cd38e8d0537f4b527}} 
+typedef Eigen\+::\+Array$<$ real, Eigen\+::\+Dynamic, Eigen\+::\+Dynamic $>$ {\bfseries Mat}
+\item 
 \mbox{\Hypertarget{aux_8h_a1134b580f8da4de94ca6b1de4d37975e}\label{aux_8h_a1134b580f8da4de94ca6b1de4d37975e}} 
 typedef unsigned int {\bfseries uint32}
 \end{DoxyCompactItemize}
@@ -28,11 +28,11 @@ std\+::array$<$ real, 2 $>$ {\bfseries circumcentre} (const real \&ax, const rea
 \item 
 {\footnotesize template$<$class T1 , class T2 $>$ }\\bool {\bfseries in\+Vector} (const std\+::vector$<$ T1 $>$ \&vec, const T2 \&item)
 \item 
-void \mbox{\hyperlink{group__updateDict_gaecb9b6904667c0bde630eadf45d36835}{update\+Dict}} (std\+::map$<$ real, \mbox{\hyperlink{aux_8h_ac0a1a538b45426e056715d1f59f854ab}{Real\+Vec}} $>$ \&d, const real \&key, const real \&value)
+void \mbox{\hyperlink{group__updateDict_gaecb9b6904667c0bde630eadf45d36835}{update\+Dict}} (std\+::map$<$ real, Real\+Vec $>$ \&d, const real \&key, const real \&value)
 \item 
-std\+::vector$<$ \mbox{\hyperlink{aux_8h_ac0a1a538b45426e056715d1f59f854ab}{Real\+Vec}} $>$ {\bfseries read\+Seeds} (std\+::string filename)
+std\+::vector$<$ Real\+Vec $>$ {\bfseries read\+Seeds} (std\+::string filename)
 \item 
-\mbox{\hyperlink{aux_8h_aa1fe91b8cd36c618282eb0d548690c4c}{Mat}} {\bfseries read\+Matrix} (std\+::string filename, int nr, int nc)
+Mat {\bfseries read\+Matrix} (std\+::string filename, int nr, int nc)
 \end{DoxyCompactItemize}
 
 

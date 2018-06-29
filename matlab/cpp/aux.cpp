@@ -179,7 +179,7 @@ Mat readMatrix(std::string filename, int nr, int nc) {
 
 // Overview page of Doxygen documentation has to go somewhere..:
 
-/** @mainpage SKIZ Voronoi Diagram Tool
+/** @mainpage SKIZ Voronoi Diagram Tool and Matlab Bindings for VOISE Algorithm
  *
  * @section intro_sec Introduction
  *
@@ -195,5 +195,8 @@ Mat readMatrix(std::string filename, int nr, int nc) {
  *
  * [1] R. E. Sequeira and F. J. Preteux. Discrete voronoi diagrams and the skiz
  * operator: a dynamic algorithm. IEEE Transactions on Pattern Analysis
- * and Machine Intelligence, 19(10):1165–1170, 1997 [doi: 10.1109/34.625128]
+ * and Machine Intelligence, 19(10):1165–1170, 1997. [doi: 10.1109/34.625128]
+ *
+ * [2] P. Guio and N. Achilleos. The voise algorithm: a versatile tool for automatic segmentation of astronomical images.
+ * Monthly Notices of the Royal Astronomical Society, 398(3):1254–1262, 2009. [doi: 10.1111/j.1365-2966.2009.15218.x]
  */

@@ -1,7 +1,7 @@
-//
-// Created by root on 12/06/18.
-//
-// CHANGE FILENAME TO VD.H
+/**
+ * @file
+ * @copydetails vd.cpp
+ */
 #ifndef VD_H
 #define VD_H
 
@@ -16,6 +16,15 @@
 
 #include "typedefs.cpp"
 
+/**
+ * @struct W_struct
+ * @brief as defined in [1], Section 2.2. Only for use with VOISE algorithm matlab interface. Unused but here for
+ * consistency.
+ * @var xm Lowest value of x in W
+ * @var xM Highest value of x in W
+ * @var ym Lowest value of y in W
+ * @var yM Highest value of y in W
+ */
 struct W_struct {
     real xm;
     real ym;
@@ -23,30 +32,33 @@ struct W_struct {
     real yM;
 };
 
-struct S_struct {
-    real xm;
-    real ym;
-    real xM;
-    real yM;
-};
-
+/**
+ * @struct V_struct
+ * @brief as defined in [1], Section 3 (Vk).
+ * @var lam Eigen::Array matrix of \f$ \lambda \f$ for each pixel
+ * @var v Eigen::Array matrix of \f$ \nu \f$ for each pixel
+ */
 struct V_struct {
     Mat lam;
     Mat v;
 };
 
+/**
+ * @class vd
+ * @brief Contains all information about voronoi diagram needed to perform SKIZ algorithm from [1]
+ */
 class vd {
 public:
     V_struct Vk;
     W_struct W;
-    S_struct S;
+    W_struct S;
     real nc, nr, k;
     Mat seeds, px, py;
     std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
     void setVk(V_struct val);
     void setW(W_struct val);
-    void setS(S_struct val);
+    void setS(W_struct val);
     void setLam(Mat newLam);
     void setV(Mat newV);
     void setLamByIdx(uint32 i, uint32 j, real val);
@@ -67,11 +79,11 @@ public:
 
     V_struct getVk() const;
     W_struct getW() const;
-    S_struct getS() const;
+    W_struct getS() const;
     Mat getLam() const;
     Mat getV() const;
-    real getLamByIdx(uint32 i, uint32 j) const;
-    real getVByIdx(uint32 i, uint32 j) const;
+    real getLamByIdx(uint32 i, uint32 j);
+    real getVByIdx(uint32 i, uint32 j);
     Mat getSeeds() const;
     Mat getPx() const;
     Mat getPy() const;

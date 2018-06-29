@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Adds seed to voronoi diagram.
+ * @brief Adds seed to Voronoi diagram.
 */
 
 #ifdef MATLAB_MEX_FILE

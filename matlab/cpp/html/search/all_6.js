@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['pointinregion',['pointInRegion',['../pointInRegion_8h.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion.cpp']]],
-  ['pointinregion_2eh',['pointInRegion.h',['../pointInRegion_8h.html',1,'']]],
-  ['pushvd',['pushVD',['../pushVD_8cpp.html#ac94a6cb8acb6660e46a6da5f00fe9e9c',1,'pushVD(vd outputVD, mxArray *plhs[]):&#160;pushVD.cpp'],['../group__pushVD.html',1,'(Global Namespace)']]],
-  ['pushvd_2ecpp',['pushVD.cpp',['../pushVD_8cpp.html',1,'']]]
+  ['readmatrix',['readMatrix',['../group__readMatrix.html',1,'']]],
+  ['readseeds',['readSeeds',['../group__readSeeds.html',1,'']]],
+  ['removeseed',['removeSeed',['../removeSeed_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeed_8h.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp']]],
+  ['removeseed_2ecpp',['removeSeed.cpp',['../removeSeed_8cpp.html',1,'']]],
+  ['removeseed_2eh',['removeSeed.h',['../removeSeed_8h.html',1,'']]]
 ];

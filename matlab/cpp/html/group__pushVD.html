@@ -72,7 +72,7 @@ $(function() {
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">outputVD</td><td>Voronoi diagram from which data is read </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">plhs</td><td>Pointer to mxArray object which is the start of the section of memory to be populated with data and which Matlab will interpret as a struct containing all of the information from outputVD </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">plhs</td><td>Pointer to mxArray object which is the start of the section of memory to be populated with data and which Matlab will interpret as a struct containing all of the information from outputVD. This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this end by P. Guio and N. Achilleos. </td></tr>
   </table>
   </dd>
 </dl>

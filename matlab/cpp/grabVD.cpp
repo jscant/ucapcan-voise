@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
+ */
+
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
@@ -12,6 +17,21 @@
 #include "skizException.h"
 #include "typedefs.cpp"
 
+/**
+ * @defgroup grabVD grabVD
+ * @ingroup grabVD
+ * @brief Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
+ *
+ * @param[in] prhs Voronoi diagram in the form of a Matlab struct with the relevant fields filled in the correct manner.
+ * @returns Voronoi diagram (vd) object containing all relevant information.
+ *
+ * The larger matrices (\f$ \lambda, \nu \f$ in [1] as well as px and py) are not copied but mapped using Eigen's map
+ * class for reasons of speed.
+ *
+ *
+ * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
+ * end by P. Guio and N. Achilleos.
+ */
 vd grabVD(const mxArray *prhs[]) {
 
     real nc=0, nr=0, k=0;
@@ -20,7 +40,7 @@ vd grabVD(const mxArray *prhs[]) {
     std::map<real, RealVec> Nk;
     W_struct W;
     memset(&W, 0, sizeof(W));
-    S_struct S_str = {0, 0, 0, 0};
+    W_struct S_str = {0, 0, 0, 0};
     memset(&S_str, 0, sizeof(S_str));
 
     // Get all input information from vd

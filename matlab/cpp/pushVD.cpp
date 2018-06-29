@@ -22,8 +22,10 @@
  * @brief Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
  *
  * @param[in] outputVD Voronoi diagram from which data is read
- * @param[out] plhs Pointer to mxArray object which is the start of the section of memory to be populated with data and which
- * Matlab will interpret as a struct containing all of the information from outputVD
+ * @param[out] plhs Pointer to mxArray object which is the start of the section of memory to be populated with data and
+ * which Matlab will interpret as a struct containing all of the information from outputVD.
+ * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
+ * end by P. Guio and N. Achilleos.
  */
 void pushVD(vd outputVD, mxArray *plhs[]) {
     // Output arrays

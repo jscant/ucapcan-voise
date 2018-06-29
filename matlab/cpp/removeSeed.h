@@ -1,4 +1,5 @@
 /**
+ * @file
  * @copydetails removeSeed.cpp
  */
 #ifndef REMOVESEED_H

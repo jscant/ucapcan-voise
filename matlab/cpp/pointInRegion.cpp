@@ -1,6 +1,8 @@
-// Doxygen:
 /**
- * @copydoc pointInRegion.h
+ * @file
+ * @headerfile ""
+ * @brief Checks whether a point is within region C(s, A) according to [1] Definition 2.5
+ *
  */
 
 #include "pointInRegion.h"
@@ -9,6 +11,19 @@
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()
 #endif
+
+/**
+ * @defgroup pointInRegion pointInRegion
+ * @ingroup pointInRegion
+ * @brief Checks whether a point is within region C(s, A) according to [1] Definition 2.5
+ *
+ * @param vd Voronoi Diagram
+ * @param pt x and y coordinates of point to check
+ * @param s Index of seed which defines the region being checked
+ * @param A Vector of seeds which together form half-planes that make up C(s, A)
+ * @returns true: Point is in C(s, A)
+ * @returns false: Point is not in C(s, A)
+ */
 
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
     if (A.size() < 1) {

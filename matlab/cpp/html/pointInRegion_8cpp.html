@@ -69,87 +69,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Checks whether a point is within region C(s, A) according to the definition 2.5 in the SKIZ paper [ DOI: 10.1109/34.625128 ].  
+<p>Checks whether a point is within region C(s, A) according to [1] Definition 2.5.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pointInRegion_8h_source.html">pointInRegion.h</a>&quot;</code><br />
-<code>#include &quot;skizException.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="skizException_8h_source.html">skizException.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a179dcf7e366d81e4229117de7ba5bc71"><td class="memItemLeft" align="right" valign="top"><a id="a179dcf7e366d81e4229117de7ba5bc71"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>POINTINREGION_H</b></td></tr>
-<tr class="separator:a179dcf7e366d81e4229117de7ba5bc71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598e1edca6bb53498b755e10b8533847"><td class="memItemLeft" align="right" valign="top"><a id="a598e1edca6bb53498b755e10b8533847"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SKIZ_SKIZEXCEPTION_H</b></td></tr>
-<tr class="separator:a598e1edca6bb53498b755e10b8533847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memItemLeft" align="right" valign="top"><a id="a12c2040f25d8e3a7b9e1c2024c618cb6"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>INF</b>&#160;&#160;&#160;std::numeric_limits&lt;real&gt;::infinity()</td></tr>
 <tr class="separator:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa0cec93776a85c9bbf81ee69390d4bbd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pointInRegion_8cpp.html#aa0cec93776a85c9bbf81ee69390d4bbd">pointInRegion</a> (const <a class="el" href="classvd.html">vd</a> &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A)</td></tr>
-<tr class="memdesc:aa0cec93776a85c9bbf81ee69390d4bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a point is within region C(s, A) according to the definition 2.5 in the SKIZ paper [ DOI: 10.1109/34.625128 ].  <a href="#aa0cec93776a85c9bbf81ee69390d4bbd">More...</a><br /></td></tr>
-<tr class="separator:aa0cec93776a85c9bbf81ee69390d4bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbc5d3411a9380422cb9ac4f2723f5a7"><td class="memItemLeft" align="right" valign="top"><a id="acbc5d3411a9380422cb9ac4f2723f5a7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>pointInRegion</b> (const <a class="el" href="classvd.html">vd</a> &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A)</td></tr>
+<tr class="separator:acbc5d3411a9380422cb9ac4f2723f5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">Checks whether a point is within region C(s, A) according to the definition 2.5 in the SKIZ paper [ DOI: 10.1109/34.625128 ]. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="aa0cec93776a85c9bbf81ee69390d4bbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0cec93776a85c9bbf81ee69390d4bbd">&#9670;&nbsp;</a></span>pointInRegion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pointInRegion </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvd.html">vd</a> &amp;&#160;</td>
-          <td class="paramname"><em>VD</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; real, 2 &gt;&#160;</td>
-          <td class="paramname"><em>pt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">real&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RealVec&#160;</td>
-          <td class="paramname"><em>A</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks whether a point is within region C(s, A) according to the definition 2.5 in the SKIZ paper [ DOI: 10.1109/34.625128 ]. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vd</td><td>Voronoi Diagram </td></tr>
-    <tr><td class="paramname">pt</td><td>x and y coordinates of point to check </td></tr>
-    <tr><td class="paramname">s</td><td>Index of seed which defines the region being checked </td></tr>
-    <tr><td class="paramname">A</td><td>Vector of seeds which together form half-planes that make up C(s, A) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true: Point is in C(s, A) </dd>
-<dd>
-false: Point is not in C(s, A) </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p class="">Checks whether a point is within region C(s, A) according to [1] Definition 2.5. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,4 +1,5 @@
 /**
+ * @file
  * @copydetails addseed.cpp
  */
 

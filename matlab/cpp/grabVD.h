@@ -1,6 +1,6 @@
 /**
  * @file
- * @copydetails
+ * @copydetails grabvd.cpp
  */
 
 #ifndef GRABVD_H
