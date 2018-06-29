@@ -1,0 +1,20 @@
+\hypertarget{group__grabVD}{}\section{grab\+VD}
+\label{group__grabVD}\index{grab\+VD@{grab\+VD}}
+
+
+Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.  
+
+
+Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em prhs} & Voronoi diagram in the form of a Matlab struct with the relevant fields filled in the correct manner. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Voronoi diagram (vd) object containing all relevant information.
+\end{DoxyReturn}
+The larger matrices ( $ \lambda, \nu $ in \mbox{[}1\mbox{]} as well as px and py) are not copied but mapped using Eigen\textquotesingle{}s map class for reasons of speed.
+
+This is part of the Matlab bindings for the V\+O\+I\+SE algorithm \mbox{[}2\mbox{]}, and is only compatible with the code written to this end by P. Guio and N. Achilleos. 
