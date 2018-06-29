@@ -1,3 +1,7 @@
+/**
+ * @file
+ * @brief Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
+ */
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
@@ -31,6 +35,15 @@
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
+/**
+ * @defgroup pushVD pushVD
+ * @ingroup pushVD
+ * @brief Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
+ *
+ * @param[in] outputVD Voronoi diagram from which data is read
+ * @param[out] plhs Pointer to mxArray object which is the start of the section of memory to be populated with data and which
+ * Matlab will interpret as a struct containing all of the information from outputVD
+ */
 void pushVD(vd outputVD, mxArray *plhs[]) {
     // Output arrays
     //mexPrintf("PUSH FLAG A\n");

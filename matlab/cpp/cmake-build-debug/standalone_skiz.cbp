@@ -17,11 +17,11 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
+			<Target title="edit_cache">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -73,11 +73,31 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="rebuild_cache">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apidoc">
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 apidoc"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="apidoc_forced">
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 apidoc_forced"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>

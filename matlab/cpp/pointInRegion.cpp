@@ -1,6 +1,7 @@
-//
-// Created by root on 20/06/18.
-//
+// Doxygen:
+/**
+ * @copydoc pointInRegion.h
+ */
 
 #ifndef POINTINREGION_H
 #define POINTINREGION_H
@@ -46,7 +47,7 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
                     }
                 } else {
                     std::string msg = "Identical seeds: " + std::to_string((int)s1) + ", " + std::to_string((int)s2) + "\n";
-                    throw SKIZIdenticalSeedsError(msg.c_str());
+                    throw SKIZIdenticalSeedsException(msg.c_str());
                 }
                 continue;
             } else if ((s1 - r1) < 0) {

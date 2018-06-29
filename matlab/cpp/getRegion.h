@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @copydetails getRegion.cpp
+ */
+
 #include <eigen3/Eigen/Dense>
 
 #ifndef VD_H
@@ -12,4 +17,5 @@ typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-Mat getRegion(const vd &VD, real s);
+
+Mat getRegion(const vd &VD, const real &s);

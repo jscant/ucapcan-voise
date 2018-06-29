@@ -1,3 +1,8 @@
+/**
+ * @file
+ * @brief Finds the voronoi region R(s) of a seed s.
+*/
+
 #include <eigen3/Eigen/Dense>
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
@@ -19,8 +24,22 @@ typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-// Return a n x 2 array of lower and upper bounds for R(s) for each row
-Mat getRegion(const vd &VD, real s) {
+/**
+ * @defgroup getRegion getRegion
+ * @ingroup getRegion
+ * @brief Finds the voronoi region R(s) of a seed s.
+ *
+ * @param VD Voronoi diagram
+ * @param s ID of seed for which R(s) is to be found
+ * @returns (m x 2) Eigen::Array. Each row is either (-1, -1) of there are no pixels in the corresponding row in W
+ * that are also in R(s), or (lb, ub) where 0 <= lb <= ub < n, indicating that the pixels in the \f$i^{th}\f$ row
+ * between lb and ub inclusive are in the region R(s).
+ *
+ * R(s) is as defined in [1], Definition 1.1.
+
+*/
+
+Mat getRegion(const vd &VD, const real &s) {
     const real s1 = VD.Sx.at(s);
     const real s2 = VD.Sy.at(s);
 

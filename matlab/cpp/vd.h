@@ -103,6 +103,9 @@ public:
     void setNkByValue(unsigned int idx, RealVec val) {
         Nk[idx] = val;
     };
+    void incrementK(){
+        k += 1;
+    };
 
     V_struct getVk() const {
         return Vk;

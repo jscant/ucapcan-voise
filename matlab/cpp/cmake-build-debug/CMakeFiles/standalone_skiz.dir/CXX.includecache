@@ -119,10 +119,10 @@ skizException.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.h
-vd.h
-/home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
 vector
 -
+vd.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
 set

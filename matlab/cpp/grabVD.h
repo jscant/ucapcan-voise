@@ -1,4 +1,7 @@
-
+/**
+ * @file
+ * @copydetails
+ */
 #ifndef VD_H
 #define VD_H
 #include "vd.h"

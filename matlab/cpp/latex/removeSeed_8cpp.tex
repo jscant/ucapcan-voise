@@ -1,0 +1,69 @@
+\hypertarget{removeSeed_8cpp}{}\section{remove\+Seed.\+cpp File Reference}
+\label{removeSeed_8cpp}\index{remove\+Seed.\+cpp@{remove\+Seed.\+cpp}}
+
+
+Removes seed from voronoi diagram.  
+
+
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}add\+Seed.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}skiz\+Exception.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}N\+S\+Star.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}point\+In\+Region.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}get\+Region.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}aux.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}remove\+Seed.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_af7f2f98143c424001f941200129f8f01}\label{removeSeed_8cpp_af7f2f98143c424001f941200129f8f01}} 
+\#define {\bfseries A\+D\+D\+S\+E\+E\+D\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_a782bfa0d07f8d97a27b3f3a26fc21203}\label{removeSeed_8cpp_a782bfa0d07f8d97a27b3f3a26fc21203}} 
+\#define {\bfseries S\+K\+I\+Z\+E\+X\+C\+E\+P\+T\+I\+O\+N\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_a7588aeaa9578981673c086bd9ddaf444}\label{removeSeed_8cpp_a7588aeaa9578981673c086bd9ddaf444}} 
+\#define {\bfseries N\+S\+S\+T\+A\+R\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_a179dcf7e366d81e4229117de7ba5bc71}\label{removeSeed_8cpp_a179dcf7e366d81e4229117de7ba5bc71}} 
+\#define {\bfseries P\+O\+I\+N\+T\+I\+N\+R\+E\+G\+I\+O\+N\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_abed7287c5005fed29bd070cd4daa202a}\label{removeSeed_8cpp_abed7287c5005fed29bd070cd4daa202a}} 
+\#define {\bfseries G\+E\+T\+R\+E\+G\+I\+O\+N\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_a2ee4e67cdb4cdd4a8eedc9e2bb9a7194}\label{removeSeed_8cpp_a2ee4e67cdb4cdd4a8eedc9e2bb9a7194}} 
+\#define {\bfseries A\+U\+X\+\_\+H}
+\item 
+\mbox{\Hypertarget{removeSeed_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{removeSeed_8cpp_a12c2040f25d8e3a7b9e1c2024c618cb6}} 
+\#define {\bfseries I\+NF}~std\+::numeric\+\_\+limits$<$real$>$\+::infinity()
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{removeSeed_8cpp_a03ef0714b7c16aaa2fd9ffdf467938d9}{remove\+Seed}} (\mbox{\hyperlink{classvd}{vd}} \&VD, real Sk)
+\begin{DoxyCompactList}\small\item\em Removes seed from voronoi diagram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Removes seed from voronoi diagram. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{removeSeed_8cpp_a03ef0714b7c16aaa2fd9ffdf467938d9}\label{removeSeed_8cpp_a03ef0714b7c16aaa2fd9ffdf467938d9}} 
+\index{remove\+Seed.\+cpp@{remove\+Seed.\+cpp}!remove\+Seed@{remove\+Seed}}
+\index{remove\+Seed@{remove\+Seed}!remove\+Seed.\+cpp@{remove\+Seed.\+cpp}}
+\subsubsection{\texorpdfstring{remove\+Seed()}{removeSeed()}}
+{\footnotesize\ttfamily bool remove\+Seed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvd}{vd}} \&}]{VD,  }\item[{real}]{Sk }\end{DoxyParamCaption})}
+
+
+
+Removes seed from voronoi diagram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vd} & Voronoi Diagram \\
+\hline
+{\em Sk} & ID of seed to be removed Method used is taken from \char`\"{}\+Discrete Voronoi Diagrams and the S\+K\+I\+Z Operator\+: A Dynamic Algorithm\char`\"{} \mbox{[}1\mbox{]}, Section 3.\+2. \\
+\hline
+\end{DoxyParams}

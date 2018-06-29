@@ -1,4 +1,6 @@
-
+/**
+ * @copydetails removeSeed.cpp
+ */
 #ifndef VD_H
 #define VD_H
 #include "vd.h"

@@ -22,12 +22,12 @@
 
 colormap(jet) 
 
-profile on
+%profile on
 %compileMEX;
 webVOISE('../share/VOISEdemo3.dat');
 
-profile off
-profsave(profile('info'),'profile_results')
+%profile off
+%profsave(profile('info'),'profile_results')
 
 
 %quit

@@ -55,22 +55,8 @@ vd grabVD(const mxArray *prhs[]) {
         mexPrintf(str.c_str());
     }
     start = std::chrono::high_resolution_clock::now();
-/*
-    mxArray *nrIncomingArray, *ncIncomingArray, *wIncomingArray,
-            *sIncomingArray, *xIncomingArray, *yIncomingArray,
-            *nkIncomingArray, *kIncomingArray, *skIncomingArray,
-            *sxIncomingArray, *syIncomingArray, *vkIncomingArray,
-            *vIncomingArray, *lamIncomingArray, *wxmIncomingArray,
-            *wxMIncomingArray, *wymIncomingArray, *wyMIncomingArray,
-            *sxmIncomingArray, *sxMIncomingArray, *symIncomingArray,
-            *syMIncomingArray;
 
-    real *nrIncoming, *ncIncoming, *xIncoming, *yIncoming, *kIncoming,
-         *skIncoming, *sxIncoming, *syIncoming, *wxmIncoming, *wxMIncoming,
-         *wymIncoming, *wyMIncoming, *sxmIncoming, *sxMIncoming, *symIncoming,
-         *syMIncoming;
-*/
-    // Populate mxArrays with data from VD ML struct
+    // Create mxArrays with data from VD ML struct
     mxArray *nrIncomingArray = mxGetField(prhs[0], 0, "nr");
     mxArray *ncIncomingArray = mxGetField(prhs[0], 0, "nc");
     mxArray *wIncomingArray = mxGetField(prhs[0], 0, "W");
@@ -96,12 +82,7 @@ vd grabVD(const mxArray *prhs[]) {
     mxArray *sxMIncomingArray = mxGetField(sIncomingArray, 0, "xM");
     mxArray *symIncomingArray = mxGetField(sIncomingArray, 0, "ym");
     mxArray *syMIncomingArray = mxGetField(sIncomingArray, 0, "yM");
-/*
-    // Pointers declarations
-    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
-         *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
-         *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
-*/
+
     // Pointers to mxArrays containing ML data
     real *nrPtr = mxGetDoubles(nrIncomingArray);
     real *ncPtr = mxGetDoubles(ncIncomingArray);

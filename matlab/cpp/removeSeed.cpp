@@ -1,11 +1,6 @@
-/*
- * Removes seed from voronoi diagram. Parameters:
- * vd VD: voronoi diagram object (definition inf vd.h)
- * real Sk: ID of seed to be removed
- * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
-    Operator: A Dynamic Algorithm" [doi: 10.1109/34.625128]
-    All references to sections and equations in this file are from
-    the above paper.
+/**
+ * @file
+ * @brief Removes seed from voronoi diagram
  */
 
 #include <set>
@@ -57,7 +52,13 @@ typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 
 #include "removeSeed.h"
 
-
+/**
+ * @brief Removes seed from voronoi diagram
+ * @param vd Voronoi Diagram
+ * @param Sk ID of seed to be removed
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator: A Dynamic Algorithm" [1], Section 3.2.
+ *
+*/
 bool removeSeed(vd &VD, real Sk) {
 
     VD.k += 1;

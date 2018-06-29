@@ -1,0 +1,34 @@
+\hypertarget{aux_8cpp}{}\section{aux.\+cpp File Reference}
+\label{aux_8cpp}\index{aux.\+cpp@{aux.\+cpp}}
+
+
+Small, useful auxilliary functions.  
+
+
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}aux.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}skiz\+Exception.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+real {\bfseries sq\+Dist} (const real \&p1, const real \&p2, const real \&q1, const real \&q2)
+\item 
+std\+::array$<$ real, 2 $>$ {\bfseries circumcentre} (const real \&ax, const real \&ay, const real \&bx, const real \&by, const real \&cx, const real \&cy)
+\item 
+{\footnotesize template$<$class T1 , class T2 $>$ }\\bool {\bfseries in\+Vector} (const std\+::vector$<$ T1 $>$ \&vec, const T2 \&item)
+\item 
+void \mbox{\hyperlink{group__updateDict_gaecb9b6904667c0bde630eadf45d36835}{update\+Dict}} (std\+::map$<$ real, \mbox{\hyperlink{aux_8h_ac0a1a538b45426e056715d1f59f854ab}{Real\+Vec}} $>$ \&d, const real \&key, const real \&value)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{aux_8h_ac0a1a538b45426e056715d1f59f854ab}{Real\+Vec}} $>$ {\bfseries read\+Seeds} (std\+::string filename)
+\item 
+\mbox{\hyperlink{aux_8h_aa1fe91b8cd36c618282eb0d548690c4c}{Mat}} {\bfseries read\+Matrix} (std\+::string filename, int nr, int nc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Small, useful auxilliary functions. 
+

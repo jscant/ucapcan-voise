@@ -1,3 +1,10 @@
+/**
+ * @defgroup mexFunctions
+ * @inpackage mexFunctions
+ * @return void
+ * @fn mexFunction
+ */
+
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>

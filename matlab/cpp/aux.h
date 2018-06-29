@@ -1,5 +1,6 @@
-/*
- * Useful auxilliary functions - used in many higher level functions.
+/**
+ * @file
+ * @copydetails aux.cpp
  */
 
 #include <array>

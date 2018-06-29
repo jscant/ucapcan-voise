@@ -1,7 +1,7 @@
-//
-// Created by root on 20/06/18.
-//
-
+/**
+ * @file
+ * @copydetails NSStar.cpp
+ */
 #ifndef VECTOR_H
 #define VECTOR_H
 #include <vector>
@@ -19,5 +19,5 @@ typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
-RealVec Ns_star(const vd &VD);
+RealVec nsStar(const vd &VD);
 

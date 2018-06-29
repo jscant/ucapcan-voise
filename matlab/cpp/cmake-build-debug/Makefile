@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/cmake-3.11.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/cmake-3.11.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,32 @@ standalone_skiz: cmake_check_build_system
 standalone_skiz/fast:
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/build
 .PHONY : standalone_skiz/fast
+
+#=============================================================================
+# Target rules for targets named apidoc
+
+# Build rule for target.
+apidoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apidoc
+.PHONY : apidoc
+
+# fast build rule for target.
+apidoc/fast:
+	$(MAKE) -f CMakeFiles/apidoc.dir/build.make CMakeFiles/apidoc.dir/build
+.PHONY : apidoc/fast
+
+#=============================================================================
+# Target rules for targets named apidoc_forced
+
+# Build rule for target.
+apidoc_forced: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apidoc_forced
+.PHONY : apidoc_forced
+
+# fast build rule for target.
+apidoc_forced/fast:
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
+.PHONY : apidoc_forced/fast
 
 NSStar.o: NSStar.cpp.o
 
@@ -372,9 +398,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... standalone_skiz"
 	@echo "... edit_cache"
+	@echo "... standalone_skiz"
+	@echo "... rebuild_cache"
+	@echo "... apidoc"
+	@echo "... apidoc_forced"
 	@echo "... NSStar.o"
 	@echo "... NSStar.i"
 	@echo "... NSStar.s"

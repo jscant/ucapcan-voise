@@ -1,13 +1,7 @@
-/*
- * Adds seed to voronoi diagram. Parameters:
- * vd VD: voronoi diagram object (definition inf vd.h)
- * real s1: first coordinate of seed to be added
- * real s2: second coordinate of seed to be added
- * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
-    Operator: A Dynamic Algorithm" [doi: 10.1109/34.625128]
-    All references to sections and equations in this file are from
-    the above paper.
- */
+/**
+ * @file
+ * @brief Adds seed to voronoi diagram.
+*/
 
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()
@@ -55,13 +49,25 @@ typedef std::vector<real> RealVec;
 typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
 #endif
 
+/**
+ * @defgroup addSeed addSeed
+ * @ingroup addSeed
+ * @brief Adds seed to voronoi diagram.
+ * @param VD vd object (definition in vd.h)
+ * @param s1 First coordinate of seed to be added
+ * @param s2 Second coordinate of seed to be added
+ *
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
+    Operator: A Dynamic Algorithm" [1], Section 3.1
+*/
+
 bool addSeed(vd &VD, real s1, real s2) {
     VD.k += 1;
     VD.Sx[VD.k] = s1;
     VD.Sy[VD.k] = s2;
     VD.Sk[VD.k] = VD.k;
 
-    VD.Nk[VD.k] = Ns_star(VD); // Returns neighbours of new seed
+    VD.Nk[VD.k] = nsStar(VD); // Returns neighbours of new seed
 
     // Only N(s) for s in N(s*) need to be recalculated.
     // Initialise these with {s*} U N_k(s)\N_k+1(s*)

@@ -1,0 +1,29 @@
+\hypertarget{group__sqDist}{}\section{sq\+Dist}
+\label{group__sqDist}\index{sq\+Dist@{sq\+Dist}}
+
+
+Finds the squared difference between two points.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__sqDist_ga18d0a77f62f604bf2ba74500658add69}\label{group__sqDist_ga18d0a77f62f604bf2ba74500658add69}} 
+real {\bfseries sq\+Dist} (const real \&p1, const real \&p2, const real \&q1, const real \&q2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Finds the squared difference between two points. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1,p2} & x and y coordinates of first point \\
+\hline
+{\em q1,q2} & x and y coordinates of second point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Squared distance between points p and q
+\end{DoxyReturn}
+Using squared distance gives integer results when inputs are limited to W as defined in doi\+: 10.\+1109/34.\+625128, Section 2.\+2 which avoids floating point precision errors. 

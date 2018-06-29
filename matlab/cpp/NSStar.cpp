@@ -1,3 +1,7 @@
+/**
+ * @file
+ * @brief Finds neighbouring Voronoi regions for new seeds
+*/
 #ifndef NSSTAR_H
 #define NSSTAR_H
 #include "NSStar.h"
@@ -23,7 +27,19 @@
 #include "skizException.h"
 #endif
 
-RealVec Ns_star(const vd &VD) {
+/**
+ * @defgroup nsStar nsStar
+ * @ingroup nsStar
+ * @brief Finds neighbouring Voronoi regions for new seeds
+ * @param VD Voronoi diagram
+ * @returns Vector of the IDs of seeds with Voronoi regions bordering the Voronoi region of the seed last added to the
+ * Voronoi diagram
+ *
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
+    Operator: A Dynamic Algorithm" [1], Section 3.1
+*/
+
+RealVec nsStar(const vd &VD) {
     const real s1 = VD.Sx.at(VD.k);
     const real s2 = VD.Sy.at(VD.k);
 

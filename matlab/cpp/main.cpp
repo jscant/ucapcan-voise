@@ -1,4 +1,4 @@
-/*
+/**
  * This is a 'standalone' version of the SKIZ algorithm for addition and removal of
  * seeds from a VD. The initial conditions are loaded from data saved in benchVD.m,
  * as well as the list of seeds to be added.
@@ -43,7 +43,7 @@ int main() {
     RealVec Sx = seeds.at(0);
     RealVec Sy = seeds.at(1);
     if (Sx.size() != Sy.size()) {
-        throw (SKIZIOError("Lengths of Sx and Sy vectors not identical!"));
+        throw (SKIZIOException("Lengths of Sx and Sy vectors not identical!"));
     }
     unsigned int ns = Sx.size();
 
@@ -74,7 +74,7 @@ int main() {
 
     // addSeed timing
     auto start = now::now();
-    for (auto i = 0; i < ns - 5; ++i) {
+    for (unsigned int i = 0; i < ns - 5; ++i) {
         addSeed(VD, Sx.at(i + 5), Sy.at(i + 5));
     }
     auto elapsed = now::now() - start;
