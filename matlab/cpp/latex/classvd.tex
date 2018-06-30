@@ -52,6 +52,8 @@ void \mbox{\hyperlink{classvd_aa45da38425cbd5b48f61313323ba6204}{set\+Nk\+By\+Id
 \item 
 void \mbox{\hyperlink{classvd_a59c1f5756af7de9cc7a0089221cbd5b7}{incrementK}} ()
 \item 
+void \mbox{\hyperlink{classvd_ab5a972992406d5c42d1398573d9c769a}{erase\+Sk}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx)
+\item 
 \mbox{\hyperlink{structV__struct}{V\+\_\+struct}} \mbox{\hyperlink{classvd_a090bebdbbff36888934c870daf3dcb36}{get\+Vk}} () const
 \item 
 \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} \mbox{\hyperlink{classvd_ab4d0d9ea76cedf1a6825b62c9ec2d118}{getW}} () const
@@ -62,9 +64,9 @@ void \mbox{\hyperlink{classvd_a59c1f5756af7de9cc7a0089221cbd5b7}{incrementK}} ()
 \item 
 \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_aad4ea5c045b8380f83b0490af2fee0fa}{getV}} () const
 \item 
-\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_ae0ec132e647b7d9662bf2bfbf95e7297}{get\+Lam\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j)
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a5c26b069f893aa82eeaf53ff608eda1f}{get\+Lam\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j) const
 \item 
-\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a27d44f2c94b55723e9982446696b5cee}{get\+V\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j)
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a640ed20e4618abd409e180a707eea3b1}{get\+V\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j) const
 \item 
 \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_a82f353c594c3c6b24f6077398f059d3a}{get\+Seeds}} () const
 \item 
@@ -103,44 +105,11 @@ std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classvd_aca8bd9fa239b6fadf3b3a25e5c17557e}\label{classvd_aca8bd9fa239b6fadf3b3a25e5c17557e}} 
-\mbox{\hyperlink{structV__struct}{V\+\_\+struct}} {\bfseries Vk}
-\item 
 \mbox{\Hypertarget{classvd_ab23d33e6c11c46ad3302a874a4726542}\label{classvd_ab23d33e6c11c46ad3302a874a4726542}} 
 \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} {\bfseries W}
 \item 
 \mbox{\Hypertarget{classvd_a960c80ec5b52938f999f528a5e3cccf1}\label{classvd_a960c80ec5b52938f999f528a5e3cccf1}} 
 \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} {\bfseries S}
-\item 
-\mbox{\Hypertarget{classvd_a989a61c00de8a517c1093aba6f7d1b22}\label{classvd_a989a61c00de8a517c1093aba6f7d1b22}} 
-\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} {\bfseries nc}
-\item 
-\mbox{\Hypertarget{classvd_a04271075413d6082dad757da678d0181}\label{classvd_a04271075413d6082dad757da678d0181}} 
-\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} {\bfseries nr}
-\item 
-\mbox{\Hypertarget{classvd_a0cbfe9c7ca1e17901cc232d57352f200}\label{classvd_a0cbfe9c7ca1e17901cc232d57352f200}} 
-\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} {\bfseries k}
-\item 
-\mbox{\Hypertarget{classvd_aebb5bd18cba152453d0c74134c233d0e}\label{classvd_aebb5bd18cba152453d0c74134c233d0e}} 
-\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} {\bfseries seeds}
-\item 
-\mbox{\Hypertarget{classvd_afc15550440d0c6bc61d917f4ac75aa75}\label{classvd_afc15550440d0c6bc61d917f4ac75aa75}} 
-\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} {\bfseries px}
-\item 
-\mbox{\Hypertarget{classvd_a71b266194d117645ce8a3aeee98499f9}\label{classvd_a71b266194d117645ce8a3aeee98499f9}} 
-\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} {\bfseries py}
-\item 
-\mbox{\Hypertarget{classvd_a2c1599932c0909f80abd6cf7601940f6}\label{classvd_a2c1599932c0909f80abd6cf7601940f6}} 
-std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ {\bfseries Sx}
-\item 
-\mbox{\Hypertarget{classvd_abfa4f5d8305394eed7e36fabbb65e782}\label{classvd_abfa4f5d8305394eed7e36fabbb65e782}} 
-std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ {\bfseries Sy}
-\item 
-\mbox{\Hypertarget{classvd_a8b0e7202fac9d8411a0b3d1e6960bf5e}\label{classvd_a8b0e7202fac9d8411a0b3d1e6960bf5e}} 
-std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ {\bfseries Sk}
-\item 
-\mbox{\Hypertarget{classvd_a417f0bd0c1c54c7d927352df356134b6}\label{classvd_a417f0bd0c1c54c7d927352df356134b6}} 
-std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} $>$ {\bfseries Nk}
 \end{DoxyCompactItemize}
 
 
@@ -164,6 +133,17 @@ Contains all information about voronoi diagram needed to perform S\+K\+IZ algori
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvd_ab5a972992406d5c42d1398573d9c769a}\label{classvd_ab5a972992406d5c42d1398573d9c769a}} 
+\index{vd@{vd}!erase\+Sk@{erase\+Sk}}
+\index{erase\+Sk@{erase\+Sk}!vd@{vd}}
+\subsubsection{\texorpdfstring{erase\+Sk()}{eraseSk()}}
+{\footnotesize\ttfamily void vd\+::erase\+Sk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption})}
+
+Erases an entry in the seed index dictionary Sk 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Entry to erase \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classvd_a624f53ae4a7012f267111359e9245f81}\label{classvd_a624f53ae4a7012f267111359e9245f81}} 
 \index{vd@{vd}!getK@{getK}}
 \index{getK@{getK}!vd@{vd}}
@@ -182,11 +162,11 @@ Iteration count (k)
 Get $\lambda$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
 Eigen\+::\+Array of values of $\lambda_{ij}$ at each pixel. $\lambda_{ij}$ is the seed which is closest to pixel (i, j) 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classvd_ae0ec132e647b7d9662bf2bfbf95e7297}\label{classvd_ae0ec132e647b7d9662bf2bfbf95e7297}} 
+\mbox{\Hypertarget{classvd_a5c26b069f893aa82eeaf53ff608eda1f}\label{classvd_a5c26b069f893aa82eeaf53ff608eda1f}} 
 \index{vd@{vd}!get\+Lam\+By\+Idx@{get\+Lam\+By\+Idx}}
 \index{get\+Lam\+By\+Idx@{get\+Lam\+By\+Idx}!vd@{vd}}
 \subsubsection{\texorpdfstring{get\+Lam\+By\+Idx()}{getLamByIdx()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Lam\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Lam\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption}) const}
 
 Get element of $\lambda$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
 \begin{DoxyParams}{Parameters}
@@ -371,11 +351,11 @@ y coordinate if seed with ID = idx
 Get $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
 Eigen\+::\+Array of values of $\nu$ at each pixel. $\nu_{ij}$ = 1 iff there exist two or more closest seeds, else 0. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classvd_a27d44f2c94b55723e9982446696b5cee}\label{classvd_a27d44f2c94b55723e9982446696b5cee}} 
+\mbox{\Hypertarget{classvd_a640ed20e4618abd409e180a707eea3b1}\label{classvd_a640ed20e4618abd409e180a707eea3b1}} 
 \index{vd@{vd}!get\+V\+By\+Idx@{get\+V\+By\+Idx}}
 \index{get\+V\+By\+Idx@{get\+V\+By\+Idx}!vd@{vd}}
 \subsubsection{\texorpdfstring{get\+V\+By\+Idx()}{getVByIdx()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+V\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+V\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption}) const}
 
 Get element of $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
 Value of $\nu$ at each pixel in the $ i^{th} $ row and $ j^{th} $ column. $\nu_{ij}$ = 1 iff there exist two or more closest seeds, else 0 

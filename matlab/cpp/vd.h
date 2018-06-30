@@ -53,11 +53,11 @@ private:
     std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
     V_struct Vk;
+    Mat seeds, px, py;
 public:
     W_struct W;
     W_struct S;
-    Mat seeds, px, py;
-
+    
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);

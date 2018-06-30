@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vd',['vd',['../classvd.html#a765c16ee377a2a0f9651d555edd3a158',1,'vd']]]
+  ['updatedict',['updateDict',['../group__updateDict.html#gaecb9b6904667c0bde630eadf45d36835',1,'updateDict(std::map&lt; real, RealVec &gt; &amp;d, const real &amp;key, const real &amp;value):&#160;aux.cpp'],['../group__updateDict.html#gaecb9b6904667c0bde630eadf45d36835',1,'updateDict(std::map&lt; real, RealVec &gt; &amp;d, const real &amp;key, const real &amp;value):&#160;aux.cpp']]]
 ];
