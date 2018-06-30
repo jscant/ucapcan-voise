@@ -65,13 +65,13 @@ int main() {
     Nk[5] = {3, 4, 2, 1};
 
     vd VD(nr, nc);
-    VD.Vk.lam = lam;
-    VD.Vk.v = v;
-    VD.px = px;
-    VD.py = py;
+    VD.setLam(lam);
+    VD.setV(v);
+    VD.setPx(px);
+    VD.setPy(py);
     VD.setSx(StartSx);
     VD.setSy(StartSy);
-    VD.k = 5;
+    VD.setK(5);
     VD.setNk(Nk);
 
     // addSeed timing

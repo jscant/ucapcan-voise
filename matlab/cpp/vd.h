@@ -49,13 +49,13 @@ struct V_struct {
  */
 class vd {
 private:
+    real nc, nr, k;
     std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
-public:
     V_struct Vk;
+public:
     W_struct W;
     W_struct S;
-    real nc, nr, k;
     Mat seeds, px, py;
 
     void setVk(V_struct val);
@@ -85,8 +85,8 @@ public:
     W_struct getS() const;
     Mat getLam() const;
     Mat getV() const;
-    real getLamByIdx(uint32 i, uint32 j);
-    real getVByIdx(uint32 i, uint32 j);
+    real getLamByIdx(uint32 i, uint32 j) const;
+    real getVByIdx(uint32 i, uint32 j) const;
     Mat getSeeds() const;
     Mat getPx() const;
     Mat getPy() const;

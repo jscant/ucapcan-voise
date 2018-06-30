@@ -235,7 +235,7 @@ Mat vd::getV() const {
  * @returns Value of \f$\lambda_{ij}\f$ of pixel in the \f$ i^{th} \f$ row and \f$ j^{th} \f$ column. \f$\lambda_{ij}\f$
  * is the seed which is closest to pixel (i, j).
  */
-real vd::getLamByIdx(uint32 i, uint32 j) {
+real vd::getLamByIdx(uint32 i, uint32 j) const {
     return Vk.lam(i, j);
 };
 
@@ -244,7 +244,7 @@ real vd::getLamByIdx(uint32 i, uint32 j) {
  * @returns Value of \f$\nu\f$ at each pixel in the \f$ i^{th} \f$ row and \f$ j^{th} \f$ column. \f$\nu_{ij}\f$ = 1
  * iff there exist two or more closest seeds, else 0
  */
-real vd::getVByIdx(uint32 i, uint32 j) {
+real vd::getVByIdx(uint32 i, uint32 j) const {
     return Vk.v(i, j);
 };
 

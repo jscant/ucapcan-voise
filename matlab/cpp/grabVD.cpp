@@ -128,10 +128,10 @@ vd grabVD(const mxArray *prhs[]) {
     // Create and populate vd
     vd VD = vd(nr, nc);
 
-    VD.Vk.lam = Eigen::Map<Mat>(lamPtr, nRows, nCols);
-    VD.Vk.v = Eigen::Map<Mat>(vPtr, nRows, nCols);
-    VD.px = Eigen::Map<Mat>(xPtr, nRows, nCols) - 1;
-    VD.py = Eigen::Map<Mat>(yPtr, nRows, nCols) - 1;
+    VD.setLam(Eigen::Map<Mat>(lamPtr, nRows, nCols));
+    VD.setV(Eigen::Map<Mat>(vPtr, nRows, nCols));
+    VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1);
+    VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
 //    */
  /*
     // Populate Eigen arrays with ML data
@@ -174,7 +174,7 @@ vd grabVD(const mxArray *prhs[]) {
         Nk[i + 1] = cellVec;
     }
 
-    VD.k = k;
+    VD.setK(k);
     VD.setSx(Sx);
     VD.setSy(Sy);
     VD.setSk(Sk);

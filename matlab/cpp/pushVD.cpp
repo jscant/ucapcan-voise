@@ -45,8 +45,8 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     const char *wFnames[] = {"xm", "xM", "ym", "yM"};
 
     const mwSize nkDims[2] = {outputVD.getNk().size(), 1};
-    int nCols = outputVD.nc;
-    int nRows = outputVD.nr;
+    int nCols = outputVD.getNc();
+    int nRows = outputVD.getNr();
 
     // Create space in memory for result struct (VD)
     mxArray *nrOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
@@ -110,10 +110,10 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     }
     */
 
-    Eigen::Map<Mat>(lamPtr, outputVD.Vk.lam.rows(), outputVD.Vk.lam.cols()) = outputVD.Vk.lam;
-    Eigen::Map<Mat>(vPtr, outputVD.Vk.v.rows(), outputVD.Vk.v.cols()) = outputVD.Vk.v;
-    Eigen::Map<Mat>(xPtr, outputVD.px.rows(), outputVD.px.cols()) = outputVD.px + 1;
-    Eigen::Map<Mat>(yPtr, outputVD.py.rows(), outputVD.py.cols()) = outputVD.py + 1;
+    Eigen::Map<Mat>(lamPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getLam();
+    Eigen::Map<Mat>(vPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getV();
+    Eigen::Map<Mat>(xPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPx() + 1;
+    Eigen::Map<Mat>(yPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPy() + 1;
 
     int sxLen = outputVD.getSx().size();
     int count = 0;
@@ -158,9 +158,9 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     symPtr[0] = outputVD.S.ym;
     syMPtr[0] = outputVD.S.yM;
 
-    ncPtr[0] = outputVD.nc;
-    nrPtr[0] = outputVD.nr;
-    kPtr[0] = outputVD.k;
+    ncPtr[0] = outputVD.getNc();
+    nrPtr[0] = outputVD.getNr();
+    kPtr[0] = outputVD.getK();
 
     // Create ML struct with 12 fields
     plhs[0] = mxCreateStructMatrix(1, 1, 12, vdFnames);

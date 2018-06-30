@@ -34,7 +34,7 @@
 */
 
 bool addSeed(vd &VD, real s1, real s2) {
-    VD.k += 1;
+    VD.incrementK();
     VD.setSxByIdx(VD.getK(), s1);
     VD.setSyByIdx(VD.getK(), s2);
     VD.setSkByIdx(VD.getK(), VD.getK());
@@ -44,23 +44,23 @@ bool addSeed(vd &VD, real s1, real s2) {
     // Only N(s) for s in N(s*) need to be recalculated.
     // Initialise these with {s*} U N_k(s)\N_k+1(s*)
     std::map<real, RealVec> newDict;
-    for (int s : VD.getNkByIdx(VD.k)) {
+    for (int s : VD.getNkByIdx(VD.getK())) {
         RealVec v1 = VD.getNkByIdx(s);
-        RealVec v2 = VD.getNkByIdx(VD.k);
+        RealVec v2 = VD.getNkByIdx(VD.getK());
         RealVec init;
         for (auto i : v1) {
             if (!inVector(v2, i)) {
                 init.push_back(i);
             }
         }
-        init.push_back(VD.k);
+        init.push_back(VD.getK());
         newDict[s] = init;
     }
 
     // Build up N(s) for s in N(s*) incrementally
-    for (auto s : VD.getNkByIdx(VD.k)) {
+    for (auto s : VD.getNkByIdx(VD.getK())) {
         for (auto r : VD.getNkByIdx(s)) {
-            if (!inVector(VD.getNkByIdx(VD.k), r)) {
+            if (!inVector(VD.getNkByIdx(VD.getK()), r)) {
                 continue;
             }
             if (inVector(newDict.at(r), s)) {
@@ -68,7 +68,7 @@ bool addSeed(vd &VD, real s1, real s2) {
             }
             RealVec uList = VD.getNkByIdx(s);
 
-            uList.push_back(VD.k);
+            uList.push_back(VD.getK());
             for (auto u : uList) {
                 if (u == r) {
                     continue;
@@ -95,11 +95,11 @@ bool addSeed(vd &VD, real s1, real s2) {
     }
 
     // Find bounds of new region using inequalities derived in section 2.2
-    Mat bounds = getRegion(VD, VD.k);
+    Mat bounds = getRegion(VD, VD.getK());
 
     // Scan row by row as per section 2.2
     bool finish = false;
-    for (auto i = 0; i < VD.nr; ++i) {
+    for (auto i = 0; i < VD.getNr(); ++i) {
         if (bounds(i, 0) == -1) { // There are no pixels in R(s*) on this row
             if (finish) {
                 break; // R(s*) is convex; we are finished
@@ -111,18 +111,18 @@ bool addSeed(vd &VD, real s1, real s2) {
         }
 
         real lb = std::max(0.0, bounds(i, 0) - 1);
-        real ub = std::min(VD.nc, bounds(i, 1));
+        real ub = std::min(VD.getNc(), bounds(i, 1));
         for (real j = lb; j < ub; ++j) { // Scan only relevant pixels in row
-            const real l1 = VD.getSxByIdx(VD.Vk.lam(i, j)); // Sq distance to 'old' closest seed
-            const real l2 = VD.getSyByIdx(VD.Vk.lam(i, j));
+            const real l1 = VD.getSxByIdx(VD.getLamByIdx(i, j)); // Sq distance to 'old' closest seed
+            const real l2 = VD.getSyByIdx(VD.getLamByIdx(i, j));
             real newMu = sqDist(s1, s2, j+1, i+1); // Sq distance to s*
             real oldMu = sqDist(l1, l2, j+1, i+1);
 
             if (newMu < oldMu) { // Pixel is in new region
-                VD.Vk.lam(i, j) = VD.k;
-                VD.Vk.v(i, j) = 0;
+                VD.setLamByIdx(i, j, VD.getK());
+                VD.setVByIdx(i, j, 0);
             } else if (newMu == oldMu) { // Pixel is part of skeleton K
-                VD.Vk.v(i, j) = 1;
+                VD.setVByIdx(i, j, 1);
             }
         }
     }

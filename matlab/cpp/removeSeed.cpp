@@ -31,7 +31,7 @@
 */
 bool removeSeed(vd &VD, real Sk) {
 
-    VD.k += 1;
+    VD.incrementK();
 
     // Get list of row-wise bounds on R(Sk)
     Mat bounds = getRegion(VD, Sk);
@@ -47,27 +47,27 @@ bool removeSeed(vd &VD, real Sk) {
         }
         finish = true;
         real lb = std::max(0.0, bounds(j, 0) - 1);
-        real ub = std::min(VD.nc, bounds(j, 1) + 1);
+        real ub = std::min(VD.getNc(), bounds(j, 1) + 1);
         for (real i = lb; i < ub; ++i) {
 //            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
             //if(!pointInRegion(VD, pt, Sk, Ns)){
             //    continue;
             //}
-            VD.Vk.lam(j, i) = Ns.at(0);
-            VD.Vk.v(j, i) = 0;
+            VD.setLamByIdx(j, i, Ns.at(0));
+            VD.setVByIdx(j, i, 0);
             real lam = Ns.at(0);
             for (uint32 idx=1; idx<Ns.size(); ++idx) {
                 uint32 r = Ns.at(idx);
                 real newDist = sqDist(i+1, j+1, VD.getSxByIdx(r), VD.getSyByIdx(r));
                 real oldDist = sqDist(i+1, j+1, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
                 if((int)newDist < (int)oldDist){
-                    VD.Vk.lam(j, i) = r;
+                    VD.setLamByIdx(j, i, r);
+                    VD.setVByIdx(j, i, 0);
                     lam = r;
-                    VD.Vk.v(j, i) = 0;
                 } else if ((int)newDist == (int)oldDist){
-                    VD.Vk.lam(j, i) = r;
+                    VD.setLamByIdx(j, i, r);
+                    VD.setVByIdx(j, i, 1);
                     lam = r;
-                    VD.Vk.v(j, i) = 1;
                 }
             }
         }

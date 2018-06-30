@@ -38,7 +38,7 @@ Mat getRegion(const vd &VD, const real &s) {
 
     RealVec A = VD.getNkByIdx(s);
     Mat boundsUp, boundsDown;
-    boundsUp.resize(VD.nc - s2 + 1, 2);
+    boundsUp.resize(VD.getNc() - s2 + 1, 2);
     boundsDown.resize(s2 - 1, 2);
     boundsUp.setOnes();
     boundsDown.setOnes();
@@ -46,7 +46,7 @@ Mat getRegion(const vd &VD, const real &s) {
     boundsDown *= -1;
 
     // Upward sweep including s2 row
-    for (real i = s2; i < VD.nc + 1; ++i) {
+    for (real i = s2; i < VD.getNc() + 1; ++i) {
         RealVec lb, ub;
 
         const real boundsIdx = i - s2 + 1;
@@ -86,12 +86,12 @@ Mat getRegion(const vd &VD, const real &s) {
             }
             try {
                 if (ub.size() > 0) {
-                    lowestUB = std::min(VD.nc, ceil(*std::min_element(ub.begin(), ub.end())));
+                    lowestUB = std::min(VD.getNc(), ceil(*std::min_element(ub.begin(), ub.end())));
                 } else {
-                    lowestUB = VD.nc;
+                    lowestUB = VD.getNc();
                 }
             } catch (const std::exception &e) {
-                lowestUB = VD.nc;
+                lowestUB = VD.getNc();
             }
             if (lowestUB < highestLB) {
                 break;
@@ -144,12 +144,12 @@ Mat getRegion(const vd &VD, const real &s) {
 
             try {
                 if (ub.size() > 0) {
-                    lowestUB = std::min(VD.nc, ceil(*std::min_element(ub.begin(), ub.end())));
+                    lowestUB = std::min(VD.getNc(), ceil(*std::min_element(ub.begin(), ub.end())));
                 } else {
-                    lowestUB = VD.nc;
+                    lowestUB = VD.getNc();
                 }
             } catch (const std::exception &e) {
-                lowestUB = VD.nc;
+                lowestUB = VD.getNc();
             }
             if (lowestUB < highestLB) {
                 break; // We have finished this sweep
