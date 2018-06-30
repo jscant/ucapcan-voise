@@ -55,9 +55,9 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxArray *yOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
     mxArray *nkOutgoingArray = mxCreateCellArray(1, nkDims);
     mxArray *kOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-    mxArray *skOutgoingArray = mxCreateDoubleMatrix(outputVD.Sk.size(), 1, mxREAL);
-    mxArray *sxOutgoingArray = mxCreateDoubleMatrix(outputVD.Sx.size(), 1, mxREAL);
-    mxArray *syOutgoingArray = mxCreateDoubleMatrix(outputVD.Sy.size(), 1, mxREAL);
+    mxArray *skOutgoingArray = mxCreateDoubleMatrix(outputVD.getSk().size(), 1, mxREAL);
+    mxArray *sxOutgoingArray = mxCreateDoubleMatrix(outputVD.getSx().size(), 1, mxREAL);
+    mxArray *syOutgoingArray = mxCreateDoubleMatrix(outputVD.getSy().size(), 1, mxREAL);
     mxArray *vOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
     mxArray *lamOutgoingArray = mxCreateDoubleMatrix(nRows, nCols, mxREAL);
     mxArray *wxmOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
@@ -115,13 +115,13 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     Eigen::Map<Mat>(xPtr, outputVD.px.rows(), outputVD.px.cols()) = outputVD.px + 1;
     Eigen::Map<Mat>(yPtr, outputVD.py.rows(), outputVD.py.cols()) = outputVD.py + 1;
 
-    int sxLen = outputVD.Sx.size();
+    int sxLen = outputVD.getSx().size();
     int count = 0;
-    std::map<real, real>::iterator it = outputVD.Sk.begin();
+    std::map<real, real>::iterator it = outputVD.getSk().begin();
     for (int i = 0; i < sxLen; ++i) {
-        sxPtr[i] = outputVD.Sx.at(i + 1);
-        syPtr[i] = outputVD.Sy.at(i + 1);
-        if (count < outputVD.Sk.size()) {
+        sxPtr[i] = outputVD.getSxByIdx(i + 1);
+        syPtr[i] = outputVD.getSyByIdx(i + 1);
+        if (count < outputVD.getSk().size()) {
             skPtr[i] = it->first;
             ++it;
             ++count;
@@ -129,7 +129,7 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     }
 
     int pos = 0;
-    for(auto const &s: outputVD.Sk) {
+    for(auto const &s: outputVD.getSk()) {
         skPtr[pos] = s.second;
         pos += 1;
     }

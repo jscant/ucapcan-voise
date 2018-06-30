@@ -28,8 +28,8 @@
 */
 
 Mat getRegion(const vd &VD, const real &s) {
-    const real s1 = VD.Sx.at(s);
-    const real s2 = VD.Sy.at(s);
+    const real s1 = VD.getSxByIdx(s);
+    const real s2 = VD.getSyByIdx(s);
 
     // Lambda expression to find maximum/minimum value of i in region
     auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
@@ -53,8 +53,8 @@ Mat getRegion(const vd &VD, const real &s) {
         bool killLine = false;
         for (real j = 0; j < A.size(); ++j) {
             const real r = A[j];
-            const real r1 = VD.Sx.at(r);
-            const real r2 = VD.Sy.at(r);
+            const real r1 = VD.getSxByIdx(r);
+            const real r2 = VD.getSyByIdx(r);
 
             if (s1 > r1) {
                 lb.push_back(f(s1, s2, r1, r2, -i));
@@ -108,8 +108,8 @@ Mat getRegion(const vd &VD, const real &s) {
         RealVec lb, ub;
         bool killLine = false;
         for (auto r : A) {
-            const real r1 = VD.Sx.at(r);
-            const real r2 = VD.Sy.at(r);
+            const real r1 = VD.getSxByIdx(r);
+            const real r2 = VD.getSyByIdx(r);
             if (s1 > r1) {
                 lb.push_back(f(s1, s2, r1, r2, -i));
             } else if (r1 > s1) {

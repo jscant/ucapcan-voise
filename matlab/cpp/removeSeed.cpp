@@ -100,8 +100,8 @@ bool removeSeed(vd &VD, real Sk) {
                 }
                 std::array<real, 2> cc = { -1, -1 };
                 try {
-                    cc = circumcentre(VD.Sx.at(s), VD.Sy.at(s), VD.Sx.at(r),
-                                      VD.Sy.at(r), VD.Sx.at(u), VD.Sy.at(u));
+                    cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
+                                      VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));
                 } catch (SKIZLinearSeedsException &e) {
                     continue;
                 }
@@ -116,7 +116,7 @@ bool removeSeed(vd &VD, real Sk) {
     for(auto i : newDict) {
         VD.setNkByIdx(i.first, i.second);
     }
-    VD.Sk.erase((real)Sk);
+    VD.eraseSk(Sk);
     VD.setNkByIdx(Sk, {});
     return false;
 }

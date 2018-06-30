@@ -22,8 +22,8 @@
 */
 
 RealVec nsStar(const vd &VD) {
-    const real s1 = VD.Sx.at(VD.k);
-    const real s2 = VD.Sy.at(VD.k);
+    const real s1 = VD.getSxByIdx(VD.k);
+    const real s2 = VD.getSyByIdx(VD.k);
 
     real lam = VD.Vk.lam(s2 - 1, s1 - 1);
     const real lamOG = lam;
@@ -44,12 +44,12 @@ RealVec nsStar(const vd &VD) {
                 continue;
             }
 
-            const real r1 = VD.Sx.at(r);
-            const real r2 = VD.Sy.at(r);
+            const real r1 = VD.getSxByIdx(r);
+            const real r2 = VD.getSyByIdx(r);
 
             std::array<real, 2> cc;
             try {
-                cc = circumcentre(r1, r2, s1, s2, VD.Sx.at(lam), VD.Sy.at(lam));
+                cc = circumcentre(r1, r2, s1, s2, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
             } catch (SKIZLinearSeedsException &e) {
                 continue;
             }

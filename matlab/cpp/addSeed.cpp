@@ -75,8 +75,8 @@ bool addSeed(vd &VD, real s1, real s2) {
                 }
                 std::array<real, 2> cc;
                 try {
-                    cc = circumcentre(VD.Sx.at(s), VD.Sy.at(s), VD.Sx.at(r),
-                                      VD.Sy.at(r), VD.Sx.at(u), VD.Sy.at(u));
+                    cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
+                                      VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));
                 } catch (SKIZLinearSeedsException &e) {
                     continue;
                 }
@@ -113,8 +113,8 @@ bool addSeed(vd &VD, real s1, real s2) {
         real lb = std::max(0.0, bounds(i, 0) - 1);
         real ub = std::min(VD.nc, bounds(i, 1));
         for (real j = lb; j < ub; ++j) { // Scan only relevant pixels in row
-            const real l1 = VD.Sx.at(VD.Vk.lam(i, j)); // Sq distance to 'old' closest seed
-            const real l2 = VD.Sy.at(VD.Vk.lam(i, j));
+            const real l1 = VD.getSxByIdx(VD.Vk.lam(i, j)); // Sq distance to 'old' closest seed
+            const real l2 = VD.getSyByIdx(VD.Vk.lam(i, j));
             real newMu = sqDist(s1, s2, j+1, i+1); // Sq distance to s*
             real oldMu = sqDist(l1, l2, j+1, i+1);
 

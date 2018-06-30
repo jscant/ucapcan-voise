@@ -380,4 +380,12 @@ real vd::getPxByIdx(uint32 i, uint32 j) {
  */
 real vd::getPyByIdx(uint32 i, uint32 j) {
     return py(i, j);
+}
+
+/**
+ * Erases an entry in the seed index dictionary Sk
+ * @param idx Entry to erase
+ */
+void vd::eraseSk(uint32 idx) {
+    Sk.erase(idx);
 };

@@ -29,17 +29,17 @@
       <file leaf-file-name="vd.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/vd.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="382" column="2" selection-start-line="382" selection-start-column="2" selection-end-line="382" selection-end-column="2" />
+            <state relative-caret-position="455">
+              <caret line="389" column="18" selection-start-line="389" selection-start-column="18" selection-end-line="389" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="removeSeed.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="removeSeed.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
+            <state relative-caret-position="389">
+              <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
               <folding>
                 <element signature="e#145#165#0" expanded="true" />
               </folding>
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+            <state relative-caret-position="291">
+              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -92,8 +92,17 @@
       <file leaf-file-name="vd.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/vd.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state relative-caret-position="275">
+              <caret line="80" column="10" lean-forward="true" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pushVD.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/pushVD.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -109,8 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Nk.at(Sk</find>
-      <find>result.insert</find>
       <find>mexPrint</find>
       <find>string</find>
       <find>c_str</find>
@@ -138,7 +145,9 @@
       <find>getNk</find>
       <find>VD.Sx</find>
       <find>VD.Sx[</find>
+      <find>outputVD.</find>
       <find>real oldD</find>
+      <find>erase</find>
     </findStrings>
     <replaceStrings>
       <replace>VD.Nk</replace>
@@ -159,7 +168,6 @@
         <option value="$PROJECT_DIR$/addSeedToVDBatch.cpp" />
         <option value="$PROJECT_DIR$/cpp/addSeed.h" />
         <option value="$PROJECT_DIR$/cpp/grabVD.h" />
-        <option value="$PROJECT_DIR$/cpp/pushVD.cpp" />
         <option value="$PROJECT_DIR$/cpp/pointInRegion.h" />
         <option value="$PROJECT_DIR$/cpp/pointInRegion.cpp" />
         <option value="$PROJECT_DIR$/cpp/skizException.h" />
@@ -172,13 +180,14 @@
         <option value="$PROJECT_DIR$/cpp/aux.cpp" />
         <option value="$PROJECT_DIR$/cpp/aux.h" />
         <option value="$PROJECT_DIR$/cpp/typedefs.cpp" />
-        <option value="$PROJECT_DIR$/cpp/vd.cpp" />
         <option value="$PROJECT_DIR$/cpp/NSStar.cpp" />
-        <option value="$PROJECT_DIR$/cpp/vd.h" />
         <option value="$PROJECT_DIR$/cpp/grabVD.cpp" />
         <option value="$PROJECT_DIR$/cpp/main.cpp" />
-        <option value="$PROJECT_DIR$/cpp/removeSeed.cpp" />
         <option value="$PROJECT_DIR$/cpp/addSeed.cpp" />
+        <option value="$PROJECT_DIR$/cpp/pushVD.cpp" />
+        <option value="$PROJECT_DIR$/cpp/vd.h" />
+        <option value="$PROJECT_DIR$/cpp/vd.cpp" />
+        <option value="$PROJECT_DIR$/cpp/removeSeed.cpp" />
       </list>
     </option>
   </component>
@@ -281,7 +290,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249467000" />
+    <option name="totallyTimeSpent" value="250098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/pushVD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="25" column="91" selection-start-line="25" selection-start-column="91" selection-end-line="25" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/pointInRegion.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -639,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/vd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="382" column="2" selection-start-line="382" selection-start-column="2" selection-end-line="382" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -653,13 +648,6 @@
           <folding>
             <element signature="e#75#89#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/vd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="51" column="31" lean-forward="true" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -680,20 +668,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
+    <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="60" column="64" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-          <folding>
-            <element signature="e#145#165#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
+    <entry file="file://$PROJECT_DIR$/cpp/pushVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        <state relative-caret-position="168">
+          <caret line="131" column="37" selection-start-line="131" selection-start-column="37" selection-end-line="131" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/vd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="80" column="10" lean-forward="true" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/vd.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="389" column="18" selection-start-line="389" selection-start-column="18" selection-end-line="389" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="118" column="19" selection-start-line="118" selection-start-column="19" selection-end-line="118" selection-end-column="19" />
+          <folding>
+            <element signature="e#145#165#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

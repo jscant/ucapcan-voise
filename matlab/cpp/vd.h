@@ -49,6 +49,7 @@ struct V_struct {
  */
 class vd {
 private:
+    std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
 public:
     V_struct Vk;
@@ -56,7 +57,6 @@ public:
     W_struct S;
     real nc, nr, k;
     Mat seeds, px, py;
-    std::map<real, real> Sx, Sy, Sk;
 
     void setVk(V_struct val);
     void setW(W_struct val);
@@ -78,6 +78,7 @@ public:
     void setNk(std::map<real, RealVec> val);
     void setNkByIdx(uint32 idx, RealVec val);
     void incrementK();
+    void eraseSk(uint32 idx);
 
     V_struct getVk() const;
     W_struct getW() const;
