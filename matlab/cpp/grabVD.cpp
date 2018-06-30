@@ -175,9 +175,9 @@ vd grabVD(const mxArray *prhs[]) {
     }
 
     VD.k = k;
-    VD.Sx = Sx;
-    VD.Sy = Sy;
-    VD.Sk = Sk;
+    VD.setSx(Sx);
+    VD.setSy(Sy);
+    VD.setSk(Sk);
     VD.setNk(Nk);
     VD.W = W;
     VD.S = S_str;

@@ -38,8 +38,8 @@ RealVec nsStar(const vd &VD) {
     while (true) {
         real NsLen = Ns.size();
 
-        for (real nIdx = n; nIdx < VD.Nk.at(lam).size(); ++nIdx) {
-            const real r = VD.Nk.at(lam)[nIdx];
+        for (real nIdx = n; nIdx < VD.getNkByIdx(lam).size(); ++nIdx) {
+            const real r = VD.getNkByIdx(lam)[nIdx];
             if (inVector(Ns, r)) {
                 continue;
             }
@@ -54,7 +54,7 @@ RealVec nsStar(const vd &VD) {
                 continue;
             }
 
-            bool pir = pointInRegion(VD, cc, lam, VD.Nk.at(lam));
+            bool pir = pointInRegion(VD, cc, lam, VD.getNkByIdx(lam));
 
             if (pir) {
                 if (r == lamOG) { // region is bounded!

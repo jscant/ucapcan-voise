@@ -36,7 +36,7 @@ Mat getRegion(const vd &VD, const real &s) {
         return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
     };
 
-    RealVec A = VD.Nk.at(s);
+    RealVec A = VD.getNkByIdx(s);
     Mat boundsUp, boundsDown;
     boundsUp.resize(VD.nc - s2 + 1, 2);
     boundsDown.resize(s2 - 1, 2);

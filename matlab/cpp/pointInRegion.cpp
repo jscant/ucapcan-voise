@@ -27,7 +27,7 @@
 
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
     if (A.size() < 1) {
-        A = VD.Nk.at(s);
+        A = VD.getNkByIdx(s);
     }
     const real pt1 = pt[0];
     const real pt2 = pt[1];

@@ -69,8 +69,8 @@ int main() {
     VD.Vk.v = v;
     VD.px = px;
     VD.py = py;
-    VD.Sx = StartSx;
-    VD.Sy = StartSy;
+    VD.setSx(StartSx);
+    VD.setSy(StartSy);
     VD.k = 5;
     VD.setNk(Nk);
 

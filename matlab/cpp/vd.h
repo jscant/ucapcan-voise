@@ -48,6 +48,8 @@ struct V_struct {
  * @brief Contains all information about voronoi diagram needed to perform SKIZ algorithm from [1]
  */
 class vd {
+private:
+    std::map<real, RealVec> Nk;
 public:
     V_struct Vk;
     W_struct W;
@@ -55,7 +57,7 @@ public:
     real nc, nr, k;
     Mat seeds, px, py;
     std::map<real, real> Sx, Sy, Sk;
-    std::map<real, RealVec> Nk;
+
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);

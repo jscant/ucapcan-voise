@@ -35,18 +35,18 @@
 
 bool addSeed(vd &VD, real s1, real s2) {
     VD.k += 1;
-    VD.Sx[VD.k] = s1;
-    VD.Sy[VD.k] = s2;
-    VD.Sk[VD.k] = VD.k;
+    VD.setSxByIdx(VD.getK(), s1);
+    VD.setSyByIdx(VD.getK(), s2);
+    VD.setSkByIdx(VD.getK(), VD.getK());
 
     VD.setNkByIdx(VD.getK(), nsStar(VD));
 
     // Only N(s) for s in N(s*) need to be recalculated.
     // Initialise these with {s*} U N_k(s)\N_k+1(s*)
     std::map<real, RealVec> newDict;
-    for (int s : VD.Nk.at(VD.k)) {
-        RealVec v1 = VD.Nk.at(s);
-        RealVec v2 = VD.Nk.at(VD.k);
+    for (int s : VD.getNkByIdx(VD.k)) {
+        RealVec v1 = VD.getNkByIdx(s);
+        RealVec v2 = VD.getNkByIdx(VD.k);
         RealVec init;
         for (auto i : v1) {
             if (!inVector(v2, i)) {
@@ -58,15 +58,15 @@ bool addSeed(vd &VD, real s1, real s2) {
     }
 
     // Build up N(s) for s in N(s*) incrementally
-    for (auto s : VD.Nk.at(VD.k)) {
-        for (auto r : VD.Nk.at(s)) {
-            if (!inVector(VD.Nk.at(VD.k), r)) {
+    for (auto s : VD.getNkByIdx(VD.k)) {
+        for (auto r : VD.getNkByIdx(s)) {
+            if (!inVector(VD.getNkByIdx(VD.k), r)) {
                 continue;
             }
             if (inVector(newDict.at(r), s)) {
                 continue;
             }
-            RealVec uList = VD.Nk.at(s);
+            RealVec uList = VD.getNkByIdx(s);
 
             uList.push_back(VD.k);
             for (auto u : uList) {

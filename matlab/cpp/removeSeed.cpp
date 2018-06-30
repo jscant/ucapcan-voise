@@ -35,7 +35,7 @@ bool removeSeed(vd &VD, real Sk) {
 
     // Get list of row-wise bounds on R(Sk)
     Mat bounds = getRegion(VD, Sk);
-    RealVec Ns = VD.Nk.at(Sk); // Neighbours of seed to be removed
+    RealVec Ns = VD.getNkByIdx(Sk); // Neighbours of seed to be removed
     bool finish = false;
     for (int j = 0; j < bounds.rows(); ++j) {
         if (bounds(j, 0) == -1) {
@@ -58,8 +58,8 @@ bool removeSeed(vd &VD, real Sk) {
             real lam = Ns.at(0);
             for (uint32 idx=1; idx<Ns.size(); ++idx) {
                 uint32 r = Ns.at(idx);
-                real newDist = sqDist(i+1, j+1, VD.Sx[r], VD.Sy[r]);
-                real oldDist = sqDist(i+1, j+1, VD.Sx[lam], VD.Sy[lam]);
+                real newDist = sqDist(i+1, j+1, VD.getSxByIdx(r), VD.getSyByIdx(r));
+                real oldDist = sqDist(i+1, j+1, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
                 if((int)newDist < (int)oldDist){
                     VD.Vk.lam(j, i) = r;
                     lam = r;
@@ -74,23 +74,24 @@ bool removeSeed(vd &VD, real Sk) {
     }
     //mexPrintf("FLAG 8\n");
     std::map<real, RealVec> newDict;
-    for (uint32 r : VD.Nk.at(Sk)) {
-        RealVec Ns = VD.Nk.at(r);
+    for (uint32 r : VD.getNkByIdx(Sk)) {
+        RealVec Ns = VD.getNkByIdx(r);
         Ns.erase(std::remove(Ns.begin(), Ns.end(), Sk), Ns.end());
         newDict[r] = Ns;
     }
     //mexPrintf("FLAG 9\n");
-    for (auto s : VD.Nk.at(Sk)) {
+    for (auto s : VD.getNkByIdx(Sk)) {
         if(s == Sk) {
             continue;
         }
         //mexPrintf("FLAG 10\n");
-        RealVec A = VD.Nk.at(s);
-        A.insert(A.end(), VD.Nk.at(Sk).begin(), VD.Nk.at(Sk).end());
+        RealVec A = VD.getNkByIdx(s);
+        RealVec B = VD.getNkByIdx(Sk);
+        A.insert(A.end(), B.begin(), B.end());
         A.erase(std::remove(A.begin(), A.end(), s), A.end());
         A.erase(std::remove(A.begin(), A.end(), Sk), A.end());
-        for (auto r : VD.Nk.at(Sk)) {
-            if (r == Sk || r == s || inVector(VD.Nk.at(s), r)) {
+        for (auto r : VD.getNkByIdx(Sk)) {
+            if (r == Sk || r == s || inVector(VD.getNkByIdx(s), r)) {
                 continue;
             }
             for(int u : A) {

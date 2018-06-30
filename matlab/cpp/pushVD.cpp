@@ -44,7 +44,7 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     const char *vkFnames[] = {"lambda", "v"};
     const char *wFnames[] = {"xm", "xM", "ym", "yM"};
 
-    const mwSize nkDims[2] = {outputVD.Nk.size(), 1};
+    const mwSize nkDims[2] = {outputVD.getNk().size(), 1};
     int nCols = outputVD.nc;
     int nRows = outputVD.nr;
 
@@ -138,11 +138,11 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxArray *cellPtrs[nkLen];
     for (int i = 0; i < nkLen; ++i) {
         cellPtrs[i] = mxGetCell(nkOutgoingArray, i);
-        int cellLen = outputVD.Nk.at(i + 1).size();
+        int cellLen = outputVD.getNkByIdx(i + 1).size();
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);
         real *tmpPtr = mxGetDoubles(tmpArr);
         for (int j = 0; j < cellLen; ++j) {
-            tmpPtr[j] = outputVD.Nk.at(i + 1).at(j);
+            tmpPtr[j] = outputVD.getNkByIdx(i + 1).at(j);
         }
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
         //mexPrintf("Nk Flag 2\n");
