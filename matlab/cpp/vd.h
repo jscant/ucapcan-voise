@@ -57,7 +57,7 @@ private:
 public:
     W_struct W;
     W_struct S;
-    
+
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);
