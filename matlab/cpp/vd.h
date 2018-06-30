@@ -98,6 +98,8 @@ public:
     real getSyByIdx(uint32 idx) const;
     real getSkByIdx(uint32 idx) const;
     RealVec getNkByIdx(uint32 idx) const;
+    real getPxByIdx(uint32 i, uint32 j);
+    real getPyByIdx(uint32 i, uint32 j);
 
     vd(real rows, real cols);
     ~vd();

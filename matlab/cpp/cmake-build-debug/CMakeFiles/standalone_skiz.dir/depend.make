@@ -22,6 +22,7 @@ CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../vd.h
 CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../aux.cpp
 CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../skizException.h
+CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../typedefs.cpp
 
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.cpp
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.h

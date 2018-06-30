@@ -10,13 +10,7 @@
 #include <map>
 #include <eigen3/Eigen/Dense>
 
-#ifndef TYPEDEFS
-#define TYPEDEFS
-typedef double real;
-typedef std::vector<real> RealVec;
-typedef Eigen::Array<real, Eigen::Dynamic, Eigen::Dynamic> Mat;
-typedef unsigned int uint32;
-#endif
+#include "typedefs.cpp"
 
 real sqDist(const real &p1, const real &p2, const real &q1, const real &q2);
 std::array<real, 2> circumcentre(const real &ax, const real &ay, const real &bx, const real &by, const real &cx,

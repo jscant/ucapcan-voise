@@ -364,4 +364,20 @@ real vd::getSkByIdx(uint32 idx) const {
  */
 RealVec vd::getNkByIdx(uint32 idx) const {
     return Nk.at(idx);
+}
+
+/**
+ * Returns x coordinate of pixel
+ * @returns x coordinate of pixel (i, j)
+ */
+real vd::getPxByIdx(uint32 i, uint32 j) {
+    return px(i, j);
+}
+
+/**
+ * Returns y coordinate of pixel
+ * @returns y coordinate of pixel (i, j)
+ */
+real vd::getPyByIdx(uint32 i, uint32 j) {
+    return py(i, j);
 };
