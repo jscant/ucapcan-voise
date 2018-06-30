@@ -72,7 +72,7 @@ int main() {
     VD.Sx = StartSx;
     VD.Sy = StartSy;
     VD.k = 5;
-    VD.Nk = Nk;
+    VD.setNk(Nk);
 
     // addSeed timing
     auto start = now::now();

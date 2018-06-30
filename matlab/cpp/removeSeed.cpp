@@ -113,9 +113,9 @@ bool removeSeed(vd &VD, real Sk) {
         }
     }
     for(auto i : newDict) {
-        VD.Nk.at(i.first) = i.second;
+        VD.setNkByIdx(i.first, i.second);
     }
     VD.Sk.erase((real)Sk);
-    VD.Nk.at(Sk) = {};
+    VD.setNkByIdx(Sk, {});
     return false;
 }

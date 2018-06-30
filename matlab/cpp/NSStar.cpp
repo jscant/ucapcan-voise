@@ -30,7 +30,7 @@ RealVec nsStar(const vd &VD) {
     RealVec Ns = {lam};
     bool onlyNeighbour = false;
 
-    if (VD.Nk.at(lam).size() == 1) {
+    if(VD.getNkByIdx(lam).size() == 1){
         onlyNeighbour = true;
     }
 

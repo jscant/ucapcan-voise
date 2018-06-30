@@ -39,7 +39,7 @@ bool addSeed(vd &VD, real s1, real s2) {
     VD.Sy[VD.k] = s2;
     VD.Sk[VD.k] = VD.k;
 
-    VD.Nk[VD.k] = nsStar(VD); // Returns neighbours of new seed
+    VD.setNkByIdx(VD.getK(), nsStar(VD));
 
     // Only N(s) for s in N(s*) need to be recalculated.
     // Initialise these with {s*} U N_k(s)\N_k+1(s*)
@@ -91,7 +91,7 @@ bool addSeed(vd &VD, real s1, real s2) {
 
     // Update Nk with new neighbour relationships
     for (auto i : newDict) {
-        VD.Nk[i.first] = i.second;
+        VD.setNkByIdx(i.first, i.second);
     }
 
     // Find bounds of new region using inequalities derived in section 2.2
