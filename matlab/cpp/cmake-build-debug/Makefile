@@ -122,17 +122,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testPointInRegion
+# Target rules for targets named PointInRegionCheck
 
 # Build rule for target.
-testPointInRegion: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testPointInRegion
-.PHONY : testPointInRegion
+PointInRegionCheck: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 PointInRegionCheck
+.PHONY : PointInRegionCheck
 
 # fast build rule for target.
-testPointInRegion/fast:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/build
-.PHONY : testPointInRegion/fast
+PointInRegionCheck/fast:
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/build
+.PHONY : PointInRegionCheck/fast
 
 #=============================================================================
 # Target rules for targets named testRemoveSeedCheckV
@@ -231,7 +231,7 @@ NSStar.o: NSStar.cpp.o
 
 # target to build an object file
 NSStar.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/NSStar.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o
@@ -245,7 +245,7 @@ NSStar.i: NSStar.cpp.i
 
 # target to preprocess a source file
 NSStar.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/NSStar.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.i
@@ -259,7 +259,7 @@ NSStar.s: NSStar.cpp.s
 
 # target to generate assembly for a file
 NSStar.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/NSStar.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.s
@@ -273,7 +273,7 @@ addSeed.o: addSeed.cpp.o
 
 # target to build an object file
 addSeed.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/addSeed.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o
@@ -287,7 +287,7 @@ addSeed.i: addSeed.cpp.i
 
 # target to preprocess a source file
 addSeed.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/addSeed.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.i
@@ -301,7 +301,7 @@ addSeed.s: addSeed.cpp.s
 
 # target to generate assembly for a file
 addSeed.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/addSeed.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.s
@@ -315,7 +315,7 @@ aux.o: aux.cpp.o
 
 # target to build an object file
 aux.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/aux.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o
@@ -329,7 +329,7 @@ aux.i: aux.cpp.i
 
 # target to preprocess a source file
 aux.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/aux.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.i
@@ -343,7 +343,7 @@ aux.s: aux.cpp.s
 
 # target to generate assembly for a file
 aux.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/aux.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.s
@@ -357,7 +357,7 @@ getRegion.o: getRegion.cpp.o
 
 # target to build an object file
 getRegion.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/getRegion.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o
@@ -371,7 +371,7 @@ getRegion.i: getRegion.cpp.i
 
 # target to preprocess a source file
 getRegion.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/getRegion.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.i
@@ -385,7 +385,7 @@ getRegion.s: getRegion.cpp.s
 
 # target to generate assembly for a file
 getRegion.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/getRegion.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.s
@@ -426,7 +426,7 @@ pointInRegion.o: pointInRegion.cpp.o
 
 # target to build an object file
 pointInRegion.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/pointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o
@@ -440,7 +440,7 @@ pointInRegion.i: pointInRegion.cpp.i
 
 # target to preprocess a source file
 pointInRegion.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/pointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.i
@@ -454,7 +454,7 @@ pointInRegion.s: pointInRegion.cpp.s
 
 # target to generate assembly for a file
 pointInRegion.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/pointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.s
@@ -468,7 +468,7 @@ removeSeed.o: removeSeed.cpp.o
 
 # target to build an object file
 removeSeed.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/removeSeed.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o
@@ -482,7 +482,7 @@ removeSeed.i: removeSeed.cpp.i
 
 # target to preprocess a source file
 removeSeed.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/removeSeed.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.i
@@ -496,7 +496,7 @@ removeSeed.s: removeSeed.cpp.s
 
 # target to generate assembly for a file
 removeSeed.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/removeSeed.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.s
@@ -510,7 +510,7 @@ skizException.o: skizException.cpp.o
 
 # target to build an object file
 skizException.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/skizException.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o
@@ -524,7 +524,7 @@ skizException.i: skizException.cpp.i
 
 # target to preprocess a source file
 skizException.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/skizException.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.i
@@ -538,7 +538,7 @@ skizException.s: skizException.cpp.s
 
 # target to generate assembly for a file
 skizException.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/skizException.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.s
@@ -552,7 +552,7 @@ test/Catch2/test_main.o: test/Catch2/test_main.cpp.o
 
 # target to build an object file
 test/Catch2/test_main.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o
@@ -565,7 +565,7 @@ test/Catch2/test_main.i: test/Catch2/test_main.cpp.i
 
 # target to preprocess a source file
 test/Catch2/test_main.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.i
@@ -578,7 +578,7 @@ test/Catch2/test_main.s: test/Catch2/test_main.cpp.s
 
 # target to generate assembly for a file
 test/Catch2/test_main.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.s
@@ -591,7 +591,7 @@ test/test-help-fns/bruteForceCheckLambda.o: test/test-help-fns/bruteForceCheckLa
 
 # target to build an object file
 test/test-help-fns/bruteForceCheckLambda.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
@@ -604,7 +604,7 @@ test/test-help-fns/bruteForceCheckLambda.i: test/test-help-fns/bruteForceCheckLa
 
 # target to preprocess a source file
 test/test-help-fns/bruteForceCheckLambda.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
@@ -617,7 +617,7 @@ test/test-help-fns/bruteForceCheckLambda.s: test/test-help-fns/bruteForceCheckLa
 
 # target to generate assembly for a file
 test/test-help-fns/bruteForceCheckLambda.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
@@ -630,7 +630,7 @@ test/test-help-fns/bruteForceCheckV.o: test/test-help-fns/bruteForceCheckV.cpp.o
 
 # target to build an object file
 test/test-help-fns/bruteForceCheckV.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckV.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o
@@ -643,7 +643,7 @@ test/test-help-fns/bruteForceCheckV.i: test/test-help-fns/bruteForceCheckV.cpp.i
 
 # target to preprocess a source file
 test/test-help-fns/bruteForceCheckV.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckV.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.i
@@ -656,7 +656,7 @@ test/test-help-fns/bruteForceCheckV.s: test/test-help-fns/bruteForceCheckV.cpp.s
 
 # target to generate assembly for a file
 test/test-help-fns/bruteForceCheckV.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckV.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.s
@@ -669,7 +669,7 @@ test/test-help-fns/loadVD.o: test/test-help-fns/loadVD.cpp.o
 
 # target to build an object file
 test/test-help-fns/loadVD.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/loadVD.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o
@@ -682,7 +682,7 @@ test/test-help-fns/loadVD.i: test/test-help-fns/loadVD.cpp.i
 
 # target to preprocess a source file
 test/test-help-fns/loadVD.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/loadVD.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.i
@@ -695,7 +695,7 @@ test/test-help-fns/loadVD.s: test/test-help-fns/loadVD.cpp.s
 
 # target to generate assembly for a file
 test/test-help-fns/loadVD.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/test-help-fns/loadVD.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.s
@@ -762,7 +762,7 @@ test/testPointInRegion.o: test/testPointInRegion.cpp.o
 
 # target to build an object file
 test/testPointInRegion.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/testPointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.o
 .PHONY : test/testPointInRegion.cpp.o
 
 test/testPointInRegion.i: test/testPointInRegion.cpp.i
@@ -771,7 +771,7 @@ test/testPointInRegion.i: test/testPointInRegion.cpp.i
 
 # target to preprocess a source file
 test/testPointInRegion.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/testPointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.i
 .PHONY : test/testPointInRegion.cpp.i
 
 test/testPointInRegion.s: test/testPointInRegion.cpp.s
@@ -780,7 +780,7 @@ test/testPointInRegion.s: test/testPointInRegion.cpp.s
 
 # target to generate assembly for a file
 test/testPointInRegion.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/test/testPointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.s
 .PHONY : test/testPointInRegion.cpp.s
 
 test/testRemoveSeedCheckLambda.o: test/testRemoveSeedCheckLambda.cpp.o
@@ -870,7 +870,7 @@ vd.o: vd.cpp.o
 
 # target to build an object file
 vd.cpp.o:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/vd.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.o
@@ -884,7 +884,7 @@ vd.i: vd.cpp.i
 
 # target to preprocess a source file
 vd.cpp.i:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/vd.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.i
@@ -898,7 +898,7 @@ vd.s: vd.cpp.s
 
 # target to generate assembly for a file
 vd.cpp.s:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/vd.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.s
@@ -913,7 +913,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... testPointInRegion"
+	@echo "... PointInRegionCheck"
 	@echo "... testRemoveSeedCheckV"
 	@echo "... rebuild_cache"
 	@echo "... testAddSeedCheckV"

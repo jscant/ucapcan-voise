@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/jack/dev/project/voise-1.3/matlab/cpp
 CMAKE_BINARY_DIR = /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/testPointInRegion.dir
+# Target rules for target CMakeFiles/PointInRegionCheck.dir
 
 # All Build rule for target.
-CMakeFiles/testPointInRegion.dir/all:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/depend
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target testPointInRegion"
-.PHONY : CMakeFiles/testPointInRegion.dir/all
+CMakeFiles/PointInRegionCheck.dir/all:
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/depend
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target PointInRegionCheck"
+.PHONY : CMakeFiles/PointInRegionCheck.dir/all
 
 # Include target in all.
-all: CMakeFiles/testPointInRegion.dir/all
+all: CMakeFiles/PointInRegionCheck.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/testPointInRegion.dir/rule: cmake_check_build_system
+CMakeFiles/PointInRegionCheck.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testPointInRegion.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PointInRegionCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/testPointInRegion.dir/rule
+.PHONY : CMakeFiles/PointInRegionCheck.dir/rule
 
 # Convenience name for target.
-testPointInRegion: CMakeFiles/testPointInRegion.dir/rule
+PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/rule
 
-.PHONY : testPointInRegion
-
-# clean rule for target.
-CMakeFiles/testPointInRegion.dir/clean:
-	$(MAKE) -f CMakeFiles/testPointInRegion.dir/build.make CMakeFiles/testPointInRegion.dir/clean
-.PHONY : CMakeFiles/testPointInRegion.dir/clean
+.PHONY : PointInRegionCheck
 
 # clean rule for target.
-clean: CMakeFiles/testPointInRegion.dir/clean
+CMakeFiles/PointInRegionCheck.dir/clean:
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/clean
+.PHONY : CMakeFiles/PointInRegionCheck.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/PointInRegionCheck.dir/clean
 
 .PHONY : clean
 
@@ -140,7 +140,7 @@ clean: CMakeFiles/testRemoveSeedCheckV.dir/clean
 CMakeFiles/testAddSeedCheckV.dir/all:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/depend
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target testAddSeedCheckV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51,52,53,54 "Built target testAddSeedCheckV"
 .PHONY : CMakeFiles/testAddSeedCheckV.dir/all
 
 # Include target in all.
@@ -177,7 +177,7 @@ clean: CMakeFiles/testAddSeedCheckV.dir/clean
 CMakeFiles/apidoc.dir/all:
 	$(MAKE) -f CMakeFiles/apidoc.dir/build.make CMakeFiles/apidoc.dir/depend
 	$(MAKE) -f CMakeFiles/apidoc.dir/build.make CMakeFiles/apidoc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=1 "Built target apidoc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=15 "Built target apidoc"
 .PHONY : CMakeFiles/apidoc.dir/all
 
 # Include target in all.
@@ -251,7 +251,7 @@ clean: CMakeFiles/testRemoveSeedCheckLambda.dir/clean
 CMakeFiles/standalone_skiz.dir/all:
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/depend
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12 "Built target standalone_skiz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=16,17,18,19,20,21,22,23,24,25,26 "Built target standalone_skiz"
 .PHONY : CMakeFiles/standalone_skiz.dir/all
 
 # Include target in all.
@@ -288,7 +288,7 @@ clean: CMakeFiles/standalone_skiz.dir/clean
 CMakeFiles/testAddSeedCheckLambda.dir/all:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/depend
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target testAddSeedCheckLambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40 "Built target testAddSeedCheckLambda"
 .PHONY : CMakeFiles/testAddSeedCheckLambda.dir/all
 
 # Include target in all.

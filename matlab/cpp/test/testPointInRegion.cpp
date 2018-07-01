@@ -1,3 +1,7 @@
+/**
+ * @file
+ * @brief Tests various normal and pathalogical cases for the pointInRegion function
+ */
 #include <eigen3/Eigen/Dense>
 
 #include <string>
@@ -18,22 +22,50 @@ loadStruct loadResults = loadVD(path);
 RealVec Sx = loadResults.Sx;
 RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;
+std::array<real, 2> pt;
 
-TEST_CASE("Boundary of window points"){
-    for(uint32 j = 1; j < 6; ++j) {
-        std::cout << "Seed: " << j << "\n-------------------\n";
-        Mat bounds = getRegion(VD, j);
-        for (uint32 i = 0; i < bounds.rows(); ++i) {
-            std::string str = std::to_string(i) + ": " + std::to_string(bounds(i, 0)) + ", " +
-                    std::to_string(bounds(i, 1)) + "\n";
-            std::cout << str;
+TEST_CASE("Lower boundary of getRegion"){
+    for(uint32 s = 1; s < 6; ++s) {
+        Mat bounds = getRegion(VD, s);
+        for (uint32 j = 0; j < bounds.rows(); ++j) {
+            if(bounds(j, 0) == -1){
+                continue;
+            }
+            if(bounds(j, 0) < bounds(j, 1)) {
+                real i = std::max(0.0, bounds(j, 0) - 1);
+                pt[0] = i + 1;
+                pt[1] = j + 1;
+
+                REQUIRE (pointInRegion(VD, pt, s, VD.getNkByIdx(s)));
+                if(i > 0) {
+                    pt[0] = i; pt[1] = j + 1;
+                    REQUIRE (!pointInRegion(VD, pt, s, VD.getNkByIdx(s)));
+                }
+            }
+
+
         }
-        break;
     }
-    std::array<real, 2> pt = { 120, 243 };
-    //REQUIRE( pointInRegion(VD, pt, 1, VD.getNkByIdx(1)) );
+}
 
-    pt[0] = 256;
-    pt[1] = 243;
-    REQUIRE( pointInRegion(VD, pt, 1, VD.getNkByIdx(1)) );
+TEST_CASE("Upper bounds of getRegion"){
+    for(uint32 s = 1; s < 6; ++s) {
+        Mat bounds = getRegion(VD, s);
+        for (uint32 j = 0; j < bounds.rows(); ++j) {
+            if(bounds(j, 0) == -1){
+                continue;
+            }
+            if(bounds(j, 0) < bounds(j, 1)) {
+                real i = std::min(VD.getNc(), bounds(j, 1) - 1);
+                pt[0] = i + 1;
+                pt[1] = j + 1;
+                REQUIRE (pointInRegion(VD, pt, s, VD.getNkByIdx(s)));
+                if(pt[0] < VD.getNr()) {
+                    pt[0] = i + 2;
+                    pt[1] = j + 1;
+                    REQUIRE (!pointInRegion(VD, pt, s, VD.getNkByIdx(s)));
+                }
+            }
+        }
+    }
 }

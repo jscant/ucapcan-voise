@@ -21,7 +21,7 @@
  * @param s ID of seed for which R(s) is to be found
  * @returns (m x 2) Eigen::Array. Each row is either (-1, -1) of there are no pixels in the corresponding row in W
  * that are also in R(s), or (lb, ub) where 0 <= lb <= ub < n, indicating that the pixels in the \f$i^{th}\f$ row
- * between lb and ub inclusive are in the region R(s).
+ * in the interval (lb, ub] are in R(s).
  *
  * R(s) is as defined in [1], Definition 1.1.
 

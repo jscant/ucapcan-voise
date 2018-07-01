@@ -1,5 +1,5 @@
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testPointInRegion.dir
+/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/PointInRegionCheck.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testRemoveSeedCheckV.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir
