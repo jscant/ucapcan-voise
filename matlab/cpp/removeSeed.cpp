@@ -47,12 +47,12 @@ bool removeSeed(vd &VD, real Sk) {
         }
         finish = true;
         real lb = std::max(0.0, bounds(j, 0) - 1);
-        real ub = std::min(VD.getNc(), bounds(j, 1) + 1);
+        real ub = std::min(VD.getNc(), bounds(j, 1));
         for (real i = lb; i < ub; ++i) {
-            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
-            if(!pointInRegion(VD, pt, Sk, Ns)){
-                continue;
-            }
+            //std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
+            //if(!pointInRegion(VD, pt, Sk, Ns)){
+            //    continue;
+            //}
             VD.setLamByIdx(j, i, Ns.at(0));
             VD.setVByIdx(j, i, 0);
             real lam = Ns.at(0);

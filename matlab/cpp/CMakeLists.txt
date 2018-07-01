@@ -64,13 +64,16 @@ add_executable(testAddSeedCheckLambda test/testAddSeedCheckLambda.cpp ${TEST_DEP
 add_executable(testRemoveSeedCheckLambda test/testRemoveSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
 add_executable(testAddSeedCheckV test/testAddSeedCheckV.cpp ${TEST_DEPENDENCIES})
 add_executable(testRemoveSeedCheckV test/testRemoveSeedCheckV.cpp ${TEST_DEPENDENCIES})
+add_executable(testPointInRegion test/testPointInRegion.cpp ${TEST_DEPENDENCIES})
 
 target_link_libraries(testAddSeedCheckLambda Catch)
 target_link_libraries(testRemoveSeedCheckLambda Catch)
 target_link_libraries(testAddSeedCheckV Catch)
 target_link_libraries(testRemoveSeedCheckV Catch)
+target_link_libraries(testPointInRegion Catch)
 
 add_test(NAME AddSeedCheckLambda COMMAND testAddSeedCheckLambda)
 add_test(NAME RemoveSeedCheckLambda COMMAND testRemoveSeedCheckLambda)
 add_test(NAME AddSeedCheckV COMMAND testAddSeedCheckV)
 add_test(NAME RemoveSeedCheckV COMMAND testRemoveSeedCheckV)
+add_test(NAME testPointInRegion COMMAND testPointInRegion)

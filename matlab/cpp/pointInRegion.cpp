@@ -24,7 +24,6 @@
  * @returns true: Point is in C(s, A)
  * @returns false: Point is not in C(s, A)
  */
-
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
     if (A.size() < 1) {
         A = VD.getNkByIdx(s);
