@@ -32,7 +32,6 @@
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
     Operator: A Dynamic Algorithm" [1], Section 3.1
 */
-
 bool addSeed(vd &VD, real s1, real s2) {
     VD.incrementK();
     VD.setSxByIdx(VD.getK(), s1);

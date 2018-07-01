@@ -78,14 +78,12 @@ std::array<real, 2> circumcentre(const real &ax, const real &ay, const real &bx,
  * @returns true: item is in vector
  * @returns false: item is not in vector
  *
- * Templating ensures this can be used flexibly with different data types.
  */
-template<class T1, class T2>
-bool inVector(const std::vector<T1> &vec, const T2 &item) {
+bool inVector(const RealVec &vec, const real &item) {
     if (vec.size() < 1) {
         return false;
     }
-    if (std::find(vec.begin(), vec.end(), (T1)item) != vec.end()) {
+    if (std::find(vec.begin(), vec.end(), item) != vec.end()) {
         return true;
     }
     return false;

@@ -15,8 +15,8 @@
 real sqDist(const real &p1, const real &p2, const real &q1, const real &q2);
 std::array<real, 2> circumcentre(const real &ax, const real &ay, const real &bx, const real &by, const real &cx,
                                  const real &cy);
-template <class T1, class T2>
-bool inVector(const std::vector<T1> &vec, const T2 &item);
+
+bool inVector(const RealVec &vec, const real &item);
 
 void updateDict(std::map<real, RealVec> &d, const real &key, const real &value);
 

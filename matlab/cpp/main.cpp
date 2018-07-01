@@ -29,9 +29,9 @@ using namespace std::chrono;
 
 int main() {
     int nc = 256, nr = 256;
-    std::vector<RealVec> seeds = readSeeds("/home/jack/dev/standalone-skiz/benchVDSeeds.txt");
-    Mat lam = readMatrix("/home/jack/dev/standalone-skiz/benchVDLambda.txt", nr, nc);
-    Mat v = readMatrix("/home/jack/dev/standalone-skiz/benchVDV.txt", nr, nc);
+    std::vector<RealVec> seeds = readSeeds("../../benchVDSeeds.txt");
+    Mat lam = readMatrix("../../benchVDLambda.txt", nr, nc);
+    Mat v = readMatrix("../../benchVDV.txt", nr, nc);
     Mat px(nr, nc);
     Mat py(nr, nc);
 

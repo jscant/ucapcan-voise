@@ -1,6 +1,6 @@
 /**
  * @file
- * @copydoc pointInRegion.h
+ * @copydoc pointInRegion.cpp
  */
 
 #ifndef POINTINREGION_H

@@ -97,6 +97,38 @@ clean: CMakeFiles/standalone_skiz.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/apidoc_forced.dir
+
+# All Build rule for target.
+CMakeFiles/apidoc_forced.dir/all:
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/depend
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num= "Built target apidoc_forced"
+.PHONY : CMakeFiles/apidoc_forced.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/apidoc_forced.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/apidoc_forced.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/apidoc_forced.dir/rule
+
+# Convenience name for target.
+apidoc_forced: CMakeFiles/apidoc_forced.dir/rule
+
+.PHONY : apidoc_forced
+
+# clean rule for target.
+CMakeFiles/apidoc_forced.dir/clean:
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/clean
+.PHONY : CMakeFiles/apidoc_forced.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/apidoc_forced.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/apidoc.dir
 
 # All Build rule for target.
@@ -134,34 +166,76 @@ clean: CMakeFiles/apidoc.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/apidoc_forced.dir
+# Target rules for target CMakeFiles/test1.dir
 
 # All Build rule for target.
-CMakeFiles/apidoc_forced.dir/all:
-	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/depend
-	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num= "Built target apidoc_forced"
-.PHONY : CMakeFiles/apidoc_forced.dir/all
+CMakeFiles/test1.dir/all:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/depend
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=13,14,15 "Built target test1"
+.PHONY : CMakeFiles/test1.dir/all
+
+# Include target in all.
+all: CMakeFiles/test1.dir/all
+
+.PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/apidoc_forced.dir/rule: cmake_check_build_system
+CMakeFiles/test1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/apidoc_forced.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/apidoc_forced.dir/rule
+.PHONY : CMakeFiles/test1.dir/rule
 
 # Convenience name for target.
-apidoc_forced: CMakeFiles/apidoc_forced.dir/rule
+test1: CMakeFiles/test1.dir/rule
 
-.PHONY : apidoc_forced
-
-# clean rule for target.
-CMakeFiles/apidoc_forced.dir/clean:
-	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/clean
-.PHONY : CMakeFiles/apidoc_forced.dir/clean
+.PHONY : test1
 
 # clean rule for target.
-clean: CMakeFiles/apidoc_forced.dir/clean
+CMakeFiles/test1.dir/clean:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/clean
+.PHONY : CMakeFiles/test1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test2.dir
+
+# All Build rule for target.
+CMakeFiles/test2.dir/all:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/depend
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=16,17,18 "Built target test2"
+.PHONY : CMakeFiles/test2.dir/all
+
+# Include target in all.
+all: CMakeFiles/test2.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/test2.dir/rule
+
+# Convenience name for target.
+test2: CMakeFiles/test2.dir/rule
+
+.PHONY : test2
+
+# clean rule for target.
+CMakeFiles/test2.dir/clean:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/clean
+.PHONY : CMakeFiles/test2.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test2.dir/clean
 
 .PHONY : clean
 

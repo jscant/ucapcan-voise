@@ -67,6 +67,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/opt/cmake-3.11.2/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -124,6 +135,19 @@ standalone_skiz/fast:
 .PHONY : standalone_skiz/fast
 
 #=============================================================================
+# Target rules for targets named apidoc_forced
+
+# Build rule for target.
+apidoc_forced: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apidoc_forced
+.PHONY : apidoc_forced
+
+# fast build rule for target.
+apidoc_forced/fast:
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
+.PHONY : apidoc_forced/fast
+
+#=============================================================================
 # Target rules for targets named apidoc
 
 # Build rule for target.
@@ -137,17 +161,30 @@ apidoc/fast:
 .PHONY : apidoc/fast
 
 #=============================================================================
-# Target rules for targets named apidoc_forced
+# Target rules for targets named test1
 
 # Build rule for target.
-apidoc_forced: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 apidoc_forced
-.PHONY : apidoc_forced
+test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test1
+.PHONY : test1
 
 # fast build rule for target.
-apidoc_forced/fast:
-	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
-.PHONY : apidoc_forced/fast
+test1/fast:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
+.PHONY : test1/fast
+
+#=============================================================================
+# Target rules for targets named test2
+
+# Build rule for target.
+test2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test2
+.PHONY : test2
+
+# fast build rule for target.
+test2/fast:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
+.PHONY : test2/fast
 
 NSStar.o: NSStar.cpp.o
 
@@ -365,6 +402,90 @@ skizException.cpp.s:
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/skizException.cpp.s
 .PHONY : skizException.cpp.s
 
+test/Catch2/test_main.o: test/Catch2/test_main.cpp.o
+
+.PHONY : test/Catch2/test_main.o
+
+# target to build an object file
+test/Catch2/test_main.cpp.o:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o
+.PHONY : test/Catch2/test_main.cpp.o
+
+test/Catch2/test_main.i: test/Catch2/test_main.cpp.i
+
+.PHONY : test/Catch2/test_main.i
+
+# target to preprocess a source file
+test/Catch2/test_main.cpp.i:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.i
+.PHONY : test/Catch2/test_main.cpp.i
+
+test/Catch2/test_main.s: test/Catch2/test_main.cpp.s
+
+.PHONY : test/Catch2/test_main.s
+
+# target to generate assembly for a file
+test/Catch2/test_main.cpp.s:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.s
+.PHONY : test/Catch2/test_main.cpp.s
+
+test/test_case_1.o: test/test_case_1.cpp.o
+
+.PHONY : test/test_case_1.o
+
+# target to build an object file
+test/test_case_1.cpp.o:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.o
+.PHONY : test/test_case_1.cpp.o
+
+test/test_case_1.i: test/test_case_1.cpp.i
+
+.PHONY : test/test_case_1.i
+
+# target to preprocess a source file
+test/test_case_1.cpp.i:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.i
+.PHONY : test/test_case_1.cpp.i
+
+test/test_case_1.s: test/test_case_1.cpp.s
+
+.PHONY : test/test_case_1.s
+
+# target to generate assembly for a file
+test/test_case_1.cpp.s:
+	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.s
+.PHONY : test/test_case_1.cpp.s
+
+test/test_case_2.o: test/test_case_2.cpp.o
+
+.PHONY : test/test_case_2.o
+
+# target to build an object file
+test/test_case_2.cpp.o:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.o
+.PHONY : test/test_case_2.cpp.o
+
+test/test_case_2.i: test/test_case_2.cpp.i
+
+.PHONY : test/test_case_2.i
+
+# target to preprocess a source file
+test/test_case_2.cpp.i:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.i
+.PHONY : test/test_case_2.cpp.i
+
+test/test_case_2.s: test/test_case_2.cpp.s
+
+.PHONY : test/test_case_2.s
+
+# target to generate assembly for a file
+test/test_case_2.cpp.s:
+	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.s
+.PHONY : test/test_case_2.cpp.s
+
 typedefs.o: typedefs.cpp.o
 
 .PHONY : typedefs.o
@@ -427,9 +548,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... standalone_skiz"
+	@echo "... test"
+	@echo "... apidoc_forced"
 	@echo "... rebuild_cache"
 	@echo "... apidoc"
-	@echo "... apidoc_forced"
+	@echo "... test1"
+	@echo "... test2"
 	@echo "... NSStar.o"
 	@echo "... NSStar.i"
 	@echo "... NSStar.s"
@@ -454,6 +578,15 @@ help:
 	@echo "... skizException.o"
 	@echo "... skizException.i"
 	@echo "... skizException.s"
+	@echo "... test/Catch2/test_main.o"
+	@echo "... test/Catch2/test_main.i"
+	@echo "... test/Catch2/test_main.s"
+	@echo "... test/test_case_1.o"
+	@echo "... test/test_case_1.i"
+	@echo "... test/test_case_1.s"
+	@echo "... test/test_case_2.o"
+	@echo "... test/test_case_2.i"
+	@echo "... test/test_case_2.s"
 	@echo "... typedefs.o"
 	@echo "... typedefs.i"
 	@echo "... typedefs.s"
