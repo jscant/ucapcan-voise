@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -g -O3 -g   CMakeFiles/test2.dir/test/test_case_2.cpp.o CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o  -o test2 

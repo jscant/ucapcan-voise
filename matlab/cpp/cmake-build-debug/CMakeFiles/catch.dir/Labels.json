@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/catch"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/catch.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/catch-complete.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-install.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-mkdir.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-download.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-update.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-patch.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-configure.rule"
+		},
+		{
+			"file" : "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/catch/src/catch-stamp/catch-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"catch"
+		],
+		"name" : "catch"
+	}
+}
