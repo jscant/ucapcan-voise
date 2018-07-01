@@ -4,5 +4,12 @@ project_tests 0 0
 MyAwesomeTest 3 0.00200464
 Test1 1 0.00529895
 Test2 0 0
+testAddSeedCheckLambda 6 1.63528
+testRemoveSeedCheckLambda 4 0
+testAddSeedCheckV 2 6.03163
+testRemoveSeedCheckV 0 0
+AddSeedCheckLambda 5 1.15008
+RemoveSeedCheckLambda 2 3.19932
+AddSeedCheckV 5 1.20408
+RemoveSeedCheckV 2 3.05155
 ---
-Test2

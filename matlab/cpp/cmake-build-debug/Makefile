@@ -67,17 +67,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/opt/cmake-3.11.2/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -88,6 +77,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/opt/cmake-3.11.2/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,30 +122,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named standalone_skiz
+# Target rules for targets named testRemoveSeedCheckV
 
 # Build rule for target.
-standalone_skiz: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 standalone_skiz
-.PHONY : standalone_skiz
+testRemoveSeedCheckV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testRemoveSeedCheckV
+.PHONY : testRemoveSeedCheckV
 
 # fast build rule for target.
-standalone_skiz/fast:
-	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/build
-.PHONY : standalone_skiz/fast
+testRemoveSeedCheckV/fast:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/build
+.PHONY : testRemoveSeedCheckV/fast
 
 #=============================================================================
-# Target rules for targets named apidoc_forced
+# Target rules for targets named testAddSeedCheckV
 
 # Build rule for target.
-apidoc_forced: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 apidoc_forced
-.PHONY : apidoc_forced
+testAddSeedCheckV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testAddSeedCheckV
+.PHONY : testAddSeedCheckV
 
 # fast build rule for target.
-apidoc_forced/fast:
-	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
-.PHONY : apidoc_forced/fast
+testAddSeedCheckV/fast:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/build
+.PHONY : testAddSeedCheckV/fast
 
 #=============================================================================
 # Target rules for targets named apidoc
@@ -161,30 +161,56 @@ apidoc/fast:
 .PHONY : apidoc/fast
 
 #=============================================================================
-# Target rules for targets named test1
+# Target rules for targets named testRemoveSeedCheckLambda
 
 # Build rule for target.
-test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test1
-.PHONY : test1
+testRemoveSeedCheckLambda: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testRemoveSeedCheckLambda
+.PHONY : testRemoveSeedCheckLambda
 
 # fast build rule for target.
-test1/fast:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/build
-.PHONY : test1/fast
+testRemoveSeedCheckLambda/fast:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/build
+.PHONY : testRemoveSeedCheckLambda/fast
 
 #=============================================================================
-# Target rules for targets named test2
+# Target rules for targets named standalone_skiz
 
 # Build rule for target.
-test2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test2
-.PHONY : test2
+standalone_skiz: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 standalone_skiz
+.PHONY : standalone_skiz
 
 # fast build rule for target.
-test2/fast:
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/build
-.PHONY : test2/fast
+standalone_skiz/fast:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/build
+.PHONY : standalone_skiz/fast
+
+#=============================================================================
+# Target rules for targets named testAddSeedCheckLambda
+
+# Build rule for target.
+testAddSeedCheckLambda: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testAddSeedCheckLambda
+.PHONY : testAddSeedCheckLambda
+
+# fast build rule for target.
+testAddSeedCheckLambda/fast:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/build
+.PHONY : testAddSeedCheckLambda/fast
+
+#=============================================================================
+# Target rules for targets named apidoc_forced
+
+# Build rule for target.
+apidoc_forced: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 apidoc_forced
+.PHONY : apidoc_forced
+
+# fast build rule for target.
+apidoc_forced/fast:
+	$(MAKE) -f CMakeFiles/apidoc_forced.dir/build.make CMakeFiles/apidoc_forced.dir/build
+.PHONY : apidoc_forced/fast
 
 NSStar.o: NSStar.cpp.o
 
@@ -192,7 +218,11 @@ NSStar.o: NSStar.cpp.o
 
 # target to build an object file
 NSStar.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/NSStar.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/NSStar.cpp.o
 .PHONY : NSStar.cpp.o
 
 NSStar.i: NSStar.cpp.i
@@ -201,7 +231,11 @@ NSStar.i: NSStar.cpp.i
 
 # target to preprocess a source file
 NSStar.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/NSStar.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/NSStar.cpp.i
 .PHONY : NSStar.cpp.i
 
 NSStar.s: NSStar.cpp.s
@@ -210,7 +244,11 @@ NSStar.s: NSStar.cpp.s
 
 # target to generate assembly for a file
 NSStar.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/NSStar.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/NSStar.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/NSStar.cpp.s
 .PHONY : NSStar.cpp.s
 
 addSeed.o: addSeed.cpp.o
@@ -219,7 +257,11 @@ addSeed.o: addSeed.cpp.o
 
 # target to build an object file
 addSeed.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/addSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/addSeed.cpp.o
 .PHONY : addSeed.cpp.o
 
 addSeed.i: addSeed.cpp.i
@@ -228,7 +270,11 @@ addSeed.i: addSeed.cpp.i
 
 # target to preprocess a source file
 addSeed.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/addSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/addSeed.cpp.i
 .PHONY : addSeed.cpp.i
 
 addSeed.s: addSeed.cpp.s
@@ -237,7 +283,11 @@ addSeed.s: addSeed.cpp.s
 
 # target to generate assembly for a file
 addSeed.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/addSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/addSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/addSeed.cpp.s
 .PHONY : addSeed.cpp.s
 
 aux.o: aux.cpp.o
@@ -246,7 +296,11 @@ aux.o: aux.cpp.o
 
 # target to build an object file
 aux.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux.cpp.o
 .PHONY : aux.cpp.o
 
 aux.i: aux.cpp.i
@@ -255,7 +309,11 @@ aux.i: aux.cpp.i
 
 # target to preprocess a source file
 aux.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux.cpp.i
 .PHONY : aux.cpp.i
 
 aux.s: aux.cpp.s
@@ -264,7 +322,11 @@ aux.s: aux.cpp.s
 
 # target to generate assembly for a file
 aux.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux.cpp.s
 .PHONY : aux.cpp.s
 
 getRegion.o: getRegion.cpp.o
@@ -273,7 +335,11 @@ getRegion.o: getRegion.cpp.o
 
 # target to build an object file
 getRegion.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/getRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/getRegion.cpp.o
 .PHONY : getRegion.cpp.o
 
 getRegion.i: getRegion.cpp.i
@@ -282,7 +348,11 @@ getRegion.i: getRegion.cpp.i
 
 # target to preprocess a source file
 getRegion.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/getRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/getRegion.cpp.i
 .PHONY : getRegion.cpp.i
 
 getRegion.s: getRegion.cpp.s
@@ -291,7 +361,11 @@ getRegion.s: getRegion.cpp.s
 
 # target to generate assembly for a file
 getRegion.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/getRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/getRegion.cpp.s
 .PHONY : getRegion.cpp.s
 
 main.o: main.cpp.o
@@ -327,7 +401,11 @@ pointInRegion.o: pointInRegion.cpp.o
 
 # target to build an object file
 pointInRegion.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/pointInRegion.cpp.o
 .PHONY : pointInRegion.cpp.o
 
 pointInRegion.i: pointInRegion.cpp.i
@@ -336,7 +414,11 @@ pointInRegion.i: pointInRegion.cpp.i
 
 # target to preprocess a source file
 pointInRegion.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/pointInRegion.cpp.i
 .PHONY : pointInRegion.cpp.i
 
 pointInRegion.s: pointInRegion.cpp.s
@@ -345,7 +427,11 @@ pointInRegion.s: pointInRegion.cpp.s
 
 # target to generate assembly for a file
 pointInRegion.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/pointInRegion.cpp.s
 .PHONY : pointInRegion.cpp.s
 
 removeSeed.o: removeSeed.cpp.o
@@ -354,7 +440,11 @@ removeSeed.o: removeSeed.cpp.o
 
 # target to build an object file
 removeSeed.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/removeSeed.cpp.o
 .PHONY : removeSeed.cpp.o
 
 removeSeed.i: removeSeed.cpp.i
@@ -363,7 +453,11 @@ removeSeed.i: removeSeed.cpp.i
 
 # target to preprocess a source file
 removeSeed.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/removeSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/removeSeed.cpp.i
 .PHONY : removeSeed.cpp.i
 
 removeSeed.s: removeSeed.cpp.s
@@ -372,7 +466,11 @@ removeSeed.s: removeSeed.cpp.s
 
 # target to generate assembly for a file
 removeSeed.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/removeSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/removeSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/removeSeed.cpp.s
 .PHONY : removeSeed.cpp.s
 
 skizException.o: skizException.cpp.o
@@ -381,7 +479,11 @@ skizException.o: skizException.cpp.o
 
 # target to build an object file
 skizException.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/skizException.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/skizException.cpp.o
 .PHONY : skizException.cpp.o
 
 skizException.i: skizException.cpp.i
@@ -390,7 +492,11 @@ skizException.i: skizException.cpp.i
 
 # target to preprocess a source file
 skizException.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/skizException.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/skizException.cpp.i
 .PHONY : skizException.cpp.i
 
 skizException.s: skizException.cpp.s
@@ -399,7 +505,11 @@ skizException.s: skizException.cpp.s
 
 # target to generate assembly for a file
 skizException.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/skizException.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/skizException.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/skizException.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/skizException.cpp.s
 .PHONY : skizException.cpp.s
 
 test/Catch2/test_main.o: test/Catch2/test_main.cpp.o
@@ -408,8 +518,10 @@ test/Catch2/test_main.o: test/Catch2/test_main.cpp.o
 
 # target to build an object file
 test/Catch2/test_main.cpp.o:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.o
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/Catch2/test_main.cpp.o
 .PHONY : test/Catch2/test_main.cpp.o
 
 test/Catch2/test_main.i: test/Catch2/test_main.cpp.i
@@ -418,8 +530,10 @@ test/Catch2/test_main.i: test/Catch2/test_main.cpp.i
 
 # target to preprocess a source file
 test/Catch2/test_main.cpp.i:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.i
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/Catch2/test_main.cpp.i
 .PHONY : test/Catch2/test_main.cpp.i
 
 test/Catch2/test_main.s: test/Catch2/test_main.cpp.s
@@ -428,63 +542,227 @@ test/Catch2/test_main.s: test/Catch2/test_main.cpp.s
 
 # target to generate assembly for a file
 test/Catch2/test_main.cpp.s:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/Catch2/test_main.cpp.s
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/Catch2/test_main.cpp.s
 .PHONY : test/Catch2/test_main.cpp.s
 
-test/test_case_1.o: test/test_case_1.cpp.o
+test/test-help-fns/bruteForceCheckLambda.o: test/test-help-fns/bruteForceCheckLambda.cpp.o
 
-.PHONY : test/test_case_1.o
-
-# target to build an object file
-test/test_case_1.cpp.o:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.o
-.PHONY : test/test_case_1.cpp.o
-
-test/test_case_1.i: test/test_case_1.cpp.i
-
-.PHONY : test/test_case_1.i
-
-# target to preprocess a source file
-test/test_case_1.cpp.i:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.i
-.PHONY : test/test_case_1.cpp.i
-
-test/test_case_1.s: test/test_case_1.cpp.s
-
-.PHONY : test/test_case_1.s
-
-# target to generate assembly for a file
-test/test_case_1.cpp.s:
-	$(MAKE) -f CMakeFiles/test1.dir/build.make CMakeFiles/test1.dir/test/test_case_1.cpp.s
-.PHONY : test/test_case_1.cpp.s
-
-test/test_case_2.o: test/test_case_2.cpp.o
-
-.PHONY : test/test_case_2.o
+.PHONY : test/test-help-fns/bruteForceCheckLambda.o
 
 # target to build an object file
-test/test_case_2.cpp.o:
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.o
-.PHONY : test/test_case_2.cpp.o
+test/test-help-fns/bruteForceCheckLambda.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+.PHONY : test/test-help-fns/bruteForceCheckLambda.cpp.o
 
-test/test_case_2.i: test/test_case_2.cpp.i
+test/test-help-fns/bruteForceCheckLambda.i: test/test-help-fns/bruteForceCheckLambda.cpp.i
 
-.PHONY : test/test_case_2.i
+.PHONY : test/test-help-fns/bruteForceCheckLambda.i
 
 # target to preprocess a source file
-test/test_case_2.cpp.i:
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.i
-.PHONY : test/test_case_2.cpp.i
+test/test-help-fns/bruteForceCheckLambda.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+.PHONY : test/test-help-fns/bruteForceCheckLambda.cpp.i
 
-test/test_case_2.s: test/test_case_2.cpp.s
+test/test-help-fns/bruteForceCheckLambda.s: test/test-help-fns/bruteForceCheckLambda.cpp.s
 
-.PHONY : test/test_case_2.s
+.PHONY : test/test-help-fns/bruteForceCheckLambda.s
 
 # target to generate assembly for a file
-test/test_case_2.cpp.s:
-	$(MAKE) -f CMakeFiles/test2.dir/build.make CMakeFiles/test2.dir/test/test_case_2.cpp.s
-.PHONY : test/test_case_2.cpp.s
+test/test-help-fns/bruteForceCheckLambda.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+.PHONY : test/test-help-fns/bruteForceCheckLambda.cpp.s
+
+test/test-help-fns/bruteForceCheckV.o: test/test-help-fns/bruteForceCheckV.cpp.o
+
+.PHONY : test/test-help-fns/bruteForceCheckV.o
+
+# target to build an object file
+test/test-help-fns/bruteForceCheckV.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o
+.PHONY : test/test-help-fns/bruteForceCheckV.cpp.o
+
+test/test-help-fns/bruteForceCheckV.i: test/test-help-fns/bruteForceCheckV.cpp.i
+
+.PHONY : test/test-help-fns/bruteForceCheckV.i
+
+# target to preprocess a source file
+test/test-help-fns/bruteForceCheckV.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.i
+.PHONY : test/test-help-fns/bruteForceCheckV.cpp.i
+
+test/test-help-fns/bruteForceCheckV.s: test/test-help-fns/bruteForceCheckV.cpp.s
+
+.PHONY : test/test-help-fns/bruteForceCheckV.s
+
+# target to generate assembly for a file
+test/test-help-fns/bruteForceCheckV.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/bruteForceCheckV.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.s
+.PHONY : test/test-help-fns/bruteForceCheckV.cpp.s
+
+test/test-help-fns/loadVD.o: test/test-help-fns/loadVD.cpp.o
+
+.PHONY : test/test-help-fns/loadVD.o
+
+# target to build an object file
+test/test-help-fns/loadVD.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o
+.PHONY : test/test-help-fns/loadVD.cpp.o
+
+test/test-help-fns/loadVD.i: test/test-help-fns/loadVD.cpp.i
+
+.PHONY : test/test-help-fns/loadVD.i
+
+# target to preprocess a source file
+test/test-help-fns/loadVD.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.i
+.PHONY : test/test-help-fns/loadVD.cpp.i
+
+test/test-help-fns/loadVD.s: test/test-help-fns/loadVD.cpp.s
+
+.PHONY : test/test-help-fns/loadVD.s
+
+# target to generate assembly for a file
+test/test-help-fns/loadVD.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/test-help-fns/loadVD.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/test-help-fns/loadVD.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.s
+.PHONY : test/test-help-fns/loadVD.cpp.s
+
+test/testAddSeedCheckLambda.o: test/testAddSeedCheckLambda.cpp.o
+
+.PHONY : test/testAddSeedCheckLambda.o
+
+# target to build an object file
+test/testAddSeedCheckLambda.cpp.o:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/testAddSeedCheckLambda.cpp.o
+.PHONY : test/testAddSeedCheckLambda.cpp.o
+
+test/testAddSeedCheckLambda.i: test/testAddSeedCheckLambda.cpp.i
+
+.PHONY : test/testAddSeedCheckLambda.i
+
+# target to preprocess a source file
+test/testAddSeedCheckLambda.cpp.i:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/testAddSeedCheckLambda.cpp.i
+.PHONY : test/testAddSeedCheckLambda.cpp.i
+
+test/testAddSeedCheckLambda.s: test/testAddSeedCheckLambda.cpp.s
+
+.PHONY : test/testAddSeedCheckLambda.s
+
+# target to generate assembly for a file
+test/testAddSeedCheckLambda.cpp.s:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/test/testAddSeedCheckLambda.cpp.s
+.PHONY : test/testAddSeedCheckLambda.cpp.s
+
+test/testAddSeedCheckV.o: test/testAddSeedCheckV.cpp.o
+
+.PHONY : test/testAddSeedCheckV.o
+
+# target to build an object file
+test/testAddSeedCheckV.cpp.o:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/testAddSeedCheckV.cpp.o
+.PHONY : test/testAddSeedCheckV.cpp.o
+
+test/testAddSeedCheckV.i: test/testAddSeedCheckV.cpp.i
+
+.PHONY : test/testAddSeedCheckV.i
+
+# target to preprocess a source file
+test/testAddSeedCheckV.cpp.i:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/testAddSeedCheckV.cpp.i
+.PHONY : test/testAddSeedCheckV.cpp.i
+
+test/testAddSeedCheckV.s: test/testAddSeedCheckV.cpp.s
+
+.PHONY : test/testAddSeedCheckV.s
+
+# target to generate assembly for a file
+test/testAddSeedCheckV.cpp.s:
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/test/testAddSeedCheckV.cpp.s
+.PHONY : test/testAddSeedCheckV.cpp.s
+
+test/testRemoveSeedCheckLambda.o: test/testRemoveSeedCheckLambda.cpp.o
+
+.PHONY : test/testRemoveSeedCheckLambda.o
+
+# target to build an object file
+test/testRemoveSeedCheckLambda.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/testRemoveSeedCheckLambda.cpp.o
+.PHONY : test/testRemoveSeedCheckLambda.cpp.o
+
+test/testRemoveSeedCheckLambda.i: test/testRemoveSeedCheckLambda.cpp.i
+
+.PHONY : test/testRemoveSeedCheckLambda.i
+
+# target to preprocess a source file
+test/testRemoveSeedCheckLambda.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/testRemoveSeedCheckLambda.cpp.i
+.PHONY : test/testRemoveSeedCheckLambda.cpp.i
+
+test/testRemoveSeedCheckLambda.s: test/testRemoveSeedCheckLambda.cpp.s
+
+.PHONY : test/testRemoveSeedCheckLambda.s
+
+# target to generate assembly for a file
+test/testRemoveSeedCheckLambda.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/test/testRemoveSeedCheckLambda.cpp.s
+.PHONY : test/testRemoveSeedCheckLambda.cpp.s
+
+test/testRemoveSeedCheckV.o: test/testRemoveSeedCheckV.cpp.o
+
+.PHONY : test/testRemoveSeedCheckV.o
+
+# target to build an object file
+test/testRemoveSeedCheckV.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/testRemoveSeedCheckV.cpp.o
+.PHONY : test/testRemoveSeedCheckV.cpp.o
+
+test/testRemoveSeedCheckV.i: test/testRemoveSeedCheckV.cpp.i
+
+.PHONY : test/testRemoveSeedCheckV.i
+
+# target to preprocess a source file
+test/testRemoveSeedCheckV.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/testRemoveSeedCheckV.cpp.i
+.PHONY : test/testRemoveSeedCheckV.cpp.i
+
+test/testRemoveSeedCheckV.s: test/testRemoveSeedCheckV.cpp.s
+
+.PHONY : test/testRemoveSeedCheckV.s
+
+# target to generate assembly for a file
+test/testRemoveSeedCheckV.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/test/testRemoveSeedCheckV.cpp.s
+.PHONY : test/testRemoveSeedCheckV.cpp.s
 
 typedefs.o: typedefs.cpp.o
 
@@ -519,7 +797,11 @@ vd.o: vd.cpp.o
 
 # target to build an object file
 vd.cpp.o:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/vd.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/vd.cpp.o
 .PHONY : vd.cpp.o
 
 vd.i: vd.cpp.i
@@ -528,7 +810,11 @@ vd.i: vd.cpp.i
 
 # target to preprocess a source file
 vd.cpp.i:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/vd.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/vd.cpp.i
 .PHONY : vd.cpp.i
 
 vd.s: vd.cpp.s
@@ -537,7 +823,11 @@ vd.s: vd.cpp.s
 
 # target to generate assembly for a file
 vd.cpp.s:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/vd.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/vd.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/vd.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/vd.cpp.s
 .PHONY : vd.cpp.s
 
 # Help Target
@@ -547,13 +837,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... testRemoveSeedCheckV"
+	@echo "... rebuild_cache"
+	@echo "... testAddSeedCheckV"
+	@echo "... apidoc"
+	@echo "... testRemoveSeedCheckLambda"
 	@echo "... standalone_skiz"
+	@echo "... testAddSeedCheckLambda"
 	@echo "... test"
 	@echo "... apidoc_forced"
-	@echo "... rebuild_cache"
-	@echo "... apidoc"
-	@echo "... test1"
-	@echo "... test2"
 	@echo "... NSStar.o"
 	@echo "... NSStar.i"
 	@echo "... NSStar.s"
@@ -581,12 +873,27 @@ help:
 	@echo "... test/Catch2/test_main.o"
 	@echo "... test/Catch2/test_main.i"
 	@echo "... test/Catch2/test_main.s"
-	@echo "... test/test_case_1.o"
-	@echo "... test/test_case_1.i"
-	@echo "... test/test_case_1.s"
-	@echo "... test/test_case_2.o"
-	@echo "... test/test_case_2.i"
-	@echo "... test/test_case_2.s"
+	@echo "... test/test-help-fns/bruteForceCheckLambda.o"
+	@echo "... test/test-help-fns/bruteForceCheckLambda.i"
+	@echo "... test/test-help-fns/bruteForceCheckLambda.s"
+	@echo "... test/test-help-fns/bruteForceCheckV.o"
+	@echo "... test/test-help-fns/bruteForceCheckV.i"
+	@echo "... test/test-help-fns/bruteForceCheckV.s"
+	@echo "... test/test-help-fns/loadVD.o"
+	@echo "... test/test-help-fns/loadVD.i"
+	@echo "... test/test-help-fns/loadVD.s"
+	@echo "... test/testAddSeedCheckLambda.o"
+	@echo "... test/testAddSeedCheckLambda.i"
+	@echo "... test/testAddSeedCheckLambda.s"
+	@echo "... test/testAddSeedCheckV.o"
+	@echo "... test/testAddSeedCheckV.i"
+	@echo "... test/testAddSeedCheckV.s"
+	@echo "... test/testRemoveSeedCheckLambda.o"
+	@echo "... test/testRemoveSeedCheckLambda.i"
+	@echo "... test/testRemoveSeedCheckLambda.s"
+	@echo "... test/testRemoveSeedCheckV.o"
+	@echo "... test/testRemoveSeedCheckV.i"
+	@echo "... test/testRemoveSeedCheckV.s"
 	@echo "... typedefs.o"
 	@echo "... typedefs.i"
 	@echo "... typedefs.s"

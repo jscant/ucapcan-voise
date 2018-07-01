@@ -55,7 +55,7 @@ include CMakeFiles/apidoc_forced.dir/progress.make
 
 CMakeFiles/apidoc_forced:
 	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /opt/cmake-3.11.2/bin/cmake -E echo_append Building\ API\ Documentation...
-	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /usr/local/bin/doxygen main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp removeSeed.h vd.cpp vd.h
+	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /usr/local/bin/doxygen main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp
 	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /opt/cmake-3.11.2/bin/cmake -E echo Done.
 
 apidoc_forced: CMakeFiles/apidoc_forced

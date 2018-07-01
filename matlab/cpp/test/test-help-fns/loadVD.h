@@ -6,6 +6,7 @@
 #define STANDALONE_SKIZ_LOADVD_H
 
 #include "loadStruct.h"
+#include <string>
 
 loadStruct loadVD(std::string basePath);
 

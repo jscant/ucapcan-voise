@@ -1,54 +1,75 @@
-Start testing: Jul 01 11:27 BST
+Start testing: Jul 01 17:16 BST
 ----------------------------------------------------------
-1/2 Testing: Test1
-1/2 Test: Test1
-Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/test1"
+1/4 Testing: AddSeedCheckLambda
+1/4 Test: AddSeedCheckLambda
+Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testAddSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"Test1" start time: Jul 01 11:27 BST
+"AddSeedCheckLambda" start time: Jul 01 17:16 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
-All tests passed (1 assertion in 1 test case)
+All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   0.01 sec
+Test time =   5.75 sec
 ----------------------------------------------------------
 Test Passed.
-"Test1" end time: Jul 01 11:27 BST
-"Test1" time elapsed: 00:00:00
+"AddSeedCheckLambda" end time: Jul 01 17:16 BST
+"AddSeedCheckLambda" time elapsed: 00:00:05
 ----------------------------------------------------------
 
-2/2 Testing: Test2
-2/2 Test: Test2
-Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/test2"
+2/4 Testing: RemoveSeedCheckLambda
+2/4 Test: RemoveSeedCheckLambda
+Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testRemoveSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"Test2" start time: Jul 01 11:27 BST
+"RemoveSeedCheckLambda" start time: Jul 01 17:16 BST
 Output:
 ----------------------------------------------------------
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-test2 is a Catch v2.2.3 host application.
-Run with -? for options
-
--------------------------------------------------------------------------------
-Require false
--------------------------------------------------------------------------------
-/home/jack/dev/project/voise-1.3/matlab/cpp/test/test_case_2.cpp:3
-...............................................................................
-
-/home/jack/dev/project/voise-1.3/matlab/cpp/test/test_case_2.cpp:4: FAILED:
-  REQUIRE( false )
-
 ===============================================================================
-test cases: 1 | 1 failed
-assertions: 1 | 1 failed
+All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   0.00 sec
+Test time =   6.40 sec
 ----------------------------------------------------------
-Test Failed.
-"Test2" end time: Jul 01 11:27 BST
-"Test2" time elapsed: 00:00:00
+Test Passed.
+"RemoveSeedCheckLambda" end time: Jul 01 17:16 BST
+"RemoveSeedCheckLambda" time elapsed: 00:00:06
 ----------------------------------------------------------
 
-End testing: Jul 01 11:27 BST
+3/4 Testing: AddSeedCheckV
+3/4 Test: AddSeedCheckV
+Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testAddSeedCheckV"
+Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
+"AddSeedCheckV" start time: Jul 01 17:16 BST
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (100 assertions in 1 test case)
+
+<end of output>
+Test time =   6.02 sec
+----------------------------------------------------------
+Test Passed.
+"AddSeedCheckV" end time: Jul 01 17:16 BST
+"AddSeedCheckV" time elapsed: 00:00:06
+----------------------------------------------------------
+
+4/4 Testing: RemoveSeedCheckV
+4/4 Test: RemoveSeedCheckV
+Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testRemoveSeedCheckV"
+Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
+"RemoveSeedCheckV" start time: Jul 01 17:16 BST
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (100 assertions in 1 test case)
+
+<end of output>
+Test time =   6.10 sec
+----------------------------------------------------------
+Test Passed.
+"RemoveSeedCheckV" end time: Jul 01 17:16 BST
+"RemoveSeedCheckV" time elapsed: 00:00:06
+----------------------------------------------------------
+
+End testing: Jul 01 17:16 BST

@@ -24,7 +24,7 @@
 
 /**
  * @brief Removes seed from voronoi diagram
- * @param vd Voronoi Diagram
+ * @param VD Voronoi Diagram
  * @param Sk ID of seed to be removed
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator: A Dynamic Algorithm" [1], Section 3.2.
  *
@@ -49,10 +49,10 @@ bool removeSeed(vd &VD, real Sk) {
         real lb = std::max(0.0, bounds(j, 0) - 1);
         real ub = std::min(VD.getNc(), bounds(j, 1) + 1);
         for (real i = lb; i < ub; ++i) {
-//            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
-            //if(!pointInRegion(VD, pt, Sk, Ns)){
-            //    continue;
-            //}
+            std::array<real, 2> pt = {(real) i + 1, (real) j + 1};
+            if(!pointInRegion(VD, pt, Sk, Ns)){
+                continue;
+            }
             VD.setLamByIdx(j, i, Ns.at(0));
             VD.setVByIdx(j, i, 0);
             real lam = Ns.at(0);

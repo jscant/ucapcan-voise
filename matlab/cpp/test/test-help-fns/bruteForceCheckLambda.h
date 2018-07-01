@@ -7,6 +7,6 @@
 
 #include "../../vd.h"
 
-bool bruteForceCheckLambda(const vd &VD);
+bool bruteForceCheckLambda(vd &VD);
 
 #endif //STANDALONE_SKIZ_BRUTEFORCECHECKLAMBDA_H

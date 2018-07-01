@@ -2,8 +2,10 @@
 // Created by root on 01/07/18.
 //
 
+#include <string>
+#include <iostream>
 #include "loadVD.h"
-#include "loadStruct."
+#include "loadStruct.h"
 #include "../../removeSeed.h"
 #include "../../getRegion.h"
 #include "../../aux.h"
@@ -27,19 +29,20 @@ loadStruct loadVD(std::string basePath){
 
     RealVec Sx = seeds.at(0);
     RealVec Sy = seeds.at(1);
+
     if (Sx.size() != Sy.size()) {
         throw (SKIZIOException("Lengths of Sx and Sy vectors not identical!"));
     }
-    uint32 ns = Sx.size();
 
     std::map<real, real> StartSx;
     std::map<real, real> StartSy;
+    std::map<real, real> StartSk;
 
     for (auto i = 0; i < 5; ++i) {
         StartSx[i + 1] = Sx.at(i);
         StartSy[i + 1] = Sy.at(i);
+        StartSk[i + 1] = i + 1;
     }
-
     std::map<real, RealVec> Nk;
     Nk[1] = {5, 3, 4};
     Nk[2] = {5, 4};
@@ -54,10 +57,11 @@ loadStruct loadVD(std::string basePath){
     VD.setPy(py);
     VD.setSx(StartSx);
     VD.setSy(StartSy);
+    VD.setSk(StartSk);
     VD.setK(5);
     VD.setNk(Nk);
 
-    loadStruct result;
+    loadStruct result = loadStruct(nr, nc);
     result.Sx = Sx;
     result.Sy = Sy;
     result.VD = VD;

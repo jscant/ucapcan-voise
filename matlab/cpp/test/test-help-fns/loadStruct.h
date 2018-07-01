@@ -7,10 +7,14 @@
 
 #include <vector>
 #include "../../typedefs.cpp"
+#include "../../vd.h"
+
 
 struct loadStruct{
     RealVec Sx;
     RealVec Sy;
+    loadStruct(uint32 rows, uint32 cols) : VD(rows, cols) {};
+    ~loadStruct() {} ;
     vd VD;
 };
 

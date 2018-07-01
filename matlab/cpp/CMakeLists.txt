@@ -5,14 +5,11 @@ find_package(Doxygen)
 
 set(SOURCE_FILES main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp
         addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp
-        removeSeed.h vd.cpp vd.h)
+        removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp)
 
 if(DOXYGEN_FOUND)
     set(CMAKE_PROJECT_NAME "ASDF")
     set(DOXYGEN_PROJECT_NAME ${CMAKE_PROJECT_NAME})
-    set(DOXYGEN_PROJECT_NAME EHASDF)
-
-
     set(DOXYGEN_INPUT ${SOURCE_FILES})
     set(DOXYGEN_OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/Doxyfile)
     set(DOXYGEN_EXTRACT_ALL YES)
@@ -54,14 +51,26 @@ add_executable(standalone_skiz main.cpp typedefs.cpp addSeed.cpp aux.cpp getRegi
 
 
 enable_testing()
-add_library(Catch INTERFACE test/test-help-fns/loadStruct.h test/test-help-fns/bruteForceCheckLambda.cpp test/test-help-fns/bruteForceCheckLambda.h)
+add_library(Catch INTERFACE)
 target_include_directories(Catch INTERFACE test/Catch2/include)
 target_sources(Catch INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/test/Catch2/test_main.cpp")
 
-add_executable(test1 test/test_case_1.cpp)
-add_executable(test2 test/test_case_2.cpp)
-target_link_libraries(test1 Catch)
-target_link_libraries(test2 Catch)
+set (TEST_DEPENDENCIES test/test-help-fns/bruteForceCheckLambda.cpp test/test-help-fns/bruteForceCheckV.cpp
+        test/test-help-fns/loadStruct.h
+        test/test-help-fns/loadVD.cpp vd.cpp aux.cpp skizException.cpp addSeed.cpp NSStar.cpp pointInRegion.cpp
+        getRegion.cpp removeSeed.cpp)
 
-add_test(NAME Test1 COMMAND test1)
-add_test(NAME Test2 COMMAND test2)
+add_executable(testAddSeedCheckLambda test/testAddSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
+add_executable(testRemoveSeedCheckLambda test/testRemoveSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
+add_executable(testAddSeedCheckV test/testAddSeedCheckV.cpp ${TEST_DEPENDENCIES})
+add_executable(testRemoveSeedCheckV test/testRemoveSeedCheckV.cpp ${TEST_DEPENDENCIES})
+
+target_link_libraries(testAddSeedCheckLambda Catch)
+target_link_libraries(testRemoveSeedCheckLambda Catch)
+target_link_libraries(testAddSeedCheckV Catch)
+target_link_libraries(testRemoveSeedCheckV Catch)
+
+add_test(NAME AddSeedCheckLambda COMMAND testAddSeedCheckLambda)
+add_test(NAME RemoveSeedCheckLambda COMMAND testRemoveSeedCheckLambda)
+add_test(NAME AddSeedCheckV COMMAND testAddSeedCheckV)
+add_test(NAME RemoveSeedCheckV COMMAND testRemoveSeedCheckV)

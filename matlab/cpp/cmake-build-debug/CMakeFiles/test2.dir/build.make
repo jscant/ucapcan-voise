@@ -57,22 +57,152 @@ include CMakeFiles/test2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test2.dir/flags.make
 
-CMakeFiles/test2.dir/test/test_case_2.cpp.o: CMakeFiles/test2.dir/flags.make
-CMakeFiles/test2.dir/test/test_case_2.cpp.o: ../test/test_case_2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test2.dir/test/test_case_2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/test/test_case_2.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/test_case_2.cpp
+CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o: ../test/testRemoveSeedCheckLambda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/testRemoveSeedCheckLambda.cpp
 
-CMakeFiles/test2.dir/test/test_case_2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/test/test_case_2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/test/test_case_2.cpp > CMakeFiles/test2.dir/test/test_case_2.cpp.i
+CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/test/testRemoveSeedCheckLambda.cpp > CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.i
 
-CMakeFiles/test2.dir/test/test_case_2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/test/test_case_2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/test/test_case_2.cpp -o CMakeFiles/test2.dir/test/test_case_2.cpp.s
+CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/test/testRemoveSeedCheckLambda.cpp -o CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.s
+
+CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckLambda.cpp
+
+CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckLambda.cpp > CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.i
+
+CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckLambda.cpp -o CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.s
+
+CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o: ../test/test-help-fns/loadVD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.cpp
+
+CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.cpp > CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.i
+
+CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.cpp -o CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.s
+
+CMakeFiles/test2.dir/vd.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/vd.cpp.o: ../vd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test2.dir/vd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/vd.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp
+
+CMakeFiles/test2.dir/vd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/vd.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp > CMakeFiles/test2.dir/vd.cpp.i
+
+CMakeFiles/test2.dir/vd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/vd.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp -o CMakeFiles/test2.dir/vd.cpp.s
+
+CMakeFiles/test2.dir/aux.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/aux.cpp.o: ../aux.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test2.dir/aux.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/aux.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
+
+CMakeFiles/test2.dir/aux.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/aux.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp > CMakeFiles/test2.dir/aux.cpp.i
+
+CMakeFiles/test2.dir/aux.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/aux.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp -o CMakeFiles/test2.dir/aux.cpp.s
+
+CMakeFiles/test2.dir/skizException.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/skizException.cpp.o: ../skizException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test2.dir/skizException.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/skizException.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp
+
+CMakeFiles/test2.dir/skizException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/skizException.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp > CMakeFiles/test2.dir/skizException.cpp.i
+
+CMakeFiles/test2.dir/skizException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/skizException.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp -o CMakeFiles/test2.dir/skizException.cpp.s
+
+CMakeFiles/test2.dir/addSeed.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/addSeed.cpp.o: ../addSeed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test2.dir/addSeed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/addSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp
+
+CMakeFiles/test2.dir/addSeed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/addSeed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp > CMakeFiles/test2.dir/addSeed.cpp.i
+
+CMakeFiles/test2.dir/addSeed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/addSeed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp -o CMakeFiles/test2.dir/addSeed.cpp.s
+
+CMakeFiles/test2.dir/NSStar.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/NSStar.cpp.o: ../NSStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test2.dir/NSStar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp
+
+CMakeFiles/test2.dir/NSStar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/NSStar.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp > CMakeFiles/test2.dir/NSStar.cpp.i
+
+CMakeFiles/test2.dir/NSStar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/NSStar.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp -o CMakeFiles/test2.dir/NSStar.cpp.s
+
+CMakeFiles/test2.dir/pointInRegion.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/pointInRegion.cpp.o: ../pointInRegion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test2.dir/pointInRegion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/pointInRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp
+
+CMakeFiles/test2.dir/pointInRegion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/pointInRegion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp > CMakeFiles/test2.dir/pointInRegion.cpp.i
+
+CMakeFiles/test2.dir/pointInRegion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/pointInRegion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp -o CMakeFiles/test2.dir/pointInRegion.cpp.s
+
+CMakeFiles/test2.dir/getRegion.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/getRegion.cpp.o: ../getRegion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test2.dir/getRegion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp
+
+CMakeFiles/test2.dir/getRegion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/getRegion.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp > CMakeFiles/test2.dir/getRegion.cpp.i
+
+CMakeFiles/test2.dir/getRegion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/getRegion.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp -o CMakeFiles/test2.dir/getRegion.cpp.s
+
+CMakeFiles/test2.dir/removeSeed.cpp.o: CMakeFiles/test2.dir/flags.make
+CMakeFiles/test2.dir/removeSeed.cpp.o: ../removeSeed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test2.dir/removeSeed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/removeSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
+
+CMakeFiles/test2.dir/removeSeed.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test2.dir/removeSeed.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp > CMakeFiles/test2.dir/removeSeed.cpp.i
+
+CMakeFiles/test2.dir/removeSeed.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test2.dir/removeSeed.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp -o CMakeFiles/test2.dir/removeSeed.cpp.s
 
 CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o: CMakeFiles/test2.dir/flags.make
 CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/test_main.cpp
 
 CMakeFiles/test2.dir/test/Catch2/test_main.cpp.i: cmake_force
@@ -85,17 +215,37 @@ CMakeFiles/test2.dir/test/Catch2/test_main.cpp.s: cmake_force
 
 # Object files for target test2
 test2_OBJECTS = \
-"CMakeFiles/test2.dir/test/test_case_2.cpp.o" \
+"CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o" \
+"CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o" \
+"CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o" \
+"CMakeFiles/test2.dir/vd.cpp.o" \
+"CMakeFiles/test2.dir/aux.cpp.o" \
+"CMakeFiles/test2.dir/skizException.cpp.o" \
+"CMakeFiles/test2.dir/addSeed.cpp.o" \
+"CMakeFiles/test2.dir/NSStar.cpp.o" \
+"CMakeFiles/test2.dir/pointInRegion.cpp.o" \
+"CMakeFiles/test2.dir/getRegion.cpp.o" \
+"CMakeFiles/test2.dir/removeSeed.cpp.o" \
 "CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o"
 
 # External object files for target test2
 test2_EXTERNAL_OBJECTS =
 
-test2: CMakeFiles/test2.dir/test/test_case_2.cpp.o
+test2: CMakeFiles/test2.dir/test/testRemoveSeedCheckLambda.cpp.o
+test2: CMakeFiles/test2.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o
+test2: CMakeFiles/test2.dir/test/test-help-fns/loadVD.cpp.o
+test2: CMakeFiles/test2.dir/vd.cpp.o
+test2: CMakeFiles/test2.dir/aux.cpp.o
+test2: CMakeFiles/test2.dir/skizException.cpp.o
+test2: CMakeFiles/test2.dir/addSeed.cpp.o
+test2: CMakeFiles/test2.dir/NSStar.cpp.o
+test2: CMakeFiles/test2.dir/pointInRegion.cpp.o
+test2: CMakeFiles/test2.dir/getRegion.cpp.o
+test2: CMakeFiles/test2.dir/removeSeed.cpp.o
 test2: CMakeFiles/test2.dir/test/Catch2/test_main.cpp.o
 test2: CMakeFiles/test2.dir/build.make
 test2: CMakeFiles/test2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable test2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

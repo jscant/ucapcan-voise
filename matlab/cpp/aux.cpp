@@ -11,6 +11,7 @@
 #include <vector>
 #include <map>
 #include <fstream>
+#include <string>
 
 #include "aux.h"
 #include "skizException.h"

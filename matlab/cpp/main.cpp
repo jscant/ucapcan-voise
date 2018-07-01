@@ -51,10 +51,13 @@ int main() {
 
     std::map<real, real> StartSx;
     std::map<real, real> StartSy;
+    std::map<real, real> StartSk;
+
 
     for (auto i = 0; i < 5; ++i) {
         StartSx[i + 1] = Sx.at(i);
         StartSy[i + 1] = Sy.at(i);
+        StartSk[i + 1] = i + 1;
     }
 
     std::map<real, RealVec> Nk;
@@ -71,6 +74,7 @@ int main() {
     VD.setPy(py);
     VD.setSx(StartSx);
     VD.setSy(StartSy);
+    VD.setSk(StartSk);
     VD.setK(5);
     VD.setNk(Nk);
 

@@ -20,7 +20,7 @@
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 clc; clear all;
-compileMEX;
+%compileMEX;
 
 webVOISE('../share/VOISEdemo1.dat');
 

@@ -63,6 +63,8 @@ map
 -
 fstream
 -
+string
+-
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 skizException.h
