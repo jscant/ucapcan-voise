@@ -19,6 +19,7 @@
 
 #include "removeSeed.h"
 #include "getRegion.h"
+#include "NSStar.h"
 #include "aux.h"
 #include "skizException.h"
 #include "typedefs.cpp"

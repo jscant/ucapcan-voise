@@ -9,3 +9,5 @@ add_test(RemoveSeedCheckLambda "/home/jack/dev/project/voise-1.3/matlab/cpp/cmak
 add_test(AddSeedCheckV "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testAddSeedCheckV")
 add_test(RemoveSeedCheckV "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testRemoveSeedCheckV")
 add_test(PointInRegionCheck "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/PointInRegionCheck")
+add_test(SqDistanceCheck "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/SqDistanceCheck")
+add_test(InVectorCheck "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/InVectorCheck")

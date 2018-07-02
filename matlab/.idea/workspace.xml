@@ -3,6 +3,7 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="standalone_skiz" targetName="apidoc" />
+      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
       <config projectName="standalone_skiz" targetName="standalone_skiz" />
       <config projectName="standalone_skiz" targetName="apidoc_forced" />
       <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
@@ -10,6 +11,7 @@
       <config projectName="standalone_skiz" targetName="testRemoveSeedCheckLambda" />
       <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
       <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
+      <config projectName="standalone_skiz" targetName="InVectorCheck" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -31,11 +33,28 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testPointInRegion.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testPointInRegion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/test/testPointInRegion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state>
+              <caret selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <element signature="e#102#131#0" expanded="true" />
+                <element signature="e#637#2056#0" />
+                <element signature="e#1383#2308#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="512">
+              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+              <folding>
+                <element signature="e#618#641#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,7 +62,7 @@
       <file leaf-file-name="getRegion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/getRegion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
+            <state relative-caret-position="198">
               <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
               <folding>
                 <element signature="e#123#159#0" expanded="true" />
@@ -57,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="54" selection-end-column="15" />
+              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="54" selection-end-column="15" />
               <folding>
                 <element signature="e#145#165#0" expanded="true" />
               </folding>
@@ -89,8 +108,41 @@
       <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cpp/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="221">
+              <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testSqDist.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/test/testSqDist.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="591">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testInVector.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cpp/test/testInVector.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="e#125#145#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,8 +215,6 @@
         <option value="$PROJECT_DIR$/cpp/typedefs.cpp" />
         <option value="$PROJECT_DIR$/cpp/grabVD.cpp" />
         <option value="$PROJECT_DIR$/cpp/pushVD.cpp" />
-        <option value="$PROJECT_DIR$/cpp/addSeed.cpp" />
-        <option value="$PROJECT_DIR$/cpp/NSStar.cpp" />
         <option value="$PROJECT_DIR$/cpp/aux.h" />
         <option value="$PROJECT_DIR$/cpp/pointInRegion.h" />
         <option value="$PROJECT_DIR$/cpp/test/Catch2/CMakeLists.txt" />
@@ -177,7 +227,6 @@
         <option value="$PROJECT_DIR$/cpp/test/test-help-fns/loadStruct.h" />
         <option value="$PROJECT_DIR$/cpp/grabVD.h" />
         <option value="$PROJECT_DIR$/cpp/test/test-help-fns/loadVD.cpp" />
-        <option value="$PROJECT_DIR$/cpp/main.cpp" />
         <option value="$PROJECT_DIR$/cpp/test/test_case_1.cpp" />
         <option value="$PROJECT_DIR$/cpp/test/test-help-fns/bruteForceCheckV.h" />
         <option value="$PROJECT_DIR$/cpp/test/testAddSeedCheckLambda.cpp" />
@@ -188,9 +237,16 @@
         <option value="$PROJECT_DIR$/cpp/test/testRemoveSeedCheckLambda.cpp" />
         <option value="$PROJECT_DIR$/cpp/test/testAddSeedCheckV.cpp" />
         <option value="$PROJECT_DIR$/cpp/test/testRemoveSeedCheckV.cpp" />
-        <option value="$PROJECT_DIR$/cpp/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cpp/removeSeed.cpp" />
         <option value="$PROJECT_DIR$/cpp/test/testPointInRegion.cpp" />
+        <option value="$PROJECT_DIR$/cpp/addSeed.cpp" />
+        <option value="$PROJECT_DIR$/cpp/NSStar.cpp" />
+        <option value="$PROJECT_DIR$/cpp/main.cpp" />
+        <option value="$PROJECT_DIR$/cpp/test/testNsStar.cpp" />
+        <option value="$PROJECT_DIR$/cpp/test/testSqDist.cpp" />
+        <option value="$PROJECT_DIR$/cpp/test/test-help-fns/testInVector.cpp" />
+        <option value="$PROJECT_DIR$/cpp/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cpp/test/testInVector.cpp" />
       </list>
     </option>
   </component>
@@ -248,6 +304,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cpp/test/" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cpp/test/resources" />
     </key>
@@ -264,12 +323,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager" selected="Application.InVectorCheck">
     <configuration name="Brute force check lambdas after adding seeds" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="testAddSeedCheckLambda" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="testAddSeedCheckLambda" TEST_METHOD="Brute force check lambdas after adding seeds" TEST_MODE="SUITE_TEST" />
+    <configuration name="In vector of ints" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" TEST_METHOD="In vector of ints" TEST_MODE="SUITE_TEST" />
+    <configuration name="Lower boundary of getRegion" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="PointInRegionCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="PointInRegionCheck" TEST_METHOD="Lower boundary of getRegion" TEST_MODE="SUITE_TEST" />
     <configuration name="Require false" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="my_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="my_test" TEST_METHOD="Require false" TEST_MODE="SUITE_TEST" />
-    <configuration name="Require true" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="my_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="my_test" TEST_METHOD="Require true" TEST_MODE="SUITE_TEST" />
+    <configuration name="Upper bounds of getRegion" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="PointInRegionCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="PointInRegionCheck" TEST_METHOD="Upper bounds of getRegion" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="InVectorCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="InVectorCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="InVectorCheck" />
     <configuration name="PointInRegionCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="PointInRegionCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="PointInRegionCheck" />
+    <configuration name="SqDistanceCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="SqDistanceCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="SqDistanceCheck" />
     <configuration name="apidoc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="apidoc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" />
     <configuration name="apidoc_forced" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="apidoc_forced" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" />
     <configuration name="standalone_skiz" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="standalone_skiz" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" />
@@ -281,21 +344,27 @@
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.apidoc" />
       <item itemvalue="Application.apidoc_forced" />
+      <item itemvalue="Application.InVectorCheck" />
       <item itemvalue="Application.PointInRegionCheck" />
+      <item itemvalue="Application.SqDistanceCheck" />
       <item itemvalue="Application.standalone_skiz" />
       <item itemvalue="Application.testAddSeedCheckLambda" />
       <item itemvalue="Application.testAddSeedCheckV" />
       <item itemvalue="Application.testRemoveSeedCheckLambda" />
       <item itemvalue="Application.testRemoveSeedCheckV" />
-      <item itemvalue="Catch.Require true" />
       <item itemvalue="Catch.Require false" />
       <item itemvalue="Catch.Brute force check lambdas after adding seeds" />
+      <item itemvalue="Catch.Lower boundary of getRegion" />
+      <item itemvalue="Catch.Upper bounds of getRegion" />
+      <item itemvalue="Catch.In vector of ints" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Catch.In vector of ints" />
+        <item itemvalue="Catch.Upper bounds of getRegion" />
+        <item itemvalue="Catch.Lower boundary of getRegion" />
         <item itemvalue="Catch.Brute force check lambdas after adding seeds" />
         <item itemvalue="Catch.Require false" />
-        <item itemvalue="Catch.Require true" />
       </list>
     </recent_temporary>
   </component>
@@ -332,21 +401,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Require_false - 2018.07.01 at 11h 20m 31s.xml">
-      <configuration name="Require false" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Require_false - 2018.07.01 at 11h 20m 33s.xml">
-      <configuration name="Require false" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Require_false - 2018.07.01 at 11h 21m 35s.xml">
-      <configuration name="Require false" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Require_false - 2018.07.01 at 11h 21m 53s.xml">
-      <configuration name="Require false" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="Require_false - 2018.07.01 at 11h 22m 16s.xml">
-      <configuration name="Require false" configurationId="CMakeCatchTestRunConfigurationType" />
-    </history-entry>
     <history-entry file="Brute_force_check_lambdas_after_adding_seeds - 2018.07.01 at 14h 45m 26s.xml">
       <configuration name="Brute force check lambdas after adding seeds" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
@@ -362,9 +416,24 @@
     <history-entry file="Brute_force_check_lambdas_after_adding_seeds - 2018.07.01 at 15h 42m 37s.xml">
       <configuration name="Brute force check lambdas after adding seeds" configurationId="CMakeCatchTestRunConfigurationType" />
     </history-entry>
+    <history-entry file="Lower_boundary_of_getRegion - 2018.07.02 at 08h 25m 54s.xml">
+      <configuration name="Lower boundary of getRegion" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Upper_bounds_of_getRegion - 2018.07.02 at 08h 26m 01s.xml">
+      <configuration name="Upper bounds of getRegion" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Lower_boundary_of_getRegion - 2018.07.02 at 08h 26m 27s.xml">
+      <configuration name="Lower boundary of getRegion" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Upper_bounds_of_getRegion - 2018.07.02 at 08h 26m 35s.xml">
+      <configuration name="Upper bounds of getRegion" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Upper_bounds_of_getRegion - 2018.07.02 at 08h 32m 09s.xml">
+      <configuration name="Upper bounds of getRegion" configurationId="CMakeCatchTestRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280030000" />
+    <option name="totallyTimeSpent" value="286168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -379,56 +448,36 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20851529" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.46282724" />
-      <window_info anchor="bottom" id="CMake" order="7" sideWeight="0.49919137" weight="0.32879582" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008086" weight="0.33717278" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945414" visible="true" weight="0.4198953" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20592992" />
+      <window_info anchor="bottom" id="TODO" order="9" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.45194274" />
+      <window_info anchor="bottom" id="CMake" order="19" sideWeight="0.49919137" weight="0.32822084" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008086" weight="0.33717278" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924336" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49945414" visible="true" weight="0.3425358" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20851529" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="7" weight="0.24397905" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32984293" />
+      <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="CMake" order="15" weight="0.24397905" />
+      <window_info anchor="bottom" id="Terminal" order="16" weight="0.32984293" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945414" weight="0.33717278" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50054586" weight="0.32146597" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32879582" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49945414" weight="0.33717278" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.50054586" weight="0.32146597" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="18" weight="0.32879582" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.24397905" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20851529" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32984293" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49945414" weight="0.33717278" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50054586" weight="0.32146597" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32879582" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -442,15 +491,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cpp/eigen/Eigen/src/Core/Array.h" />
-    <entry file="file:///usr/local/MATLAB/R2018a/extern/include/mex.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="178" column="5" selection-start-line="178" selection-start-column="5" selection-end-line="178" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp.orig" />
     <entry file="file://$PROJECT_DIR$/removeSeedFromVD.cpp.orig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -551,26 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="e#125#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/test/Catch2/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -625,27 +645,6 @@
           <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
           <folding>
             <element signature="e#114#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/aux.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="e#84#120#0" expanded="true" />
-            <element signature="e#128#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-          <folding>
-            <element signature="e#618#641#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/test/testRemoveSeedCheckV.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding>
-            <element signature="e#38#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/test/testRemoveSeedCheckLambda.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -760,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/pointInRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
@@ -774,9 +756,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="54" selection-end-column="15" />
+          <folding>
+            <element signature="e#145#165#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/addSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="e#125#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/NSStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding>
+            <element signature="e#75#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+          <folding>
+            <element signature="e#618#641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cpp/getRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="198">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="e#123#159#0" expanded="true" />
@@ -785,20 +807,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/removeSeed.cpp">
+    <entry file="file://$PROJECT_DIR$/cpp/test/testPointInRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="50" column="40" lean-forward="true" selection-start-line="50" selection-start-column="40" selection-end-line="54" selection-end-column="15" />
+        <state>
+          <caret selection-end-line="24" selection-end-column="23" />
           <folding>
-            <element signature="e#145#165#0" expanded="true" />
+            <element signature="e#102#131#0" expanded="true" />
+            <element signature="e#637#2056#0" />
+            <element signature="e#1383#2308#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cpp/test/testPointInRegion.cpp">
+    <entry file="file://$PROJECT_DIR$/cpp/test/testNsStar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="288">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/aux.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#84#120#0" expanded="true" />
+            <element signature="e#128#148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/test/testRemoveSeedCheckV.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+          <folding>
+            <element signature="e#38#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="75" column="44" lean-forward="true" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/test/testSqDist.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cpp/test/testInVector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>

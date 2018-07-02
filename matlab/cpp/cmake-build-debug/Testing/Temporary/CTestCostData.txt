@@ -8,10 +8,11 @@ testAddSeedCheckLambda 6 1.63528
 testRemoveSeedCheckLambda 4 0
 testAddSeedCheckV 2 6.03163
 testRemoveSeedCheckV 0 0
-AddSeedCheckLambda 10 0.567208
-RemoveSeedCheckLambda 7 0.92175
-AddSeedCheckV 10 0.634132
-RemoveSeedCheckV 7 0.900522
+AddSeedCheckLambda 12 0.521763
+RemoveSeedCheckLambda 9 0.628416
+AddSeedCheckV 12 0.537632
+RemoveSeedCheckV 9 0.708987
 testPointInRegion 2 0.0307752
-PointInRegionCheck 1 0.042615
+PointInRegionCheck 3 0.0153283
+NsStarCheck 0 0
 ---

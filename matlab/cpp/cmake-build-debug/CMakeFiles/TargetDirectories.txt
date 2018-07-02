@@ -1,10 +1,12 @@
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/InVectorCheck.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/PointInRegionCheck.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testRemoveSeedCheckV.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/apidoc.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testRemoveSeedCheckLambda.dir
+/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/SqDistanceCheck.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/standalone_skiz.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckLambda.dir
 /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/test.dir

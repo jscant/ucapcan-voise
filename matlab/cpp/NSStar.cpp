@@ -20,7 +20,6 @@
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
     Operator: A Dynamic Algorithm" [1], Section 3.1
 */
-
 RealVec nsStar(const vd &VD) {
     const real s1 = VD.getSxByIdx(VD.getK());
     const real s2 = VD.getSyByIdx(VD.getK());
@@ -28,11 +27,7 @@ RealVec nsStar(const vd &VD) {
     real lam = VD.getLamByIdx(s2 - 1, s1 - 1);
     const real lamOG = lam;
     RealVec Ns = {lam};
-    bool onlyNeighbour = false;
-
-    if(VD.getNkByIdx(lam).size() == 1){
-        onlyNeighbour = true;
-    }
+    bool onlyNeighbour = VD.getNkByIdx(lam).size() == 1 ? true : false;
 
     real n = 0;
     while (true) {

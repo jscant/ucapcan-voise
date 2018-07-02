@@ -15,7 +15,7 @@
 #include "getRegion.h"
 #include "aux.h"
 #include "typedefs.cpp"
-
+#include <iostream>
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()
 #endif

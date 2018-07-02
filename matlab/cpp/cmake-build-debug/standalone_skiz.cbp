@@ -27,6 +27,54 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="InVectorCheck">
+				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/InVectorCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 InVectorCheck"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InVectorCheck/fast">
+				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/InVectorCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 InVectorCheck/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="PointInRegionCheck">
 				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/PointInRegionCheck" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
@@ -239,6 +287,54 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="SqDistanceCheck">
+				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 SqDistanceCheck"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SqDistanceCheck/fast">
+				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/include"/>
+					<Add directory="/usr/include/c++/6"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
+					<Add directory="/usr/include/c++/6/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 SqDistanceCheck/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="standalone_skiz">
 				<Option output="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/standalone_skiz" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug"/>
@@ -355,66 +451,82 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
@@ -422,107 +534,135 @@
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/test_main.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckLambda.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckLambda.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckV.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckV.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadStruct.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testAddSeedCheckLambda.cpp">
@@ -530,6 +670,9 @@
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testAddSeedCheckV.cpp">
 			<Option target="testAddSeedCheckV"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testInVector.cpp">
+			<Option target="InVectorCheck"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testPointInRegion.cpp">
 			<Option target="PointInRegionCheck"/>
@@ -540,22 +683,29 @@
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testRemoveSeedCheckV.cpp">
 			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/test/testSqDist.cpp">
+			<Option target="SqDistanceCheck"/>
+		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp">
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/vd.h">
+			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>

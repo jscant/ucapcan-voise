@@ -1,0 +1,22 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/testPointInRegion.dir/test/testPointInRegion.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/test/test-help-fns/bruteForceCheckV.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/test/test-help-fns/loadVD.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/vd.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/aux.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/skizException.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/addSeed.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/NSStar.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/pointInRegion.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/getRegion.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/removeSeed.cpp.o"
+  "CMakeFiles/testPointInRegion.dir/test/Catch2/test_main.cpp.o"
+  "testPointInRegion.pdb"
+  "testPointInRegion"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/testPointInRegion.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -29,6 +29,7 @@ CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.h
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../typedefs.cpp
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../vd.h
 
+CMakeFiles/standalone_skiz.dir/main.cpp.o: ../NSStar.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../addSeed.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../getRegion.h
