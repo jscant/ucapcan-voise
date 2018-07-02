@@ -13,7 +13,6 @@
 #include "NSStar.h"
 #include "pointInRegion.h"
 #include "getRegion.h"
-#include "aux.h"
 #include "aux-functions/inVector.h"
 #include "aux-functions/sqDist.h"
 #include "aux-functions/circumcentre.h"

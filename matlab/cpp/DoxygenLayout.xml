@@ -3,7 +3,7 @@
   <!-- Navigation index tabs for HTML output -->
   <navindex>
     <tab type="mainpage" visible="yes" title="Overview"/>
-    <tab type="pages" visible="yes" title="" intro="abc"/>
+    <tab type="pages" visible="yes" title="Unit tests" intro="Unit tests using the Catch2 framework (click Test List below)."/>
     <tab type="modules" visible="yes" title="Global Functions" intro="All non class method functions (links contain more details):"/>
     <tab type="namespaces" visible="yes" title="">
       <tab type="namespacelist" visible="yes" title="" intro=""/>

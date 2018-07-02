@@ -122,22 +122,9 @@ CMakeFiles/SqDistanceCheck.dir/vd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqDistanceCheck.dir/vd.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp -o CMakeFiles/SqDistanceCheck.dir/vd.cpp.s
 
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.o: ../aux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SqDistanceCheck.dir/aux.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/aux.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
-
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SqDistanceCheck.dir/aux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp > CMakeFiles/SqDistanceCheck.dir/aux.cpp.i
-
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqDistanceCheck.dir/aux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp -o CMakeFiles/SqDistanceCheck.dir/aux.cpp.s
-
 CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o: ../skizException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp
 
 CMakeFiles/SqDistanceCheck.dir/skizException.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/SqDistanceCheck.dir/skizException.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../addSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp
 
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../NSStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp
 
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.o: ../pointInRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp
 
 CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/SqDistanceCheck.dir/pointInRegion.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o: ../getRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp
 
 CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../removeSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
 
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
 
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o: ../aux-functions/readMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
 
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.s: cmake_force
 
 CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o: CMakeFiles/SqDistanceCheck.dir/flags.make
 CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/test_main.cpp
 
 CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.i: cmake_force
@@ -259,7 +246,6 @@ SqDistanceCheck_OBJECTS = \
 "CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o" \
 "CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o" \
 "CMakeFiles/SqDistanceCheck.dir/vd.cpp.o" \
-"CMakeFiles/SqDistanceCheck.dir/aux.cpp.o" \
 "CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o" \
 "CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o" \
 "CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o" \
@@ -278,7 +264,6 @@ SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceChe
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/vd.cpp.o
-SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/aux.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o
@@ -290,7 +275,7 @@ SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/build.make
 SqDistanceCheck: CMakeFiles/SqDistanceCheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable SqDistanceCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable SqDistanceCheck"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SqDistanceCheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

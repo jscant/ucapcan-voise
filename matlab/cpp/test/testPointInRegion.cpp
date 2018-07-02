@@ -1,20 +1,20 @@
 /**
  * @file
- * @brief Tests various normal and pathalogical cases for the pointInRegion function
+ * @brief Unit tests for various normal and pathalogical cases for the pointInRegion function
  */
+
 #include <eigen3/Eigen/Dense>
 
 #include <string>
 #include <iostream>
 
-#include "Catch2/catch.hpp"
 #include "../getRegion.h"
-#include "../aux.h"
 #include "../typedefs.cpp"
 #include "../vd.h"
 #include "../pointInRegion.h"
 #include "test-help-fns/loadVD.h"
 #include "test-help-fns/loadStruct.h"
+#include "Catch2/catch.hpp"
 
 // Load VD
 std::string path = "../../cpp/test/resources/";
@@ -24,7 +24,11 @@ RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;
 std::array<real, 2> pt;
 
-TEST_CASE("Lower boundary of getRegion"){
+/**
+ * @test GetRegionLowerBound
+ * @brief Checks whether the pixels on and around the lower bound calculated by getRegion are in said region.
+ */
+TEST_CASE("Lower bounds of getRegion"){
     for(uint32 s = 1; s < 6; ++s) {
         Mat bounds = getRegion(VD, s);
         for (uint32 j = 0; j < bounds.rows(); ++j) {
@@ -48,6 +52,10 @@ TEST_CASE("Lower boundary of getRegion"){
     }
 }
 
+/**
+ * @test GetRegionUpperBound
+ * @brief Checks whether the pixels on and around the upper bound calculated by getRegion are in said region.
+ */
 TEST_CASE("Upper bounds of getRegion"){
     for(uint32 s = 1; s < 6; ++s) {
         Mat bounds = getRegion(VD, s);

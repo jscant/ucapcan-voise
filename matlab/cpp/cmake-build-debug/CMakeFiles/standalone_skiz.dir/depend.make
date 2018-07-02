@@ -5,7 +5,6 @@ CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../NSStar.cpp
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../NSStar.h
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../aux-functions/inVector.h
-CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../pointInRegion.h
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../skizException.h
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../typedefs.cpp
@@ -18,7 +17,6 @@ CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../getRegion.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/standalone_skiz.dir/addSeed.cpp.o: ../skizException.h
@@ -33,10 +31,6 @@ CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/r
 CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.h
 CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: ../typedefs.cpp
 
-CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../aux.cpp
-CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../aux.h
-CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../typedefs.cpp
-
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.cpp
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.h
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../typedefs.cpp
@@ -44,8 +38,8 @@ CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../vd.h
 
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../NSStar.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../addSeed.h
+CMakeFiles/standalone_skiz.dir/main.cpp.o: ../aux-functions/readMatrix.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../aux-functions/readSeeds.h
-CMakeFiles/standalone_skiz.dir/main.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../getRegion.h
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../main.cpp
 CMakeFiles/standalone_skiz.dir/main.cpp.o: ../removeSeed.h
@@ -65,7 +59,6 @@ CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../aux.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../getRegion.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../removeSeed.cpp

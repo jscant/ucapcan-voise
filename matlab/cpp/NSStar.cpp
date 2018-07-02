@@ -5,7 +5,6 @@
 #include <map>
 
 #include "NSStar.h"
-#include "aux.h"
 #include "pointInRegion.h"
 #include "skizException.h"
 #include "aux-functions/inVector.h"

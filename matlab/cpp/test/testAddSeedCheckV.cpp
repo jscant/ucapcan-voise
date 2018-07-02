@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief TEST FILE
+ * @brief Unit tests for whether the addSeed method correctly recalculates the \f$ \nu \f$ matrix.
  */
 
 #include <string>
@@ -8,7 +8,6 @@
 #include "../addSeed.h"
 #include "../removeSeed.h"
 #include "../getRegion.h"
-#include "../aux.h"
 #include "../skizException.h"
 #include "../typedefs.cpp"
 #include "../vd.h"
@@ -17,10 +16,11 @@
 #include "test-help-fns/bruteForceCheckV.h"
 
 /**
- * @test Brute
- * @brief Bruteforcelambda
+ * @test AddSeedCheckV
+ * @brief Adds seeds to VD and checks (in a greedy fashion) each pixel for whether there exists one or more closest
+ * seeds, and whether this corresponds to the relevant \f$ \nu \f$ matrix entry.
  */
-TEST_CASE("Brute force check v after adding seeds"){
+TEST_CASE("Check whether the addSeed method correctly recalculates the v matrix."){
 
     // Load VD
     std::string path = "../../cpp/test/resources/";

@@ -1,20 +1,20 @@
-Start testing: Jul 02 12:18 BST
+Start testing: Jul 02 14:53 BST
 ----------------------------------------------------------
 1/7 Testing: AddSeedCheckLambda
 1/7 Test: AddSeedCheckLambda
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testAddSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"AddSeedCheckLambda" start time: Jul 02 12:18 BST
+"AddSeedCheckLambda" start time: Jul 02 14:53 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   5.86 sec
+Test time =   5.46 sec
 ----------------------------------------------------------
 Test Passed.
-"AddSeedCheckLambda" end time: Jul 02 12:18 BST
+"AddSeedCheckLambda" end time: Jul 02 14:53 BST
 "AddSeedCheckLambda" time elapsed: 00:00:05
 ----------------------------------------------------------
 
@@ -22,71 +22,71 @@ Test Passed.
 2/7 Test: RemoveSeedCheckLambda
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testRemoveSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"RemoveSeedCheckLambda" start time: Jul 02 12:18 BST
+"RemoveSeedCheckLambda" start time: Jul 02 14:53 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   6.01 sec
+Test time =   5.96 sec
 ----------------------------------------------------------
 Test Passed.
-"RemoveSeedCheckLambda" end time: Jul 02 12:18 BST
-"RemoveSeedCheckLambda" time elapsed: 00:00:06
+"RemoveSeedCheckLambda" end time: Jul 02 14:53 BST
+"RemoveSeedCheckLambda" time elapsed: 00:00:05
 ----------------------------------------------------------
 
 3/7 Testing: AddSeedCheckV
 3/7 Test: AddSeedCheckV
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testAddSeedCheckV"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"AddSeedCheckV" start time: Jul 02 12:18 BST
+"AddSeedCheckV" start time: Jul 02 14:53 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   5.97 sec
+Test time =   6.43 sec
 ----------------------------------------------------------
 Test Passed.
-"AddSeedCheckV" end time: Jul 02 12:18 BST
-"AddSeedCheckV" time elapsed: 00:00:05
+"AddSeedCheckV" end time: Jul 02 14:53 BST
+"AddSeedCheckV" time elapsed: 00:00:06
 ----------------------------------------------------------
 
 4/7 Testing: RemoveSeedCheckV
 4/7 Test: RemoveSeedCheckV
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/testRemoveSeedCheckV"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"RemoveSeedCheckV" start time: Jul 02 12:18 BST
+"RemoveSeedCheckV" start time: Jul 02 14:53 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   6.34 sec
+Test time =   9.83 sec
 ----------------------------------------------------------
 Test Passed.
-"RemoveSeedCheckV" end time: Jul 02 12:18 BST
-"RemoveSeedCheckV" time elapsed: 00:00:06
+"RemoveSeedCheckV" end time: Jul 02 14:54 BST
+"RemoveSeedCheckV" time elapsed: 00:00:09
 ----------------------------------------------------------
 
 5/7 Testing: PointInRegionCheck
 5/7 Test: PointInRegionCheck
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/PointInRegionCheck"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"PointInRegionCheck" start time: Jul 02 12:18 BST
+"PointInRegionCheck" start time: Jul 02 14:54 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (2248 assertions in 2 test cases)
 
 <end of output>
-Test time =   0.05 sec
+Test time =   0.09 sec
 ----------------------------------------------------------
 Test Passed.
-"PointInRegionCheck" end time: Jul 02 12:18 BST
+"PointInRegionCheck" end time: Jul 02 14:54 BST
 "PointInRegionCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -94,7 +94,7 @@ Test Passed.
 6/7 Test: SqDistanceCheck
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/SqDistanceCheck"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"SqDistanceCheck" start time: Jul 02 12:18 BST
+"SqDistanceCheck" start time: Jul 02 14:54 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
@@ -104,7 +104,7 @@ All tests passed (6 assertions in 6 test cases)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SqDistanceCheck" end time: Jul 02 12:18 BST
+"SqDistanceCheck" end time: Jul 02 14:54 BST
 "SqDistanceCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,18 +112,35 @@ Test Passed.
 7/7 Test: InVectorCheck
 Command: "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/InVectorCheck"
 Directory: /home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug
-"InVectorCheck" start time: Jul 02 12:18 BST
+"InVectorCheck" start time: Jul 02 14:54 BST
 Output:
 ----------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+InVectorCheck is a Catch v2.2.3 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Check if inVector correctly identifies lack of item in vector of reals
+-------------------------------------------------------------------------------
+/home/jack/dev/project/voise-1.3/matlab/cpp/test/testInVector.cpp:40
+...............................................................................
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/test/testInVector.cpp:42: FAILED:
+  REQUIRE( inVector(vec, 11) )
+with expansion:
+  false
+
 ===============================================================================
-All tests passed (1 assertion in 1 test case)
+test cases: 4 | 3 passed | 1 failed
+assertions: 4 | 3 passed | 1 failed
 
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
-Test Passed.
-"InVectorCheck" end time: Jul 02 12:18 BST
+Test Failed.
+"InVectorCheck" end time: Jul 02 14:54 BST
 "InVectorCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 02 12:18 BST
+End testing: Jul 02 14:54 BST

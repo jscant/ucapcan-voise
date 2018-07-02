@@ -12,7 +12,6 @@
 
 #include "pushVD.h"
 #include "grabVD.h"
-#include "aux.h"
 #include "skizException.h"
 #include "typedefs.cpp"
 
@@ -73,11 +72,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxArray *wOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
     mxArray *sOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
 
-    // Pointers declarations
-//    real *ncPtr, *nrPtr, *xPtr, *yPtr, *kPtr, *skPtr, *sxPtr,
- //        *syPtr, *lamPtr, *vPtr, *wxmPtr, *wxMPtr, *wymPtr,
-  //       *wyMPtr, *sxmPtr, *sxMPtr, *symPtr, *syMPtr;
-
     // Get pointers to relevant mxArrays
     real *lamPtr = mxGetDoubles(lamOutgoingArray);
     real *vPtr = mxGetDoubles(vOutgoingArray);
@@ -97,18 +91,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     real *sxPtr = mxGetDoubles(sxOutgoingArray);
     real *syPtr = mxGetDoubles(syOutgoingArray);
     real *kPtr = mxGetDoubles(kOutgoingArray);
-
-    /*
-    // Populate ML struct matrices with results
-    for (int i = 0; i < nRows; ++i) {
-        for (int j = 0; j < nCols; ++j) {
-            lamPtr[j * nCols + i] = outputVD.Vk.lam(i, j);
-            vPtr[j * nCols + i] = outputVD.Vk.v(i, j);
-            xPtr[j * nCols + i] = outputVD.px(i, j) + 1;
-            yPtr[j * nCols + i] = outputVD.py(i, j) + 1;
-        }
-    }
-    */
 
     Eigen::Map<Mat>(lamPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getLam();
     Eigen::Map<Mat>(vPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getV();

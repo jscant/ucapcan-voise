@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/vd.cpp.o"
-  "CMakeFiles/testAddSeedCheckLambda.dir/aux.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/skizException.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/addSeed.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/NSStar.cpp.o"

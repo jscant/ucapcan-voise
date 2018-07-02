@@ -5,7 +5,6 @@ CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../NSStar.cpp
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../NSStar.h
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../aux-functions/inVector.h
-CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../pointInRegion.h
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../skizException.h
 CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o: ../typedefs.cpp
@@ -18,7 +17,6 @@ CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../getRegion.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o: ../skizException.h
@@ -32,10 +30,6 @@ CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o: ../typedefs.cp
 CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
 CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.h
 CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o: ../typedefs.cpp
-
-CMakeFiles/PointInRegionCheck.dir/aux.cpp.o: ../aux.cpp
-CMakeFiles/PointInRegionCheck.dir/aux.cpp.o: ../aux.h
-CMakeFiles/PointInRegionCheck.dir/aux.cpp.o: ../typedefs.cpp
 
 CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o: ../getRegion.cpp
 CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o: ../getRegion.h
@@ -54,7 +48,6 @@ CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../aux-functions/circumcentr
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../getRegion.h
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o: ../removeSeed.cpp
@@ -70,14 +63,12 @@ CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/ca
 CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
 
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../typedefs.cpp
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../vd.h
 
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../typedefs.cpp
@@ -85,7 +76,6 @@ CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../
 
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readMatrix.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readSeeds.h
-CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../getRegion.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../removeSeed.h
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../skizException.h
@@ -95,7 +85,6 @@ CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../test/test-
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../typedefs.cpp
 CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o: ../vd.h
 
-CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.o: ../aux.h
 CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.o: ../getRegion.h
 CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.o: ../pointInRegion.h
 CMakeFiles/PointInRegionCheck.dir/test/testPointInRegion.cpp.o: ../test/Catch2/catch.hpp

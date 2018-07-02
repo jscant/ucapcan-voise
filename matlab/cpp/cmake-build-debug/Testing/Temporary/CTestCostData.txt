@@ -8,13 +8,14 @@ testAddSeedCheckLambda 6 1.63528
 testRemoveSeedCheckLambda 4 0
 testAddSeedCheckV 2 6.03163
 testRemoveSeedCheckV 0 0
-AddSeedCheckLambda 13 0.451023
-RemoveSeedCheckLambda 10 0.600748
-AddSeedCheckV 13 0.459583
-RemoveSeedCheckV 10 0.633971
+AddSeedCheckLambda 14 0.389926
+RemoveSeedCheckLambda 11 0.542256
+AddSeedCheckV 14 0.459112
+RemoveSeedCheckV 11 0.893416
 testPointInRegion 2 0.0307752
-PointInRegionCheck 4 0.011833
+PointInRegionCheck 5 0.0170047
 NsStarCheck 0 0
-SqDistanceCheck 1 0.00155341
-InVectorCheck 1 0.00142796
+SqDistanceCheck 2 0.00162548
+InVectorCheck 1 0
 ---
+InVectorCheck

@@ -96,22 +96,9 @@ CMakeFiles/standalone_skiz.dir/addSeed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/addSeed.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp -o CMakeFiles/standalone_skiz.dir/addSeed.cpp.s
 
-CMakeFiles/standalone_skiz.dir/aux.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
-CMakeFiles/standalone_skiz.dir/aux.cpp.o: ../aux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/standalone_skiz.dir/aux.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/aux.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
-
-CMakeFiles/standalone_skiz.dir/aux.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/standalone_skiz.dir/aux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp > CMakeFiles/standalone_skiz.dir/aux.cpp.i
-
-CMakeFiles/standalone_skiz.dir/aux.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/aux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp -o CMakeFiles/standalone_skiz.dir/aux.cpp.s
-
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.o: ../getRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/standalone_skiz.dir/getRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/standalone_skiz.dir/getRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp
 
 CMakeFiles/standalone_skiz.dir/getRegion.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/standalone_skiz.dir/getRegion.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.o: ../NSStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/standalone_skiz.dir/NSStar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/standalone_skiz.dir/NSStar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp
 
 CMakeFiles/standalone_skiz.dir/NSStar.cpp.i: cmake_force
@@ -137,7 +124,7 @@ CMakeFiles/standalone_skiz.dir/NSStar.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o: ../pointInRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp
 
 CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o: ../removeSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
 
 CMakeFiles/standalone_skiz.dir/removeSeed.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/standalone_skiz.dir/removeSeed.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/skizException.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/skizException.cpp.o: ../skizException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/standalone_skiz.dir/skizException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/standalone_skiz.dir/skizException.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/skizException.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp
 
 CMakeFiles/standalone_skiz.dir/skizException.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/standalone_skiz.dir/skizException.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/vd.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/vd.cpp.o: ../vd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/standalone_skiz.dir/vd.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/standalone_skiz.dir/vd.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/vd.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp
 
 CMakeFiles/standalone_skiz.dir/vd.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/standalone_skiz.dir/vd.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
 
 CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o: ../aux-functions/readMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
 
 CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.i: cmake_force
@@ -218,7 +205,6 @@ standalone_skiz_OBJECTS = \
 "CMakeFiles/standalone_skiz.dir/main.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/typedefs.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/addSeed.cpp.o" \
-"CMakeFiles/standalone_skiz.dir/aux.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/getRegion.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/NSStar.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o" \
@@ -234,7 +220,6 @@ standalone_skiz_EXTERNAL_OBJECTS =
 standalone_skiz: CMakeFiles/standalone_skiz.dir/main.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/typedefs.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/addSeed.cpp.o
-standalone_skiz: CMakeFiles/standalone_skiz.dir/aux.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/getRegion.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/NSStar.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o
@@ -245,7 +230,7 @@ standalone_skiz: CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/build.make
 standalone_skiz: CMakeFiles/standalone_skiz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable standalone_skiz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable standalone_skiz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/standalone_skiz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

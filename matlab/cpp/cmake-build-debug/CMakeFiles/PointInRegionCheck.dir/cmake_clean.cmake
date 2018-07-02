@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/test/test-help-fns/loadVD.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/vd.cpp.o"
-  "CMakeFiles/PointInRegionCheck.dir/aux.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/skizException.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/addSeed.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o"

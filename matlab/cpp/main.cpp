@@ -20,10 +20,10 @@
 #include "removeSeed.h"
 #include "getRegion.h"
 #include "NSStar.h"
-#include "aux.h"
 #include "skizException.h"
 #include "typedefs.cpp"
 #include "aux-functions/readSeeds.h"
+#include "aux-functions/readMatrix.h"
 
 typedef std::chrono::high_resolution_clock now;
 
@@ -87,7 +87,7 @@ int main() {
     }
     auto elapsed = now::now() - start;
     long long ms = duration_cast<microseconds>(elapsed).count() / (ns - 5);
-    std::string str = "addSeed:\t\t" + std::to_string(ms) + " us per action\n";
+    std::string str = "addSeed:\t\t" + std::to_string(ms) + " us per seed\n";
     std::cout << str.c_str();
 
     // removeSeed timing
@@ -97,6 +97,6 @@ int main() {
     }
     elapsed = now::now() - start;
     ms = duration_cast<microseconds>(elapsed).count() / (ns - 5);
-    str = "removeSeed:\t\t" + std::to_string(ms) + " us per action\n";
+    str = "removeSeed:\t\t" + std::to_string(ms) + " us per seed\n";
     std::cout << str.c_str();
 }

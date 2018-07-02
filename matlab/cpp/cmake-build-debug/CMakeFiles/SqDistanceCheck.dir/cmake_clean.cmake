@@ -4,7 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/vd.cpp.o"
-  "CMakeFiles/SqDistanceCheck.dir/aux.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/skizException.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o"

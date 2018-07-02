@@ -5,10 +5,8 @@
 
 #include <eigen3/Eigen/Dense>
 #include <map>
-#include <chrono>
 
 #include "cpp/vd.h"
-#include "cpp/aux.h"
 #include "cpp/addSeed.h"
 #include "cpp/skizException.h"
 #include "cpp/grabVD.h"

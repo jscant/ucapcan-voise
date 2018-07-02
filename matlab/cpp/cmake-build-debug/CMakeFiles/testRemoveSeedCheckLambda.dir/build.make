@@ -122,22 +122,9 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp -o CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.s
 
-CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
-CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o: ../aux.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
-
-CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp > CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.i
-
-CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp -o CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.s
-
 CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o: ../skizException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.i: cmake_force
@@ -150,7 +137,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o: ../addSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.i: cmake_force
@@ -163,7 +150,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o: ../NSStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.i: cmake_force
@@ -176,7 +163,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o: ../pointInRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.i: cmake_force
@@ -189,7 +176,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o: ../getRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.i: cmake_force
@@ -202,7 +189,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o: ../removeSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.s: cmake_force
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.s: cmake_fo
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o: ../aux-functions/readMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.s: cmake_f
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o: CMakeFiles/testRemoveSeedCheckLambda.dir/flags.make
 CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/test_main.cpp
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.i: cmake_force
@@ -259,7 +246,6 @@ testRemoveSeedCheckLambda_OBJECTS = \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o" \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o" \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.o" \
-"CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o" \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o" \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o" \
 "CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o" \
@@ -278,7 +264,6 @@ testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-he
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/bruteForceCheckV.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/test/test-help-fns/loadVD.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/vd.cpp.o
-testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/aux.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/skizException.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/addSeed.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/NSStar.cpp.o
@@ -290,7 +275,7 @@ testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/aux-function
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/build.make
 testRemoveSeedCheckLambda: CMakeFiles/testRemoveSeedCheckLambda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable testRemoveSeedCheckLambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable testRemoveSeedCheckLambda"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testRemoveSeedCheckLambda.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

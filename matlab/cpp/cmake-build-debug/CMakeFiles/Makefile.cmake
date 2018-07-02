@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "CMakeDoxyfile.in"
   "CMakeFiles/3.11.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.11.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.11.2/CMakeSystem.cmake"
@@ -44,19 +45,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "../Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/InVectorCheck.dir/DependInfo.cmake"
-  "CMakeFiles/PointInRegionCheck.dir/DependInfo.cmake"
-  "CMakeFiles/testRemoveSeedCheckV.dir/DependInfo.cmake"
   "CMakeFiles/testAddSeedCheckV.dir/DependInfo.cmake"
-  "CMakeFiles/apidoc.dir/DependInfo.cmake"
   "CMakeFiles/testRemoveSeedCheckLambda.dir/DependInfo.cmake"
-  "CMakeFiles/SqDistanceCheck.dir/DependInfo.cmake"
-  "CMakeFiles/standalone_skiz.dir/DependInfo.cmake"
   "CMakeFiles/testAddSeedCheckLambda.dir/DependInfo.cmake"
-  "CMakeFiles/apidoc_forced.dir/DependInfo.cmake"
+  "CMakeFiles/standalone_skiz.dir/DependInfo.cmake"
+  "CMakeFiles/SqDistanceCheck.dir/DependInfo.cmake"
+  "CMakeFiles/doc.dir/DependInfo.cmake"
+  "CMakeFiles/testRemoveSeedCheckV.dir/DependInfo.cmake"
+  "CMakeFiles/PointInRegionCheck.dir/DependInfo.cmake"
+  "CMakeFiles/InVectorCheck.dir/DependInfo.cmake"
   )

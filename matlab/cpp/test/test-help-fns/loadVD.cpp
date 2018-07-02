@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Loads voronoi diagram saved by Matlab in ascii format.
+ * @brief Loads Voronoi diagram saved by Matlab in ascii format.
  */
 #include <string>
 #include <iostream>
@@ -8,7 +8,6 @@
 #include "loadStruct.h"
 #include "../../removeSeed.h"
 #include "../../getRegion.h"
-#include "../../aux.h"
 #include "../../skizException.h"
 #include "../../typedefs.cpp"
 #include "../../aux-functions/readSeeds.h"

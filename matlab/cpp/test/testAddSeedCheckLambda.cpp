@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief TEST FILE
+ * @brief Unit tests for whether the addSeed method correctly recalculates the \f$ \lambda \f$ matrix.
  */
 
 #include <string>
@@ -8,7 +8,6 @@
 #include "../addSeed.h"
 #include "../removeSeed.h"
 #include "../getRegion.h"
-#include "../aux.h"
 #include "../skizException.h"
 #include "../typedefs.cpp"
 #include "../vd.h"
@@ -16,11 +15,12 @@
 #include "test-help-fns/loadStruct.h"
 #include "test-help-fns/bruteForceCheckLambda.h"
 
- /**
-  * @test Brute
-  * @brief Bruteforcelambda
-  */
-TEST_CASE("Brute force check lambdas after adding seeds"){
+/**
+* @test AddSeedCheckLambda
+* @brief Add seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in
+* its \f$ \lambda \f$ matrix entry.
+*/
+TEST_CASE("Check whether the addSeed method correctly recalculates the lambda matrix"){
 
     // Load VD
     std::string path = "../../cpp/test/resources/";

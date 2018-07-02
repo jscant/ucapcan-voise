@@ -2,7 +2,6 @@
 
 #include "bruteForceCheckV.h"
 #include "../../typedefs.cpp"
-#include "../../aux.h"
 #include "../../vd.h"
 #include "../../aux-functions/sqDist.h"
 

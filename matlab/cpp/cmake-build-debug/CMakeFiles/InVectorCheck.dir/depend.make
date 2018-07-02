@@ -5,7 +5,6 @@ CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../NSStar.cpp
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../NSStar.h
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../aux-functions/inVector.h
-CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../pointInRegion.h
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../skizException.h
 CMakeFiles/InVectorCheck.dir/NSStar.cpp.o: ../typedefs.cpp
@@ -18,7 +17,6 @@ CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../getRegion.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/InVectorCheck.dir/addSeed.cpp.o: ../skizException.h
@@ -32,10 +30,6 @@ CMakeFiles/InVectorCheck.dir/aux-functions/readMatrix.cpp.o: ../typedefs.cpp
 CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
 CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.h
 CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.o: ../typedefs.cpp
-
-CMakeFiles/InVectorCheck.dir/aux.cpp.o: ../aux.cpp
-CMakeFiles/InVectorCheck.dir/aux.cpp.o: ../aux.h
-CMakeFiles/InVectorCheck.dir/aux.cpp.o: ../typedefs.cpp
 
 CMakeFiles/InVectorCheck.dir/getRegion.cpp.o: ../getRegion.cpp
 CMakeFiles/InVectorCheck.dir/getRegion.cpp.o: ../getRegion.h
@@ -54,7 +48,6 @@ CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../getRegion.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/InVectorCheck.dir/removeSeed.cpp.o: ../removeSeed.cpp
@@ -70,14 +63,12 @@ CMakeFiles/InVectorCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/catch.h
 CMakeFiles/InVectorCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
 
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../typedefs.cpp
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../vd.h
 
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../typedefs.cpp
@@ -85,7 +76,6 @@ CMakeFiles/InVectorCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../vd.h
 
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readMatrix.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readSeeds.h
-CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../getRegion.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../removeSeed.h
 CMakeFiles/InVectorCheck.dir/test/test-help-fns/loadVD.cpp.o: ../skizException.h

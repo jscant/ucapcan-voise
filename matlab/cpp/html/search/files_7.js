@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['vd_2ecpp',['vd.cpp',['../vd_8cpp.html',1,'']]],
-  ['vd_2eh',['vd.h',['../vd_8h.html',1,'']]]
+  ['skizexception_2ecpp',['skizException.cpp',['../skizException_8cpp.html',1,'']]],
+  ['skizexception_2eh',['skizException.h',['../skizException_8h.html',1,'']]],
+  ['sqdist_2eh',['sqDist.h',['../sqDist_8h.html',1,'']]]
 ];

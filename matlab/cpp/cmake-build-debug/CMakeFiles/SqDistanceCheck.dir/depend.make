@@ -5,7 +5,6 @@ CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../NSStar.cpp
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../NSStar.h
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../aux-functions/inVector.h
-CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../pointInRegion.h
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../skizException.h
 CMakeFiles/SqDistanceCheck.dir/NSStar.cpp.o: ../typedefs.cpp
@@ -18,7 +17,6 @@ CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../getRegion.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/SqDistanceCheck.dir/addSeed.cpp.o: ../skizException.h
@@ -32,10 +30,6 @@ CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o: ../typedefs.cpp
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.h
 CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o: ../typedefs.cpp
-
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.o: ../aux.cpp
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.o: ../aux.h
-CMakeFiles/SqDistanceCheck.dir/aux.cpp.o: ../typedefs.cpp
 
 CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o: ../getRegion.cpp
 CMakeFiles/SqDistanceCheck.dir/getRegion.cpp.o: ../getRegion.h
@@ -54,7 +48,6 @@ CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../aux-functions/circumcentre.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../aux-functions/inVector.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../aux-functions/sqDist.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../aux-functions/updateDict.h
-CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../getRegion.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../pointInRegion.h
 CMakeFiles/SqDistanceCheck.dir/removeSeed.cpp.o: ../removeSeed.cpp
@@ -70,14 +63,12 @@ CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/catch
 CMakeFiles/SqDistanceCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
 
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../test/test-help-fns/bruteForceCheckLambda.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../typedefs.cpp
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../vd.h
 
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux-functions/sqDist.h
-CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../test/test-help-fns/bruteForceCheckV.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../typedefs.cpp
@@ -85,7 +76,6 @@ CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/bruteForceCheckV.cpp.o: ../vd.
 
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readMatrix.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux-functions/readSeeds.h
-CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../aux.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../getRegion.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../removeSeed.h
 CMakeFiles/SqDistanceCheck.dir/test/test-help-fns/loadVD.cpp.o: ../skizException.h

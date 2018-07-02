@@ -211,11 +211,17 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
 //Doxygen documentation generation tool (http://www.doxygen.org)
 DOXYGEN_EXECUTABLE:FILEPATH=/usr/local/bin/doxygen
 
+//Generate Doxymentation
+GENERATE_DOXYGEN:BOOL=OFF
+
 //Path to a program.
 ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
+
+//Generate Catch2 unit tests
+TESTING:BOOL=OFF
 
 //Value Computed by CMake
 standalone_skiz_BINARY_DIR:STATIC=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug

@@ -13,7 +13,6 @@
 #include <map>
 
 #include "grabVD.h"
-#include "aux.h"
 #include "skizException.h"
 #include "typedefs.cpp"
 
@@ -112,19 +111,6 @@ vd grabVD(const mxArray *prhs[]) {
     mwIndex nRows = mxGetM(lamIncomingArray);
     mwIndex nCols = mxGetN(lamIncomingArray);
 
-    // Eigen arrays to put matrix data in
-
-    /*
-
-    Mat lam, v, px, py;
-    lam.resize(nRows, nCols);
-    v.resize(nRows, nCols);
-    px.resize(nRows, nCols);
-    py.resize(nRows, nCols);
-    */
-
-//    /*
-
     // Create and populate vd
     vd VD = vd(nr, nc);
 
@@ -132,18 +118,6 @@ vd grabVD(const mxArray *prhs[]) {
     VD.setV(Eigen::Map<Mat>(vPtr, nRows, nCols));
     VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1);
     VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
-//    */
- /*
-    // Populate Eigen arrays with ML data
-    for (mwIndex i = 0; i < nRows; ++i) {
-        for (mwIndex j = 0; j < nCols; ++j) {
-            lam(i, j) = lamPtr[j * nCols + i];
-            v(i, j) = vPtr[j * nCols + i];
-            px(i, j) = xPtr[j * nCols + i] - 1; // Array indexing in ML starts at 1
-            py(i, j) = yPtr[j * nCols + i] - 1;
-        }
-    }
- */
 
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
     mwIndex skLen = std::max(mxGetM(skIncomingArray), mxGetN(skIncomingArray));

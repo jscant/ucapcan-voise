@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['removeseed_2ecpp',['removeSeed.cpp',['../removeSeed_8cpp.html',1,'']]],
-  ['removeseed_2eh',['removeSeed.h',['../removeSeed_8h.html',1,'']]]
+  ['nsstar_2ecpp',['NSStar.cpp',['../NSStar_8cpp.html',1,'']]],
+  ['nsstar_2eh',['NSStar.h',['../NSStar_8h.html',1,'']]]
 ];
