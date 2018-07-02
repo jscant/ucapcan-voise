@@ -23,6 +23,7 @@
 #include "aux.h"
 #include "skizException.h"
 #include "typedefs.cpp"
+#include "aux-functions/readSeeds.h"
 
 typedef std::chrono::high_resolution_clock now;
 

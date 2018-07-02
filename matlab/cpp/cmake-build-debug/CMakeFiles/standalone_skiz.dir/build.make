@@ -187,6 +187,32 @@ CMakeFiles/standalone_skiz.dir/vd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/vd.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/vd.cpp -o CMakeFiles/standalone_skiz.dir/vd.cpp.s
 
+CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
+CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
+
+CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp > CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.i
+
+CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp -o CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.s
+
+CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
+CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o: ../aux-functions/readMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
+
+CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp > CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.i
+
+CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp -o CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.s
+
 # Object files for target standalone_skiz
 standalone_skiz_OBJECTS = \
 "CMakeFiles/standalone_skiz.dir/main.cpp.o" \
@@ -198,7 +224,9 @@ standalone_skiz_OBJECTS = \
 "CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/skizException.cpp.o" \
-"CMakeFiles/standalone_skiz.dir/vd.cpp.o"
+"CMakeFiles/standalone_skiz.dir/vd.cpp.o" \
+"CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o" \
+"CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o"
 
 # External object files for target standalone_skiz
 standalone_skiz_EXTERNAL_OBJECTS =
@@ -213,9 +241,11 @@ standalone_skiz: CMakeFiles/standalone_skiz.dir/pointInRegion.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/skizException.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/vd.cpp.o
+standalone_skiz: CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o
+standalone_skiz: CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/build.make
 standalone_skiz: CMakeFiles/standalone_skiz.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable standalone_skiz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable standalone_skiz"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/standalone_skiz.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

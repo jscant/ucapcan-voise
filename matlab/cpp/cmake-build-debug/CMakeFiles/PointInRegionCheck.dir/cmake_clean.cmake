@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o"
+  "CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o"
+  "CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o"
   "CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o"
   "PointInRegionCheck.pdb"
   "PointInRegionCheck"

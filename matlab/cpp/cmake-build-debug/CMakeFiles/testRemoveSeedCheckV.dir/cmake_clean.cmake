@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testRemoveSeedCheckV.dir/pointInRegion.cpp.o"
   "CMakeFiles/testRemoveSeedCheckV.dir/getRegion.cpp.o"
   "CMakeFiles/testRemoveSeedCheckV.dir/removeSeed.cpp.o"
+  "CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readSeeds.cpp.o"
+  "CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readMatrix.cpp.o"
   "CMakeFiles/testRemoveSeedCheckV.dir/test/Catch2/test_main.cpp.o"
   "testRemoveSeedCheckV.pdb"
   "testRemoveSeedCheckV"

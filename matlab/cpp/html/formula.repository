@@ -1,5 +1,5 @@
-\form#0:$R^2$
-\form#1:$i^{th}$
+\form#0:$i^{th}$
+\form#1:$ \lambda, \nu $
 \form#2:$ \lambda $
 \form#3:$\nu$
 \form#4:$\lambda$
@@ -8,4 +8,3 @@
 \form#7:$\nu_{ij}$
 \form#8:$ i^{th} $
 \form#9:$ j^{th} $
-\form#10:$ \lambda, \nu $

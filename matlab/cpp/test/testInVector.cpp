@@ -1,4 +1,4 @@
-#include "../aux.h"
+#include "../aux-functions/inVector.h"
 #include "../typedefs.cpp"
 #include "Catch2/catch.hpp"
 

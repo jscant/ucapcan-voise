@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['mat',['Mat',['../typedefs_8cpp.html#a9fa28c1f74e909474857584f5c7b0088',1,'typedefs.cpp']]]
+  ['nsstar',['nsStar',['../group__nsStar.html',1,'']]],
+  ['nsstar_2ecpp',['NSStar.cpp',['../NSStar_8cpp.html',1,'']]],
+  ['nsstar_2eh',['NSStar.h',['../NSStar_8h.html',1,'']]]
 ];

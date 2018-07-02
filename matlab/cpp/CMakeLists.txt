@@ -5,7 +5,7 @@ find_package(Doxygen)
 
 set(SOURCE_FILES main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp
         addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp
-        removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp)
+        removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp aux-functions/circumcentre.h)
 
 if(DOXYGEN_FOUND)
     set(CMAKE_PROJECT_NAME "ASDF")
@@ -19,7 +19,6 @@ if(DOXYGEN_FOUND)
     set(DOXYGEN_SKIP_FUNCTION_MACROS NO)
     set(DOXYGEN_LAYOUT_FILE DoxygenLayout.xml)
     set(DOXYGEN_EXTRACT_PRIVATE YES)
-
 
     add_custom_command(
             OUTPUT ${DOXYGEN_OUTPUT}
@@ -47,7 +46,7 @@ message(STATUS "${CMAKE_CXX_STANDARD}")
 set( CMAKE_CXX_FLAGS "-Wall -g -O3" )
 
 add_executable(standalone_skiz main.cpp typedefs.cpp addSeed.cpp aux.cpp getRegion.cpp NSStar.cpp pointInRegion.cpp
-        removeSeed.cpp skizException.cpp vd.cpp typedefs.cpp)
+        removeSeed.cpp skizException.cpp vd.cpp aux-functions/readSeeds.cpp aux-functions/readMatrix.cpp)
 
 
 enable_testing()
@@ -58,7 +57,7 @@ target_sources(Catch INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/test/Catch2/test_mai
 set (TEST_DEPENDENCIES test/test-help-fns/bruteForceCheckLambda.cpp test/test-help-fns/bruteForceCheckV.cpp
         test/test-help-fns/loadStruct.h
         test/test-help-fns/loadVD.cpp vd.cpp aux.cpp skizException.cpp addSeed.cpp NSStar.cpp pointInRegion.cpp
-        getRegion.cpp removeSeed.cpp)
+        getRegion.cpp removeSeed.cpp aux-functions/readSeeds.cpp aux-functions/readMatrix.cpp)
 
 add_executable(testAddSeedCheckLambda test/testAddSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
 add_executable(testRemoveSeedCheckLambda test/testRemoveSeedCheckLambda.cpp ${TEST_DEPENDENCIES})

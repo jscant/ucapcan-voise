@@ -1,4 +1,4 @@
-#include "../aux.h"
+#include "../aux-functions/sqDist.h"
 #include "Catch2/catch.hpp"
 
 TEST_CASE("Square distance of identical points") {

@@ -78,9 +78,10 @@ Doxyfile: ../removeSeed.h
 Doxyfile: ../vd.cpp
 Doxyfile: ../vd.h
 Doxyfile: ../test/testAddSeedCheckLambda.cpp
+Doxyfile: ../aux-functions/circumcentre.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Doxyfile"
 	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /opt/cmake-3.11.2/bin/cmake -E echo_append Building\ API\ Documentation...
-	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /usr/local/bin/doxygen main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp
+	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /usr/local/bin/doxygen main.cpp aux.cpp aux.h pointInRegion.cpp pointInRegion.h skizException.cpp skizException.h addSeed.cpp addSeed.h getRegion.cpp getRegion.h grabVD.cpp grabVD.h NSStar.cpp NSStar.h pushVD.cpp pushVD.h removeSeed.cpp removeSeed.h vd.cpp vd.h test/testAddSeedCheckLambda.cpp aux-functions/circumcentre.h
 	cd /home/jack/dev/project/voise-1.3/matlab/cpp && /opt/cmake-3.11.2/bin/cmake -E echo Done.
 
 apidoc: CMakeFiles/apidoc

@@ -347,6 +347,102 @@ addSeed.cpp.s:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/addSeed.cpp.s
 .PHONY : addSeed.cpp.s
 
+aux-functions/readMatrix.o: aux-functions/readMatrix.cpp.o
+
+.PHONY : aux-functions/readMatrix.o
+
+# target to build an object file
+aux-functions/readMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o
+.PHONY : aux-functions/readMatrix.cpp.o
+
+aux-functions/readMatrix.i: aux-functions/readMatrix.cpp.i
+
+.PHONY : aux-functions/readMatrix.i
+
+# target to preprocess a source file
+aux-functions/readMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readMatrix.cpp.i
+.PHONY : aux-functions/readMatrix.cpp.i
+
+aux-functions/readMatrix.s: aux-functions/readMatrix.cpp.s
+
+.PHONY : aux-functions/readMatrix.s
+
+# target to generate assembly for a file
+aux-functions/readMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readMatrix.cpp.s
+.PHONY : aux-functions/readMatrix.cpp.s
+
+aux-functions/readSeeds.o: aux-functions/readSeeds.cpp.o
+
+.PHONY : aux-functions/readSeeds.o
+
+# target to build an object file
+aux-functions/readSeeds.cpp.o:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o
+.PHONY : aux-functions/readSeeds.cpp.o
+
+aux-functions/readSeeds.i: aux-functions/readSeeds.cpp.i
+
+.PHONY : aux-functions/readSeeds.i
+
+# target to preprocess a source file
+aux-functions/readSeeds.cpp.i:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readSeeds.cpp.i
+.PHONY : aux-functions/readSeeds.cpp.i
+
+aux-functions/readSeeds.s: aux-functions/readSeeds.cpp.s
+
+.PHONY : aux-functions/readSeeds.s
+
+# target to generate assembly for a file
+aux-functions/readSeeds.cpp.s:
+	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/aux-functions/readSeeds.cpp.s
+.PHONY : aux-functions/readSeeds.cpp.s
+
 aux.o: aux.cpp.o
 
 .PHONY : aux.o
@@ -1083,6 +1179,12 @@ help:
 	@echo "... addSeed.o"
 	@echo "... addSeed.i"
 	@echo "... addSeed.s"
+	@echo "... aux-functions/readMatrix.o"
+	@echo "... aux-functions/readMatrix.i"
+	@echo "... aux-functions/readMatrix.s"
+	@echo "... aux-functions/readSeeds.o"
+	@echo "... aux-functions/readSeeds.i"
+	@echo "... aux-functions/readSeeds.s"
 	@echo "... aux.o"
 	@echo "... aux.i"
 	@echo "... aux.s"

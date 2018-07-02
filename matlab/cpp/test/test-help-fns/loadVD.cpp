@@ -1,7 +1,7 @@
-//
-// Created by root on 01/07/18.
-//
-
+/**
+ * @file
+ * @brief Loads voronoi diagram saved by Matlab in ascii format.
+ */
 #include <string>
 #include <iostream>
 #include "loadVD.h"
@@ -11,6 +11,8 @@
 #include "../../aux.h"
 #include "../../skizException.h"
 #include "../../typedefs.cpp"
+#include "../../aux-functions/readSeeds.h"
+#include "../../aux-functions/readMatrix.h"
 
 loadStruct loadVD(std::string basePath){
     int nc = 256, nr = 256;

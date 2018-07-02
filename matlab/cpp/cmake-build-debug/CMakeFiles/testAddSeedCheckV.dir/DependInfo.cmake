@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/NSStar.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/addSeed.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/addSeed.cpp.o"
+  "/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/aux-functions/readMatrix.cpp.o"
+  "/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/aux-functions/readSeeds.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/aux.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/getRegion.cpp.o"
   "/home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.cpp" "/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles/testAddSeedCheckV.dir/pointInRegion.cpp.o"

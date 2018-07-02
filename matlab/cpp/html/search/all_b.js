@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['uint32',['uint32',['../typedefs_8cpp.html#a8ad23e2333787a214e20a58a284a5a60',1,'typedefs.cpp']]],
-  ['updatedict',['updateDict',['../group__updateDict.html#gaecb9b6904667c0bde630eadf45d36835',1,'updateDict(std::map&lt; real, RealVec &gt; &amp;d, const real &amp;key, const real &amp;value):&#160;aux.cpp'],['../group__updateDict.html#gaecb9b6904667c0bde630eadf45d36835',1,'updateDict(std::map&lt; real, RealVec &gt; &amp;d, const real &amp;key, const real &amp;value):&#160;aux.cpp'],['../group__updateDict.html',1,'(Global Namespace)']]]
+  ['v_5fstruct',['V_struct',['../structV__struct.html',1,'']]],
+  ['vd',['vd',['../classvd.html',1,'vd'],['../classvd.html#a765c16ee377a2a0f9651d555edd3a158',1,'vd::vd()']]],
+  ['vd_2ecpp',['vd.cpp',['../vd_8cpp.html',1,'']]],
+  ['vd_2eh',['vd.h',['../vd_8h.html',1,'']]]
 ];

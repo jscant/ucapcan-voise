@@ -10,6 +10,7 @@
 #include "../../typedefs.cpp"
 #include "../../aux.h"
 #include "../../vd.h"
+#include "../../aux-functions/sqDist.h"
 #include <iostream>
 /**
  * @brief Checks by brute force whether correct values of lambda have been assigned according to [1] Section 3.

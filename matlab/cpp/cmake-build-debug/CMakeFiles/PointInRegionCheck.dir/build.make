@@ -213,9 +213,35 @@ CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.cpp -o CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.s
 
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o: CMakeFiles/PointInRegionCheck.dir/flags.make
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o: ../aux-functions/readSeeds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
+
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp > CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.i
+
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp -o CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.s
+
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o: CMakeFiles/PointInRegionCheck.dir/flags.make
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o: ../aux-functions/readMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
+
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp > CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.i
+
+CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp -o CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.s
+
 CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o: CMakeFiles/PointInRegionCheck.dir/flags.make
 CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o: ../test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/matlab/cpp/test/Catch2/test_main.cpp
 
 CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.i: cmake_force
@@ -240,6 +266,8 @@ PointInRegionCheck_OBJECTS = \
 "CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.o" \
 "CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o" \
 "CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o" \
+"CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o" \
+"CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o" \
 "CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o"
 
 # External object files for target PointInRegionCheck
@@ -257,10 +285,12 @@ PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/NSStar.cpp.o
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/pointInRegion.cpp.o
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/getRegion.cpp.o
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/removeSeed.cpp.o
+PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/aux-functions/readSeeds.cpp.o
+PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/aux-functions/readMatrix.cpp.o
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/test/Catch2/test_main.cpp.o
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/build.make
 PointInRegionCheck: CMakeFiles/PointInRegionCheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable PointInRegionCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/matlab/cpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable PointInRegionCheck"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PointInRegionCheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

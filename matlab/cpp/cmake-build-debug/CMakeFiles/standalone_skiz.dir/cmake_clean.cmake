@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/standalone_skiz.dir/removeSeed.cpp.o"
   "CMakeFiles/standalone_skiz.dir/skizException.cpp.o"
   "CMakeFiles/standalone_skiz.dir/vd.cpp.o"
+  "CMakeFiles/standalone_skiz.dir/aux-functions/readSeeds.cpp.o"
+  "CMakeFiles/standalone_skiz.dir/aux-functions/readMatrix.cpp.o"
   "standalone_skiz.pdb"
   "standalone_skiz"
 )

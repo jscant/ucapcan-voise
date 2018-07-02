@@ -17,6 +17,10 @@ pointInRegion.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/pointInRegion.h
 skizException.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h
+aux-functions/inVector.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/inVector.h
+aux-functions/circumcentre.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/circumcentre.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/NSStar.h
 vector
@@ -41,6 +45,14 @@ getRegion.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/getRegion.h
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
+aux-functions/inVector.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/inVector.h
+aux-functions/sqDist.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/sqDist.h
+aux-functions/circumcentre.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/circumcentre.h
+aux-functions/updateDict.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/updateDict.h
 typedefs.cpp
 /home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 iostream
@@ -50,27 +62,53 @@ iostream
 vd.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
 
-/home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
-mex.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/circumcentre.h
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/inVector.h
+vector
 -
-matrix.h
+../typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp
+readMatrix.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.h
+fstream
 -
-algorithm
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.h
+string
 -
-array
+../typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp
+readSeeds.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.h
+string
 -
+fstream
+-
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.h
+vector
+-
+../typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/sqDist.h
+../typedefs.cpp
+/home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/updateDict.h
 vector
 -
 map
 -
-fstream
--
-string
--
+
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp
 aux.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
-skizException.h
-/home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 array
@@ -141,6 +179,14 @@ typedefs.cpp
 /home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
 removeSeed.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.h
+aux-functions/inVector.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/inVector.h
+aux-functions/sqDist.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/sqDist.h
+aux-functions/circumcentre.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/circumcentre.h
+aux-functions/updateDict.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/updateDict.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/removeSeed.h
 vd.h
@@ -583,6 +629,8 @@ bruteForceCheckLambda.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 ../../vd.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
+../../aux-functions/sqDist.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/sqDist.h
 iostream
 -
 
@@ -601,6 +649,8 @@ bruteForceCheckV.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/aux.h
 ../../vd.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/vd.h
+../../aux-functions/sqDist.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/sqDist.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/bruteForceCheckV.h
 ../../vd.h
@@ -633,6 +683,10 @@ loadStruct.h
 /home/jack/dev/project/voise-1.3/matlab/cpp/skizException.h
 ../../typedefs.cpp
 /home/jack/dev/project/voise-1.3/matlab/cpp/typedefs.cpp
+../../aux-functions/readSeeds.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.h
+../../aux-functions/readMatrix.h
+/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.h
 
 /home/jack/dev/project/voise-1.3/matlab/cpp/test/test-help-fns/loadVD.h
 loadStruct.h

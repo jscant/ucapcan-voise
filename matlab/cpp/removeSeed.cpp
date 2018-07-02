@@ -17,6 +17,10 @@
 #include "aux.h"
 #include "typedefs.cpp"
 #include "removeSeed.h"
+#include "aux-functions/inVector.h"
+#include "aux-functions/sqDist.h"
+#include "aux-functions/circumcentre.h"
+#include "aux-functions/updateDict.h"
 
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()

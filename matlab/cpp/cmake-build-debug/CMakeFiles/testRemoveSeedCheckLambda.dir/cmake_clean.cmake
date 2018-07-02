@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testRemoveSeedCheckLambda.dir/pointInRegion.cpp.o"
   "CMakeFiles/testRemoveSeedCheckLambda.dir/getRegion.cpp.o"
   "CMakeFiles/testRemoveSeedCheckLambda.dir/removeSeed.cpp.o"
+  "CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readSeeds.cpp.o"
+  "CMakeFiles/testRemoveSeedCheckLambda.dir/aux-functions/readMatrix.cpp.o"
   "CMakeFiles/testRemoveSeedCheckLambda.dir/test/Catch2/test_main.cpp.o"
   "testRemoveSeedCheckLambda.pdb"
   "testRemoveSeedCheckLambda"

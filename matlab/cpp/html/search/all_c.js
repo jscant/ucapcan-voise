@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['v_5fstruct',['V_struct',['../structV__struct.html',1,'']]],
-  ['vd',['vd',['../classvd.html',1,'vd'],['../classvd.html#a765c16ee377a2a0f9651d555edd3a158',1,'vd::vd()']]],
-  ['vd_2ecpp',['vd.cpp',['../vd_8cpp.html',1,'']]],
-  ['vd_2eh',['vd.h',['../vd_8h.html',1,'']]]
+  ['w_5fstruct',['W_struct',['../structW__struct.html',1,'']]],
+  ['what',['what',['../classSKIZException.html#a55c36f650f02f283215679ad070dd54b',1,'SKIZException::what()'],['../classSKIZLinearSeedsException.html#a4d187b93ce4261b7303ab75e23e06e30',1,'SKIZLinearSeedsException::what()'],['../classSKIZIdenticalSeedsException.html#a1edd2deac7bafc875e21c67d114494ae',1,'SKIZIdenticalSeedsException::what()'],['../classSKIZIOException.html#a9c1c40e5e47cb51fb0fb3803cdae4a76',1,'SKIZIOException::what()']]]
 ];

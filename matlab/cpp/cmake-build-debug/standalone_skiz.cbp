@@ -490,6 +490,46 @@
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
 		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.cpp">
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="testRemoveSeedCheckV"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readMatrix.h">
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="testRemoveSeedCheckV"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.cpp">
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="testRemoveSeedCheckV"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux-functions/readSeeds.h">
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="testRemoveSeedCheckV"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/matlab/cpp/aux.cpp">
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>

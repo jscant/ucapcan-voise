@@ -8,6 +8,8 @@
 #include "aux.h"
 #include "pointInRegion.h"
 #include "skizException.h"
+#include "aux-functions/inVector.h"
+#include "aux-functions/circumcentre.h"
 
 /**
  * @defgroup nsStar nsStar
