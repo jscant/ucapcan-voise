@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -g -O1 -g   CMakeFiles/standaloneSKIZTest.dir/test/testTest.cpp.o CMakeFiles/standaloneSKIZTest.dir/test/testsMain.cpp.o  -o standaloneSKIZTest -lstandalone_skiz -lCatch 

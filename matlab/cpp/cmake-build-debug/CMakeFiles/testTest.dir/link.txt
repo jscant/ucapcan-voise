@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -g -O1 -g   CMakeFiles/testTest.dir/src/tests/testTest.cpp.o  -o build/testTest 

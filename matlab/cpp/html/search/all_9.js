@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['skiz_20voronoi_20diagram_20tool_20and_20matlab_20bindings_20for_20voise_20algorithm',['SKIZ Voronoi Diagram Tool and Matlab Bindings for VOISE Algorithm',['../index.html',1,'']]],
   ['setk',['setK',['../classvd.html#a7c692a97b49c4596c4ec1bc0a129b516',1,'vd']]],
   ['setlam',['setLam',['../classvd.html#ae13e9e465d08425218bd8f85ce420c05',1,'vd']]],
   ['setlambyidx',['setLamByIdx',['../classvd.html#a8df228a05762e0c0a2bccc28094a1f92',1,'vd']]],

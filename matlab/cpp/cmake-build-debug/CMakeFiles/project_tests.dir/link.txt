@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -g -O3 -g   CMakeFiles/project_tests.dir/test/test_case_1.cpp.o  -o project_tests -lcatch 

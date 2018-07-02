@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['_7eskizexception',['~SKIZException',['../classSKIZException.html#ac1b8f1ba8ae87ce018c645a1a67b6d34',1,'SKIZException']]],
-  ['_7eskizidenticalseedsexception',['~SKIZIdenticalSeedsException',['../classSKIZIdenticalSeedsException.html#addce88717ce4fe89ef5d431e7fdff84b',1,'SKIZIdenticalSeedsException']]],
-  ['_7eskizindexexception',['~SKIZIndexException',['../classSKIZIndexException.html#ad41e9aa637c94d9e559f84333c6fafb5',1,'SKIZIndexException']]],
-  ['_7eskizioexception',['~SKIZIOException',['../classSKIZIOException.html#af331baab993a6666a5f6509a332510b3',1,'SKIZIOException']]],
-  ['_7eskizlinearseedsexception',['~SKIZLinearSeedsException',['../classSKIZLinearSeedsException.html#a8482d8d51517e183205757fd4855107b',1,'SKIZLinearSeedsException']]]
+  ['what',['what',['../classSKIZException.html#a55c36f650f02f283215679ad070dd54b',1,'SKIZException::what()'],['../classSKIZLinearSeedsException.html#a4d187b93ce4261b7303ab75e23e06e30',1,'SKIZLinearSeedsException::what()'],['../classSKIZIdenticalSeedsException.html#a1edd2deac7bafc875e21c67d114494ae',1,'SKIZIdenticalSeedsException::what()'],['../classSKIZIOException.html#a9c1c40e5e47cb51fb0fb3803cdae4a76',1,'SKIZIOException::what()']]]
 ];

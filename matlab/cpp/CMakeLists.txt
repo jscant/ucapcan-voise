@@ -15,10 +15,17 @@ set(GENERATE_DOXYGEN ON)
 if(GENERATE_DOXYGEN)
     find_package(Doxygen)
     if(DOXYGEN_FOUND)
-        set(doxyfile_in ${CMAKE_CURRENT_SOURCE_DIR}/cmake-build-debug/CMakeDoxyfile.in)
+        set(DOXYGEN_OPTIMIZE_OUTPUT_FOR_C YES)
+        set(DOXYGEN_SKIP_FUNCTION_MACROS NO)
+        set(DOXYGEN_LAYOUT_FILE DoxygenLayout.xml)
+        set(DOXYGEN_SHOW_DIRECTORIES YES)
+        set(DOXYGEN_INPUT ". aux-functions test build/mainpage-info.txt")
+        set(doxyfile_in ${CMAKE_CURRENT_SOURCE_DIR}/build/CMakeDoxyfile.in)
         set(doxyfile ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile)
 
         configure_file(${doxyfile_in} ${doxyfile} @ONLY)
+
+
 
         add_custom_target(doc ALL
                 COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile}

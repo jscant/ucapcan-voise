@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wall -g -O1 -g   CMakeFiles/failTest.dir/src/tests/failTest.cpp.o  -o build/failTest 

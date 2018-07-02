@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://github.com/philsquared/Catch/releases/download/v1.9.6/catch.hpp'
-tag=''
