@@ -1,0 +1,44 @@
+\hypertarget{testRemoveSeedCheckLambda_8cpp}{}\section{src/test/test\+Remove\+Seed\+Check\+Lambda.cpp File Reference}
+\label{testRemoveSeedCheckLambda_8cpp}\index{src/test/test\+Remove\+Seed\+Check\+Lambda.\+cpp@{src/test/test\+Remove\+Seed\+Check\+Lambda.\+cpp}}
+
+
+Unit tests for whether the remove\+Seed method correctly recalculates the $ \lambda $ matrix.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}Catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../add\+Seed.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../remove\+Seed.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../get\+Region.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../skiz\+Exception.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../typedefs.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../vd.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+V\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+Struct.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}test-\/help-\/fns/brute\+Force\+Check\+Lambda.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testRemoveSeedCheckLambda_8cpp_a4d196541b87cdd5ef59d6690ccaff669}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Check whether the \mbox{\hyperlink{removeSeed_8h_a03ef0714b7c16aaa2fd9ffdf467938d9}{remove\+Seed}} method correctly recalculates the lambda matrix\char`\"{})
+\begin{DoxyCompactList}\small\item\em Remove seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in its $ \lambda $ matrix entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Unit tests for whether the remove\+Seed method correctly recalculates the $ \lambda $ matrix. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{testRemoveSeedCheckLambda_8cpp_a4d196541b87cdd5ef59d6690ccaff669}\label{testRemoveSeedCheckLambda_8cpp_a4d196541b87cdd5ef59d6690ccaff669}} 
+\index{test\+Remove\+Seed\+Check\+Lambda.\+cpp@{test\+Remove\+Seed\+Check\+Lambda.\+cpp}!T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{T\+E\+S\+T\+\_\+\+C\+A\+SE@{T\+E\+S\+T\+\_\+\+C\+A\+SE}!test\+Remove\+Seed\+Check\+Lambda.\+cpp@{test\+Remove\+Seed\+Check\+Lambda.\+cpp}}
+\subsubsection{\texorpdfstring{T\+E\+S\+T\+\_\+\+C\+A\+S\+E()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Check whether the \mbox{\hyperlink{removeSeed_8h_a03ef0714b7c16aaa2fd9ffdf467938d9}{remove\+Seed}} method correctly recalculates the lambda matrix\char`\"{}}]{ }\end{DoxyParamCaption})}
+
+
+
+Remove seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in its $ \lambda $ matrix entry. 
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000010}{Test}}]Remove\+Seed\+Check\+Lambda \end{DoxyRefDesc}

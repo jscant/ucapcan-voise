@@ -1,0 +1,617 @@
+\hypertarget{classvd}{}\section{vd Class Reference}
+\label{classvd}\index{vd@{vd}}
+
+
+Contains all information about voronoi diagram needed to perform S\+K\+IZ algorithm from \mbox{[}1\mbox{]}.  
+
+
+
+
+{\ttfamily \#include $<$vd.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classvd_a062d265bd642352d6f7e8cc8685ed7a8}{set\+Vk}} (\mbox{\hyperlink{structV__struct}{V\+\_\+struct}} val)
+\item 
+void \mbox{\hyperlink{classvd_a85ee3a096c181f76d15f4b7fcf137fe7}{setW}} (\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} val)
+\item 
+void \mbox{\hyperlink{classvd_a0b4c53a592ec499899a37c2e6364806a}{setS}} (\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} val)
+\item 
+void \mbox{\hyperlink{classvd_ae13e9e465d08425218bd8f85ce420c05}{set\+Lam}} (\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} new\+Lam)
+\item 
+void \mbox{\hyperlink{classvd_a33e792915ebd0295a3475fe686b41ee9}{setV}} (\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} newV)
+\item 
+void \mbox{\hyperlink{classvd_a8df228a05762e0c0a2bccc28094a1f92}{set\+Lam\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_a29670919bb8d5b2f2f0235ddfda6484e}{set\+V\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_a739318bbb45d4facfcc1899c71b91720}{set\+Seeds}} (\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} s)
+\item 
+void \mbox{\hyperlink{classvd_a579df0c885a43bb876449889bbcba6cb}{set\+Px}} (\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} x)
+\item 
+void \mbox{\hyperlink{classvd_a8314de29eacf72f10afee2c67b0c9819}{set\+Py}} (\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} y)
+\item 
+void \mbox{\hyperlink{classvd_a7c692a97b49c4596c4ec1bc0a129b516}{setK}} (\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_afb492f7d32ff2a4d54bd531d57d66a1a}{set\+Sx}} (std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ val)
+\item 
+void \mbox{\hyperlink{classvd_af103a45c726643e96f69be4363ad2409}{set\+Sy}} (std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ val)
+\item 
+void \mbox{\hyperlink{classvd_a42dc1ab4c7033c49c0b3716d461ad2ef}{set\+Sk}} (std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ val)
+\item 
+void \mbox{\hyperlink{classvd_a440d47d94f489ceefa9037be51daef66}{set\+Sx\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_a5407f9c20ed4ff2300ccbebb999d1dde}{set\+Sy\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_a578ca6980896563397214c584401c7f5}{set\+Sk\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} val)
+\item 
+void \mbox{\hyperlink{classvd_aa1a3d9448f6ff6f8076b15c9e9a63d7e}{set\+Nk}} (std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} $>$ val)
+\item 
+void \mbox{\hyperlink{classvd_aa45da38425cbd5b48f61313323ba6204}{set\+Nk\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} val)
+\item 
+void \mbox{\hyperlink{classvd_a59c1f5756af7de9cc7a0089221cbd5b7}{incrementK}} ()
+\item 
+void \mbox{\hyperlink{classvd_ab5a972992406d5c42d1398573d9c769a}{erase\+Sk}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx)
+\item 
+\mbox{\hyperlink{structV__struct}{V\+\_\+struct}} \mbox{\hyperlink{classvd_a090bebdbbff36888934c870daf3dcb36}{get\+Vk}} () const
+\item 
+\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} \mbox{\hyperlink{classvd_ab4d0d9ea76cedf1a6825b62c9ec2d118}{getW}} () const
+\item 
+\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} \mbox{\hyperlink{classvd_a7f901e0c6d226b81f262c2363a69844a}{getS}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_a37c4ab12669eb276fe7fa4a610310345}{get\+Lam}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_aad4ea5c045b8380f83b0490af2fee0fa}{getV}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a5c26b069f893aa82eeaf53ff608eda1f}{get\+Lam\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a640ed20e4618abd409e180a707eea3b1}{get\+V\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_a82f353c594c3c6b24f6077398f059d3a}{get\+Seeds}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_aeba6d318016c8f8b9537ce4c0314f8cd}{get\+Px}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} \mbox{\hyperlink{classvd_a9738711704b1d03cdbe027b1976cb0c6}{get\+Py}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a624f53ae4a7012f267111359e9245f81}{getK}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a1a1634d6906eb0af4d877c2af3292ca7}{get\+Nr}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_ab0de0a5b8929ed7a7bb6ca902a462dd4}{get\+Nc}} () const
+\item 
+std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ \mbox{\hyperlink{classvd_a340f3f92b9ae32ff0f3eb2ce6cf12bd6}{get\+Sx}} () const
+\item 
+std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ \mbox{\hyperlink{classvd_a13a2a103b632b3acf41b925b5b31449e}{get\+Sy}} () const
+\item 
+std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ \mbox{\hyperlink{classvd_a5c6dc6e749c955b5ee26139e19a02e0b}{get\+Sk}} () const
+\item 
+std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} $>$ \mbox{\hyperlink{classvd_a90613fc46f246a5450e26487caff33f9}{get\+Nk}} () const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a960d4b8fbedb7cbb0686ad42e19d6396}{get\+Sx\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a0f630fc80e57d3e17ab036f75afde006}{get\+Sy\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_a4d2c835e7804c4242dce6d411f01ce0a}{get\+Sk\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} \mbox{\hyperlink{classvd_a4d058d2d1d675a741a83776c95b2acfb}{get\+Nk\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} idx) const
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_aa80f528bca24356805f2a31234e67ac1}{get\+Px\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j)
+\item 
+\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} \mbox{\hyperlink{classvd_ae6c4ff0f49e07803f5dd13545f6e8f3f}{get\+Py\+By\+Idx}} (\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} i, \mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}} j)
+\item 
+\mbox{\hyperlink{classvd_a765c16ee377a2a0f9651d555edd3a158}{vd}} (\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} rows, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} cols)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvd_ab23d33e6c11c46ad3302a874a4726542}\label{classvd_ab23d33e6c11c46ad3302a874a4726542}} 
+\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} {\bfseries W}
+\item 
+\mbox{\Hypertarget{classvd_a960c80ec5b52938f999f528a5e3cccf1}\label{classvd_a960c80ec5b52938f999f528a5e3cccf1}} 
+\mbox{\hyperlink{structW__struct}{W\+\_\+struct}} {\bfseries S}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains all information about voronoi diagram needed to perform S\+K\+IZ algorithm from \mbox{[}1\mbox{]}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvd_a765c16ee377a2a0f9651d555edd3a158}\label{classvd_a765c16ee377a2a0f9651d555edd3a158}} 
+\index{vd@{vd}!vd@{vd}}
+\index{vd@{vd}!vd@{vd}}
+\subsubsection{\texorpdfstring{vd()}{vd()}}
+{\footnotesize\ttfamily vd\+::vd (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{rows,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{cols }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Number of rows in pixel matrix \\
+\hline
+{\em cols} & Number of cols in pixel matrix \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvd_ab5a972992406d5c42d1398573d9c769a}\label{classvd_ab5a972992406d5c42d1398573d9c769a}} 
+\index{vd@{vd}!erase\+Sk@{erase\+Sk}}
+\index{erase\+Sk@{erase\+Sk}!vd@{vd}}
+\subsubsection{\texorpdfstring{erase\+Sk()}{eraseSk()}}
+{\footnotesize\ttfamily void vd\+::erase\+Sk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption})}
+
+Erases an entry in the seed index dictionary Sk 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Entry to erase \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a624f53ae4a7012f267111359e9245f81}\label{classvd_a624f53ae4a7012f267111359e9245f81}} 
+\index{vd@{vd}!getK@{getK}}
+\index{getK@{getK}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+K()}{getK()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::getK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get iteration count (k) as defined in \mbox{[}1\mbox{]} Section 3. \begin{DoxyReturn}{Returns}
+Iteration count (k) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a37c4ab12669eb276fe7fa4a610310345}\label{classvd_a37c4ab12669eb276fe7fa4a610310345}} 
+\index{vd@{vd}!get\+Lam@{get\+Lam}}
+\index{get\+Lam@{get\+Lam}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Lam()}{getLam()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} vd\+::get\+Lam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get $\lambda$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
+Eigen\+::\+Array of values of $\lambda_{ij}$ at each pixel. $\lambda_{ij}$ is the seed which is closest to pixel (i, j) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a5c26b069f893aa82eeaf53ff608eda1f}\label{classvd_a5c26b069f893aa82eeaf53ff608eda1f}} 
+\index{vd@{vd}!get\+Lam\+By\+Idx@{get\+Lam\+By\+Idx}}
+\index{get\+Lam\+By\+Idx@{get\+Lam\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Lam\+By\+Idx()}{getLamByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Lam\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption}) const}
+
+Get element of $\lambda$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em i} & Row \\
+\hline
+{\em j} & Column \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Value of $\lambda_{ij}$ of pixel in the $ i^{th} $ row and $ j^{th} $ column. $\lambda_{ij}$ is the seed which is closest to pixel (i, j). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_ab0de0a5b8929ed7a7bb6ca902a462dd4}\label{classvd_ab0de0a5b8929ed7a7bb6ca902a462dd4}} 
+\index{vd@{vd}!get\+Nc@{get\+Nc}}
+\index{get\+Nc@{get\+Nc}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Nc()}{getNc()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Nc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the number of columns of pixels \begin{DoxyReturn}{Returns}
+nc\+: the number of columns of pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a90613fc46f246a5450e26487caff33f9}\label{classvd_a90613fc46f246a5450e26487caff33f9}} 
+\index{vd@{vd}!get\+Nk@{get\+Nk}}
+\index{get\+Nk@{get\+Nk}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Nk()}{getNk()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} $>$ vd\+::get\+Nk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get neighbour relationships dictionary, as defined in \mbox{[}1\mbox{]} Section 3. \begin{DoxyReturn}{Returns}
+Nk, a dictionary of vectors \{ seed ID \+: vector of neighbouring seed I\+Ds \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a4d058d2d1d675a741a83776c95b2acfb}\label{classvd_a4d058d2d1d675a741a83776c95b2acfb}} 
+\index{vd@{vd}!get\+Nk\+By\+Idx@{get\+Nk\+By\+Idx}}
+\index{get\+Nk\+By\+Idx@{get\+Nk\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Nk\+By\+Idx()}{getNkByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} vd\+::get\+Nk\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption}) const}
+
+Get neighbour relationship for seed, as defined in \mbox{[}1\mbox{]} Section 3. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & ID of seed for which neighbour relationships are to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector of neighbouring seeds 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a1a1634d6906eb0af4d877c2af3292ca7}\label{classvd_a1a1634d6906eb0af4d877c2af3292ca7}} 
+\index{vd@{vd}!get\+Nr@{get\+Nr}}
+\index{get\+Nr@{get\+Nr}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Nr()}{getNr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Nr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the number of rows of pixels \begin{DoxyReturn}{Returns}
+nr\+: the number of rows of pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_aeba6d318016c8f8b9537ce4c0314f8cd}\label{classvd_aeba6d318016c8f8b9537ce4c0314f8cd}} 
+\index{vd@{vd}!get\+Px@{get\+Px}}
+\index{get\+Px@{get\+Px}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Px()}{getPx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} vd\+::get\+Px (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a (nr x nc) Eigen\+:Array of x coordinates of each pixel \begin{DoxyReturn}{Returns}
+(nr x nc) Eigen\+:Array of x coordinates of each pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_aa80f528bca24356805f2a31234e67ac1}\label{classvd_aa80f528bca24356805f2a31234e67ac1}} 
+\index{vd@{vd}!get\+Px\+By\+Idx@{get\+Px\+By\+Idx}}
+\index{get\+Px\+By\+Idx@{get\+Px\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Px\+By\+Idx()}{getPxByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Px\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption})}
+
+Returns x coordinate of pixel \begin{DoxyReturn}{Returns}
+x coordinate of pixel (i, j) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a9738711704b1d03cdbe027b1976cb0c6}\label{classvd_a9738711704b1d03cdbe027b1976cb0c6}} 
+\index{vd@{vd}!get\+Py@{get\+Py}}
+\index{get\+Py@{get\+Py}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Py()}{getPy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} vd\+::get\+Py (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a (nr x nc) Eigen\+:Array of y coordinates of each pixel \begin{DoxyReturn}{Returns}
+(nr x nc) Eigen\+:Array of y coordinates of each pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_ae6c4ff0f49e07803f5dd13545f6e8f3f}\label{classvd_ae6c4ff0f49e07803f5dd13545f6e8f3f}} 
+\index{vd@{vd}!get\+Py\+By\+Idx@{get\+Py\+By\+Idx}}
+\index{get\+Py\+By\+Idx@{get\+Py\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Py\+By\+Idx()}{getPyByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Py\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption})}
+
+Returns y coordinate of pixel \begin{DoxyReturn}{Returns}
+y coordinate of pixel (i, j) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a7f901e0c6d226b81f262c2363a69844a}\label{classvd_a7f901e0c6d226b81f262c2363a69844a}} 
+\index{vd@{vd}!getS@{getS}}
+\index{getS@{getS}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+S()}{getS()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} vd\+::getS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get S struct, as defined in \mbox{[}1\mbox{]} Section 3. Only for use with V\+O\+I\+SE algorithm matlab interface. \begin{DoxyReturn}{Returns}
+S 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a82f353c594c3c6b24f6077398f059d3a}\label{classvd_a82f353c594c3c6b24f6077398f059d3a}} 
+\index{vd@{vd}!get\+Seeds@{get\+Seeds}}
+\index{get\+Seeds@{get\+Seeds}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Seeds()}{getSeeds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} vd\+::get\+Seeds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a (ns x 2) Eigen\+::\+Array of all seed coordinates, where ns is the number of seeds in the Voronoi diagram. \begin{DoxyReturn}{Returns}
+(ns x 2) Eigen\+::\+Array of all seed coordinates. The first column is x coordinates; the second is y coordinates. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a5c6dc6e749c955b5ee26139e19a02e0b}\label{classvd_a5c6dc6e749c955b5ee26139e19a02e0b}} 
+\index{vd@{vd}!get\+Sk@{get\+Sk}}
+\index{get\+Sk@{get\+Sk}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sk()}{getSk()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ vd\+::get\+Sk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get Sk, the dictionary which maps seed ID to seed ID. Dictionary is used for consistency with other methods and functions and to ensure uniqueness of keys/values. \begin{DoxyReturn}{Returns}
+Sk dictionary \{ seed ID \+: seed ID \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a4d2c835e7804c4242dce6d411f01ce0a}\label{classvd_a4d2c835e7804c4242dce6d411f01ce0a}} 
+\index{vd@{vd}!get\+Sk\+By\+Idx@{get\+Sk\+By\+Idx}}
+\index{get\+Sk\+By\+Idx@{get\+Sk\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sk\+By\+Idx()}{getSkByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Sk\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption}) const}
+
+Get element of Sk, the dictionary which maps seed ID to seed ID. Dictionary is used for consistency with other methods and functions and to ensure uniqueness of keys/values. (Unused) 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of seed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of seed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a340f3f92b9ae32ff0f3eb2ce6cf12bd6}\label{classvd_a340f3f92b9ae32ff0f3eb2ce6cf12bd6}} 
+\index{vd@{vd}!get\+Sx@{get\+Sx}}
+\index{get\+Sx@{get\+Sx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sx()}{getSx()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ vd\+::get\+Sx (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get Sx, the dictionary which maps seed ID to x coordinate \begin{DoxyReturn}{Returns}
+Sx dictionary \{ seed ID \+: x coordinate \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a960d4b8fbedb7cbb0686ad42e19d6396}\label{classvd_a960d4b8fbedb7cbb0686ad42e19d6396}} 
+\index{vd@{vd}!get\+Sx\+By\+Idx@{get\+Sx\+By\+Idx}}
+\index{get\+Sx\+By\+Idx@{get\+Sx\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sx\+By\+Idx()}{getSxByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Sx\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption}) const}
+
+Get element of Sx, the dictionary which maps seed ID to x coordinate. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of seed for which coordinate is to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x coordinate if seed with ID = idx 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a13a2a103b632b3acf41b925b5b31449e}\label{classvd_a13a2a103b632b3acf41b925b5b31449e}} 
+\index{vd@{vd}!get\+Sy@{get\+Sy}}
+\index{get\+Sy@{get\+Sy}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sy()}{getSy()}}
+{\footnotesize\ttfamily std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$ vd\+::get\+Sy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get Sy, the dictionary which maps seed ID to y coordinate \begin{DoxyReturn}{Returns}
+Sy dictionary \{ seed ID \+: y coordinate \} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a0f630fc80e57d3e17ab036f75afde006}\label{classvd_a0f630fc80e57d3e17ab036f75afde006}} 
+\index{vd@{vd}!get\+Sy\+By\+Idx@{get\+Sy\+By\+Idx}}
+\index{get\+Sy\+By\+Idx@{get\+Sy\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Sy\+By\+Idx()}{getSyByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+Sy\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx }\end{DoxyParamCaption}) const}
+
+Get element of Sy, the dictionary which maps seed ID to y coordinate. 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Index of seed for which coordinate is to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+y coordinate if seed with ID = idx 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_aad4ea5c045b8380f83b0490af2fee0fa}\label{classvd_aad4ea5c045b8380f83b0490af2fee0fa}} 
+\index{vd@{vd}!getV@{getV}}
+\index{getV@{getV}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+V()}{getV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}} vd\+::getV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
+Eigen\+::\+Array of values of $\nu$ at each pixel. $\nu_{ij}$ = 1 iff there exist two or more closest seeds, else 0. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a640ed20e4618abd409e180a707eea3b1}\label{classvd_a640ed20e4618abd409e180a707eea3b1}} 
+\index{vd@{vd}!get\+V\+By\+Idx@{get\+V\+By\+Idx}}
+\index{get\+V\+By\+Idx@{get\+V\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+V\+By\+Idx()}{getVByIdx()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} vd\+::get\+V\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j }\end{DoxyParamCaption}) const}
+
+Get element of $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 \begin{DoxyReturn}{Returns}
+Value of $\nu$ at each pixel in the $ i^{th} $ row and $ j^{th} $ column. $\nu_{ij}$ = 1 iff there exist two or more closest seeds, else 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a090bebdbbff36888934c870daf3dcb36}\label{classvd_a090bebdbbff36888934c870daf3dcb36}} 
+\index{vd@{vd}!get\+Vk@{get\+Vk}}
+\index{get\+Vk@{get\+Vk}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+Vk()}{getVk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structV__struct}{V\+\_\+struct}} vd\+::get\+Vk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get Vk struct, as defined in \mbox{[}1\mbox{]} Section 3. Only for use with V\+O\+I\+SE algorithm matlab interface. \begin{DoxyReturn}{Returns}
+Vk 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_ab4d0d9ea76cedf1a6825b62c9ec2d118}\label{classvd_ab4d0d9ea76cedf1a6825b62c9ec2d118}} 
+\index{vd@{vd}!getW@{getW}}
+\index{getW@{getW}!vd@{vd}}
+\subsubsection{\texorpdfstring{get\+W()}{getW()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} vd\+::getW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get W struct, as defined in \mbox{[}1\mbox{]} Section 3. Only for use with V\+O\+I\+SE algorithm matlab interface. \begin{DoxyReturn}{Returns}
+W 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvd_a59c1f5756af7de9cc7a0089221cbd5b7}\label{classvd_a59c1f5756af7de9cc7a0089221cbd5b7}} 
+\index{vd@{vd}!incrementK@{incrementK}}
+\index{incrementK@{incrementK}!vd@{vd}}
+\subsubsection{\texorpdfstring{increment\+K()}{incrementK()}}
+{\footnotesize\ttfamily void vd\+::incrementK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increment iteration count (k) by 1, as defined in \mbox{[}1\mbox{]} Section 3 \mbox{\Hypertarget{classvd_a7c692a97b49c4596c4ec1bc0a129b516}\label{classvd_a7c692a97b49c4596c4ec1bc0a129b516}} 
+\index{vd@{vd}!setK@{setK}}
+\index{setK@{setK}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+K()}{setK()}}
+{\footnotesize\ttfamily void vd\+::setK (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set iteration number (k) as defined in \mbox{[}1\mbox{]}, Section 3 
+\begin{DoxyParams}{Parameters}
+{\em val} & Value to which k is set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_ae13e9e465d08425218bd8f85ce420c05}\label{classvd_ae13e9e465d08425218bd8f85ce420c05}} 
+\index{vd@{vd}!set\+Lam@{set\+Lam}}
+\index{set\+Lam@{set\+Lam}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Lam()}{setLam()}}
+{\footnotesize\ttfamily void vd\+::set\+Lam (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}}}]{new\+Lam }\end{DoxyParamCaption})}
+
+Set $ \lambda $ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em new\+Lam} & Eigen array containing $ \lambda $ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a8df228a05762e0c0a2bccc28094a1f92}\label{classvd_a8df228a05762e0c0a2bccc28094a1f92}} 
+\index{vd@{vd}!set\+Lam\+By\+Idx@{set\+Lam\+By\+Idx}}
+\index{set\+Lam\+By\+Idx@{set\+Lam\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Lam\+By\+Idx()}{setLamByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+Lam\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element of $\lambda$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em i} & Row index of $\lambda$ \\
+\hline
+{\em j} & Column index of $\lambda$ \\
+\hline
+{\em val} & Value to set $\lambda_{ij}$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_aa1a3d9448f6ff6f8076b15c9e9a63d7e}\label{classvd_aa1a3d9448f6ff6f8076b15c9e9a63d7e}} 
+\index{vd@{vd}!set\+Nk@{set\+Nk}}
+\index{set\+Nk@{set\+Nk}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Nk()}{setNk()}}
+{\footnotesize\ttfamily void vd\+::set\+Nk (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} $>$}]{val }\end{DoxyParamCaption})}
+
+Set neighbour relationships dictionary, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em val} & Dictionary of vectors \{ seed ID \+: Vector of neighbouring seed I\+Ds \} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_aa45da38425cbd5b48f61313323ba6204}\label{classvd_aa45da38425cbd5b48f61313323ba6204}} 
+\index{vd@{vd}!set\+Nk\+By\+Idx@{set\+Nk\+By\+Idx}}
+\index{set\+Nk\+By\+Idx@{set\+Nk\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Nk\+By\+Idx()}{setNkByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+Nk\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element in neighbour relationships dictionary, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Key (seed ID) \\
+\hline
+{\em val} & Vector of neighbouring seed I\+Ds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a579df0c885a43bb876449889bbcba6cb}\label{classvd_a579df0c885a43bb876449889bbcba6cb}} 
+\index{vd@{vd}!set\+Px@{set\+Px}}
+\index{set\+Px@{set\+Px}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Px()}{setPx()}}
+{\footnotesize\ttfamily void vd\+::set\+Px (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}}}]{x }\end{DoxyParamCaption})}
+
+Set x coordinates of each pixel. 
+\begin{DoxyParams}{Parameters}
+{\em x} & Eigen\+::\+Array$<$double$>$ containing x coordinates of each pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a8314de29eacf72f10afee2c67b0c9819}\label{classvd_a8314de29eacf72f10afee2c67b0c9819}} 
+\index{vd@{vd}!set\+Py@{set\+Py}}
+\index{set\+Py@{set\+Py}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Py()}{setPy()}}
+{\footnotesize\ttfamily void vd\+::set\+Py (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}}}]{y }\end{DoxyParamCaption})}
+
+Set y coordinates of each pixel 
+\begin{DoxyParams}{Parameters}
+{\em y} & Eigen\+::\+Array$<$double$>$ containing y coordinates of each pixel \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a0b4c53a592ec499899a37c2e6364806a}\label{classvd_a0b4c53a592ec499899a37c2e6364806a}} 
+\index{vd@{vd}!setS@{setS}}
+\index{setS@{setS}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+S()}{setS()}}
+{\footnotesize\ttfamily void vd\+::setS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structW__struct}{W\+\_\+struct}}}]{val }\end{DoxyParamCaption})}
+
+Set S. Only for use with V\+O\+I\+SE algorithm matlab interface. 
+\begin{DoxyParams}{Parameters}
+{\em val} & \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} containing information about S \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a739318bbb45d4facfcc1899c71b91720}\label{classvd_a739318bbb45d4facfcc1899c71b91720}} 
+\index{vd@{vd}!set\+Seeds@{set\+Seeds}}
+\index{set\+Seeds@{set\+Seeds}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Seeds()}{setSeeds()}}
+{\footnotesize\ttfamily void vd\+::set\+Seeds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}}}]{s }\end{DoxyParamCaption})}
+
+Set coordinates of all seeds in Voronoi diagram 
+\begin{DoxyParams}{Parameters}
+{\em s} & (ns x 2) Eigen\+::\+Array$<$double$>$ containing coordinates of ns seeds \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a42dc1ab4c7033c49c0b3716d461ad2ef}\label{classvd_a42dc1ab4c7033c49c0b3716d461ad2ef}} 
+\index{vd@{vd}!set\+Sk@{set\+Sk}}
+\index{set\+Sk@{set\+Sk}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sk()}{setSk()}}
+{\footnotesize\ttfamily void vd\+::set\+Sk (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$}]{val }\end{DoxyParamCaption})}
+
+Set Sk, the dictionary which maps seed ID to seed ID. A map is used for uniqueness and consistensy with other functions and methods. 
+\begin{DoxyParams}{Parameters}
+{\em val} & Dictionary (Sk). All keys should be equal to their values. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a578ca6980896563397214c584401c7f5}\label{classvd_a578ca6980896563397214c584401c7f5}} 
+\index{vd@{vd}!set\+Sk\+By\+Idx@{set\+Sk\+By\+Idx}}
+\index{set\+Sk\+By\+Idx@{set\+Sk\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sk\+By\+Idx()}{setSkByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+Sk\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element in Sk dictionary 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Key \\
+\hline
+{\em val} & k \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_afb492f7d32ff2a4d54bd531d57d66a1a}\label{classvd_afb492f7d32ff2a4d54bd531d57d66a1a}} 
+\index{vd@{vd}!set\+Sx@{set\+Sx}}
+\index{set\+Sx@{set\+Sx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sx()}{setSx()}}
+{\footnotesize\ttfamily void vd\+::set\+Sx (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$}]{val }\end{DoxyParamCaption})}
+
+Set Sx, the dictionary which maps seed ID to x coordinate 
+\begin{DoxyParams}{Parameters}
+{\em val} & Dictionary (Sx) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a440d47d94f489ceefa9037be51daef66}\label{classvd_a440d47d94f489ceefa9037be51daef66}} 
+\index{vd@{vd}!set\+Sx\+By\+Idx@{set\+Sx\+By\+Idx}}
+\index{set\+Sx\+By\+Idx@{set\+Sx\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sx\+By\+Idx()}{setSxByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+Sx\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element in Sx dictionary 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Key \\
+\hline
+{\em val} & x coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_af103a45c726643e96f69be4363ad2409}\label{classvd_af103a45c726643e96f69be4363ad2409}} 
+\index{vd@{vd}!set\+Sy@{set\+Sy}}
+\index{set\+Sy@{set\+Sy}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sy()}{setSy()}}
+{\footnotesize\ttfamily void vd\+::set\+Sy (\begin{DoxyParamCaption}\item[{std\+::map$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}} $>$}]{val }\end{DoxyParamCaption})}
+
+Set Sy, the dictionary which maps seed ID to y coordinate 
+\begin{DoxyParams}{Parameters}
+{\em val} & Dictionary (Sy) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a5407f9c20ed4ff2300ccbebb999d1dde}\label{classvd_a5407f9c20ed4ff2300ccbebb999d1dde}} 
+\index{vd@{vd}!set\+Sy\+By\+Idx@{set\+Sy\+By\+Idx}}
+\index{set\+Sy\+By\+Idx@{set\+Sy\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Sy\+By\+Idx()}{setSyByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+Sy\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{idx,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element in Sy dictionary 
+\begin{DoxyParams}{Parameters}
+{\em idx} & Key \\
+\hline
+{\em val} & y coordinate \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a33e792915ebd0295a3475fe686b41ee9}\label{classvd_a33e792915ebd0295a3475fe686b41ee9}} 
+\index{vd@{vd}!setV@{setV}}
+\index{setV@{setV}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+V()}{setV()}}
+{\footnotesize\ttfamily void vd\+::setV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a9fa28c1f74e909474857584f5c7b0088}{Mat}}}]{newV }\end{DoxyParamCaption})}
+
+Set $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em newV} & Eigen array containing $\nu$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a29670919bb8d5b2f2f0235ddfda6484e}\label{classvd_a29670919bb8d5b2f2f0235ddfda6484e}} 
+\index{vd@{vd}!set\+V\+By\+Idx@{set\+V\+By\+Idx}}
+\index{set\+V\+By\+Idx@{set\+V\+By\+Idx}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+V\+By\+Idx()}{setVByIdx()}}
+{\footnotesize\ttfamily void vd\+::set\+V\+By\+Idx (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{i,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a8ad23e2333787a214e20a58a284a5a60}{uint32}}}]{j,  }\item[{\mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}}]{val }\end{DoxyParamCaption})}
+
+Set individual element of $\nu$ matrix, as defined in \mbox{[}1\mbox{]} Section 3 
+\begin{DoxyParams}{Parameters}
+{\em i} & Row index of $\nu$ \\
+\hline
+{\em j} & Column index of $\nu$ \\
+\hline
+{\em val} & Value to set $\nu{ij}$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a062d265bd642352d6f7e8cc8685ed7a8}\label{classvd_a062d265bd642352d6f7e8cc8685ed7a8}} 
+\index{vd@{vd}!set\+Vk@{set\+Vk}}
+\index{set\+Vk@{set\+Vk}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+Vk()}{setVk()}}
+{\footnotesize\ttfamily void vd\+::set\+Vk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structV__struct}{V\+\_\+struct}}}]{val }\end{DoxyParamCaption})}
+
+Set Vk 
+\begin{DoxyParams}{Parameters}
+{\em val} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvd_a85ee3a096c181f76d15f4b7fcf137fe7}\label{classvd_a85ee3a096c181f76d15f4b7fcf137fe7}} 
+\index{vd@{vd}!setW@{setW}}
+\index{setW@{setW}!vd@{vd}}
+\subsubsection{\texorpdfstring{set\+W()}{setW()}}
+{\footnotesize\ttfamily void vd\+::setW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structW__struct}{W\+\_\+struct}}}]{val }\end{DoxyParamCaption})}
+
+Set W, as defined in \mbox{[}1\mbox{]}, Section 2.\+2. Only for use with V\+O\+I\+SE algorithm matlab interface. 
+\begin{DoxyParams}{Parameters}
+{\em val} & \mbox{\hyperlink{structW__struct}{W\+\_\+struct}} containing information about restricted space \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{vd_8h}{vd.\+h}}\item 
+src/\mbox{\hyperlink{vd_8cpp}{vd.\+cpp}}\end{DoxyCompactItemize}
