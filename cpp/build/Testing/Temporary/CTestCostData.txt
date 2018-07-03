@@ -1,0 +1,8 @@
+AddSeedCheckLambda 1 5.52194
+RemoveSeedCheckLambda 1 5.54151
+AddSeedCheckV 1 5.54831
+RemoveSeedCheckV 1 5.74384
+PointInRegionCheck 1 0.0404166
+SqDistanceCheck 1 0.00141099
+InVectorCheck 1 0.00123268
+---

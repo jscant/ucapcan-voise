@@ -110,7 +110,8 @@ VD.regDist2 = regDist2;
 
 function params = plotCurrentVD(VD, params, iReg)
 
-VDW = getVDOp(VD, params.W, @(x) median(x));
+VDW = getVDOp(VD, params.W, 1);
+%VDW = getVDOp(VD, params.W, @(x) median(x));
 
 clf
 subplot(111),

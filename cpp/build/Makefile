@@ -321,6 +321,33 @@ src/addSeed.cpp.s:
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.s
 .PHONY : src/addSeed.cpp.s
 
+src/aux-functions/metrics.o: src/aux-functions/metrics.cpp.o
+
+.PHONY : src/aux-functions/metrics.o
+
+# target to build an object file
+src/aux-functions/metrics.cpp.o:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o
+.PHONY : src/aux-functions/metrics.cpp.o
+
+src/aux-functions/metrics.i: src/aux-functions/metrics.cpp.i
+
+.PHONY : src/aux-functions/metrics.i
+
+# target to preprocess a source file
+src/aux-functions/metrics.cpp.i:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.i
+.PHONY : src/aux-functions/metrics.cpp.i
+
+src/aux-functions/metrics.s: src/aux-functions/metrics.cpp.s
+
+.PHONY : src/aux-functions/metrics.s
+
+# target to generate assembly for a file
+src/aux-functions/metrics.cpp.s:
+	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.s
+.PHONY : src/aux-functions/metrics.cpp.s
+
 src/aux-functions/readMatrix.o: src/aux-functions/readMatrix.cpp.o
 
 .PHONY : src/aux-functions/readMatrix.o
@@ -1103,6 +1130,9 @@ help:
 	@echo "... src/addSeed.o"
 	@echo "... src/addSeed.i"
 	@echo "... src/addSeed.s"
+	@echo "... src/aux-functions/metrics.o"
+	@echo "... src/aux-functions/metrics.i"
+	@echo "... src/aux-functions/metrics.s"
 	@echo "... src/aux-functions/readMatrix.o"
 	@echo "... src/aux-functions/readMatrix.i"
 	@echo "... src/aux-functions/readMatrix.s"

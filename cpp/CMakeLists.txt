@@ -9,7 +9,7 @@ option(TESTING "Generate Catch2 unit tests")
 
 add_executable(standalone_skiz src/main.cpp src/typedefs.cpp src/addSeed.cpp src/getRegion.cpp src/NSStar.cpp
         src/pointInRegion.cpp src/removeSeed.cpp src/skizException.cpp src/vd.cpp src/aux-functions/readSeeds.cpp
-        src/aux-functions/readMatrix.cpp)
+        src/aux-functions/readMatrix.cpp src/aux-functions/metrics.cpp)
 
 set(TESTING ON)
 set(GENERATE_DOXYGEN OFF)

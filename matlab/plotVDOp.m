@@ -23,7 +23,7 @@ function plotVDOp(VD, W, op, varargin)
 clim = [min(W(:)) max(W(:))];
 
 %VDW = getVDOp(VD, W, @(x) median(x));
-VDW = getVDOp(VD, W, op, varargin{:});
+VDW = getVDOp2(VD, W, op, varargin{:});
 subplot(211),
 imagesc(W),
 axis xy,

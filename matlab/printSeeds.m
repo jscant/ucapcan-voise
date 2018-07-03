@@ -24,10 +24,13 @@ function varargout = printSeeds(fid, VD, params)
 k = VD.k;
 
 % compute scale length in pixels unit
-[WLS,SLS] = getVDOp(VD, params.W, @(x) sqrt(length(x)));
+%[WLS,SLS] = getVDOp(VD, params.W, @(x) sqrt(length(x)));
+[WLS,SLS] = getVDOp(VD, params.W, 4);
+
 
 % compute median intensity
-[WDM,SIM] = getVDOp(VD, params.W, @(x) median(x));
+%[WDM,SIM] = getVDOp(VD, params.W, @(x) median(x));
+[WDM,SIM] = getVDOp(VD, params.W, 1);
 
 s = sprintf('\n');
 

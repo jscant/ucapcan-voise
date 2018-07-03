@@ -54,7 +54,7 @@ if exist('initSeeds') & isa(initSeeds, 'function_handle'),
 else
   error('initSeeds not defined or not a Function Handle');
 end
-save("benchVDSeeds.txt", "S", "-ascii");
+% save("benchVDSeeds.txt", "S", "-ascii");
 fprintf(1,'endSeed = %d card(S) = %d\n',endSeed, size(S,1));
 endSeed = size(S,1);
 
@@ -71,9 +71,9 @@ VDa = computeVD(nr, nc, s, VDlim);
 lam = VDa.Vk.lambda;
 v = VDa.Vk.v;
 
-save("benchVDInitVD.txt", "VDa", "-ascii");
-save("benchVDLambda.txt", "lam", "-ascii");
-save("benchVDV.txt", "v", "-ascii");
+%save("benchVDInitVD.txt", "VDa", "-ascii");
+%save("benchVDLambda.txt", "lam", "-ascii");
+%save("benchVDV.txt", "v", "-ascii");
 
 tVDa_cppb(1) = toc(tStart);
 fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...

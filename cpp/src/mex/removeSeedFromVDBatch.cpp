@@ -21,7 +21,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     int nSeeds = mxGetNumberOfElements(prhs[1]);
 
     // Grab VD data from ML struct
-    vd outputVD = grabVD(prhs);
+    vd outputVD = grabVD(prhs, 0);
 
     // Add seeds to VD
     for(auto i=0; i<nSeeds; ++i) {

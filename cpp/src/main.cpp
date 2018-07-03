@@ -24,6 +24,7 @@
 #include "typedefs.cpp"
 #include "aux-functions/readSeeds.h"
 #include "aux-functions/readMatrix.h"
+#include "aux-functions/metrics.h"
 
 typedef std::chrono::high_resolution_clock now;
 
@@ -99,4 +100,7 @@ int main() {
     ms = duration_cast<microseconds>(elapsed).count() / (ns - 5);
     str = "removeSeed:\t\t" + std::to_string(ms) + " us per seed\n";
     std::cout << str.c_str();
+
+    RealVec vec = {3, 2, 4, 5, 1, 12};
+    std::cout << median(vec) << "\n";
 }

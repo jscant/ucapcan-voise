@@ -22,28 +22,31 @@ function [Wop, Sop] = getVDOp(VD, W, op, varargin)
 
 Wop = zeros(size(W));
 
-if ~exist('op','var') | isempty(op), op = 'mean'; end
+if ~exist('op','var') | isempty(op)
+    op = 'mean';
+end
 [op,msg] = fcnchk(op);
 
 Sop = zeros(size(VD.Sk));
 is = 1;
 for s = VD.Sk' % for all seeds
-  % find pixels inside the Voronoi region VR(s)
-  
-  %disp(find(VD.Vk.lambda == s));
-  ii = find(VD.Vk.lambda == s & VD.Vk.v == 0);
-	% apply operator for pixels in  the Voronoi region VR(s)
-	Sop(is) = op(W(ii), varargin{:});
-  Wop(ii) = Sop(is);
-	is = is+1;
+    % find pixels inside the Voronoi region VR(s)
+
+    %disp(find(VD.Vk.lambda == s));
+    ii = find(VD.Vk.lambda == s & VD.Vk.v == 0);
+
+    % apply operator for pixels in  the Voronoi region VR(s)
+    Sop(is) = op(W(ii), varargin{:});
+    Wop(ii) = Sop(is);
+    is = is+1;
 end
 
 % find pixels not in any Voronoi region but on boundaries
 ii = find(VD.Vk.v == 1);
-if 0,
-% rescale the value for these points 
-Wop(ii) = min(Sop(:))-(max(Sop(:))-min(Sop(:)));
+if 0
+    % rescale the value for these points 
+    Wop(ii) = min(Sop(:))-(max(Sop(:))-min(Sop(:)));
 else
-Wop(ii) = NaN;
+    Wop(ii) = NaN;
 end
   

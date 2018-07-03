@@ -185,7 +185,7 @@ while ~stopDiv,
                 end
 				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
         end
-        %params = plotCurrentVD(VD, params, iDiv);
+        params = plotCurrentVD(VD, params, iDiv);
         iDiv = iDiv+1;
     %fprintf(1,'Voronoi Diagram computed\n');
   else
@@ -211,8 +211,10 @@ fprintf(1,'*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)
 
-if 0
-VDW = getVDOp(VD, params.W, @(x) median(x));
+if 1
+    
+%VDW = getVDOp(VD, params.W, @(x) median(x));
+VDW = getVDOp(VD, params.W, 1);
 
 clf
 subplot(111),

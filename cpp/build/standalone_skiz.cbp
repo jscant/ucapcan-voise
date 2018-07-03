@@ -11,20 +11,20 @@
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InVectorCheck">
@@ -35,20 +35,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="InVectorCheck/fast">
@@ -59,20 +51,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PointInRegionCheck">
@@ -83,20 +67,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PointInRegionCheck/fast">
@@ -107,30 +83,22 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SqDistanceCheck">
@@ -141,20 +109,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SqDistanceCheck/fast">
@@ -165,20 +125,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="standalone_skiz">
@@ -187,21 +139,12 @@
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="standalone_skiz/fast">
@@ -210,21 +153,12 @@
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
+				<Compiler/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testAddSeedCheckLambda">
@@ -235,20 +169,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testAddSeedCheckLambda/fast">
@@ -259,20 +185,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testRemoveSeedCheckLambda">
@@ -283,20 +201,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testRemoveSeedCheckLambda/fast">
@@ -307,30 +217,22 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testAddSeedCheckV">
@@ -341,20 +243,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testAddSeedCheckV/fast">
@@ -365,20 +259,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testRemoveSeedCheckV">
@@ -389,20 +275,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="testRemoveSeedCheckV/fast">
@@ -413,20 +291,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -469,6 +339,12 @@
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 			<Option target="testRemoveSeedCheckV"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp">
+			<Option target="standalone_skiz"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h">
+			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp">
 			<Option target="InVectorCheck"/>

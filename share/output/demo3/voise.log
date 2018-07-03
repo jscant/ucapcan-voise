@@ -48,138 +48,84 @@ VOISE Set Up -- version 1.3.2
 *****************************
 poissonSeeds: ns=15, minDist=45.18, card(S)=13
 *** Initialising VOISE
-Est. time full(   1:  13)/inc(   1:  13)    0.0/   0.1 s (Used    0.2 s)
+Est. time full(   1:  13)/inc(   1:  13)    0.0/   0.1 s (Used    0.1 s)
 *** Initialising completed.
 *** Starting dividing phase
-Homogeneity Criteria min=0.32 max=1.00 Q(90)=0.97
-Iter  1 Adding 4 seeds to Voronoi Diagram
-Est. time full(   1:  17)/inc_ML(  14:  17)/inc_C++(  14:  17)    0.0/   0.0/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.17 Q(90)=1.15
+Iter  1 Adding 5 seeds to Voronoi Diagram
+Est. time full(   1:  18)/inc_ML(  14:  18)/inc_C++(  14:  18)    0.0/   0.0/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.32 max=1.00 Q(90)=0.98
-Iter  2 Adding 6 seeds to Voronoi Diagram
-Est. time full(   1:  23)/inc_ML(  18:  23)/inc_C++(  18:  23)    0.1/   0.0/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.18 Q(90)=1.16
+Iter  2 Adding 11 seeds to Voronoi Diagram
+Est. time full(   1:  29)/inc_ML(  19:  29)/inc_C++(  19:  29)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.33 max=1.00 Q(90)=0.99
-Iter  3 Adding 7 seeds to Voronoi Diagram
-Est. time full(   1:  30)/inc_ML(  24:  30)/inc_C++(  24:  30)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.19 Q(90)=1.18
+Iter  3 Adding 15 seeds to Voronoi Diagram
+Est. time full(   1:  44)/inc_ML(  30:  44)/inc_C++(  30:  44)    0.1/   0.1/   0.1 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.29 max=1.00 Q(90)=0.91
-Iter  4 Adding 11 seeds to Voronoi Diagram
-Est. time full(   1:  41)/inc_ML(  31:  41)/inc_C++(  31:  41)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.20 Q(90)=1.19
+Iter  4 Adding 6 seeds to Voronoi Diagram
+Est. time full(   1:  50)/inc_ML(  45:  50)/inc_C++(  45:  50)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.28 max=1.00 Q(90)=0.96
-Iter  5 Adding 17 seeds to Voronoi Diagram
-Est. time full(   1:  58)/inc_ML(  42:  58)/inc_C++(  42:  58)    0.2/   0.2/   0.1 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.21 Q(90)=1.19
+Iter  5 Adding 7 seeds to Voronoi Diagram
+Est. time full(   1:  57)/inc_ML(  51:  57)/inc_C++(  51:  57)    0.2/   0.1/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.21 max=1.00 Q(90)=0.94
-Iter  6 Adding 21 seeds to Voronoi Diagram
-Est. time full(   1:  79)/inc_ML(  59:  79)/inc_C++(  59:  79)    0.2/   0.2/   0.1 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.22 Q(90)=1.19
+Iter  6 Adding 3 seeds to Voronoi Diagram
+Est. time full(   1:  60)/inc_ML(  58:  60)/inc_C++(  58:  60)    0.2/   0.0/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
-Homogeneity Criteria min=0.12 max=1.00 Q(90)=0.87
-Iter  7 Adding 25 seeds to Voronoi Diagram
-Est. time full(   1: 104)/inc_ML(  80: 104)/inc_C++(  80: 104)    0.3/   0.3/   0.1 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.13 max=1.00 Q(90)=0.81
-Iter  8 Adding 45 seeds to Voronoi Diagram
-Est. time full(   1: 149)/inc_ML( 105: 149)/inc_C++( 105: 149)    0.5/   0.7/   0.2 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.10 max=1.00 Q(90)=0.77
-Iter  9 Adding 59 seeds to Voronoi Diagram
-Est. time full(   1: 208)/inc_ML( 150: 208)/inc_C++( 150: 208)    0.8/   1.0/   0.2 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.10 max=1.00 Q(90)=0.68
-Iter 10 Adding 54 seeds to Voronoi Diagram
-Est. time full(   1: 262)/inc_ML( 209: 262)/inc_C++( 209: 262)    1.0/   1.1/   0.2 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.10 max=1.00 Q(90)=0.63
-Iter 11 Adding 62 seeds to Voronoi Diagram
-Est. time full(   1: 324)/inc_ML( 263: 324)/inc_C++( 263: 324)    1.4/   1.5/   0.2 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.10 max=1.00 Q(90)=0.59
-Iter 12 Adding 81 seeds to Voronoi Diagram
-Est. time full(   1: 405)/inc_ML( 325: 405)/inc_C++( 325: 405)    1.9/   2.4/   0.3 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.10 max=1.00 Q(90)=0.55
-Iter 13 Adding 60 seeds to Voronoi Diagram
-Est. time full(   1: 465)/inc_ML( 406: 465)/inc_C++( 406: 465)    2.3/   2.0/   0.2 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.06 max=1.00 Q(90)=0.53
-Iter 14 Adding 50 seeds to Voronoi Diagram
-Est. time full(   1: 515)/inc_ML( 466: 515)/inc_C++( 466: 515)    2.6/   1.8/   0.1 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.05 max=1.00 Q(90)=0.51
-Iter 15 Adding 38 seeds to Voronoi Diagram
-Est. time full(   1: 553)/inc_ML( 516: 553)/inc_C++( 516: 553)    2.9/   1.5/   0.1 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.50
-Iter 16 Adding 19 seeds to Voronoi Diagram
-Est. time full(   1: 572)/inc_ML( 554: 572)/inc_C++( 554: 572)    3.0/   0.8/   0.1 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.50
-Iter 17 Adding 14 seeds to Voronoi Diagram
-Est. time full(   1: 586)/inc_ML( 573: 586)/inc_C++( 573: 586)    3.2/   0.6/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.49
-Iter 18 Adding 14 seeds to Voronoi Diagram
-Est. time full(   1: 600)/inc_ML( 587: 600)/inc_C++( 587: 600)    3.3/   0.6/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.48
-Iter 19 Adding 15 seeds to Voronoi Diagram
-Est. time full(   1: 615)/inc_ML( 601: 615)/inc_C++( 601: 615)    3.4/   0.7/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.47
-Iter 20 Adding 9 seeds to Voronoi Diagram
-Est. time full(   1: 624)/inc_ML( 616: 624)/inc_C++( 616: 624)    3.5/   0.4/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.47
-Iter 21 Adding 2 seeds to Voronoi Diagram
-Est. time full(   1: 626)/inc_ML( 625: 626)/inc_C++( 625: 626)    3.5/   0.1/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.47
-Iter 22 Adding 2 seeds to Voronoi Diagram
-Est. time full(   1: 628)/inc_ML( 627: 628)/inc_C++( 627: 628)    3.5/   0.1/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.47
-Iter 23 Adding 1 seeds to Voronoi Diagram
-Est. time full(   1: 629)/inc_ML( 629: 629)/inc_C++( 629: 629)    3.5/   0.0/   0.0 s INCREMENTAL (C++)
-(Used    0.0 s)
-Homogeneity Criteria min=0.04 max=1.00 Q(90)=0.47
+Homogeneity Criteria min=0.84 max=1.23 Q(90)=1.19
 StopDiv = True
 *** Dividing phase completed.
-Dividing took 1.063147e+01 seconds
+Dividing took 1.670679e+00 seconds
 *** Starting merging phase
-Homogeneity Criteria min=0.04 max=1.00 Q(50)=0.31
-Elapsed time is 0.701272 seconds.
-Iter  1 Removing 52 seeds from Voronoi Diagram
-Est. time full(   1: 577)/inc_ML( 628: 577)/inc_C++( 628: 577)    3.1/   1.3/   0.2 s INCREMENTAL (C++)
-(Used    0.2 s)
-Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.653254 seconds.
-Iter  2 Removing 19 seeds from Voronoi Diagram
-Est. time full(   1: 558)/inc_ML( 576: 558)/inc_C++( 576: 558)    2.9/   0.4/   0.1 s INCREMENTAL (C++)
-(Used    0.2 s)
-Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.617493 seconds.
-Iter  3 Removing 4 seeds from Voronoi Diagram
-Est. time full(   1: 554)/inc_ML( 557: 554)/inc_C++( 557: 554)    2.9/   0.1/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.23 Q(50)=1.17
+Elapsed time is 0.052337 seconds.
+Iter  1 Removing 17 seeds from Voronoi Diagram
+Est. time full(   1:  43)/inc_ML(  59:  43)/inc_C++(  59:  43)    0.1/   0.1/   0.1 s INCREMENTAL (C++)
 (Used    0.1 s)
-Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.629636 seconds.
-Iter  4 Removing 3 seeds from Voronoi Diagram
-Est. time full(   1: 551)/inc_ML( 553: 551)/inc_C++( 553: 551)    2.9/   0.1/   0.0 s INCREMENTAL (C++)
+Homogeneity Criteria min=0.84 max=1.23 Q(50)=1.18
+Elapsed time is 0.052047 seconds.
+Iter  2 Removing 10 seeds from Voronoi Diagram
+Est. time full(   1:  33)/inc_ML(  42:  33)/inc_C++(  42:  33)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
 (Used    0.1 s)
-Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.34
-Elapsed time is 0.585996 seconds.
-Elapsed time is 0.586146 seconds.
+Homogeneity Criteria min=0.84 max=1.23 Q(50)=1.17
+Elapsed time is 0.050079 seconds.
+Iter  3 Removing 11 seeds from Voronoi Diagram
+Est. time full(   1:  22)/inc_ML(  32:  22)/inc_C++(  32:  22)    0.1/   0.1/   0.0 s INCREMENTAL (C++)
+(Used    0.1 s)
+Homogeneity Criteria min=0.84 max=1.20 Q(50)=1.17
+Elapsed time is 0.050071 seconds.
+Iter  4 Removing 10 seeds from Voronoi Diagram
+Est. time full(   1:  12)/inc_ML(  21:  12)/inc_C++(  21:  12)    0.0/   0.1/   0.0 s FULL
+2.640624e-02
+4.448661e-02
+(Used    0.1 s)
+Homogeneity Criteria min=0.84 max=1.18 Q(50)=0.86
+Elapsed time is 0.050576 seconds.
+Iter  5 Removing 4 seeds from Voronoi Diagram
+Est. time full(   1:   8)/inc_ML(  11:   8)/inc_C++(  11:   8)    0.0/   0.0/   0.0 s FULL
+1.475162e-02
+1.781609e-02
+(Used    0.1 s)
+Homogeneity Criteria min=0.84 max=1.19 Q(50)=0.85
+Elapsed time is 0.051365 seconds.
+Iter  6 Removing 2 seeds from Voronoi Diagram
+Est. time full(   1:   6)/inc_ML(   7:   6)/inc_C++(   7:   6)    0.0/   0.0/   0.0 s INCREMENTAL (C++)
+(Used    0.0 s)
+Homogeneity Criteria min=0.84 max=1.16 Q(50)=0.85
+Elapsed time is 0.055657 seconds.
+Elapsed time is 0.056012 seconds.
 *** Merging phase completed.
-Merging took 5.863420e-01 seconds
+Merging took 5.623100e-02 seconds
 *** Starting regularisation phase
-Maximum distance seed/centre-of-mass 192.0 (137.9)
-Iter  1 Computing regularised Voronoi Diagram for 551 seeds
-Est. time full(   1: 551)/inc(   1: 551)    2.9/  13.1 s (Used    4.6 s)
-Maximum distance seed/centre-of-mass 46.0 (36.1)
-Iter  2 Computing regularised Voronoi Diagram for 551 seeds
-Est. time full(   1: 551)/inc(   1: 551)    2.9/  13.1 s (Used    4.4 s)
+Maximum distance seed/centre-of-mass 229.0 (175.3)
+Iter  1 Computing regularised Voronoi Diagram for 6 seeds
+Est. time full(   1:   6)/inc(   1:   6)    0.0/   0.0 s (Used    0.0 s)
+Maximum distance seed/centre-of-mass 92.0 (78.4)
+Iter  2 Computing regularised Voronoi Diagram for 6 seeds
+Est. time full(   1:   6)/inc(   1:   6)    0.0/   0.0 s (Used    0.1 s)
 *** Regularisation phase completed.
 *** Saving VOISE results in ../share/output/demo3/voise.mat
-*** Total elapsed time 00:00:59 [hh:mm:ss].
+*** Total elapsed time 00:00:08 [hh:mm:ss].

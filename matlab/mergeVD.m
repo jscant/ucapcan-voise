@@ -50,7 +50,6 @@ useOld = 0;
 useBatch = 1;
 iMerge = 1;
 stopMerge = false;
-VDarr = [VD];
 sv = 0;
 tic
 while ~stopMerge,
@@ -61,13 +60,26 @@ tic
   
 tic
   if 1,
-	  [Wmu, VD.Smu] = getVDOp(VD, params.W, @(x) median(x));
+      if useOld
+        [Wmu, VD.Smu] = getVDOp2(VD, params.W, @(x) median(x));
+      else
+          [Wmu, VD.Smu] = getVDOp(VD, params.W, 1);
+      end
   else
-	  [Wmu, VD.Smu] = getVDOp(VD, params.W, @(x) mean(x));
+      if useOld
+        [Wmu, VD.Smu] = getVDOp2(VD, params.W, @(x) mean(x));
+      else
+          [Wmu, VD.Smu] = getVDOp(VD, params.W, 2);
+      end
   end
   x = toc;
 	% sqrt(2)*std(VR_i)
-	[Wsdmu, VD.Ssdmu] = getVDOp(VD, params.W, @(x) ksd*std(x));
+    if useOld
+        [Wsdmu, VD.Ssdmu] = getVDOp2(VD, params.W, @(x) ksd*std(x));
+    else
+        %[Wsdmu, VD.Ssdmu] = getVDOp2(VD, params.W, @(x) ksd*std(x));
+        [Wsdmu, VD.Ssdmu] = getVDOp(VD, params.W, 6, ksd);
+    end
   if 0, % diagnostic plot
     [vx,vy] = voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
   end
@@ -245,7 +257,7 @@ tic
                             VD = VDTMP;
                         end
                     end
-                    if 0, drawVD(VD); disp("@@@"); pause(3); end
+                    if 1, drawVD(VD); pause(3); end
         end
               end
               toc
@@ -306,8 +318,9 @@ VD.mergeHCThreshold = mergeHCThreshold;
 
 function params = plotCurrentVD(VD, params, iMerge)
 
-VDW = getVDOp(VD, params.W, @(x) median(x));
-if 0
+%VDW = getVDOp2(VD, params.W, @(x) median(x));
+VDW = getVDOp1(VD, params.W, @(x) 'median');
+if 1
 clf
 subplot(111),
 imagesc(VDW),

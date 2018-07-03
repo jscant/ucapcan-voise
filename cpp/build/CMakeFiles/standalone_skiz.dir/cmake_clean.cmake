@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/standalone_skiz.dir/src/vd.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o"
   "standalone_skiz.pdb"
   "standalone_skiz"
 )

@@ -23,7 +23,7 @@ function params = loadImage(params)
 %   'pixelSize' and 'imageOrigo' of the VOISE parameters structure 
 %   provided.
 %
-%   imageOrigo = [0, 0] means the pixel pointed by params.W(1,1) is
+%   imageOrigo = [0, 0] means the pixel pointed by (1,1) is
 %   the origo
 
 %

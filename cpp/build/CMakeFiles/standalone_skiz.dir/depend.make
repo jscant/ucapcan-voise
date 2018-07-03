@@ -23,6 +23,10 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/skizException.h
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/typedefs.cpp
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/vd.h
 
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.cpp
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.cpp
+
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.h
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.cpp
@@ -38,6 +42,7 @@ CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/NSStar.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/addSeed.h
+CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/aux-functions/metrics.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/aux-functions/readMatrix.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/aux-functions/readSeeds.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/getRegion.h

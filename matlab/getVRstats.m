@@ -21,7 +21,8 @@ function [S,xc,yc,md2s,md2c] = getVDstats(VD, params, sk)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 % Calculate equivalent scale length from VD as sqrt(S)
-[imls, Sls] = getVDOp(VD, params.W, @(x) sqrt(length(x)));
+%[imls, Sls] = getVDOp2(VD, params.W, @(x) sqrt(length(x)));
+[imls, Sls] = getVDOp(VD, params.W, 4);
 
 if ~exist('sk') | isempty(sk),
   sk = [1:length(VD.Sk)]';

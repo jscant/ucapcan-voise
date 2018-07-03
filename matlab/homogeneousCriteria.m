@@ -21,42 +21,35 @@ function a = homogeneousCriteria(W,varargin)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 if 0
+    nW = length(W);
+    if 0
+        % mean and standard deviation
+        m = mean(W);
+        s = std(W);
+    else
+        % median and median absolute deviation
+        % are robust statistic estimators
+        % that are not unduly affected by small departures 
+        % from model assumptions
+        m = median(W);
+        s = mean(abs(W-m));
+    end
+    % find values outside range [m-s, m+s]
+    ii = find(W < m-s | W > m+s);
+    nOut = length(ii);
 
-  nW = length(W);
+    % homogeneity criteria is proportion of pixels in W with value 
+    % outside range [m-s, m+s];
+    a = nOut/nW;
 
-  if 0
-    % mean and standard deviation
-    m = mean(W);
-    s = std(W);
-  else
-    % median and median absolute deviation
-	  % are robust statistic estimators
-	  % that are not unduly affected by small departures 
-	  % from model assumptions
-    m = median(W);
-    s = mean(abs(W-m));
-  end
-
-  % find values outside range [m-s, m+s]
-  ii = find(W < m-s | W > m+s);
-  nOut = length(ii);
-
-  % homogeneity criteria is proportion of pixels in W with value 
-  % outside range [m-s, m+s];
-  a = nOut/nW;
-
-  if 0
-  fprintf(1,'card(W in VR)=%d, card(W in VR & ~in [m-s,m+s])=%d, a=%2f\n', ...
-	  nW, nOut, a);
-  end
-
+    if 0
+        fprintf(1,'card(W in VR)=%d, card(W in VR & ~in [m-s,m+s])=%d, a=%2f\n', ...
+        nW, nOut, a);
+    end
 else
-
   % max-min criteria 
   D = (max(W)-min(W));
   % norm is max D(P), P in VD
   norm = varargin{1};
-
   a = D/norm;
-
 end

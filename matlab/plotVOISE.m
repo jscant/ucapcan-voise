@@ -29,7 +29,8 @@ y = params.y;
 if isempty(VD) % original image
 	W = params.W;
 else % median operator on VD
-  W = getVDOp(VD, params.W, @(x) median(x));
+    [W, Sop] = getVDOp(VD, params.W, 1);
+  %W = getVDOp2(VD, params.W, @(x) median(x));
 end
 
 imagesc(x, y, W),

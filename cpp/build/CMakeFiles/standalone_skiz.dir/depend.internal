@@ -23,6 +23,10 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
  /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
@@ -39,6 +43,7 @@ CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/NSStar.h
  /home/jack/dev/project/voise-1.3/cpp/src/addSeed.h
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.h
  /home/jack/dev/project/voise-1.3/cpp/src/getRegion.h
