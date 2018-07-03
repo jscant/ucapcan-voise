@@ -148,6 +148,32 @@ PointInRegionCheck/fast:
 .PHONY : PointInRegionCheck/fast
 
 #=============================================================================
+# Target rules for targets named testRemoveSeedCheckV
+
+# Build rule for target.
+testRemoveSeedCheckV: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 testRemoveSeedCheckV
+.PHONY : testRemoveSeedCheckV
+
+# fast build rule for target.
+testRemoveSeedCheckV/fast:
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/build
+.PHONY : testRemoveSeedCheckV/fast
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
+
+#=============================================================================
 # Target rules for targets named SqDistanceCheck
 
 # Build rule for target.
@@ -212,19 +238,6 @@ testAddSeedCheckV/fast:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/build
 .PHONY : testAddSeedCheckV/fast
 
-#=============================================================================
-# Target rules for targets named testRemoveSeedCheckV
-
-# Build rule for target.
-testRemoveSeedCheckV: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 testRemoveSeedCheckV
-.PHONY : testRemoveSeedCheckV
-
-# fast build rule for target.
-testRemoveSeedCheckV/fast:
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/build
-.PHONY : testRemoveSeedCheckV/fast
-
 src/NSStar.o: src/NSStar.cpp.o
 
 .PHONY : src/NSStar.o
@@ -233,12 +246,12 @@ src/NSStar.o: src/NSStar.cpp.o
 src/NSStar.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.o
 .PHONY : src/NSStar.cpp.o
 
 src/NSStar.i: src/NSStar.cpp.i
@@ -249,12 +262,12 @@ src/NSStar.i: src/NSStar.cpp.i
 src/NSStar.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.i
 .PHONY : src/NSStar.cpp.i
 
 src/NSStar.s: src/NSStar.cpp.s
@@ -265,12 +278,12 @@ src/NSStar.s: src/NSStar.cpp.s
 src/NSStar.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.s
 .PHONY : src/NSStar.cpp.s
 
 src/addSeed.o: src/addSeed.cpp.o
@@ -281,12 +294,12 @@ src/addSeed.o: src/addSeed.cpp.o
 src/addSeed.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.o
 .PHONY : src/addSeed.cpp.o
 
 src/addSeed.i: src/addSeed.cpp.i
@@ -297,12 +310,12 @@ src/addSeed.i: src/addSeed.cpp.i
 src/addSeed.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.i
 .PHONY : src/addSeed.cpp.i
 
 src/addSeed.s: src/addSeed.cpp.s
@@ -313,12 +326,12 @@ src/addSeed.s: src/addSeed.cpp.s
 src/addSeed.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.s
 .PHONY : src/addSeed.cpp.s
 
 src/aux-functions/metrics.o: src/aux-functions/metrics.cpp.o
@@ -356,12 +369,12 @@ src/aux-functions/readMatrix.o: src/aux-functions/readMatrix.cpp.o
 src/aux-functions/readMatrix.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o
 .PHONY : src/aux-functions/readMatrix.cpp.o
 
 src/aux-functions/readMatrix.i: src/aux-functions/readMatrix.cpp.i
@@ -372,12 +385,12 @@ src/aux-functions/readMatrix.i: src/aux-functions/readMatrix.cpp.i
 src/aux-functions/readMatrix.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.i
 .PHONY : src/aux-functions/readMatrix.cpp.i
 
 src/aux-functions/readMatrix.s: src/aux-functions/readMatrix.cpp.s
@@ -388,12 +401,12 @@ src/aux-functions/readMatrix.s: src/aux-functions/readMatrix.cpp.s
 src/aux-functions/readMatrix.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.s
 .PHONY : src/aux-functions/readMatrix.cpp.s
 
 src/aux-functions/readSeeds.o: src/aux-functions/readSeeds.cpp.o
@@ -404,12 +417,12 @@ src/aux-functions/readSeeds.o: src/aux-functions/readSeeds.cpp.o
 src/aux-functions/readSeeds.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o
 .PHONY : src/aux-functions/readSeeds.cpp.o
 
 src/aux-functions/readSeeds.i: src/aux-functions/readSeeds.cpp.i
@@ -420,12 +433,12 @@ src/aux-functions/readSeeds.i: src/aux-functions/readSeeds.cpp.i
 src/aux-functions/readSeeds.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.i
 .PHONY : src/aux-functions/readSeeds.cpp.i
 
 src/aux-functions/readSeeds.s: src/aux-functions/readSeeds.cpp.s
@@ -436,12 +449,12 @@ src/aux-functions/readSeeds.s: src/aux-functions/readSeeds.cpp.s
 src/aux-functions/readSeeds.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.s
 .PHONY : src/aux-functions/readSeeds.cpp.s
 
 src/getRegion.o: src/getRegion.cpp.o
@@ -452,12 +465,12 @@ src/getRegion.o: src/getRegion.cpp.o
 src/getRegion.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.o
 .PHONY : src/getRegion.cpp.o
 
 src/getRegion.i: src/getRegion.cpp.i
@@ -468,12 +481,12 @@ src/getRegion.i: src/getRegion.cpp.i
 src/getRegion.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.i
 .PHONY : src/getRegion.cpp.i
 
 src/getRegion.s: src/getRegion.cpp.s
@@ -484,12 +497,12 @@ src/getRegion.s: src/getRegion.cpp.s
 src/getRegion.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.s
 .PHONY : src/getRegion.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -527,12 +540,12 @@ src/pointInRegion.o: src/pointInRegion.cpp.o
 src/pointInRegion.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.o
 .PHONY : src/pointInRegion.cpp.o
 
 src/pointInRegion.i: src/pointInRegion.cpp.i
@@ -543,12 +556,12 @@ src/pointInRegion.i: src/pointInRegion.cpp.i
 src/pointInRegion.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.i
 .PHONY : src/pointInRegion.cpp.i
 
 src/pointInRegion.s: src/pointInRegion.cpp.s
@@ -559,12 +572,12 @@ src/pointInRegion.s: src/pointInRegion.cpp.s
 src/pointInRegion.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.s
 .PHONY : src/pointInRegion.cpp.s
 
 src/removeSeed.o: src/removeSeed.cpp.o
@@ -575,12 +588,12 @@ src/removeSeed.o: src/removeSeed.cpp.o
 src/removeSeed.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.o
 .PHONY : src/removeSeed.cpp.o
 
 src/removeSeed.i: src/removeSeed.cpp.i
@@ -591,12 +604,12 @@ src/removeSeed.i: src/removeSeed.cpp.i
 src/removeSeed.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.i
 .PHONY : src/removeSeed.cpp.i
 
 src/removeSeed.s: src/removeSeed.cpp.s
@@ -607,12 +620,12 @@ src/removeSeed.s: src/removeSeed.cpp.s
 src/removeSeed.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.s
 .PHONY : src/removeSeed.cpp.s
 
 src/skizException.o: src/skizException.cpp.o
@@ -623,12 +636,12 @@ src/skizException.o: src/skizException.cpp.o
 src/skizException.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/skizException.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.o
 .PHONY : src/skizException.cpp.o
 
 src/skizException.i: src/skizException.cpp.i
@@ -639,12 +652,12 @@ src/skizException.i: src/skizException.cpp.i
 src/skizException.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/skizException.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.i
 .PHONY : src/skizException.cpp.i
 
 src/skizException.s: src/skizException.cpp.s
@@ -655,12 +668,12 @@ src/skizException.s: src/skizException.cpp.s
 src/skizException.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/skizException.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.s
 .PHONY : src/skizException.cpp.s
 
 src/test/Catch2/test_main.o: src/test/Catch2/test_main.cpp.o
@@ -671,11 +684,11 @@ src/test/Catch2/test_main.o: src/test/Catch2/test_main.cpp.o
 src/test/Catch2/test_main.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/Catch2/test_main.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.o
 .PHONY : src/test/Catch2/test_main.cpp.o
 
 src/test/Catch2/test_main.i: src/test/Catch2/test_main.cpp.i
@@ -686,11 +699,11 @@ src/test/Catch2/test_main.i: src/test/Catch2/test_main.cpp.i
 src/test/Catch2/test_main.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/Catch2/test_main.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.i
 .PHONY : src/test/Catch2/test_main.cpp.i
 
 src/test/Catch2/test_main.s: src/test/Catch2/test_main.cpp.s
@@ -701,11 +714,11 @@ src/test/Catch2/test_main.s: src/test/Catch2/test_main.cpp.s
 src/test/Catch2/test_main.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/Catch2/test_main.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.s
 .PHONY : src/test/Catch2/test_main.cpp.s
 
 src/test/test-help-fns/bruteForceCheckLambda.o: src/test/test-help-fns/bruteForceCheckLambda.cpp.o
@@ -716,11 +729,11 @@ src/test/test-help-fns/bruteForceCheckLambda.o: src/test/test-help-fns/bruteForc
 src/test/test-help-fns/bruteForceCheckLambda.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 .PHONY : src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 
 src/test/test-help-fns/bruteForceCheckLambda.i: src/test/test-help-fns/bruteForceCheckLambda.cpp.i
@@ -731,11 +744,11 @@ src/test/test-help-fns/bruteForceCheckLambda.i: src/test/test-help-fns/bruteForc
 src/test/test-help-fns/bruteForceCheckLambda.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 .PHONY : src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 
 src/test/test-help-fns/bruteForceCheckLambda.s: src/test/test-help-fns/bruteForceCheckLambda.cpp.s
@@ -746,11 +759,11 @@ src/test/test-help-fns/bruteForceCheckLambda.s: src/test/test-help-fns/bruteForc
 src/test/test-help-fns/bruteForceCheckLambda.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 .PHONY : src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 
 src/test/test-help-fns/bruteForceCheckV.o: src/test/test-help-fns/bruteForceCheckV.cpp.o
@@ -761,11 +774,11 @@ src/test/test-help-fns/bruteForceCheckV.o: src/test/test-help-fns/bruteForceChec
 src/test/test-help-fns/bruteForceCheckV.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 .PHONY : src/test/test-help-fns/bruteForceCheckV.cpp.o
 
 src/test/test-help-fns/bruteForceCheckV.i: src/test/test-help-fns/bruteForceCheckV.cpp.i
@@ -776,11 +789,11 @@ src/test/test-help-fns/bruteForceCheckV.i: src/test/test-help-fns/bruteForceChec
 src/test/test-help-fns/bruteForceCheckV.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 .PHONY : src/test/test-help-fns/bruteForceCheckV.cpp.i
 
 src/test/test-help-fns/bruteForceCheckV.s: src/test/test-help-fns/bruteForceCheckV.cpp.s
@@ -791,11 +804,11 @@ src/test/test-help-fns/bruteForceCheckV.s: src/test/test-help-fns/bruteForceChec
 src/test/test-help-fns/bruteForceCheckV.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 .PHONY : src/test/test-help-fns/bruteForceCheckV.cpp.s
 
 src/test/test-help-fns/loadVD.o: src/test/test-help-fns/loadVD.cpp.o
@@ -806,11 +819,11 @@ src/test/test-help-fns/loadVD.o: src/test/test-help-fns/loadVD.cpp.o
 src/test/test-help-fns/loadVD.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o
 .PHONY : src/test/test-help-fns/loadVD.cpp.o
 
 src/test/test-help-fns/loadVD.i: src/test/test-help-fns/loadVD.cpp.i
@@ -821,11 +834,11 @@ src/test/test-help-fns/loadVD.i: src/test/test-help-fns/loadVD.cpp.i
 src/test/test-help-fns/loadVD.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.i
 .PHONY : src/test/test-help-fns/loadVD.cpp.i
 
 src/test/test-help-fns/loadVD.s: src/test/test-help-fns/loadVD.cpp.s
@@ -836,11 +849,11 @@ src/test/test-help-fns/loadVD.s: src/test/test-help-fns/loadVD.cpp.s
 src/test/test-help-fns/loadVD.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.s
 .PHONY : src/test/test-help-fns/loadVD.cpp.s
 
 src/test/testAddSeedCheckLambda.o: src/test/testAddSeedCheckLambda.cpp.o
@@ -1067,12 +1080,12 @@ src/vd.o: src/vd.cpp.o
 src/vd.cpp.o:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.o
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.o
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.o
 .PHONY : src/vd.cpp.o
 
 src/vd.i: src/vd.cpp.i
@@ -1083,12 +1096,12 @@ src/vd.i: src/vd.cpp.i
 src/vd.cpp.i:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.i
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.i
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.i
 .PHONY : src/vd.cpp.i
 
 src/vd.s: src/vd.cpp.s
@@ -1099,12 +1112,12 @@ src/vd.s: src/vd.cpp.s
 src/vd.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.s
+	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.s
-	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.s
 .PHONY : src/vd.cpp.s
 
 # Help Target
@@ -1116,14 +1129,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... InVectorCheck"
 	@echo "... PointInRegionCheck"
-	@echo "... test"
+	@echo "... testRemoveSeedCheckV"
+	@echo "... doc"
 	@echo "... SqDistanceCheck"
 	@echo "... standalone_skiz"
 	@echo "... testAddSeedCheckLambda"
+	@echo "... test"
 	@echo "... testRemoveSeedCheckLambda"
 	@echo "... rebuild_cache"
 	@echo "... testAddSeedCheckV"
-	@echo "... testRemoveSeedCheckV"
 	@echo "... src/NSStar.o"
 	@echo "... src/NSStar.i"
 	@echo "... src/NSStar.s"

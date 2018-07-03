@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nsstar',['nsStar',['../group__nsStar.html',1,'']]]
+  ['mexfunctions',['MexFunctions',['../group__mexFunctions.html',1,'']]]
 ];

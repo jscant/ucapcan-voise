@@ -24,9 +24,11 @@ var searchData=
   ['getsybyidx',['getSyByIdx',['../classvd.html#a0f630fc80e57d3e17ab036f75afde006',1,'vd']]],
   ['getv',['getV',['../classvd.html#aad4ea5c045b8380f83b0490af2fee0fa',1,'vd']]],
   ['getvbyidx',['getVByIdx',['../classvd.html#a640ed20e4618abd409e180a707eea3b1',1,'vd']]],
+  ['getvdop_2ecpp',['getVDOp.cpp',['../getVDOp_8cpp.html',1,'']]],
   ['getvk',['getVk',['../classvd.html#a090bebdbbff36888934c870daf3dcb36',1,'vd']]],
   ['getw',['getW',['../classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118',1,'vd']]],
   ['grabvd',['grabVD',['../group__grabVD.html',1,'']]],
   ['grabvd_2ecpp',['grabVD.cpp',['../grabVD_8cpp.html',1,'']]],
-  ['grabvd_2eh',['grabVD.h',['../grabVD_8h.html',1,'']]]
+  ['grabvd_2eh',['grabVD.h',['../grabVD_8h.html',1,'']]],
+  ['grabw_2ecpp',['grabW.cpp',['../grabW_8cpp.html',1,'']]]
 ];

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "CMakeDoxyfile.in"
   "CMakeFiles/3.11.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.11.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.11.2/CMakeSystem.cmake"
@@ -23,6 +24,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/cmake-3.11.2/Modules/Compiler/GNU-C.cmake"
   "/opt/cmake-3.11.2/Modules/Compiler/GNU-CXX.cmake"
   "/opt/cmake-3.11.2/Modules/Compiler/GNU.cmake"
+  "/opt/cmake-3.11.2/Modules/FindDoxygen.cmake"
+  "/opt/cmake-3.11.2/Modules/FindPackageHandleStandardArgs.cmake"
+  "/opt/cmake-3.11.2/Modules/FindPackageMessage.cmake"
   "/opt/cmake-3.11.2/Modules/Platform/Linux-GNU-C.cmake"
   "/opt/cmake-3.11.2/Modules/Platform/Linux-GNU-CXX.cmake"
   "/opt/cmake-3.11.2/Modules/Platform/Linux-GNU.cmake"
@@ -38,6 +42,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "../Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -45,10 +50,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/InVectorCheck.dir/DependInfo.cmake"
   "CMakeFiles/PointInRegionCheck.dir/DependInfo.cmake"
+  "CMakeFiles/testRemoveSeedCheckV.dir/DependInfo.cmake"
+  "CMakeFiles/doc.dir/DependInfo.cmake"
   "CMakeFiles/SqDistanceCheck.dir/DependInfo.cmake"
   "CMakeFiles/standalone_skiz.dir/DependInfo.cmake"
   "CMakeFiles/testAddSeedCheckLambda.dir/DependInfo.cmake"
   "CMakeFiles/testRemoveSeedCheckLambda.dir/DependInfo.cmake"
   "CMakeFiles/testAddSeedCheckV.dir/DependInfo.cmake"
-  "CMakeFiles/testRemoveSeedCheckV.dir/DependInfo.cmake"
   )

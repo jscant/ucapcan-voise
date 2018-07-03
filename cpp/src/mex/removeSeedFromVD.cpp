@@ -1,3 +1,7 @@
+/**
+ * This is a requirement for a MEX function. It should only be compiled by the compileMEX.m matlab script.
+ */
+
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>

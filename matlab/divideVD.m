@@ -211,7 +211,7 @@ fprintf(1,'*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)
 
-if 1
+if 0
     
 %VDW = getVDOp(VD, params.W, @(x) median(x));
 VDW = getVDOp(VD, params.W, 1);

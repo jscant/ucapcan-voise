@@ -12,7 +12,7 @@ add_executable(standalone_skiz src/main.cpp src/typedefs.cpp src/addSeed.cpp src
         src/aux-functions/readMatrix.cpp src/aux-functions/metrics.cpp)
 
 set(TESTING ON)
-set(GENERATE_DOXYGEN OFF)
+set(GENERATE_DOXYGEN ON)
 message(status ${CMAKE_CURRENT_SOURCE_DIR}/build)
 if(GENERATE_DOXYGEN)
     find_package(Doxygen)
@@ -21,7 +21,7 @@ if(GENERATE_DOXYGEN)
         set(DOXYGEN_SKIP_FUNCTION_MACROS NO)
         set(DOXYGEN_LAYOUT_FILE DoxygenLayout.xml)
         set(DOXYGEN_SHOW_DIRECTORIES YES)
-        set(DOXYGEN_INPUT "src src/aux-functions src/test other/mainpage-info.txt")
+        set(DOXYGEN_INPUT "src src/aux-functions src/test other/mainpage-info.txt src/mex")
         set(doxyfile_in build/CMakeDoxyfile.in)
         set(doxyfile ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile)
 

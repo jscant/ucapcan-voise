@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sqdist',['sqDist',['../group__sqDist.html',1,'']]]
+  ['readmatrix',['readMatrix',['../group__readMatrix.html',1,'']]],
+  ['readseeds',['readSeeds',['../group__readSeeds.html',1,'']]]
 ];

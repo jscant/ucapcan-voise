@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['test_5fcase',['TEST_CASE',['../testAddSeedCheckLambda_8cpp.html#a6f6d9e1d1c598e2fd6be48fee2857ca7',1,'TEST_CASE(&quot;Check whether the addSeed method correctly recalculates the lambda matrix&quot;):&#160;testAddSeedCheckLambda.cpp'],['../testAddSeedCheckV_8cpp.html#af8f7029bd707ce8733e89616b76482af',1,'TEST_CASE(&quot;Check whether the addSeed method correctly recalculates the v matrix.&quot;):&#160;testAddSeedCheckV.cpp'],['../testInVector_8cpp.html#ab34965ac493a2cdf51939266c8ffa019',1,'TEST_CASE(&quot;Check if inVector correctly identifies item in vector of ints&quot;):&#160;testInVector.cpp'],['../testInVector_8cpp.html#a933f5dc8e504c0560bf18ba76c1c4669',1,'TEST_CASE(&quot;Check if inVector correctly identifies lack of item in vector of ints&quot;):&#160;testInVector.cpp'],['../testInVector_8cpp.html#a61ce30f01fbb56b1c24eea5b9f565bdb',1,'TEST_CASE(&quot;Check if inVector correctly identifies item in vector of reals&quot;):&#160;testInVector.cpp'],['../testInVector_8cpp.html#a666151ec109d197b9c48767710b2b458',1,'TEST_CASE(&quot;Check if inVector correctly identifies lack of item in vector of reals&quot;):&#160;testInVector.cpp'],['../testInVector_8cpp.html#a4ebdff9874646946a45f31b1ea14e927',1,'TEST_CASE(&quot;Check if inVector can handle empty vectors&quot;):&#160;testInVector.cpp'],['../testPointInRegion_8cpp.html#ab16d1b181deb76534bd83bf7d64e3b09',1,'TEST_CASE(&quot;Lower bounds of getRegion&quot;):&#160;testPointInRegion.cpp'],['../testPointInRegion_8cpp.html#a52252a02ec7fcb1f3cb79466e327e4ff',1,'TEST_CASE(&quot;Upper bounds of getRegion&quot;):&#160;testPointInRegion.cpp'],['../testRemoveSeedCheckLambda_8cpp.html#a4d196541b87cdd5ef59d6690ccaff669',1,'TEST_CASE(&quot;Check whether the removeSeed method correctly recalculates the lambda matrix&quot;):&#160;testRemoveSeedCheckLambda.cpp'],['../testRemoveSeedCheckV_8cpp.html#aa5b8c0eb233dd2f98b9782ff74c4e4ec',1,'TEST_CASE(&quot;Check whether the removeSeed method correctly recalculates the v matrix&quot;):&#160;testRemoveSeedCheckV.cpp'],['../testSqDist_8cpp.html#afab3f0de5892e92cd68fec3e1bb64e91',1,'TEST_CASE(&quot;Square distance of identical points&quot;):&#160;testSqDist.cpp'],['../testSqDist_8cpp.html#ae0ea2c38f9c778654a017418d1d0b818',1,'TEST_CASE(&quot;Check squared distance on vertically aligned points&quot;):&#160;testSqDist.cpp'],['../testSqDist_8cpp.html#a1ea6a49ba5e71acdd429ec3f31272298',1,'TEST_CASE(&quot;Check squared distance on horizontally aligned points&quot;):&#160;testSqDist.cpp'],['../testSqDist_8cpp.html#a84ff6dd45af7139f3cef303df1efaa41',1,'TEST_CASE(&quot;Check squared distance between points with non-integer coordinates&quot;):&#160;testSqDist.cpp'],['../testSqDist_8cpp.html#a4fc8b41fa1ef75ec4be9a17e144cb235',1,'TEST_CASE(&quot;Check squared distance between points which are neither vertically nor horizontally aligned&quot;):&#160;testSqDist.cpp'],['../testSqDist_8cpp.html#a1459b5b0f8571a2db01b42527c47bc83',1,'TEST_CASE(&quot;Check squared distance between points, some of which have negative coordinates&quot;):&#160;testSqDist.cpp']]]
+  ['setk',['setK',['../classvd.html#a7c692a97b49c4596c4ec1bc0a129b516',1,'vd']]],
+  ['setlam',['setLam',['../classvd.html#ae13e9e465d08425218bd8f85ce420c05',1,'vd']]],
+  ['setlambyidx',['setLamByIdx',['../classvd.html#a8df228a05762e0c0a2bccc28094a1f92',1,'vd']]],
+  ['setnk',['setNk',['../classvd.html#aa1a3d9448f6ff6f8076b15c9e9a63d7e',1,'vd']]],
+  ['setnkbyidx',['setNkByIdx',['../classvd.html#aa45da38425cbd5b48f61313323ba6204',1,'vd']]],
+  ['setpx',['setPx',['../classvd.html#a579df0c885a43bb876449889bbcba6cb',1,'vd']]],
+  ['setpy',['setPy',['../classvd.html#a8314de29eacf72f10afee2c67b0c9819',1,'vd']]],
+  ['sets',['setS',['../classvd.html#a0b4c53a592ec499899a37c2e6364806a',1,'vd']]],
+  ['setseeds',['setSeeds',['../classvd.html#a739318bbb45d4facfcc1899c71b91720',1,'vd']]],
+  ['setsk',['setSk',['../classvd.html#a42dc1ab4c7033c49c0b3716d461ad2ef',1,'vd']]],
+  ['setskbyidx',['setSkByIdx',['../classvd.html#a578ca6980896563397214c584401c7f5',1,'vd']]],
+  ['setsx',['setSx',['../classvd.html#afb492f7d32ff2a4d54bd531d57d66a1a',1,'vd']]],
+  ['setsxbyidx',['setSxByIdx',['../classvd.html#a440d47d94f489ceefa9037be51daef66',1,'vd']]],
+  ['setsy',['setSy',['../classvd.html#af103a45c726643e96f69be4363ad2409',1,'vd']]],
+  ['setsybyidx',['setSyByIdx',['../classvd.html#a5407f9c20ed4ff2300ccbebb999d1dde',1,'vd']]],
+  ['setv',['setV',['../classvd.html#a33e792915ebd0295a3475fe686b41ee9',1,'vd']]],
+  ['setvbyidx',['setVByIdx',['../classvd.html#a29670919bb8d5b2f2f0235ddfda6484e',1,'vd']]],
+  ['setvk',['setVk',['../classvd.html#a062d265bd642352d6f7e8cc8685ed7a8',1,'vd']]],
+  ['setw',['setW',['../classvd.html#a85ee3a096c181f76d15f4b7fcf137fe7',1,'vd']]],
+  ['skizexception',['SKIZException',['../classSKIZException.html#a30a47c59e9fd4ea93441c9029c4068d9',1,'SKIZException']]],
+  ['skizidenticalseedsexception',['SKIZIdenticalSeedsException',['../classSKIZIdenticalSeedsException.html#a776554e938f17373b9de355c81eb78e3',1,'SKIZIdenticalSeedsException']]],
+  ['skizindexexception',['SKIZIndexException',['../classSKIZIndexException.html#abd89a7895a20077dbb514271c6455f75',1,'SKIZIndexException']]],
+  ['skizioexception',['SKIZIOException',['../classSKIZIOException.html#a9f25dbc11996a8755965923611cce128',1,'SKIZIOException']]],
+  ['skizlinearseedsexception',['SKIZLinearSeedsException',['../classSKIZLinearSeedsException.html#a11607556ca04d52a2d2c35c06fad3f6b',1,'SKIZLinearSeedsException']]]
 ];

@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
+ * @brief This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Allocates memory and
+ * populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
  */
 
 #include <eigen3/Eigen/Dense>
