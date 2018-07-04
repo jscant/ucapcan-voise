@@ -127,39 +127,33 @@ StopDiv = True
 *** Dividing phase completed.
 *** Starting merging phase
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.24
-2.000000
-Elapsed time is 0.040191 seconds.
+Elapsed time is 0.042309 seconds.
 Iter  1 Removing 33 seeds from Voronoi Diagram
 Est. time full(   1: 488)/inc_ML( 520: 488)/inc_C++( 520: 488)    2.3/   0.7/   0.1 s INCREMENTAL (C++)
 (Used    0.0 s)
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-2.000000
-Elapsed time is 0.036292 seconds.
+Elapsed time is 0.033350 seconds.
 Iter  2 Removing 10 seeds from Voronoi Diagram
 Est. time full(   1: 478)/inc_ML( 487: 478)/inc_C++( 487: 478)    2.2/   0.2/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-2.000000
-Elapsed time is 0.030307 seconds.
+Elapsed time is 0.039176 seconds.
 Iter  3 Removing 2 seeds from Voronoi Diagram
 Est. time full(   1: 476)/inc_ML( 477: 476)/inc_C++( 477: 476)    2.2/   0.0/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-2.000000
-Elapsed time is 0.026954 seconds.
+Elapsed time is 0.041636 seconds.
 Iter  4 Removing 3 seeds from Voronoi Diagram
 Est. time full(   1: 473)/inc_ML( 475: 473)/inc_C++( 475: 473)    2.2/   0.1/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-2.000000
-Elapsed time is 0.026895 seconds.
+Elapsed time is 0.028653 seconds.
 Iter  5 Removing 2 seeds from Voronoi Diagram
 Est. time full(   1: 471)/inc_ML( 472: 471)/inc_C++( 472: 471)    2.2/   0.0/   0.0 s INCREMENTAL (C++)
 (Used    0.0 s)
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-2.000000
-Elapsed time is 0.023979 seconds.
-Elapsed time is 0.024292 seconds.
+Elapsed time is 0.022889 seconds.
+Elapsed time is 0.023185 seconds.
 *** Merging phase completed.
 *** Starting regularisation phase
 Maximum distance seed/centre-of-mass 389.0 (275.1)
@@ -168,4 +162,4 @@ Maximum distance seed/centre-of-mass 17.0 (12.0)
 Iter  2 Computing regularised Voronoi Diagram for 471 seeds
 *** Regularisation phase completed.
 *** Saving VOISE results in ../share/output/north_proj/voise.mat
-*** Total elapsed time 00:00:09 [hh:mm:ss].
+*** Total elapsed time 00:00:04 [hh:mm:ss].
