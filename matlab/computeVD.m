@@ -24,15 +24,17 @@ function VD = computeVD(nr, nc, S, VDlim)
 VD = initVD(nr, nc, S, VDlim);
 
 ns = size(S, 1);
-for k = 3:ns,
-  VD = addSeedToVD2(VD, S(k,:));
-	if 0
-  drawVD(VD);
-	end
-  if 0,
-    fprintf(1,'.');
-  end
-end
+Sk = S(3:ns, :);
+VD = addSeedToVDBatch(VD, Sk);
+% for k = 3:ns,
+%   VD = addSeedToVD(VD, S(k,:));
+% 	if 0
+%   drawVD(VD);
+% 	end
+%   if 0,
+%     fprintf(1,'.');
+%   end
+% end
 if 0
 fprintf(1,'\n');
 end

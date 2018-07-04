@@ -19,7 +19,7 @@ function params = plotVOISE(VD, params, ic)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-
+if 0
 clf
 subplot(111)
 
@@ -72,4 +72,4 @@ end
 if params.movDiag
   movieHandler(params,'addframe');
 end
-
+end

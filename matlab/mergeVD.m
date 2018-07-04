@@ -77,8 +77,8 @@ tic
     if useOld
         [Wsdmu, VD.Ssdmu] = getVDOp2(VD, params.W, @(x) ksd*std(x));
     else
-        %[Wsdmu, VD.Ssdmu] = getVDOp2(VD, params.W, @(x) ksd*std(x));
         [Wsdmu, VD.Ssdmu] = getVDOp(VD, params.W, 6, ksd);
+	%[Wsdmu, VD.Ssdmu] = getVDOp2(VD, params.W, @(x) ksd*std(x));
     end
   if 0, % diagnostic plot
     [vx,vy] = voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));

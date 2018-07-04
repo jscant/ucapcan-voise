@@ -32,18 +32,18 @@ function [params,IVD,DVD,MVD,CVD] = VOISE(params, varargin)
 % miscellaneous information about VOISE
 global voise timing
 
-if ischar(params) % params is the name of a VOISE configuration file
+if ischar(params), % params is the name of a VOISE configuration file
   % load VOISE parameters
 	params = readVOISEconf(params);
 	% load input image
 	params = loadImage(params);
 	% create directory if necessary
-	if ~exist(params.oDir,'dir')
+	if ~exist(params.oDir,'dir'),
 	  unix(['mkdir -p ' params.oDir]);
 	end
 end
 
-if params.logVOISE % init diary to log VOISE run
+if params.logVOISE, % init diary to log VOISE run
   unix(['rm -f ' params.oDir params.oLogFile]);
   diary([params.oDir params.oLogFile])
 	diary('on')
@@ -54,7 +54,7 @@ t = cputime;
 
 printVOISEsetup(params);
 
-if params.movDiag % init movie
+if params.movDiag, % init movie
   movieHandler(params, 'init');
 end
 
@@ -69,11 +69,11 @@ radfluct = params.radFluct;
 % init seed of Mersenne-Twister RNG
 RandStream.setGlobalStream(RandStream('mt19937ar','seed',params.RNGiseed));
 
-if isa(params.initSeeds, 'char') | isa(params.initSeeds, 'function_handle')
+if isa(params.initSeeds, 'char') | isa(params.initSeeds, 'function_handle'),
   [initSeeds, msg] = fcnchk(params.initSeeds);
   VDlim = setVDlim(nr,nc,clipping);
   S = initSeeds(nr, nc, ns, VDlim);
-  if ~isempty(radfluct)
+  if ~isempty(radfluct),
     S = shakeSeeds(S,nr,nc,VDlim,radfluct);
   end
 	ns = size(S,1);
@@ -82,7 +82,7 @@ else
 end
 
 if params.divideAlgo == 2 && ...
-   exist([voise.root '/share/VOISEtiming.mat'],'file')
+   exist([voise.root '/share/VOISEtiming.mat'],'file'),
   timing = load([voise.root '/share/VOISEtiming.mat']);
 end
 
@@ -91,24 +91,22 @@ save([params.oDir params.oMatFile], 'params');
 
 % Initialise VD
 fprintf(1,'*** Initialising VOISE\n')
-switch params.initAlgo
-  case 0 % incremental
+switch params.initAlgo,
+  case 0, % incremental
     IVD = computeVD(nr, nc, S, VDlim);
-	case 1 % full
+	case 1, % full
 	  IVD = computeVDFast(nr, nc, S, VDlim);
-	case 2 % timing based
+	case 2, % timing based
 	  tf = polyval(timing.ptVDf, ns);
 		ti = sum(polyval(timing.ptVDa, [1:ns]));
 		fprintf(1,'Est. time full(%4d:%4d)/inc(%4d:%4d) %6.1f/%6.1f s ', ...
 		        1, ns, 1, ns, tf, ti);
 		tStart = tic;
-		if tf < ti % full faster than incremental
+		if tf < ti, % full faster than incremental
 		  IVD = computeVDFast(nr, nc, S, VDlim);
-        else % incremental faster than full
+		else, % incremental faster than full
 		  IVD = computeVD(nr, nc, S, VDlim);
-          
-        end
-        
+		end
 		fprintf(1,'(Used %6.1f s)\n', toc(tStart));
 end
 fprintf(1,'*** Initialising completed.\n')
@@ -118,11 +116,8 @@ save([params.oDir params.oMatFile], '-append', 'IVD');
 % plot 
 params = plotVOISE(IVD, params, 0);
 
-% Dividing phase
-tic
-%profile on;
+% Dividing phase 
 [DVD, params] = divideVD(IVD, params);
-fprintf("Dividing took %d seconds\n", toc);
 % save 
 save([params.oDir params.oMatFile], '-append', 'DVD'); 
 % plot
@@ -132,11 +127,7 @@ params = plotVOISE(DVD, params, 1);
 if ~params.movDiag, vd1 = figure; end
 
 % Merging phase
-tic
 [MVD, params] = mergeVD(DVD, params);
-fprintf("Merging took %d seconds\n", toc);
-%profile off
-%profsave(profile('info'),'profile_results')
 % save 
 save([params.oDir params.oMatFile], '-append', 'MVD');
 % plot
@@ -166,6 +157,6 @@ t = cputime-t;
 fprintf(1,'*** Total elapsed time %02d:%02d:%02d [hh:mm:ss].\n', ...
         floor(t/3600), floor(mod(t,3600)/60), floor(mod(mod(t,3660),60)));
 
-if params.logVOISE
+if params.logVOISE,
 	diary('off')
 end

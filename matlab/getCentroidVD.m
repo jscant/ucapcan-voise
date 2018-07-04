@@ -45,19 +45,34 @@ stopReg = false;
 while ~stopReg, 
 
   % compute centre-of-mass of polygons
-  Sc = zeros(0,2);
-	Sk = [];
-  for k = VD.Sk',
-    sc  = getCentroidSeed(VD, params, k);
-		if isempty(find(sc(1) == Sc(:,1) & sc(2) == Sc(:,2)))
-	    % in some cases two centroid seeds could be identical
-		  % for example here
-		  % o 1 1 
-      % 2 x 1
-		  % 2 2 o
-      Sc = [[Sc(:,1); sc(1)],[Sc(:,2); sc(2)]];
+ Sc = zeros(0,2);
+Sk = [];
+if 1
+	Sc1 = getCentroidSeedBatch(VD, params.W, VD.Sk');
+	for k = 1:length(VD.Sk)
+		if isempty(find(Sc1(k, 1) == Sc(:,1) & Sc1(k, 2) == Sc(:,2)))
+			Sc = [[Sc(:,1); Sc1(k, 1)],[Sc(:,2); Sc1(k, 2)]];
 			Sk = [Sk; k];
 		end
+	end
+else
+	for k = VD.Sk'
+	sc1  = getCentroidSeed(VD, params.W, k)
+	sc = getCentroidSeed2(VD, params, k)
+	if sc1(1) ~= sc(1) || sc1(2) ~= sc(2)
+		disp("Old: %i, %i \t New: %i, %i\n", sc(1), sc(2), sc1(1), sc1(2));
+	end
+	if isempty(find(sc(1) == Sc(:,1) & sc(2) == Sc(:,2)))
+		%in some cases two centroid seeds could be identical
+		% for example here
+		% o 1 1 
+		% 2 x 1
+		% 2 2 o
+		Sc = [[Sc(:,1); sc(1)],[Sc(:,2); sc(2)]];
+		Sk = [Sk; k];
+	end
+end
+
   end
   %pause
   dist = abs(Sc(:,1)-VD.Sx(Sk)) + abs(Sc(:,2)-VD.Sy(Sk));
@@ -73,6 +88,7 @@ while ~stopReg,
   if max(dist) > 1 && iReg<=params.regMaxIter, 
     fprintf(1,'Iter %2d Computing regularised Voronoi Diagram for %d seeds\n',...
 		        iReg, size(Sc,1));
+            params.regAlgo = 0;
     switch params.regAlgo,
 	    case 0, % incremental
 		    VD = computeVD(nr, nc, Sc, VD.W);
@@ -112,7 +128,7 @@ function params = plotCurrentVD(VD, params, iReg)
 
 VDW = getVDOp(VD, params.W, 1);
 %VDW = getVDOp(VD, params.W, @(x) median(x));
-
+if 0
 clf
 subplot(111),
 imagesc(VDW),
@@ -143,4 +159,4 @@ end
 if params.movDiag,
   movieHandler(params,'addframe');
 end
-
+end 

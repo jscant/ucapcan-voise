@@ -38,11 +38,14 @@ real maxMin(RealVec vec){
 
 real stdDev(RealVec vec){
     real N = vec.size();
+    if(N == 1 || N == 0){
+        return 0;
+    }
     real sum = std::accumulate(vec.begin(), vec.end(), 0.0);
     real mean = sum/N;
     real sumOfSquares = 0.0;
     for(auto i = 0; i < N; ++i){
         sumOfSquares += pow(vec.at(i) - mean, 2);
     }
-    return sqrt(sumOfSquares/(N - 1));
+    return sqrt(sumOfSquares/(N-1));
 }

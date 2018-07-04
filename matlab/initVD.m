@@ -78,7 +78,7 @@ ns = size(S, 1);
 % Information about graph data structures can be found at
 % http://www.dreamincode.net/forums/topic/282225-data-structures-graph-theory-representing-graphs/
 % adjacency list http://en.wikipedia.org/wiki/Adjacency_list
-VD.Nk = cell(ns,1);
+VD.Nk = cell(2,1);
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
