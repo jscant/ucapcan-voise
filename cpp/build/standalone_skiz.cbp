@@ -17,6 +17,38 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="MetricChecks">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MetricChecks/fast">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
 				<Option type="4"/>
@@ -311,6 +343,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -321,6 +354,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/NSStar.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -331,6 +365,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -341,6 +376,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/addSeed.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -351,12 +387,15 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h">
+			<Option target="MetricChecks"/>
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -367,6 +406,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -377,6 +417,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -387,6 +428,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -397,6 +439,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -407,6 +450,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getRegion.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -420,6 +464,7 @@
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -430,6 +475,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -440,6 +486,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -450,6 +497,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/removeSeed.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -460,6 +508,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -470,6 +519,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/skizException.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -480,6 +530,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -489,6 +540,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -498,6 +550,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -507,6 +560,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -516,6 +570,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -525,6 +580,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadStruct.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -534,6 +590,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -543,6 +600,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -560,6 +618,9 @@
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testInVector.cpp">
 			<Option target="InVectorCheck"/>
 		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testMetrics.cpp">
+			<Option target="MetricChecks"/>
+		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testPointInRegion.cpp">
 			<Option target="PointInRegionCheck"/>
 		</Unit>
@@ -576,6 +637,7 @@
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/vd.cpp">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
@@ -586,6 +648,7 @@
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/vd.h">
+			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>

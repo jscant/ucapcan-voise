@@ -30,8 +30,8 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
     }
     const real pt1 = pt[0];
     const real pt2 = pt[1];
-    const real s1 = VD.getSxByIdx(s);
-    const real s2 = VD.getSyByIdx(s);
+    const real s1 = VD.Sx.at(s);
+    const real s2 = VD.Sy.at(s);
 
     auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
         return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
@@ -41,8 +41,8 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
 
     for (real r : A) {
         if (r != s) {
-            const real r1 = VD.getSxByIdx(r);
-            const real r2 = VD.getSyByIdx(r);
+            const real r1 = VD.Sx.at(r);
+            const real r2 = VD.Sy.at(r);
             if (r1 == s1) {
                 if (s2 > r2) {
                     if (pt2 < ((r2 + s2) / 2)) {

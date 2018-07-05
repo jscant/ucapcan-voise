@@ -1,6 +1,7 @@
-//
-// Created by root on 02/07/18.
-//
+/**
+ * @file
+ * @copydetails grabW.cpp
+ */
 
 #ifndef GRABW_H
 #define GRABW_H

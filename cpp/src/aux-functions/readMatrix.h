@@ -1,3 +1,7 @@
+/**
+ * @file
+ * @copydetails readMatrix.cpp
+ */
 #ifndef READMATRIX_H
 #define READMATRIX_H
 

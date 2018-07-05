@@ -79,6 +79,8 @@ numeric
 -
 algorithm
 -
+../skizException.h
+/home/jack/dev/project/voise-1.3/cpp/src/skizException.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
 ../typedefs.cpp

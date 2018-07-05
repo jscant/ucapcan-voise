@@ -101,7 +101,4 @@ int main() {
     str = "removeSeed:\t\t" + std::to_string(ms) + " us per seed\n";
     std::cout << str.c_str();
 
-    RealVec vec = {3, 2, 4, 5, 1, 12};
-    std::cout << median(vec) << "\n";
-    std::cout << stdDev(vec) << "\n";
 }

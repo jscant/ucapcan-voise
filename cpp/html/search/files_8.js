@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['testaddseedchecklambda_2ecpp',['testAddSeedCheckLambda.cpp',['../testAddSeedCheckLambda_8cpp.html',1,'']]],
-  ['testaddseedcheckv_2ecpp',['testAddSeedCheckV.cpp',['../testAddSeedCheckV_8cpp.html',1,'']]],
-  ['testinvector_2ecpp',['testInVector.cpp',['../testInVector_8cpp.html',1,'']]],
-  ['testpointinregion_2ecpp',['testPointInRegion.cpp',['../testPointInRegion_8cpp.html',1,'']]],
-  ['testremoveseedchecklambda_2ecpp',['testRemoveSeedCheckLambda.cpp',['../testRemoveSeedCheckLambda_8cpp.html',1,'']]],
-  ['testremoveseedcheckv_2ecpp',['testRemoveSeedCheckV.cpp',['../testRemoveSeedCheckV_8cpp.html',1,'']]],
-  ['testsqdist_2ecpp',['testSqDist.cpp',['../testSqDist_8cpp.html',1,'']]],
-  ['typedefs_2ecpp',['typedefs.cpp',['../typedefs_8cpp.html',1,'']]]
+  ['skizexception_2ecpp',['skizException.cpp',['../skizException_8cpp.html',1,'']]],
+  ['skizexception_2eh',['skizException.h',['../skizException_8h.html',1,'']]],
+  ['sqdist_2eh',['sqDist.h',['../sqDist_8h.html',1,'']]]
 ];

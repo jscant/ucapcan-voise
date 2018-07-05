@@ -11,3 +11,4 @@ add_test(RemoveSeedCheckV "/home/jack/dev/project/voise-1.3/cpp/build/testRemove
 add_test(PointInRegionCheck "/home/jack/dev/project/voise-1.3/cpp/build/PointInRegionCheck")
 add_test(SqDistanceCheck "/home/jack/dev/project/voise-1.3/cpp/build/SqDistanceCheck")
 add_test(InVectorCheck "/home/jack/dev/project/voise-1.3/cpp/build/InVectorCheck")
+add_test(MetricChecks "/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks")

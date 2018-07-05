@@ -59,6 +59,7 @@ if(TESTING)
     add_executable(PointInRegionCheck src/test/testPointInRegion.cpp ${TEST_DEPENDENCIES})
     add_executable(SqDistanceCheck src/test/testSqDist.cpp ${TEST_DEPENDENCIES})
     add_executable(InVectorCheck src/test/testInVector.cpp ${TEST_DEPENDENCIES})
+    add_executable(MetricChecks src/test/testMetrics.cpp ${TEST_DEPENDENCIES} src/aux-functions/metrics.cpp)
 
     target_link_libraries(testAddSeedCheckLambda Catch)
     target_link_libraries(testRemoveSeedCheckLambda Catch)
@@ -67,6 +68,7 @@ if(TESTING)
     target_link_libraries(PointInRegionCheck Catch)
     target_link_libraries(SqDistanceCheck Catch)
     target_link_libraries(InVectorCheck Catch)
+    target_link_libraries(MetricChecks Catch)
 
     add_test(NAME AddSeedCheckLambda COMMAND testAddSeedCheckLambda)
     add_test(NAME RemoveSeedCheckLambda COMMAND testRemoveSeedCheckLambda)
@@ -75,6 +77,8 @@ if(TESTING)
     add_test(NAME PointInRegionCheck COMMAND PointInRegionCheck)
     add_test(NAME SqDistanceCheck COMMAND SqDistanceCheck)
     add_test(NAME InVectorCheck COMMAND InVectorCheck)
+    add_test(NAME MetricChecks COMMAND MetricChecks)
+
 endif(TESTING)
 
 

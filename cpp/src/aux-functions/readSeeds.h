@@ -1,7 +1,7 @@
-//
-// Created by root on 02/07/18.
-//
-
+/**
+ * @file
+ * @copydetails readSeeds.cpp
+ */
 #ifndef READSEEDS_H
 #define READSEEDS_H
 

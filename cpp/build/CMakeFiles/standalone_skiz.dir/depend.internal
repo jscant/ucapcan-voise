@@ -26,6 +26,7 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
+ /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
  /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp

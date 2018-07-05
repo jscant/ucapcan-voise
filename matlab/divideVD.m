@@ -1,4 +1,4 @@
-function [VD, params]  = divideVD(VD, params)
+function [VD, params] = divideVD(VD, params)
 % function [VD,params] = divideVD(VD, params)
 
 %
@@ -24,224 +24,217 @@ function [VD, params]  = divideVD(VD, params)
 global voise timing
 
 % do not attempt to divide if dividePctile < 0
-if params.dividePctile<0,
-  return;
+if params.dividePctile < 0,
+    return;
 else
-  dividePctile = params.dividePctile;
+    dividePctile = params.dividePctile;
 end
 
 %if params.divideAlgo == 2 && exist([voise.root '/share/VOISEtiming.mat'],'file'),
 %  timing = load([voise.root '/share/VOISEtiming.mat']);
 %end
 
-fprintf(1,'*** Starting dividing phase\n')
+fprintf(1, '*** Starting dividing phase\n')
 
 iDiv = 1;
 stopDiv = false;
-useOld = 0;
-useBatch = 1;
+useOld = 1;
+useBatch = 0;
 while ~stopDiv,
-
-  % compute homogeneity fuunction and dynamic threshold
-  [WD,SD,WHC,SHC,HCThreshold] = computeHCThreshold(VD, params, dividePctile);
-
-  if 0, % diagnostic plot (histogram)
-    subplot(211),
-    edges = linspace(min(SHC),max(SHC),10);
-    n = histc(SHC,edges); bar(edges, cumsum(n)/sum(n)*100, 'histc')
-    %pause
-	end
-
-  S = ones(0,2);
-  for sk = VD.Sk(find(SHC >= HCThreshold))', 
-	  % check only the nonhomogeneous Voronoi regions
-    s = addSeedsToVR(VD, sk, params);
-    S = [[S(:,1); s(:,1)], [S(:,2); s(:,2)]];
-  end
-	
-	if 1, % diagnostic plot (seed to add)
-    subplot(212),
-    imagesc(WHC);
-    axis xy, colorbar
-    hold on
-    for i=1:size(S,1),
-      plot(S(i,1), S(i,2), 'ok', 'MarkerSize', 5);
+    
+    % compute homogeneity fuunction and dynamic threshold
+    [WD, SD, WHC, SHC, HCThreshold] = computeHCThreshold(VD, params, dividePctile);
+    
+    if 0, % diagnostic plot (histogram)
+        subplot(211),
+        edges = linspace(min(SHC), max(SHC), 10);
+        n = histc(SHC, edges);
+        bar(edges, cumsum(n)/sum(n)*100, 'histc')
+        %pause
     end
-    hold off
-    %pause
-	end
-
-	% save homogeneity function and dynamic threshold
-	divSHC{iDiv} = SHC;
-	divHCThreshold(iDiv) = HCThreshold;
-  if ~isempty(S),
-	  nSa = size(S,1);
-    fprintf(1,'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
-    params.divideAlgo = 2;
-		switch params.divideAlgo
-            case 0 % incremental
-                if useBatch
-                    Sk = [];
-                    for k=1:nSa
-                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
-                            [m,n] = size(Sk);
-                            if m == 0
-                                Sk = [Sk; S(k,:)];
-                            elseif isempty(find(S(k, 1)==Sk(:, 1) & S(k,2)==Sk(:,2)))
-                                Sk = [Sk; S(k,:)];
-                            end
+    
+    S = ones(0, 2);
+    for sk = VD.Sk(find(SHC >= HCThreshold))',
+        % check only the nonhomogeneous Voronoi regions
+        s = addSeedsToVR(VD, sk, params);
+        S = [[S(:, 1); s(:, 1)], [S(:, 2); s(:, 2)]];
+    end
+    
+    if 1, % diagnostic plot (seed to add)
+        subplot(212),
+        imagesc(WHC);
+        axis xy, colorbar
+        hold on
+        for i = 1:size(S, 1),
+            plot(S(i, 1), S(i, 2), 'ok', 'MarkerSize', 5);
+        end
+        hold off
+        %pause
+    end
+    
+    % save homogeneity function and dynamic threshold
+    divSHC{iDiv} = SHC;
+    divHCThreshold(iDiv) = HCThreshold;
+    if ~isempty(S),
+        nSa = size(S, 1);
+        fprintf(1, 'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
+        switch params.divideAlgo
+            case 3 % C++ (batch)
+                Sk = [];
+                for k = 1:nSa
+                    if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy))
+                        [m, n] = size(Sk);
+                        if m == 0
+                            Sk = [Sk; S(k, :)];
+                        elseif isempty(find(S(k, 1) == Sk(:, 1) & S(k, 2) == Sk(:, 2)))
+                            Sk = [Sk; S(k, :)];
                         end
                     end
-                    VDTMP = addSeedToVDBatch(VD, Sk);
-                    if(isfield(VD, 'divSHC'))
-                        VDTMP.divSHC = VD.divSHC;
-                    end
-                    if(isfield(VD, 'divHCThreshold'))
-                        VDTMP.divHCThreshold = VD.divHCThreshold;
-                    end
-                    if(isfield(VD, 'Smu'))
-                        VDTMP.Smu = VD.Smu;
-                    end
-                    if(isfield(VD, 'Ssdmu'))
-                        VDTMP.Ssdmu = VD.Ssdmu;
-                    end
-                    VD = VDTMP;
-                else
+                end
+                VDTMP = addSeedToVDBatch(VD, Sk);
+                if (isfield(VD, 'divSHC'))
+                    VDTMP.divSHC = VD.divSHC;
+                end
+                if (isfield(VD, 'divHCThreshold'))
+                    VDTMP.divHCThreshold = VD.divHCThreshold;
+                end
+                if (isfield(VD, 'Smu'))
+                    VDTMP.Smu = VD.Smu;
+                end
+                if (isfield(VD, 'Ssdmu'))
+                    VDTMP.Ssdmu = VD.Ssdmu;
+                end
+                VD = VDTMP;
+            case 0 % incremental
                 for k = 1:nSa
-                    if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
-                       if 0
+                    if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy))
+                        if 0
                             drawVD(VD);
-                       end
-                    tStart = tic;
-                    if useOld
-                        VD = addSeedToVD2(VD, S(k,:));
-                    else
-                        VD = addSeedToVD(VD, S(k,:));
-                    end
+                        end
+                        tStart = tic;
+                        VD = addSeedToVD2(VD, S(k, :));
                     end
                 end
-                end
-			case 1 % full
+            case 1 % full
                 for k = 1:nSa,
-                    if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy)),
-                        VD.Sx = [VD.Sx; S(k,1)];
-						VD.Sy = [VD.Sy; S(k,2)];
-					end
-				end
-				VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
-
-			case 2 % timing based
+                    if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy)),
+                        VD.Sx = [VD.Sx; S(k, 1)];
+                        VD.Sy = [VD.Sy; S(k, 2)];
+                    end
+                end
+                VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
+                
+            case 2 % timing based
                 ns = length(VD.Sk);
                 tf = polyval(timing.ptVDf, ns+nSa);
-				ti = sum(polyval(timing.ptVDa, ns+[0:nSa-1]));
-                tcppb = sum(polyval(timing.ptVDa_cppb, ns+[0:nSa-1]));
-				fprintf(1,'Est. time full(%4d:%4d)/inc_ML(%4d:%4d)/inc_C++(%4d:%4d) %6.1f/%6.1f/%6.1f s ', ...
-				        1, ns+nSa, ns+1, ns+nSa, ns+1, ns+nSa, tf, ti, tcppb);
-				tStart = tic;
+                ti = sum(polyval(timing.ptVDa, ns+[0:nSa - 1]));
+                tcppb = sum(polyval(timing.ptVDa_cppb, ns+[0:nSa - 1]));
+                fprintf(1, 'Est. time full(%4d:%4d)/inc_ML(%4d:%4d)/inc_C++(%4d:%4d) %6.1f/%6.1f/%6.1f s ', ...
+                    1, ns+nSa, ns+1, ns+nSa, ns+1, ns+nSa, tf, ti, tcppb);
+                tStart = tic;
                 if tf < ti && tf < tcppb
-				%if tf < ti % full faster than incremental
-                    fprintf("FULL\n%d\n%d\n", tf, tcppb);
-                    for k = 1:size(S,1)
-                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
-                            VD.Sx = [VD.Sx; S(k,1)];
-                              VD.Sy = [VD.Sy; S(k,2)];
+                    %if tf < ti % full faster than incremental
+                    for k = 1:size(S, 1)
+                        if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy))
+                            VD.Sx = [VD.Sx; S(k, 1)];
+                            VD.Sy = [VD.Sy; S(k, 2)];
                         end
                     end
                     VD = computeVDFast(VD.nr, VD.nc, [VD.Sx, VD.Sy], VD.S);
                 elseif ti < tf && ti < tcppb == ti % incremental faster than full
-                    fprintf("INCREMENTAL (ML)\n");
-                    for k = 1:size(S,1)
-                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
-                            VD = addSeedToVD(VD, S(k,:));
+                    for k = 1:size(S, 1)
+                        if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy))
+                            VD = addSeedToVD(VD, S(k, :));
                         end
                     end
                 else
-                    fprintf("INCREMENTAL (C++)\n");
                     Sk = [];
-                    for k=1:nSa
-                        if isempty(find(S(k,1)==VD.Sx & S(k,2)==VD.Sy))
-                            [m,n] = size(Sk);
+                    for k = 1:nSa
+                        if isempty(find(S(k, 1) == VD.Sx & S(k, 2) == VD.Sy))
+                            [m, n] = size(Sk);
                             if m == 0
-                                Sk = [Sk; S(k,:)];
-                            elseif isempty(find(S(k, 1)==Sk(:, 1) & S(k,2)==Sk(:,2)))
-                                Sk = [Sk; S(k,:)];
+                                Sk = [Sk; S(k, :)];
+                            elseif isempty(find(S(k, 1) == Sk(:, 1) & S(k, 2) == Sk(:, 2)))
+                                Sk = [Sk; S(k, :)];
                             end
                         end
                     end
                     VDTMP = addSeedToVDBatch(VD, Sk);
-                    if(isfield(VD, 'divSHC'))
+                    if (isfield(VD, 'divSHC'))
                         VDTMP.divSHC = VD.divSHC;
                     end
-                    if(isfield(VD, 'divHCThreshold'))
+                    if (isfield(VD, 'divHCThreshold'))
                         VDTMP.divHCThreshold = VD.divHCThreshold;
                     end
-                    if(isfield(VD, 'Smu'))
+                    if (isfield(VD, 'Smu'))
                         VDTMP.Smu = VD.Smu;
                     end
-                    if(isfield(VD, 'Ssdmu'))
+                    if (isfield(VD, 'Ssdmu'))
                         VDTMP.Ssdmu = VD.Ssdmu;
                     end
                     VD = VDTMP;
                 end
-				fprintf(1,'(Used %6.1f s)\n', toc(tStart));
+                fprintf(1, '(Used %6.1f s)\n', toc(tStart));
         end
         params = plotCurrentVD(VD, params, iDiv);
-        iDiv = iDiv+1;
-    %fprintf(1,'Voronoi Diagram computed\n');
-  else
-    disp("StopDiv = True");
-    stopDiv = true;
-  end
-	if 0, % diagnostic plot
-    drawVD(VD);
-    %pause
-	end
-
-  if 0, % NEEDS WORK does not seem to converge
-	% compute centre-of-mass of polygons
-	p = params; p.regMaxIter = 1;
-	VD = getCentroidVD(VD, p);
-  end
+        iDiv = iDiv + 1;
+    else
+        disp("StopDiv = True");
+        stopDiv = true;
+    end
+    if 0, % diagnostic plot
+        drawVD(VD);
+        %pause
+    end
+    
+    if 0, % NEEDS WORK does not seem to converge
+        % compute centre-of-mass of polygons
+        p = params;
+        p.regMaxIter = 1;
+        VD = getCentroidVD(VD, p);
+    end
 end
 
 VD.divSHC = divSHC;
 VD.divHCThreshold = divHCThreshold;
 
-fprintf(1,'*** Dividing phase completed.\n')
+fprintf(1, '*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)
 
+
+if params.divideAlgo == 3
+    VDW = getVDOp(VD, params.W, 1);
+else
+    VDW = getVDOp2(VD, params.W, @(x) median(x));
+end
 if 0
+    clf
+    subplot(111),
+    imagesc(VDW),
+    axis xy,
+    axis equal
+    axis off
+    set(gca, 'clim', params.Wlim);
+    %colorbar
+    W = VD.W;
+    set(gca, 'xlim', [W.xm, W.xM], 'ylim', [W.ym, W.yM]);
+    colormap(params.colormap);
     
-%VDW = getVDOp(VD, params.W, @(x) median(x));
-VDW = getVDOp(VD, params.W, 1);
-
-clf
-subplot(111),
-imagesc(VDW),
-axis xy,
-axis equal
-axis off
-set(gca,'clim',params.Wlim);
-%colorbar
-W = VD.W;
-set(gca,'xlim',[W.xm W.xM], 'ylim', [W.ym W.yM]);
-colormap(params.colormap);
-
-hold on
-[vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
-plot(vx,vy,'-k','LineWidth',0.5)
-hold off
-
-title(sprintf('card(S) = %d  (iteration %d)', length(VD.Sk), iDiv))
-
-drawnow
- 
-if params.divideExport,
-  printFigure(gcf,[params.oDir 'div' num2str(iDiv) '.eps']);
-end
-
-if params.movDiag,
-  movieHandler(params,'addframe');
-end
+    hold on
+    [vx, vy] = voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
+    plot(vx, vy, '-k', 'LineWidth', 0.5)
+    hold off
+    
+    title(sprintf('card(S) = %d  (iteration %d)', length(VD.Sk), iDiv))
+    
+    drawnow
+    
+    if params.divideExport,
+        printFigure(gcf, [params.oDir, 'div', num2str(iDiv), '.eps']);
+    end
+    
+    if params.movDiag,
+        movieHandler(params, 'addframe');
+    end
 end

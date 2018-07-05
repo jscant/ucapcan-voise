@@ -1,10 +1,10 @@
 function benchVD(timingFilename)
 % function benchVD(timingFilename)
-% 
-% Create a VOISE timing file timingFilename 
-% Don't forget to copy or link this file to 'VOISEtiming.mat' 
 %
-% Note that it can takes VERY long time since a very large number of 
+% Create a VOISE timing file timingFilename
+% Don't forget to copy or link this file to 'VOISEtiming.mat'
+%
+% Note that it can takes VERY long time since a very large number of
 % Voronoi diagrams are built with large number of seeds.
 
 %
@@ -33,8 +33,8 @@ target = strcat(voise.root, '/share/', timingFilename, '.mat');
 symlink = strcat(voise.root, '/share/VOISEtiming.mat');
 
 
-numSeeds = 40;
-begSeed = 5;
+numSeeds = 30;
+begSeed = 100;
 endSeed = 3000;
 % values for test purpose
 %numSeeds = 10;
@@ -45,18 +45,18 @@ nc = 256;
 initSeeds = @randomSeeds;
 
 % init seed of Mersenne-Twister RNG
-rand('twister',10);
+rand('twister', 10);
 
 if exist('initSeeds') & isa(initSeeds, 'function_handle'),
-  [initSeeds, msg] = fcnchk(initSeeds);
-  VDlim = setVDlim(nr,nc);
-  S = initSeeds(nr, nc, endSeed, VDlim);
+    [initSeeds, msg] = fcnchk(initSeeds);
+    VDlim = setVDlim(nr, nc);
+    S = initSeeds(nr, nc, endSeed, VDlim);
 else
-  error('initSeeds not defined or not a Function Handle');
+    error('initSeeds not defined or not a Function Handle');
 end
 % save("benchVDSeeds.txt", "S", "-ascii");
-fprintf(1,'endSeed = %d card(S) = %d\n',endSeed, size(S,1));
-endSeed = size(S,1);
+fprintf(1, 'endSeed = %d card(S) = %d\n', endSeed, size(S, 1));
+endSeed = size(S, 1);
 
 nsf = round(logspace(log10(begSeed), log10(endSeed), numSeeds));
 nsa = round(linspace(begSeed, endSeed, numSeeds));
@@ -65,35 +65,29 @@ nsa = round(linspace(begSeed, endSeed, numSeeds));
 nda = [nsa(1), diff(nsa)];
 tVDa_cppb = zeros(size(nsa));
 % initial seeds
-s = S([1:nsa(1)],:);
+s = S([1:nsa(1)], :);
 tStart = tic;
-VDa = computeVD(nr, nc, s, VDlim);
-lam = VDa.Vk.lambda;
-v = VDa.Vk.v;
-
-%save("benchVDInitVD.txt", "VDa", "-ascii");
-%save("benchVDLambda.txt", "lam", "-ascii");
-%save("benchVDV.txt", "v", "-ascii");
+VDa = computeVDCpp(nr, nc, s, VDlim);
 
 tVDa_cppb(1) = toc(tStart);
-fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
-        size(s,1), 1, nsa(1), tVDa_cppb(1));
+fprintf(1, 'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
+    size(s, 1), 1, nsa(1), tVDa_cppb(1));
 
-for i=2:length(nsa)
-
-  s = S([nsa(i-1)+1:nsa(i)],:);
-	ns = size(s,1);
-  tStart = tic;
-  VDa = addSeedToVDBatch(VDa, s(1:ns, :));
-  tVDa_cppb(i) = toc(tStart);
-  fprintf(1,'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
-          ns, nsa(i-1)+1, nsa(i), tVDa_cppb(i));
-
-  if 0
-  plot(nsa(1:i), tVDa(1:i)./nda(1:i));
-	drawnow
-	end
-
+for i = 2:length(nsa)
+    
+    s = S([nsa(i-1) + 1:nsa(i)], :);
+    ns = size(s, 1);
+    tStart = tic;
+    VDa = addSeedToVDBatch(VDa, s(1:ns, :));
+    tVDa_cppb(i) = toc(tStart);
+    fprintf(1, 'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsa(i-1)+1, nsa(i), tVDa_cppb(i));
+    
+    if 0
+        plot(nsa(1:i), tVDa(1:i)./nda(1:i));
+        drawnow
+    end
+    
 end
 
 % incremental remove (batch)
@@ -101,52 +95,52 @@ nsr = nsa(end:-1:1);
 ndr = -diff(nsr);
 tVDr_cppb = zeros(size(nsr));
 VDr = VDa;
-for i=1:length(nsr)-1,
-  
-  sk = VDr.Sk([nsr(i):-1:nsr(i+1)+1]);
-	ns = length(sk);
-  tStart = tic;
-  VDr = removeSeedFromVDBatch(VDr, sk(1:ns));
-  tVDr_cppb(i) = toc(tStart);
-
-  fprintf(1,'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
-	        ns, nsr(i), nsr(i+1)+1, tVDr_cppb(i));
-
-  if 0
-  plot(nsr(1:i), tVDr_cppb(1:i)./ndr(1:i));
-	drawnow
-	end
-
+for i = 1:length(nsr) - 1,
+    
+    sk = VDr.Sk([nsr(i):-1:nsr(i+1) + 1]);
+    ns = length(sk);
+    tStart = tic;
+    VDr = removeSeedFromVDBatch(VDr, sk(1:ns));
+    tVDr_cppb(i) = toc(tStart);
+    
+    fprintf(1, 'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsr(i), nsr(i+1)+1, tVDr_cppb(i));
+    
+    if 0
+        plot(nsr(1:i), tVDr_cppb(1:i)./ndr(1:i));
+        drawnow
+    end
+    
 end
 
 % incremental add (C++ single)
 nda = [nsa(1), diff(nsa)];
 tVDa_cpps = zeros(size(nsa));
 % initial seeds
-s = S([1:nsa(1)],:);
+s = S([1:nsa(1)], :);
 tStart = tic;
-VDa = computeVD(nr, nc, s, VDlim);
+VDa = computeVDCpp(nr, nc, s, VDlim);
 tVDa_cpps(1) = toc(tStart);
-fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
-        size(s,1), 1, nsa(1), tVDa_cpps(1));
+fprintf(1, 'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
+    size(s, 1), 1, nsa(1), tVDa_cpps(1));
 
-for i=2:length(nsa)
-
-  s = S([nsa(i-1)+1:nsa(i)],:);
-	ns = size(s,1);
-  tStart = tic;
-  for k = 1:ns,
-    VDa = addSeedToVD(VDa, s(k,:));
-	end
-  tVDa_cpps(i) = toc(tStart);
-  fprintf(1,'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
-          ns, nsa(i-1)+1, nsa(i), tVDa_cpps(i));
-
-  if 0
-  plot(nsa(1:i), tVDa_cpps(1:i)./nda(1:i));
-	drawnow
-	end
-
+for i = 2:length(nsa)
+    
+    s = S([nsa(i-1) + 1:nsa(i)], :);
+    ns = size(s, 1);
+    tStart = tic;
+    for k = 1:ns,
+        VDa = addSeedToVD(VDa, s(k, :));
+    end
+    tVDa_cpps(i) = toc(tStart);
+    fprintf(1, 'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsa(i-1)+1, nsa(i), tVDa_cpps(i));
+    
+    if 0
+        plot(nsa(1:i), tVDa_cpps(1:i)./nda(1:i));
+        drawnow
+    end
+    
 end
 
 % incremental remove (C++ single)
@@ -154,54 +148,54 @@ nsr = nsa(end:-1:1);
 ndr = -diff(nsr);
 tVDr_cpps = zeros(size(nsr));
 VDr = VDa;
-for i=1:length(nsr)-1,
-  
-  sk = VDr.Sk([nsr(i):-1:nsr(i+1)+1]);
-	ns = length(sk);
-  tStart = tic;
-  for k = 1:ns,
-    VDr = removeSeedFromVD(VDr, sk(k));
-	end
-  tVDr_cpps(i) = toc(tStart);
-
-  fprintf(1,'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
-	        ns, nsr(i), nsr(i+1)+1, tVDr_cpps(i));
-
-  if 0
-  plot(nsr(1:i), tVDr_cpps(1:i)./ndr(1:i));
-	drawnow
-	end
-
+for i = 1:length(nsr) - 1,
+    
+    sk = VDr.Sk([nsr(i):-1:nsr(i+1) + 1]);
+    ns = length(sk);
+    tStart = tic;
+    for k = 1:ns,
+        VDr = removeSeedFromVD(VDr, sk(k));
+    end
+    tVDr_cpps(i) = toc(tStart);
+    
+    fprintf(1, 'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsr(i), nsr(i+1)+1, tVDr_cpps(i));
+    
+    if 0
+        plot(nsr(1:i), tVDr_cpps(1:i)./ndr(1:i));
+        drawnow
+    end
+    
 end
 
 % incremental add (matlab)
 nda = [nsa(1), diff(nsa)];
 tVDa_ml = zeros(size(nsa));
 % initial seeds
-s = S([1:nsa(1)],:);
+s = S([1:nsa(1)], :);
 tStart = tic;
-VDa = computeVD(nr, nc, s, VDlim);
-tVDa_ml(1) = toc(tStart);
-fprintf(1,'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
-        size(s,1), 1, nsa(1), tVDa_ml(1));
+VDa = computeVDCpp(nr, nc, s, VDlim);
+%tVDa_ml(1) = toc(tStart);
+fprintf(1, 'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
+    size(s, 1), 1, nsa(1), tVDa_ml(1));
 
-for i=2:length(nsa)
-
-  s = S([nsa(i-1)+1:nsa(i)],:);
-	ns = size(s,1);
-  tStart = tic;
-  for k = 1:ns,
-    VDa = addSeedToVD2(VDa, s(k,:));
-	end
-  tVDa_ml(i) = toc(tStart);
-  fprintf(1,'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
-          ns, nsa(i-1)+1, nsa(i), tVDa_ml(i));
-
-  if 0
-  plot(nsa(1:i), tVDa_ml(1:i)./nda(1:i));
-	drawnow
-	end
-
+for i = 2:length(nsa)
+    
+    s = S([nsa(i-1) + 1:nsa(i)], :);
+    ns = size(s, 1);
+    tStart = tic;
+    for k = 1:ns,
+        VDa = addSeedToVD2(VDa, s(k, :));
+    end
+    tVDa_ml(i) = toc(tStart);
+    fprintf(1, 'add    %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsa(i-1)+1, nsa(i), tVDa_ml(i));
+    
+    if 0
+        plot(nsa(1:i), tVDa_ml(1:i)./nda(1:i));
+        drawnow
+    end
+    
 end
 
 % incremental remove (matlab)
@@ -209,43 +203,43 @@ nsr = nsa(end:-1:1);
 ndr = -diff(nsr);
 tVDr_ml = zeros(size(nsr));
 VDr = VDa;
-for i=1:length(nsr)-1,
-  
-  sk = VDr.Sk([nsr(i):-1:nsr(i+1)+1]);
-	ns = length(sk);
-  tStart = tic;
-  for k = 1:ns,
-    VDr = removeSeedFromVD2(VDr, sk(k));
-	end
-  tVDr_ml(i) = toc(tStart);
-
-  fprintf(1,'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
-	        ns, nsr(i), nsr(i+1)+1, tVDr_ml(i));
-
-  if 0
-  plot(nsr(1:i), tVDr_ml(1:i)./ndr(1:i));
-	drawnow
-	end
-
+for i = 1:length(nsr) - 1,
+    
+    sk = VDr.Sk([nsr(i):-1:nsr(i+1) + 1]);
+    ns = length(sk);
+    tStart = tic;
+    for k = 1:ns,
+        VDr = removeSeedFromVD2(VDr, sk(k));
+    end
+    tVDr_ml(i) = toc(tStart);
+    
+    fprintf(1, 'remove %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, nsr(i), nsr(i+1)+1, tVDr_ml(i));
+    
+    if 0
+        plot(nsr(1:i), tVDr_ml(1:i)./ndr(1:i));
+        drawnow
+    end
+    
 end
 
 % full algorithm
 tVDf = zeros(size(nsf));
-for i=1:length(nsf)
-
-  s = S([1:nsf(i)],:);
-	ns = size(s,1);
-  tStart = tic;
-  VDf = computeVDFast(nr, nc, s, VDlim);
-  tVDf(i) = toc(tStart);
-  fprintf(1,'full   %4d seeds (%4d:%4d) %8.1f s\n', ...
-	        ns, 1, nsf(i), tVDf(i));
-
-  if 0
-  plot(nsf(1:i), tVDf(1:i));
-	drawnow
-	end
-
+for i = 1:length(nsf)
+    
+    s = S([1:nsf(i)], :);
+    ns = size(s, 1);
+    tStart = tic;
+    VDf = computeVDFast(nr, nc, s, VDlim);
+    tVDf(i) = toc(tStart);
+    fprintf(1, 'full   %4d seeds (%4d:%4d) %8.1f s\n', ...
+        ns, 1, nsf(i), tVDf(i));
+    
+    if 0
+        plot(nsf(1:i), tVDf(1:i));
+        drawnow
+    end
+    
 end
 
 
@@ -254,58 +248,58 @@ tVDr_ml(end) = [];
 tVDr_cppb(end) = [];
 tVDr_cpps(end) = [];
 
-[ptVDf] = polyfit([0 nsf], [0 tVDf], 2);
-[ptVDa] = polyfit([0 nsa], [0 tVDa_ml./nda], 1);
-[ptVDr] = polyfit([nsr 0], [tVDr_ml./ndr 0], 1);
+[ptVDf] = polyfit([0, nsf], [0, tVDf], 2);
+[ptVDa] = polyfit([0, nsa], [0, tVDa_ml ./ nda], 1);
+[ptVDr] = polyfit([nsr, 0], [tVDr_ml ./ ndr, 0], 1);
 
-[ptVDa_cpps] = polyfit([0 nsa], [0 tVDa_cpps./nda], 1);
-[ptVDr_cpps] = polyfit([nsr 0], [tVDr_cpps./ndr 0], 1);
+[ptVDa_cpps] = polyfit([0, nsa], [0, tVDa_cpps ./ nda], 2);
+[ptVDr_cpps] = polyfit([nsr, 0], [tVDr_cpps ./ ndr, 0], 1);
 
-[ptVDa_cppb] = polyfit([0 nsa], [0 tVDa_cppb./nda], 1);
-[ptVDr_cppb] = polyfit([nsr 0], [tVDr_cppb./ndr 0], 1);
+[ptVDa_cppb] = polyfit([0, nsa], [0, tVDa_cppb ./ nda], 2);
+[ptVDr_cppb] = polyfit([nsr, 0], [tVDr_cppb ./ ndr, 0], 1);
 
 subplot(221),
-plot(nsa, [tVDa_ml./nda; polyval(ptVDa,nsa)], '-o', ...
-		 nsr, [tVDr_ml./ndr; polyval(ptVDr,nsr)], '-o');
-legend('Add','Add fit','Remove','Remove fit','location','northwest')
+plot(nsa, [tVDa_ml ./ nda; polyval(ptVDa, nsa)], '-o', ...
+    nsr, [tVDr_ml ./ ndr; polyval(ptVDr, nsr)], '-o');
+legend('Add', 'Add fit', 'Remove', 'Remove fit', 'location', 'northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('Incremental VOISE')
 
 subplot(222),
-plot(nsf, [tVDf; polyval(ptVDf,nsf)], '-o');
+plot(nsf, [tVDf; polyval(ptVDf, nsf)], '-o');
 xlabel('number of seeds')
 ylabel('time [s]')
 title('Full VOISE')
 
 subplot(223),
-plot(nsa, [tVDa_cpps./nda; polyval(ptVDa_cpps,nsa)], '-o', ...
-		 nsr, [tVDr_cpps./ndr; polyval(ptVDr_cpps,nsr)], '-o');
-legend('Add','Add fit','Remove','Remove fit','location','northwest')
+plot(nsa, [tVDa_cpps ./ nda; polyval(ptVDa_cpps, nsa)], '-o', ...
+    nsr, [tVDr_cpps ./ ndr; polyval(ptVDr_cpps, nsr)], '-o');
+legend('Add', 'Add fit', 'Remove', 'Remove fit', 'location', 'northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('C++ (Single job)')
 
 subplot(224),
-plot(nsa, [tVDa_cppb./nda; polyval(ptVDa_cppb,nsa)], '-o', ...
-		 nsr, [tVDr_cppb./ndr; polyval(ptVDr_cppb,nsr)], '-o');
-legend('Add','Add fit','Remove','Remove fit','location','northwest')
+plot(nsa, [tVDa_cppb ./ nda; polyval(ptVDa_cppb, nsa)], '-o', ...
+    nsr, [tVDr_cppb ./ ndr; polyval(ptVDr_cppb, nsr)], '-o');
+legend('Add', 'Add fit', 'Remove', 'Remove fit', 'location', 'northwest')
 xlabel('number of seeds')
 ylabel('time [s]')
 title('C++ (Batch job)')
 
 
-fprintf(1,'Saving timings in timing file:\n %s\n', ...
-        filename);
+fprintf(1, 'Saving timings in timing file:\n %s\n', ...
+    filename);
 
-save(filename,'nsf','tVDf','ptVDf', ...
-     'nsa','nda','tVDa_ml','ptVDa','nsr','ndr','tVDr_ml','ptVDr',...
-     'tVDa_cpps','ptVDa_cpps', 'tVDr_cpps','ptVDr_cpps',...
-     'tVDa_cppb','ptVDa_cppb', 'tVDr_cppb','ptVDr_cppb');
+save(filename, 'nsf', 'tVDf', 'ptVDf', ...
+    'nsa', 'nda', 'tVDa_ml', 'ptVDa', 'nsr', 'ndr', 'tVDr_ml', 'ptVDr', ...
+    'tVDa_cpps', 'ptVDa_cpps', 'tVDr_cpps', 'ptVDr_cpps', ...
+    'tVDa_cppb', 'ptVDa_cppb', 'tVDr_cppb', 'ptVDr_cppb');
 
-fprintf(1,'You should copy / link it to the VOISE timing file:\n %s\n', ...
-       filename);
-   
-cmd = ['ln -s' target, symlink];
+fprintf(1, 'You should copy / link it to the VOISE timing file:\n %s\n', ...
+    filename);
+
+cmd = ['ln -s', target, symlink];
 fprintf(1, 'Creating symbolic link for you..:\n%s\n', join(cmd));
 unix(join(cmd));

@@ -50,14 +50,14 @@ struct V_struct {
 class vd {
 private:
     real nc, nr, k;
-    std::map<real, real> Sx, Sy, Sk;
+
     std::map<real, RealVec> Nk;
     V_struct Vk;
     Mat seeds, px, py;
 public:
     W_struct W;
     W_struct S;
-
+    std::map<real, real> Sx, Sy, Sk;
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);

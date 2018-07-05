@@ -146,7 +146,8 @@ params.pcClipping      = [];
 params.radFluct        = [];
 params.iNumSeeds       = 12;
 params.RNGiseed        = 10;
-params.initAlgo        = 2;
+% 3 C++ batch SKIZ
+params.initAlgo        = 3;
 % Dividing
 params.dividePctile    = 80;
 params.d2Seeds         = 4;
@@ -154,7 +155,9 @@ params.d2Seeds         = 4;
 % 0 incremental 
 % 1 full
 % 2 timing based
-params.divideAlgo      = 2;
+% 3 C++ batch SKIZ
+params.divideAlgo      = 3;
+params.centroidAlgo    = 3;
 
 % Merging
 params.mergePctile     = 60;
@@ -165,7 +168,7 @@ params.thresHoldLength = 0.3;
 % 0 incremental 
 % 1 full
 % 2 timing based
-params.mergeAlgo       = 2;
+params.mergeAlgo       = 3;
 
 % Regularise
 params.regMaxIter      = 1;
@@ -173,7 +176,7 @@ params.regMaxIter      = 1;
 % 0 incremental 
 % 1 full
 % 2 timing based
-params.regAlgo         = 2;
+params.regAlgo         = 3;
 
 % inputs/output paths
 params.iFile           = [];               % input image file 

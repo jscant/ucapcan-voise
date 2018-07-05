@@ -60,24 +60,24 @@ void mexFunction(int nlhs, mxArray *plhs[],
     int opChar = (int) mxGetScalar(prhs[2]);
     switch (opChar) {
         case 1 :
-            metric = median;
+            metric = metrics::median;
             break;
         case 2 :
-            metric = mean;
+            metric = metrics::mean;
             break;
         case 3 :
-            metric = maxMin;
+            metric = metrics::range;
             break;
         case 4 :
-            metric = sqrtLen;
+            metric = metrics::sqrtLen;
             break;
         case 5 :
-            metric = maxMin;
+            metric = metrics::range;
             multiplier = mxGetDoubles(prhs[3]);
             mult = 1 / multiplier[0];
             break;
         case 6 :
-            metric = stdDev;
+            metric = metrics::stdDev;
             multiplier = mxGetDoubles(prhs[3]);
             mult = multiplier[0];
             break;

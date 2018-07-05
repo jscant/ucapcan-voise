@@ -122,6 +122,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named MetricChecks
+
+# Build rule for target.
+MetricChecks: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 MetricChecks
+.PHONY : MetricChecks
+
+# fast build rule for target.
+MetricChecks/fast:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/build
+.PHONY : MetricChecks/fast
+
+#=============================================================================
 # Target rules for targets named InVectorCheck
 
 # Build rule for target.
@@ -244,6 +257,7 @@ src/NSStar.o: src/NSStar.cpp.o
 
 # target to build an object file
 src/NSStar.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.o
@@ -260,6 +274,7 @@ src/NSStar.i: src/NSStar.cpp.i
 
 # target to preprocess a source file
 src/NSStar.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.i
@@ -276,6 +291,7 @@ src/NSStar.s: src/NSStar.cpp.s
 
 # target to generate assembly for a file
 src/NSStar.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/NSStar.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/NSStar.cpp.s
@@ -292,6 +308,7 @@ src/addSeed.o: src/addSeed.cpp.o
 
 # target to build an object file
 src/addSeed.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.o
@@ -308,6 +325,7 @@ src/addSeed.i: src/addSeed.cpp.i
 
 # target to preprocess a source file
 src/addSeed.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.i
@@ -324,6 +342,7 @@ src/addSeed.s: src/addSeed.cpp.s
 
 # target to generate assembly for a file
 src/addSeed.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/addSeed.cpp.s
@@ -340,6 +359,7 @@ src/aux-functions/metrics.o: src/aux-functions/metrics.cpp.o
 
 # target to build an object file
 src/aux-functions/metrics.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/metrics.cpp.o
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o
 .PHONY : src/aux-functions/metrics.cpp.o
 
@@ -349,6 +369,7 @@ src/aux-functions/metrics.i: src/aux-functions/metrics.cpp.i
 
 # target to preprocess a source file
 src/aux-functions/metrics.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/metrics.cpp.i
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.i
 .PHONY : src/aux-functions/metrics.cpp.i
 
@@ -358,6 +379,7 @@ src/aux-functions/metrics.s: src/aux-functions/metrics.cpp.s
 
 # target to generate assembly for a file
 src/aux-functions/metrics.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/metrics.cpp.s
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.s
 .PHONY : src/aux-functions/metrics.cpp.s
 
@@ -367,6 +389,7 @@ src/aux-functions/readMatrix.o: src/aux-functions/readMatrix.cpp.o
 
 # target to build an object file
 src/aux-functions/readMatrix.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o
@@ -383,6 +406,7 @@ src/aux-functions/readMatrix.i: src/aux-functions/readMatrix.cpp.i
 
 # target to preprocess a source file
 src/aux-functions/readMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.i
@@ -399,6 +423,7 @@ src/aux-functions/readMatrix.s: src/aux-functions/readMatrix.cpp.s
 
 # target to generate assembly for a file
 src/aux-functions/readMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readMatrix.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readMatrix.cpp.s
@@ -415,6 +440,7 @@ src/aux-functions/readSeeds.o: src/aux-functions/readSeeds.cpp.o
 
 # target to build an object file
 src/aux-functions/readSeeds.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o
@@ -431,6 +457,7 @@ src/aux-functions/readSeeds.i: src/aux-functions/readSeeds.cpp.i
 
 # target to preprocess a source file
 src/aux-functions/readSeeds.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.i
@@ -447,6 +474,7 @@ src/aux-functions/readSeeds.s: src/aux-functions/readSeeds.cpp.s
 
 # target to generate assembly for a file
 src/aux-functions/readSeeds.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/aux-functions/readSeeds.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/aux-functions/readSeeds.cpp.s
@@ -463,6 +491,7 @@ src/getRegion.o: src/getRegion.cpp.o
 
 # target to build an object file
 src/getRegion.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.o
@@ -479,6 +508,7 @@ src/getRegion.i: src/getRegion.cpp.i
 
 # target to preprocess a source file
 src/getRegion.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.i
@@ -495,6 +525,7 @@ src/getRegion.s: src/getRegion.cpp.s
 
 # target to generate assembly for a file
 src/getRegion.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/getRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/getRegion.cpp.s
@@ -538,6 +569,7 @@ src/pointInRegion.o: src/pointInRegion.cpp.o
 
 # target to build an object file
 src/pointInRegion.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.o
@@ -554,6 +586,7 @@ src/pointInRegion.i: src/pointInRegion.cpp.i
 
 # target to preprocess a source file
 src/pointInRegion.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.i
@@ -570,6 +603,7 @@ src/pointInRegion.s: src/pointInRegion.cpp.s
 
 # target to generate assembly for a file
 src/pointInRegion.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/pointInRegion.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/pointInRegion.cpp.s
@@ -586,6 +620,7 @@ src/removeSeed.o: src/removeSeed.cpp.o
 
 # target to build an object file
 src/removeSeed.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.o
@@ -602,6 +637,7 @@ src/removeSeed.i: src/removeSeed.cpp.i
 
 # target to preprocess a source file
 src/removeSeed.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.i
@@ -618,6 +654,7 @@ src/removeSeed.s: src/removeSeed.cpp.s
 
 # target to generate assembly for a file
 src/removeSeed.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/removeSeed.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/removeSeed.cpp.s
@@ -634,6 +671,7 @@ src/skizException.o: src/skizException.cpp.o
 
 # target to build an object file
 src/skizException.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.o
@@ -650,6 +688,7 @@ src/skizException.i: src/skizException.cpp.i
 
 # target to preprocess a source file
 src/skizException.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.i
@@ -666,6 +705,7 @@ src/skizException.s: src/skizException.cpp.s
 
 # target to generate assembly for a file
 src/skizException.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/skizException.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/skizException.cpp.s
@@ -682,6 +722,7 @@ src/test/Catch2/test_main.o: src/test/Catch2/test_main.cpp.o
 
 # target to build an object file
 src/test/Catch2/test_main.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.o
@@ -697,6 +738,7 @@ src/test/Catch2/test_main.i: src/test/Catch2/test_main.cpp.i
 
 # target to preprocess a source file
 src/test/Catch2/test_main.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.i
@@ -712,6 +754,7 @@ src/test/Catch2/test_main.s: src/test/Catch2/test_main.cpp.s
 
 # target to generate assembly for a file
 src/test/Catch2/test_main.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/Catch2/test_main.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/Catch2/test_main.cpp.s
@@ -727,6 +770,7 @@ src/test/test-help-fns/bruteForceCheckLambda.o: src/test/test-help-fns/bruteForc
 
 # target to build an object file
 src/test/test-help-fns/bruteForceCheckLambda.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
@@ -742,6 +786,7 @@ src/test/test-help-fns/bruteForceCheckLambda.i: src/test/test-help-fns/bruteForc
 
 # target to preprocess a source file
 src/test/test-help-fns/bruteForceCheckLambda.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
@@ -757,6 +802,7 @@ src/test/test-help-fns/bruteForceCheckLambda.s: src/test/test-help-fns/bruteForc
 
 # target to generate assembly for a file
 src/test/test-help-fns/bruteForceCheckLambda.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
@@ -772,6 +818,7 @@ src/test/test-help-fns/bruteForceCheckV.o: src/test/test-help-fns/bruteForceChec
 
 # target to build an object file
 src/test/test-help-fns/bruteForceCheckV.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
@@ -787,6 +834,7 @@ src/test/test-help-fns/bruteForceCheckV.i: src/test/test-help-fns/bruteForceChec
 
 # target to preprocess a source file
 src/test/test-help-fns/bruteForceCheckV.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
@@ -802,6 +850,7 @@ src/test/test-help-fns/bruteForceCheckV.s: src/test/test-help-fns/bruteForceChec
 
 # target to generate assembly for a file
 src/test/test-help-fns/bruteForceCheckV.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
@@ -817,6 +866,7 @@ src/test/test-help-fns/loadVD.o: src/test/test-help-fns/loadVD.cpp.o
 
 # target to build an object file
 src/test/test-help-fns/loadVD.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o
@@ -832,6 +882,7 @@ src/test/test-help-fns/loadVD.i: src/test/test-help-fns/loadVD.cpp.i
 
 # target to preprocess a source file
 src/test/test-help-fns/loadVD.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.i
@@ -847,6 +898,7 @@ src/test/test-help-fns/loadVD.s: src/test/test-help-fns/loadVD.cpp.s
 
 # target to generate assembly for a file
 src/test/test-help-fns/loadVD.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.s
@@ -936,6 +988,33 @@ src/test/testInVector.s: src/test/testInVector.cpp.s
 src/test/testInVector.cpp.s:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/test/testInVector.cpp.s
 .PHONY : src/test/testInVector.cpp.s
+
+src/test/testMetrics.o: src/test/testMetrics.cpp.o
+
+.PHONY : src/test/testMetrics.o
+
+# target to build an object file
+src/test/testMetrics.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/testMetrics.cpp.o
+.PHONY : src/test/testMetrics.cpp.o
+
+src/test/testMetrics.i: src/test/testMetrics.cpp.i
+
+.PHONY : src/test/testMetrics.i
+
+# target to preprocess a source file
+src/test/testMetrics.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/testMetrics.cpp.i
+.PHONY : src/test/testMetrics.cpp.i
+
+src/test/testMetrics.s: src/test/testMetrics.cpp.s
+
+.PHONY : src/test/testMetrics.s
+
+# target to generate assembly for a file
+src/test/testMetrics.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/test/testMetrics.cpp.s
+.PHONY : src/test/testMetrics.cpp.s
 
 src/test/testPointInRegion.o: src/test/testPointInRegion.cpp.o
 
@@ -1078,6 +1157,7 @@ src/vd.o: src/vd.cpp.o
 
 # target to build an object file
 src/vd.cpp.o:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.o
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.o
@@ -1094,6 +1174,7 @@ src/vd.i: src/vd.cpp.i
 
 # target to preprocess a source file
 src/vd.cpp.i:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.i
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.i
@@ -1110,6 +1191,7 @@ src/vd.s: src/vd.cpp.s
 
 # target to generate assembly for a file
 src/vd.cpp.s:
+	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/src/vd.cpp.s
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/src/vd.cpp.s
@@ -1126,6 +1208,7 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... MetricChecks"
 	@echo "... edit_cache"
 	@echo "... InVectorCheck"
 	@echo "... PointInRegionCheck"
@@ -1189,6 +1272,9 @@ help:
 	@echo "... src/test/testInVector.o"
 	@echo "... src/test/testInVector.i"
 	@echo "... src/test/testInVector.s"
+	@echo "... src/test/testMetrics.o"
+	@echo "... src/test/testMetrics.i"
+	@echo "... src/test/testMetrics.s"
 	@echo "... src/test/testPointInRegion.o"
 	@echo "... src/test/testPointInRegion.i"
 	@echo "... src/test/testPointInRegion.s"

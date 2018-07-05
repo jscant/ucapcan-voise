@@ -25,6 +25,7 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/skizException.h
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.cpp
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
