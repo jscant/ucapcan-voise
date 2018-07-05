@@ -8,9 +8,9 @@
 #define CIRCUMCENTRE_H
 
 /**
+ * @file
  * @defgroup circumcentre circumcentre
  * @ingroup circumcentre
- * @{
  * @brief Finds the cirumcentre of the triangle formed by three given points
  * @param ax,ay x and y coordinates of first vertex
  * @param bx,by x and y coordinates of second vertex

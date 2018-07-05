@@ -23,7 +23,6 @@
  * The larger matrices (\f$ \lambda, \nu \f$ in [1] as well as px and py) are not copied but mapped using Eigen's map
  * class for reasons of speed.
  *
- *
  * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
  * end by P. Guio and N. Achilleos.
  */

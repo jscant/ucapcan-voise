@@ -11,5 +11,9 @@ var searchData=
   ['removeseed',['removeSeed',['../removeSeed_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeed_8h.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeedBackup_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeedBackup.cpp']]],
   ['removeseed_2ecpp',['removeSeed.cpp',['../removeSeed_8cpp.html',1,'']]],
   ['removeseed_2eh',['removeSeed.h',['../removeSeed_8h.html',1,'']]],
-  ['removeseedbackup_2ecpp',['removeSeedBackup.cpp',['../removeSeedBackup_8cpp.html',1,'']]]
+  ['removeseedbackup_2ecpp',['removeSeedBackup.cpp',['../removeSeedBackup_8cpp.html',1,'']]],
+  ['removeseedfromvd',['removeSeedFromVD',['../group__removeSeedFromVD.html',1,'']]],
+  ['removeseedfromvd_2ecpp',['removeSeedFromVD.cpp',['../removeSeedFromVD_8cpp.html',1,'']]],
+  ['removeseedfromvdbatch',['removeSeedFromVDBatch',['../group__removeSeedFromVDBatch.html',1,'']]],
+  ['removeseedfromvdbatch_2ecpp',['removeSeedFromVDBatch.cpp',['../removeSeedFromVDBatch_8cpp.html',1,'']]]
 ];

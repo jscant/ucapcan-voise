@@ -29,12 +29,12 @@
  */
 void pushVD(vd outputVD, mxArray *plhs[]) {
 
-    // Field names for ML struct
+    // Field names for outgoing Matlab struct
     const char *vdFnames[] = {"nr", "nc", "W", "S", "x", "y", "Nk", "k", "Sk", "Sx", "Sy", "Vk"};
     const char *vkFnames[] = {"lambda", "v"};
     const char *wFnames[] = {"xm", "xM", "ym", "yM"};
 
-    const mwSize nkDims[2] = {outputVD.getNk().size(), 1};
+    const mwSize nkDims[2] = {outputVD.getNk().size(), 1}; // Cell dimentions of outgoing neighbour cell array
     int nCols = outputVD.getNc();
     int nRows = outputVD.getNr();
 
@@ -83,30 +83,28 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     real *syPtr = mxGetDoubles(syOutgoingArray);
     real *kPtr = mxGetDoubles(kOutgoingArray);
 
+    // Avoid costly copying of data: use Eigen::Map to point directly to underlying arrays
     Eigen::Map<Mat>(lamPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getLam();
     Eigen::Map<Mat>(vPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getV();
     Eigen::Map<Mat>(xPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPx() + 1;
     Eigen::Map<Mat>(yPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPy() + 1;
 
+    // Populate Matlab VD.Sx, VD.Sy struct data. Re-apply offset (array indexing starts at 1 in ML)
     int sxLen = outputVD.getSx().size();
     int count = 0;
-    std::map<real, real>::iterator it = outputVD.getSk().begin();
     for (int i = 0; i < sxLen; ++i) {
         sxPtr[i] = outputVD.getSxByIdx(i + 1);
         syPtr[i] = outputVD.getSyByIdx(i + 1);
-        if (count < outputVD.getSk().size()) {
-            skPtr[i] = it->first;
-            ++it;
-            ++count;
-        }
     }
 
+    // Populate VD.Sk (index of 'active' seeds)
     int pos = 0;
     for(auto const &s: outputVD.getSk()) {
         skPtr[pos] = s.second;
         pos += 1;
     }
 
+    // Populate VD.Nk (cell array of neighbour relationships)
     int nkLen = mxGetNumberOfElements(nkOutgoingArray);
     mxArray *cellPtrs[nkLen];
     for (int i = 0; i < nkLen; ++i) {
@@ -118,7 +116,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
             tmpPtr[j] = outputVD.getNkByIdx(i + 1).at(j);
         }
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
-        //mexPrintf("Nk Flag 2\n");
     }
 
     // These are somewhat redundant for addSeed but here for consistency
@@ -167,5 +164,5 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxSetField(vkOutgoingArray, 0, "v", vOutgoingArray);
     mxSetField(vkOutgoingArray, 0, "lambda", lamOutgoingArray);
 
-   // mexPrintf("PUSH FLAG B\n");
+    // We are done! All memory freed by Matlab.
 }
