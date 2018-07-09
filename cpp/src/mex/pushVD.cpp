@@ -112,9 +112,11 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
         int cellLen = outputVD.getNkByIdx(i + 1).size();
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);
         real *tmpPtr = mxGetDoubles(tmpArr);
-        for (int j = 0; j < cellLen; ++j) {
-            tmpPtr[j] = outputVD.getNkByIdx(i + 1).at(j);
-        }
+        memcpy(tmpPtr, outputVD.getNkByIdx(i + 1).data(), cellLen*sizeof(real));
+        //std::copy(outputVD.getNkByIdx(i + 1).data(), outputVD.getNkByIdx(i + 1).data() + cellLen, tmpPtr);
+        //for (int j = 0; j < cellLen; ++j) {
+        //    tmpPtr[j] = outputVD.getNkByIdx(i + 1).at(j);
+        //}
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
     }
 

@@ -38,7 +38,7 @@ Mat getRegion(const vd &VD, const real &s) {
 
     RealVec A = VD.getNkByIdx(s);
     Mat boundsUp, boundsDown;
-    boundsUp.resize(VD.getNc() - s2 + 1, 2);
+    boundsUp.resize(VD.getNr() - s2 + 1, 2);
     boundsDown.resize(s2 - 1, 2);
     boundsUp.setOnes();
     boundsDown.setOnes();
@@ -46,7 +46,7 @@ Mat getRegion(const vd &VD, const real &s) {
     boundsDown *= -1;
 
     // Upward sweep including s2 row
-    for (real i = s2; i < VD.getNc() + 1; ++i) {
+    for (real i = s2; i < VD.getNr() + 1; ++i) {
         RealVec lb, ub;
 
         const real boundsIdx = i - s2 + 1;
