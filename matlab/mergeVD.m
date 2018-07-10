@@ -282,7 +282,7 @@ else
     VDW = getVDOp(VD, params.W, @(x) 'median');
 end
 
-if 0
+if 1
     clf
     subplot(111),
     imagesc(VDW),

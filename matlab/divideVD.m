@@ -208,7 +208,7 @@ if params.divideAlgo == 3
 else
     VDW = getVDOp2(VD, params.W, @(x) median(x));
 end
-if 0
+if 1
     clf
     subplot(111),
     imagesc(VDW),
