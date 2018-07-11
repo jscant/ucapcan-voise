@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: report.aux
+The style file: plain.bst
+Database file #1: rsc-report.bib
+Warning--entry type for "rsc-control" isn't style-file defined
+--line 4 of file rsc-report.bib
+Database file #2: bibfile.bib
+Warning--to sort, need author or key in rsc-control
+Warning--to sort, need author or key in PAM
+Warning--empty author in PAM
+Warning--empty title in PAM
+Warning--empty journal in VOISE2
+Warning--empty journal in VOISE3
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            584 strings with 6076 characters,
+and the built_in function-call counts, 4194 in all, are:
+= -- 395
+> -- 172
+< -- 0
++ -- 72
+- -- 54
+* -- 295
+:= -- 705
+add.period$ -- 41
+call.type$ -- 15
+change.case$ -- 68
+chr.to.int$ -- 0
+cite$ -- 21
+duplicate$ -- 155
+empty$ -- 360
+format.name$ -- 54
+if$ -- 871
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 14
+newline$ -- 74
+num.names$ -- 26
+pop$ -- 73
+preamble$ -- 1
+purify$ -- 56
+quote$ -- 0
+skip$ -- 115
+stack$ -- 0
+substring$ -- 264
+swap$ -- 13
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 58
+warning$ -- 6
+while$ -- 35
+width$ -- 17
+write$ -- 149
+(There were 7 warnings)
