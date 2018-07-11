@@ -6,16 +6,16 @@
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
-      <config projectName="standalone_skiz" targetName="standalone_skiz" />
-      <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
       <config projectName="standalone_skiz" targetName="PointInRegionCheck" />
+      <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
       <config projectName="standalone_skiz" targetName="MetricChecks" />
       <config projectName="standalone_skiz" targetName="testRemoveSeedCheckLambda" />
-      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
+      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
+      <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
+      <config projectName="standalone_skiz" targetName="standalone_skiz" />
       <config projectName="standalone_skiz" targetName="doc" />
-      <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
       <config projectName="standalone_skiz" targetName="InVectorCheck" />
+      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -40,8 +40,8 @@
       <file leaf-file-name="pushVD.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mex/pushVD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="776">
-              <caret line="123" column="30" lean-forward="true" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+            <state relative-caret-position="2214">
+              <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -49,7 +49,7 @@
       <file leaf-file-name="testAddSeedCheckLambda.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testAddSeedCheckLambda.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="576">
               <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
             </state>
           </provider>
@@ -58,8 +58,8 @@
       <file leaf-file-name="addSeedToVDBatch.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVDBatch.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+            <state relative-caret-position="936">
+              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -67,16 +67,16 @@
       <file leaf-file-name="getVDOp.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1347">
+            <state relative-caret-position="36">
               <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getCentroidSeedBatch.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getCentroidSeedBatch.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-753">
+            <state>
               <folding>
                 <element signature="e#297#333#0" expanded="true" />
               </folding>
@@ -87,16 +87,16 @@
       <file leaf-file-name="pointInRegion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pointInRegion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="396">
               <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addSeed.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/addSeed.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="363">
               <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
             </state>
           </provider>
@@ -105,8 +105,8 @@
       <file leaf-file-name="getRegion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/getRegion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+            <state relative-caret-position="1308">
+              <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -114,7 +114,7 @@
       <file leaf-file-name="grabVD.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mex/grabVD.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1152">
+            <state relative-caret-position="414">
               <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="testPointInRegion.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/testPointInRegion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="360">
               <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
@@ -220,12 +220,6 @@
               <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
@@ -341,6 +335,7 @@
       <workItem from="1530792244387" duration="1050000" />
       <workItem from="1530807519292" duration="950000" />
       <workItem from="1530813378175" duration="7463000" />
+      <workItem from="1531245441640" duration="3808000" />
     </task>
     <servers />
   </component>
@@ -353,40 +348,30 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54449000" />
+    <option name="totallyTimeSpent" value="58257000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.43350786" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.22827224" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3068063" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36649215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.22827224" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36649215" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.43455496" />
-      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +525,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testAddSeedCheckLambda.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="576">
           <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
         </state>
       </provider>
@@ -556,16 +541,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
-          <folding>
-            <element signature="e#84#120#0" expanded="true" />
-            <element signature="e#129#146#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testPointInRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="360">
           <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
         </state>
       </provider>
@@ -680,15 +661,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/grabVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152">
+        <state relative-caret-position="414">
           <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVDBatch.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="936">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -699,57 +680,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/addSeed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/getRegion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testMetrics.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
           <caret line="179" column="70" selection-start-line="179" selection-start-column="70" selection-end-line="179" selection-end-column="70" />
-          <folding>
-            <element signature="e#88#117#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pointInRegion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="396">
           <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/pushVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="776">
-          <caret line="123" column="30" lean-forward="true" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+        <state relative-caret-position="2214">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1347">
+        <state relative-caret-position="36">
           <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-753">
+        <state>
           <folding>
             <element signature="e#297#333#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getRegion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1308">
+          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
         </state>
       </provider>
     </entry>
