@@ -57,8 +57,8 @@ bool removeSeed(vd &VD, real Sk) {
             real lam = Ns.at(0);
             for (uint32 idx=1; idx<Ns.size(); ++idx) {
                 uint32 r = Ns.at(idx);
-                real newDist = sqDist(i+1, j+1, VD.Sx.at(r), VD.Sy.at(r));
-                real oldDist = sqDist(i+1, j+1, VD.Sx.at(lam), VD.Sy.at(lam));
+                real newDist = sqDist(i+1, j+1, VD.getSxByIdx(r), VD.getSyByIdx(r));
+                real oldDist = sqDist(i+1, j+1, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
                 if((int)newDist < (int)oldDist){
                     VD.setLamByIdx(j, i, r);
                     VD.setVByIdx(j, i, 0);
@@ -99,8 +99,8 @@ bool removeSeed(vd &VD, real Sk) {
                 }
                 std::array<real, 2> cc = { -1, -1 };
                 try {
-                    cc = circumcentre(VD.Sx.at(s), VD.Sy.at(s), VD.Sx.at(r),
-                                      VD.Sy.at(r), VD.Sx.at(u), VD.Sy.at(u));
+                    cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
+                                      VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));
                 } catch (SKIZLinearSeedsException &e) {
                     continue;
                 }
