@@ -202,13 +202,13 @@ fprintf(1, '*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)
 
-
+if 0
 if params.divideAlgo == 3
     VDW = getVDOp(VD, params.W, 1);
 else
     VDW = getVDOp2(VD, params.W, @(x) median(x));
 end
-if 1
+
     clf
     subplot(111),
     imagesc(VDW),

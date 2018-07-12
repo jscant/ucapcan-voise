@@ -18,18 +18,15 @@
 bool bruteForceCheckV(vd &VD) {
     real nc = VD.getNc();
     real nr = VD.getNr();
-    std::map<real, real> Sx = VD.getSx();
-    std::map<real, real> Sy = VD.getSy();
-    std::map<real, real> Sk = VD.getSk();
-    unsigned long ns = Sk.size();
+    unsigned long ns = VD.getSk().size();
     for (uint32 i = 0; i < nr; ++i) {
         for (uint32 j = 0; j < nc; ++j) {
-            std::map<real, real>::iterator SkIt = Sk.begin();
+            real SkIt = 0;
             real lowest = INF;
             bool v = 0;
             for (uint32 s = 0; s < ns; ++s) {
-                real idx = SkIt->first;
-                real sqd = sqDist(j, i, Sx.at(idx) - 1, Sy.at(idx) - 1);
+                real idx = VD.getSkByIdx(SkIt);
+                real sqd = sqDist(j, i, VD.getSxByIdx(idx) - 1, VD.getSyByIdx(idx) - 1);
                 if (sqd < lowest){
                     lowest = sqd;
                     v = 0;

@@ -33,9 +33,9 @@ target = strcat(voise.root, '/share/', timingFilename, '.mat');
 symlink = strcat(voise.root, '/share/VOISEtiming.mat');
 
 
-numSeeds = 30;
+numSeeds = 40;
 begSeed = 100;
-endSeed = 3000;
+endSeed = 4000;
 % values for test purpose
 %numSeeds = 10;
 %endSeed = 300;
@@ -252,10 +252,10 @@ tVDr_cpps(end) = [];
 [ptVDa] = polyfit([0, nsa], [0, tVDa_ml ./ nda], 1);
 [ptVDr] = polyfit([nsr, 0], [tVDr_ml ./ ndr, 0], 1);
 
-[ptVDa_cpps] = polyfit([0, nsa], [0, tVDa_cpps ./ nda], 2);
+[ptVDa_cpps] = polyfit([0, nsa], [0, tVDa_cpps ./ nda], 1);
 [ptVDr_cpps] = polyfit([nsr, 0], [tVDr_cpps ./ ndr, 0], 1);
 
-[ptVDa_cppb] = polyfit([0, nsa], [0, tVDa_cppb ./ nda], 2);
+[ptVDa_cppb] = polyfit([0, nsa], [0, tVDa_cppb ./ nda], 1);
 [ptVDr_cppb] = polyfit([nsr, 0], [tVDr_cppb ./ ndr, 0], 1);
 
 subplot(221),
@@ -300,6 +300,6 @@ save(filename, 'nsf', 'tVDf', 'ptVDf', ...
 fprintf(1, 'You should copy / link it to the VOISE timing file:\n %s\n', ...
     filename);
 
-cmd = ['ln -s', target, symlink];
+cmd = ['ln -s ', target, ' ', symlink];
 fprintf(1, 'Creating symbolic link for you..:\n%s\n', join(cmd));
 unix(join(cmd));

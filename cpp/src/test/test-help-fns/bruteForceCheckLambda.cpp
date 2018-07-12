@@ -4,7 +4,6 @@
  */
 
 #include <eigen3/Eigen/Dense>
-
 #include "bruteForceCheckLambda.h"
 
 #include "../../typedefs.cpp"
@@ -20,18 +19,15 @@
 bool bruteForceCheckLambda(vd &VD) {
     real nc = VD.getNc();
     real nr = VD.getNr();
-    std::map<real, real> Sx = VD.getSx();
-    std::map<real, real> Sy = VD.getSy();
-    std::map<real, real> Sk = VD.getSk();
-    unsigned long ns = Sk.size();
+    unsigned long ns = VD.getSk().size();
     for (uint32 i = 0; i < nr; ++i) {
         for (uint32 j = 0; j < nc; ++j) {
             real lam = VD.getLamByIdx(i, j);
-            real lamDist = sqDist(j, i, Sx.at(lam) - 1, Sy.at(lam) - 1);
-            std::map<real, real>::iterator SkIt = Sk.begin();
+            real lamDist = sqDist(j, i, VD.getSxByIdx(lam) - 1, VD.getSyByIdx(lam) - 1);
+            real SkIt = 0;
             for (uint32 s = 0; s < ns; ++s) {
-                real idx = SkIt->first;
-                if (sqDist(j, i, Sx.at(idx) - 1, Sy.at(idx) - 1) < lamDist){
+                real idx = VD.getSkByIdx(SkIt);
+                if (sqDist(j, i, VD.getSxByIdx(idx) - 1, VD.getSyByIdx(idx) - 1) < lamDist){
                     return false;
                 }
                 ++SkIt;

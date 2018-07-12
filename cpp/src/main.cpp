@@ -52,15 +52,15 @@ int main() {
     }
     uint32 ns = Sx.size();
 
-    std::map<real, real> StartSx;
-    std::map<real, real> StartSy;
-    std::map<real, real> StartSk;
+    RealVec StartSx;
+    RealVec StartSy;
+    RealVec StartSk;
 
 
     for (auto i = 0; i < 5; ++i) {
-        StartSx[i + 1] = Sx.at(i);
-        StartSy[i + 1] = Sy.at(i);
-        StartSk[i + 1] = i + 1;
+        StartSx.push_back(Sx.at(i));
+        StartSy.push_back(Sy.at(i));
+        StartSk.push_back(i + 1);
     }
 
     std::map<real, RealVec> Nk;

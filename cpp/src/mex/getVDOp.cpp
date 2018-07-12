@@ -86,7 +86,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     Mat Sop(VD.getSk().size(), 1);
     uint32 is = 0;
     for (auto s : VD.getSk()) {
-        Mat bounds = getRegion(VD, s.second);
+        Mat bounds = getRegion(VD, s);
         bool finish = false;
         real val;
         RealVec pixelValues;
@@ -102,9 +102,9 @@ void mexFunction(int nlhs, mxArray *plhs[],
             real lb = std::max(0.0, bounds(j, 0) - 1);
             real ub = std::min(VD.getNc(), bounds(j, 1));
             for (uint32 i = lb; i < ub; ++i) {
-                if (!VD.getVByIdx(j, i)){// && VD.getLamByIdx(j, i) == s.second) {
+                if (!VD.getVByIdx(j, i)){// && VD.getLamByIdx(j, i) == s) {
                     pixelValues.push_back(W(j, i));
-                } else if (VD.getLamByIdx(j, i) == s.second) {
+                } else if (VD.getLamByIdx(j, i) == s) {
                     Wop(j, i) = mxGetNaN();
                 }
             }

@@ -54,10 +54,10 @@ private:
     std::map<real, RealVec> Nk;
     V_struct Vk;
     Mat seeds, px, py;
+    RealVec Sx, Sy, Sk;
 public:
     W_struct W;
     W_struct S;
-    std::map<real, real> Sx, Sy, Sk;
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);
@@ -69,9 +69,9 @@ public:
     void setPx(Mat x);
     void setPy(Mat y);
     void setK(real val);
-    void setSx(std::map<real, real> val);
-    void setSy(std::map<real, real> val);
-    void setSk(std::map<real, real> val);
+    void setSx(RealVec val);
+    void setSy(RealVec val);
+    void setSk(RealVec val);
     void setSxByIdx(uint32 idx, real val);
     void setSyByIdx(uint32 idx, real val);
     void setSkByIdx(uint32 idx, real val);
@@ -93,9 +93,9 @@ public:
     real getK() const;
     real getNr() const;
     real getNc() const;
-    std::map<real, real> getSx() const;
-    std::map<real, real> getSy() const;
-    std::map<real, real> getSk() const;
+    RealVec getSx() const;
+    RealVec getSy() const;
+    RealVec getSk() const;
     std::map<real, RealVec> getNk() const;
     real getSxByIdx(uint32 idx) const;
     real getSyByIdx(uint32 idx) const;
@@ -103,6 +103,10 @@ public:
     RealVec getNkByIdx(uint32 idx) const;
     real getPxByIdx(uint32 i, uint32 j);
     real getPyByIdx(uint32 i, uint32 j);
+
+    void addSx(real val);
+    void addSy(real val);
+    void addSk(real val);
 
     vd(real rows, real cols);
     ~vd();

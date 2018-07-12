@@ -91,18 +91,22 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
 
     // Populate Matlab VD.Sx, VD.Sy struct data. Re-apply offset (array indexing starts at 1 in ML)
     int sxLen = outputVD.getSx().size();
-    int count = 0;
-    for (int i = 0; i < sxLen; ++i) {
-        sxPtr[i] = outputVD.getSxByIdx(i + 1);
-        syPtr[i] = outputVD.getSyByIdx(i + 1);
-    }
+    int skLen = outputVD.getSk().size();
+
+    memcpy(sxPtr, outputVD.getSx().data(), sxLen*sizeof(real));
+    memcpy(syPtr, outputVD.getSy().data(), sxLen*sizeof(real));
+    memcpy(skPtr, outputVD.getSk().data(), skLen*sizeof(real));
+    //for (int i = 0; i < sxLen; ++i) {
+    //    sxPtr[i] = outputVD.getSxByIdx(i + 1);
+    //    syPtr[i] = outputVD.getSyByIdx(i + 1);
+    //}
 
     // Populate VD.Sk (index of 'active' seeds)
-    int pos = 0;
-    for(auto const &s: outputVD.getSk()) {
-        skPtr[pos] = s.second;
-        pos += 1;
-    }
+    //int pos = 0;
+    //for(auto const &s: outputVD.getSk()) {
+    //    skPtr[pos] = s;
+    //    pos += 1;
+    //}
 
     // Populate VD.Nk (cell array of neighbour relationships)
     int nkLen = mxGetNumberOfElements(nkOutgoingArray);

@@ -114,7 +114,7 @@ void vd::setK(real val) {
  * Set Sx, the dictionary which maps seed ID to x coordinate
  * @param val Dictionary (Sx)
  */
-void vd::setSx(std::map<real, real> val) {
+void vd::setSx(RealVec val) {
     Sx = val;
 };
 
@@ -122,7 +122,7 @@ void vd::setSx(std::map<real, real> val) {
  * Set Sy, the dictionary which maps seed ID to y coordinate
  * @param val Dictionary (Sy)
  */
-void vd::setSy(std::map<real, real> val) {
+void vd::setSy(RealVec val) {
     Sy = val;
 };
 
@@ -131,7 +131,7 @@ void vd::setSy(std::map<real, real> val) {
  * functions and methods.
  * @param val Dictionary (Sk). All keys should be equal to their values.
  */
-void vd::setSk(std::map<real, real> val) {
+void vd::setSk(RealVec val) {
     Sk = val;
 };
 
@@ -300,7 +300,7 @@ real vd::getNc() const {
  * Get Sx, the dictionary which maps seed ID to x coordinate
  * @returns Sx dictionary { seed ID : x coordinate }
  */
-std::map<real, real> vd::getSx() const {
+RealVec vd::getSx() const {
     return Sx;
 };
 
@@ -308,7 +308,7 @@ std::map<real, real> vd::getSx() const {
  * Get Sy, the dictionary which maps seed ID to y coordinate
  * @returns Sy dictionary { seed ID : y coordinate }
  */
-std::map<real, real> vd::getSy() const {
+RealVec vd::getSy() const {
     return Sy;
 };
 
@@ -317,7 +317,7 @@ std::map<real, real> vd::getSy() const {
  * functions and to ensure uniqueness of keys/values.
  * @returns Sk dictionary { seed ID : seed ID }
  */
-std::map<real, real> vd::getSk() const {
+RealVec vd::getSk() const {
     return Sk;
 };
 
@@ -335,7 +335,7 @@ std::map<real, RealVec> vd::getNk() const {
  * @returns x coordinate if seed with ID = idx
  */
 real vd::getSxByIdx(uint32 idx) const {
-    return Sx.at(idx);
+    return Sx.at(idx - 1);
 };
 
 /**
@@ -344,7 +344,7 @@ real vd::getSxByIdx(uint32 idx) const {
  * @returns y coordinate if seed with ID = idx
  */
 real vd::getSyByIdx(uint32 idx) const {
-    return Sy.at(idx);
+    return Sy.at(idx - 1);
 };
 
 /**
@@ -387,5 +387,17 @@ real vd::getPyByIdx(uint32 i, uint32 j) {
  * @param idx Entry to erase
  */
 void vd::eraseSk(uint32 idx) {
-    Sk.erase(idx);
+    Sk.erase(std::remove(Sk.begin(), Sk.end(), idx), Sk.end());
+}
+
+void vd::addSx(real val) {
+    Sx.push_back(val);
+};
+
+void vd::addSy(real val) {
+    Sy.push_back(val);
+};
+
+void vd::addSk(real val) {
+    Sk.push_back(val);
 };

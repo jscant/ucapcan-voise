@@ -37,9 +37,9 @@
 */
 bool addSeed(vd &VD, real s1, real s2) {
     VD.incrementK();
-    VD.setSxByIdx(VD.getK(), s1);
-    VD.setSyByIdx(VD.getK(), s2);
-    VD.setSkByIdx(VD.getK(), VD.getK());
+    VD.addSx(s1);
+    VD.addSy(s2);
+    VD.addSk(VD.getK());
 
     VD.setNkByIdx(VD.getK(), nsStar(VD));
 

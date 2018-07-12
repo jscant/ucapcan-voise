@@ -29,8 +29,6 @@
 vd grabVD(const mxArray *prhs[], const uint32 field) {
 
     real nc=0, nr=0, k=0;
-
-    std::map<real, real> Sx, Sy, Sk;
     std::map<real, RealVec> Nk;
     W_struct W;
     memset(&W, 0, sizeof(W));
@@ -114,18 +112,14 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1);
     VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
 
+    // Compatible with row/column vectors in ML
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
     mwIndex skLen = std::max(mxGetM(skIncomingArray), mxGetN(skIncomingArray));
 
-    // Populate seed data unordered maps
-    for (mwIndex i = 0; i < sxLen; ++i) {
-        Sx[i + 1] = sxPtr[i];
-        Sy[i + 1] = syPtr[i];
-    }
-
-    for (mwIndex i = 0; i < skLen; ++i) {
-        Sk[skPtr[i]] = skPtr[i];
-    }
+    // Populate Sx Sy Sk vectors
+    RealVec Sx(sxPtr, sxPtr + sxLen);
+    RealVec Sy(syPtr, syPtr + sxLen);
+    RealVec Sk(skPtr, skPtr + skLen);
 
     // Populate neighbour relationships from ML data
     mwIndex nkLen = mxGetNumberOfElements(nkIncomingArray);
