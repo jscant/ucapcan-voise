@@ -86,7 +86,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     Mat Wop(W.rows(), W.cols());
     Mat Sop(VD.getSk().size(), 1);
     uint32 is = 0;
-    //#pragma omp parallel for
+    #pragma omp parallel for
     for (uint32 f = 0; f < VD.getSk().size(); ++f) {
         real s = VD.getSk().at(f);
         Mat bounds = getRegion(VD, s);
