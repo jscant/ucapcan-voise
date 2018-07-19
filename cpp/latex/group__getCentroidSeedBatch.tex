@@ -1,0 +1,35 @@
+\hypertarget{group__getCentroidSeedBatch}{}\section{get\+Centroid\+Seed\+Batch}
+\label{group__getCentroidSeedBatch}\index{get\+Centroid\+Seed\+Batch@{get\+Centroid\+Seed\+Batch}}
+
+
+Finds the centre of mass of VR. Used in regularisation phase of V\+O\+I\+SE \mbox{[}1\mbox{]} eq. 15.  
+
+
+Finds the centre of mass of VR. Used in regularisation phase of V\+O\+I\+SE \mbox{[}1\mbox{]} eq. 15. 
+
+This is a M\+EX function. As such, the inputs and outputs are constricted to the following\+:
+
+nlhs\+: Number of outputs
+
+plhs\+: Pointer to outputs
+
+nrhs\+: Number of inputs
+
+prhs\+: Pointer to inputs
+
+In Matlab, this corresponds to the following parameters and outputs\+: 
+\begin{DoxyParams}{Parameters}
+{\em VD} & Voronoi diagram struct \\
+\hline
+{\em W} & Matrix of pixel values \\
+\hline
+{\em metric\+ID} & Key from 1-\/6 indicating which metric to use\+: (1) Median (2) Mean (3) Range (4) Square root of the number of pixels (5) Normalised range (6) Standard deviation \\
+\hline
+{\em mult} & (For metric\+ID = 5 and 6 only) Multiplier of each pixel. For metric\+ID = 5, coefficient is 1/mult. For metric\+ID = 6, coefficient is equal to mult. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sop Vector of metric value for each Voronoi region 
+
+Wop Matrix of metric values for each pixel. All pixels in same voronoi region have same Wop value. Pixels equidistant from two or more closest seeds (with $ \nu_{ij} $ = 1) have Wop $_{ij} $ = NaN, as per the Matlab implementation. 
+\end{DoxyReturn}

@@ -1,0 +1,3326 @@
+# callgrind format
+version: 1
+creator: callgrind-3.13.0
+pid: 12649
+cmd:  ./standalone_skiz
+part: 1
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 0 - 1510526
+desc: Trigger: Client Request
+
+positions: line
+events: Ir
+summary: 0
+
+
+ob=(3) /lib/x86_64-linux-gnu/libm-2.23.so
+fl=(36) /build/glibc-Cl5G7W/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_ceil.S
+fn=(228) __ceil_sse41
+36 372
++1 372
+
+fl=(37) /build/glibc-Cl5G7W/glibc-2.23/math/../sysdeps/x86_64/fpu/multiarch/s_floor.S
+fn=(236) __floor_sse41
+36 372
++1 372
+
+ob=(2) /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.25
+fl=(10) ???
+fn=(64) operator delete(void*)
+0 1260
+cob=(5) /lib/x86_64-linux-gnu/libc-2.23.so
+cfi=(11) /build/glibc-Cl5G7W/glibc-2.23/malloc/malloc.c
+cfn=(68) free
+calls=1260 2934 
+0 126000
+0 1260
+
+fn=(124) std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+0 129
+
+fn=(178) std::_Rb_tree_increment(std::_Rb_tree_node_base*)
+0 29
+
+fn=(36) operator new(unsigned long)
+0 8834
+cob=(5)
+cfi=(11)
+cfn=(40) malloc
+calls=1262 2902 
+0 132422
+0 1262
+0 5048
+
+ob=(1) /home/jack/dev/project/voise-1.3/cpp/build/standalone_skiz
+fl=(2) /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp
+fn=(2) addSeed(vd&, double, double)
+38 13
++1 1
+cfi=(3) /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp
+cfn=(4) vd::incrementK()
+calls=1 186 
+* 4
++1 3
+cfi=(3)
+cfn=(6) vd::addSx(double)
+calls=1 393 
+* 12
++1 3
+cfi=(3)
+cfn=(10) vd::addSy(double)
+calls=1 397 
+* 12
++1 2
+cfi=(3)
+cfn=(14) vd::getK() const
+calls=1 280 
+* 2
+* 2
+cfi=(3)
+cfn=(16) vd::addSk(double)
+calls=1 401 
+* 12
++2 3
+cfi=(5) /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp
+cfn=(20) nsStar(vd const&)
+calls=1 -20 
+* 19593
+* 2
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 4
+cfi=(3)
+cfn=(110) vd::setNkByIdx(unsigned int, std::vector<double, std::allocator<double> >)
+calls=1 178 
+* 426
+fi=(8) /usr/include/c++/6/bits/stl_vector.h
+426 1
+177 2
+fi=(4) /usr/include/c++/6/ext/new_allocator.h
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fi=(12) /usr/include/c++/6/bits/stl_tree.h
+632 1
+fe=(2)
+49 1
+fi=(12)
+602 3
++30 1
++1 1
+fe=(2)
+49 1
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 4
+cfi=(3)
+cfn=(44) vd::getNkByIdx(unsigned int) const
+calls=1 365 
+* 211
+fi=(19) /usr/include/c++/6/bits/stl_iterator.h
+777 2
+fe=(2)
+49 1
+fi=(19)
+777 1
+fe=(2)
+49 1
+fi=(12)
+2098 3
+fe=(2)
+50 1
+-1 1
++1 3
+cfi=(3)
+cfn=(44)
+calls=1 365 
+* 206
+* 2
+-1 2
++1 6
+cfi=(3)
+cfn=(44)
+calls=2 365 
+* 412
++1 6
+cfi=(3)
+cfn=(14)
+calls=3 280 
+* 6
+* 12
+cfi=(3)
+cfn=(44)
+calls=3 365 
+* 633
+fi=(19)
+777 6
+fi=(8)
+87 9
+fe=(2)
+-34 36
++1 30
+-1 30
++1 10
+cfi=(8)
+cfn=(144) bool inVector<double, double>(std::vector<double, std::allocator<double> > const&, double const&) [clone .isra.71]
+calls=10 656 
+* 282
+* 20
+fi=(8)
+916 12
+fe=(2)
+58 6
+cfi=(3)
+cfn=(14)
+calls=3 280 
+* 6
+fi=(20) /usr/include/c++/6/bits/vector.tcc
++36 6
+fe=(2)
+-36 3
+fi=(20)
++36 3
+fe=(2)
+-35 6
+fi=(12)
+1653 3
+fe=(2)
+59 3
+fi=(12)
+1653 3
+fe=(2)
+59 3
+fi=(12)
+1653 4
++1 3
++1 3
+-2 6
++1 9
+fi=(13) /usr/include/c++/6/bits/stl_map.h
+501 10
+fi=(4)
+104 6
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=3 0 
+* 529
+* 3
+fi=(23) /usr/include/c++/6/tuple
+1590 3
+fi=(44) /usr/include/c++/6/ext/aligned_buffer.h
+63 3
+fi=(12)
+2200 6
+fi=(8)
+87 3
+fi=(23)
+1590 3
+fi=(8)
+87 6
+fi=(4)
++17 3
+fi=(12)
+2200 3
+cfn=(120) std::_Rb_tree<double, std::pair<double const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<double const, std::vector<double, std::allocator<double> > > >, std::less<double>, std::allocator<std::pair<double const, std::vector<double, std::allocator<double> > > > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<double const, std::vector<double, std::allocator<double> > > >, double const&)
+calls=3 1928 
+* 76
++2 3
+-2 3
++2 3
+2098 6
++1 6
+-1 6
++4 9
++2 3
+-2 3
+cob=(2)
+cfi=(10)
+cfn=(124)
+calls=3 0 
+* 89
+* 3
++2 3
+fi=(13)
+505 3
+fe=(2)
+59 6
+cfi=(20)
+cfn=(156) std::vector<double, std::allocator<double> >::operator=(std::vector<double, std::allocator<double> > const&)
+calls=3 167 
+* 570
+fi=(8)
+426 3
+177 6
+fi=(4)
+-67 3
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+fi=(8)
+426 3
+177 6
+fi=(4)
+-67 3
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+fi=(8)
+426 3
+177 6
+fi=(4)
+-67 3
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+* 3
+fe=(2)
+-61 8
+fi=(8)
+177 2
+fi=(4)
+-67 2
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(2)
+-47 2
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 4
+cfi=(3)
+cfn=(44)
+calls=1 365 
+* 211
+fi=(19)
+777 2
+fe=(2)
+63 1
+fi=(19)
+777 1
+fe=(2)
+63 4
++1 3
+-1 1
++1 1
+cfi=(3)
+cfn=(44)
+calls=1 365 
+* 206
+-1 2
++1 6
+-1 2
++1 2
+cfi=(3)
+cfn=(44)
+calls=2 365 
+* 412
+fi=(19)
+777 6
+fe=(2)
+64 40
++1 10
+-1 10
++1 10
+cfi=(3)
+cfn=(14)
+calls=10 280 
+* 20
+* 40
+cfi=(3)
+cfn=(44)
+calls=10 365 
+* 2110
+* 50
+cfi=(8)
+cfn=(144)
+calls=10 656 
+* 282
+fi=(8)
+177 10
+fe=(2)
+65 10
+fi=(8)
+177 10
+fi=(4)
+-67 20
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=10 0 
+* 1020
+* 10
+fe=(2)
+-45 26
+fi=(12)
+1653 30
++1 8
++1 8
+-2 16
++1 28
+-1 8
+fi=(13)
+522 36
+fe=(2)
+68 24
+cfi=(8)
+cfn=(144)
+calls=6 656 
+* 183
+* 12
++3 16
+cfi=(3)
+cfn=(44)
+calls=4 365 
+* 824
++2 8
+cfi=(3)
+cfn=(14)
+calls=4 280 
+* 8
+fi=(20)
++21 8
+fe=(2)
+-21 4
+fi=(20)
++21 4
+fi=(19)
+777 4
+fe=(2)
+74 46
++1 33
++6 32
+cfi=(3)
+cfn=(24) vd::getSyByIdx(unsigned int) const
+calls=8 346 
+* 72
+* 32
+cfi=(3)
+cfn=(22) vd::getSxByIdx(unsigned int) const
+calls=8 337 
+* 72
+* 32
+cfi=(3)
+cfn=(24)
+calls=8 346 
+* 72
+-1 8
++1 8
+-1 16
+cfi=(3)
+cfn=(22)
+calls=8 337 
+* 72
+* 32
+cfi=(3)
+cfn=(24)
+calls=8 346 
+* 72
+* 32
+cfi=(3)
+cfn=(22)
+calls=8 337 
+* 72
++1 48
+-1 8
++1 8
+cfi=(17) /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/circumcentre.h
+cfn=(74) std::array<double, 2ul> circumcentre<double, double, double, double, double, double>(double const&, double const&, double const&, double const&, double const&, double const&)
+calls=8 -57 
+* 576
+fi=(8)
+656 8
+170 8
+fe=(2)
+-89 8
+fi=(8)
+656 8
+fe=(2)
+81 8
+fi=(8)
++10 24
+656 16
+170 8
+656 8
+170 8
+656 8
+170 8
+fi=(4)
+-69 24
++3 16
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=8 0 
+* 928
+* 8
+* 56
+fi=(8)
++83 8
+fi=(14) /usr/include/c++/6/bits/stl_algobase.h
+367 8
+fi=(8)
+185 8
++1 8
++1 8
+fi=(14)
+367 8
++1 32
+cob=(5)
+cfi=(15) /build/glibc-Cl5G7W/glibc-2.23/string/../sysdeps/x86_64/multiarch/memcpy-avx-unaligned.S
+cfn=(58) __memmove_avx_unaligned
+calls=8 41 
+* 160
+* 8
+* 16
+fe=(2)
+85 24
+fi=(14)
+369 8
+fe=(2)
+85 16
+fi=(14)
+369 8
+fe=(2)
+85 8
+cfi=(18) /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp
+cfn=(76) pointInRegion(vd const&, std::array<double, 2ul>, double, std::vector<double, std::allocator<double> >)
+calls=8 -58 
+* 11886
+fi=(8)
+426 8
+fe=(2)
+85 8
+fi=(8)
++92 16
+fi=(4)
+-67 8
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=8 0 
+* 816
+* 8
+fe=(2)
+-25 16
++1 8
+cfi=(24) /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/updateDict.h
+cfn=(166) void updateDict<double, double, double, double>(std::map<double, std::vector<double, std::allocator<double> >, std::less<double>, std::allocator<std::pair<double const, std::vector<double, std::allocator<double> > > > >&, double const&, double const&)
+calls=2 -64 
+* 561
++1 8
+cfi=(24)
+cfn=(166)
+calls=2 -65 
+* 1132
+* 4
+fi=(8)
++90 8
+fi=(4)
+-67 12
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=4 0 
+* 408
+* 4
+fe=(2)
+-46 11
+fi=(8)
+177 6
+fi=(4)
+-67 3
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+* 6
+fe=(2)
+-47 7
+fi=(8)
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(2)
+-15 2
+fi=(4)
++6 1
+fe=(2)
+-6 3
++1 6
+fi=(8)
+323 3
+fe=(2)
+96 6
+cfi=(3)
+cfn=(110)
+calls=3 +82 
+* 581
+fi=(8)
+426 3
+177 6
+fi=(4)
+-67 3
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+fi=(8)
++67 6
+fi=(4)
+-67 6
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=3 0 
+* 306
+* 3
+fi=(12)
++99 6
+cob=(2)
+cfi=(10)
+cfn=(178)
+calls=3 0 
+* 29
+* 3
+fe=(2)
+95 3
+fi=(12)
+209 3
+fe=(2)
+95 3
+fi=(8)
+656 6
+fi=(45) /usr/include/c++/6/bits/stl_pair.h
+288 6
+fi=(8)
+656 6
+170 6
+fi=(4)
+-69 6
++3 6
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=3 0 
+* 348
+* 3
+* 18
+fi=(14)
+367 6
++1 9
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=3 41 
+* 52
+* 3
+fi=(4)
+101 3
+fi=(8)
+-10 9
+fi=(4)
++10 3
++3 6
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=3 0 
+* 348
+* 3
+fi=(8)
++83 3
+fi=(14)
+367 3
+fi=(8)
+185 3
++1 3
++1 3
+fi=(14)
+367 3
++1 15
+cob=(5)
+cfi=(15)
+cfn=(132) __memcpy_avx_unaligned
+calls=3 41 
+* 52
+* 3
+* 10
+fi=(8)
+656 16
+fi=(14)
+224 4
+fi=(8)
+656 4
+fi=(14)
+224 6
+fi=(8)
+1426 3
+fi=(4)
+104 8
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=4 0 
+* 733
+* 4
+* 28
++16 20
+fi=(14)
+367 8
+fi=(8)
+177 3
+fi=(20)
+425 3
+fi=(8)
+177 3
+fi=(4)
+-67 4
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+* 2
+fi=(20)
+441 1
++1 1
++1 2
+-2 3
++1 3
++1 6
+fi=(14)
+224 6
+fi=(20)
+101 12
+cfn=(82) void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double>(double&&)
+calls=4 407 
+* 1334
+* 8
+fi=(14)
+368 6
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=1 41 
+* 12
+* 1
+fi=(20)
++57 1
+fi=(14)
+-57 2
+fi=(20)
++57 2
+101 9
+cfn=(82)
+calls=3 407 
+* 969
+* 3
+fe=(2)
+-1 2
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 5
+cfi=(25) /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp
+cfn=(180) getRegion(vd const&, double const&)
+calls=1 -70 
+* 437311
+* 2
++3 2
++3 744
+-2 1855
+cfi=(3)
+cfn=(182) vd::getNr() const
+calls=371 288 
+* 742
+* 5
+cfi=(3)
+cfn=(182)
+calls=1 288 
+* 2
+* 1116
+fi=(6) /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
+352 2232
+fe=(2)
+105 1488
++10 371
+fi=(14)
+226 371
+fi=(6)
+352 371
+fi=(14)
+226 742
+fi=(6)
+352 371
+fi=(7) /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
+169 742
+fe=(2)
+-53 742
+cfi=(3)
+cfn=(238) vd::getNc() const
+calls=371 296 
+* 742
+* 371
+fi=(14)
++84 1113
+fe=(2)
+-83 371
+fi=(14)
++83 371
+fe=(2)
+-83 1113
++9 26
+-9 39
++1 267575
+cfi=(3)
+cfn=(26) vd::getLamByIdx(unsigned int, unsigned int) const
+calls=53515 238 
+* 642180
+* 160545
+cfi=(3)
+cfn=(22)
+calls=53515 337 
+* 481635
++1 160545
+-1 53515
++1 53515
+cfi=(3)
+cfn=(26)
+calls=53515 238 
+* 642180
+* 160545
+cfi=(3)
+cfn=(24)
+calls=53515 346 
+* 481635
+fi=(43) /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/sqDist.h
+-95 53515
+fe=(2)
++96 53515
+fi=(43)
+-96 107030
+fe=(2)
++96 53515
+fi=(43)
+-96 107030
+fe=(2)
++96 53515
+fi=(43)
+-96 535150
+fe=(2)
++99 107030
++1 107004
+cfi=(3)
+cfn=(14)
+calls=53502 280 
+* 107004
+* 214008
+cfi=(3)
+cfn=(268) vd::setLamByIdx(unsigned int, unsigned int, double)
+calls=53502 -57 
+* 642024
++1 267510
+cfi=(3)
+cfn=(274) vd::setVByIdx(unsigned int, unsigned int, double)
+calls=53502 -48 
+* 642024
+-8 160506
+-5 742
++15 65
+cfi=(3)
+cfn=(274)
+calls=13 -50 
+* 156
+* 13
+fi=(28) /usr/include/eigen3/Eigen/src/Core/util/Memory.h
+247 1
+cob=(5)
+cfi=(11)
+cfn=(68)
+calls=1 2934 
+* 144
+* 1
+fi=(12)
+873 3
+cfn=(282) std::_Rb_tree<double, std::pair<double const, std::vector<double, std::allocator<double> > >, std::_Select1st<std::pair<double const, std::vector<double, std::allocator<double> > > >, std::less<double>, std::allocator<std::pair<double const, std::vector<double, std::allocator<double> > > > >::_M_erase(std::_Rb_tree_node<std::pair<double const, std::vector<double, std::allocator<double> > > >*)
+calls=1 1632 
+* 686
+fe=(2)
+133 12
+fi=(8)
++37 2
+fi=(4)
+-60 2
+fe=(2)
+
+fl=(24)
+fn=(166)
+22 28
+fi=(12)
+677 4
+fe=(24)
+22 20
+fi=(12)
+1653 12
+677 4
+1653 8
++1 5
++1 5
+-2 10
++1 19
+-1 6
+fi=(13)
+522 20
+fe=(24)
+31 20
+fi=(12)
+1654 5
++1 5
+-2 10
++1 19
+-1 6
+fi=(13)
+522 20
+fe=(24)
+31 16
+cfi=(8)
+cfn=(144)
+calls=4 656 
+* 118
+* 8
++3 36
+fi=(13)
+522 20
+fe=(24)
+32 16
+fi=(12)
+1654 5
++1 5
+-2 16
++1 22
+fi=(20)
+94 12
+fi=(4)
++26 3
+fi=(20)
+-22 3
+fi=(13)
+524 3
+fi=(20)
+101 6
+cfn=(82)
+calls=3 407 
+* 1175
+* 3
+fe=(24)
+
+fl=(30) /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
+fn=(206) void Eigen::internal::call_dense_assignment_loop<Eigen::Array<double, -1, -1, 0, -1, -1>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, -1, 0, -1, -1> >, Eigen::internal::mul_assign_op<double, double> >(Eigen::Array<double, -1, -1, 0, -1, -1> const&, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, -1, 0, -1, -1> > const&, Eigen::internal::mul_assign_op<double, double> const&)
+640 2
++2 10
+fi=(31) /usr/include/eigen3/Eigen/src/Core/EigenBase.h
+65 2
+fi=(46) /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
+-46 4
+fe=(30)
+381 2
+fi=(31)
+65 2
+fe=(30)
+381 8
++4 12
+fi=(32) /usr/lib/gcc/x86_64-linux-gnu/6/include/emmintrin.h
+267 4
+161 2
+fe=(30)
+385 6
+fi=(32)
+267 1020
+161 510
+fe=(30)
+385 1530
+-26 4
+fi=(33) /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+88 2
+fe=(30)
+
+fn=(256) void Eigen::internal::call_assignment_no_alias<Eigen::Block<Eigen::Array<double, -1, -1, 0, -1, -1>, -1, -1, false>, Eigen::Array<double, -1, -1, 0, -1, -1>, Eigen::internal::assign_op<double> >(Eigen::Block<Eigen::Array<double, -1, -1, 0, -1, -1>, -1, -1, false>&, Eigen::Array<double, -1, -1, 0, -1, -1> const&, Eigen::internal::assign_op<double> const&)
+725 8
++10 2
+fi=(42) /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
+81 1
+fe=(30)
+735 1
+fi=(42)
+81 1
+fe=(30)
+735 3
+494 2
++8 1
+fi=(28)
++45 3
+fe=(30)
+-45 3
++3 1
+-3 1
++3 7
++2 4
++2 2
+-2 4
++2 2
++4 12
+fi=(7)
++80 2
+fi=(32)
+126 2
+fi=(7)
+593 6
+fe=(30)
+-80 4
+fi=(32)
+161 2
+fe=(30)
+513 2
+fi=(7)
++80 298
+fi=(32)
+126 298
+fi=(7)
+593 894
+fe=(30)
+-80 596
+fi=(32)
+161 298
+fe=(30)
+513 298
++4 4
++3 16
+-15 10
+748 8
+
+fn=(246) void Eigen::internal::call_assignment_no_alias<Eigen::Block<Eigen::Array<double, -1, -1, 0, -1, -1>, -1, -1, false>, Eigen::Reverse<Eigen::Array<double, -1, -1, 0, -1, -1>, 0>, Eigen::internal::assign_op<double> >(Eigen::Block<Eigen::Array<double, -1, -1, 0, -1, -1>, -1, -1, false>&, Eigen::Reverse<Eigen::Array<double, -1, -1, 0, -1, -1>, 0> const&, Eigen::internal::assign_op<double> const&)
+725 7
+fi=(47) /usr/include/eigen3/Eigen/src/Core/Reverse.h
+92 1
+fi=(42)
+-11 3
+fe=(30)
+735 2
+fi=(39) /usr/include/eigen3/Eigen/src/Core/DenseBase.h
+260 1
+fe=(30)
+735 5
+494 2
++8 1
+fi=(28)
++45 3
+fe=(30)
+-45 3
++3 1
+-3 1
++3 8
++2 4
++2 2
+-2 4
++2 2
++4 16
+fi=(7)
++80 2
+fi=(32)
+126 2
+fi=(7)
+593 2
+fi=(32)
+906 4
+fi=(7)
+593 2
+fe=(30)
+-80 4
+fi=(32)
+161 2
+fe=(30)
+513 2
+fi=(7)
++80 210
+fi=(32)
+126 210
+fi=(7)
+593 210
+fi=(32)
+906 420
+fi=(7)
+593 210
+fe=(30)
+-80 420
+fi=(32)
+161 210
+fe=(30)
+513 210
++4 4
++3 16
+-15 10
+748 8
+
+fn=(200) void Eigen::internal::call_assignment_no_alias<Eigen::Array<double, -1, -1, 0, -1, -1>, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, -1, 0, -1, -1> >, Eigen::internal::assign_op<double> >(Eigen::Array<double, -1, -1, 0, -1, -1>&, Eigen::CwiseNullaryOp<Eigen::internal::scalar_constant_op<double>, Eigen::Array<double, -1, -1, 0, -1, -1> > const&, Eigen::internal::assign_op<double> const&)
+725 12
+fi=(42)
+81 6
+fe=(30)
+735 4
+fi=(31)
+65 4
+fi=(46)
+-46 2
+fe=(30)
+381 10
++4 12
+fi=(32)
+161 2
+fe=(30)
+385 6
+fi=(32)
+161 510
+fe=(30)
+385 1530
+-26 4
+748 12
+-13 6
+
+fl=(1) /home/jack/dev/project/voise-1.3/cpp/src/main.cpp
+fn=(0) main
+90 1
+fi=(8)
+656 1
+fe=(1)
+92 1
+fi=(8)
+656 2
+803 2
+fe=(1)
+92 1
+fi=(8)
+656 4
+803 2
+fe=(1)
+92 3
+cfi=(2)
+cfn=(2)
+calls=1 -54 
+* 6823646
++1 2
+-3 3
+
+fl=(3)
+fn=(16)
+401 1
+fi=(8)
+916 2
+fe=(3)
+401 1
+fi=(8)
+916 1
+fi=(4)
+120 3
+fi=(8)
+920 2
+fe=(3)
+403 2
+
+fn=(14)
+280 53529
++1 53529
+
+fn=(274)
+77 53515
++1 53515
+fi=(6)
+352 267575
+fi=(7)
+169 53515
+fe=(3)
+-91 53515
+fi=(7)
++91 53515
+fe=(3)
+-91 107030
+
+fn=(10)
+397 1
+fi=(8)
+916 2
+fe=(3)
+397 1
+fi=(8)
+916 1
+fi=(4)
+120 3
+fi=(8)
+920 2
+fe=(3)
+399 2
+
+fn=(4)
+186 4
+
+fn=(22)
+337 54737
+fi=(8)
+656 54737
+fe=(3)
+338 54737
+fi=(8)
+656 109474
+803 109474
+fe=(3)
+338 54737
++1 54737
+
+fn=(44)
+365 110
++1 55
+-1 110
++1 55
+fi=(12)
+1669 55
+fe=(3)
+366 55
+fi=(12)
+1669 275
++1 69
++1 69
+-2 138
++1 441
+-1 202
+fi=(13)
+531 275
+fi=(8)
+656 110
+170 55
+-79 165
+656 110
+170 110
+fi=(4)
+-69 165
++3 110
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=55 0 
+* 6389
+* 55
+* 55
+fi=(8)
++83 55
+-2 55
++1 55
++1 110
+fi=(14)
+366 220
++1 110
++1 165
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=55 41 
+* 936
+* 55
+* 55
++1 55
+fe=(3)
+-2 55
+fi=(14)
++2 55
+fe=(3)
+-2 220
+
+fn=(110)
+178 8
+fi=(12)
+677 4
+fe=(3)
+178 8
++1 4
+-1 4
++1 4
+-1 8
+fi=(12)
+677 4
+fe=(3)
+178 8
++1 4
+fi=(12)
+1653 8
++1 4
++1 4
+-2 8
++1 29
+-1 14
+fi=(13)
+501 17
++4 4
+fi=(20)
+170 8
+fi=(8)
+656 12
++81 4
+-81 8
++81 4
+-81 4
++81 4
+-81 4
+fi=(20)
+192 8
+fi=(8)
+656 10
+fi=(20)
+204 4
++14 4
+fe=(3)
+-38 28
+fi=(4)
+-76 3
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=1 0 
+* 116
+* 1
+fi=(23)
+1590 1
+fi=(44)
+63 1
+fi=(13)
+502 1
+fi=(12)
+2200 1
+fi=(8)
+87 1
+fi=(23)
+1590 1
+fi=(8)
+87 2
+fi=(4)
++17 1
+fi=(12)
+2200 1
+cfn=(120)
+calls=1 1928 
+* 23
++2 1
+-2 1
++2 1
+2098 2
++1 2
+-1 2
++1 3
++3 4
+cob=(2)
+cfi=(10)
+cfn=(124)
+calls=1 0 
+* 40
+* 1
++2 3
+fi=(14)
+367 4
++1 6
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=2 41 
+* 32
+* 2
+* 4
+fi=(8)
+170 6
+fi=(4)
+-69 6
++3 4
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=2 0 
+* 311
+* 2
+fi=(14)
+367 2
+fi=(4)
+104 2
+fi=(14)
+367 2
+fi=(4)
+110 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fi=(20)
++92 2
+-1 2
++1 4
+fi=(14)
+368 8
+cob=(5)
+cfi=(15)
+cfn=(132)
+calls=2 41 
+* 36
+* 2
+fi=(20)
+196 2
+fi=(8)
+-19 5
+fe=(3)
+
+fn=(26)
+238 107031
++1 107031
+fi=(6)
+117 535155
+fi=(7)
++39 107031
+fe=(3)
++83 107031
+fi=(7)
+-83 107031
+fe=(3)
++83 107031
++1 107031
+
+fn=(182)
+288 533
++1 533
+
+fn=(268)
+67 53502
++1 53502
+fi=(6)
+352 267510
+fi=(7)
+169 53502
+fe=(3)
+68 53502
+fi=(7)
+169 53502
+fe=(3)
+68 107004
+
+fn=(6)
+393 1
+fi=(8)
+916 2
+fe=(3)
+393 1
+fi=(8)
+916 1
+fi=(4)
+120 3
+fi=(8)
+920 2
+fe=(3)
+395 2
+
+fn=(24)
+346 54737
+fi=(8)
+656 54737
+fe=(3)
+347 54737
+fi=(8)
+656 109474
+803 109474
+fe=(3)
+347 54737
++1 54737
+
+fn=(238)
+296 743
++1 743
+
+fl=(5)
+fn=(20)
+24 6
++1 1
+-1 5
++1 1
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 3
+cfi=(3)
+cfn=(22)
+calls=1 337 
+* 9
++1 1
+-1 1
++1 1
+cfi=(3)
+cfn=(14)
+calls=1 280 
+* 2
+* 3
+cfi=(3)
+cfn=(24)
+calls=1 346 
+* 9
++2 2
+-2 1
++2 5
+cfi=(3)
+cfn=(26)
+calls=1 238 
+* 12
+fi=(8)
++63 2
+fi=(4)
++13 1
+fi=(8)
+-13 1
+fe=(5)
+-61 2
+fi=(4)
++74 1
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=1 0 
+* 116
+* 1
+fi=(8)
+1286 1
+fe=(5)
+31 1
+fi=(8)
+1285 1
+fi=(14)
+368 1
+fe=(5)
+31 1
+fi=(8)
+1286 1
++1 1
+fe=(5)
+31 2
+cfi=(3)
+cfn=(44)
+calls=1 365 
+* 215
+fi=(8)
+656 4
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(5)
+-82 3
++5 1
+-5 1
+fi=(8)
+656 2
+fe=(5)
+35 2
+fi=(8)
+656 4
+fe=(5)
+35 32
++2 50
+cfi=(3)
+cfn=(44)
+calls=10 365 
+* 2065
+* 20
+fi=(8)
+177 10
+fe=(5)
+37 10
+fi=(8)
+177 10
+fi=(4)
+-67 10
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=10 0 
+* 1020
+* 10
+* 30
+fi=(8)
+656 40
+fi=(22) /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/inVector.h
+24 20
+fe=(5)
++18 18
+cfi=(3)
+cfn=(22)
+calls=6 337 
+* 54
++1 6
+-1 6
++1 12
+cfi=(3)
+cfn=(24)
+calls=6 346 
+* 54
++4 12
+-4 6
++4 6
+cfi=(3)
+cfn=(24)
+calls=6 346 
+* 54
+* 24
+cfi=(3)
+cfn=(22)
+calls=6 337 
+* 54
+* 48
+cfi=(17)
+cfn=(74)
+calls=6 -23 
+* 432
++5 18
+-5 12
++5 6
+cfi=(3)
+cfn=(44)
+calls=6 365 
+* 1246
+* 36
+cfi=(18)
+cfn=(76)
+calls=6 -25 
+* 8091
+fi=(8)
+426 6
+fe=(5)
+52 6
+fi=(8)
+177 12
+fi=(4)
+-67 6
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=6 0 
+* 612
+* 6
+fe=(5)
+-56 12
+-18 56
+cfi=(3)
+cfn=(44)
+calls=8 365 
+* 1648
+* 16
+cfi=(3)
+cfn=(44)
+calls=4 365 
+* 824
+fi=(8)
+656 48
+fe=(5)
+36 48
+fi=(8)
+177 36
+fi=(4)
+-67 12
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=12 0 
+* 1224
+* 12
+* 12
+fe=(5)
+-74 36
++1 30
+fi=(16) /usr/include/c++/6/bits/stl_algo.h
++79 10
++2 20
++19 34
++11 22
+fi=(22)
+27 8
+fi=(16)
+140 15
+fi=(19)
+799 4
+fi=(16)
+144 24
+fi=(19)
+799 12
+fi=(8)
+656 6
+fe=(5)
+65 16
++1 12
++3 3
++1 2
+-36 5
+fi=(8)
+656 2
+fe=(5)
+35 2
+fi=(16)
++83 20
+fe=(5)
+-63 12
+fi=(8)
+916 6
+656 8
+fe=(5)
+65 16
+-5 4
++14 11
+fi=(8)
+924 6
+cfi=(20)
+cfn=(98) void std::vector<double, std::allocator<double> >::_M_emplace_back_aux<double const&>(double const&)
+calls=2 407 
+* 590
+* 4
+fe=(5)
+
+fl=(18)
+fn=(76)
+27 140
+fi=(8)
+656 28
+fe=(18)
+27 42
+fi=(8)
+656 14
+fe=(18)
+28 42
++5 42
+cfi=(3)
+cfn=(22)
+calls=14 337 
+* 126
++1 28
+-1 14
++1 14
+cfi=(3)
+cfn=(24)
+calls=14 346 
+* 126
+fi=(19)
+777 14
+fe=(18)
+34 14
+fi=(19)
+777 14
+fi=(8)
+87 56
+fe=(18)
+-45 14
+fi=(8)
++45 28
+fe=(18)
+-45 14
++21 110
+-21 162
++1 216
++1 216
+cfi=(3)
+cfn=(22)
+calls=54 337 
+* 486
++1 108
+-1 54
++1 54
+cfi=(3)
+cfn=(24)
+calls=54 346 
+* 486
++1 216
++14 270
++2 38
+-25 19
+fi=(20)
++57 19
+fe=(18)
+-57 19
+fi=(20)
++57 19
+fe=(18)
+-57 323
++26 19
+fi=(20)
++31 19
+fi=(8)
+656 70
+fe=(18)
+70 28
+fi=(16)
+5521 40
+fi=(21) /usr/include/c++/6/bits/predefined_ops.h
+43 9
+fi=(16)
+5524 18
+fi=(19)
+799 9
+fi=(16)
+5523 18
+fi=(19)
+799 10
+fi=(16)
+5523 50
+fe=(18)
+83 50
+-3 20
++9 14
++3 14
+-3 58
+fi=(8)
++88 28
+fi=(4)
+-67 14
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=14 0 
+* 1428
+* 14
+fi=(8)
+426 14
+177 28
+fi=(4)
+-67 10
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=10 0 
+* 1020
+* 10
+fe=(18)
+-17 140
+-56 35
+fi=(20)
++57 35
+fe=(18)
+-57 35
+fi=(20)
++57 35
+fe=(18)
+-57 595
++24 35
+fi=(20)
++33 35
+fi=(4)
++26 9
+fi=(20)
+-22 17
+fe=(18)
+-28 4
++13 16
+-3 8
+fi=(16)
+5456 70
+fi=(21)
+43 21
+fi=(16)
+5460 42
+fi=(19)
+799 21
+fi=(16)
+5459 42
+fi=(19)
+799 14
+fi=(16)
+5459 42
+fi=(20)
+101 57
+cfn=(82)
+calls=19 407 
+* 4349
+* 115
+cfn=(82)
+calls=32 407 
+* 7576
+* 32
+fe=(18)
+
+fl=(20)
+fn=(156)
+167 24
++3 6
+fi=(8)
+656 12
++81 3
+-81 6
++81 3
+-81 3
++81 3
+-81 3
+fe=(20)
+192 6
++26 3
++3 27
+fi=(8)
+-51 9
+fi=(4)
+-69 9
++3 6
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=3 0 
+* 348
+* 3
+fi=(14)
+367 3
+fi=(4)
+104 6
+fi=(14)
+367 3
+fe=(20)
+202 3
+-1 3
++1 6
+fi=(14)
+368 12
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=3 41 
+* 48
+* 3
+fi=(8)
+177 9
+fe=(20)
+
+fn=(82)
+407 10593
+fi=(8)
+656 3531
+fi=(14)
+224 3172
+fi=(8)
+1426 1227
+fi=(14)
+224 768
+fi=(4)
+104 1536
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=768 0 
+* 89106
+* 768
+* 818
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=409 0 
+* 48062
+* 409
+* 1177
+fi=(8)
+656 2354
+fi=(4)
+120 2354
+fi=(8)
+656 3531
+fi=(4)
+120 3531
+fi=(14)
+367 2354
+fi=(8)
+177 768
+fe=(20)
+425 768
+fi=(8)
+177 768
+fi=(4)
+-67 818
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=409 0 
+* 41718
+* 409
+fe=(20)
+441 1177
++2 1177
+-1 1177
++1 1177
++1 9416
+fi=(14)
+-76 1636
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=409 41 
+* 4964
+* 409
+fe=(20)
++57 818
+fi=(8)
+170 2454
+fe=(20)
+
+fn=(98)
+407 18
+fi=(8)
+656 6
+fi=(14)
+224 8
+fi=(8)
+1426 6
+fi=(4)
+104 4
+cob=(2)
+cfi=(10)
+cfn=(36)
+calls=2 0 
+* 232
+* 2
+* 2
+fi=(8)
+656 4
+fi=(4)
+120 4
+fi=(8)
+656 6
+fi=(4)
+120 6
+fi=(14)
+367 4
+fi=(4)
+110 4
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=2 0 
+* 204
+* 2
+fe=(20)
+441 2
++2 2
+-1 2
++1 2
++1 16
+fi=(14)
+-76 8
+cob=(5)
+cfi=(15)
+cfn=(58)
+calls=2 41 
+* 28
+* 2
+fe=(20)
++57 4
+fi=(8)
+170 12
+fe=(20)
+
+fl=(25)
+fn=(180)
+30 9
++1 1
+-1 1
++1 1
+-1 3
++1 1
+cfi=(3)
+cfn=(22)
+calls=1 337 
+* 9
++1 2
+-1 1
++1 1
+cfi=(3)
+cfn=(24)
+calls=1 346 
+* 9
++7 3
+-7 1
++7 1
+cfi=(3)
+cfn=(44)
+calls=1 365 
+* 211
++2 1
+fi=(27) /usr/include/eigen3/Eigen/src/Core/DenseStorage.h
+340 6
+fe=(25)
+41 1
+cfi=(3)
+cfn=(182)
+calls=1 288 
+* 2
+* 3
+fi=(26) /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
+254 2
+45 3
+fi=(27)
+399 1
+fi=(26)
+266 1
+fi=(27)
+399 3
+fi=(28)
+247 2
+cob=(5)
+cfi=(11)
+cfn=(68)
+calls=1 2934 
+* 17
+* 1
+fi=(27)
+402 2
+fe=(25)
+42 1
+fi=(27)
+408 1
++1 1
+fe=(25)
+42 3
+fi=(26)
+254 2
+45 3
+fi=(27)
+399 1
+fi=(26)
+266 1
+fi=(27)
+399 3
+fi=(28)
+247 2
+cob=(5)
+cfi=(11)
+cfn=(68)
+calls=1 2934 
+* 17
+* 1
+fi=(27)
+402 2
++3 2
+fi=(46)
+19 1
+fi=(27)
+408 1
++1 2
+fi=(42)
+80 3
+fi=(46)
+-61 2
+fi=(29) /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h
++36 4
+fi=(30)
+712 4
+cfn=(200)
+calls=1 +13 
+* 1236
+* 2
+fi=(46)
+19 1
+fi=(29)
++36 1
+fi=(42)
++25 2
+fi=(46)
+-61 1
+fi=(29)
++36 3
+fi=(30)
+712 5
+cfn=(200)
+calls=1 +13 
+* 884
+* 2
+fi=(46)
+19 1
+fi=(29)
++36 1
+fi=(42)
++25 2
+fi=(46)
+-61 1
+fi=(29)
++36 3
+fi=(30)
+790 4
+cfn=(206)
+calls=1 640 
+* 1824
+* 2
+fi=(46)
+19 1
+fi=(29)
++36 1
+fi=(42)
++25 2
+fi=(46)
+-61 1
+fi=(29)
++36 3
+fi=(30)
+790 4
+cfn=(206)
+calls=1 640 
+* 1296
+fi=(34) /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
+19 3
+fe=(25)
++30 2
+cfi=(3)
+cfn=(182)
+calls=1 288 
+* 2
+* 318
+cfi=(3)
+cfn=(182)
+calls=159 288 
+* 318
+* 480
++3 160
+fi=(8)
+656 320
+87 160
+fe=(25)
+-35 160
+fi=(8)
++35 480
+656 160
+87 320
+656 160
+fe=(25)
+54 160
+-2 320
++2 1120
++8 160
+-8 160
++8 480
+-7 480
++1 1920
+cfi=(3)
+cfn=(22)
+calls=480 337 
+* 4320
++1 960
+-1 480
++1 480
+cfi=(3)
+cfn=(24)
+calls=480 346 
+* 4320
++2 1440
++2 960
+-7 480
+fi=(8)
+656 960
+fe=(25)
+54 480
+fi=(8)
+656 960
+fe=(25)
+54 3360
++1 1440
+fi=(35) /usr/include/c++/6/cmath
+441 160
+fi=(20)
+94 160
+fe=(25)
+-58 160
+fi=(20)
++58 160
+fi=(35)
+441 160
+fe=(25)
+36 160
+fi=(35)
+441 160
+fe=(25)
+36 160
+fi=(35)
+441 160
+fe=(25)
+36 160
+fi=(35)
+441 320
+fe=(25)
+36 160
+fi=(35)
+441 320
+fe=(25)
+36 1280
++24 160
+fi=(20)
++34 160
+fi=(8)
+656 800
+fe=(25)
+79 320
+fi=(16)
+5456 640
+fi=(21)
+43 160
+fi=(16)
+5460 320
+fi=(19)
+799 160
+fi=(16)
+5459 320
+fi=(19)
+799 160
+fi=(16)
+5459 320
+fe=(25)
+89 160
+cob=(3)
+cfi=(37)
+cfn=(236)
+calls=160 -53 
+* 320
+* 160
+* 480
+cfi=(3)
+cfn=(238)
+calls=160 296 
+* 320
+fi=(14)
+202 480
+fe=(25)
+96 480
++3 477
+fi=(6)
+352 1590
+fe=(25)
+99 159
+fi=(6)
+352 159
+fi=(8)
++74 159
+fe=(25)
+100 159
+fi=(7)
++69 159
+fe=(25)
+-69 159
+fi=(8)
++77 318
+fi=(4)
+-67 159
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=159 0 
+* 16218
+* 159
+fi=(8)
+426 159
+177 318
+fi=(4)
+-67 159
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=159 0 
+* 16218
+* 159
+fe=(25)
+-61 636
+-13 320
+fi=(20)
++58 320
+fi=(35)
+441 320
+fi=(20)
+94 320
+fe=(25)
+-58 320
+fi=(35)
+441 640
+fe=(25)
+36 960
+fi=(35)
+441 640
+fe=(25)
+36 320
+fi=(35)
+441 640
+fe=(25)
+36 2560
++26 320
+fi=(20)
++32 320
++7 480
+cfn=(82)
+calls=160 407 
+* 25920
+* 160
+fi=(16)
+5521 480
+fi=(19)
+799 160
+fi=(16)
+5523 320
+fe=(25)
+80 160
+cob=(3)
+cfi=(36)
+cfn=(228)
+calls=160 -44 
+* 320
+* 160
+fi=(14)
+226 320
+fe=(25)
+80 320
+fi=(14)
+226 640
+fe=(25)
+88 160
+fi=(14)
+226 160
+fe=(25)
+88 160
+fi=(8)
+426 1
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fi=(8)
+426 1
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(25)
+-3 4
+fi=(19)
+777 2
+fi=(8)
+87 4
+fe=(25)
++23 1
+fi=(8)
+-23 2
+fe=(25)
++23 1
+fi=(19)
+777 422
+fi=(8)
+87 844
+fe=(25)
++23 211
+fi=(8)
+-23 422
+fe=(25)
++23 211
++6 848
+-1 1272
++10 636
+-15 1272
++1 2544
+cfi=(3)
+cfn=(22)
+calls=636 337 
+* 5724
++1 1272
+-1 636
++1 636
+cfi=(3)
+cfn=(24)
+calls=636 346 
+* 5724
++1 1908
+-77 212
+fi=(35)
+441 424
+fi=(20)
+94 212
+fe=(25)
+-58 212
+fi=(35)
+441 212
+fi=(20)
+94 212
+fe=(25)
+-58 636
+fi=(35)
+441 424
+fe=(25)
+36 212
+fi=(35)
+441 424
+fe=(25)
+36 1696
++78 212
+fi=(20)
+-20 212
+fi=(8)
+656 1060
+fe=(25)
+136 424
+fi=(16)
+5456 848
+fi=(21)
+43 212
+fi=(16)
+5460 424
+fi=(19)
+799 212
+fi=(16)
+5459 424
+fi=(19)
+799 212
+fi=(16)
+5459 424
+fe=(25)
+147 212
+cob=(3)
+cfi=(37)
+cfn=(236)
+calls=212 36 
+* 424
+* 212
+* 636
+cfi=(3)
+cfn=(238)
+calls=212 296 
+* 424
+fi=(14)
++55 848
+fe=(25)
+-48 636
++3 848
+fi=(6)
+352 2120
+fe=(25)
+157 212
+fi=(6)
+352 212
+fi=(8)
++74 212
+fi=(7)
+169 212
+fe=(25)
+-11 212
+fi=(8)
++19 424
+fi=(4)
+-67 212
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=212 0 
+* 21624
+* 212
+fi=(8)
+426 212
+177 424
+fi=(4)
+-67 212
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=212 0 
+* 21624
+* 212
+fe=(25)
+-3 1062
+fi=(27)
+340 3
+fi=(26)
+-86 3
+45 3
+fi=(27)
+399 3
+fi=(28)
+-21 3
++84 2
+224 1
+cob=(5)
+cfi=(11)
+cfn=(40)
+calls=1 2902 
+* 603
+* 1
++11 2
+fe=(25)
+-69 2
+fi=(27)
+403 1
+fi=(41) /usr/include/eigen3/Eigen/src/Core/MapBase.h
+150 1
++2 2
+fi=(27)
+408 1
++1 1
+fi=(41)
+152 2
+fi=(42)
+-72 1
+fi=(41)
++72 1
+fi=(42)
+-72 1
+fi=(41)
++72 3
+fi=(38) /usr/include/eigen3/Eigen/src/Core/Block.h
+376 1
++47 1
+147 7
+fi=(30)
+712 4
+cfn=(246)
+calls=1 +13 
+* 2224
+* 1
+fi=(40) /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+83 5
++29 5
+fi=(28)
+247 2
+cob=(5)
+cfi=(11)
+cfn=(68)
+calls=1 2934 
+* 156
+* 1
+* 2
+cob=(5)
+cfi=(11)
+cfn=(68)
+calls=1 2934 
+* 144
+* 1
+fi=(8)
+426 1
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(25)
++60 12
+fi=(20)
+-69 960
+cfn=(82)
+calls=320 407 
+* 72818
+* 320
+fe=(25)
+-65 424
+fi=(20)
++58 424
+fi=(35)
+441 424
+fi=(20)
+94 424
+fe=(25)
+-58 424
+fi=(35)
+441 424
+fe=(25)
+36 848
+fi=(35)
+441 424
+fe=(25)
+36 424
+fi=(35)
+441 848
+fe=(25)
+36 424
+fi=(35)
+441 848
+fe=(25)
+36 3392
++80 424
+fi=(20)
+-22 424
++4 1
+fi=(40)
+-13 2
+fi=(38)
+375 1
++1 1
+fi=(42)
+80 2
+fi=(38)
+376 1
+fi=(41)
+150 1
++2 10
+fi=(38)
+-5 1
+376 1
++47 1
+147 11
+fi=(30)
+712 3
+fi=(40)
+102 1
+fi=(30)
+712 1
+cfn=(256)
+calls=1 +13 
+* 2796
+fi=(40)
+102 2
+fi=(20)
+-1 636
+cfn=(82)
+calls=212 407 
+* 34344
+* 212
+fi=(16)
+5521 848
+fi=(19)
+799 212
+fi=(16)
+5523 424
+fe=(25)
+137 212
+cob=(3)
+cfi=(36)
+cfn=(228)
+calls=212 36 
+* 424
+* 212
+* 636
+fi=(14)
++89 848
+fe=(25)
+-80 212
+fi=(14)
++80 212
+fe=(25)
+-80 212
+fi=(20)
+-45 1272
+cfn=(82)
+calls=424 407 
+* 96460
+* 424
+fi=(26)
+-53 1
+fi=(40)
++42 3
++3 4
+-5 2
+fi=(28)
+378 3
++84 2
+224 1
+cob=(5)
+cfi=(11)
+cfn=(40)
+calls=1 2902 
+* 1129
+* 1
++11 2
+fi=(27)
+403 2
+fi=(28)
+-25 3
++84 2
+224 1
+cob=(5)
+cfi=(11)
+cfn=(40)
+calls=1 2902 
+* 349
+* 1
++11 2
+fi=(27)
+403 2
+fe=(25)
+
+fl=(12)
+fn=(282)
+1632 7
++4 1
+-4 1
++4 16
+fi=(8)
+426 2
+177 2
+fi=(4)
+-67 1
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+* 2
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=1 0 
+* 102
+* 1
+fe=(12)
+1636 6
+fi=(8)
+426 4
+177 4
+fi=(4)
+-67 2
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=2 0 
+* 204
+* 2
+* 4
+cob=(2)
+cfi=(10)
+cfn=(64)
+calls=2 0 
+* 204
+* 2
+fe=(12)
+1636 8
++7 8
+
+fn=(120)
+1928 8
+677 4
+1928 16
++8 14
++8 4
++4 4
++1 4
+-1 2
++31 12
+-40 8
++40 1
+-39 2
++39 6
+1833 2
+1979 7
+1843 2
+-1 3
+
+fl=(17)
+fn=(74)
+24 70
++4 224
+-4 42
++4 70
++1 42
++7 84
++1 14
+-1 14
++7 28
+-7 28
++1 14
+-1 14
++1 14
+-1 14
++1 14
++1 14
+-2 14
++2 42
++1 14
+-2 14
++1 28
++1 14
+-3 14
++2 14
+-1 14
++1 14
++5 126
+
+fl=(8)
+fn=(144)
+656 30
+fi=(22)
+25 30
+fe=(8)
+656 90
+fi=(22)
+24 60
+fi=(16)
++92 30
+fi=(22)
+-89 30
+fi=(16)
++91 60
++2 6
++4 6
++4 6
++4 14
+-14 10
++19 116
++11 16
+fi=(22)
+31 16
+fi=(16)
+140 72
+fi=(19)
+799 20
+fi=(16)
+144 72
+fi=(19)
+799 20
+fi=(16)
+148 105
+-30 56
+fe=(8)
+
+ob=(5)
+fl=(11)
+fn=(194) malloc_consolidate
+4144 4
+-22 16
++23 6
++12 2
+5002 2
+4147 2
++11 2
+-1 2
+5004 2
+-2 2
++2 10
+4160 4
++1 4
+-1 36
++1 51
++26 13
++4 13
+-3 13
++1 13
++2 13
++5 13
++1 13
++1 13
+-2 13
++12 13
+-12 13
++3 26
++9 13
+-41 13
+-3 13
++3 26
++1 13
++1 26
++2 26
++1 4
++2 4
+-1 4
++2 56
++3 26
++3 26
++4 26
++23 10
++3 80
++6 16
+
+fn=(42) _int_malloc
+3349 3795
+-30 2530
++30 1265
+-30 5060
++30 3795
+-30 1265
++30 3795
++4 3795
++14 2530
++2 3786
++2 1262
+-1 1262
+-1 1262
++1 1262
++5 2524
++3 6235
++1 1247
+-1 1247
++1 2494
++25 36
++2 45
++1 45
++2 15
+-2 15
++2 30
++2 14
++4 7
++1 14
++5 7
++1 7
++1 7
++2 21
++23 30
++1 6
++1 4
+cfn=(194)
+calls=2 4144 
+* 696
+3819 154
+-2 11
++2 11
+-2 11
++2 22
+5002 11
+3817 11
++2 11
+5004 11
+3819 11
+5004 11
+3819 33
+5004 22
+3819 44
+5002 22
+3469 22
++66 20
++1 30
++1 10
+-1 20
++51 50
++7 10
+-6 10
++1 10
++1 10
++1 10
++3 10
+-58 5
++51 25
++7 5
+-6 5
++1 5
++1 5
++1 5
++3 5
+3469 78
++3 19
+-1 19
++1 38
++1 38
++3 19
++10 52
++34 16
+-5 16
++1 16
++4 16
++13 30
++8 20
++1 20
++1 5
++3 10
+3382 6235
+1879 1261
+3770 1261
+1879 2522
+3833 11385
+3541 47
+-54 12
++1 18
++5 3
+-1 3
++5 3
+-3 6
++1 3
++1 6
++1 3
++2 2
++1 2
++3 16
++2 6
++1 2
++3 2
+1879 6
+3503 8
++2 3
++1 1
++3 1
+1879 3
+3584 20
++19 14
++73 14
++1 14
++1 14
++1 14
++1 14
++5 38
++16 57
++2 114
+-4 140
++8 13
++3 26
++2 6
++2 6
+-1 6
+-1 18
+-27 6
++27 6
+-27 6
++4 3
++3 4
+-3 3
++3 4
+-3 2
++3 3
+3523 1
+-1 1
++1 2
+1879 1
+3526 1
+1879 2
+3605 9
++3 3
+-3 3
++3 9
++86 2
++1 2
+-3 3
++27 14
++3 14
++5 7
+-3 14
++3 7
+-3 7
++3 96
++3 14
++3 1
+-1 1
++1 3
++12 6
++1 12
+-6 6
++17 6
+-6 6
++1 6
++1 6
++1 6
++3 6
++1 3
++1 12
++2 4
++1 4
++2 4
++2 4
+-2 28
++2 12
++1 12
+-3 2
++2 2
+-2 14
++2 6
++1 6
+-40 48
+
+fn=(68)
+2934 6325
++5 2530
++1 2530
++6 2530
++5 1263
+-2 1263
++2 2526
++16 3789
++1 2526
+cfn=(70) _int_free
+calls=1263 3841 
+* 93606
++1 7590
+
+fn=(40)
+2902 3795
++5 2530
++1 2530
++3 10120
++2 3795
+cfn=(42)
+calls=1265 3349 
+* 76313
++3 1265
+-3 1265
++3 1265
++8 5060
++2 13915
++3 5060
+-18 7590
+
+fn=(70)
+3841 11367
++13 1263
+-13 1263
++13 2526
++6 5052
++1 2526
++11 5052
++13 2526
++11 5040
++1 3780
+1886 1260
+3921 1260
+1886 2520
+3923 3780
++1 2520
++4 1260
+-4 1260
++1 1260
++9 8820
++9 5040
++2 1260
++2 7560
+4105 10104
+3960 6
++1 9
++15 6
++8 9
++6 6
++1 6
++1 6
+1886 9
+4001 6
++7 6
++5 6
++1 45
++1 3
++11 3
+-1 3
++2 6
++7 3
+-2 3
++1 3
++1 3
++2 3
++1 3
++2 3
++1 3
++2 9
++1 3
++30 6
+3962 15
++8 3
+-4 3
++4 9
+-7 6
+4093 9
++1 9
++1 15
+3949 5040
++65 21
+
+fl=(15)
+fn=(58)
+41 483
++4 483
++1 483
++1 483
++1 483
++1 85
++1 85
++38 85
++1 85
++23 85
++1 85
++1 24
++1 24
++1 24
++1 24
++1 24
++1 24
++1 24
++1 24
++1 24
++4 61
++1 61
++1 61
++1 61
++1 61
++4 398
++1 398
++1 398
++1 398
++1 398
++1 398
++1 398
+
+fn=(132)
+41 5
++4 5
++1 5
++1 5
++1 5
++1 5
++1 5
++38 5
++1 5
++23 5
++1 5
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++1 2
++4 3
++1 3
++1 3
++1 3
++1 3
+
+totals: 6823668

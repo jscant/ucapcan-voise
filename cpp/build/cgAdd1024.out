@@ -1,0 +1,21 @@
+# callgrind format
+version: 1
+creator: callgrind-3.13.0
+pid: 4631
+cmd:  ./standalone_skiz
+part: 2
+
+
+desc: I1 cache: 
+desc: D1 cache: 
+desc: LL cache: 
+
+desc: Timerange: Basic block 505943572 - 505943573
+desc: Trigger: Program termination
+
+positions: line
+events: Ir
+summary: 0
+
+
+totals: 0
