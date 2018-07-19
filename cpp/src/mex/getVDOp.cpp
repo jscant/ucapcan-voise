@@ -10,7 +10,6 @@
 #include <matrix.h>
 #endif
 
-#include <omp.h>
 #include <eigen3/Eigen/Dense>
 #include <map>
 #include <functional>
@@ -86,9 +85,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     Mat Wop(W.rows(), W.cols());
     Mat Sop(VD.getSk().size(), 1);
     uint32 is = 0;
-    #pragma omp parallel for
-    for (uint32 f = 0; f < VD.getSk().size(); ++f) {
-        real s = VD.getSk().at(f);
+    for (auto s : VD.getSk()) {
         Mat bounds = getRegion(VD, s);
         bool finish = false;
         real val;
@@ -113,8 +110,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
             }
         }
         val = mult * metric(pixelValues);
-        //Sop(is, 0) = val;
-        Sop(f, 0) = val;
+        Sop(is, 0) = val;
         finish = false;
         for (int j = 0; j < bounds.rows(); ++j) {
             if (bounds(j, 0) == -1) {

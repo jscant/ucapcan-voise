@@ -19,11 +19,19 @@
 #include "grabW.h"
 
 /**
- * @brief This is a MEX function. As such, the inputs and outputs are constricted to the following:
- * @param nlhs Number of outputs
- * @param plhs Pointer to outputs
- * @param nrhs Number of inputs
- * @param prhs Pointer to inputs
+ * @defgroup getCentroidSeedBatch getCentroidSeedBatch
+ * @ingroup getCentroidSeedBatch
+ * @brief Finds the centre of mass of VR. Used in regularisation phase of VOISE [1] eq. 15.
+ *
+ * This is a MEX function. As such, the inputs and outputs are constricted to the following:
+ *
+ * nlhs: Number of outputs
+ *
+ * plhs: Pointer to outputs
+ *
+ * nrhs: Number of inputs
+ *
+ * prhs: Pointer to inputs
  *
  * In Matlab, this corresponds to the following parameters and outputs:
  * @param VD Voronoi diagram struct
@@ -40,21 +48,23 @@
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[]) {
 
+    // Get inputs
     vd VD = grabVD(prhs, 0);
     Mat W = grabW(prhs, 1).abs();
     real *seed = mxGetDoubles(prhs[2]);
     uint32 ns = mxGetN(prhs[2]);
 
-
+    // Create space in memory for ns x 2 coordinates (results)
     plhs[0] = mxCreateDoubleMatrix(ns, 2, mxREAL);
     real *centroidPtr = mxGetDoubles(plhs[0]);
 
+    // For each seed
     for (uint32 sIdx = 0; sIdx < ns; ++sIdx) {
         real x = 0;
         real y = 0;
         real totalW = 0;
         real s = seed[sIdx];
-        Mat bounds = getRegion(VD, s);
+        Mat bounds = getRegion(VD, s); // Find pixels in R(s)
         bool finish = false;
         for (int j = 0; j < bounds.rows(); ++j) {
             if (bounds(j, 0) == -1) {
@@ -65,14 +75,18 @@ void mexFunction(int nlhs, mxArray *plhs[],
                 }
             }
             finish = true;
-            real lb = std::max(0.0, bounds(j, 0) - 1);
-            real ub = std::min(VD.getNc(), bounds(j, 1));
+            uint32 lb = std::max(0.0, bounds(j, 0) - 1);
+            uint32 ub = std::min(VD.getNc(), bounds(j, 1));
+
+            // Pixel intensity-weighted centre of mass (eq. 15 of VOISE paper [1])
             for (uint32 i = lb; i < ub; ++i) {
-                y += (j + 1) * W(j, i);
+                y += (j + 1) * W(j, i); // Matlab indexing begins at 1
                 x += (i + 1) * W(j, i);
                 totalW += W(j, i);
             }
         }
+
+        // Degenerate case of 0 intensity for all pixels
         if (totalW == 0) {
             finish = false;
             real pixels = 0;
@@ -95,7 +109,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
             }
             centroidPtr[sIdx] = round(x / pixels);
             centroidPtr[sIdx + ns] = round(y / pixels);
-        } else {
+        } else { // Populate results matrix with COM coordinates
             centroidPtr[sIdx] = round(x / totalW);
             centroidPtr[sIdx + ns] = round(y / totalW);
         }

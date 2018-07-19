@@ -5,7 +5,7 @@
 
 #include "readMatrix.h"
 #include <fstream>
-
+#include <iostream>
 /**
  * @defgroup readMatrix readMatrix
  * @ingroup readMatrix
@@ -13,16 +13,17 @@
  * @param filename Name of text file to be read
  * @returns Eigen array with matrix from text file
  */
-Mat readMatrix(std::string filename, int nr, int nc) {
+Mat readMatrix(std::string filename, uint32 nr, uint32 nc) {
     std::ifstream afile;
     afile.open(filename.c_str());
     Mat result(nr, nc);
     uint32 row = 0;
     uint32 col = 0;
     real number;
+
     while(afile >> number){
         result(row, col) = number;
-        if(col == 255){
+        if(col == nc-1){
             row += 1;
             col = 0;
         } else {

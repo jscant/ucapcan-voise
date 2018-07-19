@@ -24,8 +24,8 @@ vd VD = loadResults.VD;
 
 /**
 * @test AddSeedCheckLambda
-* @brief Add seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in
-* its \f$ \lambda \f$ matrix entry.
+* @brief Add seeds to VD and check (in a greedy fashion by comparing the distance between every seed and every pixel)
+* whether the closest seed to each pixel is the one held in its \f$ \lambda \f$ matrix entry.
 */
 TEST_CASE("Check whether the addSeed method correctly recalculates the lambda matrix"){
 

@@ -1,74 +1,74 @@
-Start testing: Jul 12 13:10 BST
+Start testing: Jul 13 14:04 BST
 ----------------------------------------------------------
 1/8 Testing: AddSeedCheckLambda
 1/8 Test: AddSeedCheckLambda
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/testAddSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"AddSeedCheckLambda" start time: Jul 12 13:10 BST
+"AddSeedCheckLambda" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   4.58 sec
+Test time =   2.47 sec
 ----------------------------------------------------------
 Test Passed.
-"AddSeedCheckLambda" end time: Jul 12 13:10 BST
-"AddSeedCheckLambda" time elapsed: 00:00:04
+"AddSeedCheckLambda" end time: Jul 13 14:04 BST
+"AddSeedCheckLambda" time elapsed: 00:00:02
 ----------------------------------------------------------
 
 2/8 Testing: RemoveSeedCheckLambda
 2/8 Test: RemoveSeedCheckLambda
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/testRemoveSeedCheckLambda"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"RemoveSeedCheckLambda" start time: Jul 12 13:10 BST
+"RemoveSeedCheckLambda" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   4.45 sec
+Test time =   2.21 sec
 ----------------------------------------------------------
 Test Passed.
-"RemoveSeedCheckLambda" end time: Jul 12 13:10 BST
-"RemoveSeedCheckLambda" time elapsed: 00:00:04
+"RemoveSeedCheckLambda" end time: Jul 13 14:04 BST
+"RemoveSeedCheckLambda" time elapsed: 00:00:02
 ----------------------------------------------------------
 
 3/8 Testing: AddSeedCheckV
 3/8 Test: AddSeedCheckV
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/testAddSeedCheckV"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"AddSeedCheckV" start time: Jul 12 13:10 BST
+"AddSeedCheckV" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   3.64 sec
+Test time =   2.50 sec
 ----------------------------------------------------------
 Test Passed.
-"AddSeedCheckV" end time: Jul 12 13:10 BST
-"AddSeedCheckV" time elapsed: 00:00:03
+"AddSeedCheckV" end time: Jul 13 14:04 BST
+"AddSeedCheckV" time elapsed: 00:00:02
 ----------------------------------------------------------
 
 4/8 Testing: RemoveSeedCheckV
 4/8 Test: RemoveSeedCheckV
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/testRemoveSeedCheckV"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"RemoveSeedCheckV" start time: Jul 12 13:10 BST
+"RemoveSeedCheckV" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (100 assertions in 1 test case)
 
 <end of output>
-Test time =   2.85 sec
+Test time =   2.30 sec
 ----------------------------------------------------------
 Test Passed.
-"RemoveSeedCheckV" end time: Jul 12 13:10 BST
+"RemoveSeedCheckV" end time: Jul 13 14:04 BST
 "RemoveSeedCheckV" time elapsed: 00:00:02
 ----------------------------------------------------------
 
@@ -76,17 +76,17 @@ Test Passed.
 5/8 Test: PointInRegionCheck
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/PointInRegionCheck"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"PointInRegionCheck" start time: Jul 12 13:10 BST
+"PointInRegionCheck" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
 All tests passed (2248 assertions in 2 test cases)
 
 <end of output>
-Test time =   0.07 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"PointInRegionCheck" end time: Jul 12 13:10 BST
+"PointInRegionCheck" end time: Jul 13 14:04 BST
 "PointInRegionCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -94,7 +94,7 @@ Test Passed.
 6/8 Test: SqDistanceCheck
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/SqDistanceCheck"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"SqDistanceCheck" start time: Jul 12 13:10 BST
+"SqDistanceCheck" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
@@ -104,7 +104,7 @@ All tests passed (6 assertions in 6 test cases)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"SqDistanceCheck" end time: Jul 12 13:10 BST
+"SqDistanceCheck" end time: Jul 13 14:04 BST
 "SqDistanceCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -112,7 +112,7 @@ Test Passed.
 7/8 Test: InVectorCheck
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/InVectorCheck"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"InVectorCheck" start time: Jul 12 13:10 BST
+"InVectorCheck" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
@@ -122,7 +122,7 @@ All tests passed (5 assertions in 5 test cases)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"InVectorCheck" end time: Jul 12 13:10 BST
+"InVectorCheck" end time: Jul 13 14:04 BST
 "InVectorCheck" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -130,7 +130,7 @@ Test Passed.
 8/8 Test: MetricChecks
 Command: "/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks"
 Directory: /home/jack/dev/project/voise-1.3/cpp/build
-"MetricChecks" start time: Jul 12 13:10 BST
+"MetricChecks" start time: Jul 13 14:04 BST
 Output:
 ----------------------------------------------------------
 ===============================================================================
@@ -140,8 +140,8 @@ All tests passed (19 assertions in 19 test cases)
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"MetricChecks" end time: Jul 12 13:10 BST
+"MetricChecks" end time: Jul 13 14:04 BST
 "MetricChecks" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 12 13:10 BST
+End testing: Jul 13 14:04 BST

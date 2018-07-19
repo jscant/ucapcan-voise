@@ -46,7 +46,6 @@ function params = loadImage(params)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 try
-
 	me = checkField(params,'iFile');
 	if ~isempty(me), throw(me), end
 

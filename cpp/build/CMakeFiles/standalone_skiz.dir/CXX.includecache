@@ -91,6 +91,8 @@ readMatrix.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
 fstream
 -
+iostream
+-
 
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
 string
@@ -167,6 +169,8 @@ aux-functions/readMatrix.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
 aux-functions/metrics.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
+valgrind/callgrind.h
+-
 
 /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp
 pointInRegion.h

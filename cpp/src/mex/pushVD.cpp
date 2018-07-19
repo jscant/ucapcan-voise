@@ -96,17 +96,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     memcpy(sxPtr, outputVD.getSx().data(), sxLen*sizeof(real));
     memcpy(syPtr, outputVD.getSy().data(), sxLen*sizeof(real));
     memcpy(skPtr, outputVD.getSk().data(), skLen*sizeof(real));
-    //for (int i = 0; i < sxLen; ++i) {
-    //    sxPtr[i] = outputVD.getSxByIdx(i + 1);
-    //    syPtr[i] = outputVD.getSyByIdx(i + 1);
-    //}
-
-    // Populate VD.Sk (index of 'active' seeds)
-    //int pos = 0;
-    //for(auto const &s: outputVD.getSk()) {
-    //    skPtr[pos] = s;
-    //    pos += 1;
-    //}
 
     // Populate VD.Nk (cell array of neighbour relationships)
     int nkLen = mxGetNumberOfElements(nkOutgoingArray);
@@ -117,10 +106,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
         mxArray *tmpArr = mxCreateDoubleMatrix(cellLen, 1, mxREAL);
         real *tmpPtr = mxGetDoubles(tmpArr);
         memcpy(tmpPtr, outputVD.getNkByIdx(i + 1).data(), cellLen*sizeof(real));
-        //std::copy(outputVD.getNkByIdx(i + 1).data(), outputVD.getNkByIdx(i + 1).data() + cellLen, tmpPtr);
-        //for (int j = 0; j < cellLen; ++j) {
-        //    tmpPtr[j] = outputVD.getNkByIdx(i + 1).at(j);
-        //}
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
     }
 

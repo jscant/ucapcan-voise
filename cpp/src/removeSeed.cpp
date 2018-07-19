@@ -59,11 +59,11 @@ bool removeSeed(vd &VD, real Sk) {
                 uint32 r = Ns.at(idx);
                 real newDist = sqDist(i+1, j+1, VD.getSxByIdx(r), VD.getSyByIdx(r));
                 real oldDist = sqDist(i+1, j+1, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
-                if((int)newDist < (int)oldDist){
+                if(newDist < oldDist){
                     VD.setLamByIdx(j, i, r);
                     VD.setVByIdx(j, i, 0);
                     lam = r;
-                } else if ((int)newDist == (int)oldDist){
+                } else if (newDist == oldDist){
                     VD.setLamByIdx(j, i, r);
                     VD.setVByIdx(j, i, 1);
                     lam = r;
@@ -78,12 +78,10 @@ bool removeSeed(vd &VD, real Sk) {
         Ns.erase(std::remove(Ns.begin(), Ns.end(), Sk), Ns.end());
         newDict[r] = Ns;
     }
-    //mexPrintf("FLAG 9\n");
     for (auto s : VD.getNkByIdx(Sk)) {
         if(s == Sk) {
             continue;
         }
-        //mexPrintf("FLAG 10\n");
         RealVec A = VD.getNkByIdx(s);
         RealVec B = VD.getNkByIdx(Sk);
         A.insert(A.end(), B.begin(), B.end());
@@ -93,11 +91,11 @@ bool removeSeed(vd &VD, real Sk) {
             if (r == Sk || r == s || inVector(VD.getNkByIdx(s), r)) {
                 continue;
             }
-            for(int u : A) {
+            for(auto u : A) {
                 if(u == r) {
                     continue;
                 }
-                std::array<real, 2> cc = { -1, -1 };
+                std::array<real, 2> cc;
                 try {
                     cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
                                       VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));

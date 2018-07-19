@@ -64,8 +64,8 @@ function params = getDefaultVOISEParams()
 %                    the square root of the variance
 %   thresHoldLength: max ratio non homogeneous/total length \mathcal{H}
 %                                                            (0.3)
-%   mergeAlgo      : Voronoi algorithm (0 incremental, 1 full, 2 optimal)
-%                                                            (2)
+%   mergeAlgo      : Voronoi algorithm (0 incremental, 1 full, 2 optimal,  3 mex)
+%                                                            (3)
 %
 % * VOISE regularisation phase parameters
 %

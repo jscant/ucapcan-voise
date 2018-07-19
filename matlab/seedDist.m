@@ -29,7 +29,7 @@ X = (VD.Sx(VD.Sk)-W.xm)*sx+min(params.x);
 Y = (VD.Sy(VD.Sk)-W.ym)*sy+min(params.y);
 
 subplot(111);
-plot(X,Y,'o')
+plot(X,Y,'rx', 'markersize', 0.1)
 xlabel(sprintf('x [%s]',params.pixelUnit{1}))
 ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 title('Seeds spatial distribution')

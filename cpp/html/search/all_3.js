@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['getcentroidseedbatch',['getCentroidSeedBatch',['../group__getCentroidSeedBatch.html',1,'']]],
   ['getcentroidseedbatch_2ecpp',['getCentroidSeedBatch.cpp',['../getCentroidSeedBatch_8cpp.html',1,'']]],
   ['getk',['getK',['../classvd.html#a624f53ae4a7012f267111359e9245f81',1,'vd']]],
   ['getlam',['getLam',['../classvd.html#a37c4ab12669eb276fe7fa4a610310345',1,'vd']]],
@@ -25,6 +26,7 @@ var searchData=
   ['getsybyidx',['getSyByIdx',['../classvd.html#a0f630fc80e57d3e17ab036f75afde006',1,'vd']]],
   ['getv',['getV',['../classvd.html#aad4ea5c045b8380f83b0490af2fee0fa',1,'vd']]],
   ['getvbyidx',['getVByIdx',['../classvd.html#a640ed20e4618abd409e180a707eea3b1',1,'vd']]],
+  ['getvdop',['getVDOp',['../group__getVDOp.html',1,'']]],
   ['getvdop_2ecpp',['getVDOp.cpp',['../getVDOp_8cpp.html',1,'']]],
   ['getvk',['getVk',['../classvd.html#a090bebdbbff36888934c870daf3dcb36',1,'vd']]],
   ['getw',['getW',['../classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118',1,'vd']]],

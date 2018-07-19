@@ -25,16 +25,17 @@
 #include "aux-functions/readSeeds.h"
 #include "aux-functions/readMatrix.h"
 #include "aux-functions/metrics.h"
-
+#include <valgrind/callgrind.h>
 typedef std::chrono::high_resolution_clock now;
 
 using namespace std::chrono;
 
 int main() {
-    int nc = 256, nr = 256;
-    std::vector<RealVec> seeds = readSeeds("../src/test/resources/benchVDSeeds.txt");
-    Mat lam = readMatrix("../src/test/resources/benchVDLambda.txt", nr, nc);
-    Mat v = readMatrix("../src/test/resources/benchVDV.txt", nr, nc);
+    int nr = 1024, nc = 1024;
+    std::vector<RealVec> seeds = readSeeds("../src/test/resources/benchVDSeeds" + std::to_string(nr) + ".txt");
+    Mat lam = readMatrix("../src/test/resources/benchVDLambda" + std::to_string(nr) + ".txt", nr, nc);
+    Mat v = readMatrix("../src/test/resources/benchVDV" + std::to_string(nr) + ".txt", nr, nc);
+
     Mat px(nr, nc);
     Mat py(nr, nc);
 
@@ -57,18 +58,16 @@ int main() {
     RealVec StartSk;
 
 
-    for (auto i = 0; i < 5; ++i) {
+    for (auto i = 0; i < 3; ++i) {
         StartSx.push_back(Sx.at(i));
         StartSy.push_back(Sy.at(i));
         StartSk.push_back(i + 1);
     }
 
     std::map<real, RealVec> Nk;
-    Nk[1] = {5, 3, 4};
-    Nk[2] = {5, 4};
-    Nk[3] = {5, 4, 1};
-    Nk[4] = {5, 3, 2, 1};
-    Nk[5] = {3, 4, 2, 1};
+    Nk[1] = {3, 2};
+    Nk[2] = {3, 1};
+    Nk[3] = {1, 2};
 
     vd VD(nr, nc);
     VD.setLam(lam);
@@ -78,27 +77,60 @@ int main() {
     VD.setSx(StartSx);
     VD.setSy(StartSy);
     VD.setSk(StartSk);
-    VD.setK(5);
+    VD.setK(3);
     VD.setNk(Nk);
+
+
 
     // addSeed timing
     auto start = now::now();
-    for (uint32 i = 0; i < ns - 5; ++i) {
-        addSeed(VD, Sx.at(i + 5), Sy.at(i + 5));
-    }
     auto elapsed = now::now() - start;
-    long long ms = duration_cast<microseconds>(elapsed).count() / (ns - 5);
-    std::string str = "addSeed:\t\t" + std::to_string(ms) + " us per seed\n";
-    std::cout << str.c_str();
+    long long ms = duration_cast<nanoseconds>(elapsed).count();
+    std::string str = std::to_string(10) + "\t" + std::to_string(ms) + "\n";
+    int x = 0;
+    for (uint32 i = 0; i < ns - 3; ++i) {
+        if(x == 0) {
+            start = now::now();
+        }
+        x += 1;
+        addSeed(VD, Sx.at(i + 3), Sy.at(i + 3));
+        if(x == 1) {
+            x = 0;
+            elapsed = now::now() - start;
+            ms = duration_cast<microseconds>(elapsed).count();
+            str = std::to_string(i) + "\t" + std::to_string(ms) + "\n";
+           // std::cout << str.c_str();
+        }
+    }
+
+    //auto elapsed = now::now() - start;
+    //long long ms = duration_cast<microseconds>(elapsed).count() / (ns - 3);
+    //std::string str = "addSeed:\t\t" + std::to_string(ms) + " us per seed\n";
+    //std::cout << str.c_str();
+
 
     // removeSeed timing
-    start = now::now();
-    for (auto i = ns - 5; i > 0; --i) {
+    //start = now::now();
+            x = 0;
+    for (auto i = ns - 3; i > 0; --i) {
+        if(x == 0) {
+            start = now::now();
+        }
+        x += 1;
         removeSeed(VD, i);
+        if(x == 1) {
+            x = 0;
+            elapsed = now::now() - start;
+            ms = duration_cast<microseconds>(elapsed).count();
+            str = std::to_string(i) + "\t" + std::to_string(ms) + "\n";
+            std::cout << str.c_str();
+        }
     }
-    elapsed = now::now() - start;
-    ms = duration_cast<microseconds>(elapsed).count() / (ns - 5);
-    str = "removeSeed:\t\t" + std::to_string(ms) + " us per seed\n";
-    std::cout << str.c_str();
+
+
+    //elapsed = now::now() - start;
+    //ms = duration_cast<microseconds>(elapsed).count() / (ns - 3);
+    //str = "removeSeed:\t\t" + std::to_string(ms) + " us per seed\n";
+    //std::cout << str.c_str();
 
 }

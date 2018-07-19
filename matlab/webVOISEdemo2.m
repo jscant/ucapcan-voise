@@ -21,8 +21,9 @@
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 %compileMEX;
-tic
+
+profile on;
 webVOISE('../share/VOISEdemo2.dat');
-disp("TOTAL TIME:\n")
-toc
+profsave(profile('info'),'profile_results')
+
 %quit

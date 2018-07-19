@@ -104,13 +104,7 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     mwIndex nRows = mxGetM(lamIncomingArray);
     mwIndex nCols = mxGetN(lamIncomingArray);
 
-    // Create and populate vd
-    vd VD = vd(nr, nc);
 
-    VD.setLam(Eigen::Map<Mat>(lamPtr, nRows, nCols));
-    VD.setV(Eigen::Map<Mat>(vPtr, nRows, nCols));
-    VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1);
-    VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
 
     // Compatible with row/column vectors in ML
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
@@ -123,19 +117,23 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
 
     // Populate neighbour relationships from ML data
     mwIndex nkLen = mxGetNumberOfElements(nkIncomingArray);
-    mxArray *cellPtrs[nkLen];
-    real *cellContentsPtrs;
-
     for (mwIndex i = 0; i < nkLen; ++i) {
-        cellPtrs[i] = mxGetCell(nkIncomingArray, i);
-        mwIndex cellLen = mxGetNumberOfElements(cellPtrs[i]);
-        real *vals = mxGetDoubles(cellPtrs[i]);
-        RealVec cellVec;
-        for (mwIndex j = 0; j < cellLen; ++j) {
-            cellVec.push_back(vals[j]);
-        }
-        Nk[i + 1] = cellVec;
+        mxArray *cellPtr = mxGetCell(nkIncomingArray, i); // Pointer to cell
+        mwIndex cellLen = mxGetNumberOfElements(cellPtr); // Elements in cell
+        real *vals = mxGetDoubles(cellPtr); // Pointer to cell contents (doubles)
+        RealVec cellVec(vals, vals + cellLen); // Faster than looping
+        Nk[i + 1] = cellVec; // Seed indexes begin at 1
     }
+
+    // Create and populate vd
+    vd VD = vd(nr, nc);
+
+    // Eigen Maps 'reuse' memory, no copying large matrices
+    VD.setLam(Eigen::Map<Mat>(lamPtr, nRows, nCols));
+    VD.setV(Eigen::Map<Mat>(vPtr, nRows, nCols));
+    VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1); // Offset due to array-indexing differences
+    VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
+
 
     VD.setK(k);
     VD.setSx(Sx);

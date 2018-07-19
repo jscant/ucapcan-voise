@@ -8,6 +8,6 @@
 #include <string>
 #include "../typedefs.cpp"
 
-Mat readMatrix(std::string filename, int nr, int nc);
+Mat readMatrix(std::string filename, uint32 nr, uint32 nc);
 
 #endif // READMATRIX_H

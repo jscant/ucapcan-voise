@@ -50,7 +50,6 @@ struct V_struct {
 class vd {
 private:
     real nc, nr, k;
-
     std::map<real, RealVec> Nk;
     V_struct Vk;
     Mat seeds, px, py;

@@ -33,14 +33,16 @@ target = strcat(voise.root, '/share/', timingFilename, '.mat');
 symlink = strcat(voise.root, '/share/VOISEtiming.mat');
 
 
-numSeeds = 40;
-begSeed = 100;
-endSeed = 4000;
+numSeeds = 31;
+begSeed = 3;
+endSeed = 3003;
 % values for test purpose
 %numSeeds = 10;
 %endSeed = 300;
-nr = 256;
-nc = 256;
+nr = 512;
+nc = 512;
+
+filename = strcat(voise.root, '/share/', num2str(nr), '-bench');
 
 initSeeds = @randomSeeds;
 
@@ -54,7 +56,11 @@ if exist('initSeeds') & isa(initSeeds, 'function_handle'),
 else
     error('initSeeds not defined or not a Function Handle');
 end
-% save("benchVDSeeds.txt", "S", "-ascii");
+
+
+
+
+
 fprintf(1, 'endSeed = %d card(S) = %d\n', endSeed, size(S, 1));
 endSeed = size(S, 1);
 
@@ -68,6 +74,18 @@ tVDa_cppb = zeros(size(nsa));
 s = S([1:nsa(1)], :);
 tStart = tic;
 VDa = computeVDCpp(nr, nc, s, VDlim);
+
+lam = VDa.Vk.lambda;
+V = VDa.Vk.v;
+Nk = VDa.Nk;
+fname_v = strcat("../cpp/src/test/resources/benchVDV", num2str(nr), ".txt");
+fname_lam = strcat("../cpp/src/test/resources/benchVDLambda", num2str(nr), ".txt");
+fname_seeds = strcat("../cpp/src/test/resources/benchVDSeeds", num2str(nr), ".txt");
+
+save("Nk", "Nk");
+save(fname_seeds, "S", "-ascii");
+save(fname_v, "V", "-ascii");
+save(fname_lam, "lam", "-ascii");
 
 tVDa_cppb(1) = toc(tStart);
 fprintf(1, 'init   %4d seeds (%4d:%4d) %8.1f s\n', ...
@@ -224,6 +242,7 @@ for i = 1:length(nsr) - 1,
 end
 
 % full algorithm
+nsf = nsa
 tVDf = zeros(size(nsf));
 for i = 1:length(nsf)
     
@@ -248,15 +267,21 @@ tVDr_ml(end) = [];
 tVDr_cppb(end) = [];
 tVDr_cpps(end) = [];
 
+tVDa_cppb = tVDa_cppb(2:end);
+tVDa_cpps = tVDa_cpps(2:end);
+tVDa_ml = tVDa_ml(2:end);
+nda = nda(2:end)
+nsa = nsa(2:end)
+
 [ptVDf] = polyfit([0, nsf], [0, tVDf], 2);
 [ptVDa] = polyfit([0, nsa], [0, tVDa_ml ./ nda], 1);
 [ptVDr] = polyfit([nsr, 0], [tVDr_ml ./ ndr, 0], 1);
 
-[ptVDa_cpps] = polyfit([0, nsa], [0, tVDa_cpps ./ nda], 1);
-[ptVDr_cpps] = polyfit([nsr, 0], [tVDr_cpps ./ ndr, 0], 1);
+[ptVDa_cpps] = polyfit([nsa], [tVDa_cpps ./ nda], 1);
+[ptVDr_cpps] = polyfit([nsr], [tVDr_cpps ./ ndr], 1);
 
-[ptVDa_cppb] = polyfit([0, nsa], [0, tVDa_cppb ./ nda], 1);
-[ptVDr_cppb] = polyfit([nsr, 0], [tVDr_cppb ./ ndr, 0], 1);
+[ptVDa_cppb] = polyfit([nsa], [tVDa_cppb ./ nda], 1);
+[ptVDr_cppb] = polyfit([nsr], [tVDr_cppb ./ ndr], 1);
 
 subplot(221),
 plot(nsa, [tVDa_ml ./ nda; polyval(ptVDa, nsa)], '-o', ...

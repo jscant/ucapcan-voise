@@ -31,9 +31,8 @@ RealVec nsStar(const vd &VD) {
     bool onlyNeighbour = VD.getNkByIdx(lam).size() == 1 ? true : false;
 
     real n = 0;
-    while (true) {
+    while (n < 2) {
         real NsLen = Ns.size();
-
         for (real nIdx = n; nIdx < VD.getNkByIdx(lam).size(); ++nIdx) {
             const real r = VD.getNkByIdx(lam)[nIdx];
             if (inVector(Ns, r)) {
@@ -71,5 +70,5 @@ RealVec nsStar(const vd &VD) {
             lam = lamOG;
         }
     }
-    return Ns;
+    throw SKIZException("Failure of nsStar to find all neighbours");
 }

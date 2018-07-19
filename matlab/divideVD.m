@@ -60,7 +60,7 @@ while ~stopDiv,
         S = [[S(:, 1); s(:, 1)], [S(:, 2); s(:, 2)]];
     end
     
-    if 1, % diagnostic plot (seed to add)
+    if 0, % diagnostic plot (seed to add)
         subplot(212),
         imagesc(WHC);
         axis xy, colorbar
@@ -203,11 +203,11 @@ fprintf(1, '*** Dividing phase completed.\n')
 function params = plotCurrentVD(VD, params, iDiv)
 
 if 0
-if params.divideAlgo == 3
-    VDW = getVDOp(VD, params.W, 1);
-else
-    VDW = getVDOp2(VD, params.W, @(x) median(x));
-end
+    if params.divideAlgo == 3
+        VDW = getVDOp(VD, params.W, 1);
+    else
+        VDW = getVDOp2(VD, params.W, @(x) median(x));
+    end
 
     clf
     subplot(111),

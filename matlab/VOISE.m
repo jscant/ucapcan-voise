@@ -147,11 +147,11 @@ fprintf(1, '*** Saving VOISE results in %s\n', [params.oDir, params.oMatFile]);
 save([params.oDir, params.oMatFile], '-append', 'CVD');
 % plot
 params = plotVOISE(CVD, params, 3);
-if 0,
+if 0
     % do not plot Voronoi diagram
     params = plotVOISE(CVD, params, 4);
 end
-
+VD2GraphViz('graph', CVD);
 % if movie on close movie
 if params.movDiag,
     movieHandler(params, 'close');
@@ -161,6 +161,6 @@ t = cputime - t;
 fprintf(1, '*** Total elapsed time %02d:%02d:%02d [hh:mm:ss].\n', ...
     floor(t/3600), floor(mod(t, 3600)/60), floor(mod(mod(t, 3660), 60)));
 
-if params.logVOISE,
+if params.logVOISE
     diary('off')
 end

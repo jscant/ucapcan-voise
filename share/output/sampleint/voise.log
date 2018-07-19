@@ -96,92 +96,92 @@ StopDiv = True
 *** Dividing phase completed.
 *** Starting merging phase
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.23
-Elapsed time is 0.034967 seconds.
+Elapsed time is 0.037488 seconds.
 Iter  1 Removing 37 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.25
-Elapsed time is 0.110784 seconds.
+Elapsed time is 0.029413 seconds.
 Iter  2 Removing 29 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.26
-Elapsed time is 0.021955 seconds.
+Elapsed time is 0.031405 seconds.
 Iter  3 Removing 16 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.016794 seconds.
+Elapsed time is 0.018099 seconds.
 Iter  4 Removing 10 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.013522 seconds.
+Elapsed time is 0.015273 seconds.
 Iter  5 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.012521 seconds.
+Elapsed time is 0.017275 seconds.
 Iter  6 Removing 8 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.016080 seconds.
+Elapsed time is 0.013094 seconds.
 Iter  7 Removing 7 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.019664 seconds.
+Elapsed time is 0.012723 seconds.
 Iter  8 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.026145 seconds.
+Elapsed time is 0.013577 seconds.
 Iter  9 Removing 7 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.012747 seconds.
+Elapsed time is 0.012007 seconds.
 Iter 10 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010657 seconds.
+Elapsed time is 0.013231 seconds.
 Iter 11 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.011247 seconds.
+Elapsed time is 0.010774 seconds.
 Iter 12 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010298 seconds.
+Elapsed time is 0.018650 seconds.
 Iter 13 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010172 seconds.
+Elapsed time is 0.015670 seconds.
 Iter 14 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.014096 seconds.
+Elapsed time is 0.010108 seconds.
 Iter 15 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.013060 seconds.
+Elapsed time is 0.009341 seconds.
 Iter 16 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.30
-Elapsed time is 0.017030 seconds.
+Elapsed time is 0.011028 seconds.
 Iter 17 Removing 13 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.008951 seconds.
+Elapsed time is 0.008779 seconds.
 Iter 18 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.027557 seconds.
+Elapsed time is 0.012908 seconds.
 Iter 19 Removing 5 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.026138 seconds.
+Elapsed time is 0.016241 seconds.
 Iter 20 Removing 5 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.015962 seconds.
+Elapsed time is 0.011587 seconds.
 Iter 21 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
-Elapsed time is 0.016458 seconds.
+Elapsed time is 0.015442 seconds.
 Iter 22 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
-Elapsed time is 0.011333 seconds.
+Elapsed time is 0.008812 seconds.
 Iter 23 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.010034 seconds.
+Elapsed time is 0.009341 seconds.
 Iter 24 Removing 10 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.016444 seconds.
+Elapsed time is 0.006932 seconds.
 Iter 25 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.018336 seconds.
+Elapsed time is 0.006588 seconds.
 Iter 26 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.010052 seconds.
+Elapsed time is 0.006426 seconds.
 Iter 27 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.011125 seconds.
+Elapsed time is 0.007579 seconds.
 Iter 28 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.009439 seconds.
-Elapsed time is 0.009768 seconds.
+Elapsed time is 0.007879 seconds.
+Elapsed time is 0.008305 seconds.
 *** Merging phase completed.
 *** Starting regularisation phase
 Maximum distance seed/centre-of-mass 90.0 (65.2)
@@ -190,4 +190,4 @@ Maximum distance seed/centre-of-mass 8.0 (5.7)
 Iter  2 Computing regularised Voronoi Diagram for 180 seeds
 *** Regularisation phase completed.
 *** Saving VOISE results in ../share/output/sampleint/voise.mat
-*** Total elapsed time 00:00:04 [hh:mm:ss].
+*** Total elapsed time 00:00:02 [hh:mm:ss].
