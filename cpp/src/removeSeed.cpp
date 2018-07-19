@@ -71,7 +71,7 @@ bool removeSeed(vd &VD, real Sk) {
             }
         }
     }
-    //mexPrintf("FLAG 8\n");
+
     std::map<real, RealVec> newDict;
     for (uint32 r : VD.getNkByIdx(Sk)) {
         RealVec Ns = VD.getNkByIdx(r);
