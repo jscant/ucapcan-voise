@@ -34,7 +34,10 @@
  * prhs: Pointer to inputs
  *
  * In Matlab, this corresponds to the following parameters and outputs:
-@@@@@@@@@@@@@@@@@@@@@@@@@@ DO THIS @@@@@@@@@@@@@@@@@@@@@@@@@@@
+ * @param vd Voronoi diagram struct
+ * @param W Matrix of pixel intensities
+ * @param seeds Vector of seed IDs for which centres of mass (of the corresponding VRs) are to be found
+ * @returns Matrix of coordinates of centres of mass
  */
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[]) {
@@ -43,13 +46,17 @@ void mexFunction(int nlhs, mxArray *plhs[],
     vd VD = grabVD(prhs, 0);
     Mat W = grabW(prhs, 1).abs();
     real *seed = mxGetDoubles(prhs[2]);
-    uint32 ns = mxGetN(prhs[2]);
-    Mat resultCoords = getCentroid(VD, W, seed, ns);
+    uint32 ns = std::max(mxGetN(prhs[2]), mxGetM(prhs[2]));
+    RealVec seedVec(seed, seed + ns);
+
+    // Find centres of mass
+    Mat resultCoords = getCentroid(VD, W, seedVec);
 
     // Create space in memory for ns x 2 coordinates (results)
     plhs[0] = mxCreateDoubleMatrix(ns, 2, mxREAL);
     real *centroidPtr = mxGetDoubles(plhs[0]);
 
+    // Map results into allocated Matlab memory
     Eigen::Map<Mat>(centroidPtr, ns, 2) = resultCoords;
 
 }

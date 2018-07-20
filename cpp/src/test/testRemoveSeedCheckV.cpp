@@ -17,7 +17,7 @@
 
 // Load VD
 std::string path = "../src/test/resources/";
-loadStruct loadResults = loadVD(path);
+loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt", "benchVDLambda256.txt", "benchVDV256.txt");
 RealVec Sx = loadResults.Sx;
 RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;

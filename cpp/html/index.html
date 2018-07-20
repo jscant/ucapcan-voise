@@ -59,13 +59,27 @@ Introduction</h1>
 <p class="">The discrete nature of the SKIZ algorithm makes it well suited to image segmentation. The VOISE algorithm [2] relies on a fast and dynamic method of recalculation of Voronoi diagrams upon addition and removal of seeds, so the two are a natural fit. Although a standalone version of the SKIZ algorithm is included here (mostly for testing), the main functionality is provided by the matlab bindings in pushVD, grabVD, addSeedToVD and removeSeedFromVD, which are compiled into Matlab-readable MEX binaries and are tailored specifically for the code built and maintained by P. Guio and N. Achilleos to aid faster image analysis through VOISE.</p>
 <h1><a class="anchor" id="req_sec"></a>
 System Requirements</h1>
+<p class="">Compilation of Doxygen has more requirements than use of pre-compiled binaries and HTML. This project includes everything without the need for compilation, but instructions are included for completeness.</p>
+<h2><a class="anchor" id="run_sec"></a>
+For running precompiled binaries</h2>
 <ul>
 <li>A Linux 64-bit distribution. Software developed and tested on Ubuntu 16.04.</li>
-<li>Matlab 2018a or newer. Compilation of MEX binaries uses some new routines that are not present in earlier versions, but precompiled binaries can still be used.</li>
-<li>Eigen3 installed</li>
-<li>Doxygen installed</li>
+<li>Matlab</li>
+</ul>
+<h2><a class="anchor" id="test_sec"></a>
+For testing using CTest</h2>
+<p class="">Unit tests can run manually without CMake, or by running the <code>unitTests.sh</code> script in the <code>build</code> folder.</p>
+<ul>
 <li>CMake version 3.10.1 or newer</li>
-<li>gcc 6.3.</li>
+</ul>
+<h2><a class="anchor" id="comp_sec"></a>
+For compilation from source (MEX and Doxygen)</h2>
+<ul>
+<li>All of the above requirements</li>
+<li>Matlab 2018a or newer. Compilation of MEX binaries uses some new routines that are not present in earlier versions.</li>
+<li>Eigen3</li>
+<li>Doxygen</li>
+<li>At least gcc 6.3.x but no newer than gcc 7.3.x</li>
 </ul>
 <h1><a class="anchor" id="install_sec"></a>
 Compilation</h1>

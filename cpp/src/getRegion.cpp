@@ -86,7 +86,7 @@ Mat getRegion(const vd &VD, const real &s) {
             }
             try {
                 if (ub.size() > 0) {
-                    lowestUB = std::min(VD.getNc(), floor(*std::min_element(ub.begin(), ub.end())));
+                    lowestUB = std::min((real)VD.getNc(), floor(*std::min_element(ub.begin(), ub.end())));
                 } else {
                     lowestUB = VD.getNc();
                 }
@@ -144,7 +144,7 @@ Mat getRegion(const vd &VD, const real &s) {
 
             try {
                 if (ub.size() > 0) {
-                    lowestUB = std::min(VD.getNc(), floor(*std::min_element(ub.begin(), ub.end())));
+                    lowestUB = std::min((real)VD.getNc(), floor(*std::min_element(ub.begin(), ub.end())));
                 } else {
                     lowestUB = VD.getNc();
                 }

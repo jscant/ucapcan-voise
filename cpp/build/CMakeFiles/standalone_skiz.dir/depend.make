@@ -50,6 +50,8 @@ CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/getRegion.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/removeSeed.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/skizException.h
+CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/test/test-help-fns/loadStruct.h
+CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/test/test-help-fns/loadVD.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/typedefs.cpp
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/vd.h
 
@@ -75,6 +77,17 @@ CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o: ../src/skizException.cpp
 CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o: ../src/skizException.h
+
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/aux-functions/readMatrix.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/aux-functions/readSeeds.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/getRegion.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/removeSeed.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/skizException.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadStruct.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.h
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o: ../src/typedefs.cpp
 

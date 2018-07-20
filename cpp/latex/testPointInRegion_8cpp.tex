@@ -12,6 +12,7 @@ Unit tests for various normal and pathalogical cases for the point\+In\+Region f
 {\ttfamily \#include \char`\"{}../typedefs.\+cpp\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../vd.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../point\+In\+Region.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../add\+Seed.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+V\+D.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+Struct.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}Catch2/catch.\+hpp\char`\"{}}\newline
@@ -22,27 +23,6 @@ Unit tests for various normal and pathalogical cases for the point\+In\+Region f
 \begin{DoxyCompactList}\small\item\em Checks whether the pixels on and around the lower bound calculated by get\+Region are in said region. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{testPointInRegion_8cpp_a52252a02ec7fcb1f3cb79466e327e4ff}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Upper bounds of get\+Region\char`\"{})
 \begin{DoxyCompactList}\small\item\em Checks whether the pixels on and around the upper bound calculated by get\+Region are in said region. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Variables}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}\label{testPointInRegion_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}} 
-std\+::string {\bfseries path} = \char`\"{}../src/test/resources/\char`\"{}
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_ae41669d5409e36365c6e8e8a8f182117}\label{testPointInRegion_8cpp_ae41669d5409e36365c6e8e8a8f182117}} 
-load\+Struct {\bfseries load\+Results} = load\+VD(path)
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testPointInRegion_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_ac6b6552a70499e6a83cff95e91a0f259}\label{testPointInRegion_8cpp_ac6b6552a70499e6a83cff95e91a0f259}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}\label{testPointInRegion_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}} 
-\mbox{\hyperlink{classvd}{vd}} {\bfseries VD} = load\+Results.\+VD
-\item 
-\mbox{\Hypertarget{testPointInRegion_8cpp_a5d799ab688d158b0dab2fd8a8003a845}\label{testPointInRegion_8cpp_a5d799ab688d158b0dab2fd8a8003a845}} 
-std\+::array$<$ \mbox{\hyperlink{typedefs_8cpp_a58a0c7cf2501f4492da833421be92547}{real}}, 2 $>$ {\bfseries pt}
-\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}

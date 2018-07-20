@@ -60,12 +60,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Uses one of six metrics (mean, median, standard deviation, range, normalised range, number of pixels) to evaluate the merit function of a Voronoi region.  
+<p>This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Finds the pixel-intensity weighted centre of mass for all VRs in a VD.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;eigen3/Eigen/Dense&gt;</code><br />
 <code>#include &quot;<a class="el" href="vd_8h_source.html">../vd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="getRegion_8h_source.html">../getRegion.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="typedefs_8cpp.html">../typedefs.cpp</a>&quot;</code><br />
+<code>#include &quot;../getCentroid.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="grabVD_8h_source.html">grabVD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="grabW_8h_source.html">grabW.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -76,7 +77,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mexFunction</b> (int 
 <tr class="separator:a6a215cbfde54f82a3ce599228fc3fce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Uses one of six metrics (mean, median, standard deviation, range, normalised range, number of pixels) to evaluate the merit function of a Voronoi region. </p>
+<div class="textblock"><p class="">This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Finds the pixel-intensity weighted centre of mass for all VRs in a VD. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

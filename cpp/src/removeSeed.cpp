@@ -50,7 +50,7 @@ bool removeSeed(vd &VD, real Sk) {
         }
         finish = true;
         real lb = std::max(0.0, bounds(j, 0) - 1);
-        real ub = std::min(VD.getNc(), bounds(j, 1));
+        real ub = std::min((real)VD.getNc(), bounds(j, 1));
         for (real i = lb; i < ub; ++i) {
             VD.setLamByIdx(j, i, Ns.at(0));
             VD.setVByIdx(j, i, 0);

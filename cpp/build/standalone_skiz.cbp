@@ -17,6 +17,38 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="GetVDOpCheck">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/GetVDOpCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GetVDOpCheck/fast">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/GetVDOpCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="MetricChecks">
 				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
@@ -267,6 +299,38 @@
 					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="GetCentroidCheck">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GetCentroidCheck/fast">
+				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/dev/project/voise-1.3/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="testRemoveSeedCheckLambda">
 				<Option output="/home/jack/dev/project/voise-1.3/cpp/build/testRemoveSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/dev/project/voise-1.3/cpp/build"/>
@@ -343,6 +407,7 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -350,10 +415,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/NSStar.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -361,10 +428,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -372,10 +441,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/addSeed.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -383,18 +454,22 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -402,10 +477,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -413,10 +490,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -424,10 +503,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -435,10 +516,24 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getCentroid.cpp">
+			<Option target="GetCentroidCheck"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getCentroid.h">
+			<Option target="GetCentroidCheck"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getOp.cpp">
+			<Option target="GetVDOpCheck"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getOp.h">
+			<Option target="GetVDOpCheck"/>
+		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -446,10 +541,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/getRegion.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -457,6 +554,7 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
@@ -464,6 +562,7 @@
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -471,10 +570,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -482,10 +583,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -493,10 +596,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/removeSeed.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -504,10 +609,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -515,10 +622,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/skizException.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -526,86 +635,106 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadStruct.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
 			<Option target="testRemoveSeedCheckV"/>
 			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
@@ -614,6 +743,12 @@
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testAddSeedCheckV.cpp">
 			<Option target="testAddSeedCheckV"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testGetCentroid.cpp">
+			<Option target="GetCentroidCheck"/>
+		</Unit>
+		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testGetVDOp.cpp">
+			<Option target="GetVDOpCheck"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/test/testInVector.cpp">
 			<Option target="InVectorCheck"/>
@@ -637,6 +772,7 @@
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/vd.cpp">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -644,10 +780,12 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/dev/project/voise-1.3/cpp/src/vd.h">
+			<Option target="GetVDOpCheck"/>
 			<Option target="MetricChecks"/>
 			<Option target="InVectorCheck"/>
 			<Option target="PointInRegionCheck"/>
@@ -655,6 +793,7 @@
 			<Option target="SqDistanceCheck"/>
 			<Option target="standalone_skiz"/>
 			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
 			<Option target="testRemoveSeedCheckLambda"/>
 			<Option target="testAddSeedCheckV"/>
 		</Unit>

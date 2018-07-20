@@ -163,4 +163,8 @@ fprintf(1, '*** Total elapsed time %02d:%02d:%02d [hh:mm:ss].\n', ...
 
 if params.logVOISE
     diary('off')
+   
+%W = params.W
+%save('../cpp/src/test/resources/W.txt', "W", "-ascii");
+
 end

@@ -18,13 +18,27 @@
  *
  * @section req_sec System Requirements
  *
+ * Compilation of Doxygen has more requirements than use of pre-compiled binaries and HTML. This project includes
+ * everything without the need for compilation, but instructions are included for completeness.
+ *
+ * @subsection run_sec For running precompiled binaries
+ *
  * - A Linux 64-bit distribution. Software developed and tested on Ubuntu 16.04.
- * - Matlab 2018a or newer. Compilation of MEX binaries uses some new routines that are not present in earlier versions,
- * but precompiled binaries can still be used.
- * - Eigen3 installed
- * - Doxygen installed
+ * - Matlab
+ *
+ * @subsection test_sec For testing using CTest
+ *
+ * Unit tests can run manually without CMake, or by running the `unitTests.sh` script in the `build` folder.
+ *
  * - CMake version 3.10.1 or newer
- * - gcc 6.3.
+ *
+ * @subsection comp_sec For compilation from source (MEX and Doxygen)
+ *
+ * - All of the above requirements
+ * - Matlab 2018a or newer. Compilation of MEX binaries uses some new routines that are not present in earlier versions.
+ * - Eigen3
+ * - Doxygen
+ * - At least gcc 6.3.x but no newer than gcc 7.3.x
  *
  * @section install_sec Compilation
  *

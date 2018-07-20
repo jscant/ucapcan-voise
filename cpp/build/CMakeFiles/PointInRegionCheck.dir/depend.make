@@ -85,6 +85,7 @@ CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/te
 CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
 CMakeFiles/PointInRegionCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
+CMakeFiles/PointInRegionCheck.dir/src/test/testPointInRegion.cpp.o: ../src/addSeed.h
 CMakeFiles/PointInRegionCheck.dir/src/test/testPointInRegion.cpp.o: ../src/getRegion.h
 CMakeFiles/PointInRegionCheck.dir/src/test/testPointInRegion.cpp.o: ../src/pointInRegion.h
 CMakeFiles/PointInRegionCheck.dir/src/test/testPointInRegion.cpp.o: ../src/test/Catch2/catch.hpp

@@ -14,10 +14,11 @@
 #include "test-help-fns/loadVD.h"
 #include "test-help-fns/loadStruct.h"
 #include "test-help-fns/bruteForceCheckLambda.h"
+#include <iostream>
 
 // Load VD
 std::string path = "../src/test/resources/";
-loadStruct loadResults = loadVD(path);
+loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt", "benchVDLambda256.txt", "benchVDV256.txt");
 RealVec Sx = loadResults.Sx;
 RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;
@@ -29,8 +30,9 @@ vd VD = loadResults.VD;
 */
 TEST_CASE("Check whether the addSeed method correctly recalculates the lambda matrix"){
 
+    uint32 initSeedCount = VD.getSx().size();
     for (uint32 i = 0; i < 100; ++i) {
-        addSeed(VD, Sx.at(i + 5), Sy.at(i + 5));
+        addSeed(VD, Sx.at(i + initSeedCount), Sy.at(i + initSeedCount));
         REQUIRE(bruteForceCheckLambda(VD));
     }
 

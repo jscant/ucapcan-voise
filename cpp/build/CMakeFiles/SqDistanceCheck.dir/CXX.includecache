@@ -67,8 +67,12 @@ vector
 /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
 
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp
+../typedefs.cpp
+/home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
 readMatrix.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
+string
+-
 fstream
 -
 iostream

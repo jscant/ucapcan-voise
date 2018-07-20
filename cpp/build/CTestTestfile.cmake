@@ -12,3 +12,5 @@ add_test(PointInRegionCheck "/home/jack/dev/project/voise-1.3/cpp/build/PointInR
 add_test(SqDistanceCheck "/home/jack/dev/project/voise-1.3/cpp/build/SqDistanceCheck")
 add_test(InVectorCheck "/home/jack/dev/project/voise-1.3/cpp/build/InVectorCheck")
 add_test(MetricChecks "/home/jack/dev/project/voise-1.3/cpp/build/MetricChecks")
+add_test(GetVDOpCheck "/home/jack/dev/project/voise-1.3/cpp/build/GetVDOpCheck")
+add_test(GetCentroidCheck "/home/jack/dev/project/voise-1.3/cpp/build/GetCentroidCheck")

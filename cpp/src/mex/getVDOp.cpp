@@ -15,6 +15,7 @@
 #include <functional>
 #include <string>
 
+#include "../aux-functions/metrics.h"
 #include "grabVD.h"
 #include "pushVD.h"
 #include "grabW.h"

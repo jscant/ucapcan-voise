@@ -16,6 +16,7 @@ Unit tests for whether the add\+Seed method correctly recalculates the $ \lambda
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+V\+D.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+Struct.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/brute\+Force\+Check\+Lambda.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -28,7 +29,7 @@ Unit tests for whether the add\+Seed method correctly recalculates the $ \lambda
 std\+::string {\bfseries path} = \char`\"{}../src/test/resources/\char`\"{}
 \item 
 \mbox{\Hypertarget{testAddSeedCheckLambda_8cpp_ae41669d5409e36365c6e8e8a8f182117}\label{testAddSeedCheckLambda_8cpp_ae41669d5409e36365c6e8e8a8f182117}} 
-load\+Struct {\bfseries load\+Results} = load\+VD(path)
+load\+Struct {\bfseries load\+Results} = load\+VD(path, \char`\"{}bench\+V\+D\+Seeds256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V256.\+txt\char`\"{})
 \item 
 \mbox{\Hypertarget{testAddSeedCheckLambda_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testAddSeedCheckLambda_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
 \mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx

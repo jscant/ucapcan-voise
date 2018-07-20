@@ -24,7 +24,7 @@
 RealVec nsStar(const vd &VD) {
     const real s1 = VD.getSxByIdx(VD.getK());
     const real s2 = VD.getSyByIdx(VD.getK());
-    
+
     real lam = VD.getLamByIdx(s2 - 1, s1 - 1);
     const real lamOG = lam;
     RealVec Ns = {lam};

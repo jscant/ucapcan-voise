@@ -60,13 +60,50 @@ CMAKE_SOURCE_DIR = /home/jack/dev/project/voise-1.3/cpp
 CMAKE_BINARY_DIR = /home/jack/dev/project/voise-1.3/cpp/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/GetVDOpCheck.dir
+
+# All Build rule for target.
+CMakeFiles/GetVDOpCheck.dir/all:
+	$(MAKE) -f CMakeFiles/GetVDOpCheck.dir/build.make CMakeFiles/GetVDOpCheck.dir/depend
+	$(MAKE) -f CMakeFiles/GetVDOpCheck.dir/build.make CMakeFiles/GetVDOpCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19 "Built target GetVDOpCheck"
+.PHONY : CMakeFiles/GetVDOpCheck.dir/all
+
+# Include target in all.
+all: CMakeFiles/GetVDOpCheck.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GetVDOpCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 10
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GetVDOpCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/GetVDOpCheck.dir/rule
+
+# Convenience name for target.
+GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/rule
+
+.PHONY : GetVDOpCheck
+
+# clean rule for target.
+CMakeFiles/GetVDOpCheck.dir/clean:
+	$(MAKE) -f CMakeFiles/GetVDOpCheck.dir/build.make CMakeFiles/GetVDOpCheck.dir/clean
+.PHONY : CMakeFiles/GetVDOpCheck.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/GetVDOpCheck.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/MetricChecks.dir
 
 # All Build rule for target.
 CMakeFiles/MetricChecks.dir/all:
 	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/depend
 	$(MAKE) -f CMakeFiles/MetricChecks.dir/build.make CMakeFiles/MetricChecks.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=12,13,14,15,16,17,18,19,20,21,22 "Built target MetricChecks"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37 "Built target MetricChecks"
 .PHONY : CMakeFiles/MetricChecks.dir/all
 
 # Include target in all.
@@ -76,7 +113,7 @@ all: CMakeFiles/MetricChecks.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MetricChecks.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MetricChecks.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/MetricChecks.dir/rule
@@ -103,7 +140,7 @@ clean: CMakeFiles/MetricChecks.dir/clean
 CMakeFiles/InVectorCheck.dir/all:
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/depend
 	$(MAKE) -f CMakeFiles/InVectorCheck.dir/build.make CMakeFiles/InVectorCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target InVectorCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=20,21,22,23,24,25,26,27,28 "Built target InVectorCheck"
 .PHONY : CMakeFiles/InVectorCheck.dir/all
 
 # Include target in all.
@@ -113,7 +150,7 @@ all: CMakeFiles/InVectorCheck.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/InVectorCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/InVectorCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/InVectorCheck.dir/rule
@@ -140,7 +177,7 @@ clean: CMakeFiles/InVectorCheck.dir/clean
 CMakeFiles/PointInRegionCheck.dir/all:
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/depend
 	$(MAKE) -f CMakeFiles/PointInRegionCheck.dir/build.make CMakeFiles/PointInRegionCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31,32,33,34 "Built target PointInRegionCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=38,39,40,41,42,43,44,45,46 "Built target PointInRegionCheck"
 .PHONY : CMakeFiles/PointInRegionCheck.dir/all
 
 # Include target in all.
@@ -150,7 +187,7 @@ all: CMakeFiles/PointInRegionCheck.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PointInRegionCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PointInRegionCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/PointInRegionCheck.dir/rule
@@ -177,7 +214,7 @@ clean: CMakeFiles/PointInRegionCheck.dir/clean
 CMakeFiles/testRemoveSeedCheckV.dir/all:
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/depend
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckV.dir/build.make CMakeFiles/testRemoveSeedCheckV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=89,90,91,92,93,94,95,96,97,98,99,100 "Built target testRemoveSeedCheckV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=92,93,94,95,96,97,98,99,100 "Built target testRemoveSeedCheckV"
 .PHONY : CMakeFiles/testRemoveSeedCheckV.dir/all
 
 # Include target in all.
@@ -187,7 +224,7 @@ all: CMakeFiles/testRemoveSeedCheckV.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testRemoveSeedCheckV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testRemoveSeedCheckV.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/testRemoveSeedCheckV.dir/rule
@@ -214,7 +251,7 @@ clean: CMakeFiles/testRemoveSeedCheckV.dir/clean
 CMakeFiles/doc.dir/all:
 	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
 	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num= "Built target doc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=56 "Built target doc"
 .PHONY : CMakeFiles/doc.dir/all
 
 # Include target in all.
@@ -224,7 +261,7 @@ all: CMakeFiles/doc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/doc.dir/rule
@@ -251,7 +288,7 @@ clean: CMakeFiles/doc.dir/clean
 CMakeFiles/SqDistanceCheck.dir/all:
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/depend
 	$(MAKE) -f CMakeFiles/SqDistanceCheck.dir/build.make CMakeFiles/SqDistanceCheck.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42,43,44,45 "Built target SqDistanceCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=47,48,49,50,51,52,53,54,55 "Built target SqDistanceCheck"
 .PHONY : CMakeFiles/SqDistanceCheck.dir/all
 
 # Include target in all.
@@ -261,7 +298,7 @@ all: CMakeFiles/SqDistanceCheck.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SqDistanceCheck.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SqDistanceCheck.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/SqDistanceCheck.dir/rule
@@ -288,7 +325,7 @@ clean: CMakeFiles/SqDistanceCheck.dir/clean
 CMakeFiles/standalone_skiz.dir/all:
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/depend
 	$(MAKE) -f CMakeFiles/standalone_skiz.dir/build.make CMakeFiles/standalone_skiz.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55 "Built target standalone_skiz"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=57,58,59,60,61,62,63,64 "Built target standalone_skiz"
 .PHONY : CMakeFiles/standalone_skiz.dir/all
 
 # Include target in all.
@@ -298,7 +335,7 @@ all: CMakeFiles/standalone_skiz.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/standalone_skiz.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/standalone_skiz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/standalone_skiz.dir/rule
@@ -325,7 +362,7 @@ clean: CMakeFiles/standalone_skiz.dir/clean
 CMakeFiles/testAddSeedCheckLambda.dir/all:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/depend
 	$(MAKE) -f CMakeFiles/testAddSeedCheckLambda.dir/build.make CMakeFiles/testAddSeedCheckLambda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66 "Built target testAddSeedCheckLambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73 "Built target testAddSeedCheckLambda"
 .PHONY : CMakeFiles/testAddSeedCheckLambda.dir/all
 
 # Include target in all.
@@ -335,7 +372,7 @@ all: CMakeFiles/testAddSeedCheckLambda.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testAddSeedCheckLambda.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testAddSeedCheckLambda.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/testAddSeedCheckLambda.dir/rule
@@ -356,13 +393,50 @@ clean: CMakeFiles/testAddSeedCheckLambda.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/GetCentroidCheck.dir
+
+# All Build rule for target.
+CMakeFiles/GetCentroidCheck.dir/all:
+	$(MAKE) -f CMakeFiles/GetCentroidCheck.dir/build.make CMakeFiles/GetCentroidCheck.dir/depend
+	$(MAKE) -f CMakeFiles/GetCentroidCheck.dir/build.make CMakeFiles/GetCentroidCheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target GetCentroidCheck"
+.PHONY : CMakeFiles/GetCentroidCheck.dir/all
+
+# Include target in all.
+all: CMakeFiles/GetCentroidCheck.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GetCentroidCheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GetCentroidCheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/GetCentroidCheck.dir/rule
+
+# Convenience name for target.
+GetCentroidCheck: CMakeFiles/GetCentroidCheck.dir/rule
+
+.PHONY : GetCentroidCheck
+
+# clean rule for target.
+CMakeFiles/GetCentroidCheck.dir/clean:
+	$(MAKE) -f CMakeFiles/GetCentroidCheck.dir/build.make CMakeFiles/GetCentroidCheck.dir/clean
+.PHONY : CMakeFiles/GetCentroidCheck.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/GetCentroidCheck.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/testRemoveSeedCheckLambda.dir
 
 # All Build rule for target.
 CMakeFiles/testRemoveSeedCheckLambda.dir/all:
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/depend
 	$(MAKE) -f CMakeFiles/testRemoveSeedCheckLambda.dir/build.make CMakeFiles/testRemoveSeedCheckLambda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=78,79,80,81,82,83,84,85,86,87,88 "Built target testRemoveSeedCheckLambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91 "Built target testRemoveSeedCheckLambda"
 .PHONY : CMakeFiles/testRemoveSeedCheckLambda.dir/all
 
 # Include target in all.
@@ -372,7 +446,7 @@ all: CMakeFiles/testRemoveSeedCheckLambda.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testRemoveSeedCheckLambda.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testRemoveSeedCheckLambda.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/testRemoveSeedCheckLambda.dir/rule
@@ -399,7 +473,7 @@ clean: CMakeFiles/testRemoveSeedCheckLambda.dir/clean
 CMakeFiles/testAddSeedCheckV.dir/all:
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/depend
 	$(MAKE) -f CMakeFiles/testAddSeedCheckV.dir/build.make CMakeFiles/testAddSeedCheckV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77 "Built target testAddSeedCheckV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=74,75,76,77,78,79,80,81,82 "Built target testAddSeedCheckV"
 .PHONY : CMakeFiles/testAddSeedCheckV.dir/all
 
 # Include target in all.
@@ -409,7 +483,7 @@ all: CMakeFiles/testAddSeedCheckV.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testAddSeedCheckV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testAddSeedCheckV.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
 .PHONY : CMakeFiles/testAddSeedCheckV.dir/rule

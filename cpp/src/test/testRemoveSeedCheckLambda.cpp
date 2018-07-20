@@ -16,19 +16,20 @@
 #include "test-help-fns/bruteForceCheckLambda.h"
 #include <iostream>
 
+
+// Load VD
+std::string path = "../src/test/resources/";
+loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt", "benchVDLambda256.txt", "benchVDV256.txt");
+RealVec Sx = loadResults.Sx;
+RealVec Sy = loadResults.Sy;
+vd VD = loadResults.VD;
+
 /**
 * @test RemoveSeedCheckLambda
 * @brief Remove seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in
 * its \f$ \lambda \f$ matrix entry.
 */
 TEST_CASE("Check whether the removeSeed method correctly recalculates the lambda matrix"){
-
-    // Load VD
-    std::string path = "../src/test/resources/";
-    loadStruct loadResults = loadVD(path);
-    RealVec Sx = loadResults.Sx;
-    RealVec Sy = loadResults.Sy;
-    vd VD = loadResults.VD;
 
     // addSeed
     for (auto i = 0; i < 100; ++i) {

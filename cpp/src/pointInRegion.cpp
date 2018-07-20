@@ -1,6 +1,5 @@
 /**
  * @file
- * @headerfile ""
  * @brief Checks whether a point is within region C(s, A) according to [1] Definition 2.5
  *
  */

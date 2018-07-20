@@ -6,6 +6,6 @@
 #include "typedefs.cpp"
 #include "vd.h"
 
-Mat getCentroid(const vd &VD, const Mat &W, const real* seed, const uint32 ns);
+Mat getCentroid(const vd &VD, const Mat &W, const RealVec seeds);
 
 #endif //GETCENTROID_H

@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['getk',['getK',['../classvd.html#a624f53ae4a7012f267111359e9245f81',1,'vd']]],
+  ['getk',['getK',['../classvd.html#ae145808dbbebfc984811eb48a6a57585',1,'vd']]],
   ['getlam',['getLam',['../classvd.html#a37c4ab12669eb276fe7fa4a610310345',1,'vd']]],
   ['getlambyidx',['getLamByIdx',['../classvd.html#a5c26b069f893aa82eeaf53ff608eda1f',1,'vd']]],
-  ['getnc',['getNc',['../classvd.html#ab0de0a5b8929ed7a7bb6ca902a462dd4',1,'vd']]],
+  ['getnc',['getNc',['../classvd.html#a555fdcee74959a18003dd992a4c57cef',1,'vd']]],
   ['getnk',['getNk',['../classvd.html#a90613fc46f246a5450e26487caff33f9',1,'vd']]],
   ['getnkbyidx',['getNkByIdx',['../classvd.html#a4d058d2d1d675a741a83776c95b2acfb',1,'vd']]],
-  ['getnr',['getNr',['../classvd.html#a1a1634d6906eb0af4d877c2af3292ca7',1,'vd']]],
+  ['getnr',['getNr',['../classvd.html#afda5d6b3eb04899e1b31c5ee3a3af527',1,'vd']]],
   ['getpx',['getPx',['../classvd.html#aeba6d318016c8f8b9537ce4c0314f8cd',1,'vd']]],
   ['getpxbyidx',['getPxByIdx',['../classvd.html#aa80f528bca24356805f2a31234e67ac1',1,'vd']]],
   ['getpy',['getPy',['../classvd.html#a9738711704b1d03cdbe027b1976cb0c6',1,'vd']]],

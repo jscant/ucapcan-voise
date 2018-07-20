@@ -34,13 +34,13 @@ symlink = strcat(voise.root, '/share/VOISEtiming.mat');
 
 
 numSeeds = 31;
-begSeed = 3;
-endSeed = 3003;
+begSeed = 2;
+endSeed = 20;
 % values for test purpose
 %numSeeds = 10;
 %endSeed = 300;
-nr = 512;
-nc = 512;
+nr = 10;
+nc = 10;
 
 filename = strcat(voise.root, '/share/', num2str(nr), '-bench');
 
@@ -56,10 +56,6 @@ if exist('initSeeds') & isa(initSeeds, 'function_handle'),
 else
     error('initSeeds not defined or not a Function Handle');
 end
-
-
-
-
 
 fprintf(1, 'endSeed = %d card(S) = %d\n', endSeed, size(S, 1));
 endSeed = size(S, 1);
@@ -86,6 +82,7 @@ save("Nk", "Nk");
 save(fname_seeds, "S", "-ascii");
 save(fname_v, "V", "-ascii");
 save(fname_lam, "lam", "-ascii");
+return;
 
 tVDa_cppb(1) = toc(tStart);
 fprintf(1, 'init   %4d seeds (%4d:%4d) %8.1f s\n', ...

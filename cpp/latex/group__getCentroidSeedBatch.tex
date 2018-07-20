@@ -19,17 +19,13 @@ prhs\+: Pointer to inputs
 
 In Matlab, this corresponds to the following parameters and outputs\+: 
 \begin{DoxyParams}{Parameters}
-{\em VD} & Voronoi diagram struct \\
+{\em vd} & Voronoi diagram struct \\
 \hline
-{\em W} & Matrix of pixel values \\
+{\em W} & Matrix of pixel intensities \\
 \hline
-{\em metric\+ID} & Key from 1-\/6 indicating which metric to use\+: (1) Median (2) Mean (3) Range (4) Square root of the number of pixels (5) Normalised range (6) Standard deviation \\
-\hline
-{\em mult} & (For metric\+ID = 5 and 6 only) Multiplier of each pixel. For metric\+ID = 5, coefficient is 1/mult. For metric\+ID = 6, coefficient is equal to mult. \\
+{\em seeds} & Vector of seed I\+Ds for which centres of mass (of the corresponding V\+Rs) are to be found \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Sop Vector of metric value for each Voronoi region 
-
-Wop Matrix of metric values for each pixel. All pixels in same voronoi region have same Wop value. Pixels equidistant from two or more closest seeds (with $ \nu_{ij} $ = 1) have Wop $_{ij} $ = NaN, as per the Matlab implementation. 
+Matrix of coordinates of centres of mass 
 \end{DoxyReturn}

@@ -276,7 +276,7 @@ Mat vd::getPy() const {
  * Get iteration count (k) as defined in [1] Section 3.
  * @return Iteration count (k)
  */
-real vd::getK() const {
+uint32 vd::getK() const {
     return k;
 };
 
@@ -284,7 +284,7 @@ real vd::getK() const {
  * Get the number of rows of pixels
  * @returns nr: the number of rows of pixels
  */
-real vd::getNr() const {
+uint32 vd::getNr() const {
     return nr;
 };
 
@@ -292,7 +292,7 @@ real vd::getNr() const {
  * Get the number of columns of pixels
  * @returns nc: the number of columns of pixels
  */
-real vd::getNc() const {
+uint32 vd::getNc() const {
     return nc;
 };
 

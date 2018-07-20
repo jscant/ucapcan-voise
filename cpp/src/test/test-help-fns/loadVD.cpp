@@ -13,16 +13,18 @@
 #include "../../aux-functions/readSeeds.h"
 #include "../../aux-functions/readMatrix.h"
 
-loadStruct loadVD(std::string basePath){
-    int nc = 256, nr = 256;
-    std::vector<RealVec> seeds = readSeeds(basePath + "benchVDSeeds.txt");
-    Mat lam = readMatrix(basePath + "benchVDLambda.txt", nr, nc);
-    Mat v = readMatrix(basePath + "benchVDV.txt", nr, nc);
+loadStruct loadVD(std::string basePath, std::string seedsFname, std::string lambdaFname, std::string vFname){
+
+    std::vector<RealVec> seeds = readSeeds(basePath + seedsFname);
+    Mat lam = readMatrix(basePath + lambdaFname);
+    Mat v = readMatrix(basePath + vFname);
+    unsigned long nr = lam.rows();
+    unsigned long nc = lam.cols();
     Mat px(nr, nc);
     Mat py(nr, nc);
 
-    for (auto i = 0; i < nr; ++i) {
-        for (auto j = 0; j < nc; ++j) {
+    for (unsigned long i = 0; i < nr; ++i) {
+        for (unsigned long j = 0; j < nc; ++j) {
             px(i, j) = j;
             py(i, j) = i;
         }
@@ -39,19 +41,15 @@ loadStruct loadVD(std::string basePath){
     RealVec StartSy;
     RealVec StartSk;
 
-
-    for (auto i = 0; i < 5; ++i) {
+    for (auto i = 0; i < 2; ++i) {
         StartSx.push_back(Sx.at(i));
         StartSy.push_back(Sy.at(i));
         StartSk.push_back(i + 1);
     }
 
     std::map<real, RealVec> Nk;
-    Nk[1] = {5, 3, 4};
-    Nk[2] = {5, 4};
-    Nk[3] = {5, 4, 1};
-    Nk[4] = {5, 3, 2, 1};
-    Nk[5] = {3, 4, 2, 1};
+    Nk[1] = {2};
+    Nk[2] = {1};
 
     vd VD(nr, nc);
     VD.setLam(lam);
@@ -61,7 +59,7 @@ loadStruct loadVD(std::string basePath){
     VD.setSx(StartSx);
     VD.setSy(StartSy);
     VD.setSk(StartSk);
-    VD.setK(5);
+    VD.setK(2);
     VD.setNk(Nk);
 
     loadStruct result = loadStruct(nr, nc);

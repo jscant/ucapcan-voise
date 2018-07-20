@@ -54,8 +54,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">testPointInRegion.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -70,6 +69,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="typedefs_8cpp.html">../typedefs.cpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vd_8h_source.html">../vd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pointInRegion_8h_source.html">../pointInRegion.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="addSeed_8h_source.html">../addSeed.h</a>&quot;</code><br />
 <code>#include &quot;test-help-fns/loadVD.h&quot;</code><br />
 <code>#include &quot;test-help-fns/loadStruct.h&quot;</code><br />
 <code>#include &quot;Catch2/catch.hpp&quot;</code><br />
@@ -82,27 +82,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a52252a02ec7fcb1f3cb79466e327e4ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testPointInRegion_8cpp.html#a52252a02ec7fcb1f3cb79466e327e4ff">TEST_CASE</a> (&quot;Upper bounds of getRegion&quot;)</td></tr>
 <tr class="memdesc:a52252a02ec7fcb1f3cb79466e327e4ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the pixels on and around the upper bound calculated by getRegion are in said region.  <a href="#a52252a02ec7fcb1f3cb79466e327e4ff">More...</a><br /></td></tr>
 <tr class="separator:a52252a02ec7fcb1f3cb79466e327e4ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a4d455efceee21e97d8e21ee40e9b4a20"><td class="memItemLeft" align="right" valign="top"><a id="a4d455efceee21e97d8e21ee40e9b4a20"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>path</b> = &quot;../src/test/resources/&quot;</td></tr>
-<tr class="separator:a4d455efceee21e97d8e21ee40e9b4a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae41669d5409e36365c6e8e8a8f182117"><td class="memItemLeft" align="right" valign="top"><a id="ae41669d5409e36365c6e8e8a8f182117"></a>
-loadStruct&#160;</td><td class="memItemRight" valign="bottom"><b>loadResults</b> = loadVD(path)</td></tr>
-<tr class="separator:ae41669d5409e36365c6e8e8a8f182117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecb67c25ad584b8ac97474055a5c384"><td class="memItemLeft" align="right" valign="top"><a id="a1ecb67c25ad584b8ac97474055a5c384"></a>
-<a class="el" href="typedefs_8cpp.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sx</b> = loadResults.Sx</td></tr>
-<tr class="separator:a1ecb67c25ad584b8ac97474055a5c384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6b6552a70499e6a83cff95e91a0f259"><td class="memItemLeft" align="right" valign="top"><a id="ac6b6552a70499e6a83cff95e91a0f259"></a>
-<a class="el" href="typedefs_8cpp.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sy</b> = loadResults.Sy</td></tr>
-<tr class="separator:ac6b6552a70499e6a83cff95e91a0f259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17edf6f20961d07c702ee68bb30d9bf3"><td class="memItemLeft" align="right" valign="top"><a id="a17edf6f20961d07c702ee68bb30d9bf3"></a>
-<a class="el" href="classvd.html">vd</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VD</b> = loadResults.VD</td></tr>
-<tr class="separator:a17edf6f20961d07c702ee68bb30d9bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d799ab688d158b0dab2fd8a8003a845"><td class="memItemLeft" align="right" valign="top"><a id="a5d799ab688d158b0dab2fd8a8003a845"></a>
-std::array&lt; <a class="el" href="typedefs_8cpp.html#a58a0c7cf2501f4492da833421be92547">real</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>pt</b></td></tr>
-<tr class="separator:a5d799ab688d158b0dab2fd8a8003a845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p class="">Unit tests for various normal and pathalogical cases for the pointInRegion function. </p>

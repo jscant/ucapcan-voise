@@ -9,7 +9,8 @@ option(TESTING "Generate Catch2 unit tests")
 
 add_executable(standalone_skiz src/main.cpp src/typedefs.cpp src/addSeed.cpp src/getRegion.cpp src/NSStar.cpp
         src/pointInRegion.cpp src/removeSeed.cpp src/skizException.cpp src/vd.cpp src/aux-functions/readSeeds.cpp
-        src/aux-functions/readMatrix.cpp src/aux-functions/metrics.cpp)
+        src/aux-functions/readMatrix.cpp src/aux-functions/metrics.cpp src/test/test-help-fns/loadVD.cpp
+        src/test/test-help-fns/loadStruct.h)
 
 set(TESTING ON)
 set(GENERATE_DOXYGEN ON)
@@ -60,6 +61,9 @@ if(TESTING)
     add_executable(SqDistanceCheck src/test/testSqDist.cpp ${TEST_DEPENDENCIES})
     add_executable(InVectorCheck src/test/testInVector.cpp ${TEST_DEPENDENCIES})
     add_executable(MetricChecks src/test/testMetrics.cpp ${TEST_DEPENDENCIES} src/aux-functions/metrics.cpp)
+    add_executable(GetVDOpCheck src/test/testGetVDOp.cpp ${TEST_DEPENDENCIES} src/aux-functions/metrics.cpp
+            src/getOp.cpp)
+    add_executable(GetCentroidCheck src/test/testGetCentroid.cpp ${TEST_DEPENDENCIES} src/getCentroid.cpp)
 
     target_link_libraries(testAddSeedCheckLambda Catch)
     target_link_libraries(testRemoveSeedCheckLambda Catch)
@@ -69,6 +73,8 @@ if(TESTING)
     target_link_libraries(SqDistanceCheck Catch)
     target_link_libraries(InVectorCheck Catch)
     target_link_libraries(MetricChecks Catch)
+    target_link_libraries(GetVDOpCheck Catch)
+    target_link_libraries(GetCentroidCheck Catch)
 
     add_test(NAME AddSeedCheckLambda COMMAND testAddSeedCheckLambda)
     add_test(NAME RemoveSeedCheckLambda COMMAND testRemoveSeedCheckLambda)
@@ -78,6 +84,8 @@ if(TESTING)
     add_test(NAME SqDistanceCheck COMMAND SqDistanceCheck)
     add_test(NAME InVectorCheck COMMAND InVectorCheck)
     add_test(NAME MetricChecks COMMAND MetricChecks)
+    add_test(NAME GetVDOpCheck COMMAND GetVDOpCheck)
+    add_test(NAME GetCentroidCheck COMMAND GetCentroidCheck)
 
 endif(TESTING)
 

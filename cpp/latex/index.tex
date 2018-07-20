@@ -2,14 +2,25 @@
 The S\+K\+IZ operator algorithm, described by Sequeira and Preteux in \mbox{[}1\mbox{]}, is an efficient way of calculating and maintaining a Voronoi diagram in discrete 2D space. Unlike other, more popular algorithms such as Fortune\textquotesingle{}s Sweep, the S\+K\+IZ algorithm is dynamic so adding and removing seeds does not require recalculation of the entire graph. Moreover, checking the bounds of a region R(s) and checking whether a pixel p belongs to a region R(s) is reduced to evaluation of a small number of inequalities -\/ a number which is bounded above by twice the number of neighbouring seeds.
 
 The discrete nature of the S\+K\+IZ algorithm makes it well suited to image segmentation. The V\+O\+I\+SE algorithm \mbox{[}2\mbox{]} relies on a fast and dynamic method of recalculation of Voronoi diagrams upon addition and removal of seeds, so the two are a natural fit. Although a standalone version of the S\+K\+IZ algorithm is included here (mostly for testing), the main functionality is provided by the matlab bindings in push\+VD, grab\+VD, add\+Seed\+To\+VD and remove\+Seed\+From\+VD, which are compiled into Matlab-\/readable M\+EX binaries and are tailored specifically for the code built and maintained by P. Guio and N. Achilleos to aid faster image analysis through V\+O\+I\+SE.\hypertarget{index_req_sec}{}\section{System Requirements}\label{index_req_sec}
+Compilation of Doxygen has more requirements than use of pre-\/compiled binaries and H\+T\+ML. This project includes everything without the need for compilation, but instructions are included for completeness.\hypertarget{index_run_sec}{}\subsection{For running precompiled binaries}\label{index_run_sec}
 
 \begin{DoxyItemize}
 \item A Linux 64-\/bit distribution. Software developed and tested on Ubuntu 16.\+04.
-\item Matlab 2018a or newer. Compilation of M\+EX binaries uses some new routines that are not present in earlier versions, but precompiled binaries can still be used.
-\item Eigen3 installed
-\item Doxygen installed
+\item Matlab
+\end{DoxyItemize}\hypertarget{index_test_sec}{}\subsection{For testing using C\+Test}\label{index_test_sec}
+Unit tests can run manually without C\+Make, or by running the {\ttfamily unit\+Tests.\+sh} script in the {\ttfamily build} folder.
+
+
+\begin{DoxyItemize}
 \item C\+Make version 3.\+10.\+1 or newer
-\item gcc 6.\+3.
+\end{DoxyItemize}\hypertarget{index_comp_sec}{}\subsection{For compilation from source (\+M\+E\+X and Doxygen)}\label{index_comp_sec}
+
+\begin{DoxyItemize}
+\item All of the above requirements
+\item Matlab 2018a or newer. Compilation of M\+EX binaries uses some new routines that are not present in earlier versions.
+\item Eigen3
+\item Doxygen
+\item At least gcc 6.\+3.\+x but no newer than gcc 7.\+3.\+x
 \end{DoxyItemize}\hypertarget{index_install_sec}{}\section{Compilation}\label{index_install_sec}
 \hypertarget{index_step1}{}\subsection{Step 1\+: Compile the C++ functions, tests and stand-\/alone executables}\label{index_step1}
 Open a terminal. Navigate to {\ttfamily voise-\/1.\+3/matlab/cpp/build}. Excecute the following commands\+: \begin{DoxyVerb}    cmake ..

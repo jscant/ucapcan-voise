@@ -101,7 +101,7 @@ bool addSeed(vd &VD, real s1, real s2) {
 
     // Scan row by row as per section 2.2
     bool finish = false;
-    for (auto i = 0; i < VD.getNr(); ++i) {
+    for (uint32 i = 0; i < VD.getNr(); ++i) {
         if (bounds(i, 0) == -1) { // There are no pixels in R(s*) on this row
             if (finish) {
                 break; // R(s*) is convex; we are finished
@@ -113,7 +113,7 @@ bool addSeed(vd &VD, real s1, real s2) {
         }
 
         real lb = std::max(0.0, bounds(i, 0) - 1);
-        real ub = std::min(VD.getNc(), bounds(i, 1));
+        real ub = std::min((real)VD.getNc(), bounds(i, 1));
         for (real j = lb; j < ub; ++j) { // Scan only relevant pixels in row
             const real l1 = VD.getSxByIdx(VD.getLamByIdx(i, j)); // Sq distance to 'old' closest seed
             const real l2 = VD.getSyByIdx(VD.getLamByIdx(i, j));

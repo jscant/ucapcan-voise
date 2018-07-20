@@ -89,9 +89,9 @@ public:
     Mat getSeeds() const;
     Mat getPx() const;
     Mat getPy() const;
-    real getK() const;
-    real getNr() const;
-    real getNc() const;
+    uint32 getK() const;
+    uint32 getNr() const;
+    uint32 getNc() const;
     RealVec getSx() const;
     RealVec getSy() const;
     RealVec getSk() const;
