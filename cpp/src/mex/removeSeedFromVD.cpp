@@ -3,16 +3,8 @@
  * @brief This is a MEX function. It should only be compiled by the compileMEX.m matlab script.
  * Removes single seed from Voronoi diagram.
  */
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
 
-#include "../vd.h"
-#include "../removeSeed.h"
-#include "../skizException.h"
-#include "grabVD.h"
-#include "pushVD.h"
+#include "mexIncludes.h"
 
 /**
 * @defgroup removeSeedFromVD removeSeedFromVD

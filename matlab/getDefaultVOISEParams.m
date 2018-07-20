@@ -210,3 +210,5 @@ params.pause           = false;
 params.movDiag         = false;
 params.movPos          = [600 50 1300 1050]; % movie window size
 
+params.printVD         = false;
+params.dpi                    = 300;

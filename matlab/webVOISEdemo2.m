@@ -22,8 +22,8 @@
 
 %compileMEX;
 
-profile on;
+%profile on;
 webVOISE('../share/VOISEdemo2.dat');
-profsave(profile('info'),'profile_results')
+%profsave(profile('info'),'profile_results')
 
 %quit

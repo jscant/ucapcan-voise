@@ -307,6 +307,8 @@ if 0
     
     if params.mergeExport,
         printFigure(gcf, [params.oDir, 'merge', num2str(iMerge), '.eps']);
+        set(gcf, 'Position', [700, 700, 1000, 1000])
+        print([params.oDir, 'merge', num2str(iMerge)], "-depsc", '-r10000');
     end
     
     if params.movDiag,

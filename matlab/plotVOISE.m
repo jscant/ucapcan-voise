@@ -19,7 +19,7 @@ function params = plotVOISE(VD, params, ic)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-if 0
+if params.printVD
 clf
 subplot(111)
 
@@ -60,13 +60,38 @@ if ~isempty(VD)
       hold off
   end
 end
+[m, n] = size(params.W);
+if min(m, n) < 500
+    rat = m/n;
+    if m > n
+        m = 500*rat;
+        n = 500;
+    else
+        m = 500;
+        n = 500/rat;
+    end
+end
+    
+set(gcf, 'Position', [400, 300, n, m]);
+ax = gca;
+ti = ax.TightInset;
+outerpos = ax.OuterPosition;
+left = outerpos(1) + ti(1);
+bottom = outerpos(2) + ti(2);
+ax_width = outerpos(3) - (ti(1) + ti(3));
+ax_height = outerpos(4) - (ti(2) + ti(4));
+
+ax.Position = [left+0.02 bottom+0.02 ax_width-0.065 ax_height-0.065];
+
+dpi = strcat('-r', num2str(params.dpi));
 
 if isempty(VD) % original image
   title('Original image')
-  printFigure(gcf,[params.oDir 'orig.eps']);
+  print([params.oDir 'orig'], '-depsc', dpi);
 else
-  title(sprintf('card(S) = %d', length(VD.Sk)))
-  printFigure(gcf,[params.oDir 'phase' num2str(ic) '.eps']);
+  title(sprintf('Seeds: %d', length(VD.Sk)))
+  print([params.oDir 'phase' num2str(ic)], "-depsc", dpi);
+  %printFigure(gcf,[params.oDir 'phase' num2str(ic) '.eps']);
 end
 
 if params.movDiag

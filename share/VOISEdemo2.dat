@@ -37,3 +37,4 @@ oDir = ../share/output/sampleint/
 imageOrigo = [0, 0]
 pixelSize  = [1, 1]
 pixelUnit  = {'pixels', 'pixels'}
+printVD = 1

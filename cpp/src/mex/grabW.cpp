@@ -3,7 +3,8 @@
  * @brief This is a requirement for a MEX function. It should only be compiled by the compileMEX.m Matlab script. Gets
  * params.W matrix from VD Matlab struct.
  */
-#include "grabW.h"
+
+#include "mexIncludes.h"
 
 /**
  * @defgroup grabW

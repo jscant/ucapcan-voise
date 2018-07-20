@@ -4,19 +4,7 @@
  * Finds the pixel-intensity weighted centre of mass for all VRs in a VD.
  */
 
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
-
-#include <eigen3/Eigen/Dense>
-
-#include "../vd.h"
-#include "../getRegion.h"
-#include "../typedefs.cpp"
-#include "../getCentroid.h"
-#include "grabVD.h"
-#include "grabW.h"
+#include "mexIncludes.h"
 
 /**
  * @defgroup getCentroidSeedBatch getCentroidSeedBatch

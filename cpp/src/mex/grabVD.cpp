@@ -4,13 +4,7 @@
  * populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
  */
 
-#include <eigen3/Eigen/Dense>
-#include <string>
-#include <map>
-
-#include "grabVD.h"
-#include "../skizException.h"
-#include "../typedefs.cpp"
+#include "mexIncludes.h"
 
 /**
  * @defgroup grabVD grabVD

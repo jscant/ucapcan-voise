@@ -45,74 +45,18 @@ VOISE Set Up -- version 1.3.2
 
 
 *****************************
-poissonSeeds: ns=12, minDist=73.61, card(S)=11
-*** Initialising VOISE
-*** Initialising completed.
-*** Starting dividing phase
-Homogeneity Criteria min=0.17 max=1.00 Q(85)=0.81
-Iter  1 Adding 8 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.17 max=1.00 Q(85)=0.72
-Iter  2 Adding 13 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.15 max=1.00 Q(85)=0.73
-Iter  3 Adding 26 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.11 max=1.00 Q(85)=0.59
-Iter  4 Adding 38 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.13 max=1.00 Q(85)=0.61
-Iter  5 Adding 40 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.54
-Iter  6 Adding 44 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.69
-Iter  7 Adding 68 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.57
-Iter  8 Adding 42 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.52
-Iter  9 Adding 37 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.50
-Iter 10 Adding 30 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.48
-Iter 11 Adding 35 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.06 max=1.00 Q(85)=0.45
-Iter 12 Adding 36 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.43
-Iter 13 Adding 22 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.41
-Iter 14 Adding 11 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.40
-Iter 15 Adding 14 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.40
-Iter 16 Adding 24 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.39
-Iter 17 Adding 20 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.38
-Iter 18 Adding 2 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(85)=0.38
-StopDiv = True
-*** Dividing phase completed.
-*** Starting merging phase
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.24
-Elapsed time is 0.038521 seconds.
-Iter  1 Removing 33 seeds from Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.030058 seconds.
-Iter  2 Removing 10 seeds from Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.024244 seconds.
-Iter  3 Removing 2 seeds from Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.021172 seconds.
-Iter  4 Removing 3 seeds from Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-Elapsed time is 0.026711 seconds.
-Iter  5 Removing 2 seeds from Voronoi Diagram
-Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-Elapsed time is 0.023168 seconds.
-Elapsed time is 0.023768 seconds.
-*** Merging phase completed.
-*** Starting regularisation phase
-Maximum distance seed/centre-of-mass 389.0 (275.1)
-Iter  1 Computing regularised Voronoi Diagram for 471 seeds
-Maximum distance seed/centre-of-mass 17.0 (12.0)
-Iter  2 Computing regularised Voronoi Diagram for 471 seeds
-*** Regularisation phase completed.
-*** Saving VOISE results in ../share/output/north_proj/voise.mat
-*** Total elapsed time 00:00:02 [hh:mm:ss].
+{Reference to non-existent field 'dpi'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('plotVOISE', '/home/jack/dev/project/voise-1.3/matlab/plotVOISE.m', 86)" style="font-weight:bold">plotVOISE</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/plotVOISE.m',86,0)">line 86</a>)
+dpi = strcat('-r', num2str(params.dpi));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VOISE', '/home/jack/dev/project/voise-1.3/matlab/VOISE.m', 62)" style="font-weight:bold">VOISE</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/VOISE.m',62,0)">line 62</a>)
+params = plotVOISE([], params, -1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('webVOISE', '/home/jack/dev/project/voise-1.3/matlab/webVOISE.m', 56)" style="font-weight:bold">webVOISE</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/webVOISE.m',56,0)">line 56</a>)
+[params,IVD,DVD,MVD,CVD] = VOISE(params);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('webVOISEdemo1', '/home/jack/dev/project/voise-1.3/matlab/webVOISEdemo1.m', 25)" style="font-weight:bold">webVOISEdemo1</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/webVOISEdemo1.m',25,0)">line 25</a>)
+webVOISE('../share/VOISEdemo1.dat');
+} 
+webVOISEdemo2

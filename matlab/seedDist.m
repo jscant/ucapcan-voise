@@ -29,12 +29,34 @@ X = (VD.Sx(VD.Sk)-W.xm)*sx+min(params.x);
 Y = (VD.Sy(VD.Sk)-W.ym)*sy+min(params.y);
 
 subplot(111);
-plot(X,Y,'rx', 'markersize', 0.1)
+plot(X,Y,'rx', 'markersize', 0.2)
 xlabel(sprintf('x [%s]',params.pixelUnit{1}))
 ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 title('Seeds spatial distribution')
 
-printFigure(gcf,[params.oDir 'seeddist1.eps']);
+[m, n] = size(params.W);
+if min(m, n) < 500
+    rat = m/n;
+    if m > n
+        m = 500*rat;
+        n = 500;
+    else
+        m = 500;
+        n = 500/rat;
+    end
+end
+set(gcf, 'Position', [600, 400, n, m]);
+ax = gca;
+ti = ax.TightInset;
+outerpos = ax.OuterPosition;
+left = outerpos(1) + ti(1);
+bottom = outerpos(2) + ti(2);
+ax_width = outerpos(3) - (ti(1) + ti(3));
+ax_height = outerpos(4) - (ti(2) + ti(4));
+
+ax.Position = [left+0.02 bottom+0.02 ax_width-0.065 ax_height-0.065];
+print([params.oDir 'seeddist1'], "-depsc", '-r1000');
+%printFigure(gcf,[params.oDir 'seeddist1.eps']);
 
 R = sqrt(X.^2+Y.^2);
 T = atan2(Y,X)*180/pi;
@@ -76,6 +98,10 @@ printFigure(gcf,[params.oDir 'seeddist2.eps']);
 
 return
 
+
+%title(sprintf('Seeds: %d', length(VD.Sk)))
+%print([params.oDir 'seeddist'], "-depsc", '-r1000');
+  
 printFigure(gcf,[params.oDir 'seeddist.eps']);
 
 return 

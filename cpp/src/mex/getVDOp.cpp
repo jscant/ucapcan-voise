@@ -5,22 +5,7 @@
  * evaluate the merit function of a Voronoi region.
  */
 
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
-
-#include <eigen3/Eigen/Dense>
-#include <map>
-#include <functional>
-#include <string>
-
-#include "../aux-functions/metrics.h"
-#include "grabVD.h"
-#include "pushVD.h"
-#include "grabW.h"
-#include "../vd.h"
-#include "../getOp.h"
+#include "mexIncludes.h"
 
 /**
  * @defgroup getVDOp getVDOp

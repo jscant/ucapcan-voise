@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" line="59" />
-    <bookmark url="file://$PROJECT_DIR$/src/mex/pushVD.cpp" line="107" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" line="47" />
+    <bookmark url="file://$PROJECT_DIR$/src/mex/pushVD.cpp" line="97" mnemonic="0" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
-      <config projectName="standalone_skiz" targetName="standalone_skiz" />
-      <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
-      <config projectName="standalone_skiz" targetName="PointInRegionCheck" />
-      <config projectName="standalone_skiz" targetName="GetVDOpCheck" />
-      <config projectName="standalone_skiz" targetName="GetCentroidCheck" />
-      <config projectName="standalone_skiz" targetName="MetricChecks" />
       <config projectName="standalone_skiz" targetName="testRemoveSeedCheckLambda" />
-      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
-      <config projectName="standalone_skiz" targetName="doc" />
+      <config projectName="standalone_skiz" targetName="PointInRegionCheck" />
       <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
+      <config projectName="standalone_skiz" targetName="GetVDOpCheck" />
+      <config projectName="standalone_skiz" targetName="MetricChecks" />
+      <config projectName="standalone_skiz" targetName="GetCentroidCheck" />
+      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
+      <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
+      <config projectName="standalone_skiz" targetName="standalone_skiz" />
+      <config projectName="standalone_skiz" targetName="doc" />
       <config projectName="standalone_skiz" targetName="InVectorCheck" />
+      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -39,32 +39,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getCentroid.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/getCentroid.cpp">
+      <file leaf-file-name="getVDOp.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+            <state relative-caret-position="126">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mexIncludes.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mex/mexIncludes.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="77" lean-forward="true" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
               <folding>
-                <element signature="e#12#36#0" expanded="true" />
+                <element signature="e#36#72#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getCentroidSeedBatch.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -102,25 +93,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/aux-functions/median.h" />
-        <option value="$PROJECT_DIR$/src/aux-functions/mean.h" />
         <option value="$PROJECT_DIR$/Doxyfile" />
         <option value="$PROJECT_DIR$/src/test/testMetrics.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/metrics.h" />
         <option value="$PROJECT_DIR$/src/aux-functions/metrics.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/readSeeds.h" />
-        <option value="$PROJECT_DIR$/src/mex/grabVD.h" />
-        <option value="$PROJECT_DIR$/src/mex/grabW.h" />
         <option value="$PROJECT_DIR$/src/aux-functions/circumcentre.h" />
         <option value="$PROJECT_DIR$/src/mex/addSeedToVDBatch.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/removeSeedFromVDBatch.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/removeSeedFromVD.cpp" />
         <option value="$PROJECT_DIR$/src/mex/addSeedToVD.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/grabW.cpp" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckLambda.cpp" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckV.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/pushVD.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/grabVD.cpp" />
         <option value="$PROJECT_DIR$/src/getOp.h" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/loadVD.h" />
         <option value="$PROJECT_DIR$/src/NSStar.cpp" />
@@ -138,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/getRegion.cpp" />
         <option value="$PROJECT_DIR$/src/removeSeed.cpp" />
         <option value="$PROJECT_DIR$/src/test/testPointInRegion.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/getVDOp.cpp" />
         <option value="$PROJECT_DIR$/src/test/resources/Wop.txt" />
         <option value="$PROJECT_DIR$/src/aux-functions/readMatrix.cpp" />
         <option value="$PROJECT_DIR$/src/test/testGetVDOp.cpp" />
@@ -150,9 +131,19 @@
         <option value="$PROJECT_DIR$/src/test/tesetGetCentroid.cpp" />
         <option value="$PROJECT_DIR$/src/getCentroid.h" />
         <option value="$PROJECT_DIR$/src/test/testGetCentroid.cpp" />
-        <option value="$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" />
         <option value="$PROJECT_DIR$/src/getCentroid.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/mex/grabVD.h" />
+        <option value="$PROJECT_DIR$/src/mex/grabVD.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/removeSeedFromVDBatch.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/getVDOp.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/removeSeedFromVD.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/pushVD.h" />
+        <option value="$PROJECT_DIR$/src/mex/pushVD.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/grabW.h" />
+        <option value="$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/grabW.cpp" />
+        <option value="$PROJECT_DIR$/src/mex/mexIncludes.h" />
       </list>
     </option>
   </component>
@@ -214,7 +205,13 @@
             <path>
               <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mex" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,6 +303,7 @@
       <workItem from="1531904273669" duration="6252000" />
       <workItem from="1531992425037" duration="283000" />
       <workItem from="1531997078816" duration="23387000" />
+      <workItem from="1532083833280" duration="477000" />
     </task>
     <servers />
   </component>
@@ -330,18 +328,16 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122539000" />
+    <option name="totallyTimeSpent" value="123016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19050218" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19050218" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3790576" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.37172773" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36335078" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -354,6 +350,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3790576" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,67 +366,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/mex/grabW.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/grabW.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/benchVDSeeds.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/benchVDV512.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/benchVDLambda512.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1951228" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/grabVD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="139" column="11" selection-start-line="139" selection-start-column="11" selection-end-line="139" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/getVDOp_old.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVDBatch.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="63" column="16" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/removeSeedFromVDBatch.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/pushVD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="87" column="58" lean-forward="true" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/benchVDSeedsLarge.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/benchVDSeedsLarge.txt" />
     <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/loadStruct.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -447,9 +385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#75#89#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,9 +461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#91#108#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,19 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#33#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVD.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#177#213#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +530,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#107#133#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,16 +547,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="13" selection-start-line="13" selection-end-line="24" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="40" selection-end-column="46" />
-          <folding>
-            <element signature="e#342#371#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -705,27 +611,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/getCentroid.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
+        <state relative-caret-position="198">
           <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-          <folding>
-            <element signature="e#12#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="712">
           <caret line="87" column="43" selection-start-line="87" selection-start-column="43" selection-end-line="87" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#177#213#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/addSeedToVDBatch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" lean-forward="true" selection-start-line="5" selection-end-line="18" />
+          <folding>
+            <element signature="e#179#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/removeSeedFromVDBatch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/removeSeedFromVD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/pushVD.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/pushVD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/grabW.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/grabVD.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/grabVD.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/grabW.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/mexIncludes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="77" lean-forward="true" selection-start-line="2" selection-start-column="77" selection-end-line="2" selection-end-column="77" />
+          <folding>
+            <element signature="e#36#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

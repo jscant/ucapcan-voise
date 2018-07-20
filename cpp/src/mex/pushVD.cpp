@@ -3,18 +3,8 @@
  * @brief This is a requirement for a MEX function. It should only be compiled by the compileMEX.m matlab script.
  * Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
  */
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
-#include <eigen3/Eigen/Dense>
-#include <string>
-#include <map>
 
-#include "pushVD.h"
-#include "grabVD.h"
-#include "../skizException.h"
-#include "../typedefs.cpp"
+#include "mexIncludes.h"
 
 /**
  * @defgroup pushVD pushVD
