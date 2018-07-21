@@ -78,6 +78,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
     Mat Wop(W.rows(), W.cols());
     Mat Sop(VD.getSk().size(), 1);
 
+    // Perform operation and populate results
     getVDOp(VD, W, metric, mult, Wop, Sop);
 
     // Populate output mxArrays with results

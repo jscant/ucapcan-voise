@@ -275,14 +275,14 @@ VD.mergeSHC = mergeSHC;
 VD.mergeHCThreshold = mergeHCThreshold;
 
 function params = plotCurrentVD(VD, params, iMerge)
-
-if params.mergeAlgo ~= 3
-    VDW = getVDOp2(VD, params.W, @(x) median(x));
-else
-    VDW = getVDOp(VD, params.W, @(x) 'median');
-end
-
 if 0
+    
+    if params.mergeAlgo ~= 3
+        VDW = getVDOp2(VD, params.W, @(x) median(x));
+    else
+        VDW = getVDOp(VD, params.W, 1);
+    end
+    
     clf
     subplot(111),
     imagesc(VDW),

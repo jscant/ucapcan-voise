@@ -30,11 +30,22 @@
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[]) {
 
+    // Input checks
+    if (nlhs != 1 || nrhs != 3) {
+        mexErrMsgTxt(
+                " Invalid number of input and output arguments");
+        return;
+    }
+
     // Get inputs
     vd VD = grabVD(prhs, 0);
-    Mat W = grabW(prhs, 1).abs();
+    Mat W = grabW(prhs, 1);
     real *seed = mxGetDoubles(prhs[2]);
-    uint32 ns = std::max(mxGetN(prhs[2]), mxGetM(prhs[2]));
+
+    // This does not affect results but avoids complications due to negative pixel values
+    W -= W.minCoeff();
+
+    uint32 ns = std::max(mxGetN(prhs[2]), mxGetM(prhs[2])); // Number of seeds = length of matrix
     RealVec seedVec(seed, seed + ns);
 
     // Find centres of mass

@@ -31,8 +31,9 @@ function [params, IVD, DVD, MVD, CVD] = VOISE(params, varargin)
 
 % miscellaneous information about VOISE
 global voise timing
+global axesParams
 
-if ischar(params), % params is the name of a VOISE configuration file
+if ischar(params) % params is the name of a VOISE configuration file
     % load VOISE parameters
     params = readVOISEconf(params);
     % load input image
@@ -58,8 +59,42 @@ if params.movDiag, % init movie
     movieHandler(params, 'init');
 end
 
+W = params.W;
+[m, n] = size(W);
+
+if min(m, n) < 500
+    rat = m/n;
+    if m > n
+        m = 500*rat;
+        n = 500;
+    else
+        m = 500;
+        n = 500/rat;
+    end
+end
+fig_params = [400, 300, n, m];
+set(gcf, 'Position', fig_params);
+
+ax = gca;
+ti = ax.TightInset;
+outerpos = ax.OuterPosition;
+left = outerpos(1) + ti(1);
+bottom = outerpos(2) + ti(2);
+ax_width = outerpos(3) - (ti(1) + ti(3));
+ax_height = outerpos(4) - (ti(2) + ti(4));
+
+set(gca,'xlim', params.xlim, 'ylim', params.ylim);
+set(gcf, 'Position', fig_params);
+
+axesParams.left = left + 0.085;
+axesParams.bottom = bottom + 0.035;
+axesParams.ax_width = ax_width - 0.11;
+axesParams.ax_height = ax_height - 0.065;
+axesParams.fig_params = fig_params;
+
 % plot image
 params = plotVOISE([], params, -1);
+
 
 [nr, nc] = size(params.W);
 ns = params.iNumSeeds;
@@ -126,8 +161,8 @@ save([params.oDir, params.oMatFile], '-append', 'DVD');
 params = plotVOISE(DVD, params, 1);
 
 % if movie on do not change figure
-if ~params.movDiag, vd1 = figure;
-end
+%if ~params.movDiag, vd1 = figure;
+%end
 
 % Merging phase
 [MVD, params] = mergeVD(DVD, params);
@@ -137,8 +172,8 @@ save([params.oDir, params.oMatFile], '-append', 'MVD');
 params = plotVOISE(MVD, params, 2);
 
 % if movie on do not change figure
-if ~params.movDiag, vdc = figure;
-end
+%if ~params.movDiag, vdc = figure;
+%end
 
 % Regularisation phase
 CVD = getCentroidVD(MVD, params);
@@ -151,7 +186,7 @@ if 0
     % do not plot Voronoi diagram
     params = plotVOISE(CVD, params, 4);
 end
-VD2GraphViz('graph', CVD);
+
 % if movie on close movie
 if params.movDiag,
     movieHandler(params, 'close');

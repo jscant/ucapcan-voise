@@ -19,9 +19,9 @@
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-clc; clear all;
+clc; clear all; clf;
 %compileMEX;
-%profile on;700
+%profile on;
 webVOISE('../share/VOISEdemo1.dat');
 
 %profsave(profile('info'),'profile_results')

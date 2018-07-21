@@ -153,6 +153,10 @@ iostream
 -
 chrono
 -
+valgrind/callgrind.h
+-
+string
+-
 addSeed.h
 /home/jack/dev/project/voise-1.3/cpp/src/addSeed.h
 vd.h
@@ -177,10 +181,6 @@ test/test-help-fns/loadStruct.h
 /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadStruct.h
 test/test-help-fns/loadVD.h
 /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.h
-valgrind/callgrind.h
--
-string
--
 
 /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp
 pointInRegion.h

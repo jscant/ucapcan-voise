@@ -19,10 +19,12 @@ function params = plotVOISE(VD, params, ic)
 %
 % You should have received a copy of the GNU General Public License
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
-if params.printVD
-clf
-subplot(111)
 
+global axesParams
+
+if params.printVD
+
+clf;
 x = params.x;
 y = params.y;
 
@@ -36,23 +38,45 @@ end
 imagesc(x, y, W),
 axis xy,
 axis equal
+left = axesParams.left;
+bottom = axesParams.bottom;
+width = axesParams.ax_width;
+height = axesParams.ax_height;
+
+ax.Position = [left bottom width height];
+
 %axis off
 set(gca,'clim',params.Wlim);
 %colorbar
 set(gca,'xlim', params.xlim, 'ylim', params.ylim);
 colormap(params.colormap);
+set(gcf, 'Position', axesParams.fig_params);
 
-if ~isempty(VD)
+ax = gca;
+
+dpi = strcat('-r', num2str(params.dpi));
+
+if ~isempty(VD)% || 1
   % scaling factors from VD to image axes
-  W = VD.W;
-  sx = (max(params.x)-min(params.x))/(W.xM-W.xm);
-  sy = (max(params.y)-min(params.y))/(W.yM-W.ym);
+  if ~isempty(VD)
+      W = VD.W;
+      n = W.xM - W.xm;
+      m = W.yM - W.ym;
+  else
+      W = params.W;
+      [m, n] = size(W);
+  end
+  
+  sx = (max(params.x)-min(params.x))/(n);
+  sy = (max(params.y)-min(params.y))/(m);
 
-  S = VD.S;
-  h = line([S.xm,S.xm,S.xM,S.xM,S.xm],[S.ym,S.yM,S.yM,S.ym,S.ym]);
-  set(h,'Color',[.5,.5,.5],'LineWidth',0.05);
-
-  if ic~=4
+  %if ~isempty(VD)
+      S = VD.S;
+      h = line([S.xm,S.xm,S.xM,S.xM,S.xm],[S.ym,S.yM,S.yM,S.ym,S.ym]);
+      set(h,'Color',[.5,.5,.5],'LineWidth',0.05);
+  %end
+  
+  if ic~=4% && ~isempty(VD)
       hold on
       [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
       plot((vx-W.xm)*sx+min(params.x),(vy-W.ym)*sy+min(params.y),...
@@ -60,38 +84,28 @@ if ~isempty(VD)
       hold off
   end
 end
-[m, n] = size(params.W);
-if min(m, n) < 500
-    rat = m/n;
-    if m > n
-        m = 500*rat;
-        n = 500;
-    else
-        m = 500;
-        n = 500/rat;
-    end
-end
-    
-set(gcf, 'Position', [400, 300, n, m]);
-ax = gca;
-ti = ax.TightInset;
-outerpos = ax.OuterPosition;
-left = outerpos(1) + ti(1);
-bottom = outerpos(2) + ti(2);
-ax_width = outerpos(3) - (ti(1) + ti(3));
-ax_height = outerpos(4) - (ti(2) + ti(4));
 
-ax.Position = [left+0.02 bottom+0.02 ax_width-0.065 ax_height-0.065];
-
-dpi = strcat('-r', num2str(params.dpi));
+xlabel(sprintf('x [%s]',params.pixelUnit{1}))
+ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 
 if isempty(VD) % original image
   title('Original image')
-  print([params.oDir 'orig'], '-depsc', dpi);
+  %print([params.oDir 'orig'], '-depsc', dpi);
+  print([params.oDir 'orig'], '-dpdf', dpi);
 else
-  title(sprintf('Seeds: %d', length(VD.Sk)))
-  print([params.oDir 'phase' num2str(ic)], "-depsc", dpi);
-  %printFigure(gcf,[params.oDir 'phase' num2str(ic) '.eps']);
+  switch ic
+      case 0
+          titlestr = 'Initial configuration | ';
+      case 1
+          titlestr = 'Divide phase | ';
+      case 2
+          titlestr = 'Merge phase | ';
+      case 3
+          titlestr = 'Regularisation phase | ';
+  end
+  title(sprintf('%sSeeds: %d', titlestr, length(VD.Sk)))
+  %print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
+  print([params.oDir 'phase' num2str(ic)], '-dpdf', dpi);
 end
 
 if params.movDiag

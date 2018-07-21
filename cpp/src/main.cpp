@@ -7,16 +7,14 @@
  * and with Valgrind to check for memory leaks. The reports of both can be found
  * at the end of the project report.
  */
+
 #include <iostream>
 #include <chrono>
+#include <valgrind/callgrind.h>
+#include <string>
 
 #include "addSeed.h"
-
-#ifndef VD_H
-#define VD_H
 #include "vd.h"
-#endif
-
 #include "removeSeed.h"
 #include "getRegion.h"
 #include "NSStar.h"
@@ -27,8 +25,7 @@
 #include "aux-functions/metrics.h"
 #include "test/test-help-fns/loadStruct.h"
 #include "test/test-help-fns/loadVD.h"
-#include <valgrind/callgrind.h>
-#include <string>
+
 
 typedef std::chrono::high_resolution_clock now;
 
@@ -37,7 +34,7 @@ using namespace std::chrono;
 int main() {
 
     std::string path = "../src/test/resources/";
-    loadStruct loadResults = loadVD(path, "benchVDSeeds128.txt", "benchVDLambda128.txt", "benchVDV128.txt");
+    loadStruct loadResults = loadVD(path, "benchVDSeeds512.txt", "benchVDLambda512.txt", "benchVDV512.txt");
     RealVec Sx = loadResults.Sx;
     RealVec Sy = loadResults.Sy;
     vd VD = loadResults.VD;
@@ -60,7 +57,13 @@ int main() {
     // removeSeed timing
     start = now::now();
     for (auto i = ns - 3; i > 0; --i) {
+        if(i == 1000){
+            CALLGRIND_START_INSTRUMENTATION;
+        }
         removeSeed(VD, i);
+        if(i == 1000){
+            CALLGRIND_STOP_INSTRUMENTATION;
+        }
     }
 
     elapsed = now::now() - start;

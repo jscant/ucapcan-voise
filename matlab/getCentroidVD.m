@@ -48,7 +48,7 @@ while ~stopReg,
     Sc = zeros(0, 2);
     Sk = [];
     if params.centroidAlgo == 3
-        Sc1 = getCentroidSeedBatch(VD, params.W, VD.Sk');
+        Sc1 = getCentroidSeedBatch(VD, params.W, VD.Sk);
         for k = 1:length(VD.Sk)
             if isempty(find(Sc1(k, 1) == Sc(:, 1) & Sc1(k, 2) == Sc(:, 2)))
                 Sc = [[Sc(:, 1); Sc1(k, 1)], [Sc(:, 2); Sc1(k, 2)]];

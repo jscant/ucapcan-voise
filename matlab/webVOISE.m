@@ -55,8 +55,8 @@ end
 
 [params,IVD,DVD,MVD,CVD] = VOISE(params);
 % some diagnostics generated in 
-close all
-clf
+%close all
+%clf
 seedDist(MVD, params);
 clf
 plotHistHC(DVD, MVD, params);

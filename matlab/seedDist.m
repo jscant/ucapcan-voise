@@ -21,20 +21,13 @@ function seedDist(VD,params)
 % along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 % % scaling factors from VD to image axes
+
+global axesParams
+
 W = VD.W;
-sx = (max(params.x)-min(params.x))/(W.xM-W.xm);
-sy = (max(params.y)-min(params.y))/(W.yM-W.ym);
-
-X = (VD.Sx(VD.Sk)-W.xm)*sx+min(params.x);
-Y = (VD.Sy(VD.Sk)-W.ym)*sy+min(params.y);
-
-subplot(111);
-plot(X,Y,'rx', 'markersize', 0.2)
-xlabel(sprintf('x [%s]',params.pixelUnit{1}))
-ylabel(sprintf('y [%s]',params.pixelUnit{2}))
-title('Seeds spatial distribution')
 
 [m, n] = size(params.W);
+
 if min(m, n) < 500
     rat = m/n;
     if m > n
@@ -45,17 +38,39 @@ if min(m, n) < 500
         n = 500/rat;
     end
 end
-set(gcf, 'Position', [600, 400, n, m]);
-ax = gca;
-ti = ax.TightInset;
-outerpos = ax.OuterPosition;
-left = outerpos(1) + ti(1);
-bottom = outerpos(2) + ti(2);
-ax_width = outerpos(3) - (ti(1) + ti(3));
-ax_height = outerpos(4) - (ti(2) + ti(4));
 
-ax.Position = [left+0.02 bottom+0.02 ax_width-0.065 ax_height-0.065];
-print([params.oDir 'seeddist1'], "-depsc", '-r1000');
+set(gcf, 'Position', axesParams.fig_params);
+
+left = axesParams.left;
+bottom = axesParams.bottom;
+width = axesParams.ax_width;
+height = axesParams.ax_height;
+
+
+
+sx = (max(params.x)-min(params.x))/(W.xM-W.xm);
+sy = (max(params.y)-min(params.y))/(W.yM-W.ym);
+
+X = (VD.Sx(VD.Sk)-W.xm)*sx+min(params.x);
+Y = (VD.Sy(VD.Sk)-W.ym)*sy+min(params.y);
+
+%subplot(111);
+plot(X,Y,'ko', 'markersize', 0.35, 'MarkerFaceColor', 'k')
+xlabel(sprintf('x [%s]',params.pixelUnit{1}))
+ylabel(sprintf('y [%s]',params.pixelUnit{2}))
+title('Seeds spatial distribution')
+
+axis equal
+%axis off
+set(gca,'clim',params.Wlim);
+%colorbar
+set(gca,'xlim', params.xlim, 'ylim', params.ylim);
+ax = gca;
+%ax.Position = [left bottom width height];
+
+
+
+print([params.oDir 'seeddist1'], "-dpdf", '-r1000');
 %printFigure(gcf,[params.oDir 'seeddist1.eps']);
 
 R = sqrt(X.^2+Y.^2);
