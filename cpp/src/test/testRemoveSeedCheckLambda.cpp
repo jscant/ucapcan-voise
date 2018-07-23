@@ -9,7 +9,7 @@
 #include "../removeSeed.h"
 #include "../getRegion.h"
 #include "../skizException.h"
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "../vd.h"
 #include "test-help-fns/loadVD.h"
 #include "test-help-fns/loadStruct.h"

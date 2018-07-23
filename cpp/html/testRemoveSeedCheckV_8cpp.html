@@ -61,7 +61,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Unit tests for whether the removeSeed method correctly recalculates the <img class="formulaInl" alt="$ \nu $" src="form_11.png"/> matrix.  
+<p>Unit tests for whether the removeSeed method correctly recalculates the <img class="formulaInl" alt="$ \nu $" src="form_14.png"/> matrix.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &quot;Catch2/catch.hpp&quot;</code><br />
@@ -69,7 +69,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="removeSeed_8h_source.html">../removeSeed.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="getRegion_8h_source.html">../getRegion.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="skizException_8h_source.html">../skizException.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="typedefs_8cpp.html">../typedefs.cpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="typedefs_8h_source.html">../typedefs.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="vd_8h_source.html">../vd.h</a>&quot;</code><br />
 <code>#include &quot;test-help-fns/loadVD.h&quot;</code><br />
 <code>#include &quot;test-help-fns/loadStruct.h&quot;</code><br />
@@ -78,7 +78,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa5b8c0eb233dd2f98b9782ff74c4e4ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="testRemoveSeedCheckV_8cpp.html#aa5b8c0eb233dd2f98b9782ff74c4e4ec">TEST_CASE</a> (&quot;Check whether the <a class="el" href="removeSeedBackup_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9">removeSeed</a> method correctly recalculates the v matrix&quot;)</td></tr>
-<tr class="memdesc:aa5b8c0eb233dd2f98b9782ff74c4e4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in its <img class="formulaInl" alt="$ \nu $" src="form_11.png"/> matrix entry.  <a href="#aa5b8c0eb233dd2f98b9782ff74c4e4ec">More...</a><br /></td></tr>
+<tr class="memdesc:aa5b8c0eb233dd2f98b9782ff74c4e4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove seeds to VD and check (in a greedy fashion) whether the closest seed to each pixel is the one held in its <img class="formulaInl" alt="$ \nu $" src="form_14.png"/> matrix entry.  <a href="#aa5b8c0eb233dd2f98b9782ff74c4e4ec">More...</a><br /></td></tr>
 <tr class="separator:aa5b8c0eb233dd2f98b9782ff74c4e4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -90,17 +90,17 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>path</b> = &qu
 loadStruct&#160;</td><td class="memItemRight" valign="bottom"><b>loadResults</b> = loadVD(path, &quot;benchVDSeeds256.txt&quot;, &quot;benchVDLambda256.txt&quot;, &quot;benchVDV256.txt&quot;)</td></tr>
 <tr class="separator:ae41669d5409e36365c6e8e8a8f182117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ecb67c25ad584b8ac97474055a5c384"><td class="memItemLeft" align="right" valign="top"><a id="a1ecb67c25ad584b8ac97474055a5c384"></a>
-<a class="el" href="typedefs_8cpp.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sx</b> = loadResults.Sx</td></tr>
+<a class="el" href="typedefs_8h.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sx</b> = loadResults.Sx</td></tr>
 <tr class="separator:a1ecb67c25ad584b8ac97474055a5c384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6b6552a70499e6a83cff95e91a0f259"><td class="memItemLeft" align="right" valign="top"><a id="ac6b6552a70499e6a83cff95e91a0f259"></a>
-<a class="el" href="typedefs_8cpp.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sy</b> = loadResults.Sy</td></tr>
+<a class="el" href="typedefs_8h.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Sy</b> = loadResults.Sy</td></tr>
 <tr class="separator:ac6b6552a70499e6a83cff95e91a0f259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17edf6f20961d07c702ee68bb30d9bf3"><td class="memItemLeft" align="right" valign="top"><a id="a17edf6f20961d07c702ee68bb30d9bf3"></a>
 <a class="el" href="classvd.html">vd</a>&#160;</td><td class="memItemRight" valign="bottom"><b>VD</b> = loadResults.VD</td></tr>
 <tr class="separator:a17edf6f20961d07c702ee68bb30d9bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">Unit tests for whether the removeSeed method correctly recalculates the <img class="formulaInl" alt="$ \nu $" src="form_11.png"/> matrix. </p>
+<div class="textblock"><p class="">Unit tests for whether the removeSeed method correctly recalculates the <img class="formulaInl" alt="$ \nu $" src="form_14.png"/> matrix. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

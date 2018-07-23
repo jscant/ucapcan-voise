@@ -5,9 +5,10 @@ CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/NSStar.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
+CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/skizException.h
-CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/NSStar.h
@@ -20,26 +21,31 @@ CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/aux-functions/updateD
 CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/getRegion.h
 CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/skizException.h
-CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/vd.h
+
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.h
-CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.h
-CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o: ../src/getRegion.h
-CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/getRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/skizException.h
-CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/pointInRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/NSStar.h
@@ -53,7 +59,7 @@ CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/removeSeed.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/removeSeed.h
 CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/skizException.h
-CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/skizException.cpp.o: ../src/skizException.cpp
@@ -65,13 +71,13 @@ CMakeFiles/testAddSeedCheckV.dir/src/test/Catch2/test_main.cpp.o: ../src/test/Ca
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.h
-CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.h
-CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/aux-functions/readMatrix.h
@@ -82,7 +88,7 @@ CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/ski
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.h
-CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/addSeed.h
@@ -94,10 +100,10 @@ CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/test/t
 CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/test/test-help-fns/loadVD.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/test/testAddSeedCheckV.cpp
-CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/test/testAddSeedCheckV.cpp.o: ../src/vd.h
 
-CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.o: ../src/vd.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/vd.cpp.o: ../src/vd.h
 

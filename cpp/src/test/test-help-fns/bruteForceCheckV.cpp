@@ -1,7 +1,7 @@
 #include <eigen3/Eigen/Dense>
 
 #include "bruteForceCheckV.h"
-#include "../../typedefs.cpp"
+#include "../../typedefs.h"
 #include "../../vd.h"
 #include "../../aux-functions/sqDist.h"
 

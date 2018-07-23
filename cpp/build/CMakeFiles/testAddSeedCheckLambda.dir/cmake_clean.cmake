@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o"
   "testAddSeedCheckLambda.pdb"
   "testAddSeedCheckLambda"

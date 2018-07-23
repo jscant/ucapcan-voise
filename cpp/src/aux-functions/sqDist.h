@@ -5,7 +5,7 @@
 #ifndef SQDIST_H
 #define SQDIST_H
 
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 /**
  * @defgroup sqDist sqDist
  * @ingroup sqDist

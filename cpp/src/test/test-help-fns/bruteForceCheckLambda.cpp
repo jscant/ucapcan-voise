@@ -6,7 +6,7 @@
 #include <eigen3/Eigen/Dense>
 #include "bruteForceCheckLambda.h"
 
-#include "../../typedefs.cpp"
+#include "../../typedefs.h"
 #include "../../vd.h"
 #include "../../aux-functions/sqDist.h"
 

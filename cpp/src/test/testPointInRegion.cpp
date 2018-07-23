@@ -9,7 +9,7 @@
 #include <iostream>
 
 #include "../getRegion.h"
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "../vd.h"
 #include "../pointInRegion.h"
 #include "../addSeed.h"

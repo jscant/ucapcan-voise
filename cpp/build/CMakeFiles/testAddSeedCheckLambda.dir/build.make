@@ -226,9 +226,22 @@ CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.s: cmake_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp -o CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.s
 
+CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: CMakeFiles/testAddSeedCheckLambda.dir/flags.make
+CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
+
+CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp > CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.i
+
+CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp -o CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.s
+
 CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o: CMakeFiles/testAddSeedCheckLambda.dir/flags.make
 CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o: ../src/test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp
 
 CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.i: cmake_force
@@ -254,6 +267,7 @@ testAddSeedCheckLambda_OBJECTS = \
 "CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.o" \
 "CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o" \
 "CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o" \
+"CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o" \
 "CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o"
 
 # External object files for target testAddSeedCheckLambda
@@ -272,10 +286,11 @@ testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/getRegion.cpp.
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/removeSeed.cpp.o
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o
+testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/build.make
 testAddSeedCheckLambda: CMakeFiles/testAddSeedCheckLambda.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable testAddSeedCheckLambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable testAddSeedCheckLambda"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testAddSeedCheckLambda.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

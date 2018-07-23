@@ -11,7 +11,7 @@ Unit tests for whether the remove\+Seed method correctly recalculates the $ \lam
 {\ttfamily \#include \char`\"{}../remove\+Seed.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../get\+Region.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../skiz\+Exception.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../typedefs.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../typedefs.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../vd.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+V\+D.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}test-\/help-\/fns/load\+Struct.\+h\char`\"{}}\newline
@@ -32,10 +32,10 @@ std\+::string {\bfseries path} = \char`\"{}../src/test/resources/\char`\"{}
 load\+Struct {\bfseries load\+Results} = load\+VD(path, \char`\"{}bench\+V\+D\+Seeds256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V256.\+txt\char`\"{})
 \item 
 \mbox{\Hypertarget{testRemoveSeedCheckLambda_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testRemoveSeedCheckLambda_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
 \item 
 \mbox{\Hypertarget{testRemoveSeedCheckLambda_8cpp_ac6b6552a70499e6a83cff95e91a0f259}\label{testRemoveSeedCheckLambda_8cpp_ac6b6552a70499e6a83cff95e91a0f259}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
 \item 
 \mbox{\Hypertarget{testRemoveSeedCheckLambda_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}\label{testRemoveSeedCheckLambda_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}} 
 \mbox{\hyperlink{classvd}{vd}} {\bfseries VD} = load\+Results.\+VD

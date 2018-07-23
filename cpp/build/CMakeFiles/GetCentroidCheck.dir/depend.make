@@ -5,9 +5,10 @@ CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/NSStar.h
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
+CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/pointInRegion.h
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/skizException.h
-CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/NSStar.h
@@ -20,32 +21,37 @@ CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/aux-functions/updateDi
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/getRegion.h
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/skizException.h
-CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/vd.h
+
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.h
-CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.h
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.cpp
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.h
-CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.h
 
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/getCentroid.cpp
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/getCentroid.h
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/getRegion.h
-CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/getRegion.h
-CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.h
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/skizException.h
-CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/NSStar.h
@@ -59,7 +65,7 @@ CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/removeSeed.cpp
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/removeSeed.h
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/skizException.h
-CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o: ../src/skizException.cpp
@@ -71,13 +77,13 @@ CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o: ../src/test/Cat
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.h
-CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.h
-CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/aux-functions/readMatrix.h
@@ -88,7 +94,7 @@ CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/skiz
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.h
-CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/addSeed.h
@@ -101,10 +107,10 @@ CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/test/Catc
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/test/test-help-fns/loadVD.h
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/test/testGetCentroid.cpp
-CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/vd.h
 
-CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: ../src/typedefs.cpp
+CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: ../src/typedefs.h
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: ../src/vd.cpp
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: ../src/vd.h
 

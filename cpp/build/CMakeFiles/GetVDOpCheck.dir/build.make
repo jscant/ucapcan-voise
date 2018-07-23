@@ -226,9 +226,22 @@ CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp -o CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.s
 
+CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: CMakeFiles/GetVDOpCheck.dir/flags.make
+CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
+
+CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp > CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.i
+
+CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp -o CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.s
+
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o: CMakeFiles/GetVDOpCheck.dir/flags.make
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp
 
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.s: cmake_force
 
 CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o: CMakeFiles/GetVDOpCheck.dir/flags.make
 CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o: ../src/getOp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/getOp.cpp
 
 CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.s: cmake_force
 
 CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o: CMakeFiles/GetVDOpCheck.dir/flags.make
 CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o: ../src/test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp
 
 CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.i: cmake_force
@@ -280,6 +293,7 @@ GetVDOpCheck_OBJECTS = \
 "CMakeFiles/GetVDOpCheck.dir/src/removeSeed.cpp.o" \
 "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readSeeds.cpp.o" \
 "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.o" \
+"CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o" \
 "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o" \
 "CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o" \
 "CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o"
@@ -300,12 +314,13 @@ GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/getRegion.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/removeSeed.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readSeeds.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.o
+GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/build.make
 GetVDOpCheck: CMakeFiles/GetVDOpCheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GetVDOpCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable GetVDOpCheck"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GetVDOpCheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

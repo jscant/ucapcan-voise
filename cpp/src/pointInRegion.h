@@ -9,7 +9,7 @@
 #include <vector>
 
 #include "vd.h"
-#include "typedefs.cpp"
+#include "typedefs.h"
 
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A);
 

@@ -15,7 +15,7 @@ Unit tests for whether the get\+Centroid function correctly returns the centres 
 {\ttfamily \#include \char`\"{}../add\+Seed.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../remove\+Seed.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../get\+Region.\+h\char`\"{}}\newline
-{\ttfamily \#include \char`\"{}../typedefs.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../typedefs.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../vd.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../get\+Centroid.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}../aux-\/functions/metrics.\+h\char`\"{}}\newline
@@ -35,10 +35,10 @@ std\+::string {\bfseries path} = \char`\"{}../src/test/resources/\char`\"{}
 load\+Struct {\bfseries load\+Results} = load\+VD(path, \char`\"{}bench\+V\+D\+Seeds10.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda10.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V10.\+txt\char`\"{})
 \item 
 \mbox{\Hypertarget{testGetCentroid_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testGetCentroid_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
 \item 
 \mbox{\Hypertarget{testGetCentroid_8cpp_ac6b6552a70499e6a83cff95e91a0f259}\label{testGetCentroid_8cpp_ac6b6552a70499e6a83cff95e91a0f259}} 
-\mbox{\hyperlink{typedefs_8cpp_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
 \item 
 \mbox{\Hypertarget{testGetCentroid_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}\label{testGetCentroid_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}} 
 \mbox{\hyperlink{classvd}{vd}} {\bfseries VD} = load\+Results.\+VD

@@ -5,9 +5,10 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/NSStar.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/skizException.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/NSStar.h
@@ -20,26 +21,31 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/aux-functions
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/getRegion.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/skizException.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/addSeed.cpp.o: ../src/vd.h
+
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o: ../src/getRegion.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/getRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/skizException.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/pointInRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/NSStar.h
@@ -53,7 +59,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/pointInReg
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/removeSeed.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/removeSeed.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/skizException.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/removeSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/skizException.cpp.o: ../src/skizException.cpp
@@ -65,13 +71,13 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/Catch2/test_main.cpp.o: ../src
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/aux-functions/sqDist.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/aux-functions/readMatrix.h
@@ -82,7 +88,7 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ..
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.h
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/addSeed.h
@@ -94,10 +100,10 @@ CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/test/test-help-fns/loadVD.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/test/testRemoveSeedCheckLambda.cpp
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/test/testRemoveSeedCheckLambda.cpp.o: ../src/vd.h
 
-CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.o: ../src/typedefs.cpp
+CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.o: ../src/typedefs.h
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.o: ../src/vd.cpp
 CMakeFiles/testRemoveSeedCheckLambda.dir/src/vd.cpp.o: ../src/vd.h
 

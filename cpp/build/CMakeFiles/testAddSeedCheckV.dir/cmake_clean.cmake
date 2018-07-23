@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/testAddSeedCheckV.dir/src/removeSeed.cpp.o"
   "CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/testAddSeedCheckV.dir/src/test/Catch2/test_main.cpp.o"
   "testAddSeedCheckV.pdb"
   "testAddSeedCheckV"

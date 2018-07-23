@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/InVectorCheck.dir/src/removeSeed.cpp.o"
   "CMakeFiles/InVectorCheck.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/InVectorCheck.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/InVectorCheck.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/InVectorCheck.dir/src/test/Catch2/test_main.cpp.o"
   "InVectorCheck.pdb"
   "InVectorCheck"

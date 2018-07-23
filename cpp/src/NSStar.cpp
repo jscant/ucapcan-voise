@@ -9,6 +9,7 @@
 #include "skizException.h"
 #include "aux-functions/inVector.h"
 #include "aux-functions/circumcentre.h"
+#include "aux-functions/proposition2.h"
 
 /**
  * @defgroup nsStar nsStar
@@ -33,6 +34,10 @@ RealVec nsStar(const vd &VD) {
     real n = 0;
     while (n < 2) {
         real NsLen = Ns.size();
+        RealVec candidates;
+        std::array<real, 2> ccOG = { -1, -1 };
+        std::array<real, 2> cc = { -1, -1 };
+        bool ccOGExists = false;
         for (real nIdx = n; nIdx < VD.getNkByIdx(lam).size(); ++nIdx) {
             const real r = VD.getNkByIdx(lam)[nIdx];
             if (inVector(Ns, r)) {
@@ -42,25 +47,36 @@ RealVec nsStar(const vd &VD) {
             const real r1 = VD.getSxByIdx(r);
             const real r2 = VD.getSyByIdx(r);
 
-            std::array<real, 2> cc;
             try {
                 cc = circumcentre(r1, r2, s1, s2, VD.getSxByIdx(lam), VD.getSyByIdx(lam));
             } catch (SKIZLinearSeedsException &e) {
                 continue;
             }
 
-            bool pir = pointInRegion(VD, cc, lam, VD.getNkByIdx(lam));
+            bool pir = pointInRegion(VD, cc, lam, VD.getNkByIdx(r));
 
             if (pir) {
                 if (r == lamOG) { // region is bounded!
                     return Ns;
                 }
-                lam = r;
-                Ns.push_back(r);
+                if(!ccOGExists){
+                    ccOGExists = true;
+                    ccOG = cc;
+                    candidates.push_back(r);
+                } else {
+                    if(fabs(ccOG[0] - cc[0]) < 1e-6 && fabs(ccOG[1] - cc[1]) < 1e-6){
+                        candidates.push_back(r);
+                    }
+                }
                 n = 0;
-                break;
             }
 
+        }
+        if(candidates.size() > 0){
+            uint32 winningSeed = proposition2(VD, lam, candidates, cc);
+            lam = winningSeed;
+            Ns.push_back(winningSeed);
+            n = 0;
         }
         if (NsLen == Ns.size()) {
             if (onlyNeighbour || n > 0) {

@@ -6,7 +6,7 @@
 #ifndef INVECTOR_H
 #define INVECTOR_H
 #include <vector>
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 
 /**
  * @defgroup inVector inVector

@@ -10,5 +10,5 @@ var searchData=
   ['testremoveseedchecklambda_2ecpp',['testRemoveSeedCheckLambda.cpp',['../testRemoveSeedCheckLambda_8cpp.html',1,'']]],
   ['testremoveseedcheckv_2ecpp',['testRemoveSeedCheckV.cpp',['../testRemoveSeedCheckV_8cpp.html',1,'']]],
   ['testsqdist_2ecpp',['testSqDist.cpp',['../testSqDist_8cpp.html',1,'']]],
-  ['typedefs_2ecpp',['typedefs.cpp',['../typedefs_8cpp.html',1,'']]]
+  ['typedefs_2eh',['typedefs.h',['../typedefs_8h.html',1,'']]]
 ];

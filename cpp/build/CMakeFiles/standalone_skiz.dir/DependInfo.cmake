@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o"
+  "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o"
@@ -15,7 +16,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o"
-  "/home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/vd.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/standalone_skiz.dir/src/vd.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

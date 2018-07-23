@@ -14,7 +14,7 @@
 #include "../addSeed.h"
 #include "../removeSeed.h"
 #include "../getRegion.h"
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "../vd.h"
 #include "../getCentroid.h"
 #include "../aux-functions/metrics.h"

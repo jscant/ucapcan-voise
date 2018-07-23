@@ -9,7 +9,7 @@
 #include "../../removeSeed.h"
 #include "../../getRegion.h"
 #include "../../skizException.h"
-#include "../../typedefs.cpp"
+#include "../../typedefs.h"
 #include "../../aux-functions/readSeeds.h"
 #include "../../aux-functions/readMatrix.h"
 

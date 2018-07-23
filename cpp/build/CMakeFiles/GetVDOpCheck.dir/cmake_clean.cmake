@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GetVDOpCheck.dir/src/removeSeed.cpp.o"
   "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o"
   "CMakeFiles/GetVDOpCheck.dir/src/getOp.cpp.o"
   "CMakeFiles/GetVDOpCheck.dir/src/test/Catch2/test_main.cpp.o"

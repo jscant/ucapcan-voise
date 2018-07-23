@@ -3,7 +3,7 @@
 
 #include <eigen3/Eigen/Dense>
 
-#include "typedefs.cpp"
+#include "typedefs.h"
 #include "vd.h"
 
 Mat getCentroid(const vd &VD, const Mat &W, const RealVec seeds);

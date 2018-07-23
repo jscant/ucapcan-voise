@@ -58,7 +58,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <p class="">Finds average pixel intensity of all VRs in VD. </p>
 <p class="">This is a MEX function, and as such the inputs and outputs are constricted to the following:</p>
-<p class="">Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with <img class="formulaInl" alt="$\nu$" src="form_3.png"/> = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).</p>
+<p class="">Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with <img class="formulaInl" alt="$\nu$" src="form_0.png"/> = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vd</td><td>Voronoi Diagram </td></tr>
@@ -93,7 +93,7 @@ Sop Eigen::Array for storage of averge pixel intensity (list of VR averages)</dd
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sop Vector of metric value for each Voronoi region </dd>
 <dd>
-Wop Matrix of metric values for each pixel. All pixels in same voronoi region have same Wop value. Pixels equidistant from two or more closest seeds (with <img class="formulaInl" alt="$ \nu_{ij} $" src="form_12.png"/> = 1) have Wop <img class="formulaInl" alt="$_{ij} $" src="form_13.png"/> = NaN, as per the Matlab implementation. </dd></dl>
+Wop Matrix of metric values for each pixel. All pixels in same voronoi region have same Wop value. Pixels equidistant from two or more closest seeds (with <img class="formulaInl" alt="$ \nu_{ij} $" src="form_15.png"/> = 1) have Wop <img class="formulaInl" alt="$_{ij} $" src="form_16.png"/> = NaN, as per the Matlab implementation. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

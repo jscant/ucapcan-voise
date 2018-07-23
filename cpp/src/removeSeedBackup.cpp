@@ -14,7 +14,7 @@
 #include "NSStar.h"
 #include "pointInRegion.h"
 #include "getRegion.h"
-#include "typedefs.cpp"
+#include "typedefs.h"
 #include "removeSeed.h"
 #include "aux-functions/inVector.h"
 #include "aux-functions/sqDist.h"

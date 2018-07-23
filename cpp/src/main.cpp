@@ -19,7 +19,7 @@
 #include "getRegion.h"
 #include "NSStar.h"
 #include "skizException.h"
-#include "typedefs.cpp"
+#include "typedefs.h"
 #include "aux-functions/readSeeds.h"
 #include "aux-functions/readMatrix.h"
 #include "aux-functions/metrics.h"

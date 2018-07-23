@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SqDistanceCheck.dir/src/removeSeed.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/SqDistanceCheck.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/SqDistanceCheck.dir/src/test/Catch2/test_main.cpp.o"
   "SqDistanceCheck.pdb"
   "SqDistanceCheck"

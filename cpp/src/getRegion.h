@@ -8,7 +8,7 @@
 #include <eigen3/Eigen/Dense>
 
 #include "vd.h"
-#include "typedefs.cpp"
+#include "typedefs.h"
 
 Mat getRegion(const vd &VD, const real &s);
 

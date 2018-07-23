@@ -6,9 +6,10 @@ CMakeFiles/MetricChecks.dir/src/NSStar.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/NSStar.h
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/circumcentre.h
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/inVector.h
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.h
  /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/addSeed.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/NSStar.h
@@ -21,31 +22,36 @@ CMakeFiles/MetricChecks.dir/src/addSeed.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/getRegion.h
  /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/aux-functions/metrics.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
+CMakeFiles/MetricChecks.dir/src/aux-functions/proposition2.cpp.o
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.h
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
+ /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/aux-functions/readMatrix.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
 CMakeFiles/MetricChecks.dir/src/aux-functions/readSeeds.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
 CMakeFiles/MetricChecks.dir/src/getRegion.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/getRegion.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/pointInRegion.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/NSStar.h
@@ -59,7 +65,7 @@ CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/skizException.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp
@@ -71,13 +77,13 @@ CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/sqDist.h
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/sqDist.h
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/test/test-help-fns/loadVD.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.h
@@ -88,15 +94,15 @@ CMakeFiles/MetricChecks.dir/src/test/test-help-fns/loadVD.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadStruct.h
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.h
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 CMakeFiles/MetricChecks.dir/src/test/testMetrics.cpp.o
  /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/metrics.h
  /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
  /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/catch.hpp
  /home/jack/dev/project/voise-1.3/cpp/src/test/testMetrics.cpp
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
 CMakeFiles/MetricChecks.dir/src/vd.cpp.o
- /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
+ /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
  /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp
  /home/jack/dev/project/voise-1.3/cpp/src/vd.h

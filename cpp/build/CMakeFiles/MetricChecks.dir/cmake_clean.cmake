@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MetricChecks.dir/src/removeSeed.cpp.o"
   "CMakeFiles/MetricChecks.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/MetricChecks.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/MetricChecks.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/MetricChecks.dir/src/aux-functions/metrics.cpp.o"
   "CMakeFiles/MetricChecks.dir/src/test/Catch2/test_main.cpp.o"
   "MetricChecks.pdb"

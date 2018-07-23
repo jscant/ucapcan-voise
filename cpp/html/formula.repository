@@ -1,19 +1,18 @@
-\form#0:$i^{th}$
-\form#1:$ \lambda, \nu $
+\form#0:$\nu$
+\form#1:$i^{th}$
 \form#2:$ \lambda $
-\form#3:$\nu$
-\form#4:$\lambda$
-\form#5:$\lambda_{ij}$
-\form#6:$\nu{ij}$
-\form#7:$\nu_{ij}$
-\form#8:$ i^{th} $
-\form#9:$ j^{th} $
-\form#10:$R^2$
-\form#11:$ \nu $
-\form#12:$ \nu_{ij} $
-\form#13:$_{ij} $
-\form#14:\[ \sigma = \sqrt{\frac{x-\bar{x}}{N - 1}} \]
-\form#15:\[ \sigma = \sum_{i=1}^{N-1}\sqrt{\frac{(x_i-\bar{x})}{N - 1}} \]
-\form#16:$\bar{x}$
-\form#17:$x$
-\form#18:$N$
+\form#3:$\lambda$
+\form#4:$\lambda_{ij}$
+\form#5:$\nu{ij}$
+\form#6:$\nu_{ij}$
+\form#7:$ i^{th} $
+\form#8:$ j^{th} $
+\form#9:$R^2$
+\form#10:\[ \sigma = \sum_{i=1}^{N-1}\sqrt{\frac{(x_i-\bar{x})}{N - 1}} \]
+\form#11:$\bar{x}$
+\form#12:$N$
+\form#13:$x$
+\form#14:$ \nu $
+\form#15:$ \nu_{ij} $
+\form#16:$_{ij} $
+\form#17:$ \lambda, \nu $

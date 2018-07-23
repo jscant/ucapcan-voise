@@ -70,22 +70,9 @@ CMakeFiles/standalone_skiz.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/main.cpp -o CMakeFiles/standalone_skiz.dir/src/main.cpp.s
 
-CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
-CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o: ../src/typedefs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp
-
-CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp > CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.i
-
-CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/typedefs.cpp -o CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.s
-
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/addSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp
 
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp
 
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.s: cmake_force
 
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp
 
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.i: cmake_force
@@ -121,6 +108,19 @@ CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.i: cmake_force
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp -o CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.s
+
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
+
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp > CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.i
+
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp -o CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.s
 
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: CMakeFiles/standalone_skiz.dir/flags.make
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
@@ -229,10 +229,10 @@ CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.s: cmake_force
 # Object files for target standalone_skiz
 standalone_skiz_OBJECTS = \
 "CMakeFiles/standalone_skiz.dir/src/main.cpp.o" \
-"CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o" \
+"CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o" \
 "CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o" \
@@ -246,10 +246,10 @@ standalone_skiz_OBJECTS = \
 standalone_skiz_EXTERNAL_OBJECTS =
 
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/main.cpp.o
-standalone_skiz: CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o
+standalone_skiz: CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o
 standalone_skiz: CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o

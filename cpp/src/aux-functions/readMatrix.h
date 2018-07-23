@@ -6,7 +6,7 @@
 #define READMATRIX_H
 
 #include <string>
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 
 Mat readMatrix(std::string filename);
 

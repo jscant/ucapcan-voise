@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o"
+  "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o"
   "/home/jack/dev/project/voise-1.3/cpp/src/getCentroid.cpp" "/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o"

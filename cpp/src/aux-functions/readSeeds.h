@@ -6,7 +6,7 @@
 #define READSEEDS_H
 
 #include <vector>
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 
 std::vector<RealVec> readSeeds(std::string filename);
 

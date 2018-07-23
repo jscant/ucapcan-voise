@@ -5,7 +5,7 @@
 #ifndef METRICS_H
 #define METRICS_H
 
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 
 namespace metrics {
     real mean(RealVec vec);

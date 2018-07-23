@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/standalone_skiz.dir/src/main.cpp.o"
-  "CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o"
+  "CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o"
   "CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o"

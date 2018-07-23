@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o"
   "CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o"
   "CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o"
+  "CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o"
   "CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o"
   "CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o"
   "GetCentroidCheck.pdb"

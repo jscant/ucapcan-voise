@@ -8,7 +8,7 @@
 #include <string>
 #include <iostream>
 
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "../skizException.h"
 #include "../aux-functions/metrics.h"
 #include "Catch2/catch.hpp"

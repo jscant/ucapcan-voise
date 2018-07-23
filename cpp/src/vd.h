@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <eigen3/Eigen/Dense>
 
-#include "typedefs.cpp"
+#include "typedefs.h"
 
 /**
  * @struct W_struct

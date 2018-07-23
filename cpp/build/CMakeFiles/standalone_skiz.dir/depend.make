@@ -5,9 +5,10 @@ CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/NSStar.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
+CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/pointInRegion.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/skizException.h
-CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/NSStar.h
@@ -20,25 +21,30 @@ CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/aux-functions/updateDic
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/getRegion.h
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/skizException.h
-CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/addSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/aux-functions/metrics.h
 CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/skizException.h
-CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.h
+
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.h
-CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/aux-functions/readMatrix.cpp.o: ../src/typedefs.h
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.h
-CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/aux-functions/readSeeds.cpp.o: ../src/typedefs.h
 
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/getRegion.h
-CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/getRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/NSStar.h
@@ -52,13 +58,13 @@ CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/removeSeed.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/skizException.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/test/test-help-fns/loadVD.h
-CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/main.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.h
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/skizException.h
-CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/pointInRegion.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/NSStar.h
@@ -72,7 +78,7 @@ CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/pointInRegion.h
 CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/removeSeed.cpp
 CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/removeSeed.h
 CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/skizException.h
-CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/removeSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/standalone_skiz.dir/src/skizException.cpp.o: ../src/skizException.cpp
@@ -86,12 +92,10 @@ CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/skizE
 CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadStruct.h
 CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
 CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.h
-CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/vd.h
 
-CMakeFiles/standalone_skiz.dir/src/typedefs.cpp.o: ../src/typedefs.cpp
-
-CMakeFiles/standalone_skiz.dir/src/vd.cpp.o: ../src/typedefs.cpp
+CMakeFiles/standalone_skiz.dir/src/vd.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/vd.cpp.o: ../src/vd.cpp
 CMakeFiles/standalone_skiz.dir/src/vd.cpp.o: ../src/vd.h
 

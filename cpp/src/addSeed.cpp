@@ -17,7 +17,7 @@
 #include "aux-functions/sqDist.h"
 #include "aux-functions/circumcentre.h"
 #include "aux-functions/updateDict.h"
-#include "typedefs.cpp"
+#include "typedefs.h"
 #include <iostream>
 #ifndef INF
 #define INF std::numeric_limits<real>::infinity()

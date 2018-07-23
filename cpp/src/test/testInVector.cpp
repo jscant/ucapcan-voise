@@ -3,7 +3,7 @@
  * @brief Unit tests for whether inVector correctly identifies the presence or otherwise of numeric values in vectors
  */
 #include "../aux-functions/inVector.h"
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "Catch2/catch.hpp"
 
 /**

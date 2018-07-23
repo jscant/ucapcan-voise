@@ -21,7 +21,7 @@
 #include "../addSeed.h"
 #include "../skizException.h"
 #include "../getRegion.h"
-#include "../typedefs.cpp"
+#include "../typedefs.h"
 #include "../getCentroid.h"
 #include "../getOp.h"
 #include "../removeSeed.h"

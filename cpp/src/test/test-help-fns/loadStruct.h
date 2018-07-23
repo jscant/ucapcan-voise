@@ -6,7 +6,7 @@
 #define STANDALONE_SKIZ_LOADSTRUCT_H
 
 #include <vector>
-#include "../../typedefs.cpp"
+#include "../../typedefs.h"
 #include "../../vd.h"
 
 
