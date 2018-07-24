@@ -8,6 +8,6 @@
 
 #include "vd.h"
 
-bool addSeed(vd &VD, real s1, real s2);
+void addSeed(vd &VD, real s1, real s2);
 
 #endif

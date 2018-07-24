@@ -6,6 +6,6 @@
 #define REMOVESEED_H
 #include "vd.h"
 
-bool removeSeed(vd &VD, real Sk);
+void removeSeed(vd &VD, real Sk);
 
 #endif

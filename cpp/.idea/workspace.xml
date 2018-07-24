@@ -2,23 +2,23 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" line="58" />
-    <bookmark url="file://$PROJECT_DIR$/src/NSStar.cpp" line="89" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/src/NSStar.cpp" line="108" mnemonic="0" />
   </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="standalone_skiz" targetName="standalone_skiz" />
-      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckLambda" />
-      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
-      <config projectName="standalone_skiz" targetName="doc" />
-      <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
-      <config projectName="standalone_skiz" targetName="InVectorCheck" />
-      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
       <config projectName="standalone_skiz" targetName="testAddSeedCheckV" />
-      <config projectName="standalone_skiz" targetName="PointInRegionCheck" />
+      <config projectName="standalone_skiz" targetName="testAddSeedCheckLambda" />
       <config projectName="standalone_skiz" targetName="GetVDOpCheck" />
-      <config projectName="standalone_skiz" targetName="GetCentroidCheck" />
       <config projectName="standalone_skiz" targetName="MetricChecks" />
+      <config projectName="standalone_skiz" targetName="GetCentroidCheck" />
+      <config projectName="standalone_skiz" targetName="PointInRegionCheck" />
       <config projectName="standalone_skiz" targetName="Proposition2Check" />
+      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckLambda" />
+      <config projectName="standalone_skiz" targetName="standalone_skiz" />
+      <config projectName="standalone_skiz" targetName="doc" />
+      <config projectName="standalone_skiz" targetName="SqDistanceCheck" />
+      <config projectName="standalone_skiz" targetName="InVectorCheck" />
+      <config projectName="standalone_skiz" targetName="testRemoveSeedCheckV" />
     </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
@@ -40,41 +40,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NSStar.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/NSStar.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="testProposition2.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/testProposition2.cpp">
+      <file leaf-file-name="proposition2.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generateProposition2VD.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/generateProposition2VD.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#180#205#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -83,10 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>doc</find>
-      <find>prhs[0]</find>
-      <find>?</find>
-      <find>if(key</find>
       <find>median</find>
       <find>metric(</find>
       <find>getSxBy</find>
@@ -105,6 +74,18 @@
       <find>is</find>
       <find>abs</find>
       <find>std::cout</find>
+      <find>dict</find>
+      <find>dictionary</find>
+      <find>EXTRACT</find>
+      <find>erase</find>
+      <find>HIDE</find>
+      <find>PREDEFINED</find>
+      <find>LINK</find>
+      <find>NAMESPACE</find>
+      <find>CALL_GRAPH</find>
+      <find>CLASS</find>
+      <find>METHOD</find>
+      <find>SHOW_FILES</find>
     </findStrings>
     <replaceStrings>
       <replace>prhs[field]</replace>
@@ -113,33 +94,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/mex/addSeedToVD.cpp" />
-        <option value="$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckV.cpp" />
-        <option value="$PROJECT_DIR$/src/getOp.h" />
-        <option value="$PROJECT_DIR$/src/test/test-help-fns/loadVD.h" />
-        <option value="$PROJECT_DIR$/src/test/testAddSeedCheckV.cpp" />
-        <option value="$PROJECT_DIR$/src/test/testRemoveSeedCheckLambda.cpp" />
-        <option value="$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp" />
-        <option value="$PROJECT_DIR$/src/test/testAddSeedCheckLambda.cpp" />
         <option value="$PROJECT_DIR$/src/test/resources/W.txt" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/loadVD.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/readMatrix.h" />
-        <option value="$PROJECT_DIR$/src/vd.cpp" />
-        <option value="$PROJECT_DIR$/src/vd.h" />
-        <option value="$PROJECT_DIR$/src/addSeed.cpp" />
-        <option value="$PROJECT_DIR$/src/getRegion.cpp" />
-        <option value="$PROJECT_DIR$/src/removeSeed.cpp" />
         <option value="$PROJECT_DIR$/src/test/testPointInRegion.cpp" />
         <option value="$PROJECT_DIR$/src/test/resources/Wop.txt" />
         <option value="$PROJECT_DIR$/src/aux-functions/readMatrix.cpp" />
         <option value="$PROJECT_DIR$/src/test/testGetVDOp.cpp" />
-        <option value="$PROJECT_DIR$/src/pointInRegion.cpp" />
         <option value="$PROJECT_DIR$/DoxygenLayout.xml" />
         <option value="$PROJECT_DIR$/other/mainpage-info.txt" />
         <option value="$PROJECT_DIR$/src/test/tesetGetCentroid.cpp" />
         <option value="$PROJECT_DIR$/src/getCentroid.h" />
         <option value="$PROJECT_DIR$/src/test/testGetCentroid.cpp" />
-        <option value="$PROJECT_DIR$/src/getCentroid.cpp" />
         <option value="$PROJECT_DIR$/src/mex/grabVD.h" />
         <option value="$PROJECT_DIR$/src/mex/grabVD.cpp" />
         <option value="$PROJECT_DIR$/src/mex/removeSeedFromVDBatch.cpp" />
@@ -149,21 +115,36 @@
         <option value="$PROJECT_DIR$/src/mex/grabW.h" />
         <option value="$PROJECT_DIR$/src/mex/grabW.cpp" />
         <option value="$PROJECT_DIR$/src/mex/mexIncludes.h" />
-        <option value="$PROJECT_DIR$/build/unitTests.sh" />
         <option value="$PROJECT_DIR$/src/mex/getVDOp.cpp" />
-        <option value="$PROJECT_DIR$/src/getOp.cpp" />
         <option value="$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/src/typedefs.cpp" />
-        <option value="$PROJECT_DIR$/src/typedefs.h" />
         <option value="$PROJECT_DIR$/src/aux-functions/proposition2.h" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/generateProposition2VD.h" />
-        <option value="$PROJECT_DIR$/src/aux-functions/proposition2.cpp" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckLambda.cpp" />
         <option value="$PROJECT_DIR$/src/test/testProposition2.cpp" />
+        <option value="$PROJECT_DIR$/build/unitTests.sh" />
+        <option value="$PROJECT_DIR$/src/getRegion.cpp" />
+        <option value="$PROJECT_DIR$/src/addSeed.h" />
+        <option value="$PROJECT_DIR$/src/addSeed.cpp" />
+        <option value="$PROJECT_DIR$/src/removeSeed.h" />
+        <option value="$PROJECT_DIR$/src/removeSeedBackup.cpp" />
+        <option value="$PROJECT_DIR$/src/removeSeed.cpp" />
+        <option value="$PROJECT_DIR$/src/getCentroid.cpp" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/generateProposition2VD.cpp" />
+        <option value="$PROJECT_DIR$/src/vd.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/Doxyfile" />
         <option value="$PROJECT_DIR$/src/NSStar.cpp" />
+        <option value="$PROJECT_DIR$/src/vd.h" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/src/skizException.h" />
+        <option value="$PROJECT_DIR$/src/skizException.cpp" />
+        <option value="$PROJECT_DIR$/src/getOp.cpp" />
+        <option value="$PROJECT_DIR$/src/pointInRegion.h" />
+        <option value="$PROJECT_DIR$/src/typedefs.h" />
+        <option value="$PROJECT_DIR$/src/pointInRegion.cpp" />
+        <option value="$PROJECT_DIR$/src/aux-functions/metrics.cpp" />
+        <option value="$PROJECT_DIR$/src/aux-functions/proposition2.cpp" />
       </list>
     </option>
   </component>
@@ -179,15 +160,37 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="896" />
-    <option name="y" value="130" />
-    <option name="width" value="926" />
-    <option name="height" value="1048" />
+    <option name="y" value="68" />
+    <option name="width" value="924" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="aux-functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -215,41 +218,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mex" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="test-help-fns" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +225,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/other/callgrind-logs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -277,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager" selected="Application.standalone_skiz">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="GetCentroidCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetCentroidCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetCentroidCheck" />
     <configuration name="GetVDOpCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetVDOpCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetVDOpCheck" />
@@ -342,7 +310,10 @@
       <workItem from="1532085610850" duration="1209000" />
       <workItem from="1532175435799" duration="1337000" />
       <workItem from="1532187032749" duration="517000" />
-      <workItem from="1532258826782" duration="13923000" />
+      <workItem from="1532258826782" duration="14064000" />
+      <workItem from="1532347289573" duration="9980000" />
+      <workItem from="1532359333929" duration="7862000" />
+      <workItem from="1532420612200" duration="2697000" />
     </task>
     <servers />
   </component>
@@ -367,19 +338,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151561000" />
+    <option name="totallyTimeSpent" value="172241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19050218" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11626638" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3790576" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.37172773" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.37696335" />
+      <window_info anchor="bottom" id="CMake" order="10" weight="0.37172773" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.43350786" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24816754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -393,23 +364,23 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.37172773" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19050218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36335078" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3790576" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32984293" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.37172773" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3790576" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -421,66 +392,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="14" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/aux-functions/readMatrix.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NSStar.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/getRegion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="146" column="46" selection-start-line="146" selection-start-column="46" selection-end-line="146" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/removeSeed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="58" column="38" lean-forward="true" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/getOp.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/Wop.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/testPointInRegion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="88" column="45" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aux-functions/readMatrix.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/standalone_skiz.cbp" />
-    <entry file="file://$PROJECT_DIR$/build/CMakeDoxyfile.in" />
     <entry file="file://$PROJECT_DIR$/DoxygenLayout.xml" />
-    <entry file="file://$PROJECT_DIR$/Doxyfile" />
     <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt" />
     <entry file="file://$PROJECT_DIR$/src/test/testGetVDOp.cpp">
       <provider selected="true" editor-type-id="text-editor">
@@ -559,34 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/unitTests.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mex/mexIncludes.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aux-functions/metrics.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/getOp.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="52" column="24" lean-forward="true" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/getVDOp.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -601,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/getCentroid.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/getCentroidSeedBatch.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
@@ -615,41 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" selection-start-line="29" selection-end-line="31" selection-end-column="28" />
-          <folding>
-            <element signature="e#507#526#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/typedefs.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/typedefs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-          <folding>
-            <element signature="e#97#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pointInRegion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testMetrics.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <folding>
-            <element signature="e#88#117#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.h">
@@ -662,23 +512,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/loadStruct.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/addSeed.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#80#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/vd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="336" column="9" selection-start-line="336" selection-start-column="9" selection-end-line="336" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mex/grabVD.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1674">
@@ -686,30 +519,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/vd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/NSStar_backup.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NSStar_backup.cpp" />
     <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckLambda.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -721,9 +531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding>
-            <element signature="e#67#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,27 +541,202 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/unitTests.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="17" lean-forward="true" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addSeed.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/addSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/removeSeed.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/removeSeedBackup.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/removeSeed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="127" column="72" selection-start-line="127" selection-start-column="72" selection-end-line="127" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/generateProposition2VD.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="18">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        <state relative-caret-position="277">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Doxyfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="82" column="28" selection-start-line="82" selection-start-column="28" selection-end-line="82" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NSStar.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="75" column="71" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
+        <state relative-caret-position="716">
+          <caret line="108" column="1" lean-forward="true" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getCentroid.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1022">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vd.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/skizException.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="94" column="20" lean-forward="true" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/skizException.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mex/mexIncludes.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getOp.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#78#96#0" expanded="true" />
+            <element signature="e#217#253#0" expanded="true" />
+            <element signature="e#2661#2730#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pointInRegion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/getRegion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="669">
+          <caret line="164" column="74" selection-start-line="164" selection-start-column="74" selection-end-line="164" selection-end-column="74" />
+          <folding>
+            <element signature="e#70#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pointInRegion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="88" column="59" selection-start-line="88" selection-start-column="59" selection-end-line="88" selection-end-column="59" />
+          <folding>
+            <element signature="e#114#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/typedefs.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#97#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aux-functions/metrics.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#84#120#0" expanded="true" />
+            <element signature="e#260#280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#180#205#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -90,29 +90,37 @@ StopDiv = True
 *** Dividing phase completed.
 *** Starting merging phase
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.24
-Elapsed time is 0.040846 seconds.
+Elapsed time is 0.047475 seconds.
 Iter  1 Removing 34 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.028148 seconds.
+Elapsed time is 0.031319 seconds.
 Iter  2 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.022993 seconds.
+Elapsed time is 0.042200 seconds.
 Iter  3 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.26
-Elapsed time is 0.029053 seconds.
+Elapsed time is 0.043230 seconds.
 Iter  4 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-Elapsed time is 0.034968 seconds.
+Elapsed time is 0.044909 seconds.
 Iter  5 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.05 max=1.00 Q(50)=0.27
-Elapsed time is 0.030941 seconds.
-Elapsed time is 0.031530 seconds.
+Elapsed time is 0.037910 seconds.
+Elapsed time is 0.038690 seconds.
 *** Merging phase completed.
-*** Starting regularisation phase
-Maximum distance seed/centre-of-mass 389.0 (275.1)
-Iter  1 Computing regularised Voronoi Diagram for 471 seeds
-Maximum distance seed/centre-of-mass 19.0 (13.5)
-Iter  2 Computing regularised Voronoi Diagram for 471 seeds
-*** Regularisation phase completed.
-*** Saving VOISE results in ../share/output/north_proj/voise.mat
-*** Total elapsed time 00:00:12 [hh:mm:ss].
+{Error using drawnow
+Operation terminated by user
+
+Error in print (line 36)
+drawnow; % give changes a chance to be processed
+
+Error in plotVOISE (line 108)
+  print([params.oDir 'phase' num2str(ic)], '-dpdf', dpi);
+
+Error in VOISE (line 172)
+params = plotVOISE(MVD, params, 2);
+
+Error in webVOISE (line 56)
+[params,IVD,DVD,MVD,CVD] = VOISE(params);
+
+Error in webVOIS

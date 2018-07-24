@@ -6,10 +6,12 @@
 #include "getOp.h"
 #include "aux-functions/metrics.h"
 #include "getRegion.h"
+#include "typedefs.h"
 #include <omp.h>
 
-#ifndef INF
-#define INF std::numeric_limits<real>::infinity()
+#ifdef MATLAB_MEX_FILE
+#include <mex.h>
+#include <matrix.h>
 #endif
 
 /**
@@ -17,19 +19,27 @@
  * @ingroup getVDOp
  * @brief Finds average pixel intensity of all VRs in VD.
  *
- * Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned
- * that value. Pixels with \f$\nu\f$ = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).
+ * Can use any type of average. Once average for VR has been calculated, all
+ * corresponding pixels in result are assigned that value. Pixels with
+ * \f$\nu\f$ = 1 are assigned either NaN (if used as MEX binary) or -INF
+ * (otherwise).
  *
  * @param vd Voronoi Diagram
  * @param W Eigen::Array of pixel intensities
- * @param metric std::function<real(RealVec)> Function handle for type of average to use
+ * @param metric std::function<real(RealVec)> Function handle for type of
+ * average to use
  * @param mult Multiplier of return value.
- * @param Wop Empty Eigen::Array for storage of averge pixel intensity (matrix of pixel intensities)
- * @param Sop Empty Eigen::Array for storage of averge pixel intensity (list of VR averages)
- * @returns Wop Eigen::Array containing average pixel intensity (matrix of pixel intensities)
- * @returns Sop Eigen::Array for storage of averge pixel intensity (list of VR averages)
+ * @param Wop Empty Eigen::Array for storage of averge pixel intensity
+ * (matrix of pixel intensities)
+ * @param Sop Empty Eigen::Array for storage of averge pixel intensity (list
+ * of VR averages)
+ * @returns Wop Eigen::Array containing average pixel intensity (matrix of
+ * pixel intensities)
+ * @returns Sop Eigen::Array for storage of averge pixel intensity (list of
+ * VR averages)
  */
-void getVDOp(const vd &VD, const Mat &W, std::function<real(RealVec)> metric, real mult, Mat &Wop, Mat &Sop){
+void getVDOp(const vd &VD, const Mat &W, std::function<real(RealVec)> metric,
+             real mult, Mat &Wop, Mat &Sop){
 
     // Average for each VR is independent (embarrassingly parallel)
     #pragma omp parallel for
@@ -83,7 +93,7 @@ void getVDOp(const vd &VD, const Mat &W, std::function<real(RealVec)> metric, re
             real ub = std::min((real)VD.getNc(), bounds(j, 1));
             for (real i = lb; i < ub; ++i) {
                 if (!VD.getVByIdx(j, i)){
-                    Wop(j, i) = val;
+                    Wop(j, i) = val; // All pixels in VR populated with avg
                 }
             }
         }

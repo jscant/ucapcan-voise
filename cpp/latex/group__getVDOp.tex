@@ -7,8 +7,6 @@ Finds average pixel intensity of all V\+Rs in VD.
 
 Finds average pixel intensity of all V\+Rs in VD. 
 
-This is a M\+EX function, and as such the inputs and outputs are constricted to the following\+:
-
 Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with $\nu$ = 1 are assigned either NaN (if used as M\+EX binary) or -\/I\+NF (otherwise).
 
 
@@ -29,32 +27,5 @@ Can use any type of average. Once average for VR has been calculated, all corres
 \begin{DoxyReturn}{Returns}
 Wop Eigen\+::\+Array containing average pixel intensity (matrix of pixel intensities) 
 
-Sop Eigen\+::\+Array for storage of averge pixel intensity (list of VR averages)
-\end{DoxyReturn}
-
-\begin{DoxyParams}{Parameters}
-{\em nlhs} & Number of outputs \\
-\hline
-{\em plhs} & Pointer to outputs \\
-\hline
-{\em nrhs} & Number of inputs \\
-\hline
-{\em prhs} & Pointer to inputs\\
-\hline
-\end{DoxyParams}
-In Matlab, this corresponds to the following parameters and outputs\+: 
-\begin{DoxyParams}{Parameters}
-{\em VD} & Voronoi diagram struct \\
-\hline
-{\em W} & Matrix of pixel values \\
-\hline
-{\em metric\+ID} & Key from 1-\/6 indicating which metric to use\+: (1) Median (2) Mean (3) Range (4) Square root of the number of pixels (5) Normalised range (6) Standard deviation \\
-\hline
-{\em mult} & (For metric\+ID = 5 and 6 only) Multiplier of each pixel. For metric\+ID = 5, coefficient is 1/mult. For metric\+ID = 6, coefficient is equal to mult. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Sop Vector of metric value for each Voronoi region 
-
-Wop Matrix of metric values for each pixel. All pixels in same voronoi region have same Wop value. Pixels equidistant from two or more closest seeds (with $ \nu_{ij} $ = 1) have Wop $_{ij} $ = NaN, as per the Matlab implementation. 
+Sop Eigen\+::\+Array for storage of averge pixel intensity (list of VR averages) 
 \end{DoxyReturn}

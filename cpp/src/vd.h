@@ -2,24 +2,20 @@
  * @file
  * @copydetails vd.cpp
  */
+
 #ifndef VD_H
 #define VD_H
 
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
 #include <vector>
 #include <map>
-#include <algorithm>
 #include <eigen3/Eigen/Dense>
 
 #include "typedefs.h"
 
 /**
  * @struct W_struct
- * @brief as defined in [1], Section 2.2. Only for use with VOISE algorithm matlab interface. Unused but here for
- * consistency.
+ * @brief as defined in [1], Section 2.2. Only for use with VOISE algorithm
+ * Matlab interface. Unused but here for consistency.
  * @var xm Lowest value of x in W
  * @var xM Highest value of x in W
  * @var ym Lowest value of y in W
@@ -45,7 +41,8 @@ struct V_struct {
 
 /**
  * @class vd
- * @brief Contains all information about voronoi diagram needed to perform SKIZ algorithm from [1]
+ * @brief Contains all information about voronoi diagram needed to perform SKIZ
+ * algorithm from [1]
  */
 class vd {
 private:
@@ -57,6 +54,11 @@ private:
 public:
     W_struct W;
     W_struct S;
+
+    /**
+ * Set Vk
+ * @param val
+ */
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);
@@ -77,7 +79,7 @@ public:
     void setNk(std::map<real, RealVec> val);
     void setNkByIdx(uint32 idx, RealVec val);
     void incrementK();
-    void eraseSk(uint32 idx);
+    void eraseSk(uint32 seedID);
 
     V_struct getVk() const;
     W_struct getW() const;
@@ -100,8 +102,6 @@ public:
     real getSyByIdx(uint32 idx) const;
     real getSkByIdx(uint32 idx) const;
     RealVec getNkByIdx(uint32 idx) const;
-    real getPxByIdx(uint32 i, uint32 j);
-    real getPyByIdx(uint32 i, uint32 j);
 
     void addSx(real val);
     void addSy(real val);
@@ -109,6 +109,7 @@ public:
 
     vd(real rows, real cols);
     ~vd();
+
 };
 
 #endif

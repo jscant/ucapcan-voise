@@ -3,11 +3,6 @@
  * @brief Adds seed to Voronoi diagram.
 */
 
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
-
 #include "addSeed.h"
 #include "skizException.h"
 #include "NSStar.h"
@@ -19,10 +14,6 @@
 #include "aux-functions/updateDict.h"
 #include "typedefs.h"
 #include <iostream>
-#ifndef INF
-#define INF std::numeric_limits<real>::infinity()
-#endif
-
 
 /**
  * @defgroup addSeed addSeed
@@ -35,18 +26,20 @@
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
     Operator: A Dynamic Algorithm" [1], Section 3.1
 */
-bool addSeed(vd &VD, real s1, real s2) {
+void addSeed(vd &VD, real s1, real s2) {
+
+    // Add seed coordinates to seed list, update k and active seeds Sk
     VD.incrementK();
     VD.addSx(s1);
     VD.addSy(s2);
     VD.addSk(VD.getK());
 
-    VD.setNkByIdx(VD.getK(), nsStar(VD));
+    VD.setNkByIdx(VD.getK(), nsStar(VD)); // Get N_{k+1}(s*) from 3.1.2 in [1]
 
     // Only N(s) for s in N(s*) need to be recalculated.
     // Initialise these with {s*} U N_k(s)\N_k+1(s*)
     std::map<real, RealVec> newDict;
-    for (int s : VD.getNkByIdx(VD.getK())) {
+    for (auto s : VD.getNkByIdx(VD.getK())) {
         RealVec v1 = VD.getNkByIdx(s);
         RealVec v2 = VD.getNkByIdx(VD.getK());
         RealVec init;
@@ -59,7 +52,7 @@ bool addSeed(vd &VD, real s1, real s2) {
         newDict[s] = init;
     }
 
-    // Build up N(s) for s in N(s*) incrementally
+    // Build up N(s) for s in N(s*) incrementally (from 3.1.2 in [1])
     for (auto s : VD.getNkByIdx(VD.getK())) {
         for (auto r : VD.getNkByIdx(s)) {
             if (!inVector(VD.getNkByIdx(VD.getK()), r)) {
@@ -80,7 +73,7 @@ bool addSeed(vd &VD, real s1, real s2) {
                     cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
                                       VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));
                 } catch (SKIZLinearSeedsException &e) {
-                    continue;
+                    continue; // Linearity in this instance means seeds are not neighbours
                 }
                 if (pointInRegion(VD, cc, s, uList)) {
                     updateDict(newDict, s, r);
@@ -114,9 +107,9 @@ bool addSeed(vd &VD, real s1, real s2) {
 
         real lb = std::max(0.0, bounds(i, 0) - 1);
         real ub = std::min((real)VD.getNc(), bounds(i, 1));
-        for (real j = lb; j < ub; ++j) { // Scan only relevant pixels in row
-            const real l1 = VD.getSxByIdx(VD.getLamByIdx(i, j)); // Sq distance to 'old' closest seed
-            const real l2 = VD.getSyByIdx(VD.getLamByIdx(i, j));
+        for (auto j = lb; j < ub; ++j) { // Scan only relevant pixels in row
+            const uint32 l1 = VD.getSxByIdx(VD.getLamByIdx(i, j)); // Sq distance to 'old' closest seed
+            const uint32 l2 = VD.getSyByIdx(VD.getLamByIdx(i, j));
             real newMu = sqDist(s1, s2, j+1, i+1); // Sq distance to s*
             real oldMu = sqDist(l1, l2, j+1, i+1);
 
@@ -128,6 +121,4 @@ bool addSeed(vd &VD, real s1, real s2) {
             }
         }
     }
-
-    return true;
 }

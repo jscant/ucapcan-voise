@@ -3,12 +3,6 @@
  * @brief Removes seed from voronoi diagram
  */
 
-#include <set>
-#ifdef MATLAB_MEX_FILE
-#include <mex.h>
-#include <matrix.h>
-#endif
-
 #include "addSeed.h"
 #include "skizException.h"
 #include "NSStar.h"
@@ -32,7 +26,7 @@
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator: A Dynamic Algorithm" [1], Section 3.2.
  *
 */
-bool removeSeed(vd &VD, real Sk) {
+void removeSeed(vd &VD, real Sk) {
 
     VD.incrementK();
 
@@ -117,5 +111,4 @@ bool removeSeed(vd &VD, real Sk) {
     }
     VD.eraseSk(Sk);
     VD.setNkByIdx(Sk, {});
-    return false;
 }

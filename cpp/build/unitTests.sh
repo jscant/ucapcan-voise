@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cd "$DIR"
+echo Proposition2Check:
+$DIR/Proposition2Check
+
 echo GetVDOpCheck:
 $DIR/GetVDOpCheck
 

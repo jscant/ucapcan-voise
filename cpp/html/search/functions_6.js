@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['updatedict',['updateDict',['../updateDict_8h.html#ae4e5cf796db8a46b879fec6b4b9418af',1,'updateDict.h']]]
+  ['nsstar',['nsStar',['../NSStar_8cpp.html#a08c5bf29a9c4aadfa72d49fd80a49ab0',1,'nsStar(const vd &amp;VD):&#160;NSStar.cpp'],['../NSStar_8h.html#a08c5bf29a9c4aadfa72d49fd80a49ab0',1,'nsStar(const vd &amp;VD):&#160;NSStar.cpp']]]
 ];

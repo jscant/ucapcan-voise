@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['readmatrix',['readMatrix',['../group__readMatrix.html',1,'']]],
-  ['readmatrix_2ecpp',['readMatrix.cpp',['../readMatrix_8cpp.html',1,'']]],
-  ['readmatrix_2eh',['readMatrix.h',['../readMatrix_8h.html',1,'']]],
-  ['readseeds',['readSeeds',['../group__readSeeds.html',1,'']]],
-  ['readseeds_2ecpp',['readSeeds.cpp',['../readSeeds_8cpp.html',1,'']]],
-  ['readseeds_2eh',['readSeeds.h',['../readSeeds_8h.html',1,'']]],
-  ['real',['real',['../typedefs_8h.html#a58a0c7cf2501f4492da833421be92547',1,'typedefs.h']]],
-  ['realvec',['RealVec',['../typedefs_8h.html#a84b6d9a0fbb45e01ad4a3aa5667f2992',1,'typedefs.h']]],
-  ['removeseed',['removeSeed',['../removeSeed_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeed_8h.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeedBackup_8cpp.html#a03ef0714b7c16aaa2fd9ffdf467938d9',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeedBackup.cpp']]],
-  ['removeseed_2ecpp',['removeSeed.cpp',['../removeSeed_8cpp.html',1,'']]],
-  ['removeseed_2eh',['removeSeed.h',['../removeSeed_8h.html',1,'']]],
-  ['removeseedbackup_2ecpp',['removeSeedBackup.cpp',['../removeSeedBackup_8cpp.html',1,'']]],
-  ['removeseedfromvd',['removeSeedFromVD',['../group__removeSeedFromVD.html',1,'']]],
-  ['removeseedfromvd_2ecpp',['removeSeedFromVD.cpp',['../removeSeedFromVD_8cpp.html',1,'']]],
-  ['removeseedfromvdbatch',['removeSeedFromVDBatch',['../group__removeSeedFromVDBatch.html',1,'']]],
-  ['removeseedfromvdbatch_2ecpp',['removeSeedFromVDBatch.cpp',['../removeSeedFromVDBatch_8cpp.html',1,'']]]
+  ['path',['path',['../testAddSeedCheckLambda_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testAddSeedCheckLambda.cpp'],['../testAddSeedCheckV_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testAddSeedCheckV.cpp'],['../testGetCentroid_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testGetCentroid.cpp'],['../testGetVDOp_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testGetVDOp.cpp'],['../testRemoveSeedCheckLambda_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testRemoveSeedCheckLambda.cpp'],['../testRemoveSeedCheckV_8cpp.html#a4d455efceee21e97d8e21ee40e9b4a20',1,'path():&#160;testRemoveSeedCheckV.cpp']]],
+  ['pointinregion',['pointInRegion',['../pointInRegion_8cpp.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegion.cpp'],['../pointInRegion_8h.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegion.cpp'],['../pointInRegionBackup_8cpp.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegionBackup.cpp'],['../group__pointInRegion.html',1,'(Global Namespace)']]],
+  ['pointinregion_2ecpp',['pointInRegion.cpp',['../pointInRegion_8cpp.html',1,'']]],
+  ['pointinregion_2eh',['pointInRegion.h',['../pointInRegion_8h.html',1,'']]],
+  ['pointinregionbackup_2ecpp',['pointInRegionBackup.cpp',['../pointInRegionBackup_8cpp.html',1,'']]],
+  ['proposition2',['proposition2',['../proposition2_8cpp.html#a3ccc7d269525ac1cd842c5cc48866883',1,'proposition2(const vd &amp;VD, uint32 lam, const RealVec &amp;candidates, std::array&lt; real, 2 &gt; cc):&#160;proposition2.cpp'],['../proposition2_8h.html#a3ccc7d269525ac1cd842c5cc48866883',1,'proposition2(const vd &amp;VD, uint32 lam, const RealVec &amp;candidates, std::array&lt; real, 2 &gt; cc):&#160;proposition2.cpp']]],
+  ['proposition2_2ecpp',['proposition2.cpp',['../proposition2_8cpp.html',1,'']]],
+  ['proposition2_2eh',['proposition2.h',['../proposition2_8h.html',1,'']]]
 ];

@@ -1,12 +1,12 @@
-AddSeedCheckLambda 16 0.163083
-RemoveSeedCheckLambda 16 0.164312
-AddSeedCheckV 16 0.19475
-RemoveSeedCheckV 16 0.181656
-PointInRegionCheck 15 0.00857568
-SqDistanceCheck 16 0.000136979
-InVectorCheck 16 9.9085e-05
-MetricChecks 15 0.000106546
-GetVDOpCheck 7 0.000246871
-GetCentroidCheck 4 0.000422226
-Proposition2Check 1 0.00204572
+AddSeedCheckLambda 21 0.198565
+RemoveSeedCheckLambda 21 0.161579
+AddSeedCheckV 21 0.157772
+RemoveSeedCheckV 21 0.190205
+PointInRegionCheck 20 0.00774525
+SqDistanceCheck 21 9.70619e-05
+InVectorCheck 21 9.05994e-05
+MetricChecks 20 0.000102444
+GetVDOpCheck 12 0.000195433
+GetCentroidCheck 9 0.000257647
+Proposition2Check 6 0.000647018
 ---

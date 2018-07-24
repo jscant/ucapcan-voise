@@ -19,28 +19,56 @@ Unit tests for whether the add\+Seed method correctly recalculates the $ \nu $ m
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{testAddSeedCheckV_8cpp_af8f7029bd707ce8733e89616b76482af}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Check whether the add\+Seed method correctly recalculates the v matrix.\char`\"{})
+\mbox{\hyperlink{testAddSeedCheckV_8cpp_af8f7029bd707ce8733e89616b76482af}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Check whether the \mbox{\hyperlink{addSeed_8h_a6d39c734e0cb94bd35d1b7f2b147f245}{add\+Seed}} method correctly recalculates the v matrix.\char`\"{})
 \begin{DoxyCompactList}\small\item\em Adds seeds to VD and checks (in a greedy fashion) each pixel for whether there exists one or more closest seeds, and whether this corresponds to the relevant $ \nu $ matrix entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}\label{testAddSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}} 
-std\+::string {\bfseries path} = \char`\"{}../src/test/resources/\char`\"{}
+std\+::string \mbox{\hyperlink{testAddSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}{path}} = \char`\"{}../src/test/resources/\char`\"{}
 \item 
-\mbox{\Hypertarget{testAddSeedCheckV_8cpp_ae41669d5409e36365c6e8e8a8f182117}\label{testAddSeedCheckV_8cpp_ae41669d5409e36365c6e8e8a8f182117}} 
-load\+Struct {\bfseries load\+Results} = load\+VD(path, \char`\"{}bench\+V\+D\+Seeds256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V256.\+txt\char`\"{})
+load\+Struct \mbox{\hyperlink{testAddSeedCheckV_8cpp_ae41669d5409e36365c6e8e8a8f182117}{load\+Results}} = load\+VD(\mbox{\hyperlink{testRemoveSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}{path}}, \char`\"{}bench\+V\+D\+Seeds256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V256.\+txt\char`\"{})
 \item 
-\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testAddSeedCheckV_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
-\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sx} = load\+Results.\+Sx
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} \mbox{\hyperlink{testAddSeedCheckV_8cpp_a1ecb67c25ad584b8ac97474055a5c384}{Sx}} = load\+Results.\+Sx
 \item 
-\mbox{\Hypertarget{testAddSeedCheckV_8cpp_ac6b6552a70499e6a83cff95e91a0f259}\label{testAddSeedCheckV_8cpp_ac6b6552a70499e6a83cff95e91a0f259}} 
-\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} {\bfseries Sy} = load\+Results.\+Sy
+\mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} \mbox{\hyperlink{testAddSeedCheckV_8cpp_ac6b6552a70499e6a83cff95e91a0f259}{Sy}} = load\+Results.\+Sy
 \item 
-\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}\label{testAddSeedCheckV_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}} 
-\mbox{\hyperlink{classvd}{vd}} {\bfseries VD} = load\+Results.\+VD
+\mbox{\hyperlink{classvd}{vd}} \mbox{\hyperlink{testAddSeedCheckV_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}{VD}} = load\+Results.\+VD
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Unit tests for whether the add\+Seed method correctly recalculates the $ \nu $ matrix. 
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{testAddSeedCheckV_8cpp_ae41669d5409e36365c6e8e8a8f182117}\label{testAddSeedCheckV_8cpp_ae41669d5409e36365c6e8e8a8f182117}} 
+\index{test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}!load\+Results@{load\+Results}}
+\index{load\+Results@{load\+Results}!test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}}
+\subsubsection{\texorpdfstring{load\+Results}{loadResults}}
+{\footnotesize\ttfamily load\+Struct load\+Results = load\+VD(\mbox{\hyperlink{testRemoveSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}{path}}, \char`\"{}bench\+V\+D\+Seeds256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+Lambda256.\+txt\char`\"{}, \char`\"{}bench\+V\+D\+V256.\+txt\char`\"{})}
+
+\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}\label{testAddSeedCheckV_8cpp_a4d455efceee21e97d8e21ee40e9b4a20}} 
+\index{test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}!path@{path}}
+\index{path@{path}!test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}}
+\subsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily std\+::string path = \char`\"{}../src/test/resources/\char`\"{}}
+
+\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a1ecb67c25ad584b8ac97474055a5c384}\label{testAddSeedCheckV_8cpp_a1ecb67c25ad584b8ac97474055a5c384}} 
+\index{test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}!Sx@{Sx}}
+\index{Sx@{Sx}!test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}}
+\subsubsection{\texorpdfstring{Sx}{Sx}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} Sx = load\+Results.\+Sx}
+
+\mbox{\Hypertarget{testAddSeedCheckV_8cpp_ac6b6552a70499e6a83cff95e91a0f259}\label{testAddSeedCheckV_8cpp_ac6b6552a70499e6a83cff95e91a0f259}} 
+\index{test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}!Sy@{Sy}}
+\index{Sy@{Sy}!test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}}
+\subsubsection{\texorpdfstring{Sy}{Sy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{typedefs_8h_a84b6d9a0fbb45e01ad4a3aa5667f2992}{Real\+Vec}} Sy = load\+Results.\+Sy}
+
+\mbox{\Hypertarget{testAddSeedCheckV_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}\label{testAddSeedCheckV_8cpp_a17edf6f20961d07c702ee68bb30d9bf3}} 
+\index{test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}!VD@{VD}}
+\index{VD@{VD}!test\+Add\+Seed\+Check\+V.\+cpp@{test\+Add\+Seed\+Check\+V.\+cpp}}
+\subsubsection{\texorpdfstring{VD}{VD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvd}{vd}} VD = load\+Results.\+VD}
 

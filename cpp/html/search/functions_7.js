@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['vd',['vd',['../classvd.html#a765c16ee377a2a0f9651d555edd3a158',1,'vd']]]
+  ['pointinregion',['pointInRegion',['../pointInRegion_8cpp.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegion.cpp'],['../pointInRegion_8h.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegion.cpp'],['../pointInRegionBackup_8cpp.html#acbc5d3411a9380422cb9ac4f2723f5a7',1,'pointInRegion(const vd &amp;VD, std::array&lt; real, 2 &gt; pt, real s, RealVec A):&#160;pointInRegionBackup.cpp']]],
+  ['proposition2',['proposition2',['../proposition2_8cpp.html#a3ccc7d269525ac1cd842c5cc48866883',1,'proposition2(const vd &amp;VD, uint32 lam, const RealVec &amp;candidates, std::array&lt; real, 2 &gt; cc):&#160;proposition2.cpp'],['../proposition2_8h.html#a3ccc7d269525ac1cd842c5cc48866883',1,'proposition2(const vd &amp;VD, uint32 lam, const RealVec &amp;candidates, std::array&lt; real, 2 &gt; cc):&#160;proposition2.cpp']]]
 ];

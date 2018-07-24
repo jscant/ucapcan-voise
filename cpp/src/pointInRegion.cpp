@@ -1,20 +1,19 @@
 /**
  * @file
- * @brief Checks whether a point is within region C(s, A) according to [1] Definition 2.5
+ * @brief Checks whether a point is within region C(s, A) according to [1]
+ * definition 2.5
  *
  */
 
 #include "pointInRegion.h"
 #include "skizException.h"
-
-#ifndef INF
-#define INF std::numeric_limits<real>::infinity()
-#endif
+#include "typedefs.h"
 
 /**
  * @defgroup pointInRegion pointInRegion
  * @ingroup pointInRegion
- * @brief Checks whether a point is within region C(s, A) according to [1] Definition 2.5
+ * @brief Checks whether a point is within region C(s, A) according to [1]
+ * definition 2.5
  *
  * @param vd Voronoi Diagram
  * @param pt x and y coordinates of point to check
@@ -24,20 +23,27 @@
  * @returns false: Point is not in C(s, A)
  */
 bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
-    if (A.size() < 1) {
+    if (A.size() < 1) { // If no argument supplied, use default (neighbours)
         A = VD.getNkByIdx(s);
     }
-    const real pt1 = pt[0];
-    const real pt2 = pt[1];
+
+    // Point in question
+    const real pt1 = pt.at(0);
+    const real pt2 = pt.at(1);
+
+    // Location of seed that defines VR in question
     const real s1 = VD.getSxByIdx(s);
     const real s2 = VD.getSyByIdx(s);
 
+    // Lambda fn from eq. 2.5 in [1]
     auto f = [](real p1, real p2, real q1, real q2, real i) -> real {
-        return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) - pow(q2, 2))) / (p1 - q1);
+        return ((p2 - q2) * i + 0.5 * (pow(p1, 2) + pow(p2, 2) - pow(q1, 2) -
+                                       pow(q2, 2))) / (p1 - q1);
     };
 
     RealVec lb, ub;
 
+    // Proceed to get all bounds imposed by seeds in A (1 per seed)
     for (real r : A) {
         if (r != s) {
             const real r1 = VD.getSxByIdx(r);
@@ -52,7 +58,10 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
                         return false;
                     }
                 } else {
-                    std::string msg = "Identical seeds: " + std::to_string((int)s1) + ", " + std::to_string((int)s2) + "\n";
+                    // Identical seeds; this should not happen.
+                    std::string msg = "Identical seeds: " +
+                            std::to_string((int)s1) + ", " +
+                                      std::to_string((int)s2) + "\n";
                     throw SKIZIdenticalSeedsException(msg.c_str());
                 }
                 continue;
@@ -64,29 +73,19 @@ bool pointInRegion(const vd &VD, std::array<real, 2> pt, real s, RealVec A) {
         }
     }
 
+    // Find lowest upper and highest lower bound (final conditions)
     real highestLB, lowestUB;
-    try {
-        if (lb.size() > 0) {
-            highestLB = *std::max_element(lb.begin(), lb.end());
-        } else {
-            highestLB = -INF;
-        }
-    } catch (const std::exception &e) {
-        // PUT ERR MSG HERE
-        highestLB = -INF;
+    if (lb.size() > 0) {
+        highestLB = *std::max_element(lb.begin(), lb.end());
+    } else {
+        highestLB = -INF; // No lower bound, no condition here
     }
-    try {
-        if (ub.size() > 0) {
-            lowestUB = *std::min_element(ub.begin(), ub.end());
-        } else {
-            lowestUB = INF;
-        }
-    } catch (const std::exception &e) {
-        // PUT ERR MSG HERE
-        lowestUB = INF;
+    if (ub.size() > 0) {
+        lowestUB = *std::min_element(ub.begin(), ub.end());
+    } else {
+        lowestUB = INF; // No upper bound, no condition here
     }
-    if (highestLB - 10e-7 <= pt1 && pt1 <= lowestUB + 10e-7) {
-        return true;
-    }
-    return false;
+
+    // Final conditions to be met for membership of C(s, A)
+    return (highestLB - EPS < pt1) && (pt1 < lowestUB + EPS);
 }

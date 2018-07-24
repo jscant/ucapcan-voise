@@ -23,7 +23,8 @@ if(GENERATE_DOXYGEN)
         set(DOXYGEN_SKIP_FUNCTION_MACROS NO)
         set(DOXYGEN_LAYOUT_FILE DoxygenLayout.xml)
         set(DOXYGEN_SHOW_DIRECTORIES YES)
-        set(DOXYGEN_INPUT "src src/aux-functions src/test other/mainpage-info.txt src/mex")
+        set(DOXYGEN_INPUT "src src/aux-functions src/test other/mainpage-info
+        .txt src/mex src/vd.cpp")
         set(doxyfile_in build/CMakeDoxyfile.in)
         set(doxyfile ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile)
 
@@ -37,8 +38,6 @@ if(GENERATE_DOXYGEN)
                 COMMENT "Generating API documentation with Doxygen"
                 VERBATIM)
 
-        #install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/html
-                #DESTINATION share/doc)
     endif(DOXYGEN_FOUND)
 endif(GENERATE_DOXYGEN)
 
@@ -89,7 +88,7 @@ if(TESTING)
     add_test(NAME MetricChecks COMMAND MetricChecks)
     add_test(NAME GetVDOpCheck COMMAND GetVDOpCheck)
     add_test(NAME GetCentroidCheck COMMAND GetCentroidCheck)
-    add_test(NAME Proposition2Check COMMAND GetCentroidCheck)
+    add_test(NAME Proposition2Check COMMAND Proposition2Check)
 
 endif(TESTING)
 

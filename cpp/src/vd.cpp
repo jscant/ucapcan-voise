@@ -6,6 +6,7 @@
 #include "vd.h"
 
 /**
+ * @brief Constructor
  * @param rows Number of rows in pixel matrix
  * @param cols Number of cols in pixel matrix
  */
@@ -14,12 +15,13 @@ vd::vd(real rows, real cols) {
     nc = cols;
 }
 
-vd::~vd() {
-    return;
-}
+/**
+ * @brief Default destructor
+ */
+vd::~vd() { }
 
 /**
- * Set Vk
+ * @brief Set Vk
  * @param val
  */
 void vd::setVk(V_struct val) {
@@ -27,7 +29,8 @@ void vd::setVk(V_struct val) {
 };
 
 /**
- * Set W, as defined in [1], Section 2.2. Only for use with VOISE algorithm matlab interface.
+ * @brief Set W, as defined in [1], Section 2.2. Only for use with VOISE
+ * algorithm Matlab interface.
  * @param val W_struct containing information about restricted space
  */
 void vd::setW(W_struct val) {
@@ -35,7 +38,7 @@ void vd::setW(W_struct val) {
 };
 
 /**
- * Set S. Only for use with VOISE algorithm matlab interface.
+ * @brief Set S. Only for use with VOISE algorithm matlab interface.
  * @param val W_struct containing information about S
  */
 void vd::setS(W_struct val) {
@@ -43,7 +46,7 @@ void vd::setS(W_struct val) {
 };
 
 /**
- * Set \f$ \lambda \f$ matrix, as defined in [1] Section 3
+ * @brief Set \f$ \lambda \f$ matrix, as defined in [1] Section 3
  * @param newLam Eigen array containing \f$ \lambda \f$
  */
 void vd::setLam(Mat newLam) {
@@ -51,7 +54,7 @@ void vd::setLam(Mat newLam) {
 };
 
 /**
- * Set \f$\nu\f$ matrix, as defined in [1] Section 3
+ * @brief Set \f$\nu\f$ matrix, as defined in [1] Section 3
  * @param newV Eigen array containing \f$\nu\f$
  */
 void vd::setV(Mat newV) {
@@ -59,7 +62,8 @@ void vd::setV(Mat newV) {
 };
 
 /**
- * Set individual element of \f$\lambda\f$ matrix, as defined in [1] Section 3
+ * @brief Set individual element of \f$\lambda\f$ matrix, as defined in [1]
+ * Section 3
  * @param i Row index of \f$\lambda\f$
  * @param j Column index of \f$\lambda\f$
  * @param val Value to set \f$\lambda_{ij}\f$
@@ -69,7 +73,8 @@ void vd::setLamByIdx(uint32 i, uint32 j, real val) {
 };
 
 /**
- * Set individual element of \f$\nu\f$ matrix, as defined in [1] Section 3
+ * @brief Set individual element of \f$\nu\f$ matrix, as defined in [1]
+ * Section 3
  * @param i Row index of \f$\nu\f$
  * @param j Column index of \f$\nu\f$
  * @param val Value to set \f$\nu{ij}\f$
@@ -79,7 +84,7 @@ void vd::setVByIdx(uint32 i, uint32 j, real val) {
 };
 
 /**
- * Set coordinates of all seeds in Voronoi diagram
+ * @brief Set coordinates of all seeds in Voronoi diagram
  * @param s (ns x 2) Eigen::Array<double> containing coordinates of ns seeds
  */
 void vd::setSeeds(Mat s) {
@@ -87,7 +92,7 @@ void vd::setSeeds(Mat s) {
 };
 
 /**
- * Set x coordinates of each pixel.
+ * @brief Set x coordinates of each pixel.
  * @param x Eigen::Array<double> containing x coordinates of each pixel
  */
 void vd::setPx(Mat x) {
@@ -95,7 +100,7 @@ void vd::setPx(Mat x) {
 };
 
 /**
- * Set y coordinates of each pixel
+ * @brief Set y coordinates of each pixel
  * @param y Eigen::Array<double> containing y coordinates of each pixel
  */
 void vd::setPy(Mat y) {
@@ -103,7 +108,7 @@ void vd::setPy(Mat y) {
 };
 
 /**
- * Set iteration number (k) as defined in [1], Section 3
+ * @brief Set iteration number (k) as defined in [1], Section 3
  * @param val Value to which k is set
  */
 void vd::setK(real val) {
@@ -111,32 +116,31 @@ void vd::setK(real val) {
 };
 
 /**
- * Set Sx, the dictionary which maps seed ID to x coordinate
- * @param val Dictionary (Sx)
+ * @brief Set Sx, the vector of x coordinates of all seeds
+ * @param val RealVec (Sx)
  */
 void vd::setSx(RealVec val) {
     Sx = val;
 };
 
 /**
- * Set Sy, the dictionary which maps seed ID to y coordinate
- * @param val Dictionary (Sy)
+ * @brief Set Sy, the vector of y coordinates of all seeds
+ * @param val RealVec (Sy)
  */
 void vd::setSy(RealVec val) {
     Sy = val;
 };
 
 /**
- * Set Sk, the dictionary which maps seed ID to seed ID. A map is used for uniqueness and consistensy with other
- * functions and methods.
- * @param val Dictionary (Sk). All keys should be equal to their values.
+ * @brief Set Sk, the vector of active seed IDs
+ * @param val RealVec (Sk)
  */
 void vd::setSk(RealVec val) {
     Sk = val;
 };
 
 /**
- * Set individual element in Sx dictionary
+ * @brief Set element in Sx vector
  * @param idx Key
  * @param val x coordinate
  */
@@ -145,7 +149,7 @@ void vd::setSxByIdx(uint32 idx, real val) {
 };
 
 /**
- * Set individual element in Sy dictionary
+ * @brief Set element in Sy vector
  * @param idx Key
  * @param val y coordinate
  */
@@ -154,7 +158,7 @@ void vd::setSyByIdx(uint32 idx, real val) {
 };
 
 /**
- * Set individual element in Sk dictionary
+ * @brief Set individual element in Sk vector
  * @param idx Key
  * @param val k
  */
@@ -163,15 +167,17 @@ void vd::setSkByIdx(uint32 idx, real val) {
 };
 
 /**
- * Set neighbour relationships dictionary, as defined in [1] Section 3
- * @param val Dictionary of vectors { seed ID : Vector of neighbouring seed IDs }
+ * @brief Set neighbour relationships dictionary, as defined in [1] Section 3
+ * @param val Dictionary of vectors
+ * { seed ID : Vector of neighbouring seed IDs }
  */
 void vd::setNk(std::map<real, RealVec> val) {
     Nk = val;
 };
 
 /**
- * Set individual element in neighbour relationships dictionary, as defined in [1] Section 3
+ * @brief Set individual element in neighbour relationships dictionary, as
+ * defined in [1] Section 3
  * @param idx Key (seed ID)
  * @param val Vector of neighbouring seed IDs
  */
@@ -180,14 +186,15 @@ void vd::setNkByIdx(uint32 idx, RealVec val) {
 };
 
 /**
- * Increment iteration count (k) by 1, as defined in [1] Section 3
+ * @brief Increment iteration count (k) by 1, as defined in [1] Section 3
  */
 void vd::incrementK() {
     k += 1;
 };
 
 /**
- * Get Vk struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface.
+ * @brief Get Vk struct, as defined in [1] Section 3. Only for use with
+ * VOISE algorithm matlab interface.
  * @return Vk
  */
 V_struct vd::getVk() const {
@@ -195,7 +202,8 @@ V_struct vd::getVk() const {
 };
 
 /**
- * Get W struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface.
+ * @brief Get W struct, as defined in [1] Section 3. Only for use with VOISE
+ * algorithm matlab interface.
  * @return W
  */
 W_struct vd::getW() const {
@@ -203,7 +211,8 @@ W_struct vd::getW() const {
 };
 
 /**
- * Get S struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface.
+ * @brief Get S struct, as defined in [1] Section 3. Only for use with VOISE
+ * algorithm matlab interface.
  * @return S
  */
 W_struct vd::getS() const {
@@ -211,8 +220,9 @@ W_struct vd::getS() const {
 };
 
 /**
- * Get \f$\lambda\f$ matrix, as defined in [1] Section 3
- * @returns Eigen::Array of values of \f$\lambda_{ij}\f$ at each pixel. \f$\lambda_{ij}\f$ is the seed which is closest to pixel
+ * @brief Get \f$\lambda\f$ matrix, as defined in [1] Section 3
+ * @returns Eigen::Array of values of \f$\lambda_{ij}\f$ at each pixel.
+ * \f$\lambda_{ij}\f$ is the seed which is closest to pixel
  * (i, j)
  */
 Mat vd::getLam() const {
@@ -220,8 +230,9 @@ Mat vd::getLam() const {
 };
 
 /**
- * Get \f$\nu\f$ matrix, as defined in [1] Section 3
- * @returns Eigen::Array of values of \f$\nu\f$ at each pixel. \f$\nu_{ij}\f$ = 1 iff there exist two or more closest seeds,
+ * @brief Get \f$\nu\f$ matrix, as defined in [1] Section 3
+ * @returns Eigen::Array of values of \f$\nu\f$ at each pixel.
+ * \f$\nu_{ij}\f$ = 1 iff there exist two or more closest seeds,
  * else 0.
  */
 Mat vd::getV() const {
@@ -229,35 +240,39 @@ Mat vd::getV() const {
 };
 
 /**
- * Get element of \f$\lambda\f$ matrix, as defined in [1] Section 3
+ * @brief Get element of \f$\lambda\f$ matrix, as defined in [1] Section 3
  * @param i Row
  * @param j Column
- * @returns Value of \f$\lambda_{ij}\f$ of pixel in the \f$ i^{th} \f$ row and \f$ j^{th} \f$ column. \f$\lambda_{ij}\f$
- * is the seed which is closest to pixel (i, j).
+ * @returns Value of \f$\lambda_{ij}\f$ of pixel in the \f$ i^{th} \f$ row and
+ * \f$ j^{th} \f$ column. \f$\lambda_{ij}\f$ is the seed which is closest to
+ * pixel (i, j).
  */
 real vd::getLamByIdx(uint32 i, uint32 j) const {
     return Vk.lam(i, j);
 };
 
 /**
- * Get element of \f$\nu\f$ matrix, as defined in [1] Section 3
- * @returns Value of \f$\nu\f$ at each pixel in the \f$ i^{th} \f$ row and \f$ j^{th} \f$ column. \f$\nu_{ij}\f$ = 1
- * iff there exist two or more closest seeds, else 0
+ * @brief Get element of \f$\nu\f$ matrix, as defined in [1] Section 3
+ * @returns Value of \f$\nu\f$ at each pixel in the \f$ i^{th} \f$ row and
+ * \f$ j^{th} \f$ column. \f$\nu_{ij}\f$ = 1 iff there exist two or more
+ * closest seeds, else 0
  */
 real vd::getVByIdx(uint32 i, uint32 j) const {
     return Vk.v(i, j);
 };
 
 /**
- * Returns a (ns x 2) Eigen::Array of all seed coordinates, where ns is the number of seeds in the Voronoi diagram.
- * @returns (ns x 2) Eigen::Array of all seed coordinates. The first column is x coordinates; the second is y coordinates.
+ * @brief Returns a (ns x 2) Eigen::Array of all seed coordinates, where ns
+ * is the number of seeds in the Voronoi diagram.
+ * @returns (ns x 2) Eigen::Array of all seed coordinates. The first column
+ * is x coordinates; the second is y coordinates.
  */
 Mat vd::getSeeds() const {
     return seeds;
 };
 
 /**
- * Returns a (nr x nc) Eigen:Array of x coordinates of each pixel
+ * @brief Returns a (nr x nc) Eigen:Array of x coordinates of each pixel
  * @returns (nr x nc) Eigen:Array of x coordinates of each pixel
  */
 Mat vd::getPx() const {
@@ -265,7 +280,7 @@ Mat vd::getPx() const {
 };
 
 /**
- * Returns a (nr x nc) Eigen:Array of y coordinates of each pixel
+ * @brief Returns a (nr x nc) Eigen:Array of y coordinates of each pixel
  * @returns (nr x nc) Eigen:Array of y coordinates of each pixel
  */
 Mat vd::getPy() const {
@@ -273,7 +288,7 @@ Mat vd::getPy() const {
 };
 
 /**
- * Get iteration count (k) as defined in [1] Section 3.
+ * @brief Get iteration count (k) as defined in [1] Section 3.
  * @return Iteration count (k)
  */
 uint32 vd::getK() const {
@@ -281,7 +296,7 @@ uint32 vd::getK() const {
 };
 
 /**
- * Get the number of rows of pixels
+ * @brief Get the number of rows of pixels
  * @returns nr: the number of rows of pixels
  */
 uint32 vd::getNr() const {
@@ -289,7 +304,7 @@ uint32 vd::getNr() const {
 };
 
 /**
- * Get the number of columns of pixels
+ * @brief Get the number of columns of pixels
  * @returns nc: the number of columns of pixels
  */
 uint32 vd::getNc() const {
@@ -297,41 +312,41 @@ uint32 vd::getNc() const {
 };
 
 /**
- * Get Sx, the dictionary which maps seed ID to x coordinate
- * @returns Sx dictionary { seed ID : x coordinate }
+ * @brief Get Sx, the vector of x coordinates of seeds
+ * @returns Sx vector of x coordinates of seeds
  */
 RealVec vd::getSx() const {
     return Sx;
 };
 
 /**
- * Get Sy, the dictionary which maps seed ID to y coordinate
- * @returns Sy dictionary { seed ID : y coordinate }
+ * @brief Get Sy, the vector of y coordinates of seeds
+ * @returns Sy vector of y coordinates of seeds
  */
 RealVec vd::getSy() const {
     return Sy;
 };
 
 /**
- * Get Sk, the dictionary which maps seed ID to seed ID. Dictionary is used for consistency with other methods and
- * functions and to ensure uniqueness of keys/values.
- * @returns Sk dictionary { seed ID : seed ID }
+ * @brief Get Sk, the vector of active seed IDs
+ * @returns Sk vector of active seed IDs
  */
 RealVec vd::getSk() const {
     return Sk;
 };
 
 /**
- * Get neighbour relationships dictionary, as defined in [1] Section 3.
- * @returns Nk, a dictionary of vectors { seed ID : vector of neighbouring seed IDs }
+ * @brief Get neighbour relationships dictionary, as defined in [1] Section 3.
+ * @returns Nk, a dictionary of vectors { seed ID : vector of neighbouring
+ * seed IDs }
  */
 std::map<real, RealVec> vd::getNk() const {
     return Nk;
 };
 
 /**
- * Get element of Sx, the dictionary which maps seed ID to x coordinate.
- * @param idx Index of seed for which coordinate is to be retrieved
+ * @brief Get element of Sx, the vector of x coordinates of seeds
+ * @param idx Seed ID for which coordinate is to be retrieved
  * @returns x coordinate if seed with ID = idx
  */
 real vd::getSxByIdx(uint32 idx) const {
@@ -339,8 +354,8 @@ real vd::getSxByIdx(uint32 idx) const {
 };
 
 /**
- * Get element of Sy, the dictionary which maps seed ID to y coordinate.
- * @param idx Index of seed for which coordinate is to be retrieved
+ * @brief Get element of Sy, the vector of y coordinates of seeds
+ * @param idx Seed ID for which coordinate is to be retrieved
  * @returns y coordinate if seed with ID = idx
  */
 real vd::getSyByIdx(uint32 idx) const {
@@ -348,17 +363,16 @@ real vd::getSyByIdx(uint32 idx) const {
 };
 
 /**
- * Get element of Sk, the dictionary which maps seed ID to seed ID. Dictionary is used for consistency with other
- * methods and functions and to ensure uniqueness of keys/values. (Unused)
+ * @brief Get element of Sk, vector of active seed IDs
  * @param idx Index of seed
- * @returns Index of seed
+ * @returns ID of seed at index idx
  */
 real vd::getSkByIdx(uint32 idx) const {
     return Sk.at(idx);
 };
 
 /**
- * Get neighbour relationship for seed, as defined in [1] Section 3.
+ * @brief Get neighbour relationship for seed, as defined in [1] Section 3.
  * @param idx ID of seed for which neighbour relationships are to be retrieved
  * @returns Vector of neighbouring seeds
  */
@@ -367,37 +381,33 @@ RealVec vd::getNkByIdx(uint32 idx) const {
 }
 
 /**
- * Returns x coordinate of pixel
- * @returns x coordinate of pixel (i, j)
+ * @brief Erases an entry in the seed index vector Sk
+ * @param seedID ID of seed to erase from active seed vector
  */
-real vd::getPxByIdx(uint32 i, uint32 j) {
-    return px(i, j);
+void vd::eraseSk(uint32 seedID) {
+    Sk.erase(std::remove(Sk.begin(), Sk.end(), seedID), Sk.end());
 }
 
 /**
- * Returns y coordinate of pixel
- * @returns y coordinate of pixel (i, j)
+ * @brief Add x coordinate to Sx
+ * @param val x component of coordinates of new seed
  */
-real vd::getPyByIdx(uint32 i, uint32 j) {
-    return py(i, j);
-}
-
-/**
- * Erases an entry in the seed index dictionary Sk
- * @param idx Entry to erase
- */
-void vd::eraseSk(uint32 idx) {
-    Sk.erase(std::remove(Sk.begin(), Sk.end(), idx), Sk.end());
-}
-
 void vd::addSx(real val) {
     Sx.push_back(val);
 };
 
+/**
+ * @brief Add y coordinate to Sy
+ * @param val y component of coordinates of new seed
+ */
 void vd::addSy(real val) {
     Sy.push_back(val);
 };
 
+/**
+ * @brief Add seed ID to vector of active seeds
+ * @param val ID of seed to add
+ */
 void vd::addSk(real val) {
     Sk.push_back(val);
 };

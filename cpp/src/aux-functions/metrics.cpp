@@ -1,14 +1,20 @@
-//
-// Created by root on 03/07/18.
-//
-
-#include "metrics.h"
+/**
+ * @file
+ * @brief Series of metrics to be used in getVDOp (substitute for Matlab's
+ * ability to pass function handles as arguments). Used in VOISE.
+ *
+ * @date Created 03/07/18
+ * @date Modified 24/07/18
+ *
+ * @author Jack Scantlebury
+ */
 
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>
 #include <matrix.h>
 #endif
 
+#include "metrics.h"
 #include <vector>
 #include <numeric>
 #include <algorithm>
@@ -53,7 +59,8 @@ namespace metrics {
      * @defgroup sqrtLen metrics::sqrtLen
      * @ingroup sqrtLen
      * @brief Finds the square root of the length of a vector
-     * @param vec Vector holding values of which the square root of the length is calculated
+     * @param vec Vector holding values of which the square root of the
+     * length is calculated
      * @return Square root of the length of a vector
      */
     real sqrtLen(RealVec vec) {
@@ -80,7 +87,8 @@ namespace metrics {
      * @defgroup stdDev metrics::stdDev
      * @ingroup stdDev
      * @brief Finds the standard deviation of a vector of numbers
-     * @param vec Vector holding values over which the standard deviation is to be found
+     * @param vec Vector holding values over which the standard deviation is
+     * to be found
      * @return Standard deviation of items in vector, as defined by:
      * \f[
      * \sigma = \sum_{i=1}^{N-1}\sqrt{\frac{(x_i-\bar{x})}{N - 1}}
@@ -89,10 +97,11 @@ namespace metrics {
      */
     real stdDev(RealVec vec) {
         if (vec.size() == 0) {
-            throw SKIZException("Standard devaition of an empty set is undefined");
+            throw SKIZException("Standard devaition of an empty set is "
+                                "undefined");
         }
         real N = vec.size();
-        if (N == 1 || N == 0) {
+        if (N == 1) {
             return 0;
         }
         real sum = std::accumulate(vec.begin(), vec.end(), 0.0);

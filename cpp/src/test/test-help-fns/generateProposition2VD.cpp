@@ -45,7 +45,7 @@ loadStruct generateProposition2VD(uint32 dim) {
     Nk[3] = {1, 4};
     Nk[4] = {2, 3};
 
-    for(int i = 0; i < Sx.size(); ++i){
+    for(auto i = 0; i < Sx.size(); ++i){
         Sx[i] += 1;
         Sy[i] += 1;
     }

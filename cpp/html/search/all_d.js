@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['w_5fstruct',['W_struct',['../structW__struct.html',1,'']]],
-  ['what',['what',['../classSKIZException.html#a55c36f650f02f283215679ad070dd54b',1,'SKIZException::what()'],['../classSKIZLinearSeedsException.html#a4d187b93ce4261b7303ab75e23e06e30',1,'SKIZLinearSeedsException::what()'],['../classSKIZIdenticalSeedsException.html#a1edd2deac7bafc875e21c67d114494ae',1,'SKIZIdenticalSeedsException::what()'],['../classSKIZIOException.html#a9c1c40e5e47cb51fb0fb3803cdae4a76',1,'SKIZIOException::what()']]]
+  ['v',['v',['../structV__struct.html#aa78c83185af94c1df09f59a689881cd9',1,'V_struct']]],
+  ['v_5fstruct',['V_struct',['../structV__struct.html',1,'']]],
+  ['vd',['vd',['../classvd.html',1,'vd'],['../classvd.html#a765c16ee377a2a0f9651d555edd3a158',1,'vd::vd()'],['../testAddSeedCheckLambda_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testAddSeedCheckLambda.cpp'],['../testAddSeedCheckV_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testAddSeedCheckV.cpp'],['../testGetCentroid_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testGetCentroid.cpp'],['../testGetVDOp_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testGetVDOp.cpp'],['../testRemoveSeedCheckLambda_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testRemoveSeedCheckLambda.cpp'],['../testRemoveSeedCheckV_8cpp.html#a17edf6f20961d07c702ee68bb30d9bf3',1,'VD():&#160;testRemoveSeedCheckV.cpp']]],
+  ['vd_2ecpp',['vd.cpp',['../vd_8cpp.html',1,'']]],
+  ['vd_2eh',['vd.h',['../vd_8h.html',1,'']]]
 ];

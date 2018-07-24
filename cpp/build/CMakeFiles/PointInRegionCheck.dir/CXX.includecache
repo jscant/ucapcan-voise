@@ -29,10 +29,6 @@ vd.h
 /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp
-mex.h
--
-matrix.h
--
 addSeed.h
 /home/jack/dev/project/voise-1.3/cpp/src/addSeed.h
 skizException.h
@@ -125,10 +121,6 @@ map
 /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp
 eigen3/Eigen/Dense
 -
-mex.h
--
-matrix.h
--
 math.h
 -
 getRegion.h
@@ -157,12 +149,6 @@ typedefs.h
 /home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp
-set
--
-mex.h
--
-matrix.h
--
 addSeed.h
 /home/jack/dev/project/voise-1.3/cpp/src/addSeed.h
 skizException.h
@@ -719,15 +705,9 @@ vd.h
 /home/jack/dev/project/voise-1.3/cpp/src/vd.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/vd.h
-mex.h
--
-matrix.h
--
 vector
 -
 map
--
-algorithm
 -
 eigen3/Eigen/Dense
 -

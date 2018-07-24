@@ -31,6 +31,7 @@ CMakeFiles/standalone_skiz.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.
 
 CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
 CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/skizException.h
 CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
 CMakeFiles/standalone_skiz.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 

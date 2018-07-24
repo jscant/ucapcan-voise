@@ -57,943 +57,137 @@ Homogeneity Criteria min=0.26 max=1.00 Q(80)=0.75
 Iter  3 Adding 17 seeds to Voronoi Diagram
 Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.60
 Iter  4 Adding 21 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.50
-Iter  5 Adding 17 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter  6 Adding 10 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.52
-Iter  7 Adding 7 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.49
+Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.48
+Iter  5 Adding 20 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.52
+Iter  6 Adding 13 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.49
+Iter  7 Adding 12 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.47
 Iter  8 Adding 6 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.47
-Iter  9 Adding 3 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.47
-Iter 10 Adding 6 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 11 Adding 4 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 12 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 13 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 14 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 15 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 16 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 17 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 18 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 19 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 20 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 21 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 22 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 23 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 24 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 25 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 26 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 27 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 28 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 29 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 30 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 31 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 32 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 33 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 34 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 35 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 36 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 37 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 38 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 39 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 40 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 41 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 42 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 43 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 44 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 45 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 46 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 47 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 48 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 49 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 50 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 51 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 52 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 53 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 54 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 55 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 56 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 57 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 58 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 59 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 60 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 61 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 62 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 63 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 64 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 65 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 66 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 67 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 68 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 69 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 70 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 71 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 72 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 73 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 74 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 75 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 76 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 77 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 78 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 79 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 80 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 81 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 82 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 83 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 84 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 85 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 86 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 87 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 88 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 89 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 90 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 91 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 92 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 93 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 94 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 95 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 96 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 97 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 98 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 99 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 100 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 101 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 102 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 103 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 104 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 105 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 106 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 107 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 108 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 109 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 110 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 111 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 112 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 113 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 114 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 115 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 116 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 117 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 118 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 119 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 120 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 121 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 122 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 123 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 124 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 125 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 126 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 127 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 128 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 129 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 130 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 131 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 132 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 133 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 134 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 135 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 136 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 137 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 138 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 139 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 140 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 141 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 142 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 143 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 144 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 145 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 146 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 147 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 148 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 149 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 150 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 151 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 152 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 153 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 154 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 155 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 156 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 157 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 158 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 159 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 160 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 161 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 162 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 163 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 164 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 165 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 166 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 167 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 168 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 169 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 170 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 171 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 172 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 173 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 174 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 175 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 176 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 177 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 178 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 179 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 180 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 181 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 182 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 183 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 184 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 185 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 186 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 187 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 188 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 189 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 190 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 191 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 192 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 193 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 194 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 195 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 196 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 197 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 198 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 199 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 200 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 201 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 202 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 203 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 204 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 205 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 206 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 207 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 208 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 209 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 210 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 211 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 212 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 213 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 214 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 215 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 216 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 217 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 218 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 219 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 220 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 221 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 222 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 223 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 224 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 225 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 226 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 227 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 228 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 229 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 230 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 231 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 232 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 233 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 234 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 235 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 236 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 237 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 238 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 239 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 240 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 241 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 242 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 243 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 244 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 245 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 246 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 247 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 248 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 249 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 250 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 251 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 252 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 253 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 254 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 255 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 256 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 257 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 258 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 259 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 260 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 261 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 262 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 263 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 264 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 265 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 266 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 267 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 268 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 269 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 270 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 271 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 272 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 273 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 274 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 275 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 276 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 277 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 278 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 279 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 280 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 281 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 282 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 283 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 284 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 285 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 286 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 287 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 288 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 289 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 290 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 291 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 292 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 293 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 294 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 295 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 296 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 297 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 298 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 299 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 300 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 301 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 302 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 303 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 304 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 305 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 306 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 307 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 308 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 309 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 310 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 311 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 312 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 313 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 314 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 315 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 316 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 317 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 318 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 319 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 320 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 321 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 322 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 323 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 324 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 325 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 326 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 327 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 328 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 329 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 330 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 331 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 332 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 333 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 334 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 335 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 336 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 337 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 338 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 339 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 340 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 341 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 342 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 343 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 344 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 345 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 346 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 347 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 348 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 349 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 350 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 351 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 352 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 353 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 354 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 355 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 356 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 357 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 358 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 359 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 360 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 361 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 362 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 363 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 364 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 365 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 366 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 367 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 368 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 369 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 370 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 371 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 372 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 373 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 374 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 375 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 376 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 377 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 378 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 379 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 380 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 381 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 382 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 383 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 384 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 385 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 386 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 387 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 388 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 389 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 390 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 391 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 392 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 393 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 394 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 395 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 396 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 397 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 398 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 399 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 400 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 401 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 402 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 403 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 404 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 405 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 406 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 407 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 408 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 409 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 410 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 411 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 412 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 413 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 414 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 415 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 416 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 417 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 418 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 419 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 420 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 421 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 422 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 423 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 424 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 425 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 426 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 427 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 428 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 429 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 430 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 431 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 432 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 433 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 434 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 435 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 436 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 437 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 438 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 439 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 440 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 441 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 442 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 443 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 444 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 445 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 446 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 447 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 448 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 449 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 450 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 451 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 452 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 453 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 454 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 455 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 456 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 457 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 458 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 459 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 460 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 461 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 462 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 463 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 464 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 465 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 466 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 467 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 468 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 469 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 470 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 471 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 472 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 473 Adding 1 seeds to Voronoi Diagram
-Homogeneity Criteria min=0.02 max=1.00 Q(80)=0.46
-Iter 47
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.46
+Iter  9 Adding 10 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.46
+Iter 10 Adding 16 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.42
+Iter 11 Adding 18 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.41
+Iter 12 Adding 25 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.38
+Iter 13 Adding 42 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.36
+Iter 14 Adding 54 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.34
+Iter 15 Adding 54 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.32
+Iter 16 Adding 29 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.31
+Iter 17 Adding 19 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
+Iter 18 Adding 7 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
+Iter 19 Adding 3 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
+Iter 20 Adding 2 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
+Iter 21 Adding 6 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.29
+StopDiv = True
+*** Dividing phase completed.
+*** Starting merging phase
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.23
+Elapsed time is 0.040168 seconds.
+Iter  1 Removing 37 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.25
+Elapsed time is 0.045169 seconds.
+Iter  2 Removing 29 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.26
+Elapsed time is 0.041222 seconds.
+Iter  3 Removing 16 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
+Elapsed time is 0.025496 seconds.
+Iter  4 Removing 10 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
+Elapsed time is 0.014642 seconds.
+Iter  5 Removing 4 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
+Elapsed time is 0.012405 seconds.
+Iter  6 Removing 8 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
+Elapsed time is 0.017848 seconds.
+Iter  7 Removing 7 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
+Elapsed time is 0.019280 seconds.
+Iter  8 Removing 9 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
+Elapsed time is 0.017635 seconds.
+Iter  9 Removing 7 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.010775 seconds.
+Iter 10 Removing 6 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.010201 seconds.
+Iter 11 Removing 2 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.009385 seconds.
+Iter 12 Removing 1 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.009785 seconds.
+Iter 13 Removing 3 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.009438 seconds.
+Iter 14 Removing 3 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.009436 seconds.
+Iter 15 Removing 4 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
+Elapsed time is 0.010074 seconds.
+Iter 16 Removing 6 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.30
+Elapsed time is 0.009108 seconds.
+Iter 17 Removing 13 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
+Elapsed time is 0.009135 seconds.
+Iter 18 Removing 6 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
+Elapsed time is 0.011146 seconds.
+Iter 19 Removing 5 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
+Elapsed time is 0.015252 seconds.
+Iter 20 Removing 5 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
+Elapsed time is 0.013916 seconds.
+Iter 21 Removing 3 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
+Elapsed time is 0.014093 seconds.
+Iter 22 Removing 9 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
+Elapsed time is 0.009014 seconds.
+Iter 23 Removing 9 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.008319 seconds.
+Iter 24 Removing 10 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.006631 seconds.
+Iter 25 Removing 4 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.007256 seconds.
+Iter 26 Removing 1 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.006132 seconds.
+Iter 27 Removing 1 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.010971 seconds.
+Iter 28 Removing 2 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
+Elapsed time is 0.008414 seconds.
+Elapsed time is 0.008835 seconds.
+*** Merging phase completed.
+*** Starting regularisation phase
+Maximum distance seed/centre-of-mass 90.0 (65.2)
+Iter  1 Computing regularised Voronoi Diagram for 180 seeds
+Maximum distance seed/centre-of-mass 2.0 (1.4)
+Iter  2 Computing regularised Voronoi Diagram for 180 seeds
+*** Regularisation phase completed.
+*** Saving VOISE results in ../share/output/sampleint/voise.mat
+*** Total elapsed time 00:00:10 [hh:mm:ss].

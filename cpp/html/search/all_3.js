@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['getcentroid',['getCentroid',['../group__getCentroid.html',1,'']]],
+  ['getcentroid',['getCentroid',['../getCentroid_8cpp.html#ae183653890e83e961fb14e8c48aec702',1,'getCentroid(const vd &amp;VD, const Mat &amp;W, const RealVec seeds):&#160;getCentroid.cpp'],['../getCentroid_8h.html#ae183653890e83e961fb14e8c48aec702',1,'getCentroid(const vd &amp;VD, const Mat &amp;W, const RealVec seeds):&#160;getCentroid.cpp'],['../group__getCentroid.html',1,'(Global Namespace)']]],
   ['getcentroid_2ecpp',['getCentroid.cpp',['../getCentroid_8cpp.html',1,'']]],
-  ['getcentroidseedbatch',['getCentroidSeedBatch',['../group__getCentroidSeedBatch.html',1,'']]],
-  ['getcentroidseedbatch_2ecpp',['getCentroidSeedBatch.cpp',['../getCentroidSeedBatch_8cpp.html',1,'']]],
+  ['getcentroid_2eh',['getCentroid.h',['../getCentroid_8h.html',1,'']]],
   ['getk',['getK',['../classvd.html#ae145808dbbebfc984811eb48a6a57585',1,'vd']]],
   ['getlam',['getLam',['../classvd.html#a37c4ab12669eb276fe7fa4a610310345',1,'vd']]],
   ['getlambyidx',['getLamByIdx',['../classvd.html#a5c26b069f893aa82eeaf53ff608eda1f',1,'vd']]],
@@ -12,11 +11,10 @@ var searchData=
   ['getnkbyidx',['getNkByIdx',['../classvd.html#a4d058d2d1d675a741a83776c95b2acfb',1,'vd']]],
   ['getnr',['getNr',['../classvd.html#afda5d6b3eb04899e1b31c5ee3a3af527',1,'vd']]],
   ['getop_2ecpp',['getOp.cpp',['../getOp_8cpp.html',1,'']]],
+  ['getop_2eh',['getOp.h',['../getOp_8h.html',1,'']]],
   ['getpx',['getPx',['../classvd.html#aeba6d318016c8f8b9537ce4c0314f8cd',1,'vd']]],
-  ['getpxbyidx',['getPxByIdx',['../classvd.html#aa80f528bca24356805f2a31234e67ac1',1,'vd']]],
   ['getpy',['getPy',['../classvd.html#a9738711704b1d03cdbe027b1976cb0c6',1,'vd']]],
-  ['getpybyidx',['getPyByIdx',['../classvd.html#ae6c4ff0f49e07803f5dd13545f6e8f3f',1,'vd']]],
-  ['getregion',['getRegion',['../group__getRegion.html',1,'']]],
+  ['getregion',['getRegion',['../getRegion_8cpp.html#a9a53c64cf58a7df70dd9c7477feda3ce',1,'getRegion(const vd &amp;VD, const real &amp;s):&#160;getRegion.cpp'],['../getRegion_8h.html#a9a53c64cf58a7df70dd9c7477feda3ce',1,'getRegion(const vd &amp;VD, const real &amp;s):&#160;getRegion.cpp'],['../group__getRegion.html',1,'(Global Namespace)']]],
   ['getregion_2ecpp',['getRegion.cpp',['../getRegion_8cpp.html',1,'']]],
   ['getregion_2eh',['getRegion.h',['../getRegion_8h.html',1,'']]],
   ['gets',['getS',['../classvd.html#a7f901e0c6d226b81f262c2363a69844a',1,'vd']]],
@@ -29,14 +27,7 @@ var searchData=
   ['getsybyidx',['getSyByIdx',['../classvd.html#a0f630fc80e57d3e17ab036f75afde006',1,'vd']]],
   ['getv',['getV',['../classvd.html#aad4ea5c045b8380f83b0490af2fee0fa',1,'vd']]],
   ['getvbyidx',['getVByIdx',['../classvd.html#a640ed20e4618abd409e180a707eea3b1',1,'vd']]],
-  ['getvdop',['getVDOp',['../group__getVDOp.html',1,'']]],
-  ['getvdop_2ecpp',['getVDOp.cpp',['../getVDOp_8cpp.html',1,'']]],
+  ['getvdop',['getVDOp',['../getOp_8cpp.html#aa76da0ad85beefe3f4a23a8e2d4b9840',1,'getVDOp(const vd &amp;VD, const Mat &amp;W, std::function&lt; real(RealVec)&gt; metric, real mult, Mat &amp;Wop, Mat &amp;Sop):&#160;getOp.cpp'],['../getOp_8h.html#aa76da0ad85beefe3f4a23a8e2d4b9840',1,'getVDOp(const vd &amp;VD, const Mat &amp;W, std::function&lt; real(RealVec)&gt; metric, real mult, Mat &amp;Wop, Mat &amp;Sop):&#160;getOp.cpp'],['../group__getVDOp.html',1,'(Global Namespace)']]],
   ['getvk',['getVk',['../classvd.html#a090bebdbbff36888934c870daf3dcb36',1,'vd']]],
-  ['getw',['getW',['../classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118',1,'vd']]],
-  ['grabvd',['grabVD',['../group__grabVD.html',1,'']]],
-  ['grabvd_2ecpp',['grabVD.cpp',['../grabVD_8cpp.html',1,'']]],
-  ['grabvd_2eh',['grabVD.h',['../grabVD_8h.html',1,'']]],
-  ['grabw',['GrabW',['../group__grabW.html',1,'']]],
-  ['grabw_2ecpp',['grabW.cpp',['../grabW_8cpp.html',1,'']]],
-  ['grabw_2eh',['grabW.h',['../grabW_8h.html',1,'']]]
+  ['getw',['getW',['../classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118',1,'vd']]]
 ];
