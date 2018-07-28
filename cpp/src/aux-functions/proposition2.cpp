@@ -60,7 +60,7 @@ uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
                             VD.getSxByIdx(candidates.at(i)) - cc[0]);
         real angle2 = atan2(VD.getSyByIdx(VD.getK()) - cc[1],
                             VD.getSxByIdx(VD.getK()) - cc[0]);
-        real angleDiff = fmod(angle1 - angle2 + 2*M_PI, M_PI);
+        real angleDiff = fmod(angle1 - angle2 + 2*M_PI, 2*M_PI);
         angles.push_back(angleDiff);
     }
 
@@ -69,7 +69,7 @@ uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
                            VD.getSxByIdx(lam) - cc[0]);
     real lamAngle2 = atan2(VD.getSyByIdx(VD.getK()) - cc[1],
                            VD.getSxByIdx(VD.getK()) - cc[0]);
-    real lamAngleDiff = fmod(lamAngle1 - lamAngle2 + 2*M_PI, M_PI);
+    real lamAngleDiff = fmod(lamAngle1 - lamAngle2 + 2*M_PI, 2*M_PI);
 
     /*
      * Check whether angle made by lambda is larger than max or lower than min

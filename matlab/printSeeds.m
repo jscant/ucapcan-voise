@@ -35,19 +35,20 @@ k = VD.k;
 s = sprintf('\n');
 
 s1 = sprintf('***             Voronoi Diagram k = %4d         ***', k);
-s2 = sprintf('*** index      sx      sy         ls         mi  ***');
+s2 = sprintf('index\tsx\tsy\tls\tmi');
 s3 = char('*'*ones(length(s1),1));
 
-s = [s sprintf('%s\n%s\n%s\n', s3, s1, s2, s3)];
+s = [s sprintf('%s\n%s\n', s1, s2)];
+%s = [s sprintf('%s\n%s\n%s\n', s3, s1, s2, s3)];
 
 j = 1;
 for i = VD.Sk', % for all seeds at current time
-  s = [s sprintf('%9d %7d %7d %10.3g %10.3g\n', ...
+  s = [s sprintf('%9d\t%7d\t%7d\t%10.3g\t%10.3g\n', ...
                  i, VD.Sx(i), VD.Sy(i), SLS(j), SIM(j))];
 	j = j +1;
 end
 
-s = [s sprintf('%s\n\n',s3)];
+%s = [s sprintf('%s\n\n',s3)];
 
 if ~isempty(fid),
 	fprintf(fid, '%s', s);

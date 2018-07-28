@@ -14,7 +14,7 @@
 #include "aux-functions/sqDist.h"
 #include "aux-functions/circumcentre.h"
 #include "aux-functions/updateDict.h"
-
+#include <iostream>
 /**
  * @brief Removes seed from voronoi diagram
  * @param VD Voronoi Diagram
@@ -42,7 +42,7 @@ void removeSeed(vd &VD, real sRemove) {
         finish = true; // Next time we reach a bound with -1, we are finished
 
         // Lower and upper bounds modified to fit C++ array indexing
-        real lb = std::max(0.0, bounds(j, 0) - 1);
+        real lb = std::max((real)0.0, bounds(j, 0) - 1);
         real ub = std::min((real)VD.getNc(), bounds(j, 1));
 
         // For this row, scan relevant pixels

@@ -1,7 +1,8 @@
 /**
  * @file
- * @brief This is a MEX function. It should only be compiled by the compileMEX.m matlab script. Allocates memory and
- * populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
+ * @brief This is a MEX function. It should only be compiled by the compileMEX.m
+ * Matlab script. Allocates memory and populates vd object with data from Matlab
+ * VD struct. Only for use with Matlab mex compiler.
  */
 
 #include "mexIncludes.h"
@@ -9,25 +10,30 @@
 /**
  * @defgroup grabVD grabVD
  * @ingroup grabVD
- * @brief Allocates memory and populates vd object with data from matlab VD struct. Only for use with Matlab mex compiler.
+ * @brief Allocates memory and populates vd object with data from Matlab VD
+ * struct. Only for use with Matlab mex compiler.
  *
- * @param[in] prhs Voronoi diagram in the form of a Matlab struct with the relevant fields filled in the correct manner.
+ * @param[in] prhs Voronoi diagram in the form of a Matlab struct with the
+ * relevant fields filled in the correct manner.
  * @returns Voronoi diagram (vd) object containing all relevant information.
  *
- * The larger matrices (\f$ \lambda, \nu \f$ in [1] as well as px and py) are not copied but mapped using Eigen's map
- * class for reasons of speed.
+ * The larger matrices (\f$ \lambda, \nu \f$ in [1] as well as px and py) are
+ * not copied but mapped using Eigen's map functionality for reasons of speed.
  *
- * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
- * end by P. Guio and N. Achilleos.
+ * This is part of the Matlab bindings for the VOISE algorithm [2], and is
+ * only compatible with the code written to this end by P. Guio and N.
+ * Achilleos.
  */
 vd grabVD(const mxArray *prhs[], const uint32 field) {
 
-    real nc=0, nr=0, k=0;
-    std::map<real, RealVec> Nk;
+    // Initialisation
+    real nc, nr;
+    real k = 0;
+    std::map <real, RealVec> Nk;
     W_struct W;
     memset(&W, 0, sizeof(W));
-    W_struct S_str = {0, 0, 0, 0};
-    memset(&S_str, 0, sizeof(S_str));
+    W_struct S_struct = {0, 0, 0, 0};
+    memset(&S_struct, 0, sizeof(S_struct));
 
     // Get all input information from vd
     real nFields = mxGetNumberOfFields(prhs[field]);
@@ -95,10 +101,9 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     S_str.ym = symPtr[0];
     S_str.yM = syMPtr[0];
 
+    // Get rows/cols from lambda matrix
     mwIndex nRows = mxGetM(lamIncomingArray);
     mwIndex nCols = mxGetN(lamIncomingArray);
-
-
 
     // Compatible with row/column vectors in ML
     mwIndex sxLen = std::max(mxGetM(sxIncomingArray), mxGetN(sxIncomingArray));
@@ -114,7 +119,7 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     for (mwIndex i = 0; i < nkLen; ++i) {
         mxArray *cellPtr = mxGetCell(nkIncomingArray, i); // Pointer to cell
         mwIndex cellLen = mxGetNumberOfElements(cellPtr); // Elements in cell
-        real *vals = mxGetDoubles(cellPtr); // Pointer to cell contents (doubles)
+        real *vals = mxGetDoubles(cellPtr); // Pointer to cell contents
         RealVec cellVec(vals, vals + cellLen); // Faster than looping
         Nk[i + 1] = cellVec; // Seed indexes begin at 1
     }
@@ -122,13 +127,17 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     // Create and populate vd
     vd VD = vd(nr, nc);
 
-    // Eigen Maps 'reuse' memory, no copying large matrices
+    /*
+     * Eigen Maps 'reuse' memory, no copying large matrices. Offsetting due
+     * to difference between Matlab and C++ array indexing (1- and 0- based
+     * respectively)
+     */
     VD.setLam(Eigen::Map<Mat>(lamPtr, nRows, nCols));
     VD.setV(Eigen::Map<Mat>(vPtr, nRows, nCols));
-    VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1); // Offset due to array-indexing differences
+    VD.setPx(Eigen::Map<Mat>(xPtr, nRows, nCols) - 1);
     VD.setPy(Eigen::Map<Mat>(yPtr, nRows, nCols) - 1);
 
-
+    // Set remaining attributes of VD
     VD.setK(k);
     VD.setSx(Sx);
     VD.setSy(Sy);

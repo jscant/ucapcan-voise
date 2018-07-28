@@ -1,7 +1,9 @@
 /**
  * @file
- * @brief This is a requirement for a MEX function. It should only be compiled by the compileMEX.m matlab script.
- * Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
+ * @brief This is a requirement for a MEX function. It should only be compiled
+ * by the compileMEX.m Matlab script.
+ * Allocates memory and populates Matlab struct with data from vd object. Only
+ * for use with Matlab mex compiler.
  */
 
 #include "mexIncludes.h"
@@ -9,11 +11,15 @@
 /**
  * @defgroup pushVD pushVD
  * @ingroup pushVD
- * @brief Allocates memory and populates Matlab struct with data from vd object. Only for use with Matlab mex compiler.
+ * @brief Allocates memory and populates Matlab struct with data from vd object.
+ * Only for use with Matlab mex compiler.
  *
  * @param[in] outputVD Voronoi diagram from which data is read
- * @param[out] plhs Pointer to mxArray object which is the start of the section of memory to be populated with data and
- * which Matlab will interpret as a struct containing all of the information from outputVD.
+ * @param[out] plhs Pointer to mxArray object which is the start of the section
+ * of memory to be populated with data and which Matlab will interpret as a
+ * struct containing all of the information from outputVD.
+ *
+ *
  * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
  * end by P. Guio and N. Achilleos.
  */
@@ -48,7 +54,6 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxArray *sxMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
     mxArray *symOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
     mxArray *syMOutgoingArray = mxCreateDoubleMatrix(1, 1, mxREAL);
-
     mxArray *vkOutgoingArray = mxCreateStructMatrix(1, 1, 2, vkFnames);
     mxArray *wOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
     mxArray *sOutgoingArray = mxCreateStructMatrix(1, 1, 4, wFnames);
@@ -73,16 +78,23 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     real *syPtr = mxGetDoubles(syOutgoingArray);
     real *kPtr = mxGetDoubles(kOutgoingArray);
 
-    // Avoid costly copying of data: use Eigen::Map to point directly to underlying arrays
+    /*
+     * Avoid costly copying of data: use Eigen::Map to point directly to
+     * underlying arrays
+     */
     Eigen::Map<Mat>(lamPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getLam();
     Eigen::Map<Mat>(vPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getV();
     Eigen::Map<Mat>(xPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPx() + 1;
     Eigen::Map<Mat>(yPtr, outputVD.getNr(), outputVD.getNc()) = outputVD.getPy() + 1;
 
-    // Populate Matlab VD.Sx, VD.Sy struct data. Re-apply offset (array indexing starts at 1 in ML)
+    /*
+     * Populate Matlab VD.Sx, VD.Sy struct data. Re-apply offset (array indexing
+     * starts at 1 in ML)
+     */
     int sxLen = outputVD.getSx().size();
     int skLen = outputVD.getSk().size();
 
+    // Copy data back to Sx Sy and Sk
     memcpy(sxPtr, outputVD.getSx().data(), sxLen*sizeof(real));
     memcpy(syPtr, outputVD.getSy().data(), sxLen*sizeof(real));
     memcpy(skPtr, outputVD.getSk().data(), skLen*sizeof(real));
@@ -99,7 +111,7 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
         mxSetFieldByNumber(nkOutgoingArray, 0, i, tmpArr);
     }
 
-    // These are somewhat redundant for addSeed but here for consistency
+    // Populate other fields of VD
     wxmPtr[0] = outputVD.W.xm;
     wxMPtr[0] = outputVD.W.xM;
     wymPtr[0] = outputVD.W.ym;
@@ -116,8 +128,7 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     // Create ML struct with 12 fields
     plhs[0] = mxCreateStructMatrix(1, 1, 12, vdFnames);
 
-    // Repopulate the LHS (ML return value) with mxArrays we have
-    // created above
+    // Repopulate the LHS (ML return value) with mxArrays we have created above
     mxSetField(plhs[0], 0, "Nk", nkOutgoingArray);
     mxSetField(plhs[0], 0, "Vk", vkOutgoingArray);
     mxSetField(plhs[0], 0, "nc", ncOutgoingArray);
@@ -145,5 +156,5 @@ void pushVD(vd outputVD, mxArray *plhs[]) {
     mxSetField(vkOutgoingArray, 0, "v", vOutgoingArray);
     mxSetField(vkOutgoingArray, 0, "lambda", lamOutgoingArray);
 
-    // We are done! All memory freed by Matlab.
+    // We are done. All memory freed by Matlab.
 }

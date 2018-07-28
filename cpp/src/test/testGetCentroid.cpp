@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Unit tests for whether the getCentroid function correctly returns the centres of mass of the VRs
+ * @brief Unit tests for whether the getCentroid function correctly returns the
+ * centres of mass of the VRs
  *
  */
 
@@ -22,16 +23,19 @@
 
 // Load VD
 std::string path = "../src/test/resources/";
-loadStruct loadResults = loadVD(path, "benchVDSeeds10.txt", "benchVDLambda10.txt", "benchVDV10.txt");
+loadStruct loadResults = loadVD(path, "benchVDSeeds10.txt",
+        "benchVDLambda10.txt", "benchVDV10.txt");
 RealVec Sx = loadResults.Sx;
 RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;
 
 /**
 * @test GetCentroidCheck
-* @brief Unit tests for whether the getCentroid function correctly returns the centres of mass of the VRs
+* @brief Unit tests for whether the getCentroid function correctly returns the
+* centres of mass of the VRs
 */
-TEST_CASE("Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data") {
+TEST_CASE("Checks that the getVDOp function correctly returns a matrix of "
+          "averages from VD and pixel intensity data") {
 
     // Add a few seeds
     for (uint32 i = 2; i < 5; ++i) {

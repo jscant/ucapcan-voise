@@ -85,7 +85,8 @@ Mat getRegion(const vd &VD, const real &s) {
             lowestUB = VD.getNc();
             try {
                 if (lb.size() > 0) {
-                    highestLB = std::max(0.0, ceil(*std::max_element(lb.begin(), lb.end())));
+                    highestLB = std::max((real)0.0, ceil(*std::max_element(lb
+                            .begin(), lb.end())));
                 }
             } catch (const std::exception &e) {
                 highestLB = 0;
@@ -139,7 +140,8 @@ Mat getRegion(const vd &VD, const real &s) {
             lowestUB = VD.getNc();
             try {
                 if (lb.size() > 0) {
-                    highestLB = std::max(0.0, ceil(*std::max_element(lb.begin(), lb.end())));
+                    highestLB = std::max((real)0.0,
+                            ceil(*std::max_element(lb.begin(), lb.end())));
                 }
             } catch (const std::exception &e) {
                 highestLB = 0;

@@ -1,27 +1,4 @@
 var searchData=
 [
-  ['getcentroid',['getCentroid',['../getCentroid_8cpp.html#ae183653890e83e961fb14e8c48aec702',1,'getCentroid(const vd &amp;VD, const Mat &amp;W, const RealVec seeds):&#160;getCentroid.cpp'],['../getCentroid_8h.html#ae183653890e83e961fb14e8c48aec702',1,'getCentroid(const vd &amp;VD, const Mat &amp;W, const RealVec seeds):&#160;getCentroid.cpp']]],
-  ['getk',['getK',['../classvd.html#ae145808dbbebfc984811eb48a6a57585',1,'vd']]],
-  ['getlam',['getLam',['../classvd.html#a37c4ab12669eb276fe7fa4a610310345',1,'vd']]],
-  ['getlambyidx',['getLamByIdx',['../classvd.html#a5c26b069f893aa82eeaf53ff608eda1f',1,'vd']]],
-  ['getnc',['getNc',['../classvd.html#a555fdcee74959a18003dd992a4c57cef',1,'vd']]],
-  ['getnk',['getNk',['../classvd.html#a90613fc46f246a5450e26487caff33f9',1,'vd']]],
-  ['getnkbyidx',['getNkByIdx',['../classvd.html#a4d058d2d1d675a741a83776c95b2acfb',1,'vd']]],
-  ['getnr',['getNr',['../classvd.html#afda5d6b3eb04899e1b31c5ee3a3af527',1,'vd']]],
-  ['getpx',['getPx',['../classvd.html#aeba6d318016c8f8b9537ce4c0314f8cd',1,'vd']]],
-  ['getpy',['getPy',['../classvd.html#a9738711704b1d03cdbe027b1976cb0c6',1,'vd']]],
-  ['getregion',['getRegion',['../getRegion_8cpp.html#a9a53c64cf58a7df70dd9c7477feda3ce',1,'getRegion(const vd &amp;VD, const real &amp;s):&#160;getRegion.cpp'],['../getRegion_8h.html#a9a53c64cf58a7df70dd9c7477feda3ce',1,'getRegion(const vd &amp;VD, const real &amp;s):&#160;getRegion.cpp']]],
-  ['gets',['getS',['../classvd.html#a7f901e0c6d226b81f262c2363a69844a',1,'vd']]],
-  ['getseeds',['getSeeds',['../classvd.html#a82f353c594c3c6b24f6077398f059d3a',1,'vd']]],
-  ['getsk',['getSk',['../classvd.html#adf9f15df018d2ceff5f68bdf7bd6f613',1,'vd']]],
-  ['getskbyidx',['getSkByIdx',['../classvd.html#a4d2c835e7804c4242dce6d411f01ce0a',1,'vd']]],
-  ['getsx',['getSx',['../classvd.html#a309203fb398a885176ae985a8906e886',1,'vd']]],
-  ['getsxbyidx',['getSxByIdx',['../classvd.html#a960d4b8fbedb7cbb0686ad42e19d6396',1,'vd']]],
-  ['getsy',['getSy',['../classvd.html#a704c56db9a9782e1c82d3d199ddfd699',1,'vd']]],
-  ['getsybyidx',['getSyByIdx',['../classvd.html#a0f630fc80e57d3e17ab036f75afde006',1,'vd']]],
-  ['getv',['getV',['../classvd.html#aad4ea5c045b8380f83b0490af2fee0fa',1,'vd']]],
-  ['getvbyidx',['getVByIdx',['../classvd.html#a640ed20e4618abd409e180a707eea3b1',1,'vd']]],
-  ['getvdop',['getVDOp',['../getOp_8cpp.html#aa76da0ad85beefe3f4a23a8e2d4b9840',1,'getVDOp(const vd &amp;VD, const Mat &amp;W, std::function&lt; real(RealVec)&gt; metric, real mult, Mat &amp;Wop, Mat &amp;Sop):&#160;getOp.cpp'],['../getOp_8h.html#aa76da0ad85beefe3f4a23a8e2d4b9840',1,'getVDOp(const vd &amp;VD, const Mat &amp;W, std::function&lt; real(RealVec)&gt; metric, real mult, Mat &amp;Wop, Mat &amp;Sop):&#160;getOp.cpp']]],
-  ['getvk',['getVk',['../classvd.html#a090bebdbbff36888934c870daf3dcb36',1,'vd']]],
-  ['getw',['getW',['../classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118',1,'vd']]]
+  ['incrementk',['incrementK',['../classvd.html#a59c1f5756af7de9cc7a0089221cbd5b7',1,'vd']]]
 ];

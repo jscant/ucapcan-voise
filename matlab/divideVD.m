@@ -78,6 +78,9 @@ while ~stopDiv,
     if ~isempty(S),
         nSa = size(S, 1);
         fprintf(1, 'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
+        if nSa < 7
+            S
+        end
         switch params.divideAlgo
             case 3 % C++ (batch)
                 Sk = [];

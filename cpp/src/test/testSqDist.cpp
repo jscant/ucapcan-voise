@@ -2,6 +2,7 @@
  * @file
  * @brief Unit tests for sqDist function
  */
+
 #include "../aux-functions/sqDist.h"
 #include "Catch2/catch.hpp"
 

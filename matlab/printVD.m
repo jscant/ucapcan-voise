@@ -27,17 +27,18 @@ s = sprintf('\n');
 
 s1 = sprintf('*** Voronoi Diagram Neighbours k = %d ***', k);
 s2 = char('*'*ones(length(s1),1));
+s3 = sprintf('Seed\tNeighbours')
 
-s = [s sprintf('%s\n%s\n%s\n', s2, s1, s2)];
+s = [s sprintf('%s\n%s\n', s1, s3)];
 
 %for i = VD.Sk', % for all seeds at current time 
 for i = 1:length(VD.Nk), % for all seeds that ever been registered
-  s = [s sprintf('N%d(%d) = ', k, i)];
+  s = [s sprintf('N%d(%d)\t', k, i)];
 	s1 = printSet([], VD.Nk{i}); s = [s s1];
   s = [s sprintf('\n')];
 end
 
-s = [s sprintf('%s\n\n',s2)];
+%s = [s sprintf('%s\n\n',s2)];
 
 if ~isempty(fid),
 	fprintf(fid, '%s', s);

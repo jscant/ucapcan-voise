@@ -15,10 +15,14 @@
  */
 Mat grabW(const mxArray *prhs[], const uint32 field){
 
+    // Pointer to start of W matrix
     real *wPtr = mxGetDoubles(prhs[field]);
+
+    // Get rows and cols information
     uint32 nRows = mxGetM(prhs[field]);
     uint32 nCols = mxGetN(prhs[field]);
 
+    // Create W and map ML data to Eigen::Array
     Mat W(nRows, nCols);
     W = Eigen::Map<Mat>(wPtr, nRows, nCols);
 

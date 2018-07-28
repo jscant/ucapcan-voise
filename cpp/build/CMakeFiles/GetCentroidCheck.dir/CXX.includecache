@@ -71,8 +71,8 @@ vector
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
 proposition2.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.h
-iostream
--
+../skizException.h
+/home/jack/dev/project/voise-1.3/cpp/src/skizException.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.h
 ../typedefs.h
@@ -157,6 +157,8 @@ pointInRegion.h
 /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h
 skizException.h
 /home/jack/dev/project/voise-1.3/cpp/src/skizException.h
+typedefs.h
+/home/jack/dev/project/voise-1.3/cpp/src/typedefs.h
 
 /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.h
 vector
@@ -189,6 +191,8 @@ aux-functions/circumcentre.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/circumcentre.h
 aux-functions/updateDict.h
 /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/updateDict.h
+iostream
+-
 
 /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.h
 vd.h
@@ -724,6 +728,8 @@ test-help-fns/loadStruct.h
 vector
 -
 eigen3/Eigen/Dense
+-
+limits
 -
 
 /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp

@@ -7,10 +7,21 @@ option(GENERATE_DOXYGEN "Generate Doxymentation")
 option(TESTING "Generate Catch2 unit tests")
 
 
-add_executable(standalone_skiz src/main.cpp src/addSeed.cpp src/getRegion.cpp src/NSStar.cpp src/aux-functions/proposition2.cpp
+add_executable(standalone_skiz
+        src/main.cpp
+        src/addSeed.cpp
+        src/getRegion.cpp
+        src/NSStar.cpp
+        src/aux-functions/proposition2.cpp
         src/aux-functions/proposition2.h
-        src/pointInRegion.cpp src/removeSeed.cpp src/skizException.cpp src/vd.cpp src/aux-functions/readSeeds.cpp
-        src/aux-functions/readMatrix.cpp src/aux-functions/metrics.cpp src/test/test-help-fns/loadVD.cpp
+        src/pointInRegion.cpp
+        src/removeSeed.cpp
+        src/skizException.cpp
+        src/vd.cpp
+        src/aux-functions/readSeeds.cpp
+        src/aux-functions/readMatrix.cpp
+        src/aux-functions/metrics.cpp
+        src/test/test-help-fns/loadVD.cpp
         src/test/test-help-fns/loadStruct.h)
 
 set(TESTING ON)
@@ -45,26 +56,47 @@ if(TESTING)
     enable_testing()
     add_library(Catch INTERFACE)
     target_include_directories(Catch INTERFACE src/test/Catch2/include)
-    target_sources(Catch INTERFACE "${CMAKE_CURRENT_SOURCE_DIR}/src/test/Catch2/test_main.cpp")
+    target_sources(Catch INTERFACE
+            "${CMAKE_CURRENT_SOURCE_DIR}/src/test/Catch2/test_main.cpp")
 
-    set (TEST_DEPENDENCIES src/test/test-help-fns/bruteForceCheckLambda.cpp src/test/test-help-fns/bruteForceCheckV.cpp
-            src/test/test-help-fns/loadStruct.h src/test/test-help-fns/loadVD.cpp src/vd.cpp src/skizException.cpp
-            src/addSeed.cpp src/NSStar.cpp src/pointInRegion.cpp src/getRegion.cpp src/removeSeed.cpp
-            src/aux-functions/readSeeds.cpp src/aux-functions/readMatrix.cpp src/aux-functions/proposition2.cpp)
+    set (TEST_DEPENDENCIES
+            src/test/test-help-fns/bruteForceCheckLambda.cpp
+            src/test/test-help-fns/bruteForceCheckV.cpp
+            src/test/test-help-fns/loadStruct.h
+            src/test/test-help-fns/loadVD.cpp
+            src/vd.cpp
+            src/skizException.cpp
+            src/addSeed.cpp
+            src/NSStar.cpp
+            src/pointInRegion.cpp
+            src/getRegion.cpp
+            src/removeSeed.cpp
+            src/aux-functions/readSeeds.cpp
+            src/aux-functions/readMatrix.cpp
+            src/aux-functions/proposition2.cpp)
 
 
-    add_executable(testAddSeedCheckLambda src/test/testAddSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
-    add_executable(testRemoveSeedCheckLambda src/test/testRemoveSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
-    add_executable(testAddSeedCheckV src/test/testAddSeedCheckV.cpp ${TEST_DEPENDENCIES})
-    add_executable(testRemoveSeedCheckV src/test/testRemoveSeedCheckV.cpp ${TEST_DEPENDENCIES})
-    add_executable(PointInRegionCheck src/test/testPointInRegion.cpp ${TEST_DEPENDENCIES})
+    add_executable(testAddSeedCheckLambda src/test/testAddSeedCheckLambda.cpp
+            ${TEST_DEPENDENCIES})
+    add_executable(testRemoveSeedCheckLambda
+            src/test/testRemoveSeedCheckLambda.cpp ${TEST_DEPENDENCIES})
+    add_executable(testAddSeedCheckV src/test/testAddSeedCheckV.cpp
+            ${TEST_DEPENDENCIES})
+    add_executable(testRemoveSeedCheckV src/test/testRemoveSeedCheckV.cpp
+            ${TEST_DEPENDENCIES})
+    add_executable(PointInRegionCheck src/test/testPointInRegion.cpp
+            ${TEST_DEPENDENCIES})
     add_executable(SqDistanceCheck src/test/testSqDist.cpp ${TEST_DEPENDENCIES})
     add_executable(InVectorCheck src/test/testInVector.cpp ${TEST_DEPENDENCIES})
-    add_executable(MetricChecks src/test/testMetrics.cpp ${TEST_DEPENDENCIES} src/aux-functions/metrics.cpp)
-    add_executable(GetVDOpCheck src/test/testGetVDOp.cpp ${TEST_DEPENDENCIES} src/aux-functions/metrics.cpp
-            src/getOp.cpp)
-    add_executable(GetCentroidCheck src/test/testGetCentroid.cpp ${TEST_DEPENDENCIES} src/getCentroid.cpp)
-    add_executable(Proposition2Check src/test/testProposition2.cpp ${TEST_DEPENDENCIES} src/test/test-help-fns/generateProposition2VD.cpp)
+    add_executable(MetricChecks src/test/testMetrics.cpp ${TEST_DEPENDENCIES}
+            src/aux-functions/metrics.cpp)
+    add_executable(GetVDOpCheck src/test/testGetVDOp.cpp ${TEST_DEPENDENCIES}
+            src/aux-functions/metrics.cpp src/getOp.cpp)
+    add_executable(GetCentroidCheck src/test/testGetCentroid.cpp
+            ${TEST_DEPENDENCIES} src/getCentroid.cpp)
+    add_executable(Proposition2Check
+            src/test/testProposition2.cpp ${TEST_DEPENDENCIES}
+            src/test/test-help-fns/generateProposition2VD.cpp)
 
     target_link_libraries(testAddSeedCheckLambda Catch)
     target_link_libraries(testRemoveSeedCheckLambda Catch)

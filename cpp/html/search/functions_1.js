@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circumcentre',['circumcentre',['../circumcentre_8h.html#a9cb85648a9d3e49194f6ebce3f73e43b',1,'circumcentre.h']]]
+  ['erasesk',['eraseSk',['../classvd.html#a0542124682b77128935d62210a9c86fe',1,'vd']]]
 ];

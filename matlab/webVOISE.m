@@ -72,7 +72,8 @@ printVD(fid, CVD);
 fclose(fid);
 
 fitswrite(CVD.Vk.lambda,[params.oDir 'CVDseeds.fits']);
-
+[Wop, Sop] = getVDOp(CVD, params.W, 1);
+save('../clustering/Sop.txt', 'Sop', '-ascii');
 close all;
 
 return

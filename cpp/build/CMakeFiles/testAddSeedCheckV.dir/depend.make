@@ -26,6 +26,7 @@ CMakeFiles/testAddSeedCheckV.dir/src/addSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/skizException.h
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
 CMakeFiles/testAddSeedCheckV.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 

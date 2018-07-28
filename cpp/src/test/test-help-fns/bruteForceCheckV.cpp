@@ -1,3 +1,9 @@
+/**
+ * @file
+ * @brief Checks in a greedy fashion whether correct values of v have been
+ * assigned according to [1] Section 3.
+ */
+
 #include <eigen3/Eigen/Dense>
 
 #include "bruteForceCheckV.h"
@@ -5,20 +11,24 @@
 #include "../../vd.h"
 #include "../../aux-functions/sqDist.h"
 
-#ifndef INF
-#define INF std::numeric_limits<real>::infinity()
-#endif
-
 /**
- * @brief Checks by brute force whether correct values of v have been assigned according to [1] Section 3.
+ * @brief Checks in a greedy fashion whether correct values of v have been
+ * assigned according to [1] Section 3.
  * @param VD Voronoi diagram to be checked
  * @return true: All values of v correspond are correct
  * @return false: One or more pixels havel v values that are incorrect
  */
 bool bruteForceCheckV(vd &VD) {
+
+    // Load cols, rows and seeds
     real nc = VD.getNc();
     real nr = VD.getNr();
     unsigned long ns = VD.getSk().size();
+
+    /*
+     * For each pixel, manually check whether there are one or more than one
+     * closest seeds
+     */
     for (uint32 i = 0; i < nr; ++i) {
         for (uint32 j = 0; j < nc; ++j) {
             real SkIt = 0;
@@ -40,5 +50,7 @@ bool bruteForceCheckV(vd &VD) {
             }
         }
     }
+
+    // No problems
     return true;
 }

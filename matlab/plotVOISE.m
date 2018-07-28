@@ -102,6 +102,8 @@ else
           titlestr = 'Merge phase | ';
       case 3
           titlestr = 'Regularisation phase | ';
+          load('../clustering/clusters.txt', '-ascii');
+
   end
   title(sprintf('%sSeeds: %d', titlestr, length(VD.Sk)))
   %print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);

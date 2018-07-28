@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['mean',['mean',['../namespacemetrics.html#a70be9452edb387102dcdf80e8a6f0590',1,'metrics']]],
-  ['median',['median',['../namespacemetrics.html#aa623e1d5c33f0748bbad622d4a1d526f',1,'metrics']]]
+  ['range',['range',['../metrics_8cpp.html#a388aa0468daeb469dd3200c4edd5ae46',1,'metrics']]],
+  ['removeseed',['removeSeed',['../removeSeed_8cpp.html#a6ba2f0621a1498d478ca1a7ee83c5540',1,'removeSeed(vd &amp;VD, real sRemove):&#160;removeSeed.cpp'],['../removeSeed_8h.html#ada42090bedf73400608b76c6e8607d3c',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeed.cpp'],['../removeSeedBackup_8cpp.html#ada42090bedf73400608b76c6e8607d3c',1,'removeSeed(vd &amp;VD, real Sk):&#160;removeSeedBackup.cpp']]]
 ];

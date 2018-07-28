@@ -1,6 +1,7 @@
 /**
  * @file
- * @brief Unit tests for various normal and pathalogical cases for the pointInRegion function
+ * @brief Unit tests for various normal and pathalogical cases for the
+ * pointInRegion function
  */
 
 #include <eigen3/Eigen/Dense>
@@ -22,13 +23,15 @@
 
 /**
  * @test GetRegionLowerBound
- * @brief Checks whether the pixels on and around the lower bound calculated by getRegion are in said region.
+ * @brief Checks whether the pixels on and around the lower bound calculated by
+ * getRegion are in said region.
  */
 TEST_CASE("Lower bounds of getRegion"){
 
     // Load VD
     std::string path = "../src/test/resources/";
-    loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt", "benchVDLambda256.txt", "benchVDV256.txt");
+    loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt",
+            "benchVDLambda256.txt", "benchVDV256.txt");
     RealVec Sx = loadResults.Sx;
     RealVec Sy = loadResults.Sy;
     vd VD = loadResults.VD;
@@ -62,13 +65,15 @@ TEST_CASE("Lower bounds of getRegion"){
 
 /**
  * @test GetRegionUpperBound
- * @brief Checks whether the pixels on and around the upper bound calculated by getRegion are in said region.
+ * @brief Checks whether the pixels on and around the upper bound calculated by
+ * getRegion are in said region.
  */
 TEST_CASE("Upper bounds of getRegion"){
 
     // Load VD
     std::string path = "../src/test/resources/";
-    loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt", "benchVDLambda256.txt", "benchVDV256.txt");
+    loadStruct loadResults = loadVD(path, "benchVDSeeds256.txt",
+            "benchVDLambda256.txt", "benchVDV256.txt");
     RealVec Sx = loadResults.Sx;
     RealVec Sy = loadResults.Sy;
     vd VD = loadResults.VD;
@@ -79,7 +84,7 @@ TEST_CASE("Upper bounds of getRegion"){
         addSeed(VD, Sx.at(i), Sy.at(i));
     }
 
-    // Check correct identification of lower bounds
+    // Check correct identification of upper bounds
     for(uint32 s = 1; s <= VD.getSx().size(); ++s) {
         Mat bounds = getRegion(VD, s);
         for (uint32 j = 0; j < bounds.rows(); ++j) {

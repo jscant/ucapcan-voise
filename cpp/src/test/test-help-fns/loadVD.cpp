@@ -13,16 +13,34 @@
 #include "../../aux-functions/readSeeds.h"
 #include "../../aux-functions/readMatrix.h"
 
+/**
+ * @brief Loads VD from text files saved using Matlab's save command.
+ * @param basePath Directory containing text files to load
+ * @param seedsFname Name of text file containing seed coordinates (space
+ * delimited)
+ * @param lambdaFname  Name of text file containing \f$\lambda\f$ matrix (space
+ * delimited)
+ * @param vFname Name of text file containing \f$\nu\f$ matrix (space
+ * delimited)
+ * @return loadStruct containing initial VD and vectors of seed coordinates
+ * Sx and Sy
+ */
 loadStruct loadVD(std::string basePath, std::string seedsFname, std::string lambdaFname, std::string vFname){
 
+    // Load seeds
     std::vector<RealVec> seeds = readSeeds(basePath + seedsFname);
+
+    // Load matrices
     Mat lam = readMatrix(basePath + lambdaFname);
     Mat v = readMatrix(basePath + vFname);
+
+    // Determine dimensions
     unsigned long nr = lam.rows();
     unsigned long nc = lam.cols();
+
+    // Create px, py
     Mat px(nr, nc);
     Mat py(nr, nc);
-
     for (unsigned long i = 0; i < nr; ++i) {
         for (unsigned long j = 0; j < nc; ++j) {
             px(i, j) = j;
@@ -30,38 +48,37 @@ loadStruct loadVD(std::string basePath, std::string seedsFname, std::string lamb
         }
     }
 
+    // Load Sx and Sy from seeds lists
     RealVec Sx = seeds.at(0);
     RealVec Sy = seeds.at(1);
-
     if (Sx.size() != Sy.size()) {
         throw (SKIZIOException("Lengths of Sx and Sy vectors not identical!"));
     }
 
-    RealVec StartSx;
-    RealVec StartSy;
-    RealVec StartSk;
+    // Instantiate VD
+    vd VD(nr, nc);
 
+    // Populate VD with 2 seeds
     for (auto i = 0; i < 2; ++i) {
-        StartSx.push_back(Sx.at(i));
-        StartSy.push_back(Sy.at(i));
-        StartSk.push_back(i + 1);
+        VD.addSx(Sx.at(i));
+        VD.addSy(Sy.at(i));
+        VD.addSk(i + 1);
     }
 
+    // Neighbour relationships
     std::map<real, RealVec> Nk;
     Nk[1] = {2};
     Nk[2] = {1};
 
-    vd VD(nr, nc);
+    // Set other VD fields
     VD.setLam(lam);
     VD.setV(v);
     VD.setPx(px);
     VD.setPy(py);
-    VD.setSx(StartSx);
-    VD.setSy(StartSy);
-    VD.setSk(StartSk);
     VD.setK(2);
     VD.setNk(Nk);
 
+    // Populate result struct
     loadStruct result = loadStruct(nr, nc);
     result.Sx = Sx;
     result.Sy = Sy;

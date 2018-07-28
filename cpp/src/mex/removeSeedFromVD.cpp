@@ -8,12 +8,18 @@
 
 /**
 * @defgroup removeSeedFromVD removeSeedFromVD
-* @brief Removes single seed from Voronoi diagram. This is a MEX function, and as such the inputs and outputs are
-* constricted to the following:
-* @param nlhs Number of outputs
-* @param plhs Pointer to outputs
-* @param nrhs Number of inputs
-* @param prhs Pointer to inputs
+* @brief Removes single seed from Voronoi diagram.
+*
+* This is a MEX function. As such, the inputs and outputs are constricted to
+* the following:
+*
+* - nlhs: Number of outputs
+*
+* - plhs: Pointer to outputs
+*
+* - nrhs: Number of inputs
+*
+* - prhs: Pointer to inputs
 *
 * In Matlab, this corresponds to the following parameters and outputs:
 * @param VD Voronoi diagram struct

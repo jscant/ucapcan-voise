@@ -1,7 +1,9 @@
 /**
  * @file
- * @brief Unit tests for whether inVector correctly identifies the presence or otherwise of numeric values in vectors
+ * @brief Unit tests for whether inVector correctly identifies the presence or
+ * otherwise of numeric values in vectors
  */
+
 #include "../aux-functions/inVector.h"
 #include "../typedefs.h"
 #include "Catch2/catch.hpp"
@@ -19,7 +21,8 @@ TEST_CASE("Check if inVector correctly identifies item in vector of ints") {
  * @test NotInVectorOfInts
  * @brief Check if inVector correctly identifies item in vector of ints
  */
-TEST_CASE("Check if inVector correctly identifies lack of item in vector of ints") {
+TEST_CASE("Check if inVector correctly identifies lack of item in vector of"
+          "ints") {
     std::vector<int> vec = { 1, 2, -3, 4, 5 };
     REQUIRE( !inVector(vec, 0) );
 }
@@ -37,7 +40,8 @@ TEST_CASE("Check if inVector correctly identifies item in vector of reals") {
  * @test NotInVectorOfReals
  * @brief Check if inVector correctly identifies lack of item in vector of reals
  */
-TEST_CASE("Check if inVector correctly identifies lack of item in vector of reals") {
+TEST_CASE("Check if inVector correctly identifies lack of item in vector of"
+          "reals") {
     RealVec vec = { 13, 4.1, 12311, -1003.1, 10 };
     REQUIRE( !inVector(vec, 11) );
 }

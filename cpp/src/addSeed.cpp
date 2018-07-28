@@ -36,8 +36,10 @@ void addSeed(vd &VD, real s1, real s2) {
 
     VD.setNkByIdx(VD.getK(), nsStar(VD)); // Get N_{k+1}(s*) from 3.1.2 in [1]
 
-    // Only N(s) for s in N(s*) need to be recalculated.
-    // Initialise these with {s*} U N_k(s)\N_k+1(s*)
+    /*
+     * Only N(s) for s in N(s*) need to be recalculated. Initialise these with
+     * {s*} U N_k(s)\N_k+1(s*)
+     */
     std::map<real, RealVec> newDict;
     for (auto s : VD.getNkByIdx(VD.getK())) {
         RealVec v1 = VD.getNkByIdx(s);
@@ -70,10 +72,11 @@ void addSeed(vd &VD, real s1, real s2) {
                 }
                 std::array<real, 2> cc;
                 try {
-                    cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s), VD.getSxByIdx(r),
-                                      VD.getSyByIdx(r), VD.getSxByIdx(u), VD.getSyByIdx(u));
+                    cc = circumcentre(VD.getSxByIdx(s), VD.getSyByIdx(s),
+                                      VD.getSxByIdx(r), VD.getSyByIdx(r),
+                                      VD.getSxByIdx(u), VD.getSyByIdx(u));
                 } catch (SKIZLinearSeedsException &e) {
-                    continue; // Linearity in this instance means seeds are not neighbours
+                    continue; // Linearity means seeds are not neighbours
                 }
                 if (pointInRegion(VD, cc, s, uList)) {
                     updateDict(newDict, s, r);
@@ -105,10 +108,14 @@ void addSeed(vd &VD, real s1, real s2) {
             finish = true; // R(s*) has begun, next -1 bound means R(s) is finished
         }
 
-        real lb = std::max(0.0, bounds(i, 0) - 1);
+        real lb = std::max((real)0.0, bounds(i, 0) - 1);
         real ub = std::min((real)VD.getNc(), bounds(i, 1));
         for (auto j = lb; j < ub; ++j) { // Scan only relevant pixels in row
-            const uint32 l1 = VD.getSxByIdx(VD.getLamByIdx(i, j)); // Sq distance to 'old' closest seed
+
+            // Sq distance to 'old' closest seed
+            const uint32 l1 = VD.getSxByIdx(VD.getLamByIdx(i, j));
+
+            // Sq distance to candidate seed
             const uint32 l2 = VD.getSyByIdx(VD.getLamByIdx(i, j));
             real newMu = sqDist(s1, s2, j+1, i+1); // Sq distance to s*
             real oldMu = sqDist(l1, l2, j+1, i+1);

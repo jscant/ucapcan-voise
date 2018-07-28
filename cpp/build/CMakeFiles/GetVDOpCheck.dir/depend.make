@@ -31,6 +31,7 @@ CMakeFiles/GetVDOpCheck.dir/src/aux-functions/metrics.cpp.o: ../src/typedefs.h
 
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/skizException.h
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
 CMakeFiles/GetVDOpCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 

@@ -1,11 +1,11 @@
 /**
  * @file
- * @brief Unit tests for whether the getVDOp function correctly calculates the average intensity for each VR
+ * @brief Unit tests for whether the getVDOp function correctly calculates the
+ * average intensity for each VR
  */
 
 #include <string>
 #include <eigen3/Eigen/Dense>
-#include "Catch2/catch.hpp"
 #include "../addSeed.h"
 #include "../removeSeed.h"
 #include "../getRegion.h"
@@ -16,19 +16,23 @@
 #include "../aux-functions/readMatrix.h"
 #include "test-help-fns/loadVD.h"
 #include "test-help-fns/loadStruct.h"
+#include "Catch2/catch.hpp"
 
 // Load VD
 std::string path = "../src/test/resources/";
-loadStruct loadResults = loadVD(path, "benchVDSeeds10.txt", "benchVDLambda10.txt", "benchVDV10.txt");
+loadStruct loadResults = loadVD(path, "benchVDSeeds10.txt",
+        "benchVDLambda10.txt", "benchVDV10.txt");
 RealVec Sx = loadResults.Sx;
 RealVec Sy = loadResults.Sy;
 vd VD = loadResults.VD;
 
 /**
 * @test GetVDOpMedian
-* @brief Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data
+* @brief Checks that the getVDOp function correctly returns a matrix of averages
+* from VD and pixel intensity data.
 */
-TEST_CASE("Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data") {
+TEST_CASE("Checks that the getVDOp function correctly returns a matrix of"
+          "averages from VD and pixel intensity data") {
 
     // Add a few seeds
     for (uint32 i = 2; i < 5; ++i) {

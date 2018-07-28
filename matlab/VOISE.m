@@ -182,6 +182,24 @@ fprintf(1, '*** Saving VOISE results in %s\n', [params.oDir, params.oMatFile]);
 save([params.oDir, params.oMatFile], '-append', 'CVD');
 % plot
 params = plotVOISE(CVD, params, 3);
+
+load('../clustering/spinglass.txt')
+
+if 0
+    figure;
+    axis equal;
+    activeX = CVD.Sx(CVD.Sk);
+    activeY = CVD.Sy(CVD.Sk);
+    xlim([0 CVD.nc])
+    ylim([0 CVD.nr])
+    clusters = spinglass;
+    for i = 1:length(clusters)
+        text(activeX(i), activeY(i), num2str(clusters(i)));
+    end
+    while(1 == 1)
+        pause(10);
+    end
+end
 if 0
     % do not plot Voronoi diagram
     params = plotVOISE(CVD, params, 4);

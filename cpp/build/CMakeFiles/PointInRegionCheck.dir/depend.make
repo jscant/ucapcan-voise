@@ -26,6 +26,7 @@ CMakeFiles/PointInRegionCheck.dir/src/addSeed.cpp.o: ../src/vd.h
 
 CMakeFiles/PointInRegionCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
 CMakeFiles/PointInRegionCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.h
+CMakeFiles/PointInRegionCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/skizException.h
 CMakeFiles/PointInRegionCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/typedefs.h
 CMakeFiles/PointInRegionCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/vd.h
 
