@@ -96,10 +96,10 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     W.xM = wxMPtr[0];
     W.ym = wymPtr[0];
     W.yM = wyMPtr[0];
-    S_str.xm = sxmPtr[0];
-    S_str.xM = sxMPtr[0];
-    S_str.ym = symPtr[0];
-    S_str.yM = syMPtr[0];
+    S_struct.xm = sxmPtr[0];
+    S_struct.xM = sxMPtr[0];
+    S_struct.ym = symPtr[0];
+    S_struct.yM = syMPtr[0];
 
     // Get rows/cols from lambda matrix
     mwIndex nRows = mxGetM(lamIncomingArray);
@@ -144,7 +144,7 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     VD.setSk(Sk);
     VD.setNk(Nk);
     VD.W = W;
-    VD.S = S_str;
+    VD.S = S_struct;
 
     return VD;
 }

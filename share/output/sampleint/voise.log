@@ -51,6 +51,16 @@ poissonSeeds: ns=12, minDist=18.19, card(S)=11
 *** Starting dividing phase
 Homogeneity Criteria min=0.26 max=1.00 Q(80)=0.71
 Iter  1 Adding 6 seeds to Voronoi Diagram
+
+S =
+
+    33    15
+    33    17
+    22    24
+    20    24
+    15    18
+     9    15
+
 Homogeneity Criteria min=0.25 max=1.00 Q(80)=0.73
 Iter  2 Adding 10 seeds to Voronoi Diagram
 Homogeneity Criteria min=0.26 max=1.00 Q(80)=0.75
@@ -65,6 +75,16 @@ Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.49
 Iter  7 Adding 12 seeds to Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.47
 Iter  8 Adding 6 seeds to Voronoi Diagram
+
+S =
+
+     7    64
+     4    57
+    24    22
+     9    49
+     4    54
+     7    45
+
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.46
 Iter  9 Adding 10 seeds to Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.46
@@ -87,101 +107,124 @@ Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
 Iter 18 Adding 7 seeds to Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
 Iter 19 Adding 3 seeds to Voronoi Diagram
+
+S =
+
+    45    37
+    43    37
+    59    61
+
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
 Iter 20 Adding 2 seeds to Voronoi Diagram
+
+S =
+
+     6    54
+    57    59
+
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.30
 Iter 21 Adding 6 seeds to Voronoi Diagram
+
+S =
+
+    12    56
+    11    58
+     7    56
+     9    54
+    11    54
+    14    47
+
 Homogeneity Criteria min=0.00 max=1.00 Q(80)=0.29
 StopDiv = True
 *** Dividing phase completed.
 *** Starting merging phase
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.23
-Elapsed time is 0.040168 seconds.
+Elapsed time is 0.034483 seconds.
 Iter  1 Removing 37 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.25
-Elapsed time is 0.045169 seconds.
+Elapsed time is 0.027926 seconds.
 Iter  2 Removing 29 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.26
-Elapsed time is 0.041222 seconds.
+Elapsed time is 0.026107 seconds.
 Iter  3 Removing 16 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.025496 seconds.
+Elapsed time is 0.019009 seconds.
 Iter  4 Removing 10 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.014642 seconds.
+Elapsed time is 0.020948 seconds.
 Iter  5 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.27
-Elapsed time is 0.012405 seconds.
+Elapsed time is 0.018899 seconds.
 Iter  6 Removing 8 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.017848 seconds.
+Elapsed time is 0.024975 seconds.
 Iter  7 Removing 7 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.019280 seconds.
+Elapsed time is 0.025932 seconds.
 Iter  8 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.28
-Elapsed time is 0.017635 seconds.
+Elapsed time is 0.024907 seconds.
 Iter  9 Removing 7 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010775 seconds.
+Elapsed time is 0.019262 seconds.
 Iter 10 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010201 seconds.
+Elapsed time is 0.013786 seconds.
 Iter 11 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.009385 seconds.
+Elapsed time is 0.020722 seconds.
 Iter 12 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.009785 seconds.
+Elapsed time is 0.017452 seconds.
 Iter 13 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.009438 seconds.
+Elapsed time is 0.013412 seconds.
 Iter 14 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.009436 seconds.
+Elapsed time is 0.015054 seconds.
 Iter 15 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.29
-Elapsed time is 0.010074 seconds.
+Elapsed time is 0.014241 seconds.
 Iter 16 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.30
-Elapsed time is 0.009108 seconds.
+Elapsed time is 0.017809 seconds.
 Iter 17 Removing 13 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.009135 seconds.
+Elapsed time is 0.017122 seconds.
 Iter 18 Removing 6 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.011146 seconds.
+Elapsed time is 0.012948 seconds.
 Iter 19 Removing 5 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.015252 seconds.
+Elapsed time is 0.017534 seconds.
 Iter 20 Removing 5 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.31
-Elapsed time is 0.013916 seconds.
+Elapsed time is 0.019856 seconds.
 Iter 21 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
-Elapsed time is 0.014093 seconds.
+Elapsed time is 0.018726 seconds.
 Iter 22 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.32
-Elapsed time is 0.009014 seconds.
+Elapsed time is 0.013377 seconds.
 Iter 23 Removing 9 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.008319 seconds.
+Elapsed time is 0.017452 seconds.
 Iter 24 Removing 10 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.006631 seconds.
+Elapsed time is 0.010318 seconds.
 Iter 25 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.007256 seconds.
+Elapsed time is 0.009783 seconds.
 Iter 26 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.006132 seconds.
+Elapsed time is 0.012432 seconds.
 Iter 27 Removing 1 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.010971 seconds.
+Elapsed time is 0.016433 seconds.
 Iter 28 Removing 2 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.00 max=1.00 Q(50)=0.33
-Elapsed time is 0.008414 seconds.
-Elapsed time is 0.008835 seconds.
+Elapsed time is 0.011575 seconds.
+Elapsed time is 0.012142 seconds.
 *** Merging phase completed.
 *** Starting regularisation phase
 Maximum distance seed/centre-of-mass 90.0 (65.2)
@@ -190,4 +233,46 @@ Maximum distance seed/centre-of-mass 2.0 (1.4)
 Iter  2 Computing regularised Voronoi Diagram for 180 seeds
 *** Regularisation phase completed.
 *** Saving VOISE results in ../share/output/sampleint/voise.mat
-*** Total elapsed time 00:00:10 [hh:mm:ss].
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VOISE', '/home/jack/dev/project/voise-1.3/matlab/VOISE.m', 218)" style="font-weight:bold">VOISE</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/VOISE.m',218,0)">line 218</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('webVOISE', '/home/jack/dev/project/voise-1.3/matlab/webVOISE.m', 56)" style="font-weight:bold">webVOISE</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/webVOISE.m',56,0)">line 56</a>)
+[params,IVD,DVD,MVD,CVD] = VOISE(params);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('webVOISEdemo2', '/home/jack/dev/project/voise-1.3/matlab/webVOISEdemo2.m', 26)" style="font-weight:bold">webVOISEdemo2</a> (<a href="matlab: opentoline('/home/jack/dev/project/voise-1.3/matlab/webVOISEdemo2.m',26,0)">line 26</a>)
+webVOISE('../share/VOISEdemo2.dat');
+} 
+edit ../share/saturn2.dat
+edit ../share/patrick2.dat
+edit ../share/saturnDemo2.dat
+edit ../share/VOISEdemo5.dat
+saturnDemo2
+Primary   13 TELESCOP          HST - telescope used to acquire data
+Primary   14 INSTRUME          ACS - identifier for instrument used to acquire data
+Primary   25 TARGNAME       SATURN - proposer's target name
+Primary   26  RA_TARG 1.464253e+02 - right ascension of the target (deg) (J2000)
+Primary   27 DEC_TARG 1.479842e+01 - declination of the target (deg) (J2000)
+Primary   51  EXPTIME            Ǵ - exposure duration (seconds)--calculated
+Primary   47 DATE-OBS   2007-01-13 - UT date of start of observation (yyyy-mm-dd)
+Primary   48 TIME-OBS     07:47:25 - UT time of start of observation (hh:mm:ss)
+Image(1)  22   CRVAL1 1.464263e+02 - first axis value at reference pixel
+Image(1)  23   CRVAL2 1.479838e+01 - second axis value at reference pixel
+Image(1)  20   CRPIX1            ʳ - x-coordinate of reference pixel
+Image(1)  21   CRPIX2            ʨ - y-coordinate of reference pixel
+Image(1)  24   CTYPE1     RA---TAN - the coordinate type for the first axis
+Image(1)  25   CTYPE2     DEC--TAN - the coordinate type for the second axis
+Image(1)  26    CD1_1 1.025620e-07 - partial of first axis coordinate w.r.t. x
+Image(1)  27    CD1_2 6.944329e-06 - partial of first axis coordinate w.r.t. y
+Image(1)  28    CD2_1 6.944329e-06 - partial of second axis coordinate w.r.t. x
+Image(1)  29    CD2_2 -1.025620e-07 - partial of second axis coordinate w.r.t. y
+Image(1)  35  RA_APER 1.464253e+02 - RA of aperture reference position
+Image(1)  36 DEC_APER 1.479842e+01 - Declination of aperture reference position
+Image(1)  34 ORIENTAT 9.084615e+01 - position angle of image y axis (deg. e of n)
+Primary   39 SUNANGLE 1.490694e+02 - angle between sun and V1 axis
+CRPIX1 , CRPIX2   =   691.000000,   680.000000 pixel
+CRVAL1 , CRVAL2   =   146.426319,    14.798381 deg
+RA_TARG, DEC_TARG =   146.425322,    14.798424 deg
+RA_APER, DEC_APER =   146.425322,    14.798424 deg
+ORIENTAT          =    90.846150 deg
+orientat CD(2,:)  =    90.846150 deg
+filterImage(image, [5,5], median)

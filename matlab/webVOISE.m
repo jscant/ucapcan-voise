@@ -74,6 +74,8 @@ fclose(fid);
 fitswrite(CVD.Vk.lambda,[params.oDir 'CVDseeds.fits']);
 [Wop, Sop] = getVDOp(CVD, params.W, 1);
 save('../clustering/Sop.txt', 'Sop', '-ascii');
+addedInRound = CVD.addedInRound(CVD.Sk);
+save('../clustering/addedInRound.txt', 'addedInRound', '-ascii');
 close all;
 
 return

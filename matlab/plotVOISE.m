@@ -76,7 +76,7 @@ if ~isempty(VD)% || 1
       set(h,'Color',[.5,.5,.5],'LineWidth',0.05);
   %end
   
-  if ic~=4% && ~isempty(VD)
+  if ic~=4 && length(VD.Sk) < 10000
       hold on
       [vx,vy]=voronoi(VD.Sx(VD.Sk), VD.Sy(VD.Sk));
       plot((vx-W.xm)*sx+min(params.x),(vy-W.ym)*sy+min(params.y),...

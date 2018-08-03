@@ -65,7 +65,7 @@ void getVDOp(const vd &VD, const Mat &W, std::function<real(RealVec)> metric,
             for (uint32 i = lb; i < ub; ++i) {
                 if (!VD.getVByIdx(j, i)){ // If there is only 1 closest seed to pixel
                     pixelValues.push_back(W(j, i));
-                } else if (VD.getLamByIdx(j, i) == s) {
+                } else {
                     #ifdef MATLAB_MEX_FILE // Running MEX compiler or normal?
                         Wop(j, i) = mxGetNaN(); // For consistency with Matlab implementation
                     #else

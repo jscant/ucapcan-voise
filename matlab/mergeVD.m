@@ -214,6 +214,9 @@ while ~stopMerge,
                 if (isfield(VD, 'Ssdmu'))
                     VDTMP.Ssdmu = VD.Ssdmu;
                 end
+                if (isfield(VD, 'addedInRound'))
+                    VDTMP.addedInRound = VD.addedInRound;
+                end
                 VD = VDTMP;
             case 0, % incremental
                 for k = Sk(:)'

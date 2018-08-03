@@ -40,8 +40,16 @@ iDiv = 1;
 stopDiv = false;
 useOld = 1;
 useBatch = 0;
+S_old = [-1 -1];
+VD.addedInRound = [];
+
+for i = 1:length(VD.Sk)
+    VD.addedInRound = [VD.addedInRound; 0];
+end
+last_len = length(VD.Sx)
+rnd = 0
 while ~stopDiv,
-    
+    rnd = rnd + 1;
     % compute homogeneity fuunction and dynamic threshold
     [WD, SD, WHC, SHC, HCThreshold] = computeHCThreshold(VD, params, dividePctile);
     
@@ -60,6 +68,7 @@ while ~stopDiv,
         S = [[S(:, 1); s(:, 1)], [S(:, 2); s(:, 2)]];
     end
     
+    
     if 0, % diagnostic plot (seed to add)
         subplot(212),
         imagesc(WHC);
@@ -77,10 +86,16 @@ while ~stopDiv,
     divHCThreshold(iDiv) = HCThreshold;
     if ~isempty(S),
         nSa = size(S, 1);
-        fprintf(1, 'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
-        if nSa < 7
-            S
+        if S(1, :) == S_old
+            fprintf(1, 'Same seed. Finished dividing.');
+            stopDiv = 1;
+            continue;
+        else
+            S_old = S(1, :);
         end
+            
+        fprintf(1, 'Iter %2d Adding %d seeds to Voronoi Diagram\n', iDiv, nSa)
+       
         switch params.divideAlgo
             case 3 % C++ (batch)
                 Sk = [];
@@ -106,6 +121,9 @@ while ~stopDiv,
                 end
                 if (isfield(VD, 'Ssdmu'))
                     VDTMP.Ssdmu = VD.Ssdmu;
+                end
+                if (isfield(VD, 'addedInRound'))
+                    VDTMP.addedInRound = VD.addedInRound;
                 end
                 VD = VDTMP;
             case 0 % incremental
@@ -175,12 +193,20 @@ while ~stopDiv,
                     if (isfield(VD, 'Ssdmu'))
                         VDTMP.Ssdmu = VD.Ssdmu;
                     end
+                    if (isfield(VD, 'addedInRound'))
+                        VDTMP.addedInRound = VD.addedInRound;
+                    end
                     VD = VDTMP;
-                end
+                    end
                 fprintf(1, '(Used %6.1f s)\n', toc(tStart));
         end
         params = plotCurrentVD(VD, params, iDiv);
         iDiv = iDiv + 1;
+        diffsx = length(VD.Sx) - last_len;
+        for i=1:diffsx
+            VD.addedInRound = [VD.addedInRound; rnd];
+        end
+        last_len = length(VD.Sx);
     else
         disp("StopDiv = True");
         stopDiv = true;
@@ -200,7 +226,6 @@ end
 
 VD.divSHC = divSHC;
 VD.divHCThreshold = divHCThreshold;
-
 fprintf(1, '*** Dividing phase completed.\n')
 
 function params = plotCurrentVD(VD, params, iDiv)

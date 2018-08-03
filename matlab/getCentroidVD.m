@@ -107,7 +107,23 @@ while ~stopReg,
                 end
                 fprintf(1, '(Used %6.1f s)\n', toc(tStart));
             case 3
-                VD = computeVDCpp(nr, nc, Sc, VD.W);
+                VDTMP = computeVDCpp(nr, nc, Sc, VD.W);
+                if (isfield(VD, 'divSHC'))
+                    VDTMP.divSHC = VD.divSHC;
+                end
+                if (isfield(VD, 'divHCThreshold'))
+                    VDTMP.divHCThreshold = VD.divHCThreshold;
+                end
+                if (isfield(VD, 'Smu'))
+                    VDTMP.Smu = VD.Smu;
+                end
+                if (isfield(VD, 'Ssdmu'))
+                    VDTMP.Ssdmu = VD.Ssdmu;
+                end
+                if (isfield(VD, 'addedInRound'))
+                    VDTMP.addedInRound = VD.addedInRound;
+                end
+                VD = VDTMP;
         end
         params = plotCurrentVD(VD, params, iReg);
         iReg = iReg + 1;
