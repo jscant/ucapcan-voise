@@ -19,11 +19,11 @@
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 # Initial phase parameters
-iNumSeeds = 12
+iNumSeeds = 100
 RNGiseed = 10
 # Dividing phase parameters
 dividePctile = 85
-d2Seeds = 7
+d2Seeds = 4
 # Merging phase parameters
 mergePctile = 50
 dmu = 0.2

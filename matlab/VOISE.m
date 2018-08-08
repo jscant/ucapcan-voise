@@ -63,13 +63,13 @@ W = params.W;
 [m, n] = size(W);
 
 if min(m, n) < 500
-    rat = m/n;
+    rat = m / n;
     if m > n
-        m = 500*rat;
+        m = 500 * rat;
         n = 500;
     else
         m = 500;
-        n = 500/rat;
+        n = 500 / rat;
     end
 end
 fig_params = [400, 300, n, m];
@@ -83,7 +83,7 @@ bottom = outerpos(2) + ti(2);
 ax_width = outerpos(3) - (ti(1) + ti(3));
 ax_height = outerpos(4) - (ti(2) + ti(4));
 
-set(gca,'xlim', params.xlim, 'ylim', params.ylim);
+set(gca, 'xlim', params.xlim, 'ylim', params.ylim);
 set(gcf, 'Position', fig_params);
 
 axesParams.left = left + 0.085;
@@ -184,77 +184,51 @@ fprintf(1, '*** Saving VOISE results in %s\n', [params.oDir, params.oMatFile]);
 save([params.oDir, params.oMatFile], '-append', 'CVD');
 % plot
 %load('../share/voise-poster.mat');
-%params = plotVOISE(CVD, params, 3);
+params = plotVOISE(CVD, params, 3);
 
-load('../clustering/clusters.txt')
-load('../clustering/cluster-centres.txt')
 
-if 1
-    figure;
+
+if 0
+    %figure;
+    load(strcat(params.oDir, "/clusters.txt"))
     axis equal;
     activeX = CVD.Sx(CVD.Sk);
     activeY = CVD.Sy(CVD.Sk);
-    xlim([0 CVD.nc])
-    ylim([0 CVD.nr])
-    Wop = flipud(sopToWop(CVD, clusters));
-    [WLS,SLS] = getVDOp(CVD, params.W, 4);
-    lst = [];
-    cluster_count = 0;
-    for i = 1:length(clusters)
-        add = 1;
-        for j = 1:length(lst)
-            if clusters(i) == lst(j)
-                add = 0;
-                break;
-            end
-        end
-        if add
-            cluster_count = cluster_count + 1;
-            lst = [lst; clusters(i)];
-        end
-    end
-    average_ls = zeros(cluster_count ,1);
-   % for i = 1:length(average_ls)
-   %     average_ls(i) = mean(SLS(clusters == i - 1));
-   % end
-   % colvals = 0:1/cluster_count:1;
-   % map = zeros(cluster_count, 3);
-   % map(:, 1) = 1;
-   % sorted_ls = flipud(sort(average_ls));    
+    xlim([0, CVD.nc])
+    ylim([0, CVD.nr])
+    Wop = (sopToWop(CVD, clusters));
+    [WLS, SLS] = getVDOp(CVD, params.W, 4);
     
-   % for i=1:cluster_count
-   %     map(find(average_ls == sorted_ls(i)), :) = colvals(i);
-   % end
-    %colormap(map);
+    cluster_count = max(clusters(:)) + 1;
+    colormap(spring(cluster_count));
+    
     x = params.x;
     y = params.y;
     imagesc(x, y, Wop);
     hold on
-     W = CVD.W;
-     n = W.xM - W.xm;
-     m = W.yM - W.ym;
-     sx = (max(params.x)-min(params.x))/(n);
-       sy = (max(params.y)-min(params.y))/(m);
-       Sy = CVD.Sy(CVD.Sk);
-       for i = 1:length(Sy)
-           Sy(i) = W.yM - Sy(i) + 1;
-       end
-           
-      [vx,vy]=voronoi(CVD.Sx(CVD.Sk), Sy);
-      plot((vx-W.xm)*sx+min(params.x),(vy-W.ym)*sy+min(params.y),...
-           '-w','LineWidth',0.5)
-      hold off
-    set(gca,'dataAspectRatio',[1 1 1]);
-    title("Clustering: k = " + num2str(cluster_count));
-    for i=1:length(cluster_centres)
-        x1 = cluster_centres(i, 1);
-        y1 = cluster_centres(i, 2);
-        x1 = x1 * (x/W.xM);
-        y1 = y1 * (y/W.yM);
-        %hold on;
-        %text(x1, y-y1, num2str(i), 'Color', 'red', 'Fontsize', 5);
-        %hold off;
-    end
+    W = CVD.W;
+    n = W.xM - W.xm;
+    m = W.yM - W.ym;
+    sx = (max(params.x) - min(params.x)) / (n);
+    sy = (max(params.y) - min(params.y)) / (m);
+    Sy = CVD.Sy(CVD.Sk);
+    
+    set(gca,'YDir','normal')
+    [vx, vy] = voronoi(CVD.Sx(CVD.Sk), Sy);
+    plot((vx - W.xm)*sx+min(params.x), (vy - W.ym)*sy+min(params.y), ...
+        '-k', 'LineWidth', 0.5)
+    hold off
+    set(gca, 'dataAspectRatio', [1, 1, 1]);
+    c = colorbar;
+    c.Ticks = [];
+    c.TickLabels = c.Ticks;
+    title("Clustering: " + "$\bar{s}($" + num2str(cluster_count) +...
+        "$) = 0.52$", 'Interpreter' ,'latex');
+    xlabel(sprintf('x [%s]',params.pixelUnit{1}))
+    ylabel(sprintf('y [%s]',params.pixelUnit{2}))
+    dpi = strcat('-r', num2str(params.dpi));
+    print([params.oDir, 'clusters'], '-dpdf', dpi);
+    print([params.oDir, 'clusters'], '-depsc', dpi);
     while(1 == 1)
         pause(10);
     end
@@ -275,8 +249,5 @@ fprintf(1, '*** Total elapsed time %02d:%02d:%02d [hh:mm:ss].\n', ...
 
 if params.logVOISE
     diary('off')
-   
-%W = params.W
-%save('../cpp/src/test/resources/W.txt', "W", "-ascii");
-
+    
 end

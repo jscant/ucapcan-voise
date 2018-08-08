@@ -29,11 +29,6 @@ def normalise(data):
     rng = np.amax(data) - np.amin(data)
     return res1/rng
 
-def cosine_similarity(v1, v2):
-    numerator = np.dot(v1, v2)
-    denominator = np.linalg.norm(v1)*np.linalg.norm(v2)
-    return numerator/denominator
-
 def continuous_similarity(v1, v2):
     return 1 - np.linalg.norm(v1 - v2)
 
@@ -159,7 +154,7 @@ def recursive_edge_add(G, d, depth):
     A = G
     for key, value in d.items():
         for i in range(1, depth + 1):
-            weight = 1/(i**2)
+            weight = 1/(i**1)
             if i == 1:
                 neighbours = value
             else:
@@ -177,48 +172,71 @@ def recursive_edge_add(G, d, depth):
     return A
 
 def logistic_fn(normalised_vector):
-    res = 1/(1+np.exp(-1.5*(normalised_vector - 0.17)))
+    res = 1/(1+np.exp(-30*(normalised_vector - 0.25)))
     return res
+
+def extract_root(path):
+    folder_lst = path.split("/")
+    root = ""
+    for idx, folder in enumerate(folder_lst):
+        if idx < len(folder_lst - 1):
+            root += folder + "/"
+            
+    return root
+
+##############
+# PARAMETERS #
+##############
+knn_fraction = 1/10     # Fraction of nearest neighbours
+recursive_depth = 1     # Depth to 'crawl' neighbours for adding edges
+tau = 10                # Signal similarity iteration count
+beta = 0.0              # Prob of random hop for PageRank
+n_clusters = 5         # Clusters to plot
     
+##################
+# INITIALISATION #
+##################
 with Timer() as t:
+    root = "../share/output/poster/"
     
-    seed_info = np.loadtxt("../share/output/north_proj/CVDseeds.txt", skiprows=3)[:, 3:] # number sx sy ls mi
-    d = extract_neighbours("../share/output/north_proj/CVDneighbours.txt")
+    # Order: Index, sx, sy, length scale, median intensity
+    seed_info = np.loadtxt(root + "CVDseeds.txt", skiprows=3)[:, 1:]
+    d = extract_neighbours(root + "CVDneighbours.txt")
     
-    # Intensity, Sx, Sy, Ls, Mi
-    feature_mtx = np.zeros((seed_info.shape[0], seed_info.shape[1] + 1))
+    # Length scale and median intensity
+    feature_mtx = np.zeros((seed_info.shape[0], seed_info.shape[1] + 0))
     
-    ns = feature_mtx.shape[0]
-    knn_neighbours = np.round(ns/10).astype('int32')
-    print(ns)    
+    ns = feature_mtx.shape[0] # Number of seeds
+    knn_neighbours = np.round(ns*knn_fraction).astype('int32')
     for i in range(seed_info.shape[1]):
         feature_mtx[:, i] = normalise(seed_info[:, i])
-    feature_mtx[:, 1] = logistic_fn(feature_mtx[:, 1])
-    #feature_mtx[:, 2] = feature_mtx[:, 0]
-        
+
 display_time(t)
 
+########
+# k-NN #
+########
 with Timer() as t:
-    nbrs = NearestNeighbors(n_neighbors=knn_neighbours + 1, algorithm='auto').fit(feature_mtx)
+    nbrs = NearestNeighbors(n_neighbors=knn_neighbours + 1,
+                            algorithm='auto').fit(feature_mtx)
     distances, indices = nbrs.kneighbors(feature_mtx)
     indices = indices[:, 1:]
     distances = distances[:, 1:]
 display_time(t)
 
+#######################################
+# Generate augmented adjacency matrix #
+#######################################
 with Timer() as t:
     cos_sim_mtx = calculate_edges(indices, feature_mtx, distances)
     
     # Create and initialise graph with node info from VD
     G = nx.Graph(directed=True)
     G.add_nodes_from(range(ns))
-    
-    #for key, nparr in d.items():
-    #    for value in nparr:
-    #        G.add_edge(key, value, weight=0.5)
 
-    G = recursive_edge_add(G, d, 3)    
+    # Walk neighbours adding edges with successively lower weights
+    G = recursive_edge_add(G, d, recursive_depth)    
         
-    
     # Add in node value (virtual?) edges from knn results
     for u in range(ns):
         for v_idx in range(knn_neighbours):
@@ -228,24 +246,39 @@ with Timer() as t:
                
 display_time(t)
     
+#####################
+# Signal similarity #
+#####################
 with Timer() as t:
     A = nx.adjacency_matrix(G).todense()
-    S = signal_similarity_mtx(A, 3)
+    S = signal_similarity_mtx(A, tau)
 display_time(t)
 
+#####################
+# Transition matrix #
+#####################
 with Timer() as t:
     P = transition_matrix(A)
 display_time(t)
 
+######################
+# Calculate PageRank #
+######################
 with Timer() as t:
-    v = calculate_pagerank(P, S, 0.15, 1e-9)
+    v = calculate_pagerank(P, S, beta, 1e-9)
 display_time(t)
 
+######################################
+# Calculate deltas, community values #
+######################################
 with Timer() as t:
     deltas = min_dist(v, S)
     CV = calculate_CV(v, deltas)
 display_time(t)
 
+######################
+# k-means clustering #
+######################
 with Timer() as t:   
     for k in range(2, 15):
         largest_k_indexes = k_largest(CV, k)
@@ -255,8 +288,11 @@ with Timer() as t:
         res = KMeans(k, init=starting_vectors, n_init=1).fit(S)
         labels = res.labels_
         sc = silhouette_score(S, labels, metric="euclidean")
-        print("For n_clusters={}, The Silhouette Coefficient is {}".format(k, sc))
+        print("For n_clusters={}, The Silhouette Coefficient is {}".format(k,
+              sc))
         
+        # Display graphs of silhouette scores
+        """
         fig, ax1 = plt.subplots(1, 1)
         fig.set_size_inches(10, 7)
         ax1.set_xlim([-0.1, 1])
@@ -276,18 +312,27 @@ with Timer() as t:
             yl = yu + 12
         
         ax1.set_title('Silhouette plots')
-        
-        
-    k = 4
-    print("k:", k)
-    largest_k_indexes = k_largest(CV, k)
-    starting_vectors = np.zeros((k, feature_mtx.shape[1]))
-    for i in range(k):
-        starting_vectors[i, :] = feature_mtx[largest_k_indexes[i], :]
-    res = KMeans(k, init=starting_vectors, n_init=1).fit(feature_mtx).labels_
+        """
     
-    np.savetxt("clusters.txt", res, fmt="%i")#
-    #sxsy = np.loadtxt("../share/output/north_proj/CVDseeds.txt", skiprows=3)[:, 0:2]
-    #centres = sxsy[largest_k_indexes.squeeze()].squeeze()
-    #np.savetxt("cluster-centres.txt", centres, fmt="%i")
+    # Save results of knn-enhance    
+    k = n_clusters
+    print("Saving with k =", k)
+    largest_k_indexes = k_largest(CV, k)
+    starting_vectors = np.zeros((k, S.shape[1]))
+    for i in range(k):
+        starting_vectors[i, :] = S[largest_k_indexes[i], :]
+    res = KMeans(k, init=starting_vectors, n_init=1).fit(S).labels_
+    
+    saveres = np.zeros_like(res)
+    avg_ls = np.zeros((k, 2))
+    avg_ls[:, 0] = np.arange(k)
+    
+    ls = seed_info[:, 1].squeeze()
+    for lb in range(k):
+        avg_ls[lb, 1] = np.mean(ls[np.where(res == lb)])
+    avg_ls = avg_ls[avg_ls[:,1].argsort()]
+    for lb in range(k):
+        saveres[np.where(res == avg_ls[lb, 0])] = lb
+    
+    np.savetxt(root + "clusters.txt", saveres, fmt="%i")
 display_time(t)

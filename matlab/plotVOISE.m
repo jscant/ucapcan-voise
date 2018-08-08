@@ -53,10 +53,9 @@ colormap(params.colormap);
 set(gcf, 'Position', axesParams.fig_params);
 
 ax = gca;
-
 dpi = strcat('-r', num2str(params.dpi));
 
-if ~isempty(VD)% || 1
+if ~isempty(VD)
   % scaling factors from VD to image axes
   if ~isempty(VD)
       W = VD.W;
@@ -90,8 +89,9 @@ ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 
 if isempty(VD) % original image
   title('Original image')
-  %print([params.oDir 'orig'], '-depsc', dpi);
+  yticks([-0.3 -0.2 -0.1 0 0.1]);
   print([params.oDir 'orig'], '-dpdf', dpi);
+  print([params.oDir 'orig'], '-depsc', dpi);
 else
   switch ic
       case 0
@@ -102,12 +102,14 @@ else
           titlestr = 'Merge phase | ';
       case 3
           titlestr = 'Regularisation phase | ';
-          load('../clustering/clusters.txt', '-ascii');
-
   end
+  %set(gcf, 'PaperPositionMode', 'auto');
+  %set(gca,'XMinorTick','off','YMinorTick','off')
   title(sprintf('%sSeeds: %d', titlestr, length(VD.Sk)))
-  %print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
+  yticks([-0.3 -0.2 -0.1 0 0.1]);
+  print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
   print([params.oDir 'phase' num2str(ic)], '-dpdf', dpi);
+  
 end
 
 if params.movDiag

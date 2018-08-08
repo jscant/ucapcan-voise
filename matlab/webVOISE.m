@@ -57,9 +57,11 @@ end
 % some diagnostics generated in 
 %close all
 %clf
-seedDist(MVD, params);
-clf
-plotHistHC(DVD, MVD, params);
+if params.printVD
+    seedDist(MVD, params);
+    clf
+    plotHistHC(DVD, MVD, params);
+end
 % clf
 % params = plotVDLengthScale(CVD, params);
 
