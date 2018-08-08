@@ -32,8 +32,8 @@ RealVec nsStar(const vd &VD) {
     bool onlyNeighbour = VD.getNkByIdx(lam).size() == 1;
 
     // First pass starts from lambda going one way around perimeter, second goes other way around
-    real n = 0;
-    while (n < 2) {
+    real unboundedEdges = 0;
+    while (unboundedEdges < 2) {
 
         RealVec candidates; // Storage in case x' is not unique (from [1])
 
@@ -43,7 +43,8 @@ RealVec nsStar(const vd &VD) {
         bool ccOGExists = false;
 
         // Choose which of the neighbours of last seed added to N(s*) to add next
-        for (real nIdx = n; nIdx < VD.getNkByIdx(lam).size(); ++nIdx) {
+        for (real nIdx = unboundedEdges; nIdx < VD.getNkByIdx(lam).size();
+                ++nIdx) {
             const real r = VD.getNkByIdx(lam)[nIdx];
             if (inVector(Ns, r)) { // Don't add same seed multiple times
                 continue;
@@ -77,15 +78,19 @@ RealVec nsStar(const vd &VD) {
                 } else if(fabs(ccOG[0] - cc[0]) < 1e-6 &&
                        fabs(ccOG[1] - cc[1]) < 1e-6){
 
-                    // Seed is not unique, we must use prop. 2 from [1]
+                    /*
+                     * Seed is not unique, and seeds are cocircular. We must
+                     * use Proposition 2 from [1]
+                     */
                     candidates.push_back(r);
                 }
-                n = 0;
+                unboundedEdges = 0;
             }
         }
 
         /*
-            Usually, candidates has 1 element. If > 1, use proposition 2 from
+            Usually, candidates has 1 element. In this case, proposition2
+            just returns that element. If not, it uses Proposition 2 from
             [1] to determine which one should be in neighbour list. If there
             are no candidates to add to N(s*), either return Ns if this is
             our second pass or start again from lambda and go around the
@@ -95,12 +100,11 @@ RealVec nsStar(const vd &VD) {
             uint32 winningSeed = proposition2(VD, lam, candidates, cc);
             lam = winningSeed;
             Ns.push_back(winningSeed);
-            n = 0;
         } else {
-            if (onlyNeighbour || n > 0) {
+            if (onlyNeighbour || unboundedEdges > 0) {
                 return Ns;
             }
-            n += 1;
+            unboundedEdges += 1;
             lam = lamOG;
         }
     }

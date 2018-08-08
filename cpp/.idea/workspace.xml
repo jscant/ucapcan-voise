@@ -39,7 +39,26 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="NSStar.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/NSStar.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="proposition2.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -92,12 +111,10 @@
         <option value="$PROJECT_DIR$/src/pointInRegion.h" />
         <option value="$PROJECT_DIR$/src/aux-functions/metrics.cpp" />
         <option value="$PROJECT_DIR$/src/pointInRegion.cpp" />
-        <option value="$PROJECT_DIR$/src/NSStar.cpp" />
         <option value="$PROJECT_DIR$/src/NSStar_reloaded.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/proposition2.h" />
         <option value="$PROJECT_DIR$/src/NSStar_prop2.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/arrayPosInVector.h" />
-        <option value="$PROJECT_DIR$/src/aux-functions/proposition2.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/readMatrix.cpp" />
         <option value="$PROJECT_DIR$/src/aux-functions/readSeeds.cpp" />
         <option value="$PROJECT_DIR$/src/mex/grabW.cpp" />
@@ -132,6 +149,8 @@
         <option value="$PROJECT_DIR$/src/mex/grabVD.cpp" />
         <option value="$PROJECT_DIR$/src/mex/sopToWop.cpp" />
         <option value="$PROJECT_DIR$/src/mex/pushVD.cpp" />
+        <option value="$PROJECT_DIR$/src/NSStar.cpp" />
+        <option value="$PROJECT_DIR$/src/aux-functions/proposition2.cpp" />
       </list>
     </option>
   </component>
@@ -232,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager" selected="Application.Proposition2Check">
     <configuration name="Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetCentroidCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetCentroidCheck" TEST_METHOD="Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="GetCentroidCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetCentroidCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetCentroidCheck" />
@@ -312,7 +331,7 @@
       <workItem from="1532777300381" duration="624000" />
       <workItem from="1532800279025" duration="2149000" />
       <workItem from="1533580779962" duration="390000" />
-      <workItem from="1533652251302" duration="2766000" />
+      <workItem from="1533652251302" duration="3919000" />
     </task>
     <servers />
   </component>
@@ -337,18 +356,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216381000" />
+    <option name="totallyTimeSpent" value="217534000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14628822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14814815" />
       <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.34659687" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.37172773" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32984293" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="right" id="Run" order="3" weight="0.2763958" />
+      <window_info anchor="right" id="Run" order="3" visible="true" weight="0.32614705" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32984293" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -357,7 +378,6 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.34659687" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
     </layout>
@@ -416,13 +436,6 @@
     <entry file="file://$PROJECT_DIR$/src/NSStar.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/NSStar.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/NSStar_prop2.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -446,13 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="87" column="7" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -712,6 +718,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="31" column="45" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/NSStar.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="95" column="43" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
         </state>
       </provider>
     </entry>
