@@ -7,7 +7,7 @@
 #include "mexIncludes.h"
 
 /**
- * @defgroup grabW
+ * @defgroup grabW grabW
  * @brief Takes matrix from matlab and puts it in Eigen::Array<real>
  * @param prhs mxArray* which points to the start of the Matlab data
  * @param field Which Matlab argument to grab

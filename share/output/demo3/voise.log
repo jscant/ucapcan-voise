@@ -101,20 +101,20 @@ StopDiv = True
 *** Dividing phase completed.
 *** Starting merging phase
 Homogeneity Criteria min=0.04 max=1.00 Q(50)=0.31
-Elapsed time is 0.077761 seconds.
+Elapsed time is 0.071485 seconds.
 Iter  1 Removing 52 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.087890 seconds.
+Elapsed time is 0.070173 seconds.
 Iter  2 Removing 19 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.058416 seconds.
+Elapsed time is 0.066762 seconds.
 Iter  3 Removing 4 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.33
-Elapsed time is 0.046923 seconds.
+Elapsed time is 0.054072 seconds.
 Iter  4 Removing 3 seeds from Voronoi Diagram
 Homogeneity Criteria min=0.06 max=1.00 Q(50)=0.34
-Elapsed time is 0.045417 seconds.
-Elapsed time is 0.045755 seconds.
+Elapsed time is 0.052753 seconds.
+Elapsed time is 0.053266 seconds.
 *** Merging phase completed.
 *** Starting regularisation phase
 Maximum distance seed/centre-of-mass 511.0 (362.5)
@@ -123,4 +123,4 @@ Maximum distance seed/centre-of-mass 46.0 (36.1)
 Iter  2 Computing regularised Voronoi Diagram for 551 seeds
 *** Regularisation phase completed.
 *** Saving VOISE results in ../share/output/demo3/voise.mat
-*** Total elapsed time 00:00:03 [hh:mm:ss].
+*** Total elapsed time 00:00:14 [hh:mm:ss].

@@ -89,7 +89,7 @@ ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 
 if isempty(VD) % original image
   title('Original image')
-  yticks([-0.3 -0.2 -0.1 0 0.1]);
+ % yticks([-0.3 -0.2 -0.1 0 0.1]);
   print([params.oDir 'orig'], '-dpdf', dpi);
   print([params.oDir 'orig'], '-depsc', dpi);
 else
@@ -106,8 +106,8 @@ else
   %set(gcf, 'PaperPositionMode', 'auto');
   %set(gca,'XMinorTick','off','YMinorTick','off')
   title(sprintf('%sSeeds: %d', titlestr, length(VD.Sk)))
-  yticks([-0.3 -0.2 -0.1 0 0.1]);
-  print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
+  %yticks([-0.3 -0.2 -0.1 0 0.1]);
+  %print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
   print([params.oDir 'phase' num2str(ic)], '-dpdf', dpi);
   
 end

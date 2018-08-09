@@ -3,6 +3,7 @@
 
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/NSStar.h
+CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/arrayPosInVector.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
 CMakeFiles/testAddSeedCheckV.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h

@@ -186,10 +186,15 @@ save([params.oDir, params.oMatFile], '-append', 'CVD');
 %load('../share/voise-poster.mat');
 params = plotVOISE(CVD, params, 3);
 
+clus = 1;
+try
+    load(strcat(params.oDir, "/clusters.txt"))
+catch ME
+    clust = 0;
+end
 
-
-if 0
-    %figure;
+% Plot results of ../clustering/knn.py clustering (if clusters.txt exists)
+if clus && params.printVD
     load(strcat(params.oDir, "/clusters.txt"))
     axis equal;
     activeX = CVD.Sx(CVD.Sk);
@@ -218,21 +223,21 @@ if 0
     plot((vx - W.xm)*sx+min(params.x), (vy - W.ym)*sy+min(params.y), ...
         '-k', 'LineWidth', 0.5)
     hold off
-    set(gca, 'dataAspectRatio', [1, 1, 1]);
-    c = colorbar;
-    c.Ticks = [];
-    c.TickLabels = c.Ticks;
-    title("Clustering: " + "$\bar{s}($" + num2str(cluster_count) +...
-        "$) = 0.52$", 'Interpreter' ,'latex');
+%    c = colorbar;
+%    c.Ticks = [];
+%    c.TickLabels = c.Ticks;
+    %title("Clustering: " + "$\bar{s}($" + num2str(cluster_count) +...
+    %    "$) = 0.52$", 'Interpreter' ,'latex');
+    title("Clustering: " + "$k = $" + num2str(cluster_count),...
+        'Interpreter' ,'latex');
     xlabel(sprintf('x [%s]',params.pixelUnit{1}))
     ylabel(sprintf('y [%s]',params.pixelUnit{2}))
     dpi = strcat('-r', num2str(params.dpi));
-    print([params.oDir, 'clusters'], '-dpdf', dpi);
+    %print([params.oDir, 'clusters'], '-dpdf', dpi);
     print([params.oDir, 'clusters'], '-depsc', dpi);
-    while(1 == 1)
-        pause(10);
-    end
 end
+
+
 if 0
     % do not plot Voronoi diagram
     params = plotVOISE(CVD, params, 4);

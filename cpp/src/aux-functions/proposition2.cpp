@@ -10,7 +10,7 @@
 
 #include "proposition2.h"
 #include "../skizException.h"
-
+#include <iostream>
 /**
  * @brief Uses proposition 2 in [1] to decide between seeds for addition to N
  * (s*)
@@ -36,6 +36,7 @@
 uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
                     std::array<real, 2> cc){
     uint32 ns = candidates.size();
+
     if(ns == 1){
         return candidates.at(0); // 1 candidate, this is the most common result
     }
@@ -63,7 +64,6 @@ uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
         real angleDiff = fmod(angle1 - angle2 + 2*M_PI, 2*M_PI);
         angles.push_back(angleDiff);
     }
-
     // Find angle made by lambda seed, as this is definitely a neighbour
     real lamAngle1 = atan2(VD.getSyByIdx(lam) - cc[1],
                            VD.getSxByIdx(lam) - cc[0]);
@@ -83,10 +83,11 @@ uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
     uint32 result;
     if(lamAngleDiff >= *maxElementIt){
         result = candidates.at(std::distance(angles.begin(), maxElementIt));
-    } else {// if (lamAngleDiff <= *minElementIt) {
+    } else if (lamAngleDiff <= *minElementIt) {
         result = candidates.at(std::distance(angles.begin(), minElementIt));
-    }// else {
-     //   throw(SKIZException("???????"));
-    //}
+    } else {
+        throw(SKIZProposition2Exception("Lambda forms neither the max"
+                                        " or the min angle with s*, cc"));
+    }
     return result;
 }

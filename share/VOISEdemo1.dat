@@ -41,4 +41,4 @@ oDir = ../share/output/north_proj/
 #    y           256x1             2048  double  y-axis (# rows in image Z)
 # The axes are in unit of Jupiter radius
 pixelUnit  = {'R_J', 'R_J'}
-printVD = 0
+printVD = 1

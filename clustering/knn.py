@@ -191,16 +191,16 @@ knn_fraction = 1/10     # Fraction of nearest neighbours
 recursive_depth = 1     # Depth to 'crawl' neighbours for adding edges
 tau = 10                # Signal similarity iteration count
 beta = 0.0              # Prob of random hop for PageRank
-n_clusters = 5         # Clusters to plot
+n_clusters = 5      # Clusters to plot
     
 ##################
 # INITIALISATION #
 ##################
 with Timer() as t:
-    root = "../share/output/poster/"
+    root = "../share/output/north_proj/"
     
     # Order: Index, sx, sy, length scale, median intensity
-    seed_info = np.loadtxt(root + "CVDseeds.txt", skiprows=3)[:, 1:]
+    seed_info = np.loadtxt(root + "CVDseeds.txt", skiprows=3)[:, 3:]
     d = extract_neighbours(root + "CVDneighbours.txt")
     
     # Length scale and median intensity

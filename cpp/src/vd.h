@@ -55,10 +55,6 @@ public:
     W_struct W;
     W_struct S;
 
-    /**
- * Set Vk
- * @param val
- */
     void setVk(V_struct val);
     void setW(W_struct val);
     void setS(W_struct val);

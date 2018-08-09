@@ -104,4 +104,23 @@ public:
     const char* what();
 };
 
+/**
+ * @brief Thrown in case of unexpected behaviour in proposition2.cpp
+ * @param s Message to be given when thrown
+ */
+class SKIZProposition2Exception : public SKIZException {
+private:
+    /// Stores message to be thrown
+    std::string msg;
+public:
+    /// Constructor takes string as argument which is stored in msg
+    SKIZProposition2Exception(const std::string s);
+
+    /// Destructor
+    virtual ~SKIZProposition2Exception() throw();
+
+    /// Extract message stored in msg
+    const char* what();
+};
+
 #endif

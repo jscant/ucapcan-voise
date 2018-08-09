@@ -14,14 +14,21 @@
 #include "../../vd.h"
 
 /**
- * @struct
+ * @struct loadStruct
+ * @brief Used for loading and returning seed data for unit testing
  */
 struct loadStruct{
-    RealVec Sx; /// Vector of x coordinates of seeds
-    RealVec Sy; /// Vector of y coordinates of seeds
+    /// Vector of x coordinates of seeds
+    RealVec Sx;
+
+    /// Vector of y coordinates of seeds
+    RealVec Sy;
+
+    /// Voronoi diagram with initial configuration
+    vd VD;
+
     loadStruct(uint32 rows, uint32 cols) : VD(rows, cols) {};
     ~loadStruct() {} ;
-    vd VD; /// Voronoi diagram with initial configuration
 };
 
 #endif //STANDALONE_SKIZ_LOADSTRUCT_H

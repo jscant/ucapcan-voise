@@ -3,6 +3,7 @@
 
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/NSStar.h
+CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/arrayPosInVector.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
 CMakeFiles/standalone_skiz.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h

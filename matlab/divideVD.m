@@ -46,8 +46,8 @@ VD.addedInRound = [];
 for i = 1:length(VD.Sk)
     VD.addedInRound = [VD.addedInRound; 0];
 end
-last_len = length(VD.Sx)
-rnd = 0
+last_len = length(VD.Sx);
+rnd = 0;
 while ~stopDiv,
     rnd = rnd + 1;
     % compute homogeneity fuunction and dynamic threshold
@@ -67,8 +67,7 @@ while ~stopDiv,
         s = addSeedsToVR(VD, sk, params);
         S = [[S(:, 1); s(:, 1)], [S(:, 2); s(:, 2)]];
     end
-    
-    
+     
     if 0, % diagnostic plot (seed to add)
         subplot(212),
         imagesc(WHC);

@@ -3,6 +3,7 @@
 
 CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
 CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/NSStar.h
+CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/arrayPosInVector.h
 CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/circumcentre.h
 CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/inVector.h
 CMakeFiles/testAddSeedCheckLambda.dir/src/NSStar.cpp.o: ../src/aux-functions/proposition2.h

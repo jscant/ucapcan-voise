@@ -27,7 +27,7 @@ s = sprintf('\n');
 
 s1 = sprintf('*** Voronoi Diagram Neighbours k = %d ***', k);
 s2 = char('*'*ones(length(s1),1));
-s3 = sprintf('Seed\tNeighbours')
+s3 = sprintf('Seed\tNeighbours');
 
 s = [s sprintf('%s\n%s\n', s1, s3)];
 

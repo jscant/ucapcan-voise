@@ -27,6 +27,9 @@ var searchData=
   ['skizindexexception',['SKIZIndexException',['../classSKIZIndexException.html',1,'SKIZIndexException'],['../classSKIZIndexException.html#abd89a7895a20077dbb514271c6455f75',1,'SKIZIndexException::SKIZIndexException()']]],
   ['skizioexception',['SKIZIOException',['../classSKIZIOException.html',1,'SKIZIOException'],['../classSKIZIOException.html#a9f25dbc11996a8755965923611cce128',1,'SKIZIOException::SKIZIOException()']]],
   ['skizlinearseedsexception',['SKIZLinearSeedsException',['../classSKIZLinearSeedsException.html',1,'SKIZLinearSeedsException'],['../classSKIZLinearSeedsException.html#a11607556ca04d52a2d2c35c06fad3f6b',1,'SKIZLinearSeedsException::SKIZLinearSeedsException()']]],
+  ['skizproposition2exception',['SKIZProposition2Exception',['../classSKIZProposition2Exception.html',1,'SKIZProposition2Exception'],['../classSKIZProposition2Exception.html#ad157eeca24ed92ccabb35add4ecb1fce',1,'SKIZProposition2Exception::SKIZProposition2Exception()']]],
+  ['soptowop_2ecpp',['sopToWop.cpp',['../sopToWop_8cpp.html',1,'']]],
   ['sqdist',['sqDist',['../group__sqDist.html',1,'']]],
-  ['sqdist_2eh',['sqDist.h',['../sqDist_8h.html',1,'']]]
+  ['sqdist_2eh',['sqDist.h',['../sqDist_8h.html',1,'']]],
+  ['stoptowop',['stopToWop',['../group__stopToWop.html',1,'']]]
 ];
