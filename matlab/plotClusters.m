@@ -1,4 +1,5 @@
 function params = plotClusters(CVD, params)
+    figure;
     load(strcat(params.oDir, "/clusters.txt"))
     axis equal;
     activeX = CVD.Sx(CVD.Sk);

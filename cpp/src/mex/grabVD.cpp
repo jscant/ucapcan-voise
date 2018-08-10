@@ -128,8 +128,8 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
     vd VD = vd(nr, nc);
 
     /*
-     * Eigen Maps 'reuse' memory, no copying large matrices. Offsetting due
-     * to difference between Matlab and C++ array indexing (1- and 0- based
+     * Eigen Maps give pointers to memory, no copying large matrices. Offsetting
+     * due to difference between Matlab and C++ array indexing (1- and 0- based
      * respectively)
      */
     VD.setLam(Eigen::Map<Mat>(lamPtr, nRows, nCols));
