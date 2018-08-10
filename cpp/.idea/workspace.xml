@@ -330,7 +330,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.doc">
+  <component name="RunManager" selected="Catch.Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data">
     <configuration name="Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data" type="CMakeCatchTestRunConfigurationType" factoryName="Catch Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetCentroidCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetCentroidCheck" TEST_METHOD="Checks that the getVDOp function correctly returns a matrix of averages from VD and pixel intensity data" TEST_MODE="SUITE_TEST" />
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="standalone_skiz" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="GetCentroidCheck" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="standalone_skiz" TARGET_NAME="GetCentroidCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="standalone_skiz" RUN_TARGET_NAME="GetCentroidCheck" />
