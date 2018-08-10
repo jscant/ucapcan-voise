@@ -121,7 +121,7 @@ vd grabVD(const mxArray *prhs[], const uint32 field) {
         mwIndex cellLen = mxGetNumberOfElements(cellPtr); // Elements in cell
         real *vals = mxGetDoubles(cellPtr); // Pointer to cell contents
         RealVec cellVec(vals, vals + cellLen); // Faster than looping
-        Nk[i] = cellVec; // Seed indexes begin at 1
+        Nk[i + 1] = cellVec; // Seed indexes begin at 1
     }
 
     // Create and populate vd
