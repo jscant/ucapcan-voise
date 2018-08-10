@@ -42,3 +42,4 @@ oDir = ../share/output/saturn1/
 # The axes are in unit of Jupiter radius
 #pixelUnit  = {'R_J', 'R_J'}
 printVD = 1
+clus = 1
