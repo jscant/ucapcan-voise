@@ -2,6 +2,7 @@ function params = plotClusters(CVD, params)
     figure;
     load(strcat(params.oDir, "/clusters.txt"))
     axis equal;
+    pbaspect([1 1 1]);
     activeX = CVD.Sx(CVD.Sk);
     activeY = CVD.Sy(CVD.Sk);
     xlim([0, CVD.nc])
@@ -28,6 +29,7 @@ function params = plotClusters(CVD, params)
     plot((vx - W.xm)*sx+min(params.x), (vy - W.ym)*sy+min(params.y), ...
         '-k', 'LineWidth', 0.5)
     hold off
+    axis square;
     %    c = colorbar;
     %    c.Ticks = [];
     %    c.TickLabels = c.Ticks;

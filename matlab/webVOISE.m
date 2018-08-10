@@ -75,16 +75,20 @@ fclose(fid);
 
 %params = plotVOISE(CVD, params, 3);
 
-commandStr = ['python -W ignore ../clustering/knn.py ', params.oDir, ...
-    ' ', num2str(params.n_clusters)];
 
+% Clustering by knn-enhance:
+% Caiyan Jia et al. “Node Attribute-enhanced Community Detection in
+% Complex Networks”. In: Scientific Reports 7.1 (2017). doi: 10 . 1038 /
+% s41598-017-02751-8.
 if params.clus
+    commandStr = ['python -W ignore ../clustering/knn.py ',...
+        params.oDir, ' ', num2str(params.n_clusters)];
     fprintf('***************************************************\n');
     fprintf('Performing kNN-enhance clustering...\n');
     [status, commandOut] = system(commandStr);
     if status == 0
         fprintf('Clustering sucessfully completed:\n');
-        fprintf(commandOut);
+        fprintf(commandOut); % Python output
         fprintf('***************************************************\n');
         % Plot results of ../clustering/knn.py clustering
         if params.printVD

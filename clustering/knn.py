@@ -3,8 +3,14 @@
 """
 Created on Sat Jul 28 14:58:35 2018
 
-@author: jack
+@author: Jack Scantlebury
 """
+##############################################################################
+# ALGORITHM MODIFIED FROM:
+# Caiyan Jia et al. “Node Attribute-enhanced Community Detection in          #
+# Complex Networks”. In: Scientific Reports 7.1 (2017). doi: 10 . 1038 /     #
+# s41598-017-02751-8.                                                        #
+##############################################################################
 
 import argparse
 import numpy as np
@@ -30,9 +36,6 @@ def normalise(data):
     rng = np.amax(data) - np.amin(data)
     return res1/rng
 
-def continuous_similarity(v1, v2):
-    return 1 - np.linalg.norm(v1 - v2)
-
 def calculate_edges(knn_indices, feature_mtx, distance_mtx):
     result = np.zeros_like(knn_indices).astype('float64')
     normed_distances = normalise(distance_mtx)
@@ -56,8 +59,6 @@ def extract_neighbours(filename):
                     n += 1
     return d
 
-# A parameter-free community detection method based on
-# centrality and dispersion of nodes in complex networks
 # Eq. 1 : S = (A + I)^tau, Sbar_ij = Sij / sqrt(sum_j Sij^2)
 def signal_similarity_mtx(A, tau):
     I = np.identity(A.shape[0]).astype('f4')
@@ -128,6 +129,7 @@ def calculate_CV(v, deltas):
 def k_largest(arr, k):
     return np.argsort(arr, axis=0)[:k]
 
+# For displaying timing information
 timer_strs= ['Loading data',
              'Knn',
              'Graph generation',
@@ -138,20 +140,22 @@ timer_strs= ['Loading data',
              'Kmeans',
              'TOTAL CLUSTERING TIME']
 
+# For displaying timing information
 l = 0
 x = 0
 for i in timer_strs:
     if len(i) > l:
-        l = len(i)
-        
+        l = len(i)   
 space_str_len = (l + 2)
 
+# For displaying timing information
 def display_time(t):
     global x
     print(timer_strs[x] + ':' + ' '*(space_str_len - len(timer_strs[x])),
           str(t.interval)[:6], 's')
     x += 1
     
+# Recursive edge addition, described in project report
 def recursive_edge_add(G, d, depth):
     A = G
     for key, value in d.items():
@@ -173,18 +177,10 @@ def recursive_edge_add(G, d, depth):
                     A.add_edge(key, v, weight=weight)        
     return A
 
+# Unused in the end
 def logistic_fn(normalised_vector):
     res = 1/(1+np.exp(-30*(normalised_vector - 0.25)))
     return res
-
-def extract_root(path):
-    folder_lst = path.split("/")
-    root = ""
-    for idx, folder in enumerate(folder_lst):
-        if idx < len(folder_lst - 1):
-            root += folder + "/"
-            
-    return root
 
 ##############
 # PARAMETERS #
@@ -302,18 +298,30 @@ with Timer() as total_time:
             if sc > max_sc:
                 max_sc = sc
                 argmax_sc = k
+                
+                
+        ###############################
+        # Save results of knn-enhance #
+        ###############################
         
-        # Save results of knn-enhance    
+        # If k specified in command line, use that, else k with best mean sc
         if n_clusters == -1:
             k = argmax_sc
         else:
             k = n_clusters
+            
+        # Choose vectors with best CV values as initial mean vectors    
         largest_k_indexes = k_largest(CV, k)
+        
+        # Populate initial mean vectors
         starting_vectors = np.zeros((k, S.shape[1]))
         for i in range(k):
             starting_vectors[i, :] = S[largest_k_indexes[i], :]
+            
+        # Perform k-means in the usual way (except using S as input vecs)
         res = KMeans(k, init=starting_vectors, n_init=1).fit(S).labels_
         
+        # Easier to reorder labels in size order here for better ML display
         saveres = np.zeros_like(res)
         avg_ls = np.zeros((k, 2))
         avg_ls[:, 0] = np.arange(k)
@@ -325,9 +333,12 @@ with Timer() as total_time:
         for lb in range(k):
             saveres[np.where(res == avg_ls[lb, 0])] = lb
         sc = str(silhouette_score(S, res, metric="euclidean"))[:5]
-        
+
+        # Save results
         np.savetxt(root + "clusters.txt", saveres, fmt="%i")
+        
     display_time(t)
     print("For k = {}, the mean silhouette coefficient is {}".format(k,
                   sc))
+    
 display_time(total_time)
