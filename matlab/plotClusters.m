@@ -1,5 +1,5 @@
 function params = plotClusters(CVD, params)
-    figure;
+    clf;
     load(strcat(params.oDir, "/clusters.txt"))
     axis equal;
     pbaspect([1 1 1]);
@@ -35,7 +35,7 @@ function params = plotClusters(CVD, params)
     %    c.TickLabels = c.Ticks;
     %title("Clustering: " + "$\bar{s}($" + num2str(cluster_count) +...
     %    "$) = 0.52$", 'Interpreter' ,'latex');
-    title("Clustering:" +"$k = $" +num2str(cluster_count), ...
+    title("Clustering: " +"$k = $" +num2str(cluster_count), ...
         'Interpreter', 'latex');
     xlabel(sprintf('x [%s]', params.pixelUnit{1}))
     ylabel(sprintf('y [%s]', params.pixelUnit{2}))
