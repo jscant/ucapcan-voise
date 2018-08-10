@@ -1,7 +1,7 @@
 function webVOISE(VOISEconf)
 % function webVOISE(VOISEconf)
 %
-% VOISEconf is a name of a configuration file containing 
+% VOISEconf is a name of a configuration file containing
 % a list of parameters for VOISE. For example
 % iNumSeeds = 12
 % RNGiseed = 10
@@ -36,11 +36,11 @@ function webVOISE(VOISEconf)
 % Some set up variables
 global voise
 
-voise.root    = '..';
+voise.root = '..';
 voise.version = '1.3.2';
 
 % disable warning about using handle graphics with -nojvm
-warning('off','MATLAB:HandleGraphics:noJVM');
+warning('off', 'MATLAB:HandleGraphics:noJVM');
 
 % load VOISE parameters from configuration file
 params = readVOISEconf(VOISEconf);
@@ -49,12 +49,12 @@ params = readVOISEconf(VOISEconf);
 params = loadImage(params);
 
 % create directory if necessary
-if ~exist(params.oDir,'dir')
-    unix(['mkdir -p ' params.oDir]);
+if ~exist(params.oDir, 'dir')
+    unix(['mkdir -p ', params.oDir]);
 end
 
-[params,IVD,DVD,MVD,CVD] = VOISE(params);
-% some diagnostics generated in 
+[params, IVD, DVD, MVD, CVD] = VOISE(params);
+% some diagnostics generated in
 %close all
 %clf
 if params.printVD
@@ -65,15 +65,39 @@ end
 % clf
 % params = plotVDLengthScale(CVD, params);
 
-fid = fopen([params.oDir 'CVDseeds.txt'],'w');
+fid = fopen([params.oDir, 'CVDseeds.txt'], 'w');
 printSeeds(fid, CVD, params);
 fclose(fid);
 
-fid = fopen([params.oDir 'CVDneighbours.txt'],'w');
+fid = fopen([params.oDir, 'CVDneighbours.txt'], 'w');
 printVD(fid, CVD);
 fclose(fid);
 
-fitswrite(CVD.Vk.lambda,[params.oDir 'CVDseeds.fits']);
+%params = plotVOISE(CVD, params, 3);
+
+commandStr = ['python -W ignore ../clustering/knn.py ', params.oDir, ...
+    ' ', num2str(params.n_clusters)];
+
+if params.clus
+    fprintf('***************************************************\n');
+    fprintf('Performing kNN-enhance clustering...\n');
+    [status, commandOut] = system(commandStr);
+    if status == 0
+        fprintf('Clustering sucessfully completed:\n');
+        fprintf(commandOut);
+        fprintf('***************************************************\n');
+        % Plot results of ../clustering/knn.py clustering
+        if params.printVD
+            plotClusters(CVD, params);
+        end
+    else
+        fprintf('Clustering failed!\n');
+        params.clus = 0;
+    end
+end
+
+
+fitswrite(CVD.Vk.lambda, [params.oDir, 'CVDseeds.fits']);
 [Wop, Sop] = getVDOp(CVD, params.W, 1);
 
 close all;

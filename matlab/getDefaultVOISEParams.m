@@ -210,5 +210,7 @@ params.pause           = false;
 params.movDiag         = false;
 params.movPos          = [600 50 1300 1050]; % movie window size
 
-params.printVD         = 1;
-params.dpi             = 300;
+params.printVD         = 1; % Show VD at each stage, save VD to file
+params.dpi             = 300; % Print quality
+params.n_clusters      = -1; % Choose clusters based on silhouette
+params.clus            = 0;
