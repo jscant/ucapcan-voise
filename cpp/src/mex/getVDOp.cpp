@@ -4,6 +4,9 @@
  * Matlab script. Uses one of six metrics (mean, median, standard deviation,
  * range, normalised range, number of pixels) to evaluate the merit function of
  * a Voronoi region.
+ *
+ * @date Created 05/07/18
+ * @author Jack Scantlebury
  */
 
 #include "mexIncludes.h"

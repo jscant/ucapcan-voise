@@ -5,6 +5,7 @@
  *
  * @date Created 01/07/18
  * @date Modified 25/07/18
+ * @author Jack Scantlebury
  */
 #ifndef STANDALONE_SKIZ_LOADSTRUCT_H
 #define STANDALONE_SKIZ_LOADSTRUCT_H

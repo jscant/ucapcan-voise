@@ -30,15 +30,16 @@ function params = plotClusters(CVD, params)
         '-k', 'LineWidth', 0.5)
     hold off
     axis square;
-    %    c = colorbar;
-    %    c.Ticks = [];
-    %    c.TickLabels = c.Ticks;
+    c = colorbar;
+    c.Ticks = [];
+    c.TickLabels = c.Ticks;
     %title("Clustering: " + "$\bar{s}($" + num2str(cluster_count) +...
-    %    "$) = 0.52$", 'Interpreter' ,'latex');
+    %    "$) = 0.40$", 'Interpreter' ,'latex');
     title("Clustering: " +"$k = $" +num2str(cluster_count), ...
         'Interpreter', 'latex');
     xlabel(sprintf('x [%s]', params.pixelUnit{1}))
     ylabel(sprintf('y [%s]', params.pixelUnit{2}))
     dpi = strcat('-r', num2str(params.dpi));
+    print([params.oDir, 'clusters'], '-dpdf', dpi);
     print([params.oDir, 'clusters'], '-depsc', dpi);
 end

@@ -2,6 +2,9 @@
  * @file
  * @brief Takes a vector of values with which to populate each VR with for
  * displaying clustering results.
+ *
+ * @date Created 09/08/18
+ * @author Jack Scantlebury
  */
 
 #include "mexIncludes.h"
@@ -69,7 +72,7 @@ void mexFunction(int nlhs, mxArray *plhs[],
                     #ifdef MATLAB_MEX_FILE // Running MEX compiler or normal?
                         Wop(j, i) = mxGetNaN(); // For consistency with Matlab
                     #else
-                        Wop(j, i) = -INF; // For use in unit testing where mxGetNaN is invalid
+                        Wop(j, i) = -INF; // For standalone/unit testing
                     #endif
                 }
             }

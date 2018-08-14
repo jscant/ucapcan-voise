@@ -1,6 +1,12 @@
 /**
  * @file
  * @brief Adds seed to Voronoi diagram.
+ *
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator:
+ * A Dynamic Algorithm" [1], Section 3.1
+ *
+ * @date Created 01/07/18
+ * @author Jack Scantlebury
 */
 
 #include "addSeed.h"
@@ -18,13 +24,17 @@
 /**
  * @defgroup addSeed addSeed
  * @ingroup addSeed
+ *
  * @brief Adds seed to voronoi diagram.
+ *
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator:
+ * A Dynamic Algorithm" [1], Section 3.1
+ *
  * @param VD vd object (definition in vd.h)
  * @param s1 First coordinate of seed to be added
  * @param s2 Second coordinate of seed to be added
  *
- * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
-    Operator: A Dynamic Algorithm" [1], Section 3.1
+
 */
 void addSeed(vd &VD, real s1, real s2) {
 

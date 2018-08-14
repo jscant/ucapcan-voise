@@ -1,7 +1,10 @@
-//
-// Created by root on 01/07/18.
-//
-
+/**
+ * @file
+ * @copydetails bruteForceCheckLambda.cpp
+ *
+ * @date Created 20/07/18
+ * @author Jack Scantlebury
+ */
 #ifndef STANDALONE_SKIZ_BRUTEFORCECHECKLAMBDA_H
 #define STANDALONE_SKIZ_BRUTEFORCECHECKLAMBDA_H
 
@@ -9,4 +12,4 @@
 
 bool bruteForceCheckLambda(vd &VD);
 
-#endif //STANDALONE_SKIZ_BRUTEFORCECHECKLAMBDA_H
+#endif

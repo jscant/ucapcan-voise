@@ -29,9 +29,9 @@
  * @param candidates The list of seeds whose circumcentre with lambda and s*
  * are coincidental (x' in 3.1.2 of [1])
  * @param cc std::array<real, 2> coordinates of circumcentre X(s*,
- * f\$lambda$\f$, s)
+ * \f$\lambda\f$, s)
  * @return The ID of the other seed in the pair of neighbours creating
- * the largest and smallest angles s-x'-s* (the other being f\$lambda\f$)
+ * the largest and smallest angles s-x'-s* (the other being \f$\lambda\f$)
  */
 uint32 proposition2(const vd &VD, uint32 lam, const RealVec &candidates,
                     std::array<real, 2> cc){

@@ -1,7 +1,9 @@
 /**
  * @file
- * @brief Finds average pixel intensity of all VRs in VD.
+ * @brief Finds average pixel intensity of VRs in VD.
  *
+ * @date Created 31/07/18
+ * @author Jack Scantlebury
  */
 #include "getOp.h"
 #include "aux-functions/metrics.h"
@@ -17,7 +19,7 @@
 /**
  * @defgroup getVDOp getVDOp
  * @ingroup getVDOp
- * @brief Finds average pixel intensity of all VRs in VD.
+ * @brief Finds average pixel intensity of VRs in VD.
  *
  * Can use any type of average. Once average for VR has been calculated, all
  * corresponding pixels in result are assigned that value. Pixels with
@@ -29,13 +31,13 @@
  * @param metric std::function<real(RealVec)> Function handle for type of
  * average to use
  * @param mult Multiplier of return value.
- * @param Wop Empty Eigen::Array for storage of averge pixel intensity
+ * @param Wop Empty Eigen::Array for storage of average pixel intensity
  * (matrix of pixel intensities)
  * @param Sop Empty Eigen::Array for storage of averge pixel intensity (list
  * of VR averages)
  * @returns Wop Eigen::Array containing average pixel intensity (matrix of
  * pixel intensities)
- * @returns Sop Eigen::Array for storage of averge pixel intensity (list of
+ * @returns Sop Eigen::Array for storage of average pixel intensity (list of
  * VR averages)
  */
 void getVDOp(const vd &VD, const Mat &W, std::function<real(RealVec)> metric,

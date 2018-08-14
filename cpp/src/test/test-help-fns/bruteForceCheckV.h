@@ -1,6 +1,10 @@
-//
-// Created by root on 01/07/18.
-//
+/**
+ * @file
+ * @copydetails bruteForceCheckV.cpp
+ *
+ * @date Created 01/08/18
+ * @author Jack Scantlebury
+ */
 
 #ifndef STANDALONE_SKIZ_BRUTEFORCECHECKV_H
 #define STANDALONE_SKIZ_BRUTEFORCECHECKV_H

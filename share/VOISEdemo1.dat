@@ -43,4 +43,4 @@ oDir = ../share/output/north_proj/
 pixelUnit  = {'R_J', 'R_J'}
 printVD = 1
 clus = 1
-n_clusters = 5
+n_clusters = -1

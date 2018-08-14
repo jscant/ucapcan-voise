@@ -1,6 +1,10 @@
-//
-// Created by root on 01/07/18.
-//
+/**
+ * @file
+ * @copydetails loadVD.cpp
+ *
+ * @date Created 01/07/18
+ * @author Jack Scantlebury
+ */
 
 #ifndef STANDALONE_SKIZ_LOADVD_H
 #define STANDALONE_SKIZ_LOADVD_H

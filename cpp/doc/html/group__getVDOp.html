@@ -54,9 +54,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Finds average pixel intensity of all VRs in VD.  
+<p>Finds average pixel intensity of VRs in VD.  
 <a href="#details">More...</a></p>
-<p class="">Finds average pixel intensity of all VRs in VD. </p>
+<p class="">Finds average pixel intensity of VRs in VD. </p>
 <p class="">Uses one of six metrics (mean, median, standard deviation, range, normalised range, number of pixels) to evaluate the merit function of a Voronoi region.</p>
 <p class="">Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with <img class="formulaInl" alt="$\nu$" src="form_3.png"/> = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -65,14 +65,14 @@ $(function() {
     <tr><td class="paramname">W</td><td>Eigen::Array of pixel intensities </td></tr>
     <tr><td class="paramname">metric</td><td>std::function&lt;real(RealVec)&gt; Function handle for type of average to use </td></tr>
     <tr><td class="paramname">mult</td><td>Multiplier of return value. </td></tr>
-    <tr><td class="paramname">Wop</td><td>Empty Eigen::Array for storage of averge pixel intensity (matrix of pixel intensities) </td></tr>
+    <tr><td class="paramname">Wop</td><td>Empty Eigen::Array for storage of average pixel intensity (matrix of pixel intensities) </td></tr>
     <tr><td class="paramname">Sop</td><td>Empty Eigen::Array for storage of averge pixel intensity (list of VR averages) </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Wop Eigen::Array containing average pixel intensity (matrix of pixel intensities) </dd>
 <dd>
-Sop Eigen::Array for storage of averge pixel intensity (list of VR averages)</dd></dl>
+Sop Eigen::Array for storage of average pixel intensity (list of VR averages)</dd></dl>
 <p>This is a MEX function. As such, the inputs and outputs are constricted to the following:</p>
 <ul>
 <li>nlhs: Number of outputs</li>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['generateproposition2vd',['generateProposition2VD',['../generateProposition2VD_8cpp.html#a7bc36ed3cb5aa522537be6afeeb09c12',1,'generateProposition2VD.cpp']]],
+  ['generateproposition2vd',['generateProposition2VD',['../generateProposition2VD_8cpp.html#a7bc36ed3cb5aa522537be6afeeb09c12',1,'generateProposition2VD(uint32 dim):&#160;generateProposition2VD.cpp'],['../generateProposition2VD_8h.html#a7bc36ed3cb5aa522537be6afeeb09c12',1,'generateProposition2VD(uint32 dim):&#160;generateProposition2VD.cpp']]],
   ['getk',['getK',['../classvd.html#ae145808dbbebfc984811eb48a6a57585',1,'vd']]],
   ['getlam',['getLam',['../classvd.html#a37c4ab12669eb276fe7fa4a610310345',1,'vd']]],
   ['getlambyidx',['getLamByIdx',['../classvd.html#a5c26b069f893aa82eeaf53ff608eda1f',1,'vd']]],

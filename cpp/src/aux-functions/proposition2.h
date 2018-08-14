@@ -1,3 +1,10 @@
+/**
+ * @file
+ * @copydetails proposition2.cpp
+ *
+ * @date Created 22/07/18
+ * @author Jack Scantlebury
+ */
 #ifndef PROPOSITION2_H
 #define PROPOSITION2_H
 

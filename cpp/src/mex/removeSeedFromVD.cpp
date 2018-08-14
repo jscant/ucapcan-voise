@@ -1,7 +1,10 @@
 /**
  * @file
- * @brief This is a MEX function. It should only be compiled by the compileMEX.m matlab script.
- * Removes single seed from Voronoi diagram.
+ * @brief This is a MEX function. It should only be compiled by the compileMEX.m
+ * Matlab script. Removes single seed from Voronoi diagram.
+ *
+ * @date Created 06/07/18
+ * @author Jack Scantlebury
  */
 
 #include "mexIncludes.h"

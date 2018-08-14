@@ -2,6 +2,9 @@
  * @file
  * @brief Finds the cirumcentre of the triangle formed by three given points (templated). Header only for
  * templating/linking reasons.
+ *
+ * @date Created 01/07/18
+ * @author Jack Scantlebury
  */
 
 #ifndef CIRCUMCENTRE_H

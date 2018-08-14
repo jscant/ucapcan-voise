@@ -45,7 +45,7 @@ printVD = 1
 winSize    = [5, 5]
 filter     = @median
 histEqBin = 256
-dpi = 1000
+dpi = 300
 
 clus = 1
 n_clusters = -1

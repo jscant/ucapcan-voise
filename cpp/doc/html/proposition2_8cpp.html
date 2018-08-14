@@ -62,7 +62,7 @@ $(function() {
 
 <p>Uses proposition 2 to decide between seeds for addition to N(s*)  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;proposition2.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="proposition2_8h_source.html">proposition2.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="skizException_8h_source.html">../skizException.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><table class="memberdecls">
@@ -123,10 +123,11 @@ Modified 24/07/18</dd></dl>
     <tr><td class="paramname">VD</td><td>The Voronoi diagram </td></tr>
     <tr><td class="paramname">lam</td><td>The value of lambda at the coordinates of the new seed </td></tr>
     <tr><td class="paramname">candidates</td><td>The list of seeds whose circumcentre with lambda and s* are coincidental (x' in 3.1.2 of [1]) </td></tr>
-    <tr><td class="paramname">cc</td><td>std::array&lt;real, 2&gt; coordinates of circumcentre X(s*, f$lambda$ <img class="formulaInl" alt="$, s) @return The ID of the other seed in the pair of neighbours creating the largest and smallest angles s-x'-s* (the other being f\$lambda$" src="form_13.png"/>) </td></tr>
+    <tr><td class="paramname">cc</td><td>std::array&lt;real, 2&gt; coordinates of circumcentre X(s*, <img class="formulaInl" alt="$\lambda$" src="form_1.png"/>, s) </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The ID of the other seed in the pair of neighbours creating the largest and smallest angles s-x'-s* (the other being <img class="formulaInl" alt="$\lambda$" src="form_1.png"/>) </dd></dl>
 
 </div>
 </div>

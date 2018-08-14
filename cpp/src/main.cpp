@@ -1,10 +1,13 @@
 /**
+ * @file
+ * @brief Standalone version of SKIZ operator algorithm.
+ *
  * This is a 'standalone' version of the SKIZ algorithm for addition and
  * removal of seeds from a VD. The initial conditions are loaded from data
  * saved in benchVD.m, as well as the list of seeds to be added. Profiling
  * MEX files directly is difficult, especially on Linux, so this is both
  * with Callgrind and KCacheGrind to check for performance-reducing
- * innefficiencies, and with Valgrind to check for memory leaks.
+ * inefficiencies, and with Valgrind to check for memory leaks.
  */
 
 #include <iostream>
@@ -29,6 +32,19 @@ typedef std::chrono::high_resolution_clock now;
 
 using namespace std::chrono;
 
+/**
+ * @defgroup main main
+ * @brief Standalone version of SKIZ operator algorithm.
+ *
+ * This is a 'standalone' version of the SKIZ algorithm for addition and
+ * removal of seeds from a VD. The initial conditions are loaded from data
+ * saved in benchVD.m, as well as the list of seeds to be added. Profiling
+ * MEX files directly is difficult, especially on Linux, so this is both
+ * with Callgrind and KCacheGrind to check for performance-reducing
+ * inefficiencies, and with Valgrind to check for memory leaks.
+ *
+ * @return 0 for successful execution. > 0 (Error code) if error encountered.
+ */
 int main() {
 
     // Load VD and seed data
@@ -57,13 +73,7 @@ int main() {
     // removeSeed timing
     start = now::now();
     for (auto i = ns - k; i > 0; --i) {
-        if(i == 1000){ // For profiling the removal of the 1000th seed
-            CALLGRIND_START_INSTRUMENTATION;
-        }
         removeSeed(VD, i);
-        if(i == 1000){
-            CALLGRIND_STOP_INSTRUMENTATION;
-        }
     }
 
     // Calculate and print average time per seed (remove)

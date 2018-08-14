@@ -37,5 +37,6 @@ oDir = ../share/output/europe/
 imageOrigo = [0, 0]
 pixelSize  = [1, 1]
 pixelUnit  = {'pixels', 'pixels'}
-printVD = 0
+printVD = 1
 dpi = 1000
+clus = 0

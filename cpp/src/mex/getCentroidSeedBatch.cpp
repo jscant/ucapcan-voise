@@ -1,8 +1,11 @@
 /**
  * @file
  * @brief This is a MEX function. It should only be compiled by the compileMEX.m
- * matlab script. Finds the pixel-intensity weighted centre of mass for all VRs
+ * Matlab script. Finds the pixel-intensity weighted centre of mass for all VRs
  * in a VD.
+ *
+ * @date Created 08/07/18
+ * @author Jack Scantlebury
  */
 
 #include "mexIncludes.h"

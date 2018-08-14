@@ -4,6 +4,9 @@
  * by the compileMEX.m Matlab script.
  * Allocates memory and populates Matlab struct with data from vd object. Only
  * for use with Matlab mex compiler.
+ *
+ * @date Created 30/06/18
+ * @author Jack Scantlebury
  */
 
 #include "mexIncludes.h"
@@ -19,9 +22,8 @@
  * of memory to be populated with data and which Matlab will interpret as a
  * struct containing all of the information from outputVD.
  *
- *
- * This is part of the Matlab bindings for the VOISE algorithm [2], and is only compatible with the code written to this
- * end by P. Guio and N. Achilleos.
+ * This is part of the Matlab bindings for the VOISE algorithm [2], and is only
+ * compatible with the code written to this end by P. Guio and N. Achilleos.
  */
 void pushVD(vd outputVD, mxArray *plhs[]) {
 

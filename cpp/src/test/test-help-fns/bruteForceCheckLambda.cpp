@@ -2,6 +2,9 @@
  * @file
  * @brief Checks by brute force whether correct values of lambda have been
  * assigned according to [1] Section 3.
+ *
+ * @date Created 20/07/18
+ * @author Jack Scantlebury
  */
 
 #include <eigen3/Eigen/Dense>

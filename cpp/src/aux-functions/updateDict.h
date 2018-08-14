@@ -1,7 +1,11 @@
 /**
  * @file
- * @brief Routine for adding to the vector in a dictionary of vectors only if the item does not already exist
- * (templated). Header only for templating/linking reasons.
+ * @brief Routine for adding to the vector in a dictionary of vectors only if
+ * the item does not already exist (templated). Header only for
+ * templating/linking reasons.
+ *
+ * @date Created 02/07/18
+ * @author Jack Scantlebury
  */
 
 #ifndef UPDATEDICT_H
@@ -13,14 +17,17 @@
 /**
  * @defgroup updateDict updateDict
  * @ingroup updateDict
- * @brief Custom routine for adding to the vector in a dictionary of vectors only if the item does not already exist
+ * @brief Custom routine for adding to the vector in a dictionary of vectors
+ * only if the item does not already exist
  * @param d Dictionary
  * @param key Key to be added
  * @param value Value to be added to vector
  */
 template <class T1, class T2, class T3, class T4>
 void updateDict(std::map<T1, std::vector<T2>> &d, const T3 &key, const T4 &value) {
-    /// If key and corresponding vector do not exist, we create both and populate vector with value
+
+    /// If key and corresponding vector do not exist, we create both and
+    /// populate vector with value
     try{
         d.at(key);
     } catch (std::out_of_range &e){

@@ -55,7 +55,7 @@ $(function() {
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
 Introduction</h1>
-<p class="">The SKIZ operator algorithm, described by Sequeira and Preteux in [1], is an efficient way of calculating and maintaining a Voronoi diagram in discrete 2D space. Unlike other, more popular algorithms such as Fortune's Sweep, the SKIZ algorithm is dynamic so adding and removing seeds does not require recalculation of the entire graph. Moreover, checking the bounds of a region R(s) and checking whether a pixel p belongs to a region R(s) is reduced to evaluation of a small number of inequalities - a number which is bounded above by twice the number of neighbouring seeds.</p>
+<p class="">The SKIZ operator algorithm, described by Sequeira and Preteux in [1], is an efficient way of calculating and maintaining a Voronoi diagram in discrete 2D space. Unlike other, more popular algorithms such as Fortune's Sweep, the SKIZ algorithm is dynamic so adding and removing seeds does not require recalculation of the entire graph. Moreover, checking the bounds of a region R(s) and checking whether a pixel p belongs to a region R(s) is reduced to evaluation of a small number of inequalities.</p>
 <p class="">The discrete nature of the SKIZ algorithm makes it well suited to image segmentation. The VOISE algorithm [2] relies on a fast and dynamic method of recalculation of Voronoi diagrams upon addition and removal of seeds, so the two are a natural fit. Although a standalone version of the SKIZ algorithm is included here (mostly for testing), the main functionality is provided by the matlab bindings in pushVD, grabVD, addSeedToVD and removeSeedFromVD, which are compiled into Matlab-readable MEX binaries and are tailored specifically for the code built and maintained by P. Guio and N. Achilleos to aid faster image analysis through VOISE.</p>
 <h1><a class="anchor" id="req_sec"></a>
 System Requirements</h1>
@@ -91,11 +91,19 @@ Step 1: Compile the C++ functions, tests and stand-alone executables</h2>
 <h2><a class="anchor" id="step2"></a>
 Step 2: Compile the MEX binaries</h2>
 <ol type="1">
-<li>Open Matlab (version 2018a or newer required for compilation; older versions can run precompiled binaries)</li>
-<li>In Matlab, Navigate to <code>voise-1.3/matlab</code>.</li>
+<li>Open Matlab from <code>voise-1.3/matlab</code>(version 2018a or newer required for compilation; older versions can run precompiled binaries)</li>
 <li>Run <code>compileMEX</code></li>
 </ol>
 <p class="">Compilation should take a few minutes.</p>
+<h1><a class="anchor" id="demo_sec"></a>
+Running VOISE</h1>
+<p class="">VOISE comes with several demo scripts. To run these, matlab must be started from <code>voise-1.3/matlab</code>. The scripts can be run without parameters. They include:</p>
+<ul>
+<li><code>europeDemo.m</code>: A satellite image of Europe. Running time &lt; 2 minutes. Because of large number of seeds ( &gt; 7000), clustering has significant memory requirements and is switched off in the <code>share/europe.dat</code> config file.</li>
+<li><code>webVOISEdemo1.m</code>: An image of the Jovian aurora. Running time &lt; 30 seconds.</li>
+<li><code>posterDemo.m</code>: An image of the Jovian aurora. Running time &lt; 1 minute. <br />
+- <code>jupiterDemo1.m</code>: An image of Jupiter. Running time &lt; 2 minutes.</li>
+</ul>
 <h1><a class="anchor" id="references_sec"></a>
 References</h1>
 <p class="">[1] R. E. Sequeira and F. J. Preteux. Discrete voronoi diagrams and the skiz operator: a dynamic algorithm. IEEE Transactions on Pattern Analysis and Machine Intelligence, 19(10):1165–1170, 1997. [doi: 10.1109/34.625128]</p>

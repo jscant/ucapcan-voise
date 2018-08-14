@@ -1,7 +1,10 @@
 /**
  * @file
  * @brief Unit test: Adds and then removes seeds to and from a regular grid to
- * check implementation of proposition 2 in [1]
+ * check implementation of proposition 2 from [1]
+ *
+ * @date Created 10/08/18
+ * @author Jack Scantlebury
  */
 #include "Catch2/catch.hpp"
 #include "test-help-fns/generateProposition2VD.h"

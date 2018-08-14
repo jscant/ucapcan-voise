@@ -1,7 +1,10 @@
 /**
  * @file
  * @brief This is a MEX function. It should only be compiled by the compileMEX.m
- * matlab script. Adds single seeds to Voronoi diagram.
+ * Matlab script. Adds single seeds to Voronoi diagram.
+ *
+ * @date Created 02/07/18
+ * @author Jack Scantlebury
  */
 #ifdef MATLAB_MEX_FILE
 #include <mex.h>

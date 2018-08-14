@@ -23,7 +23,7 @@ plot(nsr, polyval(ptVDr, nsr), 'r-');
 legend({'Add measured','Add linear fit','Remove measured','Remove linear fit'},'location','northwest',...
     'FontSize', fs)
 xlabel('Number of seeds')
-ylabel('Time [s]')
+ylabel('Time per seed [s]')
 title('Matlab (Incremental)')
 xlim([0 3005])
 
@@ -44,7 +44,7 @@ hold on;
 
 legend({'Full measured', 'Full quadratic fit'}, 'location', 'northwest', 'FontSize', fs);
 xlabel('Number of seeds')
-ylabel('Time [s]')
+ylabel('Time per seed [s]')
 title('QHull (Full)')
 xlim([0 3005])
 
@@ -81,7 +81,7 @@ plot(nsr, polyval(ptVDr_cppb, nsr), 'r-');
 hold off;
 legend({'Add measured','Add linear fit','Remove measured','Remove linear fit'},'location','northeast', 'FontSize', fs);
 xlabel('Number of seeds')
-ylabel('Time [s]')
+ylabel('Time per seed [s]')
 ylim([0, 6e-4]);
 xlim([0 3005])
 title('SKIZ C++ (Batch)')

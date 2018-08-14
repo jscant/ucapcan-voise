@@ -1,6 +1,10 @@
 /**
  * @file
- * @brief Checks whether item exists within a vector. Header only for templating/linking reasons.
+ * @brief Checks whether item exists within a vector. Header only for
+ * templating/linking reasons.
+ *
+ * @date Created 02/07/18
+ * @author Jack Scantlebury
  */
 
 #ifndef INVECTOR_H

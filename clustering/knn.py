@@ -197,13 +197,28 @@ with Timer() as total_time:
     with Timer() as t:
         
         # Set up command line argument for getting root directory
-        parser = argparse.ArgumentParser(description='Performs knn-enhance clustering.')
-        parser.add_argument('root', metavar='N', type=str, nargs=1) # required
+        parser = argparse.ArgumentParser(
+                description='Performs knn-enhance clustering.')
+        
+        parser.add_argument('root', metavar='root', type=str,
+                            nargs=1) # required
+        
         parser.add_argument('n_clusters', metavar='N', type=int, nargs='?',
                             default=-1) #optional
-        root = parser.parse_args().root[0]
-        n_clusters = parser.parse_args().n_clusters    
+        try:
+            root = parser.parse_args().root[0]
+            n_clusters = parser.parse_args().n_clusters    
+        except SystemExit:
+            raise RuntimeError("This script must be called with at least"
+                               " 1 argument. This should be the output"
+                               " directory of the VOISE algorithm including"
+                               " CVDseeds.txt and CVDneighbours.txt. For"
+                               " example:\n\n\t python knn.py"
+                               " ../share/output/north_proj/")
         
+        if root[-1] != "/" :
+            root += "/"
+            
         # Order: Index, sx, sy, length scale, median intensity
         seed_info = np.loadtxt(root + "CVDseeds.txt", skiprows=3)[:, 3:]
         d = extract_neighbours(root + "CVDneighbours.txt")

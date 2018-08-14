@@ -187,6 +187,7 @@ void vd::setNkByIdx(uint32 idx, RealVec val) {
 
 /**
  * @brief Increment iteration count (k) by 1, as defined in [1] Section 3
+ * @return void
  */
 void vd::incrementK() {
     k += 1;

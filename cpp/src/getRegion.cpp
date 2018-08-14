@@ -1,6 +1,9 @@
 /**
  * @file
  * @brief Finds the Voronoi region R(s) of a seed s.
+ *
+ * @date Created 01/07/18
+ * @author Jack Scantlebury
 */
 
 #include <eigen3/Eigen/Dense>

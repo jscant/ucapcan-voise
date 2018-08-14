@@ -178,6 +178,7 @@ params = plotVOISE(MVD, params, 2);
 
 % Regularisation phase
 CVD = getCentroidVD(MVD, params);
+params = plotVOISE(CVD, params, 3);
 
 % save
 fprintf(1, '*** Saving VOISE results in %s\n', [params.oDir, params.oMatFile]);
