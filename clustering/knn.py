@@ -1,16 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jul 28 14:58:35 2018
-
+@date Created on Sat Jul 28 14:58:35 2018
 @author: Jack Scantlebury
+@brief Runs knn-enhance on the output of VOISE.
+
+This script must be run with a minimum of one argument, which is the path to
+the directory containing the output of VOISE (CVseeds.txt and
+CVneighbours.txt). A second optional argument is the number of clusters (k)
+to use - the value of k giving the highest silhouette score will be used in
+lieu of this.
+
+The output is a file named clusters.txt, which is a list of cluster IDs for
+each VR indexed according to Sk in the VD Matlab struct.
+
+-------------------------------------------------------------------------------
+KNN-ENHANCE ALGORITHM MODIFIED FROM:
+Caiyan Jia et al.
+“Node Attribute-enhanced Community Detection in Complex Networks”.
+Scientific Reports 7.1 (2017).
+doi: 10.1038/s41598-017-02751-8
+-------------------------------------------------------------------------------
 """
-##############################################################################
-# ALGORITHM MODIFIED FROM:
-# Caiyan Jia et al. “Node Attribute-enhanced Community Detection in          #
-# Complex Networks”. In: Scientific Reports 7.1 (2017). doi: 10 . 1038 /     #
-# s41598-017-02751-8.                                                        #
-##############################################################################
 
 import argparse
 import numpy as np
@@ -23,6 +34,10 @@ from matplotlib import pyplot as plt
 import time
 
 class Timer:
+    """
+    Class for timing parts of code. Interval is recorded upon destruction
+    of object.
+    """
     def __enter__(self):
         self.start = time.time()
         return self
@@ -32,11 +47,18 @@ class Timer:
         self.interval = self.end - self.start
 
 def normalise(data):
+    """
+    Puts all data in input in the interval [0, 1]
+    """
     res1 = data - np.amin(data)
     rng = np.amax(data) - np.amin(data)
     return res1/rng
 
 def calculate_edges(knn_indices, feature_mtx, distance_mtx):
+    """
+    Adds edges to graph from knn results. Closer results in vector space give
+    edges with weights closer to 1.
+    """
     result = np.zeros_like(knn_indices).astype('float64')
     normed_distances = normalise(distance_mtx)
     for i in range(knn_indices.shape[0]):
@@ -45,6 +67,10 @@ def calculate_edges(knn_indices, feature_mtx, distance_mtx):
     return result
 
 def extract_neighbours(filename):
+    """
+    Utility function for extracting neighbour relationships into dictionary
+    from VOSIE output (CVDneighbours.txt)
+    """
     d = {}
     n = 0
     with open(filename, 'r') as o:
@@ -59,8 +85,18 @@ def extract_neighbours(filename):
                     n += 1
     return d
 
-# Eq. 1 : S = (A + I)^tau, Sbar_ij = Sij / sqrt(sum_j Sij^2)
 def signal_similarity_mtx(A, tau):
+    """
+    Eq. 1 : S = (A + I)^tau, Sbar_ij = Sij / sqrt(sum_j Sij^2)
+    Signal similarity matrix from doi: 10.1038/s41598-017-02751-8
+    
+    Parameters:
+        A:   Adjacency matrix
+        tau: Number of iterations for signal to travel
+            
+    Returns:
+        Signal similarity matrix
+    """
     I = np.identity(A.shape[0]).astype('f4')
     result = (A + I).astype('f4')
     for i in range(tau):
@@ -78,6 +114,15 @@ def sq_distance(v1, v2):
     return sum(v1*v2.transpose())
 
 def calculate_pagerank(P, S, B, tol):
+    """
+    Calculates PageRank using iterative method.
+    Parameters:
+        P:    Transition matrix
+        S:    Signal similarity matrix
+        B:    Beta (probability of random hop)
+        tol:  Iterations stop when norm of difference in pagerank between
+              iterations is below tol
+    """
     delta = 1
     ns = P.shape[0]
     pr_vec = np.ones((ns, 1)) / ns
@@ -102,12 +147,29 @@ def calculate_pagerank(P, S, B, tol):
     return pr_vec
 
 def transition_matrix(A):
+    """
+    Transition matrix is essentially a normalised adjacency matrix, such that
+    the columns can be treated as probabilities
+    
+    Parameters:
+        A:    Adjacency matrix
+    """
     P = A
     for i in range(A.shape[0]):
         P[:, i] /= np.sum(P[:, i])
     return P
 
 def min_dist(v, S):
+    """
+    Finds the minimum distance (delta) in vector space between each vector and
+    another vector with a higher PageRank
+    
+    Paramters:
+        v:    PageRank vector
+        S:    Signal similarity matrix
+    Returns:
+        Delta values for all vectors
+    """
     dist_mtx = 1e300*np.ones_like(S)
     for i in range(S.shape[0]):
         for j in range(S.shape[0]):
@@ -122,11 +184,23 @@ def min_dist(v, S):
     return result_mtx[:, 1]
 
 def calculate_CV(v, deltas):
+    """
+    Calculates community value for all vectors.
+    
+    Paramters:
+        v:      PageRank
+        deltas: Result of min_dist function.
+    Returns:
+        Community value rankings for all vectors
+    """
     denominator = np.amax(v)*np.amax(deltas)
     numerator = np.multiply(v.squeeze(), deltas.squeeze())
     return (numerator/denominator).transpose()
 
 def k_largest(arr, k):
+    """
+    Returns k largest values in an array
+    """
     return np.argsort(arr, axis=0)[:k]
 
 # For displaying timing information
@@ -157,6 +231,19 @@ def display_time(t):
     
 # Recursive edge addition, described in project report
 def recursive_edge_add(G, d, depth):
+    """
+    Recursively walks through neighbour graph result from VOISE and adds
+    edges (where none already exist) with weights depending on the distance
+    which has had to be walked.
+    
+    Parameters:
+        G:     Networkx Graph object with all nodes in place
+        d:     Dictionary of neighbour relationships (from extract_neighbours)
+        depth: Depth of walk at which to truncate (recommended 5 or lower)
+        
+    Returns:
+        Graph with edges added from walking process
+    """
     A = G
     for key, value in d.items():
         for i in range(1, depth + 1):
@@ -178,8 +265,19 @@ def recursive_edge_add(G, d, depth):
     return A
 
 # Unused in the end
-def logistic_fn(normalised_vector):
-    res = 1/(1+np.exp(-30*(normalised_vector - 0.25)))
+def logistic_fn(normalised_vector, phi, i0):
+    """
+    (UNUSED IN PAPER) Logistic function
+    
+    Parameters:
+        normalised_vector: Normalised vector of input values
+        phi:               Steepness of logistic curve
+        i0:                Position of middle of logistic curve
+        
+    Returns:
+        Logistic transform of data in normalised_vector
+    """
+    res = 1/(1+np.exp(-phi*(normalised_vector - i0)))
     return res
 
 ##############
