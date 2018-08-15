@@ -69,9 +69,6 @@ public:
     void setSx(RealVec val);
     void setSy(RealVec val);
     void setSk(RealVec val);
-    void setSxByIdx(uint32 idx, real val);
-    void setSyByIdx(uint32 idx, real val);
-    void setSkByIdx(uint32 idx, real val);
     void setNk(std::map<real, RealVec> val);
     void setNkByIdx(uint32 idx, RealVec val);
     void incrementK();

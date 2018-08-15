@@ -38,7 +38,7 @@ void vd::setW(W_struct val) {
 };
 
 /**
- * @brief Set S. Only for use with VOISE algorithm matlab interface.
+ * @brief Set S. Only for use with VOISE algorithm Matlab interface.
  * @param val W_struct containing information about S
  */
 void vd::setS(W_struct val) {
@@ -140,36 +140,9 @@ void vd::setSk(RealVec val) {
 };
 
 /**
- * @brief Set element in Sx vector
- * @param idx Key
- * @param val x coordinate
- */
-void vd::setSxByIdx(uint32 idx, real val) {
-    Sx[idx] = val;
-};
-
-/**
- * @brief Set element in Sy vector
- * @param idx Key
- * @param val y coordinate
- */
-void vd::setSyByIdx(uint32 idx, real val) {
-    Sy[idx] = val;
-};
-
-/**
- * @brief Set individual element in Sk vector
- * @param idx Key
- * @param val k
- */
-void vd::setSkByIdx(uint32 idx, real val) {
-    Sk[idx] = val;
-};
-
-/**
  * @brief Set neighbour relationships dictionary, as defined in [1] Section 3
  * @param val Dictionary of vectors
- * { seed ID : Vector of neighbouring seed IDs }
+ * { seed ID : Vector (RealVec) of neighbouring seed IDs }
  */
 void vd::setNk(std::map<real, RealVec> val) {
     Nk = val;
@@ -179,7 +152,7 @@ void vd::setNk(std::map<real, RealVec> val) {
  * @brief Set individual element in neighbour relationships dictionary, as
  * defined in [1] Section 3
  * @param idx Key (seed ID)
- * @param val Vector of neighbouring seed IDs
+ * @param val Vector (RealVec) of neighbouring seed IDs
  */
 void vd::setNkByIdx(uint32 idx, RealVec val) {
     Nk[idx] = val;
@@ -194,8 +167,7 @@ void vd::incrementK() {
 };
 
 /**
- * @brief Get Vk struct, as defined in [1] Section 3. Only for use with
- * VOISE algorithm matlab interface.
+ * @brief Get Vk struct, as defined in [1] Section 3.
  * @return Vk
  */
 V_struct vd::getVk() const {
