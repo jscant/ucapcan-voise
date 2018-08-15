@@ -96,6 +96,7 @@ else
   switch ic
       case 0
           titlestr = 'Initial configuration | ';
+          params.tmp = get(gcf, 'Position');
       case 1
           titlestr = 'Divide phase | ';
       case 2
@@ -107,7 +108,7 @@ else
   %set(gca,'XMinorTick','off','YMinorTick','off')
   title(sprintf('%sSeeds: %d', titlestr, length(VD.Sk)))
   %yticks([-0.3 -0.2 -0.1 0 0.1]);
-  %print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
+  print([params.oDir 'phase' num2str(ic)], '-depsc', dpi);
   print([params.oDir 'phase' num2str(ic)], '-dpdf', dpi);
   
 end

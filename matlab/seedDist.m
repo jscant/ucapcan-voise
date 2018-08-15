@@ -69,9 +69,9 @@ ax = gca;
 %ax.Position = [left bottom width height];
 
 
-
-print([params.oDir 'seeddist1'], "-dpdf", '-r1000');
-%printFigure(gcf,[params.oDir 'seeddist1.eps']);
+dpi = strcat('-r', num2str(params.dpi));
+print([params.oDir 'seeddist1'], '-depsc', dpi);
+print([params.oDir 'seeddist1'], '-dpdf', dpi);
 
 R = sqrt(X.^2+Y.^2);
 T = atan2(Y,X)*180/pi;

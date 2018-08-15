@@ -1,0 +1,188 @@
+
+*****************************
+VOISE Set Up -- version 1.3.2
+*****************************
+
+ * Image parameters
+   ----------------
+
+   size (in pixels)   =  654 x  616
+   image centre (x,y) = 0 pixels, 0 pixels
+   pixel size   (x,y) = 1 pixels, 1 pixels
+   xlim               = 0 pixels, 653 pixels
+   ylim               = 0 pixels, 615 pixels
+   Wlim               = 6.86831e+07, 4.29497e+09
+
+   HSTPlanetParam     = 0
+
+ * Seeding parameters
+   ---------------
+
+   Seeds number       = 100
+   Seeding function   = poissonSeeds
+
+ * Dividing parameters
+   -------------------
+
+   p_D                = 65.0
+   d^2_m              = 5.0
+   algo               = 3
+
+ * Merging parameters
+   -------------------
+
+   p_M                = 50.0
+   dmu                = 0.2
+   ksd                = 2.0
+   thresHoldLength    = 0.3
+   algo               = 3
+
+ * Regularising parameters
+   -----------------------
+
+   regMaxIter         = 2
+   algo               = 3
+
+
+*****************************
+poissonSeeds: ns=100, minDist=63.37, card(S)=80
+*** Initialising VOISE
+*** Initialising completed.
+*** Starting dividing phase
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.10
+Iter  1 Adding 143 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.10
+Iter  2 Adding 378 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.12
+Iter  3 Adding 959 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.12
+Iter  4 Adding 805 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.11
+Iter  5 Adding 436 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.10
+Iter  6 Adding 532 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.10
+Iter  7 Adding 609 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.09
+Iter  8 Adding 696 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.08
+Iter  9 Adding 750 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.08
+Iter 10 Adding 874 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.07
+Iter 11 Adding 791 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.07
+Iter 12 Adding 675 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.07
+Iter 13 Adding 556 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 14 Adding 427 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 15 Adding 215 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 16 Adding 176 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 17 Adding 103 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 18 Adding 66 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 19 Adding 32 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 20 Adding 16 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 21 Adding 17 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 22 Adding 7 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 23 Adding 7 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 24 Adding 4 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 25 Adding 4 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+Iter 26 Adding 1 seeds to Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(65)=0.06
+StopDiv = True
+*** Dividing phase completed.
+*** Starting merging phase
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.06
+Elapsed time is 0.574517 seconds.
+Iter  1 Removing 1874 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.06
+Elapsed time is 0.414044 seconds.
+Iter  2 Removing 1262 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.07
+Elapsed time is 0.346243 seconds.
+Iter  3 Removing 856 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.07
+Elapsed time is 0.311905 seconds.
+Iter  4 Removing 677 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.08
+Elapsed time is 0.294798 seconds.
+Iter  5 Removing 541 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.08
+Elapsed time is 0.247064 seconds.
+Iter  6 Removing 454 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.08
+Elapsed time is 0.231765 seconds.
+Iter  7 Removing 304 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.09
+Elapsed time is 0.210830 seconds.
+Iter  8 Removing 260 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.09
+Elapsed time is 0.196816 seconds.
+Iter  9 Removing 179 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.09
+Elapsed time is 0.188521 seconds.
+Iter 10 Removing 128 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.09
+Elapsed time is 0.177437 seconds.
+Iter 11 Removing 102 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.170081 seconds.
+Iter 12 Removing 64 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.167600 seconds.
+Iter 13 Removing 40 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.165817 seconds.
+Iter 14 Removing 41 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.166714 seconds.
+Iter 15 Removing 29 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.167436 seconds.
+Iter 16 Removing 22 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.164691 seconds.
+Iter 17 Removing 14 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.161138 seconds.
+Iter 18 Removing 14 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.160731 seconds.
+Iter 19 Removing 17 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.163147 seconds.
+Iter 20 Removing 11 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.163128 seconds.
+Iter 21 Removing 14 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.166332 seconds.
+Iter 22 Removing 6 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.165469 seconds.
+Iter 23 Removing 2 seeds from Voronoi Diagram
+Homogeneity Criteria min=0.01 max=1.00 Q(50)=0.10
+Elapsed time is 0.161530 seconds.
+Elapsed time is 0.162919 seconds.
+*** Merging phase completed.
+*** Starting regularisation phase
+Maximum distance seed/centre-of-mass 866.0 (637.3)
+Iter  1 Computing regularised Voronoi Diagram for 2444 seeds
+Maximum distance seed/centre-of-mass 57.0 (40.3)
+Iter  2 Computing regularised Voronoi Diagram for 2444 seeds
+*** Regularisation phase completed.
+*** Saving VOISE results in ../share/output/saturn1/voise.mat
+*** Total elapsed time 00:01:52 [hh:mm:ss].

@@ -40,6 +40,7 @@ function params = plotClusters(CVD, params)
     xlabel(sprintf('x [%s]', params.pixelUnit{1}))
     ylabel(sprintf('y [%s]', params.pixelUnit{2}))
     dpi = strcat('-r', num2str(params.dpi));
+    set(gcf, 'position', params.tmp)
     print([params.oDir, 'clusters'], '-dpdf', dpi);
-    print([params.oDir, 'clusters'], '-depsc', dpi);
+    print([params.oDir, 'clusters'], '-depsc', '-opengl', dpi);
 end

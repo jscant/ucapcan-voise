@@ -41,5 +41,6 @@ oDir = ../share/output/saturn1/
 #    y           256x1             2048  double  y-axis (# rows in image Z)
 # The axes are in unit of Jupiter radius
 #pixelUnit  = {'R_J', 'R_J'}
+dpi = 1000
 printVD = 1
 clus = 1
