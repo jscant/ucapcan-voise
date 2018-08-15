@@ -90,13 +90,12 @@ ylabel(sprintf('y [%s]',params.pixelUnit{2}))
 if isempty(VD) % original image
   title('Original image')
  % yticks([-0.3 -0.2 -0.1 0 0.1]);
-  print([params.oDir 'orig'], '-dpdf', dpi);
+  %print([params.oDir 'orig'], '-dpdf', dpi);
   print([params.oDir 'orig'], '-depsc', dpi);
 else
   switch ic
       case 0
           titlestr = 'Initial configuration | ';
-          params.tmp = get(gcf, 'Position');
       case 1
           titlestr = 'Divide phase | ';
       case 2
