@@ -1,13 +1,11 @@
 
                         Voronoi Image SEgementation (VOISE) 
-
 												Patrick Guio
-
 
 Introduction
 ============
 
-This is the edited version of VOISE for an MSc Scientific Computing research project. For Doxygen documentation, open cpp/doc/html/index.html in any browser.
+This is the edited version of VOISE for an MSc Scientific Computing research project by Jack Scantlebury. For detailed Doxygen documentation, open cpp/doc/html/index.html in any browser.
 
 License
 =======
@@ -22,13 +20,10 @@ License
  FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
  details.
 
-
-
-
 Content
 =======
 
-
+ VOISE algorithm for image segmentation and knn-enhance clustering implemented in Matlab, C++ and Python. Details of implementation found in Doxymentation, linked above.
 
 Bibliography
 ============
@@ -37,3 +32,7 @@ Bibliography
  Automatic Segmentation of Astronomical Images. Mon. Not. R. Astron. Soc.,
  398(3):1254–1262, September 2009.
 
+ Caiyan Jia et al.
+ “Node Attribute-enhanced Community Detection in Complex Networks”.
+ Scientific Reports 7.1 (2017).
+ doi: 10.1038/s41598-017-02751-8
