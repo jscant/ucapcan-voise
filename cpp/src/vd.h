@@ -41,7 +41,7 @@ struct V_struct {
 
 /**
  * @class vd
- * @brief Contains all information about voronoi diagram needed to perform SKIZ
+ * @brief Contains all information about Voronoi diagram needed to perform SKIZ
  * algorithm from [1]
  */
 class vd {

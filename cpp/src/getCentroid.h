@@ -1,3 +1,9 @@
+/**
+ * @file
+ * @copydetails getCentroid.cpp
+ *
+ */
+
 #ifndef GETCENTROID_H
 #define GETCENTROID_H
 

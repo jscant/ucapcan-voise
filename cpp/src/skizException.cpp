@@ -1,6 +1,6 @@
 /**
 * @file
-* @brief Exception class for SKIZ Operator Tool
+* @brief Exception class for SKIZ Operator Algorithm [1]
 */
 
 #include "skizException.h"

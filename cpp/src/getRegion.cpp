@@ -50,16 +50,16 @@ Mat getRegion(const vd &VD, const real &s) {
         RealVec lb, ub;
         const real boundsIdx = i - s2 + 1;
         bool killLine = false; // For use when s1 == s2
-        for (auto r : A) { // Only put conditions on membership from neighbours of seed
+        for (auto r : A) { // Apply conditions from neighbours only
 
             const real r1 = VD.getSxByIdx(r);
             const real r2 = VD.getSyByIdx(r);
 
             /*
              * (s1 - r1)j - (s2 - r2)i >= (s1^2 + s2^2 - r1^2 - r2^2)/2
-             * Equality changes sign depending on (s1 - r1) so bound can be either
-             * upper or lower. If s1 == r1 then no dependence on j, only dependence
-             * on i (killLine means no pixels in row can be in R(s))
+             * Equality changes sign depending on (s1 - r1) so bound can be
+             * upper or lower. If s1 == r1 then no dependence on j, only
+             * dependence on i (killLine means no pixels in row can be in R(s))
             */
             if (s1 > r1) {
                 lb.push_back(f(s1, s2, r1, r2, -i));
@@ -78,25 +78,33 @@ Mat getRegion(const vd &VD, const real &s) {
         }
 
         /*
-         * We now have all conditions on membership of R(s) that come from r in N(s).
-         * Only the lowest upper bound and highest lower bound of these conditions is
-         * active, and become the upper and lower bound of the region on the row.
+         * We now have all conditions on membership of R(s) that come from r in
+         * N(s). Only the lowest upper bound and highest lower bound of these
+         * conditions is active, and become the upper and lower bound of the
+         * region on the row.
         */
         real highestLB, lowestUB;
-        if (!killLine) {
+        if (killLine) {
+            /*
+             * killLine means there is a seed in the same column as s which is
+             * closer to all pixels in that row, so row has no bounds in R(s)
+            */
+            break;
+        } else {
             highestLB = 0;
             lowestUB = VD.getNc();
             try {
                 if (lb.size() > 0) {
-                    highestLB = std::max((real)0.0, ceil(*std::max_element(lb
-                            .begin(), lb.end())));
+                    highestLB = std::max((real)0.0, ceil(
+                            *std::max_element(lb.begin(), lb.end())));
                 }
             } catch (const std::exception &e) {
                 highestLB = 0;
             }
             try {
                 if (ub.size() > 0) {
-                    lowestUB = std::min((real)VD.getNc(), floor(*std::min_element(ub.begin(), ub.end())));
+                    lowestUB = std::min((real)VD.getNc(), floor(
+                            *std::min_element(ub.begin(), ub.end())));
                 }
             } catch (const std::exception &e) {
                 lowestUB = VD.getNc();
@@ -106,9 +114,6 @@ Mat getRegion(const vd &VD, const real &s) {
             }
             boundsUp(boundsIdx - 1, 0) = highestLB;
             boundsUp(boundsIdx - 1, 1) = lowestUB;
-
-        } else { // killLine means there is a seed in the same column as s which is closer to all...
-            break; // pixels in that row
         }
     }
 
@@ -125,8 +130,10 @@ Mat getRegion(const vd &VD, const real &s) {
                 ub.push_back(f(s1, s2, r1, r2, -i));
             } else {
 
-                // Seeds are stacked vertically. All lines above/below
-                // halfway between them are not in region.
+                /*
+                 * Seeds are stacked vertically. All lines above/below
+                 * halfway between them are not in region.
+                */
                 if (s2 > r2 && i < 0.5 * (s2 + r2)) {
                     killLine = true;
                     break;

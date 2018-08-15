@@ -267,7 +267,7 @@ def recursive_edge_add(G, d, depth):
 # Unused in the end
 def logistic_fn(normalised_vector, phi, i0):
     """
-    (UNUSED IN PAPER) Logistic function
+    (UNUSED) Logistic function
     
     Parameters:
         normalised_vector: Normalised vector of input values

@@ -54,9 +54,13 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Find the centres of mass for multiple VRs in a VD.  
+<p>Find the centres of mass for VRs in a VD.  
 <a href="#details">More...</a></p>
-<p class="">Find the centres of mass for multiple VRs in a VD. </p>
+<p class="">Find the centres of mass for VRs in a VD. </p>
+<p class="">Centre of mass is equal to: </p><p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \xi(s) = \frac{\sum_{\textbf{p} \in R(s)} \textbf{p} \rho(\textbf{p})}{ \sum_{\textbf{p} \in R(s)} \rho(\textbf{p})} \]" src="form_22.png"/>
+</p>
+<p class="">where the density function <img class="formulaInl" alt="$\rho$" src="form_23.png"/> at pixel position <img class="formulaInl" alt="$\textbf{p}$" src="form_24.png"/> is the pixel intensity. This function is used in the regularisation phase of VOISE.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VD</td><td>Voronoi diagram object </td></tr>

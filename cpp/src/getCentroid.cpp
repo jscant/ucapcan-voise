@@ -11,7 +11,18 @@
  * @defgroup getCentroid getCentroid
  * @ingroup getCentroid
  *
- * @brief Find the centres of mass for multiple VRs in a VD
+ * @brief Find the centres of mass for VRs in a VD.
+ *
+ * Centre of mass is equal to:
+ * \f[
+ *   \xi(s) = \frac{\sum_{\textbf{p} \in R(s)} \textbf{p} \rho(\textbf{p})}{
+ *   \sum_{\textbf{p} \in R(s)} \rho(\textbf{p})}
+ * \f]
+ *
+ * where the density function \f$\rho\f$ at pixel position \f$\textbf{p}\f$ is
+ * the pixel intensity. This function is used in the regularisation phase of
+ * VOISE.
+ *
  * @param VD Voronoi diagram object
  * @param W Eigen::Array of pixel intensities
  * @param seeds Vector of seed IDs (for which the COM of the corresponding VRs

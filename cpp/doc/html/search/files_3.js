@@ -3,6 +3,7 @@ var searchData=
   ['generateproposition2vd_2ecpp',['generateProposition2VD.cpp',['../generateProposition2VD_8cpp.html',1,'']]],
   ['generateproposition2vd_2eh',['generateProposition2VD.h',['../generateProposition2VD_8h.html',1,'']]],
   ['getcentroid_2ecpp',['getCentroid.cpp',['../getCentroid_8cpp.html',1,'']]],
+  ['getcentroid_2eh',['getCentroid.h',['../getCentroid_8h.html',1,'']]],
   ['getcentroidseedbatch_2ecpp',['getCentroidSeedBatch.cpp',['../getCentroidSeedBatch_8cpp.html',1,'']]],
   ['getop_2ecpp',['getOp.cpp',['../getOp_8cpp.html',1,'']]],
   ['getregion_2ecpp',['getRegion.cpp',['../getRegion_8cpp.html',1,'']]],

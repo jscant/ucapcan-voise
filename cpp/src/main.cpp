@@ -5,7 +5,7 @@
  * This is a 'standalone' version of the SKIZ algorithm for addition and
  * removal of seeds from a VD. The initial conditions are loaded from data
  * saved in benchVD.m, as well as the list of seeds to be added. Profiling
- * MEX files directly is difficult, especially on Linux, so this is both
+ * MEX files directly is difficult, especially using Linux, so this is both
  * with Callgrind and KCacheGrind to check for performance-reducing
  * inefficiencies, and with Valgrind to check for memory leaks.
  */

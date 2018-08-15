@@ -61,7 +61,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Type definitions (all in one place)  
+<p>All type and constant definitions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;eigen3/Eigen/Dense&gt;</code><br />
@@ -72,17 +72,19 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memItemLeft" align="right" valign="top"><a id="a12c2040f25d8e3a7b9e1c2024c618cb6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>INF</b>&#160;&#160;&#160;std::numeric_limits&lt;<a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a>&gt;::infinity()</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a12c2040f25d8e3a7b9e1c2024c618cb6">INF</a>&#160;&#160;&#160;std::numeric_limits&lt;<a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a>&gt;::infinity()</td></tr>
+<tr class="memdesc:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A number larger than any in a comparison is used at various points in this project. <br /></td></tr>
 <tr class="separator:a12c2040f25d8e3a7b9e1c2024c618cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebf6899d6c1c8b7b9d09be872c05aae"><td class="memItemLeft" align="right" valign="top"><a id="a6ebf6899d6c1c8b7b9d09be872c05aae"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>EPS</b>&#160;&#160;&#160;1000*std::numeric_limits&lt;<a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a>&gt;::epsilon()</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a6ebf6899d6c1c8b7b9d09be872c05aae">EPS</a>&#160;&#160;&#160;1000*std::numeric_limits&lt;<a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a>&gt;::epsilon()</td></tr>
+<tr class="memdesc:a6ebf6899d6c1c8b7b9d09be872c05aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Machine precision is sometimes needed for floating point numeric comparisons. <br /></td></tr>
 <tr class="separator:a6ebf6899d6c1c8b7b9d09be872c05aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a58a0c7cf2501f4492da833421be92547"><td class="memItemLeft" align="right" valign="top"><a id="a58a0c7cf2501f4492da833421be92547"></a>
 typedef double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a></td></tr>
-<tr class="memdesc:a58a0c7cf2501f4492da833421be92547"><td class="mdescLeft">&#160;</td><td class="mdescRight">All matlab inputs are doubles. <br /></td></tr>
+<tr class="memdesc:a58a0c7cf2501f4492da833421be92547"><td class="mdescLeft">&#160;</td><td class="mdescRight">All Matlab inputs are doubles. <br /></td></tr>
 <tr class="separator:a58a0c7cf2501f4492da833421be92547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ad23e2333787a214e20a58a284a5a60"><td class="memItemLeft" align="right" valign="top"><a id="a8ad23e2333787a214e20a58a284a5a60"></a>
 typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a8ad23e2333787a214e20a58a284a5a60">uint32</a></td></tr>
@@ -90,7 +92,7 @@ typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class
 <tr class="separator:a8ad23e2333787a214e20a58a284a5a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b6d9a0fbb45e01ad4a3aa5667f2992"><td class="memItemLeft" align="right" valign="top"><a id="a84b6d9a0fbb45e01ad4a3aa5667f2992"></a>
 typedef std::vector&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a84b6d9a0fbb45e01ad4a3aa5667f2992">RealVec</a></td></tr>
-<tr class="memdesc:a84b6d9a0fbb45e01ad4a3aa5667f2992"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector of reals <br /></td></tr>
+<tr class="memdesc:a84b6d9a0fbb45e01ad4a3aa5667f2992"><td class="mdescLeft">&#160;</td><td class="mdescRight">std::vector of reals. Used for Sx, Sy, Sk, Nk. <br /></td></tr>
 <tr class="separator:a84b6d9a0fbb45e01ad4a3aa5667f2992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa28c1f74e909474857584f5c7b0088"><td class="memItemLeft" align="right" valign="top"><a id="a9fa28c1f74e909474857584f5c7b0088"></a>
 typedef Eigen::Array&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92547">real</a>, Eigen::Dynamic, Eigen::Dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typedefs_8h.html#a9fa28c1f74e909474857584f5c7b0088">Mat</a></td></tr>
@@ -98,7 +100,7 @@ typedef Eigen::Array&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492
 <tr class="separator:a9fa28c1f74e909474857584f5c7b0088"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p class="">Type definitions (all in one place) </p>
+<div class="textblock"><p class="">All type and constant definitions. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

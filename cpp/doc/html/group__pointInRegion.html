@@ -57,12 +57,13 @@ $(function() {
 <p>Checks whether a point is within region C(s, A) according to [1] definition 2.5.  
 <a href="#details">More...</a></p>
 <p class="">Checks whether a point is within region C(s, A) according to [1] definition 2.5. </p>
+<p class="">A point x is in C(s, A) where A is a set of seeds not including s if x is on the 'correct' side of the lines defining all halfplanes defined by the seeds s and r <img class="formulaInl" alt="$\in$" src="form_21.png"/> A.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vd</td><td>Voronoi Diagram </td></tr>
     <tr><td class="paramname">pt</td><td>x and y coordinates of point to check </td></tr>
     <tr><td class="paramname">s</td><td>Index of seed which defines the region being checked </td></tr>
-    <tr><td class="paramname">A</td><td>Vector of seeds which together form half-planes that make up C(s, A) </td></tr>
+    <tr><td class="paramname">A</td><td>Vector of seeds which together form half-planes that make up C(s, A). Default is neighbours of s such that pointInRegion returns true if point is in R(s) and false otherwise. </td></tr>
   </table>
   </dd>
 </dl>

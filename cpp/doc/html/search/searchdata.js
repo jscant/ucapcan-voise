@@ -6,8 +6,9 @@ var indexSectionsWithContent =
   3: "abegilprstuvw~",
   4: "msv",
   5: "mru",
-  6: "acgimnprsu",
-  7: "st"
+  6: "ei",
+  7: "acgimnprsu",
+  8: "st"
 };
 
 var indexSectionNames =
@@ -18,8 +19,9 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "groups",
-  7: "pages"
+  6: "defines",
+  7: "groups",
+  8: "pages"
 };
 
 var indexSectionLabels =
@@ -30,7 +32,8 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Typedefs",
-  6: "Modules",
-  7: "Pages"
+  6: "Macros",
+  7: "Modules",
+  8: "Pages"
 };
 

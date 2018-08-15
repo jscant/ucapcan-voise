@@ -1,6 +1,6 @@
 /**
  * @file
- * @brief Voronoi diagram class
+ * @brief Voronoi diagram class method implementation
  */
 
 #include "vd.h"

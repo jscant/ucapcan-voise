@@ -18,3 +18,8 @@
 \form#17:$ \lambda, \nu $
 \form#18:$ \nu $
 \form#19:$lambda$
+\form#20:\[ \frac{\sum_{\textbf{p} \in R(s)} \textbf{p} \rho(\textbf{p})}{ \sum_{\textbf{p} \in R(s)} \rho(\textbf{p})} \]
+\form#21:$\in$
+\form#22:\[ \xi(s) = \frac{\sum_{\textbf{p} \in R(s)} \textbf{p} \rho(\textbf{p})}{ \sum_{\textbf{p} \in R(s)} \rho(\textbf{p})} \]
+\form#23:$\rho$
+\form#24:$\textbf{p}$

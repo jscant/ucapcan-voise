@@ -17,12 +17,17 @@
  * @defgroup nsStar nsStar
  * @ingroup nsStar
  * @brief Finds neighbouring Voronoi regions for new seed
+ *
+ * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
+ * Operator: A Dynamic Algorithm" [1], Section 3.1. Neighbours of new seed are
+ * found by building up boundary edge of R(s*) sequentially, starting off going
+ * one way around R(s*) and then (if required) the other. Cocircular seeds are
+ * handled using Proposition 2.
+ *
  * @param VD Voronoi diagram
  * @returns Vector of the IDs of seeds with Voronoi regions bordering the
  * Voronoi region of the seed last added to the Voronoi diagram
  *
- * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
-    Operator: A Dynamic Algorithm" [1], Section 3.1
 */
 RealVec nsStar(const vd &VD) {
     const real s1 = VD.getSxByIdx(VD.getK());

@@ -58,7 +58,7 @@ $(function() {
 <a href="#details">More...</a></p>
 <p class="">Finds average pixel intensity of VRs in VD. </p>
 <p class="">Uses one of six metrics (mean, median, standard deviation, range, normalised range, number of pixels) to evaluate the merit function of a Voronoi region.</p>
-<p class="">Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with <img class="formulaInl" alt="$\nu$" src="form_3.png"/> = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).</p>
+<p class="">Given a matrix of pixel intensities W partitioned into a Voronoi diagram, for each Voronoi region R(s), every pixel in each region is assigned the average intensity of pixels in R(s). This gives the VOISE representation of the image. Can use any type of average. Once average for VR has been calculated, all corresponding pixels in result are assigned that value. Pixels with <img class="formulaInl" alt="$\nu$" src="form_3.png"/> = 1 are assigned either NaN (if used as MEX binary) or -INF (otherwise).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">vd</td><td>Voronoi Diagram </td></tr>

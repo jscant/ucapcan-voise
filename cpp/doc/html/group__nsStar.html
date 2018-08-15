@@ -57,15 +57,15 @@ $(function() {
 <p>Finds neighbouring Voronoi regions for new seed.  
 <a href="#details">More...</a></p>
 <p class="">Finds neighbouring Voronoi regions for new seed. </p>
+<p class="">Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
+Operator: A Dynamic Algorithm" [1], Section 3.1. Neighbours of new seed are found by building up boundary edge of R(s*) sequentially, starting off going one way around R(s*) and then (if required) the other. Cocircular seeds are handled using Proposition 2.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">VD</td><td>Voronoi diagram </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector of the IDs of seeds with Voronoi regions bordering the Voronoi region of the seed last added to the Voronoi diagram</dd></dl>
-<p>Method used is taken from "Discrete Voronoi Diagrams and the SKIZ
- Operator: A Dynamic Algorithm" [1], Section 3.1 </p>
+<dl class="section return"><dt>Returns</dt><dd>Vector of the IDs of seeds with Voronoi regions bordering the Voronoi region of the seed last added to the Voronoi diagram </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -31,10 +31,9 @@
  * A Dynamic Algorithm" [1], Section 3.1
  *
  * @param VD vd object (definition in vd.h)
- * @param s1 First coordinate of seed to be added
- * @param s2 Second coordinate of seed to be added
+ * @param s1 x coordinate of seed to be added
+ * @param s2 y coordinate of seed to be added
  *
-
 */
 void addSeed(vd &VD, real s1, real s2) {
 
@@ -44,7 +43,12 @@ void addSeed(vd &VD, real s1, real s2) {
     VD.addSy(s2);
     VD.addSk(VD.getK());
 
-    VD.setNkByIdx(VD.getK(), nsStar(VD)); // Get N_{k+1}(s*) from 3.1.2 in [1]
+    try {
+        // Get N_{k+1}(s*) from 3.1.2 in [1]
+        VD.setNkByIdx(VD.getK(), nsStar(VD));
+    } catch (std::exception &e){
+        throw e;
+    }
 
     /*
      * Only N(s) for s in N(s*) need to be recalculated. Initialise these with
@@ -114,8 +118,8 @@ void addSeed(vd &VD, real s1, real s2) {
             } else {
                 continue; //R(s*) has not begun
             }
-        } else {
-            finish = true; // R(s*) has begun, next -1 bound means R(s) is finished
+        } else { // R(s*) has begun, next -1 bound means R(s) is finished
+            finish = true;
         }
 
         real lb = std::max((real)0.0, bounds(i, 0) - 1);

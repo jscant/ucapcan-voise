@@ -17,11 +17,12 @@
 #include <iostream>
 /**
  * @brief Removes seed from voronoi diagram
- * @param VD Voronoi Diagram
- * @param Sk ID of seed to be removed
+ *
  * Method used is taken from "Discrete Voronoi Diagrams and the SKIZ Operator:
  * A Dynamic Algorithm" [1], Section 3.2.
  *
+ * @param VD Voronoi Diagram
+ * @param Sk ID of seed to be removed
 */
 void removeSeed(vd &VD, real sRemove) {
 

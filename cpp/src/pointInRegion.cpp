@@ -15,10 +15,16 @@
  * @brief Checks whether a point is within region C(s, A) according to [1]
  * definition 2.5
  *
+ * A point x is in C(s, A) where A is a set of seeds not including s if x is
+ * on the 'correct' side of the lines defining all halfplanes defined by the
+ * seeds s and r \f$\in\f$ A.
+ *
  * @param vd Voronoi Diagram
  * @param pt x and y coordinates of point to check
  * @param s Index of seed which defines the region being checked
- * @param A Vector of seeds which together form half-planes that make up C(s, A)
+ * @param A Vector of seeds which together form half-planes that make up
+ * C(s, A). Default is neighbours of s such that pointInRegion returns true if
+ * point is in R(s) and false otherwise.
  * @returns true: Point is in C(s, A)
  * @returns false: Point is not in C(s, A)
  */

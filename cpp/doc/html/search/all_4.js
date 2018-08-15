@@ -5,6 +5,7 @@ var searchData=
   ['generateproposition2vd_2eh',['generateProposition2VD.h',['../generateProposition2VD_8h.html',1,'']]],
   ['getcentroid',['getCentroid',['../group__getCentroid.html',1,'']]],
   ['getcentroid_2ecpp',['getCentroid.cpp',['../getCentroid_8cpp.html',1,'']]],
+  ['getcentroid_2eh',['getCentroid.h',['../getCentroid_8h.html',1,'']]],
   ['getcentroidseedbatch',['getCentroidSeedBatch',['../group__getCentroidSeedBatch.html',1,'']]],
   ['getcentroidseedbatch_2ecpp',['getCentroidSeedBatch.cpp',['../getCentroidSeedBatch_8cpp.html',1,'']]],
   ['getk',['getK',['../classvd.html#ae145808dbbebfc984811eb48a6a57585',1,'vd']]],
