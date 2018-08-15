@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0542124682b77128935d62210a9c86fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Erases an entry in the seed index vector Sk.  <a href="#a0542124682b77128935d62210a9c86fe">More...</a><br /></td></tr>
 <tr class="separator:a0542124682b77128935d62210a9c86fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a090bebdbbff36888934c870daf3dcb36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structV__struct.html">V_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvd.html#a090bebdbbff36888934c870daf3dcb36">getVk</a> () const</td></tr>
-<tr class="memdesc:a090bebdbbff36888934c870daf3dcb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Vk struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface.  <a href="#a090bebdbbff36888934c870daf3dcb36">More...</a><br /></td></tr>
+<tr class="memdesc:a090bebdbbff36888934c870daf3dcb36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get Vk struct, as defined in [1] Section 3.  <a href="#a090bebdbbff36888934c870daf3dcb36">More...</a><br /></td></tr>
 <tr class="separator:a090bebdbbff36888934c870daf3dcb36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d0d9ea76cedf1a6825b62c9ec2d118"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structW__struct.html">W_struct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvd.html#ab4d0d9ea76cedf1a6825b62c9ec2d118">getW</a> () const</td></tr>
 <tr class="memdesc:ab4d0d9ea76cedf1a6825b62c9ec2d118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get W struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface.  <a href="#ab4d0d9ea76cedf1a6825b62c9ec2d118">More...</a><br /></td></tr>
@@ -841,7 +841,7 @@ std::map&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92
       </table>
 </div><div class="memdoc">
 
-<p>Get Vk struct, as defined in [1] Section 3. Only for use with VOISE algorithm matlab interface. </p>
+<p>Get Vk struct, as defined in [1] Section 3. </p>
 <dl class="section return"><dt>Returns</dt><dd>Vk </dd></dl>
 
 </div>
@@ -1001,7 +1001,7 @@ std::map&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92
 <p>Set neighbour relationships dictionary, as defined in [1] Section 3. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">val</td><td>Dictionary of vectors { seed ID : Vector of neighbouring seed IDs } </td></tr>
+    <tr><td class="paramname">val</td><td>Dictionary of vectors { seed ID : Vector (RealVec) of neighbouring seed IDs } </td></tr>
   </table>
   </dd>
 </dl>
@@ -1038,7 +1038,7 @@ std::map&lt; <a class="el" href="typedefs_8h.html#a58a0c7cf2501f4492da833421be92
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">idx</td><td>Key (seed ID) </td></tr>
-    <tr><td class="paramname">val</td><td>Vector of neighbouring seed IDs </td></tr>
+    <tr><td class="paramname">val</td><td>Vector (RealVec) of neighbouring seed IDs </td></tr>
   </table>
   </dd>
 </dl>

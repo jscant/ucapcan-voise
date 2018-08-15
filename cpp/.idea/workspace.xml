@@ -49,11 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vd.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vd.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/vd.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-138">
               <caret line="169" column="53" selection-start-line="169" selection-start-column="53" selection-end-line="169" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mainpage-info.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="272" selection-start-line="4" selection-start-column="272" selection-end-line="4" selection-end-column="272" />
             </state>
           </provider>
         </entry>
@@ -136,7 +145,6 @@
         <option value="$PROJECT_DIR$/src/mex/sopToWop.cpp" />
         <option value="$PROJECT_DIR$/DoxygenLayout.xml" />
         <option value="$PROJECT_DIR$/src/test/testProposition2.cpp" />
-        <option value="$PROJECT_DIR$/other/mainpage-info.txt" />
         <option value="$PROJECT_DIR$/src/aux-functions/proposition2.cpp" />
         <option value="$PROJECT_DIR$/src/typedefs.h" />
         <option value="$PROJECT_DIR$/src/skizException.cpp" />
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/src/addSeed.cpp" />
         <option value="$PROJECT_DIR$/src/vd.h" />
         <option value="$PROJECT_DIR$/src/vd.cpp" />
+        <option value="$PROJECT_DIR$/other/mainpage-info.txt" />
       </list>
     </option>
   </component>
@@ -212,13 +221,7 @@
             <path>
               <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mex" type="462c0819:PsiDirectoryNode" />
+              <item name="other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +342,7 @@
       <workItem from="1534073287069" duration="2655000" />
       <workItem from="1534159027961" duration="1412000" />
       <workItem from="1534326016287" duration="4222000" />
-      <workItem from="1534357251353" duration="3027000" />
+      <workItem from="1534357251353" duration="4164000" />
     </task>
     <servers />
   </component>
@@ -367,14 +370,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="266451000" />
+    <option name="totallyTimeSpent" value="267588000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1580984" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1580984" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.36753926" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.36753926" />
       <window_info anchor="bottom" id="CMake" order="9" weight="0.37172773" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
@@ -588,13 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/testAddSeedCheckLambda.cpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -718,6 +715,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-138">
           <caret line="169" column="53" selection-start-line="169" selection-start-column="53" selection-end-line="169" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="272" selection-start-line="4" selection-start-column="272" selection-end-line="4" selection-end-column="272" />
         </state>
       </provider>
     </entry>
