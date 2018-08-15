@@ -77,6 +77,14 @@
  *
  * <b>IT SHOULD BE NOTED THAT ALL RUNNING TIMES MENTIONED IN THE PROJECT REPORT WERE WITH THE <code>printVD</code> KEYWORD SET TO 0 IN THE CONFIG (.dat) FILE. Most of the running time in these examples (unless otherwise stated) is used in plotting the figures.</b>
  *
+ * @section test_sec2 Unit Tests
+ *
+ * Unit tests are run by navigating to <code>cpp/build</code> and executing the command:
+
+        ctest
+
+ * More information on individual unit tests can be found by clicking the Unit Tests link at the top of this page.
+ *
  * @section references_sec References
  *
  * [1] R. E. Sequeira and F. J. Preteux. Discrete voronoi diagrams and the skiz

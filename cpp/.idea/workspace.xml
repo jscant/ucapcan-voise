@@ -61,9 +61,34 @@
       <file leaf-file-name="mainpage-info.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="272" selection-start-line="4" selection-start-column="272" selection-end-line="4" selection-end-column="272" />
+            <state relative-caret-position="167">
+              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testRemoveSeedCheckLambda.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/testRemoveSeedCheckLambda.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testRemoveSeedCheckV.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testAddSeedCheckV.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/testAddSeedCheckV.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54" />
           </provider>
         </entry>
       </file>
@@ -109,9 +134,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/testAddSeedCheckV.cpp" />
         <option value="$PROJECT_DIR$/src/test/testSqDist.cpp" />
-        <option value="$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp" />
         <option value="$PROJECT_DIR$/src/test/testAddSeedCheckLambda.cpp" />
         <option value="$PROJECT_DIR$/src/test/testPointInRegion.cpp" />
         <option value="$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckV.cpp" />
@@ -159,6 +182,8 @@
         <option value="$PROJECT_DIR$/src/addSeed.cpp" />
         <option value="$PROJECT_DIR$/src/vd.h" />
         <option value="$PROJECT_DIR$/src/vd.cpp" />
+        <option value="$PROJECT_DIR$/src/test/testRemoveSeedCheckLambda.cpp" />
+        <option value="$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp" />
         <option value="$PROJECT_DIR$/other/mainpage-info.txt" />
       </list>
     </option>
@@ -221,7 +246,13 @@
             <path>
               <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpp" type="462c0819:PsiDirectoryNode" />
-              <item name="other" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="standalone_skiz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cpp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -342,7 +373,7 @@
       <workItem from="1534073287069" duration="2655000" />
       <workItem from="1534159027961" duration="1412000" />
       <workItem from="1534326016287" duration="4222000" />
-      <workItem from="1534357251353" duration="4164000" />
+      <workItem from="1534357251353" duration="4771000" />
     </task>
     <servers />
   </component>
@@ -370,7 +401,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267588000" />
+    <option name="totallyTimeSpent" value="268195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
@@ -408,27 +439,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckV.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckLambda.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test-help-fns/bruteForceCheckLambda.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aux-functions/proposition2.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -718,10 +728,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testAddSeedCheckV.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRemoveSeedCheckLambda.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testRemoveSeedCheckV.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/other/mainpage-info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="272" selection-start-line="4" selection-start-column="272" selection-end-line="4" selection-end-column="272" />
+        <state relative-caret-position="167">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
         </state>
       </provider>
     </entry>

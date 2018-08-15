@@ -33,12 +33,12 @@ TEST_CASE("Check whether the removeSeed method correctly recalculates the "
           "v matrix"){
 
     // addSeed so that we may later remove them
-    for (uint32 i = 0; i < 300; ++i) {
+    for (uint32 i = 0; i < 100; ++i) {
         addSeed(VD, Sx.at(i + 5), Sy.at(i + 5));
     }
 
     // removeSeed
-    for (auto i = 300; i > 0; --i) {
+    for (auto i = 100; i > 0; --i) {
         removeSeed(VD, i);
         REQUIRE(bruteForceCheckV(VD));
     }
