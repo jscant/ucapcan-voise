@@ -1,0 +1,5 @@
+/opt/cmake-3.11.2/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jack/Desktop/ucapcan-voise/cpp
+status/home/jack/Desktop/ucapcan-voise/cpp/build
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jack/Desktop/ucapcan-voise/cpp/build
