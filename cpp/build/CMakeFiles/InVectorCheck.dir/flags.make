@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -g -O3 -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/include 
+CXX_INCLUDES = -I/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include 
 

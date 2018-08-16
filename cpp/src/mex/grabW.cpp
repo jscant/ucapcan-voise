@@ -1,14 +1,19 @@
 /**
  * @file
- * @brief This is a requirement for a MEX function. It should only be compiled by the compileMEX.m Matlab script. Gets
- * params.W matrix from VD Matlab struct.
+ * @brief This is a requirement for a MEX function. It should only be compiled
+ * by the compileMEX.m Matlab script. Gets params.W matrix from VD Matlab struct.
  */
 
 #include "mexIncludes.h"
 
 /**
  * @defgroup grabW grabW
- * @brief Takes matrix from matlab and puts it in Eigen::Array<real>
+ * @ingroup grabW
+ *
+ * @brief Takes matrix from Matlab and puts it in Eigen::Array<real>
+ *
+ * This is used in getVDOp.cpp to get params.W from the VD Matlab struct.
+ *
  * @param prhs mxArray* which points to the start of the Matlab data
  * @param field Which Matlab argument to grab
  * @return Eigen::Array<real> with data from matrix

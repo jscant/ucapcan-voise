@@ -48,10 +48,10 @@ RM = /opt/cmake-3.11.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jack/dev/project/voise-1.3/cpp
+CMAKE_SOURCE_DIR = /home/jack/Desktop/ucapcan-voise/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jack/dev/project/voise-1.3/cpp/build
+CMAKE_BINARY_DIR = /home/jack/Desktop/ucapcan-voise/cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -91,9 +91,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles /home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

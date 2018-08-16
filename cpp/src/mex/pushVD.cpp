@@ -17,6 +17,10 @@
  * @brief Allocates memory and populates Matlab struct with data from vd object.
  * Only for use with Matlab mex compiler.
  *
+ * This function is used by all MEX functions relating to Voronoi diagrams, and
+ * has been made as efficient as possible by techniques such as Eigen::Maps and
+ * avoidance of loops where at all possible.
+ *
  * @param[in] outputVD Voronoi diagram from which data is read
  * @param[out] plhs Pointer to mxArray object which is the start of the section
  * of memory to be populated with data and which Matlab will interpret as a

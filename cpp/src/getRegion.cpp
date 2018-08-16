@@ -2,6 +2,11 @@
  * @file
  * @brief Finds the Voronoi region R(s) of a seed s.
  *
+ * From section 2.2 (Discretisation) of R. E. Sequeira and F. J. Preteux.
+ * “Discrete Voronoi diagrams and the SKIZ operator: a dynamic algorithm”.
+ * In: IEEE Transactions on Pattern Analysis and Machine Intelligence 19.10
+ * (1997), pp. 1165–1170. [1]
+ *
  * @date Created 01/07/18
  * @author Jack Scantlebury
 */
@@ -16,14 +21,20 @@
  * @ingroup getRegion
  * @brief Finds the voronoi region R(s) of a seed s.
  *
+ * This function uses a result arising from discussion in [1] section 2.2
+ * (Discretisation). A row-scanning technique is used to build up a series
+ * of inequalities for each row that must be satisfied for a pixel to be a
+ * member of a Voronoi region. The highest lower and lowest upper bounds are
+ * the only active constraints, and define the region in \f$\Omega\f$.
+ *
  * @param VD Voronoi diagram
  * @param s ID of seed for which R(s) is to be found
- * @returns (m x 2) Eigen::Array. Each row is either (-1, -1) if there are no pixels in the corresponding row in W
- * that are also in R(s), or (lb, ub) where 0 <= lb <= ub < n, indicating that the pixels in the \f$i^{th}\f$ row
- * in the interval (lb, ub] are in R(s).
+ * @returns (m x 2) Eigen::Array. Each row is either (-1, -1) if there are no
+ * pixels in the corresponding row in W that are also in R(s), or (lb, ub) where
+ * 0 <= lb <= ub < n, indicating that the pixels in the \f$i^{th}\f$ row in the
+ * interval (lb, ub] are in R(s).
  *
  * R(s) is as defined in [1], Definition 1.1.
-
 */
 
 Mat getRegion(const vd &VD, const real &s) {

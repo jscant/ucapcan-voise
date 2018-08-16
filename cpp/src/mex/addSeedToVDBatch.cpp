@@ -21,25 +21,28 @@
 #include "pushVD.h"
 
 /**
-* @defgroup addSeedToVDBatch addSeedToVDBatch
-* @brief Adds multiple seeds to Voronoi diagram.
-*
-* This is a MEX function. As such, the inputs and outputs are constricted to
-* the following:
-*
-* - nlhs: Number of outputs
-*
-* - plhs: Pointer to outputs
-*
-* - nrhs: Number of inputs
-*
-* - prhs: Pointer to inputs
-*
-* In Matlab, this corresponds to the following parameters and outputs:
-* @param VD Voronoi diagram struct
-* @param Sk n x 2 array of x and y coordinates of seeds to be added
-* @returns void
-*/
+ * @defgroup addSeedToVDBatch addSeedToVDBatch
+ * @brief Adds multiple seeds to Voronoi diagram.
+ *
+ * Uses grabVD and pushVD to get and push data from and to Matlab. Uses addSeed
+ * to add seeds to the VD.
+ *
+ * This is a MEX function. As such, the inputs and outputs are constricted to
+ * the following:
+ *
+ * - nlhs: Number of outputs
+ *
+ * - plhs: Pointer to outputs
+ *
+ * - nrhs: Number of inputs
+ *
+ * - prhs: Pointer to inputs
+ *
+ * In Matlab, this corresponds to the following parameters and outputs:
+ * @param VD Voronoi diagram struct
+ * @param Sk n x 2 array of x and y coordinates of seeds to be added
+ * @returns void
+ */
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[])
 {

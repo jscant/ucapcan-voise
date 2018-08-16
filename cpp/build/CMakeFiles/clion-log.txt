@@ -1,5 +1,20 @@
-/opt/cmake-3.11.2/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jack/dev/project/voise-1.3/cpp
-status/home/jack/dev/project/voise-1.3/cpp/build
+/opt/cmake-3.11.2/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/jack/Desktop/ucapcan-voise/cpp
+-- The C compiler identification is GNU 6.4.0
+-- The CXX compiler identification is GNU 6.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+status/home/jack/Desktop/ucapcan-voise/cpp/build
+-- Found Doxygen: /usr/local/bin/doxygen (found version "1.8.15") found components:  doxygen dot 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/jack/dev/project/voise-1.3/cpp/build
+-- Build files have been written to: /home/jack/Desktop/ucapcan-voise/cpp/build

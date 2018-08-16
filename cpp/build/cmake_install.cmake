@@ -1,4 +1,4 @@
-# Install script for directory: /home/jack/dev/project/voise-1.3/cpp
+# Install script for directory: /home/jack/Desktop/ucapcan-voise/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jack/dev/project/voise-1.3/cpp/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jack/Desktop/ucapcan-voise/cpp/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

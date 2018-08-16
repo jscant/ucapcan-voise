@@ -18,6 +18,14 @@
  * range, normalised range, number of pixels) to evaluate the merit function of
  * a Voronoi region.
  *
+ * If a matrix of pixel values W is partitioned into a Voronoi diagram, the
+ * pixel values of each Voronoi region are evaluated using some metric. The
+ * output matrix is of the same dimensions as W, and contains the same
+ * Voronoi diagram. The regions are filled, however, not with the underlying
+ * image pixel values, but with the averages for each Voronoi region, such that
+ * all entries in the output matrix that are in the same Voronoi have the same
+ * value. The output is, in effect, a tiling of the input image/matrix.
+ *
  * This is a MEX function. As such, the inputs and outputs are constricted to
  * the following:
  *

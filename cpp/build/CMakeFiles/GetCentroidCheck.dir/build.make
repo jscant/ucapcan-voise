@@ -43,10 +43,10 @@ RM = /opt/cmake-3.11.2/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jack/dev/project/voise-1.3/cpp
+CMAKE_SOURCE_DIR = /home/jack/Desktop/ucapcan-voise/cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jack/dev/project/voise-1.3/cpp/build
+CMAKE_BINARY_DIR = /home/jack/Desktop/ucapcan-voise/cpp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GetCentroidCheck.dir/depend.make
@@ -59,211 +59,211 @@ include CMakeFiles/GetCentroidCheck.dir/flags.make
 
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o: ../src/test/testGetCentroid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/testGetCentroid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/test/testGetCentroid.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/test/testGetCentroid.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/test/testGetCentroid.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/test/testGetCentroid.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/test/testGetCentroid.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/testGetCentroid.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o: ../src/test/test-help-fns/bruteForceCheckLambda.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckLambda.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o: ../src/test/test-help-fns/bruteForceCheckV.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckV.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckV.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/bruteForceCheckV.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckV.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/bruteForceCheckV.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o: ../src/test/test-help-fns/loadVD.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadVD.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadVD.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/test/test-help-fns/loadVD.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadVD.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/test-help-fns/loadVD.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o: ../src/vd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/vd.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp > CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/vd.cpp > CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/vd.cpp -o CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/vd.cpp -o CMakeFiles/GetCentroidCheck.dir/src/vd.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o: ../src/skizException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/skizException.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp > CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/skizException.cpp > CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/skizException.cpp -o CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/skizException.cpp -o CMakeFiles/GetCentroidCheck.dir/src/skizException.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o: ../src/addSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/addSeed.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp > CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/addSeed.cpp > CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/addSeed.cpp -o CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/addSeed.cpp -o CMakeFiles/GetCentroidCheck.dir/src/addSeed.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o: ../src/NSStar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/NSStar.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp > CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/NSStar.cpp > CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/NSStar.cpp -o CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/NSStar.cpp -o CMakeFiles/GetCentroidCheck.dir/src/NSStar.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o: ../src/pointInRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/pointInRegion.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp > CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/pointInRegion.cpp > CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/pointInRegion.cpp -o CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/pointInRegion.cpp -o CMakeFiles/GetCentroidCheck.dir/src/pointInRegion.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o: ../src/getRegion.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/getRegion.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp > CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/getRegion.cpp > CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/getRegion.cpp -o CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/getRegion.cpp -o CMakeFiles/GetCentroidCheck.dir/src/getRegion.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o: ../src/removeSeed.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/removeSeed.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp > CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/removeSeed.cpp > CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/removeSeed.cpp -o CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/removeSeed.cpp -o CMakeFiles/GetCentroidCheck.dir/src/removeSeed.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o: ../src/aux-functions/readSeeds.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readSeeds.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readSeeds.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readSeeds.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readSeeds.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readSeeds.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o: ../src/aux-functions/readMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readMatrix.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readMatrix.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/readMatrix.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readMatrix.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/readMatrix.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o: ../src/aux-functions/proposition2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/proposition2.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/proposition2.cpp > CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/aux-functions/proposition2.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/proposition2.cpp -o CMakeFiles/GetCentroidCheck.dir/src/aux-functions/proposition2.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o: ../src/getCentroid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/getCentroid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/getCentroid.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/getCentroid.cpp > CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/getCentroid.cpp > CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/getCentroid.cpp -o CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/getCentroid.cpp -o CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.s
 
 CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o: CMakeFiles/GetCentroidCheck.dir/flags.make
 CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o: ../src/test/Catch2/test_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o -c /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o -c /home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/test_main.cpp
 
 CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/test_main.cpp > CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.i
 
 CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/dev/project/voise-1.3/cpp/src/test/Catch2/test_main.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/test_main.cpp -o CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.s
 
 # Object files for target GetCentroidCheck
 GetCentroidCheck_OBJECTS = \
@@ -305,7 +305,7 @@ GetCentroidCheck: CMakeFiles/GetCentroidCheck.dir/src/getCentroid.cpp.o
 GetCentroidCheck: CMakeFiles/GetCentroidCheck.dir/src/test/Catch2/test_main.cpp.o
 GetCentroidCheck: CMakeFiles/GetCentroidCheck.dir/build.make
 GetCentroidCheck: CMakeFiles/GetCentroidCheck.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GetCentroidCheck"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GetCentroidCheck"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GetCentroidCheck.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -318,6 +318,6 @@ CMakeFiles/GetCentroidCheck.dir/clean:
 .PHONY : CMakeFiles/GetCentroidCheck.dir/clean
 
 CMakeFiles/GetCentroidCheck.dir/depend:
-	cd /home/jack/dev/project/voise-1.3/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jack/dev/project/voise-1.3/cpp /home/jack/dev/project/voise-1.3/cpp /home/jack/dev/project/voise-1.3/cpp/build /home/jack/dev/project/voise-1.3/cpp/build /home/jack/dev/project/voise-1.3/cpp/build/CMakeFiles/GetCentroidCheck.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jack/Desktop/ucapcan-voise/cpp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jack/Desktop/ucapcan-voise/cpp /home/jack/Desktop/ucapcan-voise/cpp /home/jack/Desktop/ucapcan-voise/cpp/build /home/jack/Desktop/ucapcan-voise/cpp/build /home/jack/Desktop/ucapcan-voise/cpp/build/CMakeFiles/GetCentroidCheck.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GetCentroidCheck.dir/depend
 

@@ -14,7 +14,18 @@
  * @defgroup getCentroidSeedBatch getCentroidSeedBatch
  * @ingroup getCentroidSeedBatch
  * @brief Finds the centre of mass of VR. Used in regularisation phase of VOISE
- * [1] eq. 15.
+ * [1] eq. 15:
+ *
+ * Centre of mass is equal to:
+ * \f[
+ *   \xi(s) = \frac{\sum_{\textbf{p} \in R(s)} \textbf{p} \rho(\textbf{p})}{
+ *   \sum_{\textbf{p} \in R(s)} \rho(\textbf{p})}
+ * \f]
+ *
+ * where the density function \f$\rho\f$ at pixel position \f$\textbf{p}\f$ is
+ * the pixel intensity. This function is used in the regularisation phase of
+ * VOISE. This is done via the getCentroid function; this is a MEX interface
+ * function.
  *
  * This is a MEX function. As such, the inputs and outputs are constricted to
  * the following:
@@ -32,7 +43,7 @@
  * @param W Matrix of pixel intensities
  * @param seeds Vector of seed IDs for which centres of mass (of the
  * corresponding VRs) are to be found
- * @returns Matrix of coordinates of centres of mass
+ * @returns Matrix of coordinates of centres of mass of each Voronoi region
  */
 void mexFunction(int nlhs, mxArray *plhs[],
                  int nrhs, const mxArray *prhs[]) {
