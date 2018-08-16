@@ -25,7 +25,7 @@ add_executable(standalone_skiz
         src/test/test-help-fns/loadStruct.h)
 
 set(TESTING ON)
-set(GENERATE_DOXYGEN ON)
+set(GENERATE_DOXYGEN OFF)
 message(status ${CMAKE_CURRENT_SOURCE_DIR}/build)
 if(GENERATE_DOXYGEN)
     find_package(Doxygen)

@@ -5,582 +5,16 @@
 		<Option title="standalone_skiz"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\build\;"/>
+		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testAddSeedCheckV">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckV" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testAddSeedCheckV/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckV" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testRemoveSeedCheckLambda">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testRemoveSeedCheckLambda/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GetCentroidCheck">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="GetCentroidCheck/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="standalone_skiz">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/standalone_skiz" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="standalone_skiz/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/standalone_skiz" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SqDistanceCheck">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SqDistanceCheck/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="doc">
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 doc"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PointInRegionCheck">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/PointInRegionCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="PointInRegionCheck/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/PointInRegionCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="InVectorCheck">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/InVectorCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="InVectorCheck/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/InVectorCheck" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testRemoveSeedCheckV">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckV" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testRemoveSeedCheckV/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckV" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Proposition2Check">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/Proposition2Check" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 Proposition2Check"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Proposition2Check/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/Proposition2Check" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 Proposition2Check/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="test">
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testAddSeedCheckLambda">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="testAddSeedCheckLambda/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="MetricChecks">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="MetricChecks/fast">
-				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GetVDOpCheck">
@@ -591,20 +25,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GetVDOpCheck/fast">
@@ -615,161 +41,531 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
-					<Add directory="/usr/include/c++/6"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/6"/>
-					<Add directory="/usr/include/c++/6/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/6/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetVDOpCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MetricChecks">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MetricChecks/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/MetricChecks" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 MetricChecks/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Proposition2Check">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/Proposition2Check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 Proposition2Check"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Proposition2Check/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/Proposition2Check" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 Proposition2Check/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InVectorCheck">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/InVectorCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="InVectorCheck/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/InVectorCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 InVectorCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PointInRegionCheck">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/PointInRegionCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PointInRegionCheck/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/PointInRegionCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 PointInRegionCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SqDistanceCheck">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SqDistanceCheck/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/SqDistanceCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 SqDistanceCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="standalone_skiz">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/standalone_skiz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="standalone_skiz/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/standalone_skiz" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 standalone_skiz/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testAddSeedCheckLambda">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testAddSeedCheckLambda/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckLambda/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GetCentroidCheck">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GetCentroidCheck/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/GetCentroidCheck" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 GetCentroidCheck/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testRemoveSeedCheckLambda">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testRemoveSeedCheckLambda/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckLambda" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckLambda/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testAddSeedCheckV">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckV" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testAddSeedCheckV/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testAddSeedCheckV" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testAddSeedCheckV/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testRemoveSeedCheckV">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckV" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="testRemoveSeedCheckV/fast">
+				<Option output="/home/jack/Desktop/ucapcan-voise/cpp/build/testRemoveSeedCheckV" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/Desktop/ucapcan-voise/cpp/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 testRemoveSeedCheckV/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/home/jack/Desktop/ucapcan-voise/cpp/build/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/NSStar.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/NSStar.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/addSeed.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/addSeed.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/metrics.cpp">
-			<Option target="standalone_skiz"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/metrics.h">
-			<Option target="standalone_skiz"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/proposition2.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/proposition2.h">
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readMatrix.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readMatrix.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readSeeds.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/aux-functions/readSeeds.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/getCentroid.cpp">
 			<Option target="GetCentroidCheck"/>
@@ -784,184 +580,184 @@
 			<Option target="GetVDOpCheck"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/getRegion.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/getRegion.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/main.cpp">
 			<Option target="standalone_skiz"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/pointInRegion.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/pointInRegion.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/removeSeed.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/removeSeed.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/skizException.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/skizException.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/Catch2/test_main.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckLambda.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckLambda.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckV.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/bruteForceCheckV.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/generateProposition2VD.cpp">
 			<Option target="Proposition2Check"/>
@@ -970,46 +766,46 @@
 			<Option target="Proposition2Check"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadStruct.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadVD.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/test-help-fns/loadVD.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/test/testAddSeedCheckLambda.cpp">
 			<Option target="testAddSeedCheckLambda"/>
@@ -1045,38 +841,35 @@
 			<Option target="SqDistanceCheck"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/vd.cpp">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/src/vd.h">
-			<Option target="testAddSeedCheckV"/>
-			<Option target="testRemoveSeedCheckLambda"/>
-			<Option target="GetCentroidCheck"/>
-			<Option target="standalone_skiz"/>
-			<Option target="SqDistanceCheck"/>
-			<Option target="PointInRegionCheck"/>
-			<Option target="InVectorCheck"/>
-			<Option target="testRemoveSeedCheckV"/>
-			<Option target="Proposition2Check"/>
-			<Option target="testAddSeedCheckLambda"/>
-			<Option target="MetricChecks"/>
 			<Option target="GetVDOpCheck"/>
+			<Option target="MetricChecks"/>
+			<Option target="Proposition2Check"/>
+			<Option target="InVectorCheck"/>
+			<Option target="PointInRegionCheck"/>
+			<Option target="SqDistanceCheck"/>
+			<Option target="standalone_skiz"/>
+			<Option target="testAddSeedCheckLambda"/>
+			<Option target="GetCentroidCheck"/>
+			<Option target="testRemoveSeedCheckLambda"/>
+			<Option target="testAddSeedCheckV"/>
+			<Option target="testRemoveSeedCheckV"/>
 		</Unit>
 		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/jack/Desktop/ucapcan-voise/cpp/build/CMakeDoxyfile.in">
-			<Option virtualFolder="CMake Files\build\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
