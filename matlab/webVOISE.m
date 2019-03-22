@@ -81,7 +81,7 @@ fclose(fid);
 % Complex Networks”. In: Scientific Reports 7.1 (2017). doi: 10 . 1038 /
 % s41598-017-02751-8.
 if params.clus
-    commandStr = ['python -W ignore ../clustering/knn.py ',...
+    commandStr = ['python3 -W ignore ../clustering/knn.py ',...
         params.oDir, ' ', num2str(params.n_clusters)];
     fprintf('***************************************************\n');
     fprintf('Performing kNN-enhance clustering...\n');
